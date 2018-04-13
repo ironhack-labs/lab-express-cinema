@@ -1,0 +1,36 @@
+<h1 id="titulo-movies">Movies</h1>
+<div class="index-container">
+  {{#with movie_detail}}
+  <div class="artist-index">
+    <a href="/movies">Go back...</a>
+    <div class="img-artist">
+      <img src="{{image}}" alt="">
+    </div>
+    <div class="text-random"></div>
+    <h4>{{title}}</h4>
+    <h5>{{director}}</h5>
+    <h5>Stars</h5>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+      <ul>
+      {{#each showtimes}}
+      <li>{{this}} | </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/with}}
+</div>
+
+
+{{!-- lab-express-cinema:movies { stars: [ 'Christina Hendricks', 'Bailee Madison', 'Martin Henderson' ], lab-express-cinema:movies
+showtimes: [ '13:50', '16:20', '19:20', '22:10' ], lab-express-cinema:movies _id: 5ad0bbf0e85fa117f5ad1939, lab-express-cinema:movies
+title: 'The Strangers: Prey at Night', lab-express-cinema:movies director: 'Johannes Roberts', lab-express-cinema:movies
+image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1OTIwODgzMV5BMl5BanBnXkFtZTgwMzUyMDgzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
+lab-express-cinema:movies description: 'A family\'s road trip takes a dangerous turn when they arrive at a secluded mobile
+home park to stay with some relatives and find it mysteriously deserted. Under the cover of darkness, three masked psychopaths
+pay them a visit to test the family\'s every limit as they struggle to survive.', lab-express-cinema:movies created_at: 2018-04-13T14:17:20.188Z,
+lab-express-cinema:movies updated_at: 2018-04-13T14:17:20.188Z, lab-express-cinema:movies __v: 0 } +0ms --}}
