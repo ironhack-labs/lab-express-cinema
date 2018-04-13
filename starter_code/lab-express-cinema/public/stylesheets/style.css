@@ -1,0 +1,40 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF;
+  text-decoration: none; }
+
+.movies-container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.movie-card {
+  width: 250px;
+  margin: 0 10px 50px 10px;
+  text-align: center; }
+
+.movie-card p {
+  font-weight: bold; }
+
+.movie-detail {
+  display: flex; }
+
+.movie-detail-image {
+  width: 20%;
+  text-align: center; }
+
+.movie-detail-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%; }
+
+#time-table span {
+  display: inline-block;
+  padding: 0 20px;
+  border-right: 1px solid grey; }
+
+/*# sourceMappingURL=style.css.map */
