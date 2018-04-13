@@ -1,48 +1,4 @@
-![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
-
-# PP | Lab Express Cinema
-
-## Introduction
-![image](https://user-images.githubusercontent.com/23629340/36983687-49a3d64e-2093-11e8-8b86-b11813f0cdba.png)
-
-We will create a cinema web page, where we will display the showtimes for some movies!
-
-## Requirements
-
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
-- You must submit the entire angular2 app
-
-## Submission
-
-Upon completion, run the following commands
-```
-$ git add .
-$ git commit -m "done"
-$ git push origin master
-```
-Navigate to your repo and create a Pull Request from your master branch to the original repository master branch.
-
-In the Pull request name, add your name and last names separated by a dash "-"
-
-## Instructions
-
-### Iteration 1 | Generate the project
-
-Inside the  `starter_code` folder, create the app using the  `ironhack_generator`. 
-
-```bash
-$ irongenerate lab-express-cinema
-$ cd lab-express-cinema
-$ npm install
-```
-
-### Iteration 2 | Seed the database
-
-First, we need to seed our database. Here you will find an array of objects with info about nine movies. You should create a `seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
-
-```javascript
-const movies = [
+module.exports = [
   {
   title : "A Wrinkle in Time",
   director: "Ava DuVernay",
@@ -108,27 +64,3 @@ const movies = [
     howtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   },
 ];
-```
-
-### Iteration 3 | The Home Page
-
-We need our home page. Simple and beautiful, on the `index.hbs` create the following home page:
-
-![image](https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png)
-
-
-The `button` should redirect to the `/movies` route.
-
-### Iteration 3 | List the Movies
-
-On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and pass the data about the movies.
-
-![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
-
-### Iteration 4 | Display Movie Info
-
-Finally, you have to create a view to display all the info about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button of the `/movies` view.
-
-![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
-
-
