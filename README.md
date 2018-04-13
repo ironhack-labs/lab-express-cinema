@@ -8,7 +8,7 @@
 
 We will create a cinema web page, where we will display the showtimes for some movies!
 
-## Requirements
+## Requirements!
 
 - [Fork this repo](https://guides.github.com/activities/forking/)
 - Clone this repo into your `~/code/labs`
