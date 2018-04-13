@@ -1,0 +1,23 @@
+<div class="col-2 partial-col-image">
+  <img class="partial-image" src="{{image}}" alt="Random Beer Image">
+</div>
+<div class="col-6">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">{{name}}</h2>
+      <p class="card-text"><strong>Director: {{director}}</strong></p>
+      <p class="card-text">
+        <strong>Stars</strong>
+      </p>
+      <ul>
+        {{#each stars}}
+        <li class="card-text">{{this}}</li>
+        {{/each}}
+      </ul>
+      <p class="card-text">
+        {{description}}</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>

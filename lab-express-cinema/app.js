@@ -9,10 +9,12 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const dbURL = process.env.DBURL;
+
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/lab-express-cinema', {useMongoClient: true})
+  .connect(dbURL, {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {
@@ -44,15 +46,19 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
-
+hbs.registerPartials(__dirname + "/views/partials");
 
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-
-
 const index = require('./routes/index');
 app.use('/', index);
+
+const moviesRouter = require("./routes/movies");
+app.use("/movies", moviesRouter);
+
+const moviesInfoRouter = require("./routes/moviesInfo");
+app.use("/movies-info", moviesInfoRouter);
 
 
 module.exports = app;
