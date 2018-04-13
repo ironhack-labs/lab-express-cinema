@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,500");
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF;
+  font-family: "Orbitron", sans-serif; }
 
 .index-body {
   background-color: grey;
@@ -19,7 +21,8 @@ a {
   text-align: center; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  font-family: "Orbitron", sans-serif; }
 
 .index-container {
   display: flex;
@@ -33,5 +36,12 @@ h1 {
 
 #titulo-movies {
   margin-bottom: 4%; }
+
+#list-details {
+  float: left;
+  list-style: none; }
+
+#list-stars {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */
