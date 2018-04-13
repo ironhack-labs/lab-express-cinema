@@ -1,0 +1,16 @@
+
+<h1>Ironhack Cinema </h1>
+<p>Click on the movies to check the showtimes</p>
+
+{{#each movies}}
+        <img src = "{{image}}" alt = "peli"/>
+        <h5>{{title}}</h5>
+        <a href="/movie/{{id}}">See more</a>
+        
+{{else}}
+    <p class="empty">No content</p>
+{{/each}}
+
+
+{{!-- <a href="/book/new">Add new Book</a> --}}
+{{!-- <a href="/">Go back to HOME</a> --}}
