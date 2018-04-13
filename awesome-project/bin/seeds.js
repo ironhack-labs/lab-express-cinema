@@ -14,7 +14,7 @@ mongoose.connect(dbURL).then(() =>{
             let movie_new = new Movie ({
                 title: movie.title,
                 director: movie.director,
-                starts: movie.starts,
+                stars: movie.stars,
                 image: movie.image,
                 description: movie.description,
                 showtimes: movie.showtimes

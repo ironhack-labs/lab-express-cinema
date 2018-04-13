@@ -1,4 +1,4 @@
-module.export = [
+module.exports = [
     {
     title : "A Wrinkle in Time",
     director: "Ava DuVernay",
