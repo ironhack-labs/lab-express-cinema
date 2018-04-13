@@ -10,12 +10,16 @@ mongoose
   .then(() => {
     console.log('Connected to Mongo!')
     Movie.collection.drop();
-    console.log("movie")
-    // Movie.insertMany(movies_data,(err,objs)=>{
-    //   console.log("pepe")
-    // }).then(mongoose.disconnect())
+    
+    Movie.insertMany(movies_data)
+    .then((movies) => {
+      console.log(movies)
+    })
   }).catch(err => {
     console.error('Error connecting to mongo', err)
   });
 
+    
   
+  
+
