@@ -1,0 +1,19 @@
+<div class="container">
+  <h5 class="card-title">{{title}}</h5>
+  <img class="image" src="{{image}}" alt="Card image cap">
+  <p class="card-text">{{description}}</p>
+  <ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <br>
+  <p>Showtimes:</p>
+  <ul>
+    {{#each showtimes}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <a href="/movies">Go Back</a>
+</div>
