@@ -1,0 +1,33 @@
+body{
+    background-image: url(https://static.noticiasaominuto.com/stockimages/1920/naom_578175e4d693a.jpg?1504197495);
+    /* background-image: url(https://cdn.pixabay.com/photo/2017/09/04/09/37/cinema-strip-2713352_960_720.jpg); */
+    /* background-image: url(http://www.mycity-web.com/wp-content/uploads/2015/08/puyallup-movie-theater.jpg); */
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+
+div{
+    margin-top: 30vh;
+    margin-left: 60vw;
+}
+
+h1{
+    font-size: 5em;
+    margin: 2vh 0;
+}
+
+p{
+    margin: 2vh 0;
+    font-size: 2.5em;
+}
+
+.btn {
+    margin: 2vh 0;
+    width: 18vw;
+    height: 5vh;
+    color: rgba(0, 0, 150, 0.6);
+    border-radius: 4em;
+    font-size: 1.4em;
+}
+
