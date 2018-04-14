@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Showtimes</title>
+    <link rel="stylesheet" href="/stylesheets/showtimes.css">
+</head>
+<body>
+    <header>
+        <h1>Showtimes: {{chosenMovie.title}}</h1>
+    </header>
+
+    <div class="box">
+        <img src="{{chosenMovie.image}}" alt="">
+        
+        <div class="content">
+            <a href="/movies" class="back">Go back</a>
+            <h1>{{chosenMovie.title}}</h1>
+            <h3>Director: {{chosenMovie.director}}</h3>
+            <h4>Stars:</h4>
+            <ul>
+                {{#each chosenMovie.stars}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{chosenMovie.description}}</p>
+            {{#each chosenMovie.showtimes}}
+                {{this}} |
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>
