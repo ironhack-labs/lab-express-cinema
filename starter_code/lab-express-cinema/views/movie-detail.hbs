@@ -1,0 +1,34 @@
+<div class="movies-container">
+  <div class="movie-detail">
+    <div class="movie-detail-image">
+      <img src="{{movieData.image}}"> 
+    </div>
+    <div class="movie-detail-text">
+      <h2>{{{movieData.title}}}</h2>
+      <h4>{{{movieData.director}}}</h4>
+      <p>{{{movieData.description}}}</p>
+      <ul>
+        {{#each movieData.stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <div id="time-table">
+        {{#each movieData.showtimes}}
+        <span>{{this}}</span>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+{{!-- {{movieData.stars}} --}}
+
+
+
+

@@ -1,0 +1,20 @@
+{
+  "name": "lab-express-cinema",
+  "version": "1.0.0",
+  "description": "![Ironhack logo](https://i.imgur.com/1QgrNNw.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aberouch/lab-express-cinema.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aberouch/lab-express-cinema/issues"
+  },
+  "homepage": "https://github.com/aberouch/lab-express-cinema#readme",
+  "dependencies": {}
+}
