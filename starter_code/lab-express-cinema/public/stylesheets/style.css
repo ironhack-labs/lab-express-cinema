@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black; }
+
+a {
+  color: #00b7ff; }
+
+.container {
+  background-image: url("http://www.kanandour.org//wp-content/uploads/2015/11/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
