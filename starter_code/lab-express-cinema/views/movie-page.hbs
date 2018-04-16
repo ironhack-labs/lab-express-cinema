@@ -1,0 +1,15 @@
+
+<div class= "container container-row">
+  <div class="notification"> 
+    <div class= "container-row1">    
+          {{#each movieList}} 
+            <div class = "container-row2">
+                <img src = "{{this.image}}" />
+                <h3>{{this.title}}</h3>
+                <a href="/movie/{{this.id}}">See More</a>
+            </div>
+            {{/each}}    
+    </div>
+  </div>  
+</div>
+
