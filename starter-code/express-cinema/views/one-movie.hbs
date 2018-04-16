@@ -1,0 +1,25 @@
+<div class="one-big-card">
+    <a href="/movies">Go back</a>
+
+    <div class="movie-info">
+        <img src="{{oneMovie.image}}" alt="">
+        <div>
+            <h3>{{oneMovie.title}}</h1>
+            <p>by {{oneMovie.director}}</p>
+            <p>with
+                <ul>
+                    {{#each oneMovie.stars}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </p>
+            <p>{{oneMovie.description}}</p>
+            <ul>
+                {{#each oneMovie.showtimes}}
+                    <li>{{this}}</li>
+                    <li>|</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
