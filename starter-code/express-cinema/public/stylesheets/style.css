@@ -1,0 +1,82 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://media.gettyimages.com/photos/pop-corn-on-armchair-cinema-picture-id506221782?b=1&k=6&m=506221782&s=612x612&w=0&h=AyxG1jTKgngV3ZvR9fvgVJgq9JtNiZW4pmrdUyfOxV0=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; }
+
+.home-text-box {
+  position: absolute;
+  right: 10%; }
+
+.home-text-box a {
+  color: #00B7FF;
+  text-decoration: none; }
+
+.home-text-box h1 {
+  font-size: 100px;
+  color: white; }
+
+.home-text-box button {
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 140px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1.2rem;
+  height: 2.75em;
+  justify-content: flex-start;
+  line-height: 1.2rem;
+  padding: 10px 25px;
+  color: #209cee; }
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.one-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 202px;
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  text-align: center; }
+
+.one-big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.one-big-card > a {
+  margin-bottom: 20px; }
+
+.movie-info {
+  display: flex; }
+
+.movie-info img {
+  margin-right: 20px;
+  align-self: center; }
+
+.movie-info ul {
+  flex-direction: column; }
+
+.movie-info ul:last-child {
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0; }
+
+.movie-info ul:last-child li {
+  margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
