@@ -1,0 +1,40 @@
+<section class="page-container">
+
+    <section class="item-image-section">
+        <img class="item-picture" src="{{movie.image}}" alt="{{movie.title}}" /> 
+
+    </section>
+
+    <section class="item-infos-section">
+
+        <a  href="/movies"><< Go back to the movies list</a>
+
+        <h3 class="movies-page-title">{{movie.title}}</h3>
+        <h4><span class="red-text">By</span> {{movie.director}}</h4>
+
+        <section class="actors-section">
+            <h5>Featuring:</h5>
+            <ul>
+                {{#each movie.stars}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </section>
+
+        <p class="item-description"><i>{{movie.description}}</i></p>
+
+        <section class="showtimes-section">
+            <p class="separator-left">|</p>
+            {{#each movie.showtimes}}
+                <li>{{this}}</li>
+                <p class="separator">|</p>
+            {{/each}}
+        </section>
+
+    </section>
+        
+    
+    <div class="clear"></div>
+
+
+</section>

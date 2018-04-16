@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+body {
+  font: 14px Khand, Helvetica, Arial, sans-serif;
+  background-image: url("../images/cinema.jpg");
+  background-color: #000;
+  background-size: 1400px;
+  background-repeat: no-repeat;
+  background-position-x: center; }
+
+.home-title {
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  padding-top: 300px;
+  height: 190px;
+  overflow: hidden;
+  text-shadow: 0px 0px 12px #000;
+  letter-spacing: 5px;
+  font-size: 10em; }
+
+.home-button-container {
+  width: 880px;
+  margin: 0 auto; }
+
+.home-button-container button {
+  box-sizing: border-box;
+  width: 250px;
+  height: 45px;
+  box-shadow: 0px 0px 12px #000;
+  background: #9c2e21;
+  display: block;
+  border: none;
+  border-radius: 20px;
+  float: left;
+  border: 1px solid #9c2e21; }
+
+.home-button-container button:hover {
+  box-shadow: 0px 0px 32px rgba(255, 255, 255, 0.253);
+  background: #436588;
+  border: 1px solid rgba(255, 255, 255, 0.295); }
+
+.home-button-container button a {
+  color: #fff;
+  font-size: 1.3em;
+  text-decoration: none;
+  display: block;
+  width: 250px;
+  height: 45px;
+  box-sizing: border-box;
+  padding-top: 10px; }
+
+.white-line {
+  border-bottom: 1px solid #fff;
+  height: 23px;
+  width: 294px;
+  float: left; }
+
+.margin-right-20 {
+  margin-right: 20px; }
+
+.page-container {
+  width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: 0px 0px 20px #000;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.page-container header h1 {
+  font-weight: 500;
+  color: #051843;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 3px;
+  font-size: 6em; }
+
+.page-container header p {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+  color: #436588;
+  margin-bottom: 10px; }
+
+.clear {
+  clear: both;
+  width: 100%;
+  height: 100px; }
+
+.movie-wrapper {
+  width: 250px;
+  height: 300px;
+  float: left;
+  display: block;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative; }
+
+.movie-picture {
+  display: block;
+  margin: 0 auto;
+  width: 184px;
+  margin-top: 25px;
+  height: 270px;
+  z-index: 1; }
+
+.movie-info-pop {
+  position: absolute;
+  display: block;
+  top: 340px;
+  left: 40px;
+  width: 170px;
+  height: 125px;
+  background: rgba(255, 255, 255, 0.842);
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.562);
+  padding-top: 20px; }
+
+.movie-title {
+  font-size: 1.05em;
+  color: #051843;
+  text-align: center;
+  padding-bottom: 0px;
+  font-weight: 700; }
+
+.movie-link-btn {
+  box-sizing: border-box;
+  width: 140px;
+  height: 40px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.39);
+  background: #9c2e21;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  border-radius: 20px; }
+
+.movie-link-btn:hover {
+  background: #436588;
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.39); }
+
+.movie-link-btn a {
+  display: block;
+  color: #fff;
+  font-size: 1.3em;
+  text-decoration: none; }
+
+.movie-info-pop p {
+  color: #051843;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 1em; }
+
+.red-text {
+  color: #9c2e21; }
+
+.item-image-section {
+  float: left;
+  padding-top: 100px;
+  width: 370px; }
+
+.item-infos-section {
+  float: left;
+  padding-top: 100px;
+  width: 600px; }
+
+.item-picture {
+  display: block;
+  margin-left: 25px;
+  width: 272px;
+  height: 400px; }
+
+.item-infos-section a {
+  color: #9c2e21;
+  font-size: 1.2em; }
+
+.item-infos-section a:hover {
+  color: #436588; }
+
+.item-infos-section h3 {
+  color: #051843;
+  font-size: 2.4em;
+  padding-top: 20px;
+  letter-spacing: 1px; }
+
+.item-infos-section h4 {
+  font-size: 1.5em;
+  font-weight: 400; }
+
+.item-infos-section h5 {
+  font-size: 1.3em;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  font-weight: 600; }
+
+.actors-section li {
+  list-style-type: none;
+  font-size: 1.1em;
+  padding-left: 15px;
+  display: block;
+  overflow: hidden;
+  height: 25px;
+  border-left: 1px solid #7c7c7c; }
+
+.item-description {
+  font-size: 1.1em;
+  padding-top: 12px;
+  width: 450px;
+  text-align: justify; }
+
+.showtimes-section {
+  padding-top: 15px; }
+
+.showtimes-section li {
+  list-style-type: none;
+  font-size: 1.6em;
+  float: left;
+  color: #051843; }
+
+.showtimes-section .separator {
+  float: left;
+  font-size: 1.6em;
+  color: #7c7c7c;
+  margin-left: 7px;
+  margin-right: 7px; }
+
+.showtimes-section .separator-left {
+  float: left;
+  font-size: 1.6em;
+  color: #7c7c7c;
+  margin-right: 7px; }
+
+/*# sourceMappingURL=style.css.map */

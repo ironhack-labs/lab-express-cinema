@@ -1,0 +1,25 @@
+
+<section class="page-container">
+
+    <header>
+        <h1 class="movies-page-title">The Movies</h1>
+        <p>Click on a movie to check <span class="red-text">the showtimes</span></p>
+    </header>
+    
+    {{#each movies}}
+        <div class="movie-wrapper">
+            <img index="{{@index}}" class="movie-picture" src="{{this.image}}" alt="{{this.title}}" /> 
+            <section class="movie-info-pop">
+                <h3 class="movie-title">{{this.title}}</h3>
+                <p><span class="red-text">By</span> {{this.director}}</p>
+                <button class="movie-link-btn"><a href="/movieItem/{{this._id}}">See more</a></button>
+            </section> 
+        </div>
+        
+
+    {{/each}}
+    
+    <div class="clear"></div>
+
+
+</section>
