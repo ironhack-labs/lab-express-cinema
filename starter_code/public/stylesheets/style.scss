@@ -1,0 +1,58 @@
+html, body, .container-fluid {
+  height: 100%;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.home_container {
+  background-image: url("../images/home_background.jpg");
+  background-size: contain;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  padding-top: 7%;
+}
+
+
+
+.home_container h1 {
+  width: 200px;
+  color: white;
+  font-size: 9em;
+  font-weight: bold;
+}
+
+.btn-light {
+  border-radius: 30px;
+  color: #00B7FF;
+  padding: 15px 35px;
+  margin-top: 30px;
+}
+
+.col {
+  margin: 50px;
+}
+
+.bla {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.image {
+  margin-top: -160px;
+}
+
+ul {
+  margin-left: -24px;
+}
+
+.blaou {
+  margin-left: 60%;
+}
