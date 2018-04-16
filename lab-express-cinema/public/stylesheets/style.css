@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.home-page {
+  background-image: url("https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+a {
+  color: #00B7FF; }
+
+.button {
+  border: 1px solid black;
+  border-radius: 15px; }
+
+.margins {
+  margin: 10px 0px;
+  text-align: center; }
+
+.img {
+  float: left;
+  margin-right: 60px; }
+
+h5 {
+  margin: 20px 0px; }
+
+/*# sourceMappingURL=style.css.map */
