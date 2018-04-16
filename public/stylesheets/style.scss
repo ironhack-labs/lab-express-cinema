@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/cine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.home {
+  height: 100vh;
+  color: white;
+  width: 30%;
+  float: right;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 80px;
+  }
+
+  button {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  a {
+    color: #444875;
+    text-decoration-line: none;
+  }
+}
