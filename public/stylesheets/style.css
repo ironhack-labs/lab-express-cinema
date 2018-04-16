@@ -1,12 +1,29 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/cine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 a {
   color: #00B7FF; }
 
 .home {
-  background-image: url("/images/cine.jpeg");
-  background-repeat: no-repeat;
-  padding: 50px; }
+  height: 100vh;
+  color: white;
+  width: 30%;
+  float: right;
+  margin-top: 100px; }
+  .home h1 {
+    font-size: 80px; }
+  .home button {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 20px; }
+  .home a {
+    color: #444875;
+    text-decoration-line: none; }
 
 /*# sourceMappingURL=style.css.map */

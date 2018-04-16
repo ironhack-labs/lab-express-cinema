@@ -2,9 +2,17 @@
 {{#with movie}}
 <a href="/movies">Go back</a>
 <img src="{{image}}" alt="{{title}}"> 
-{{title}} 
-{{director}} 
-{{#each stars}} {{this}} {{/each}} 
+<h1>{{title}} </h1>
+<h2>{{director}} </h2>
+<ul>
+{{#each stars}} 
+  <li>{{this}}</li>
+{{/each}} 
+</ul>
 {{description}}
-{{#each showtimes}} {{this}} {{/each}} 
+<ul>
+{{#each showtimes}} 
+  <li>{{this}}</li> 
+{{/each}} 
+</ul>
 {{/with}}
