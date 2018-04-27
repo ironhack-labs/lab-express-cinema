@@ -1,0 +1,49 @@
+
+<div class="container1">
+  <div class="image1">
+    <img src="{{image}}">
+  </div>
+  <div class="desc">
+    <h3>{{title}}</h3>
+    <h5>Director: {{director}}</h5>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <p>
+      {{#each showtimes}}
+      {{this}} |
+      {{/each}} 
+    </p>
+    <a href='/movies'>Back</a>
+  </div>
+</div>
+
+
+<style>
+
+  .container1{
+    padding: 2%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image1{
+    text-align: center;
+    width: 30%;
+    align-self: flex-start;
+
+  }
+
+  .desc{
+    width: 70%;
+    align-self: flex-end;
+  }
+
+
+</style>

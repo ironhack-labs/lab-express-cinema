@@ -1,0 +1,44 @@
+<div class='container'>
+  {{#each movies as |movie|}}
+    <div class="something">
+      <img class="image" src="{{movie.image}}">
+      <h5>{{movie.title}}</h5>
+      <a href="/movie/{{movie._id}}">View more</a>
+    </div>
+  {{/each}}
+</div>
+
+<style>
+  body {
+    color: white;
+    background-color: black; 
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+  }
+
+  .something {
+    display: flex;
+    padding: 1% 1%;
+    width: 33%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .image {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  h5{
+    text-align: center;
+  }
+</style>
