@@ -38,7 +38,7 @@ $ cd lab-express-cinema
 $ npm install
 ```
 
-### Iteration 2 | Seed the database
+### Iteration 2 | Seed the database TEST
 
 First, we need to seed our database. Here you will find an array of objects with info about nine movies. You should create a `seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
 
