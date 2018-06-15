@@ -1,0 +1,21 @@
+<div class="container row">
+  <div class="col-2">
+  <img class="img-fluid" src="{{ image }}" alt="{{ title }} image">
+  </div>
+  <div class="col-10">
+    <h2>{{ title }}</h2>
+    <h4>Director: {{ director }}</h4>
+    <ul>
+      <h5>Stars</h5>
+      {{#each stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{ description }}</p>
+    <p>
+      {{#each showtimes }}
+        {{this}} |
+      {{/each}}
+    </p>
+  </div>
+</div>
