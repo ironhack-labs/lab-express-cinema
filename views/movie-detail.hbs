@@ -1,10 +1,23 @@
-<h1>Movie detail:</h1>
-<a href="/movies">Go back</a>
-<ul>
-    <li><img src="{{movieDoc.image}}" alt=""></li>
-    <li>Title: {{movieDoc.title}}</li>
-    <li>director: {{movieDoc.director}}</li>
-    <li>Stars: {{movieDoc.stars}}</li>
-    <li>Description: {{movieDoc.description}}</li>    
-    <li>showtimes: {{movieDoc.showtimes}}</li>
-</ul>
+<div class="container d-flex bg-light">
+    
+    <img src="{{movieDoc.image}}" alt="">
+    
+    <ul class="my-ul">
+        <li><a href="/movies">Go back</a></li>
+        <li><h2 class="movie-title mt-3">{{movieDoc.title}}</h2></li>
+        <li class="my-3 font-weight-bold">Director: {{movieDoc.director}}</li>
+        <li><strong>Stars:</strong>
+            <ul class="my-3">{{#each movieDoc.stars}}
+                <li>
+                    {{this}}
+                </li>{{/each}}</ul>
+        </li>
+        <li class='w-50'>{{movieDoc.description}}</li>
+        <li class="my-3"> 
+            <ul class="my-3 my-ul d-flex">{{#each movieDoc.showtimes}}
+                <li class="ml-1">{{this}} | </li>
+                {{/each}}
+            </ul>
+        </li>
+    </ul>
+</div>
