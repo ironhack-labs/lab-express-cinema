@@ -1,0 +1,22 @@
+body {
+  padding: 5%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  widows: 100vw;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cards {
+  margin-left: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

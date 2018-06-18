@@ -1,0 +1,25 @@
+<a class="btn-movie" href="/movies/" role="button">
+    Go Back</a>
+
+<div id="pic-container">
+    <img src="{{this.image}}" alt="">
+</div>
+
+<div id="movieInfo">
+    <h2>Title:{{this.title}} </h2>
+    <h3>Director: {{this.director}} </h3>
+    <strong>Stars</strong>
+    <ul>
+        {{#each this.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <p>{{this.description}}</p>
+    <strong>Show Times</strong>
+    <ul>
+        {{#each this.showtimes}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+</div>
