@@ -1,0 +1,26 @@
+.singleMovie {
+  margin: 0 0 0 15%;
+  width: 50%;
+}
+
+.singleMovie img {
+  width: 30%;
+  height: 30%;
+  float: left;
+  margin: 15% 1% 0 0;
+}
+
+.singleMovie > .textCont {
+  margin: 18% 0;
+  float: right;
+  font-size: 100%;
+  width: 60%;
+}
+
+.singleMovie .stars,.showtimes {
+  line-height: 150%
+}
+
+.singleMovie .showtimes li {
+  display: inline;
+}
