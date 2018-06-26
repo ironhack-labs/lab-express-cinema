@@ -1,0 +1,26 @@
+
+{{!-- On the /movies route, we need to list all the movies we have in our database.
+You should create a movies.hbs file, and pass the data about the movies. --}}
+<h2>Movies List</h2>
+
+<ul>
+  {{#each movieArray}}
+  <li>
+    <h3>{{this.title}}</h3>
+    <p>by {{this.director}}</p>
+<h2>Click on the movie to check the showtimes!</h2>
+
+{{!-- <ul>
+    {{#each movieArray}}
+    <li>
+        <img src="{{this.image}}">
+        <h3>{{this.title}}</h3>
+        <a href="/movies/{{this.id}}">See more</a>
+    </li>
+    {{/each}}
+</ul> --}}
+  </li>
+  {{else}}
+  <li>No movies yet...</li>
+  {{/each}}
+</ul>
