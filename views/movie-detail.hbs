@@ -4,8 +4,8 @@
     <h2>{{movie.director}}</h2>
     <h3>Stars</h3>
     <ul>
-        {{#each movie}}
-        <li>{{this.stars}}</li>
+        {{#each movie.stars}}
+        <li>{{this}}</li>
         {{/each}}
     </ul>
     <p>{{movie.description}}</p>
