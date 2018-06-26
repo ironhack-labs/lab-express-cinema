@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  //color: #00B7FF;
+  text-decoration: none;
+  color: darkblue;
+}
+
+.indexWrapper {
+  background-image: url("http://www.tourisme-aumale-blangy.fr/wp-content/uploads/cin%C3%A9ma-845x321.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+h1{
+  font-size: 4.5em;
+  letter-spacing: 1px;
+  color: White;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+.indexh1 {
+  display: block;
+}
+
+.indexButton {
+  display: inline;
+  padding: 15px 20px;
+  font-size: 1em;
+  background-color: white;
+  border-radius: 25px;
+    position: absolute;
+     top: 55%;
+     left: 15%;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one-movie {
+  margin: 30px 10%;
+}
+
+.one-movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.one-movie-container img {
+  margin: auto;
+}
