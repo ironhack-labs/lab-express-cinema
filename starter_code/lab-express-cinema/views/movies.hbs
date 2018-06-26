@@ -1,0 +1,21 @@
+<h2> Click on the movie to check the showtimes </h2>
+<div class="container-movie-display"
+<ul>
+    {{#each movieArray}}
+  
+      <li class="movie-display">
+        <h3> {{this.title}} </h3>
+          <p> <a href="/movie/{{this._id}}"> <img src="{{this.image}}" /> </a>
+           </p>
+           <p> <a href="/movie/{{this._id}}"> See more </a>
+          </p>
+        </li>
+  {{else}}
+    <li>
+        <p> No movie to show  </p>
+    </li>
+  
+  {{/each}}
+
+</ul>
+</div>
