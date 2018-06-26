@@ -1,19 +1,21 @@
-<h2> Movies this week </h2>
-
+<h2> Click on the movie to check the showtimes </h2>
+<div class="container-movie-display"
 <ul>
     {{#each movieArray}}
-      <li>
+  
+      <li class="movie-display">
         <h3> {{this.title}} </h3>
-        <p> {{this.image}} </p>
-
-          <a href="/movie/{{this._id}}"> See Details </a>
+          <p> <a href="/movie/{{this._id}}"> <img src="{{this.image}}" /> </a>
+           </p>
+           <p> <a href="/movie/{{this._id}}"> See more </a>
+          </p>
         </li>
-
   {{else}}
     <li>
-        <p> No book yet </p>
+        <p> No movie to show  </p>
     </li>
-
+  
   {{/each}}
 
 </ul>
+</div>

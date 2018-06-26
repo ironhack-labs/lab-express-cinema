@@ -39,8 +39,8 @@ router.get("/movie/:movieId", (req, res, next) => {
         res.locals.movieItem = movieDoc;
         res.render("movie-details.hbs");
       })
-      .cathc((err) => {
-        next(err)
+      .catch((err) => {
+        next(err);
       });
   });
   
