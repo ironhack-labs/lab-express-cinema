@@ -1,0 +1,19 @@
+<h2> Movies this week </h2>
+
+<ul>
+    {{#each movieArray}}
+      <li>
+        <h3> {{this.title}} </h3>
+        <p> {{this.image}} </p>
+
+          <a href="/movie/{{this._id}}"> See Details </a>
+        </li>
+
+  {{else}}
+    <li>
+        <p> No book yet </p>
+    </li>
+
+  {{/each}}
+
+</ul>

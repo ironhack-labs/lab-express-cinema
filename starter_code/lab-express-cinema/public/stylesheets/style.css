@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.container {
+  width: 75vw;
+  height: 75vh;
+  background-image: url(../images/background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+ }
+
+.right-container {
+  position: absolute;
+  left:50vw;
+  z-index: 10;
+}
+
+.title {
+  font-size: 3.5em;
+  padding-top: 10vh;
+  color: white;
+} 
+
+.button {
+  margin-top:10px;
+  background-color: white;
+  border-radius: 25px;
+  height: 3em;
+  width: 15vw;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
