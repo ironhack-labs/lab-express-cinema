@@ -1,4 +1,4 @@
-const movies = [
+module.exports = [
     {
     title : "A Wrinkle in Time",
     director: "Ava DuVernay",
@@ -64,3 +64,4 @@ const movies = [
       howtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     },
   ];
+
