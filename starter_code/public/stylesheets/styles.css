@@ -1,0 +1,7 @@
+body {
+    margin:0;
+}
+.home-container {
+    background-image: url('../images/cinema.jpg');
+    background-color: red;
+}
