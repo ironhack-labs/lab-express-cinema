@@ -10,3 +10,18 @@ module.exports.list = (req, res, next) => {
         })
         .catch(error => {console.error(`Error ${error}`)})
 }
+
+module.exports.detail = (req, res, next) => {
+    const id = req.params._id;
+    Movie.findOne(req.params.id)
+        .then(movie => {
+            if(movie) {
+                res.render('movies/moviesDetail', {
+                    movie
+                })
+            } else {
+                next(error);
+            }
+            })
+        .catch(next(error))
+}

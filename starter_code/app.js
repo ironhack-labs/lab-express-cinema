@@ -7,7 +7,7 @@ const path = require('path');
 
 const homeRouter = require('./routes/home.routes');
 const moviesRouter = require('./routes/movies.routes');
-// const Movie =  require('./models/movie.model');
+
 
 require('./configs/db.config');
 
@@ -23,15 +23,6 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.use('/', homeRouter);
 app.use('/', moviesRouter);
 
-// app.get('/movies', (req, res, next) => {
-//     Movie.find()
-//         .then(movie => {
-//             res.render('movies/ff', {
-//                 movie
-//             });
-//         })
-//         .catch(error => console.info(`Error ${error}`))
-// })
 
 
 
