@@ -10,3 +10,14 @@ module.exports.list = (req, res, next) => {
       next(error);
     });
 }
+
+module.exports.show = (req, res, next) => {
+  const movieId = req.params.id;
+  MovieModel.findById(movieId)
+  .then(movie => {
+    res.render('movie', {movie})
+  })
+  .catch(error => {
+    next(error);
+  });
+}
