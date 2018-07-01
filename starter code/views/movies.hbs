@@ -1,0 +1,15 @@
+<main class="container">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+
+    <section class="row">
+        {{#each movies as |mv|}}
+            <article class="col-4 text-center mb-4">
+                <img src="{{mv.image}}" alt="">
+                <p>{{mv.title}}</p>
+                <a href="#">See more</a>
+            </article>
+        
+        {{/each}}
+    </section>
+</main>
