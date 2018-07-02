@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const MovieModel = require('../models/cinema.model');
 
 module.exports.list = (req, res, next) => {
-    MovieModel.find()
+  MovieModel.find()
     .then(movies => {
       res.render('movies', {movies} )
     })
@@ -14,10 +14,10 @@ module.exports.list = (req, res, next) => {
 module.exports.show = (req, res, next) => {
   const movieId = req.params.id;
   MovieModel.findById(movieId)
-  .then(movie => {
-    res.render('movie', {movie})
-  })
-  .catch(error => {
-    next(error);
-  });
+    .then(movie => {
+      res.render('movie', {movie})
+    })
+    .catch(error => {
+      next(error);
+    });
 }

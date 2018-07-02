@@ -35,4 +35,4 @@ const cinemaSchema = new mongoose.Schema({
 const CinemaConst = mongoose.model("CinemaBBDDCarpeta", cinemaSchema);
 // ("Cinema", cinemaSchema) Cinema es el nombre que recibirá documento BBDD
 
-module.export = CinemaConst;
+module.exports = CinemaConst;
