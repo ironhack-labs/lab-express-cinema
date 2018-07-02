@@ -1,9 +1,10 @@
+<main class="container">
 <section>
     <article class="row">
-        <div class="col-2">
-            <img src="{{movie.image}}" alt="">
+        <div class="col-3 pt-5">
+            <img class="cover" src="{{movie.image}}" alt="{{movie.title}}">
         </div>
-        <div class="col-10 pl-5">
+        <div class="col-9 pl-5">
             <a href="/movies">Go Back</a>
             <h2>{{movie.title}}</h2>
             <h4>Director: {{movie.director}}</h4>
@@ -19,7 +20,7 @@
                 <span>{{this}}</span> |
                 {{/each}}
             </p>
-            
         </div>
     </article>
 </section>
+</main>
