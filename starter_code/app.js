@@ -14,6 +14,8 @@ require('./configs/db.config');
 app.listen(PORT);
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json())
+app.use(express.urlencoded({extended : false}))
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -21,7 +23,7 @@ app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.use('/', homeRouter);
-app.use('/', moviesRouter);
+app.use('/movies', moviesRouter);
 
 
 

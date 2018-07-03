@@ -12,16 +12,17 @@ module.exports.list = (req, res, next) => {
 }
 
 module.exports.detail = (req, res, next) => {
-    const id = req.params._id;
-    Movie.findOne(req.params.id)
+    const id = req.params.id;
+
+    Movie.findById(id)
         .then(movie => {
-            if(movie) {
-                res.render('movies/moviesDetail', {
-                    movie
-                })
-            } else {
-                next(error);
-            }
+             if(movie) {
+                 res.render('movies/movieDetail', {
+                     movie
+                 })
+             } else {
+                next(createError(404, `Movie with id ${id} not found`));
+             }
             })
-        .catch(next(error))
+        .catch(error => next(error))
 }
