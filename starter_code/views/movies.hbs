@@ -1,0 +1,5 @@
+{{#each movies as |movie|}}
+    <img src="{{movie.image}}" alt="">
+    {{movie.title}}
+    <a href="/movies/{{movie._id}}">View more</a>
+{{/each}}
