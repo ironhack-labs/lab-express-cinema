@@ -12,7 +12,7 @@ const path         = require('path');
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/cinema', {useMongoClient: true})
+  .connect('mongodb://localhost/cinema-app', {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {
@@ -29,6 +29,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+hbs.registerPartials('views/partials');
 
 // Express View engine setup
 
@@ -53,7 +54,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 const movies = require('./routes/movies');
-app.use('/', movies);
+app.use('/movies', movies);
 
 
 module.exports = app;
