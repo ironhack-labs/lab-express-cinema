@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+#showtimes_list > li {
+  display: inline; }
+
+.back {
+  position: absolute;
+  width: 100vw;
+  height: 100vh; }
+
+.cinema {
+  position: relative;
+  margin-left: 60vw;
+  padding-top: 20vh;
+  color: white;
+  font-weight: bolder;
+  font-size: 7vw; }
+
+#checkMoviesBtn {
+  position: relative;
+  border-radius: 4vh;
+  width: 20vw;
+  margin-top: 5vh;
+  margin-left: 60vw;
+  color: darkcyan;
+  font-size: 1.5vw; }
+
+.titleMovies {
+  width: 95vw;
+  padding-top: 2vh;
+  padding-left: 2.5vw;
+  font-weight: bolder; }
+
+.show {
+  width: 100vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto; }
+
+.movieContainer {
+  width: 33vw;
+  text-align: center;
+  margin-top: 5vh; }
+
+/*# sourceMappingURL=style.css.map */
