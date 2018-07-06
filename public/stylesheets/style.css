@@ -24,6 +24,31 @@ h1 {
 .listMovies a {
   text-decoration: underline; }
 
+.singleMovieImg{
+  margin-top: 80px;
+}
+
+.singleMovieImg div figure{
+  display: inline-block;
+  text-align: center;
+}
+
+.movieDescription div{
+  display: inline-block;
+  vertical-align: top;  
+}
+
+.movieDescription div h2{
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.movieDescription div p{
+  font-size: 18px;
+  font-weight: 100;
+}
+
 figure.principal {
   margin: 0;
   background-image: url(/images/cinema.jpg);
