@@ -1,0 +1,105 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  margin:0;
+  padding:0;
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+section#indexContainer{
+  margin-right:0;
+  padding:0;
+  width: 100%;
+  height: 700px;
+  background-image: url("http://dof4zo1o53v4w.cloudfront.net/s3fs-public/styles/medium/public/blog/film.png?itok=jcx6BXyu");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+section#indexContainer h1{
+  margin-right:120px;
+  width:320px;
+  color: white;
+  font-size: 60px;
+  box-sizing: border-box;
+}
+section#indexContainer a{
+  margin-right:200px;
+  display: block;
+  font-size: 20px;
+  color: #00B7FF; 
+  text-decoration: none;
+  height: 50px;
+  width: 230px;
+  background-color: white;
+  border-radius: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* movies css */
+section#movieList{
+  margin:0;
+}
+
+section#movieList h1{
+  margin:0;
+  padding: 10px;
+}
+
+section#movieList h2{
+  margin:0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+div#seccionPelis{
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+  justify-content: space-between;
+}
+
+div#seccionPelis div{
+  margin: 40px 40px 0 40px;
+  text-align: center;
+}
+
+/* movie_details css */
+
+div#movieItemContainer{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div#movieItemContainer img{
+  margin: 0 50px 0 50px;
+}
+
+div#movieItemContainer div{
+  width: 700px;
+}
+
+ul#showtimes{
+  list-style: none;
+}
+ul#showtimes li{
+  float: left;
+}
