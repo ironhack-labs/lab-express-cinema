@@ -5,17 +5,8 @@
   </div>
   <h2>{{title}}</h2>
   <h3>{{director}}</h3>
-  <ul>
-    {{#each stars}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
+  <p>{{stars}}</p>
   <p>{{description}}</p>
-  <ul>
-    {{#each showtime}}
-    <li>{{this}}</li>
-    {{/each}}
-  </ul>
-  <a href="/themovie/{{id}}">See more</a>
+  <p>{{ showtime}}</p>
 {{/each}}
 </div>

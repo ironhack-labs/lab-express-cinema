@@ -23,7 +23,7 @@ router.get('/themovie/:id', (req, res) => {
   Movie.findById({_id: req.params.id})
   .then(movies => {
     console.log(movies)
-    res.render('themovie');
+    res.render('themovie',{movies});
   });
 });
 
