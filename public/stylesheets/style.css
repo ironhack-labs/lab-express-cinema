@@ -1,0 +1,71 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.popcorn-image img {
+  width: 100vw;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem; }
+
+h1 {
+  position: absolute;
+  color: white;
+  font-size: 110px;
+  width: 400px;
+  left: 52rem; }
+
+button {
+  padding: 18px 25px;
+  position: absolute;
+  top: 25rem;
+  left: 52rem;
+  font-size: 18px;
+  border-radius: 25px;
+  color: #00B7FF; }
+
+h3 {
+  margin-bottom: 3rem; }
+
+.movie-card-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  margin-left: 8rem; }
+
+.movieCard img {
+  width: 180px; }
+
+.movieCard {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.movie-link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.heading {
+  margin-left: 8rem; }
+
+.single-image {
+  width: 250px;
+  float: left;
+  margin-top: 10rem;
+  margin-left: 15rem; }
+
+.movie-info-column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  float: right;
+  margin-right: 20rem;
+  margin-top: 12rem; }
+
+.single-title {
+  font-weight: bold;
+  font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */

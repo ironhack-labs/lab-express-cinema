@@ -1,0 +1,17 @@
+
+<div class = "heading">
+<h2>Ironhack Cinema</h2>
+<h3>Click on the movie to check the Showtimes!</h3>
+</div>
+
+<div class = "movie-card-container">
+{{#each moviesArray}}
+
+<div class = "movie-link">
+{{>_chooseMovie}}
+
+ <a href="/movies/{{this._id}}">See Details</a>
+ </div>
+
+{{/each}}
+</div>
