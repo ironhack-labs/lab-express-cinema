@@ -5,7 +5,18 @@ body {
 a {
   color: #00B7FF; }
 
+.moviesFormat {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap; }
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 2%; }
+
 /*# sourceMappingURL=style.css.map */
-
-
-/* DO NOT WRITE ANYTHING IN HERE! IT WILL ONLY GET ERASED WHEN THIS RUNS and the SCSS is transpiled. */

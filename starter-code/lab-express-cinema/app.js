@@ -8,7 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const Movie        = require('./models/moviestuff.js')
 
 mongoose.Promise = Promise;
 mongoose
@@ -43,6 +43,35 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
+
+
+  app.get('/movies', (req, res, next)=>{
+    Movie.find()
+    .then((listOfMovies)=>{
+      res.render('movies',{moviesArray:listOfMovies});
+    })
+    .catch((err)=>{
+      res.send(err); //Unprofessional because it shows error to user, but will in testing phase 
+    })
+
+  })
+
+
+app.get('/movies/:id', (req, res, next)=>{
+  const theID = req.params.id
+
+  Movie.findById(theID)
+  .then((theMovie)=>{
+      res.render('singleMovie', {movie: theMovie})
+  })
+  .catch((err)=>{
+    res.send(err);
+  })
+});
+
+
+
+
 
 
 
