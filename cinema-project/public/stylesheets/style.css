@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.movieList {
+  display: flex;
+  padding: 20px;
+  padding-top: 5px;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.oneMovie {
+  display: flex;
+  flex-direction: row; }
+
+.oneMovie img {
+  padding-right: 40px; }
+
+.pad {
+  padding: 50px;
+  text-align: center; }
+
+.homePage {
+  background-image: url(/images/background_homepage.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0% auto;
+  text-align: center;
+  height: 600px; }
+
+.homePage h1 {
+  color: white;
+  font-size: 80px; }
+
+.align {
+  float: right;
+  padding-right: 40px; }
+
+.checkMovies {
+  background-color: white;
+  padding: 16px;
+  border-radius: 30px;
+  color: #00B7FF;
+  font-size: 20px; }
+
+.homePage a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
