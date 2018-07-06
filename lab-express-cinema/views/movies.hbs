@@ -1,0 +1,8 @@
+<div class="movie-container">
+    {{#each movieArray}}
+    <div class="movies">
+        {{>_moviePartials}}
+        <a href="/movies/movies/{{this._id}}">See More</a>
+    </div>
+    {{/each}}
+</div>
