@@ -1,0 +1,19 @@
+<h1>Single Movie</h1>
+    <div class="container">
+    {{#movie}}
+    <div class="row singleMovieImg">
+        <div class="col col-md-4">
+            <figure style="display:inline-block; text-align:center;">
+                <img src="{{this.image}}" alt="">
+            </figure>
+        </div>
+        <div class="col col-md-7 offset-1 movieDescription">
+            <div style="display: inline-block; width: 50%; vertical-align: top;">
+                <h2>{{this.title}}</h2>
+                <p>{{this.description}}</p>
+            </div>
+        </div>
+    </div>
+    {{/movie}} 
+    </div>       
+</div>
