@@ -5,44 +5,61 @@ body {
 a {
   color: #00B7FF; }
 
-h1{
+h1 {
   text-align: center;
   background: #32c3ff;
   color: white;
-  margin: 0;
-}
+  margin: 0; }
 
-.col{
-  margin-bottom: 80px;
-}
+.col {
+  margin-bottom: 80px; }
 
-.listMovies{
+.listMovies {
   margin-top: 30px;
-  text-align:center;
-}
+  text-align: center; }
 
 .listMovies img {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .listMovies a {
-  text-decoration: underline;
+  text-decoration: underline; }
+
+.singleMovieImg{
+  margin-top: 80px;
 }
 
+.singleMovieImg div figure{
+  display: inline-block;
+  text-align: center;
+}
+
+.movieDescription div{
+  display: inline-block;
+  vertical-align: top;  
+}
+
+.movieDescription div h2{
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.movieDescription div p{
+  font-size: 18px;
+  font-weight: 100;
+}
 
 figure.principal {
   margin: 0;
   background-image: url(/images/cinema.jpg);
   text-align: center;
   background-size: cover;
-  height: 500px;
-}
+  height: 500px; }
 
-figure.principal img{
-  width: 100%;
-}
+figure.principal img {
+  width: 100%; }
 
-figure.principal button{
+figure.principal button {
   background: #32c3ff;
   color: white;
   text-decoration: none;
@@ -50,15 +67,12 @@ figure.principal button{
   font-size: 17px;
   border-radius: 7px;
   margin-top: 230px;
-  border: 3px solid white;
-  
-}
+  border: 3px solid white; }
 
-figure.principal button a{
+figure.principal button a {
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

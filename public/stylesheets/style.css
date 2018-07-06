@@ -24,30 +24,25 @@ h1 {
 .listMovies a {
   text-decoration: underline; }
 
-.singleMovieImg{
-  margin-top: 80px;
-}
+.singleMovieImg {
+  margin-top: 80px; }
 
-.singleMovieImg div figure{
+.singleMovieImg div figure {
   display: inline-block;
-  text-align: center;
-}
+  text-align: center; }
 
-.movieDescription div{
+.movieDescription div {
   display: inline-block;
-  vertical-align: top;  
-}
+  vertical-align: top; }
 
-.movieDescription div h2{
+.movieDescription div h2 {
   font-size: 60px;
   text-align: left;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
-.movieDescription div p{
+.movieDescription div p {
   font-size: 18px;
-  font-weight: 100;
-}
+  font-weight: 100; }
 
 figure.principal {
   margin: 0;
@@ -73,6 +68,7 @@ figure.principal button a {
   color: white;
   text-decoration: none; }
 
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
