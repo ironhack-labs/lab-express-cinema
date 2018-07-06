@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: white; }
+
+
+.index{
+  background-image: url('https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png');
+  height: 100vh;
+  color: white;
+  text-align: center; 
+}  
+
+.index h1{
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.index a{
+  padding: 20px;
+  padding-top: 30px; 
+}
+
+.contenedor
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.otro{
+  text-align: center;
+  color: black;
+  padding: 20px
+}
+
+.otro p{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.otro a{
+  color: black;
+  
+}
+
+.conte{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jij{
+ float: right;
+ width: 500px;
+ height: 800px;
+ padding-left: 50px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
