@@ -1,0 +1,25 @@
+<hr>
+<div class="conte">
+  <div class="jijo">
+    <img src="{{movie.image}}" alt="imagen">
+  </div>
+        <div class="jij">
+        <h2>{{movie.title}}</h2>
+        <a href="/movies">Go back</a>
+        <h3>Director: {{movie.director}}</h3>
+
+
+        <h5>Stars</h5>
+
+        <ul>
+        {{#each movie.stars }}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+
+        <p>{{movie.description}}</p>
+
+        <h6>{{movie.showtimes}}</h6>
+      </div>
+      
+</div>
