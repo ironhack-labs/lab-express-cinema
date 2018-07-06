@@ -1,0 +1,11 @@
+<h1>Single Movie</h1>
+            {{#each movie}}
+                <figure style="display:inline-block; width: 40%; text-align:center;">
+                    <img src="{{this.image}}" alt="">
+                </figure>
+                <div style="display: inline-block; width: 50%; vertical-align: top;">
+                    <h2>{{this.title}}</h2>
+                    <p>{{this.description}}</p>
+                </div>
+            {{/each}}        
+    </div>
