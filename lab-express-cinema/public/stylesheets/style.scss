@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.gridcont{
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.lishowtime{
+ list-style: none;
+}
+.ulshow{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.cardcenter{
+  width: 40rem !important;
+  margin: 0 auto !important;
+}
+
+.bg-section{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/bg.jpg");
+  color: #ffffff;
+}
+.sty{
+  text-align: right;
+  padding-top: 158px;
+}
