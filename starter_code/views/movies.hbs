@@ -1,0 +1,29 @@
+<h3>Ironhack Cinema</h3>
+<h4>Click on the movie to check the showtimes!</h4>
+<div class="container">
+
+  {{#each movies}}
+
+    <div class="movie-card">
+  		<div class="movie-header" style="background: url('{{this.image}}');">
+  			<div class="header-icon-container">
+  				<a href="/movie-details/{{this._id}}">
+  					<i class="material-icons header-icon"></i>
+  				</a>
+  			</div>
+  		</div><!--movie-header-->
+  		<div class="movie-content">
+  			<div class="movie-content-header">
+  				<h5 class="movie-title">{{this.title}}</h5>
+  			</div>
+        <div class="container more">
+          <a href="/movie-details/{{this._id}}">
+  					<h5 class="movie-title">See more</h5>
+  				</a>
+        </div>
+  		</div><!--movie-content-->
+  	</div><!--movie-card-->
+
+  {{/each}}
+
+</div>
