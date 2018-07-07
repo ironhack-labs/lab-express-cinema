@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row d-flex flex-row">
+    <div class="col-3 d-flex flex-column justify-content-start align-items-center p-5 beer-card">
+      <img src="{{movie.image}}" />
+    </div>
+
+    <div class="col-9 d-flex flex-column justify-content-start align-items-left p-5 beer-card">
+    <h2>{{movie.title}}</h2>
+    <h4>Director: {{movie.director}}</h4>
+    <p>Stars</p>
+    <ul>
+      {{#each movie.stars}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+    <p>
+      {{movie.description}}
+    </p>
+    <p>
+      {{#each movie.showtimes}}
+      {{this}} |
+      {{/each}}
+    </p>
+  </div>
+</div>
+</div>
