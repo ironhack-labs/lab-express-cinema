@@ -1,10 +1,16 @@
+const mongoose = require('mongoose');
+const Movie = require('../models/movie.js');
+
+const dbName = 'ironhack-cinema-exercice';
+mongoose.connect(`mongodb://localhost/${dbName}`);
+
 const movies = [
   {
     title: 'A Wrinkle in Time',
     director: 'Ava DuVernay',
     stars: ['Storm Reid', 'Oprah Winfrey', 'Reese Witherspoon'],
     image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description: `Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.`,
+    description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
     showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
   },
   {
@@ -12,7 +18,7 @@ const movies = [
     director: 'Johannes Roberts',
     stars: ['Christina Hendricks', 'Bailee Madison', 'Martin Henderson'],
     image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1OTIwODgzMV5BMl5BanBnXkFtZTgwMzUyMDgzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description: `A family's road trip takes a dangerous turn when they arrive at a secluded mobile home park to stay with some relatives and find it mysteriously deserted. Under the cover of darkness, three masked psychopaths pay them a visit to test the family's every limit as they struggle to survive.`,
+    description: "A family's road trip takes a dangerous turn when they arrive at a secluded mobile home park to stay with some relatives and find it mysteriously deserted. Under the cover of darkness, three masked psychopaths pay them a visit to test the family's every limit as they struggle to survive.",
     showtimes: ['13:50', '16:20', '19:20', '22:10']
   },
   {
@@ -50,9 +56,9 @@ const movies = [
   {
     title: 'Black Panther',
     director: 'Ryan Coogler',
-    stars: ['Chadwick Boseman', 'Michael B. Jordan', `Lupita Nyong'o`],
+    stars: ['Chadwick Boseman', 'Michael B. Jordan', "Lupita Nyong'o"],
     image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description: `T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake.`,
+    description: "T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake.",
     showtimes: ['13:50', '16:20', '19:20', '22:10']
   },
   {
@@ -60,7 +66,16 @@ const movies = [
     director: 'Francis Lawrence',
     stars: ['Jennifer Lawrence', 'Joel Edgerton', 'Matthias Schoenaerts'],
     image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MDkxOTc4NDdeQTJeQWpwZ15BbWU4MDAxNzgyNTQz._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description: `Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.`,
+    description: "Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.",
     howtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
   }
 ];
+
+Movie.create(movies)
+  .then(() => { // when you finish the job do that
+    console.log(`Created ${movies.length} movies`);
+    mongoose.connection.close();
+  })
+  .catch((err) => {
+    throw (err);
+  });
