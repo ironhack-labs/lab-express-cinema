@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.index-container{
+  background-image: url('https://image.freepik.com/foto-gratis/cubo-de-palomitas-y-gafas-3d-en-el-cine_23-2147698960.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+h1{
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.btn{
+border-radius: 20px;
+padding: 20px;
+}
+a :link{
+  color: #679eb3;
+}
