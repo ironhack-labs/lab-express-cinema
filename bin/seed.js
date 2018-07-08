@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Movie = require('../models/movie.js');
+const Movie = require('../models/movie');
 
 const dbName = 'ironhack-cinema-exercice';
 mongoose.connect(`mongodb://localhost/${dbName}`);
