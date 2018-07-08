@@ -49,7 +49,7 @@ a {
   padding-top: 4%;
 }
 
-img {
+.each-movie-container img {
   width: 50%;
   margin: 0 auto;
 }
@@ -57,4 +57,17 @@ img {
 .details-container {
   display: flex;
   flex-direction: column;  
+  width: 60%;
+  margin-left: 5%;
 }
+
+.showtimes {
+  display: inline-block;
+}
+
+.ul-showtimes {
+  padding-left: 0;
+}
+ .img-details{
+   width: 20%;
+ }

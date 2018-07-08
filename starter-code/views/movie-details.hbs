@@ -1,18 +1,22 @@
-{{!-- <div class='movies-container'>
-  <img src='{{this.image}}'>
-  <div class='details-container'>
-    <span><a href='/movies'>Go back</a></span> --}}
-    <h2>{{this.director}}hello</h2>
-    {{!-- <h3>Director : {{this.director}}</h3>
-    <p><b>Stars</b></p>
-    <ul>
-      {{#each this.stars}}
-        <li>{{i}}</li>
-    </ul>
-    <p>{{this.description}}</p>
+<div class='main-container'>
+  <div class='movies-container'>  
+    <img class='img-details' src='{{movie.image}}'>
+    <div class='details-container'>
+      <span><a href='/movies'>Go back</a></span>
+      <h2>{{movie.title}}</h2>
+      <h3>Director : {{movie.director}}</h3>
+      <p><b>Stars</b></p>
+      <ul>
+        {{#each movie.stars}} {{!-- iterating over array!--}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{movie.description}}</p>
+      <ul class='ul-showtimes'>
+        {{#each movie.showtimes}}
+        <li class='showtimes'>{{this}} |</li>
+        {{/each}}
+      </ul>
+    </div>
   </div>
-
 </div>
-
-
-<h1>{{movie.title}}</h1> --}}
