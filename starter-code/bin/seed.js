@@ -1,5 +1,11 @@
 'use strict';
 
+const mongoose = require('mongoose');
+const Movie = require('../models/movie');
+
+const dbName = 'ironhack-cinema-db'; // We create an environmental variable;
+mongoose.connect(`mongodb://localhost/${dbName}`);
+
 const movies = [
   {
     title: 'A Wrinkle in Time',
@@ -66,3 +72,12 @@ const movies = [
     howtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
   }
 ];
+
+Movie.create(movies) // PROMISE
+  .then(() => {
+    console.log(`Created ${movies.length} books`);
+    mongoose.connection.close();
+  })
+  .catch((err) => {
+    throw (err);
+  });
