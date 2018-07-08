@@ -20,7 +20,7 @@ router.get('/:id', (req, res, next) => {
   const movieId = req.params.id; // Why params.id??????????????????
   Movie.findById(movieId)
     .then(movie => {
-      console.log(movie);
+      // console.log(movie);
       res.render('movie-details', {movie: movie});
     })
     .catch(error => {
