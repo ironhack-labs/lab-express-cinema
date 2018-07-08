@@ -53,3 +53,8 @@ img {
   width: 50%;
   margin: 0 auto;
 }
+
+.details-container {
+  display: flex;
+  flex-direction: column;  
+}
