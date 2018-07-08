@@ -1,0 +1,11 @@
+<div class="cards-container">
+  {{#each moviesArr}}
+        <div class="card" style="width: 12rem;">
+          <img class="card-img-top" src="{{this.image}}" alt="Movies image cap" height="200px">
+          <div class="card-body">
+            <p class="card-text" style="font-size: 1rem;">{{this.title}}</p>
+            <p><a href="movies/{{this.id}}" style="font-size: 0.8rem;">see more...</a></p>
+          </div>
+        </div >
+  {{/each}}
+</div>
