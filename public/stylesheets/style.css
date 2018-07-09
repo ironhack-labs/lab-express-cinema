@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a:visited{
+  color: blue;
+}
+
+#containerMov {
+  background-image: url("/images/indexBG.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  
+}
+#containerMov h1 {
+  font-size: 60px;
+  color: white;
+
+}
+#containerMov button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+
+}
+#containerMov a {
+  text-decoration: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
