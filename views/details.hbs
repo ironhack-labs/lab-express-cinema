@@ -1,0 +1,27 @@
+<h2>Movies Details</h2>
+
+
+
+<div class="media">
+     <img class="align-self-center mr-3" src="{{movie.image}}/120x200" alt="Generic placeholder image">
+     <div class="media-body">
+          <a href="/movies">Go Back</a>
+          <h3 class="mt-0">{{movie.title}}</h3>
+          <h5 class="mt-0">Director: {{movie.director}}</h5>
+          <ul>
+               {{#each movie.stars}}
+               <li>{{this}}</li>
+               {{/each}}
+          </ul>
+
+
+          <p>{{movie.description}}</p>
+
+          <ul >
+               {{#each movie.showtimes }}
+               <li class="horario">{{this}} |</li>
+               {{/each}}
+          </ul>
+
+     </div>
+</div>
