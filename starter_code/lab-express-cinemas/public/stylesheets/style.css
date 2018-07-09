@@ -1,0 +1,69 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px; }
+
+a {
+  color: #00B7FF;
+  text-decoration: underline; }
+
+.filmPoster {
+  width: 300px;
+  text-align: center; }
+
+.col {
+  margin-bottom: 30px; }
+
+h6 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px; }
+
+h2 {
+  font-weight: bold; }
+
+h5 {
+  margin-bottom: 50px; }
+
+h4 {
+  margin-top: 20px; }
+
+.landing {
+  background-image: url("../images/cinefondo1.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25vh 10vw 0 0; }
+
+.cajaTexto {
+  float: right; }
+
+h1 {
+  color: white;
+  font-size: 6rem; }
+
+.myButton {
+  background-color: white;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #00a1ff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none; }
+
+.myButton:hover {
+  background-color: #00a1ff;
+  color: white; }
+
+.myButton:active {
+  position: relative;
+  top: 1px; }
+
+.cualquiera {
+  padding: 40px 40px; }
+
+/*# sourceMappingURL=style.css.map */

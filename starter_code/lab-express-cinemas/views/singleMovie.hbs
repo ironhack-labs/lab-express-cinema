@@ -1,0 +1,26 @@
+<div class="cualquiera">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="{{movie.image}}" alt="">
+        </div>
+        <div class="col-sm-9">
+            <a href="/movies">Ver todas</a>
+            <h4>{{movie.title}}</h4>
+            <h6>Director: {{movie.director}}</h6>
+            <h6>Stars</h6>
+            <ul>
+                
+                {{#each movie.stars}}
+                <li> {{this}}</li> {{/each}}
+            </ul>
+            <p>{{movie.description}}</p>
+
+            {{#each movie.showtimes}} {{this}} | {{/each}}
+        
+        </div>
+    </div>
+</div>
+
+</div>
