@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.hero {
+  background: url("../images/hero.jpg") no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; }
+  .hero h1 {
+    font-size: 80px;
+    color: #FFF; }
+  .hero button {
+    background-color: #FFF;
+    padding: 5px 10px;
+    border-radius: 30px; }
+  .hero a {
+    color: blue;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
