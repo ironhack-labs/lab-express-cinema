@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../images/naom_578175e4d693a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+div > h1 {
+  font-size: 40px;
+  color: #fff; }
+
+a {
+  width: 65px;
+  height: 30px;
+  background-color: #fff;
+  color: #00B7FF;
+  padding: 10px;
+  border: #fff 1px solid;
+  border-radius: 30px;
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
