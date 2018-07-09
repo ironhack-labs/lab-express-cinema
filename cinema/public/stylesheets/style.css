@@ -1,0 +1,34 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.homepage-container {
+  background-image: url("/images/popcorn-movie.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.title-container {
+  width: 500px;
+  height: 400px; }
+
+.title-container h1 {
+  color: white;
+  font-size: 8em;
+  font-weight: bold; }
+
+.btn-movies {
+  font-size: 1.2em;
+  border-radius: 50px;
+  padding: 15px 45px;
+  color: #008bc2; }
+
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
