@@ -12,6 +12,8 @@ const path         = require('path');
 
 const Movie         = require ('./models/movie')
 
+// hbs.registerPartials (_dirname + 'views/partials')
+
 mongoose.Promise = Promise;
 mongoose
   .connect('mongodb://localhost/cinema-project', {useMongoClient: true})

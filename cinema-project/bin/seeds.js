@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/movie');
 
+// name of database
 dbName = 'cinema-project';
-
 mongoose.connect(`mongodb://localhost/${dbName}`)
+
 
 const movies = [
 
@@ -89,3 +90,12 @@ Movie.create(movies)
       console.log('error');
   })
 
+  // Movie.create(moviesArray)
+  // .then (movies=>{
+  //     movies.ofrEach(oneMOvie =>{
+  //         console.log('in DB', oneMovie.title);
+  //     })
+  //     // 
+  //     .catch (err => console.log ('Error while creating seeds:', err));
+  // })
+  

@@ -29,12 +29,11 @@ flex-direction: row;
   text-align: center;
 }
 .homePage {
+  align-content: center;
   background-image: url(/images/background_homepage.jpg);
-  align-items: center;
   background-repeat:no-repeat; 
   background-size: contain;
   margin: 0% auto;
-  text-align: center;
   height: 600px;
 
 }
@@ -47,7 +46,7 @@ flex-direction: row;
 
 .align {
   float: right;
-  padding-right:40px;
+  padding-right:50px;
 }
 
 .checkMovies{
@@ -57,6 +56,15 @@ flex-direction: row;
   color: #00B7FF;
   font-size: 20px;
 }
+
+.checkMovie{
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  color: #00B7FF;
+  font-size: 12px;
+}
+
 
 .homePage a {
   text-decoration: none;
