@@ -73,6 +73,6 @@ const movies = [
 
 Movie.create(movies, (err) => {
   if (err) { throw (err); }
-  console.log(`Created ${movies.length} books`);
+  console.log(`Created ${movies.length} movies!`);
   mongoose.connection.close();
 });
