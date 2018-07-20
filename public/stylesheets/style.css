@@ -12,18 +12,18 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.header {
+header {
   margin-top: 20em;
   text-align: center;
 }
-.header h1, .header h2 {
+header h1, header h2 {
   font-family: "Bangers", cursive;
   color: #FFF;
 }
-.header h1 {
+header h1 {
   font-size: 14em;
 }
-.header h2 {
+header h2 {
   font-size: 4em;
 }
 
@@ -41,6 +41,8 @@ body {
 .index-content .btn-pass {
   padding: 1em;
   margin-top: 2em;
+  background: #CCC;
+  color: #AAA;
 }
 .index-content .btn-showtimes {
   padding: 2em 6em;
@@ -61,6 +63,18 @@ body {
   margin-bottom: 1em;
 }
 
+.info-content {
+  padding: 8em 0;
+  background: #FFF;
+}
+.info-content .movie-image {
+  text-align: right;
+}
+.info-content ul {
+  list-style: none;
+  padding: 0;
+}
+
 footer {
   margin-top: 6em;
 }
@@ -78,7 +92,7 @@ footer .footer-content li {
 }
 
 @media (min-width: 768px) {
-  .header {
+  header {
     margin-top: 1em;
   }
 }

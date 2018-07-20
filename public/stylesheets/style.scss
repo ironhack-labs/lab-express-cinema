@@ -11,7 +11,7 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
 
 }
 
-.header {
+header {
   margin-top: 20em;
   text-align: center;
   h1, h2 {
@@ -39,6 +39,8 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
   .btn-pass {
     padding: 1em;
     margin-top: 2em;
+    background: #CCC;
+    color: #AAA;
   }
   .btn-showtimes {
     padding: 2em 6em;
@@ -60,6 +62,18 @@ background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, F
   }
 }
 
+.info-content {
+  padding: 8em 0;
+  background: #FFF;
+  .movie-image {
+    text-align: right;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
 footer {
   margin-top: 6em;
   .footer-content {
@@ -77,7 +91,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .header {
+  header {
     margin-top: 1em;
   }
 }
