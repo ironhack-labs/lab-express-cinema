@@ -1,0 +1,10 @@
+<!--layout.hbs-->
+<div class="movies container">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+    <ul class="movies-list row">
+        {{#each movies}}
+            <li class="col-sm-4">{{>movie}}</li>
+        {{/each}}
+    </ul>
+</div>

@@ -1,0 +1,143 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+/* index */
+.cinema
+{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/cinema.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'lucida sans';
+}
+.inner-cinema
+{
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  color: white;
+}
+.inner-cinema h1
+{
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.inner-cinema button
+{
+  background-color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: turquoise;
+  border-radius: 30px;
+}
+/* list */
+.movies.container
+{
+  font-family: 'lucida sans';
+  padding: 100px 10px;
+}
+.movies.container>h1
+{
+  font-weight: bold;
+}
+.movies.container>h1, .movies.container>p
+{
+  margin-left: 60px;
+}
+.movies-list li
+{
+  list-style-type: none;
+  text-align: center;
+  margin: 40px 0;
+}
+.movies-list li h1
+{
+  font-size: 12px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.movies-list li a
+{
+  font-size: 10px;
+  text-decoration: underline;
+  color: #00B7FF;
+}
+/* detail */
+.movie-detail
+{
+  font-family: 'Lucida Sans';
+  padding: 40px 5px;
+}
+.movie-detail .image
+{
+  text-align: right;
+}
+.movie-detail .image img
+{
+  width: 70%;
+}
+
+.movie-detail .description
+{
+  padding-left: 60px;
+}
+.movie-detail .description a
+{
+  text-decoration: underline;
+  color: #00B7FF;
+}
+.movie-detail .description h1
+{
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.movie-detail .description h2
+{
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.movie-detail .description h3
+{
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.movie-detail .description ul
+{
+  margin-top: 25px;
+  list-style-position: inside;
+}
+.movie-detail .description p
+{
+  margin-top: 25px;
+}
+
+@media(max-width: 768px)
+{
+  .movie-detail .image
+  {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .movie-detail .image img
+  {
+    width: 50%;
+  }
+}
+@media (max-width: 1045px)
+{
+  .inner-cinema
+  {
+    width: 40%;
+    margin: auto;
+    position: static;
+    padding-top: 100px;
+  }
+}

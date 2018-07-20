@@ -1,0 +1,21 @@
+<!--layout.hbs-->
+<div class="movie-detail row">
+    <div class="image col-md-3">
+        <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div class="description col-md-9">
+        <a href="/movies">Go back</a>
+        <h1>{{title}}</h1>
+        <h2>{{director}}</h2>
+        <h3>Stars:</h3>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        {{#each showtimes}}
+            {{this}} |
+        {{/each}}
+    </div>
+</div>
