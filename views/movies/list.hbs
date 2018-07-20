@@ -1,5 +1,10 @@
-<ul>
+<div class="row">
+  <header class="col header">
+    <h2>Movies</h2>
+  </header>
+</div>
+<div class="row d-flex justify-content-around">
   {{#each movies}}
-    <li>{{ title }}</li>
+    {{> moviePartial}}
   {{/each}}
-</ul>
+</div>
