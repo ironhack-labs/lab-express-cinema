@@ -1,0 +1,29 @@
+{{#each movie}}
+  <div class="row">
+    <header class="col header">
+      <h2>{{this.title}}</h2>
+    </header>
+  </div>
+  <div class="row info-content">
+    <div class="col movie-image">
+      <img src={{{this.image}}}>
+    </div>
+    <div class="col">
+      <h5><b>Director:</b> {{this.director}}</h5>
+      <p><b>Starring:</b></p>
+      <ul>
+          {{#each this.stars}}
+            <li>{{this}}</li>
+          {{/each}}
+      </ul>
+      <p><b>Description:</b> {{this.description}}</p>
+      <p><b>Showtimes:</b></p>
+      <ul>
+        {{#each this.showtimes}}
+          {{this}}
+        {{/each}}
+      </ul>
+      <a href="./"><button class="btn btn-danger">Back to movies</button></a>
+    </div>
+  </div>
+{{/each}}
