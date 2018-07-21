@@ -7,7 +7,7 @@ const movieSchema=new Schema({
     stars: [String],
     image: String,
     description: String,
-    howtimes: [String]
+    showtimes: [String]
   }
 )
 
