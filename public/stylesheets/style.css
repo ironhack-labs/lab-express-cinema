@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  width: 730px;
+  margin: 0 auto;
+}
+
+.movie-front {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 20px;
+}
