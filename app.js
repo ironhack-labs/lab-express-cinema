@@ -5,8 +5,15 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
-const dbName = 'movies';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+const dbTitle = 'movies';
+let urlConnect=`mongodb://localhost/${dbTitle}`
+mongoose.connect(urlConnect,)
+.then(()=>{
+  console.log(`database ${dbTitle} ready for connections`) 
+})
+.catch((error)=>{
+  next (error)
+})
 
 const indexRouter = require('./routes/index');
 const moviesRouter = require('./routes/movies');

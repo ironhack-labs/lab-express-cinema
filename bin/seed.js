@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const Movie = require('../models/movie');
 
 const dbTitle = 'movies';
-mongoose.connect(`mongodb://localhost/${dbTitle}`);
+const urlConnect=`mongodb://localhost/${dbTitle}`
+mongoose.connect(urlConnect,{ useNewUrlParser: true });
 
 Movie.collection.drop();
 
