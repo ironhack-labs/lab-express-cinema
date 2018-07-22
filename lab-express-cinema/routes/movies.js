@@ -13,4 +13,17 @@ router.get('/', (req, res, next) => {
   })
 });
 
+router.get('/:id', (req, res, next) => {
+  //NO FUNCIONO :'(
+  console.log('FUNCIONO')
+  const movieId = req.params.id
+  Movie.findById(movieId)
+  .then((movie) => {
+    res.render('detail', { movie })
+  })
+  .catch((err) => {
+    next(err)
+  })
+})
+
 module.exports = router;

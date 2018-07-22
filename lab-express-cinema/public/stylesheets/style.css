@@ -38,20 +38,16 @@ body {
   text-decoration: none;
 }
 
-.card {
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: darkgrey;
 }
 
 .col {
   display: flex;
+  background-color: lightblue;
   flex-direction: column;
   width: 25%;
-  padding: 2%;
-}
-
-.col img {
-  width: 50%;
+  padding: 2%
 }

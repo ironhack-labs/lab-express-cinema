@@ -1,0 +1,21 @@
+<!-- layout.hbs -->
+<div class="main-container row">
+  <img src="{{movie.image}}" class="info-img">
+  <div class="info-container">
+    <span><a href='/movies'>Go back</a></span>
+    <h3>{{movie.title}}</h3>
+    <h5>Director: {{movie.director}}</h5>
+    <p>Stars:</p>
+    <ul>
+      {{#each movie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <ul class="showtimes-list">
+      {{#each movie.showtimes}}
+      <li class="showtime-item">{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
