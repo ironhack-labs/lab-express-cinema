@@ -1,1 +1,10 @@
-<!-- layout.hbs -->∫
+<!-- layout.hbs -->
+{{#each movies}}
+<div class="card">
+  <div class="col">
+    <img src={{{image}}}>
+    <h5>{{{title}}}</h5>
+    <a href="./{{id}}">Check info</a>
+  </div>
+</div>
+{{/each}}

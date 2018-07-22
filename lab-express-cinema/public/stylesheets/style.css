@@ -15,9 +15,14 @@ body {
   height: 100%;
 }
 
-.home-content h1{
+.home-content h1 {
   font-size: 80px;
-  color: white
+  color: white;
+  padding-bottom: 2%;
+}
+
+.home-content div {
+  margin: 10% 10% 0 60%;
 }
 
 .home-btn {
@@ -25,4 +30,28 @@ body {
   border-radius: 40px;
   font-size: 20px;
   color: rgb(0, 174, 255);
+  display: flex;
+  align-items: center;
+}
+
+.home-btn a {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: darkgrey;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 2%;
+}
+
+.col img {
+  width: 50%;
 }
