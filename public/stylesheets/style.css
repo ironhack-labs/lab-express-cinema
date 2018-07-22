@@ -1,0 +1,90 @@
+* {
+  /* border: #00B7FF dashed 1pt */
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.background {
+  background-image: url("../images/noche-de-serie-y-palomitas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: right;
+  align-items: center;
+}
+
+div.sidebar {
+  width: 400px;
+  margin: 100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+}
+
+button.btn {
+  color: rgb(33, 102, 130);
+  border-radius: 25px;
+  font-size: 22px;
+  padding: 10px 15px;
+}
+
+/* MOVIES LIST*/
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: first baseline;
+  text-align: center;
+}
+
+div.banner {
+  width: 200px;
+  margin: 5px;
+}
+
+/* MOVIES DETAIL */
+
+div.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: solid 1px darkgrey;
+}
+
+div.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+div.card {
+  width: 50%;
+  margin: 15px;
+}
+
+ul.showtimes {
+  display: -webkit-inline-flex;
+  justify-content: center;
+  list-style: none;
+}
