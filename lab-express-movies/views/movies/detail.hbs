@@ -1,0 +1,15 @@
+<a href="#"> Go back </a>
+<img src="{{ image }}">
+<h3>{{ title }}</h3>
+<p>{{ director }} </p>
+<ul>
+    {{#each stars}}
+        <li> {{ this }}</li>
+    {{/each}}
+</ul>
+<p>{{ description }}</p>
+<p>
+    {{#each showtimes}}
+        <li>{{ this }}</li>
+    {{/each}}
+</p>
