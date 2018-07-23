@@ -1,0 +1,20 @@
+<h2>Edit</h2>
+<form action="/movies/{{id}}/edit" method="post">
+    <label for="">Title:</label>
+    <input type="text" name="title" value="{{title}}">
+
+    <label for="">Director:</label>
+    <input type="text" name="director" value="{{director}}">
+    
+    <input type="hidden" name="stars">
+
+    <label for="">Image (url):</label>
+    <input type="text" name="image" value="{{image}}">
+
+    <label for="">Description:</label>
+    <input type="text" name="description" value="{{description}}">
+
+    <input type="hidden" name="showtimes">
+
+    <button type="submit">Update</button>
+</form>
