@@ -71,8 +71,8 @@ const movies = [
   },
 ];
 
-// Movie.create(movies, (err) => {
-//   if(err) { throw (err); }
-//   console.log(`Create ${movies.length} movies.`)
-//   mongoose.conection.close()
-// })
+Movie.create(movies, (err) => {
+  if(err) { throw (err); }
+  console.log(`Create ${movies.length} movies.`)
+  mongoose.connection.close()
+})
