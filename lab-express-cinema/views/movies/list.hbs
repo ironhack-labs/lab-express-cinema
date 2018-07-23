@@ -1,10 +1,16 @@
 <section class="movie-list">
   <div class="container">
+    <div class="row">
+      <div class="col mb-4">
+        <h2>Ironhack Cinema</h2>
+        <p><strong>Click on the movie to check the showtimes!</strong></p>
+      </div>
+    </div>
     <div class="row align-items-center">
       {{#each movies}}
-      <div class="col-md-4 col-sm-6 text-center">
+      <div class="col-md-4 col-sm-6 text-center movie">
         <img class="img-fluid" src="{{this.image}}" alt="{{this.title}}">
-        <h2>{{title}}</h2>
+        <h3>{{title}}</h3>
         <a href="/movies/{{this.id}}">See more</a>
       </div>
 
