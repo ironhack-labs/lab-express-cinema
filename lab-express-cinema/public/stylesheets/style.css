@@ -1,0 +1,37 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 200 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background:url('../images/bgtile.png');
+  background-repeat: repeat-x;
+  color: #1A1A1A;
+}
+h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+h2{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+h3{
+  font-size: 1rem;
+}
+h4{
+  font-size: .9rem;
+}
+
+.movie-list, .single-movie{
+  padding: 50px 0;
+}
+
+ul{
+  padding-left:20px;
+}

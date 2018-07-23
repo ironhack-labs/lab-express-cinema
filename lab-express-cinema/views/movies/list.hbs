@@ -1,0 +1,16 @@
+<section class="movie-list">
+  <div class="container">
+    <div class="row align-items-center">
+      {{#each movies}}
+      <div class="col-md-4 col-sm-6 text-center">
+        <img class="img-fluid" src="{{this.image}}" alt="{{this.title}}">
+        <h2>{{title}}</h2>
+        <a href="/movies/{{this.id}}">See more</a>
+      </div>
+
+  {{/each}}
+    </div>
+  </div>
+</section>
+
+
