@@ -1,6 +1,18 @@
-    <h3>{{this.title}}</h3>
-    <img src="{{this.image}}" alt="">
-
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, quasi. Eius, animi aliquam laudantium beatae nihil suscipit rerum earum magni non sunt eos natus iste laboriosam culpa nisi ea nostrum!</p>
-    
-    
+<a href="/movies">Go back</a>
+<h2>{{this.title}}</h2>
+<h3>{{this.director}}</h3>
+<p>Stars</p>
+<div>
+    <ul>
+    {{#each stars}}
+        <li>{{this}}</li>
+    {{/each}}
+    </ul>
+</div>
+<img src="{{this.image}}" alt="">
+<p>{{this.description}}</p>
+{{#each showtimes}}
+    <span>| {{this}}</span>
+{{/each}}
+<a href="/movies/{{id}}/delete">Delete</a>
+<a href="/movies/{{id}}/update">Update</a>

@@ -4,10 +4,10 @@ const Schema   = mongoose.Schema;
 const movieSchema = new Schema({
     title : String,
     director: String,
-    string  : Number,
+    stars  : Array,
     image : String,
-    descrition : String,
-    showtimes : String
+    description : String,
+    showtimes : Array
   });
   
 const Movie = mongoose.model('Movie', movieSchema);
