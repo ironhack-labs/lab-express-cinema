@@ -54,7 +54,7 @@ router.get('/:id/edit', (req, res, next) => {
 router.post('/:id/edit', (req, res, next) => {
     const {id} = req.params;
     const {title, director, stars, image, description, showtimes} = req.body;
-    Movie.create({title, director, stars, image, description, showtimes})
+    Movie.findByIdAndUpdate(id, {title, director, stars, image, description, showtimes})
         .then(() => {
             res.redirect(`/movies/${id}`);
         })

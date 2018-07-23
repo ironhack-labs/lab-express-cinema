@@ -71,7 +71,7 @@ const movies = [
 ];
 
 Movie.create(movies)
-    .then(data => {
+    .then(() => {
         console.log('ok');
         mongoose.connection.close();
     })
