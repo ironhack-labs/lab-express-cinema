@@ -1,14 +1,18 @@
 <!--layout.hbs-->
 <div class="movie-list-div">
   <ul>
+    <li class="movie-list"> 
     {{#each movies}}
-      <li class="movie-list"> 
-        <ul class= "movie-item">
+     <div  class= "movie-item">
+       <div>
           <img src="{{image}}" alt="movie-image" />
-          {{ title }}
-          <a href="/">See more</a>
-        </ul>
-      </li>
+        </div>
+        <div>
+          {{ title }} <br>
+          <a href='movies/{{id}}'>See more</a>
+        </div>
+      </div>
     {{/each}}
+     </li>
   </ul> 
 </div>

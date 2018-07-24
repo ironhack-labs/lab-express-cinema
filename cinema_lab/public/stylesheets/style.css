@@ -48,11 +48,25 @@ a {
 }
 .movie-list {
   list-style: none;
-  
-}
-.movie-item {
-  display: inline;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.movie-item {
+flex-direction: row;
+flex-wrap: wrap;
+padding: 70px;
 
+}
+
+.ficha {
+  background-color: whitesmoke;
+  display: flex;
+  padding: 70px;
+}
+.info {
+  padding: 30px;
+}
+.title {
+  color: white;
 }
