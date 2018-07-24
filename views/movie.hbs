@@ -1,2 +1,29 @@
-<p>Movie info!!</p>
-{{title}}
+<div class="movie-showcase">
+  <div class="poster">
+    <img src="{{ image }}" alt="{{ title }} poster"/>
+  </div>
+  <div class="movie-info">
+    <a href="/movies">Go back</a>
+      <h1>{{ title }}</h1>
+      <h3>Director: {{ director }}</h3>
+      <h5>Stars</h5>
+      <ul class="stars">
+        {{#each stars}}
+        <li>
+          {{ this }}
+        </li>
+        {{/each}} 
+      </ul>
+      <p>
+        {{ description }}
+      </p>
+      <ul class="showtimes">
+        {{#each showtimes}}
+        <li>
+          {{ this }} | 
+        </li>
+        {{/each}}
+      </ul>
+
+  </div>
+</div>
