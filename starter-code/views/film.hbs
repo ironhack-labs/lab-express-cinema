@@ -1,0 +1,9 @@
+<h1>{{data.title}}</h1>
+<h2>{{data.director}}</h2>
+<ul>
+    {{#each data.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<img src="{{data.image}}" alt="{{data.title}}">
+<p>{{data.description}}</p>

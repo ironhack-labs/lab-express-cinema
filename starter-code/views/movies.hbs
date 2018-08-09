@@ -1,0 +1,11 @@
+<h1>Welcome to this amazing cinema!</h1><br>
+<a href="/" class="url-btn">Back</a>
+<div class="list">
+    {{#each data}}
+        <div class="movie">
+            <img src="{{image}}" alt="" srcset="">
+            <h2>{{title}}</h2>
+            <a href="/movies/{{id}}" class="btn-more">Show More</a>
+        </div>
+    {{/each}}
+</div>
