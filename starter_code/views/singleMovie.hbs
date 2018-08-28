@@ -1,0 +1,28 @@
+<link rel='stylesheet' href='/stylesheets/styleSingle.css'/>
+
+  <div class="singleMovie"><img src="{{this.image}}">
+
+     <div class="textCont"> 
+
+       <a href="/movies">Go back</a>
+
+       <h1><b>{{this.title}}</b></h1>
+       <p> <b>Director: {{this.director}}</b></p>
+   
+          <ul class="stars"> 
+             <b>Stars:</b>
+               {{#each stars}}
+                 <li>{{this}}</li>
+               {{/each}}
+          </ul>
+    
+      <p>{{this.description}}</p>
+    
+         <ul class="showtimes">
+            {{#each showtimes}} 
+            <li>{{this}}</li> | 
+            {{/each}}
+         </ul>
+
+     </div>
+  </div>

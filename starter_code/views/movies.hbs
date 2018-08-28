@@ -1,0 +1,8 @@
+<link rel='stylesheet' href='stylesheets/movies.css' />
+  {{#each movies}}
+<div class="title"><img src="{{this.image}}">
+<p><b>{{this.title}}</b></p>
+<a href="/movies/{{this.id}}">See more</a>
+</div>
+{{/each}}
+
