@@ -1,0 +1,61 @@
+body,html {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  width:100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.fullscreen{
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size:cover;
+  display: inline-table;
+  width: 100%;
+}
+
+.fullscreen > div {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.fullscreen h1 {
+  color: #fff;
+  font-size: 5vw;
+  line-height: 8vh;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+}
+
+.fullscreen a {
+  background: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  margin: 20px 7px;
+  border-radius: 30px;
+  border-bottom: 2px solid #ddd;
+  font-size: 29px;
+  color: #585858;
+}
+
+.movie-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.movie-item p {
+  font-weight: bold;
+  padding: 10px 10px 0px 10px;
+  font-size: 14px;
+}
+
+.movie-item a {
+  color: rgb(70, 152, 240);
+  text-decoration: underline;
+} 
+
+.movie-detail , .movie-listing{
+  padding:40px;
+}
