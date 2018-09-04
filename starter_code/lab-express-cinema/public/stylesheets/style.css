@@ -1,0 +1,71 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+h1 {
+  font-size: 80px;
+  color: #fff; }
+
+h3 {
+  margin-bottom: 25px; }
+
+/*--------------------- Home Page -----------------------*/
+#home-section {
+  background: url("/images/pop-corn.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.home-text {
+  width: 600px;
+  padding-right: 100px; }
+
+.home-text a {
+  text-decoration: none;
+  background: #fff;
+  padding: 15px 35px;
+  border-radius: 30px; }
+
+/*--------------------- Movies Page -----------------------*/
+#movie-section {
+  text-align: center; }
+
+#movie-section ul {
+  margin-top: 35px; }
+
+#movie-section li {
+  display: inline-block;
+  width: 380px;
+  padding-top: 30px; }
+
+#movie-section a {
+  text-decoration: none;
+  color: #fff;
+  background: #3D6485;
+  padding: 7px 20px;
+  border-radius: 30px; }
+
+/*--------------------- Movie Details Page -----------------------*/
+#movie-details-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  width: 1060px; }
+
+.details-text {
+  padding: 0 50px; }
+
+.inline-list {
+  padding-left: 0; }
+
+.inline-list li {
+  display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
