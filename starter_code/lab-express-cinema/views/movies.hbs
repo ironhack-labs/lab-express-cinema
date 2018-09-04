@@ -1,0 +1,12 @@
+<ul>
+    {{#each movieArray}}
+    <li>
+        <img src="{{this.image}}" />
+        <p>{{this.title}}</p>
+        <a href="/movie/{{this._id}}"><button>See more</button></a>
+    </li>
+
+    {{else}}
+    <li>No movie yet...</li>
+    {{/each}}
+</ul>
