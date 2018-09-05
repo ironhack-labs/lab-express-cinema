@@ -1,0 +1,15 @@
+<div class="container">
+<h2>Ironhack Cinema</h2>
+<p>Click on the movie to see the showtimes</p>
+	<div class="row">
+	{{#each foundCollection}}
+	<div class="one-movie col-md-3">
+		<img src="{{this.image}}" alt="">
+		<p>{{this.title}}</p>
+		<button class="btn btn-outline-secondary">
+			<a href="/movie/{{this._id}}">See more</a>
+		</button>
+	</div>
+	{{/each}}
+	</div>
+</div>
