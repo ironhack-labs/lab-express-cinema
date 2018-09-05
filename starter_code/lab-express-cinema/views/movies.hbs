@@ -1,0 +1,15 @@
+<h2>Movies</h2>
+
+<ul>
+    {{#each moviesArray}}
+    <li>
+        <img src="{{this.image}}">
+        <p>{{this.title}}</p>
+
+        <a href="/one-movie/{{this._id}}">See Details</a>
+    </li>
+    {{else}}
+    <!-- with "#each"" the "else"" only shows if the array is empty -->
+    <li>No movies yet..</li>
+    {{/each}}
+</ul>
