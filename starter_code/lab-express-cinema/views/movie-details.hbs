@@ -1,0 +1,24 @@
+<div class="container">
+    <a href="/movies">Go Back</a>
+    <div class="row movie-details-row">
+        <div class="col-md-4">
+            <img src="{{foundMovie.image}}" alt="">
+        </div>
+        <div class="col-md-8">
+            <h2>{{foundMovie.title}}</h2>
+            <p>{{foundMovie.director}}</p>
+            <ul>
+                {{#each foundMovie.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{foundMovie.description}}</p>
+            {{#each foundMovie.showtimes}}
+            <span>
+                {{this}} |
+            </span>
+            {{/each}}
+        </div>
+    </div>
+    
+</div>
