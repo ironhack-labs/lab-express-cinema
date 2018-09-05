@@ -1,0 +1,16 @@
+<h2>IronHack Cinema</h2>
+
+<p>Click on the movies to check the showtimes</p>
+
+<ul>
+    {{#each movieArray}}
+        <li>
+            <img src="{{this.image}}">
+            <h3>{{this.title}}</h3>
+            <a href="/movies/{{this.id}}">See Details</a>
+        </li>
+    {{else}}
+    {{!-- with ""#each" the ""else" only shows if the array is empty --}}
+        <li>No movies yet...</li>
+    {{/each}}
+</ul>
