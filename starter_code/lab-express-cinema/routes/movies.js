@@ -4,16 +4,17 @@ const Movie = require('../models/Movie')
 
 
 /* GET movies page */
-router.get('/movies', (req, res, next) => {
 
-  Movie.find()
-  .then((theStuffWeGotBack)=>{
-    res.render('movies', {movies: theStuffWeGotBack});
-  })
+  router.get('/movies', (req, res, next) => {
+    Movie.find()
+      .then(movies => {
+        console.log("+++++++++++++++++++++++++++++++++++" + movies)
+        res.render('movies',{listOfMovies: movies});
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  });  
 
-  .catch((err)=>{
-  })
   
-});
-
 module.exports = router;
