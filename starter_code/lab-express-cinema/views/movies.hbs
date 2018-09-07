@@ -1,0 +1,11 @@
+<h1>hello world</h1>
+
+{{#each data}}
+<ul>
+  <li>   {{this.title}}  </li>
+  <img src="{{this.image}}" alt="">
+  <!-- <li>{{this._id}}</li> -->
+  <li>  <a href="/movies/{{this.id}}">check info</a>   </li>
+
+</ul>
+{{/each}}
