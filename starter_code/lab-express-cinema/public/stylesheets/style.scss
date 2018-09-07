@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.list-movies {
+  display: inline-block;
+  margin: 2%;
+}
+
+.cover-image {
+ width: 100vw;
+}
+.check-the-movies {
+  width: 300px;
+ position: absolute;
+ bottom: 40%;
+ right: 12%;
+}
