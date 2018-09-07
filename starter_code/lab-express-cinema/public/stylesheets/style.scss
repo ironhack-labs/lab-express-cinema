@@ -1,10 +1,10 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+    color: rgb(182, 0, 70);
+    text-decoration: none;
 }
 
 .list-movies {
@@ -16,8 +16,12 @@ a {
  width: 100vw;
 }
 .check-the-movies {
-  width: 300px;
- position: absolute;
- bottom: 40%;
- right: 12%;
+  background: rgb(228, 181, 181);
+  border-style: solid;
+  border-color: rgba(201, 76, 76, 0.3);
+  border-radius: 5px;
+  padding: 1vw;
+  position: absolute;
+  bottom: 40%;
+  right: 12%;
 }
