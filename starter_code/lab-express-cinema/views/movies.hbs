@@ -1,0 +1,9 @@
+<main class="movies-content">
+    <h3 class="movies-header">Ironhack Cinema</h3>
+    <p class="movies-info">Click on the movie to check the showtimes!</p>
+    <section class="movies">
+        {{#each movies}}
+            {{> Movie this}}
+        {{/each}}
+    </section>
+</main>
