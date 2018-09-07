@@ -1,0 +1,22 @@
+<h1>Details about: {{theMovie.title}}</h1>
+
+<div class="in-line">
+  <img class="imag" src="{{theMovie.image}}" alt="movie cover">
+</div>
+
+<div class="in-line">
+
+  <h2>Title: {{theMovie.title}}</h2>
+  <p>Staring: {{theMovie.stars}}</p>
+
+  <h3>By: {{theMovie.director}}</h3>
+
+
+  <p>{{theMovie.description}}</p>
+
+  <strong>Show times:</strong>
+  {{#each theMovie.showtimes}}
+    <li>{{this}}</li>
+
+  {{/each}}
+</div>
