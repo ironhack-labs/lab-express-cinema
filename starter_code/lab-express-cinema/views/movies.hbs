@@ -1,0 +1,20 @@
+
+<h1> here are the movies! </h1>
+<div class="container-fluid">
+  <div class="row">
+
+
+{{#each Movies}}
+<div class="col-md-4 poster-container">
+
+<img src={{this.image}}>
+<h1>
+  {{this.title}}
+</h1>
+
+<a href="/movies/{{this.id}}">See More!</a>
+
+</div>
+{{/each}}
+  </div>
+</div>
