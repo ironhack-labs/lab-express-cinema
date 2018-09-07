@@ -17,9 +17,21 @@ router.get('/movies', async function (req, res, next) {
   } else {
     res.status(404)
         .send("Something went wrong!");
-
   }
 
+});
+
+router.get('/movie/:id', async function (req, res, next) {
+    const movie = await Movie.findById(req.params.id);
+
+    if(movie) {
+        res.render('movieInfo', {
+            movie: movie
+        });
+    } else {
+        res.status(404)
+            .send("Something went wrong!");
+    }
 
 });
 
