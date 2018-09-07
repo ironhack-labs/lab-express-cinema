@@ -1,0 +1,48 @@
+{{!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+
+
+
+
+
+  
+</body>
+</html>
+ --}}
+
+
+<link rel="stylesheet" href="/stylesheets/style.css">
+
+<div class="the-movie">
+{{!-- {{#each theMovie}} --}}
+
+  <div>
+    <img src="{{theMovie.image}}" alt="">
+
+  </div>
+
+
+  <div class="movie-descr">
+    <h3>{{theMovie.title}}</h3>
+    <h4>Director:  {{theMovie.director}}</h4>
+
+    <ul> 
+      <h5>Stars:  </h5>
+    {{#each theMovie.stars}}
+          <li>{{this}}</li>
+    {{/each}}
+    </ul>
+
+    <p>{{theMovie.description}}</p>
+  </div>
+
+
+</div>
