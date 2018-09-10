@@ -1,0 +1,19 @@
+{{!-- 
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p> --}}
+
+<a href='/'>Main Page</a>
+<h1>click see more to get information</h1>
+
+
+{{#each moviesData}}
+
+<dive class="list-movies">
+  <p>{{this.title}}</p>
+  
+  <img src="{{this.image}}" alt="Movie Poster">
+  <br>
+  <a href="/moviesInfo/{{this._id}}">See More</a>
+</dive>
+
+{{/each}}
