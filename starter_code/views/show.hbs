@@ -1,0 +1,18 @@
+<div class="title-bar">
+    <h1>{{theMovie.title}}</h1>
+    <a href="/movies/">
+        <button type="button" class="btn btn-info">Back To Movie Directory</button>
+    </a>
+</div>
+<hr>
+<br>
+
+
+<div class="movie-row">
+    <img style="background-image" src="{{theMovie.image}}" class="movie-img" alt="">
+    <div class="movie-show-info">
+        <p><strong>Director: </strong>{{theMovie.director}}</p>
+        <p><strong>Stars: </strong>{{#each theMovie.stars}}<li>{{this}}</li>{{/each}}</p>
+        <p><strong>Description: </strong>{{theMovie.description}}</p>
+        <p><strong>Showtimes: </strong>{{theMovie.showtimes}}</p>
+    </div>

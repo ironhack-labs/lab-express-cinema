@@ -1,0 +1,26 @@
+<div class="title-bar">
+    <h1>LIST OF MOVIES</h1>
+    <a href="/">
+        <button type="button" class="btn btn-info">Back To Homepage</button>
+    </a>
+</div>
+<hr> {{#each theMovieList}}
+<div class="container">
+<div class="row movie-row">
+    <div class="col-md movie-profile">
+        <div class="movie-img-container">
+            <img style="background-image" src="{{this.image}}" class="movie-img" alt="">
+        </div>
+        <div class="movie-info">
+            <h3>{{this.title}}</h3>
+            <div class="buttons">
+                <a href="/movies/{{this._id}}">
+                    <button class="btn btn-primary">View Details</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{{/each}}
