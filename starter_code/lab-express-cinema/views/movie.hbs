@@ -1,0 +1,17 @@
+<div class="container margin-top">
+    <a href="/movies" class="btn btn-info">Go back</a>
+          {{#each movies}}
+          <div class="element-card img-size">
+          <img class="card-img-top" src="{{image}}"/>
+        <div class="element-caption text float-right">
+          <h4>{{title}}</h4>
+         {{#each stars}}
+         <ul>
+           <li>{{this}}</li>
+         </ul>
+           {{/each}}
+          <p>{{description}}</p>
+          <p>{{showtimes}}</p>
+        </div>
+    {{/each}}
+  </div>
