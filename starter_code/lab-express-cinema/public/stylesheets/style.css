@@ -27,8 +27,19 @@ a {
   .movieCard h3 {
     padding: 5px 0;
     text-align: center;
-    height: 40px;
-    vertical-align: middle; }
+    height: 40px; }
+
+.movieDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .movieDetail img {
+    display: block;
+    width: 350px;
+    padding-right: 40px; }
+  .movieDetail div {
+    display: flex;
+    flex-direction: column; }
 
 .myButton {
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;

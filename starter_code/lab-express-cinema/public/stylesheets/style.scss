@@ -35,6 +35,20 @@ a {
   }
 }
 
+.movieDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    display: block;
+    width: 350px;
+    padding-right: 40px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 .myButton {
