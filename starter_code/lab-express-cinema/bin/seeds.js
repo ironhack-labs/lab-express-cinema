@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 
-const dbName = 'express-cinema';
+const dbName = 'lab-express-cinema';
 mongoose.connect(`mongodb://localhost/${dbName}`)
 
 
@@ -78,5 +78,5 @@ const movies = [
   Movie.create(movies, (err) => {
       if (err) { throw(err) }
       console.log(`Created ${movies.length} movies`)
-      mongose.disconnect();
+      mongoose.disconnect();
   })
