@@ -87,4 +87,22 @@ a {
   margin-top: 40px;
   display: inline-block; }
 
+.container-movies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.movie-card {
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
 /*# sourceMappingURL=style.css.map */
