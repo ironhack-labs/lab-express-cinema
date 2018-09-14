@@ -64,6 +64,18 @@ app.get('/movies', (req, res, next) => {
 		})
 });
 
+app.get('/movie/:movieId', (req, res, next) => {
+	const movieId = req.params.movieId;
+	Movie.findById(movieId)
+		.then(movie => {
+			res.render('detail', {movie});
+		})
+		.catch(e => {
+			console.log('Something went wrong', e);
+		})
+});
+
+
 const index = require('./routes/index');
 app.use('/', index);
 
