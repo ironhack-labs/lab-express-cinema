@@ -57,6 +57,17 @@ app.get('/movies', (req, res, next) => {
     });
 });
 
+app.get('/movies/:movieId', (req, res, next) =>{
+  let movieId = req.params.movieId
+  Movie.findOne({ _id: movieId })
+  .then((obj) => {
+    console.log(obj);
+    res.render('displayMovie', {obj})
+  }).catch(e => {
+    console.log(e)
+  })
+});
+
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
