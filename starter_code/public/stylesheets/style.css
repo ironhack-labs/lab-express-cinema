@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+#fondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://hipertextual.com/files/2017/03/Captura-de-pantalla-2017-03-30-a-las-11.59.05.png");
+  background-size: cover; }
+
+.derecha {
+  text-align: center;
+  position: absolute;
+  left: 5vw;
+  top: 15vw; }
+
+.derecha h1 {
+  color: white;
+  font-size: 5vw; }
+
+.detail-container {
+  padding: 100px; }
+
+.detail-text {
+  padding: 10px; }
+
+#movie-img {
+  float: left;
+  margin-right: 60px; }
+
+.detail-text ul {
+  display: inline-block; }
+
+.showtimes p {
+  display: inline; }
+
+/*# sourceMappingURL=style.css.map */
