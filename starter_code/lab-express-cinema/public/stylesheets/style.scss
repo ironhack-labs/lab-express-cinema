@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.homePage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.title {
+  border: 1px solid red;
+  position: relative;
+  top: 300px;
+  left: 700px;
+  color: white;
+}
