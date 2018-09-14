@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
