@@ -1,0 +1,26 @@
+<div class="container">
+ <div class="row">
+   {{#each myId}}
+   <div class="col-md-4">
+     <div class="element-card">
+       <div class="img-box">
+         <img class="img-fluid text-center" src="{{this.image}}" />
+       </div>
+       <div class="element-caption text-center">
+         <h4 class="text-center">{{this.title}}</h4>
+         <h4 class="text-center">{{this.director}}</h4>
+         
+         <ul>
+             {{#each this.stars}}
+         <li>{{this}}</li>
+             {{/each}}
+         </ul>
+         <p>{{this.description}}</p>
+         <p>{{this.showtimes}}</p>
+       </div>
+     </div>
+   </div>
+   {{/each}}
+ </div>
+</div>
+<a href="/movies" class="btn btn-primary">GO back</a>
