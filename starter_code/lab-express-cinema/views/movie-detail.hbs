@@ -1,0 +1,25 @@
+<body>
+  <div class="padre">
+    <section class="img">
+      <img src="{{image}}" alt="{{title}}">
+    </section>
+    
+    <section class="desc">
+      <a href="/movies">Go back</a> <br>
+      <h3>{{title}}</h3>
+      <p><b>Director: </b>{{director}}</p>
+      <p><b>Stars:</b></p>
+      <ul>
+        {{#each stars as |star index|}}
+          <li> {{star}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <p>
+        {{#each showtimes as |st index|}}
+          {{st}}|
+        {{/each}}
+      </p>
+    </section>
+  </div>
+</body>
