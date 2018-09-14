@@ -1,3 +1,9 @@
+const Movie = require("../models/Movie.js");
+const mongoose = require("mongoose");
+
+
+mongoose.connect("mongodb://localhost/lab-express-cinema")
+
 const movies = [
   {
     title : "A Wrinkle in Time",
@@ -64,3 +70,9 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+Movie.collection.drop()
+Movie.create(movies)
+  .then(() => console.log("Movies collection seeded"))
+  .then(() => mongoose.disconnect())
+  .catch(err => console.log(err))
