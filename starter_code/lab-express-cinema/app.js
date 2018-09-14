@@ -8,6 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const Movie = require('./models/movies');
 
 
 mongoose
@@ -43,8 +44,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
+hbs.registerPartials(__dirname + '/views/partials');
 
 
+app.get('/movies', (req, res, next) => {
+  Movie.find({})
+    .then((data) => {
+      res.render('movies', {data});
+    })
+    .catch(e => {
+      console.log(e);
+    });
+});
 
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
