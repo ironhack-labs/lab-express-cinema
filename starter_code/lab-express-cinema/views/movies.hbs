@@ -1,0 +1,19 @@
+<h1>MOVIES</h1>
+<div class= 'container'>
+  <div class= 'row'>
+
+{{#each movies}}
+<div class='col-md-4'>
+
+  <img src="{{this.image}}" alt="" >
+  <h4>{{this.title}}</h4>
+  <a href="/detail/{{this.id}}">See more</a>
+  </div>
+  
+{{/each}}  
+</div>
+</div>
+
+
+
+
