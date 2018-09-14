@@ -70,8 +70,10 @@ const movies = [{
 	}
 ];
 
+Movie.collection.drop();
+
 Movie.create(movies, (err) => {
 	if (err) { throw(err) }
 	console.log(`Created ${movies.length} movies`)
 	mongoose.connection.close()
-  });
+});
