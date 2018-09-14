@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+const data = require('/public/data.js')
+
+
+mongoose.connect('mongodb://localhost/lab-express-cinema', { useNewUrlParser: true })
+.then(() => {
+    return movie.collection.drop();
+})
+.then(() => {
+    return Movie.insertMany(data);
+});
