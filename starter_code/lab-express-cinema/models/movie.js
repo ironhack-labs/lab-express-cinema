@@ -6,7 +6,7 @@ const movieSchema = new Schema({
   director: String,
   stars: [],
   image: [],
-  discription: String,
+  description: String,
   showtimes: []
 }, {
   timestamps: {

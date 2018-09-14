@@ -10,8 +10,18 @@ router.get('/', (req, res, next) => {
 router.get('/movies', (req, res, next) => {
   Movie.find()
     .then(movies => {
-      console.log(movies)
       res.render("movies", {movies});
+    })
+    .catch(error => {
+      console.log(error)
+    })
+});
+
+router.get('/movie/:id', (req, res, next) => {
+  let movieId = req.params.id;
+  Movie.findOne({'_id': movieId})
+    .then(movie => {
+      res.render("movie-detail", { movie })
     })
     .catch(error => {
       console.log(error)
