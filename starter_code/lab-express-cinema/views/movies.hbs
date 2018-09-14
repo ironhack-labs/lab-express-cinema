@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<p>Click on the movie to check the showtimes!</p>
+<div class="container">
+  {{#each movies}}
+    <div class="movieCard">
+      <img src="{{this.image}}" alt="" srcset="">
+      <h3>{{this.title}}</h3>
+      <a href="/movie/{{this._id}}" class="myButton">See more</a>
+    </div>
+  {{/each}}
+</div>
