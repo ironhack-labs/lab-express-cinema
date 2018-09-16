@@ -68,7 +68,8 @@ app.get('/movie/:movieId', (req, res, next) => {
 	const movieId = req.params.movieId;
 	Movie.findById(movieId)
 		.then(movie => {
-			res.render('detail', {movie});
+			const showtimesFormatted = movie.showtimes.split(",").join(" | ");
+			res.render('detail', {movie, showtimes: showtimesFormatted});
 		})
 		.catch(e => {
 			console.log('Something went wrong', e);

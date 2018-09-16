@@ -33,21 +33,39 @@
 
 .container-movies {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.container-detail {
+	margin: 60px 50px;
+	display: flex;
+}
+
+.description-detail{
+	padding-left: 50px;
 }
 
 .movie-card {
-	width: 25%;
-	padding-left: 15px;
-	padding-right: 15px;
-	box-sizing: border-box;
-	text-align: center;
-	margin-bottom: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 180px;
 }
 
 .movie-card img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 	display: block;
 }
+
+@media screen and (min-width: 768px) {
+	.movie-card {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+

@@ -56,20 +56,32 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF;
+  font-size: 0.875rem;
+  padding: 5px;
+  display: block; }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px; }
+  font-size: 1.375rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600; }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 15px; }
+
+h5 {
+  font-weight: 600;
+  margin-top: 15px;
   margin-bottom: 10px; }
 
 ul {
   list-style-type: disc;
   padding-left: 30px;
-  margin-bottom: 10px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 p {
   margin-bottom: 10px; }
@@ -106,19 +118,32 @@ p {
 .container-movies {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 100px; }
+
+.container-detail {
+  margin: 60px 50px;
+  display: flex; }
+
+.description-detail {
+  padding-left: 50px; }
 
 .movie-card {
-  width: 25%;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   box-sizing: border-box;
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 180px; }
 
 .movie-card img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block; }
+
+@media screen and (min-width: 768px) {
+  .movie-card {
+    margin-left: 5%;
+    margin-right: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
