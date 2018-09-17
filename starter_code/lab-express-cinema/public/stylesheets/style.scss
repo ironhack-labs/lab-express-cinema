@@ -1,3 +1,8 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
 .movies-index {
   background-image: url("/images/cinema.jpg");
   background-size: cover;
@@ -28,4 +33,19 @@
   margin-left: 54%;
   font-weight: bold;
   width: 10%;
+}
+
+.movies{
+  display: inline-block;
+  width: 28%;
+  margin-left: 4%;
+  margin-top: 5%;
+  color: white;
+  font-size: 27px;
+}
+
+.back-movies{
+  background-image: url("/images/why.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
