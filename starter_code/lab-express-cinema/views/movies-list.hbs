@@ -1,0 +1,18 @@
+  
+ <div class="container">
+   <a href="/">back</a>
+   <div class="row">
+      {{#each movies}}
+              <div class="col-mid-4">
+          <div class="card">
+            <img class="card-img-top" src="{{this.image}}" alt="">
+            <div class="card-body">
+          <a href="/movies/movie-detail/{{this._id}}" class="card-title">{{this.title}}</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+ </div>
+
+ 
