@@ -1,12 +1,31 @@
-.movies-index{
+.movies-index {
   background-image: url("/images/cinema.jpg");
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
 }
 
-.button-movies{
+.button-movies {
   position: absolute;
   background-color: white;
+  border-radius: 2em/2em;
+  width: 286px;
+  height: 51px;
+  text-align: center;
+  padding-top: 25px;
+  margin-left: 55%;
+  margin-top: 30%;
+  font-size: 29px;
+  text-decoration: none;
+}
+
+
+.title{
+  color: white;
+  font-size: 145px;
+  position: absolute;
+  margin-left: 54%;
+  font-weight: bold;
+  width: 10%;
 }

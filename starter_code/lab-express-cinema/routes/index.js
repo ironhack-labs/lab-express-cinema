@@ -25,5 +25,9 @@ router.get("/details/:id", (req, res) => {
     })
   
 });
+router.get('/back', (req, res, next) => {
+  res.redirect('/movies');
+});
+
 
 module.exports = router;
