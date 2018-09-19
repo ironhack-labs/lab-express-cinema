@@ -1,0 +1,22 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: max-content; }
+
+a {
+  color: #00B7FF; }
+
+.homePage {
+  height: 100vh;
+  /* background-color: aqua; */
+  background-image: url("/images/movie-picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+h1 {
+  color: white;
+  font-size: 60px; }
+
+/*# sourceMappingURL=style.css.map */
