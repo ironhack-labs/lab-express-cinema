@@ -1,0 +1,36 @@
+
+
+<div class="oneMovie">
+<div><img src="{{movie.image}}"></div>
+
+<div>
+
+<h1>{{movie.title}}</h1>
+<h4>Director: {{movie.director}}</h4>
+
+{{#each movie.stars}}
+    <li>{{this}}</li>
+{{/each}}
+
+<p>{{movie.description}}</p>
+
+<p>{{#each movie.showtimes}}
+|{{this}}|
+{{/each}}
+</p>
+
+
+
+<p><button onclick = "location.href='/movies/{{movie.id}}/editMovie'")> Edit This Movie </button></p>
+
+<form action="/movies/{{movie.id}}/delete" method="post">
+<button>Delete This Movie</button>
+</form>
+
+
+<p><button onclick="history.back()">Go Back</button></p>
+
+</div>
+
+</div>
+

@@ -1,0 +1,18 @@
+
+<h1>Ironhack Cinema</h1>
+<h3>Click on the movie to check the showtimes!</h3>
+
+<div class='movieList'>
+
+
+{{#each moviesArray}}
+<div class="pad">
+<p><img src="{{this.image}}"></p>
+<p><b>{{this.title}}</b></p>
+<p><a href="/movies/{{this._id}}">See More</a></p>
+</div>
+{{/each}}
+
+<div><button onclick="location.href='/movies/create'">Add new Movie</button></div>
+
+</div>

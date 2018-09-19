@@ -1,0 +1,25 @@
+
+<h1>{{moviezz.title}}</h1>
+
+<h2>Edit this Movie</h2>
+
+<form action="/movies/{{moviezz.id}}/update" method="post">
+
+<label>Title</label>
+<input type="text" name="title" value="{{moviezz.title}}">
+<br>
+
+ <label>Director</label>
+<input type="text" name="director" value="{{moviezz.director}}">
+<br> 
+
+<label>Description</label>
+<textarea name="description" cols="30" rows="10" >{{moviezz.description}}</textarea>
+<br>
+
+<label>Rating</label>
+<input type="number" name="rating" value="{{moviezz.rating}}">
+<br>  
+
+<button type="submit">Save Movie</button>
+</form>
