@@ -1,0 +1,26 @@
+<div class="container margin-top">
+  <a href="/movies" class="btn btn-link">Go back</a>
+    {{#each movies}}
+      <div class="element-card"> 
+          <img class="img-fluid" src="{{image}}" />  
+      <div class="element-caption text float-right">
+          <h4 class="font-weight-bold">{{title}}</h4>
+          <p class="font-weight-bold">{{director}}</p>
+          {{#each stars}}
+          <ul>
+            <li>{{this}}</li>
+          </ul>
+        {{/each}}
+          <p>{{description}}</p>
+          <p>{{showtimes}}</p>
+        </div>
+        {{/each}}
+    </div>  
+</div>
+
+
+
+
+
+
+

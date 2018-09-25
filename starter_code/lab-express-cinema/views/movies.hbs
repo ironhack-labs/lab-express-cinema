@@ -1,0 +1,24 @@
+
+
+<div class="container margin-top">
+  <div class="row color-border">
+    {{#each movies}}
+    <div class="col-md-4">
+      <div class="element-card">
+        <div class="img-box">
+          <img class="img-fluid" src="{{this.image}}" />
+        </div>
+        <div class="element-caption text-center">
+          <h4 class="text-center">{{this.title}}</h4>
+        <a href="/movies/{{id}}" class="btn btn-info">See More</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+{{!-- Al poner lo a href id, ese id es el que se crea automáticamente, y nos sirve de enlace para dar
+más información de las películas --}}
+
+
