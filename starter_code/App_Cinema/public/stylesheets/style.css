@@ -1,0 +1,84 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
+}
+.cinema{
+  float: right;
+  color: #ffffff;
+  width: 40%;
+  margin-top: -35px;
+}
+#titulo{
+  font-size: 115px;
+}
+#boton{
+  font-size: 28px;
+  border-radius: 50px;
+  color: #729cab;
+  padding: 15px 25px 15px 25px;
+  width: 55%;
+  margin-top: -40px;
+}
+.iron{
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+}
+.check{
+  text-align: center;
+  font-size: 28px;
+  color: red;
+  margin-bottom: 100px; 
+}
+#btn{
+  position: absolute;
+  font-size: 30px;
+  color: #00B7FF;
+  border-radius: 20px;
+  width: 15%;
+  top: 150px;
+}
+.movies{
+  float: left;
+  margin-right: 10%;
+  margin-bottom: 10%; 
+}
+strong{
+  color: #ffff;
+  font-size: 15px;
+}
+ul{
+  text-align: center;
+}
+li{
+  list-style-type: none;
+}
+.mov{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  height: 300px;
+}
+.informacion{
+  width: 45%;
+  color: #ffffff;
+  margin-left: 80px;
+}
+.stars{
+  text-align: start;
+}
+.stars li{
+  list-style-type: circle;
+}
+.mov button{
+  font-size: 20px;
+  color: #00B7FF;
+  border-radius: 20px;
+  width: 25%;
+}
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
