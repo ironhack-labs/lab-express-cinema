@@ -1,0 +1,21 @@
+  <h1 class="iron">{{title}}</h1>
+  <h2 class="check">Click on the movie to check the showtimes!</h2>
+  <form action="/">
+  <button id="btn" type="submit">Atras</button>
+  </form>
+  
+  {{#if movies}}
+  <ul>
+    {{#each movies as |movie|}}
+    <div class="movies">
+    <img src="{{image}}" alt="{{this.name}}">
+    <li>
+      <strong>{{movie.title}}</strong>
+      </li>
+      <li><a href="/movies/{{movie._id}}">See more</a></li>
+      </div>
+    {{/each}}
+  </ul>
+  {{else}}
+  <p>No hay Peliculas</p>
+  {{/if}}

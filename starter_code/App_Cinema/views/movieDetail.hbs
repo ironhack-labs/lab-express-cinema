@@ -1,0 +1,29 @@
+<div class="mov">
+<img src="{{movie.image}}" alt="{{this.name}}">
+
+<div class="informacion">
+
+<h1>{{header}}</h1>
+
+<h2>Director: {{movie.director}}</h2>
+
+<h3>Stars:</h3>
+
+<ul class="stars">
+  {{#each movie.stars}}
+  <li>{{this}}</li>
+  {{/each}}
+  </ul>
+
+<p>{{movie.description}}</p>
+
+<p>
+  {{movie.showtimes.[0]}} | {{movie.showtimes.[1]}} | {{movie.showtimes.[2]}} | {{movie.showtimes.[3]}}
+  </p>
+<form action="/movies">
+<button type="submit">Regresar</button>
+</form>
+
+</div>
+
+</div>
