@@ -1,0 +1,18 @@
+<h1>{{header}}</h1>
+<p>{{subtitle}}</p>
+
+<section id="movies-catalog">
+  {{#if movies}}
+    {{#each movies as |movie|}}
+      <div class="movie-card">
+        <a href="/movies/{{movie.id}}">
+          <img src="{{movie.image}}" alt="{{movie.title}} image">
+        </a>
+        <p>{{movie.title}}</p>
+        <a href="/movies/{{movie.id}}">See more</a>
+      </div>
+    {{/each}}
+  {{else}}
+    <p>Nothing to show</p>
+  {{/if}}
+</section>
