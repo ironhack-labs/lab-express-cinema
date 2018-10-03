@@ -1,0 +1,19 @@
+<h1>{{header}}</h1>
+<h3>{{subtitle}}</h3>
+{{#if movies}}
+
+{{#each movies as |movie|}}
+<div class="pelicula">
+  <img src="{{movie.image}}" alt="{{movie.title}}">
+  <h5>{{movie.title}}</h5>
+  <h5>
+    <a href="/movie/{{movie._id}}">See more</a>
+  </h5>
+</div>
+{{/each}}
+
+{{else}}
+
+<p>No existen peliculas</p>
+
+{{/if}}
