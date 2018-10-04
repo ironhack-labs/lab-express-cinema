@@ -1,0 +1,30 @@
+.movies-container {
+  padding: 2.5vh 4vw;
+}
+.movies-container h1 {
+  font-size: 2.45em;
+}
+.movies-container p {
+  font-size: 1.78em;
+  margin: 3.3vh 0 6vh;
+}
+.cards-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 3vw;
+}
+.movie-card {
+  text-align: center;
+  width: calc(100% / 3);
+}
+.movie-card img {
+  height: 30vh;
+}
+.movie-card h2 {
+  font-size: 1.7em;
+  margin: 2.3vh 0;
+}
+.movie-card a {
+  display: inline-block;
+  margin-bottom: 5.6vh;
+}

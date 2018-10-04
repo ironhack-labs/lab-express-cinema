@@ -1,0 +1,47 @@
+.details-container {
+  display: flex;
+  justify-content: center;
+  padding: calc(100vh / 4) 4vw;
+}
+.movie-img {
+  padding: 1.7vh 4.4vw;
+}
+.movie-img img {
+  height: 50vh;
+}
+.movie-info {
+  width: 50vw;
+}
+.movie-info h1 {
+  font-size: 4em;
+  margin: 2.2vh 0;
+}
+.movie-info h2 {
+  font-size: 2.5em;
+}
+.movie-info > ul {
+  list-style: none;
+}
+.movie-info li, .movie-info li h3, p {
+  font-size: 1.8rem;
+}
+.movie-info ul li h3 {
+  margin: 2vh 0;
+}
+.movie-info ul li ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.movie-info p {
+  margin: 1.7vh 0;
+}
+.showtimes {
+  display: flex;
+}
+.showtimes li {
+  border-right: 0.05vw solid #000;
+  padding: 0 1vw;
+}
+.showtimes li:first-child {
+  padding-left: 0;
+}
