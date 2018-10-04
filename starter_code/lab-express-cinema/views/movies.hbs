@@ -1,0 +1,12 @@
+<h2>{{header}}</h2>
+<h3>{{description}}</h3>
+
+{{#if movies}}
+    <div class="movies-container">
+        {{#each movies}}
+            {{> movieCard this}}
+        {{/each}}
+    </div>
+{{else}}
+    <p>No hay películas</p>
+{{/if}}
