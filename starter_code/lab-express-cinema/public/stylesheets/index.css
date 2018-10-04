@@ -1,0 +1,40 @@
+.index-container {
+  display: flex;
+  background: center top / cover no-repeat url('../images/cinema.jpg') #000;
+  height: 100vh;
+  width: 100%;
+}
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  height: 75vh;
+  margin-left: auto;
+  width: 40vw;
+}
+.text-wrapper h1 {
+  color: #fff;
+  font-size: 11em;
+  margin-bottom: 3vh;
+}
+.text-wrapper a {
+  background: #fff;
+  border-radius: 10vw;
+  box-shadow: 0.3vw 0.3vh 0.3vw #2d3f56;
+  color: #679dad;
+  font-size: 2.8em;
+  font-weight: 400;
+  padding: 2.8vh 3vw;
+  text-decoration: none;
+  
+}
+
+@media only screen and (max-width: 992px) {
+  .text-wrapper {
+    width: initial;
+  }
+  .text-wrapper {
+    margin: auto;
+  }
+}

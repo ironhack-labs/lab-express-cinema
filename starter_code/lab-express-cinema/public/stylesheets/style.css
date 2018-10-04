@@ -1,0 +1,20 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 1vh;
+  font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+  font-weight: 300;
+}
+img {
+  box-shadow: 0 0.3vh 0.5vw #ababab;
+  width: auto;
+}
+a {
+  color: #21b8fc;
+  font-size: 1.5em;
+  font-weight: bold;
+}
