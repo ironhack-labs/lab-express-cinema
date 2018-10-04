@@ -1,0 +1,23 @@
+<h1>MizGoose Cinema!</h1>
+<h2>Click on the movie to check the showtimes</h2>
+
+
+<ul>
+
+
+    {{#each movies as |movie|}}
+      <li class="li">
+        <img src="{{movie.image}}">
+        <h3>{{movie.title}}</h3>
+        </li>
+        <div class="button2">
+    <a href="/movies/{{movie._id}}"{{movie.title}} class="btnText">Más info?</a>
+    <div class="btnTwo">
+      <p class="btnText2">Vamos!</p>
+    </div>
+ </div>
+
+</div>
+    {{/each}}
+  
+</ul>
