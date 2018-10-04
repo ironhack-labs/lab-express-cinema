@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: #00b7ff;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  display: block;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+}
+
+.card > img {
+  padding: 20px;
+}
+
+.cinema{
+  font-size: 250%;
+  float: right;
+  color: #ffffff;
+  width: 40%;
+  margin-top: 100px; 
+}
+
+.movie-detail {
+  display: flex;
+  flex-direction: row;
+}
+.movie-image {
+  margin-right: 50px;
+}
+.content {
+  width: 45%
+}
+
+.home-link {
+  color: black;
+  text-decoration: none;
+}

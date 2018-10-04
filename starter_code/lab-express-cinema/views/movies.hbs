@@ -1,0 +1,15 @@
+<h1><a href="/" class="home-link">{{title}}</a> </h1>
+<h3>Click on the movie to check the showtimes!</h3>
+{{#if movies}}
+    <div class="container">
+        {{#each movies as |movie|}}
+            <div class="card">
+                <img src="{{movie.image}}" alt="">
+                <strong class="title">{{movie.title}}</strong>
+                <a href="/movies/{{movie._id}}">See more</a>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <p>Nope</p>
+{{/if}}
