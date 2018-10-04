@@ -7,9 +7,33 @@ a {
   color: #00b7ff;
 }
 
-#index-image {
+.image {
   background-image: url("/images/cinema.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 125px;
+  font-weight: bold;
+  float: right;
+  color: #ffffff;
+  width: 50%;
+  margin-top: 25px;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: #00b7ff;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 25px;
+  float: right;
+  position: relative;
+  top: 350px;
+  left: 215px;
 }
 
 .pelicula {
