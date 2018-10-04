@@ -1,0 +1,119 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.title {
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  margin-left: 700px; }
+
+.img-home {
+  background: url("/images/cinema.jpg") no-repeat center center;
+  background-size: cover;
+  height: 800px; }
+
+button {
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 300px;
+  background: #1a8eab;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none; }
+
+button:hover {
+  background: #fff;
+  color: #1a8eab; }
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1a8eab;
+  transition: 400ms ease all; }
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0; }
+
+button:hover:before, button:hover:after {
+  width: 100%;
+  transition: 800ms ease all; }
+
+li {
+  list-style: none; }
+
+/*# sourceMappingURL=style.css.map */
+/*#holder{
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background: white;
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+  border-radius: 2px;
+}*/
+.button2 {
+  background: #2d8bb6;
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.btnTwo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background: #2648a6;
+  left: -250px;
+  transition: .3s; }
+
+.btnText {
+  color: white;
+  transition: .3s; }
+
+.btnText2 {
+  margin-top: 63px;
+  margin-right: -130px;
+  color: #FFF; }
+
+.button2:hover .btnTwo {
+  /*When hovering over .button change .btnTwo*/
+  left: -130px; }
+
+.button2:hover .btnText {
+  /*When hovering over .button change .btnText*/
+  margin-left: 65px; }
+
+.button2:active {
+  /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3); }
+
+/*# sourceMappingURL=style.css.map */
