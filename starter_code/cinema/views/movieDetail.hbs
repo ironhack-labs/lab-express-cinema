@@ -1,0 +1,20 @@
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
+  <div class="uk-card-media-left uk-cover-container">
+    <img src="{{movie.image}}" alt="{{movie.title}} movie">
+  </div>
+  <div>
+    <div class="uk-card-body">
+      <a href="/movies">Go back</a>
+      <h1 class="uk-text-bold">{{movie.title}}</h1>
+      <h2>{{movie.director}}</h2>
+      <h3>Stars:</h3>
+      <ul class="uk-list uk-list-bullet">
+        {{#each movie.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{movie.description}}</p>
+      <p>{{#each movie.showtimes}} | {{this}} {{/each}}</p>
+    </div>
+  </div>
+</div>
