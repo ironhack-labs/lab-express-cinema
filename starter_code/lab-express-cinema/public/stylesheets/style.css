@@ -47,41 +47,67 @@ h2, h3 {
   width: 100%;
   height: 100%;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-image: url("../images/cinema.jpg");
   background-size: cover;
+  padding: 5%;
 }
 
 #main-title {
-  position: absolute;
-  top: 2%;
-  right: 8%;
   color: #F4FAFF;
-  font-size: 6em;
+  font-size: 4em;
+  text-shadow: 2px 2px black;
+  margin-bottom: 10%;
 }
 
 #main-btn {
-  position: absolute;
-  bottom: 42%;
-  right: 25.5%;
   color: #48768D;
-  font-size: 1.2em;
   text-decoration: none;
   background-color: #F4FAFF;
-  padding: 1% 2.5%;
+  padding: 2% 4%;
   border-radius: 20px;
+}
+
+@media (min-width: 1024px) {
+  #welcome-section {
+    justify-content: flex-end;
+    align-items: baseline;
+    text-align: left;
+    padding-right: 10%;
+    padding-top: 6%;
+  }
+
+  #main-title {
+    text-shadow: none;
+    font-size: 5em;
+    margin-top: 2%;
+  }
+
+  #main-btn {
+    font-size: 1.2em;
+    padding: 3% 5%;
+  }
+
+}
+
+@media (min-width: 1339px) {
+
+  #main-title {
+    font-size: 6em;
+    margin-top: 2%;
+  }
 }
 
 /* --------------- Movies Page ----------------------- */
 
-#movie-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .movie-container {
-  width: 33.3%;
+  width: 100%;
   text-align: center;
   padding: 2% 0%;
+  margin-bottom: 15%;
 }
 
 .movie-link {
@@ -90,14 +116,33 @@ h2, h3 {
   font-weight: 700;
 }
 
-/* --------------- Movie-info Page ----------------------- */
+@media (min-width: 768px) {
+  #movie-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-#movie-info-container {
-  display: flex;
+  .movie-container {
+    width: 33.3%;
+    margin-bottom: 0%;
+  }
+}
+
+@media (min-width: 1339px) {
+
+  .movie-container {
+    width: 25%;
+  }
+}
+
+/* --------------- Movie-info Page ----------------------- */
+#img-info-container {
+  text-align: center;
 }
 
 #info-container {
   padding-top: 2%;
+  padding-left: 4%;
 }
 
 #movie-director {
@@ -110,5 +155,15 @@ h2, h3 {
 
 #movie-description {
   text-align: justify;
-  width: 85%;
+  width: 95%;
+}
+
+@media (min-width: 1024px) {
+  #movie-info-container {
+    display: flex;
+  }
+
+  #movie-description {
+    width: 85%;
+  }
 }
