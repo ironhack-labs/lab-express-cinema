@@ -1,16 +1,23 @@
-<section class="movies">
+<section id="movies-list">
+  
+  <div class="movies-list-intro">
 
-  <h2>Ironhack Cinema</>
+    <h2 class="intro-title">Ironhack Cinema</>
 
-  <h3>Click on the movie to check the showtimes</h3>
+    <p class="intro-text">Click on the movie to check the showtimes</p>
+  
+  </div>
+
+  <div class="movies-list-container">
+    
+    <% movies.forEach(movie => {%>
+    <article class="movie-intro">
+      <img class="movie-poster" src="<%= movie.image %>" alt="film poster">
+      <h4 class="movie-title"><%= movie.title %></h4>
+      <a class="see-more" href="/movies/<%= movie._id %>">See more</a>
+    </article>
+    <% }) %>
  
-  <% movies.forEach(movie => {%>
-  <article class="movie">
-    <img src="<%= movie.image %>" alt="film image">
-    <p class="film-title"><% movie.title %></p>
-    <p><a href="/movies/<%= movie._id %>">See more</a></p>
-  </article>
-  <% }) %>
- 
+  </div>
 
 </section>
