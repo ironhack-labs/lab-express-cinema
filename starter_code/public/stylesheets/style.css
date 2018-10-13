@@ -42,8 +42,12 @@ section#home {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
   position: fixed;
+}
+div.container {
   display: flex;
   flex-direction: column;
+  float: right;
+  padding-right: 10%;
 }
 
 .link-btn {
