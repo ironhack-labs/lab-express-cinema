@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.uk-heading-hero {
+  color: #FFF; }
+
+a.uk-button-default {
+  color: #689FB0; }
+
+h1 {
+  position: absolute;
+  bottom: 300px;
+  right: 50px; }
+
+.uk-button-default {
+  border-color: #FFF;
+  position: absolute;
+  bottom: 250px;
+  right: 50px; }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+.uk-grid > * > :last-child  {
+  height: 100% !important; }
+
+.background-img {
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; }
+
+/*# sourceMappingURL=style.css.map */
