@@ -1,8 +1,12 @@
 <body>
   <h1>Malditas Películas</h1>
-  <ul>
-  <% movies.forEach((movie) => { %>
-    <li> <%= movie.title %> </li>
-  <% }) %>
-  </ul>
+  <div class = collection-container>
+    <% movies.forEach((movie) => { %>
+      <div class = movie-container>
+        <img src=" <%= movie.image %> " alt="<%= movie.title %> cover">
+        <p> <%= movie.title %> </p>
+        <a href= /movies/<%= movie._id %> >See More...</a>
+      </div>
+    <% }) %>
+  </div>
 </body>

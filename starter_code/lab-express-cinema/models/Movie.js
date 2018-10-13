@@ -11,7 +11,19 @@ const movieSchema = new Schema ({
   showtimes: Array
 })
 
-const Movie = mongoose.model('Movie', movieSchema)          // Creamos el modelo
+const Movie = mongoose.model('Movie', movieSchema) // Creamos el modelo
+
+mongoose.connect('mongodb://localhost/movieApp', {
+  keepAlive: true,
+  useNewUrlParser: true,
+  reconnectTries: Number.MAX_VALUE
+})
+  .then(() => {
+    console.log('Connected to Mongo from AppJs!');
+  }).catch(err => {
+    console.error('Error connecting to mongo', err);
+  });
+
 
 Movie.remove()
   .then(()=>{
@@ -26,10 +38,12 @@ Movie.remove()
     });  
   })
   .catch((error) => {
-      console.log('error', error)
-   }); 
-   
-module.exports = Movie;   
+    console.log('error', error)
+  }); 
+  
+  module.exports = Movie; 
+    
+  mongoose.connection.close();
     
 // mongoose.connect('mongodb://localhost/movieApp')
 //   .then(() => {
