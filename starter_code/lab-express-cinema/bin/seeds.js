@@ -75,6 +75,12 @@ mongoose.connect('mongodb://localhost/imdb', {
   keepAlive: true,
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE
+})
+.then ( () => {
+  console.log("Connected to Mongo!")
+})
+.catch ( (error) => {
+  console.error('Error connecting to mongo', error)
 });
 
 // Database

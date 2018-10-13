@@ -1,0 +1,87 @@
+/* --------------- Reset -------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+/* --------------- Layout ----------------------- */
+
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 0.9em;
+}
+
+.container {
+  margin: 4% 4%;
+}
+
+/* --------------- Typography ----------------------- */
+* {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+/* --------------- Home Page ----------------------- */
+
+#welcome-section {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+}
+
+#main-title {
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  color: #F4FAFF;
+  font-size: 6em;
+}
+
+#main-btn {
+  position: absolute;
+  bottom: 42%;
+  right: 25.5%;
+  color: #48768D;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #F4FAFF;
+  padding: 1% 2.5%;
+  border-radius: 20px;
+}
+
+/* --------------- Movies Page ----------------------- */
+
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  width: 33.3%;
+  text-align: center;
+  padding: 2% 0%;
+}
+
+.movie-link {
+  color: #6EC2E9;
+  font-size: 0.8em;
+  font-weight: 700;
+}

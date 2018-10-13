@@ -1,0 +1,9 @@
+<section id = "movie-intro" class = "container">
+  <h1 id = "movie-intro-title">IronHack Cinema </h1>
+  <p id = "movie-intro-text">Click on the movie to check the showtimes!</p>
+</section>
+<section id = "movie-list">
+  <% moviesList.forEach( (movie) => { %>
+    <% include partials/movie.ejs %>
+  <% }) %>
+</section>
