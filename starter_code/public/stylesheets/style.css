@@ -23,9 +23,11 @@ body {
 
 a {
   color: #00B7FF;
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
-/* --------------- Home -------------------- */
+/* --------------- home -------------------- */
 
 h1.home-title {
   font-size: 8em;
@@ -54,7 +56,7 @@ section#home {
   margin-right: 15%;
 }
 
-/* --------------- Movies -------------------- */
+/* --------------- movies -------------------- */
 
 div.movies-list-intro {
   margin-left: 15%;
@@ -77,9 +79,32 @@ h4.movie-title {
   font-size: 0.9em;
 }
 
-a.see-more {
-  font-size: 0.8em;
-  font-weight: 500;
+/* --------------- movie-details -------------------- */
+
+section#movie {
+  display: flex;
+  justify-content: left;
+  padding: 20px 50px;
+  align-items: center;
 }
 
+div.movie-poster {
+  padding-right: 40px;
+}
 
+div.movie-info {
+  width: 40%;
+}
+
+li.stars, p {
+  font-size: 12px;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 5px 15px;
+}

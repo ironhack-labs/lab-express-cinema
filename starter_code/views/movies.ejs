@@ -12,7 +12,7 @@
     
     <% movies.forEach(movie => {%>
     <article class="movie-intro">
-      <img class="movie-poster" src="<%= movie.image %>" alt="film poster">
+      <img src="<%= movie.image %>" alt="film poster">
       <h4 class="movie-title"><%= movie.title %></h4>
       <a class="see-more" href="/movies/<%= movie._id %>">See more</a>
     </article>
