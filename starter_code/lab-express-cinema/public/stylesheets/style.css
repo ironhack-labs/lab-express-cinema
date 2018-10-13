@@ -16,18 +16,22 @@ body {
   top:0;
   bottom:0;
 }
+
 /* --------------- Layout ----------------------- */
 
 h1 {
   font-size: 1.2em;
 }
 
-h2 {
+h2, h3 {
   font-size: 0.9em;
 }
 
 .container {
-  margin: 4% 4%;
+  padding-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 /* --------------- Typography ----------------------- */
@@ -84,4 +88,27 @@ h2 {
   color: #6EC2E9;
   font-size: 0.8em;
   font-weight: 700;
+}
+
+/* --------------- Movie-info Page ----------------------- */
+
+#movie-info-container {
+  display: flex;
+}
+
+#info-container {
+  padding-top: 2%;
+}
+
+#movie-director {
+  font-size: 1em;
+}
+
+#movie-stars {
+  padding-left: 3%;
+}
+
+#movie-description {
+  text-align: justify;
+  width: 85%;
 }

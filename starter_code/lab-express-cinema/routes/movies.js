@@ -15,4 +15,15 @@ router.get('/', function(req, res) {
   })
 });
 
+router.get('/:id', function(req, res) {
+  const {id} = req.params;
+  Movie.findById(id)
+  .then(movie => {
+    res.render("movie-info", {"tabtitle": movie.title, "movie": movie})
+  })
+  .catch( error => {
+    console.error(`Error reading movie with ${id}!`, error)
+  })
+});
+
 module.exports = router;

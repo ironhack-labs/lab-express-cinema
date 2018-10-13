@@ -1,0 +1,22 @@
+<section id = "movie-info-container" class = "container">
+  <div id = "img-info-container" class = "container">
+    <img src="<%= movie.image %>" id = "movie-info-poster" alt="<%= movie.title %> Movie Poster">
+  </div>
+  <div id = "info-container">
+    <a href = "/movies" class = "movie-link">Go back</a>
+    <h1 id = "movie-title"><%= movie.title %></h1>
+    <h2 id = "movie-director">Director: <%= movie.director %></h2>
+    <h3 id = "movie-stars-title">Stars</h3>
+    <ul id = "movie-stars">
+    <% movie.stars.forEach( star => { %>
+      <li> <%= star %></li>
+    <% }) %>
+    </ul>
+    <p id = "movie-description"><%= movie.description %>
+    <p id = "movie-showtimes"> 
+    <% movie.showtimes.forEach( time => { %>
+        <%= time %> |
+      <% }) %>
+    </p>
+  </div>
+</section>
