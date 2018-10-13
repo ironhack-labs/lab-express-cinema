@@ -1,0 +1,14 @@
+<article class="movie-detail">
+<img src="<%= movie.image %>" alt="film image">
+<p><a href="../movies">Go back</a></p>
+<h3><%= movie.title %></h3>
+<h4>Director: <%= movie.director %></h4>
+<h5>Stars</h5>
+<ul>
+  <% movie.stars.forEach(star => { %>
+  <li><%= star %></li>
+  <% }) %>
+</ul>
+<p><%= movie.description %></p>
+
+</article>

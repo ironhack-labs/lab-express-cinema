@@ -1,0 +1,16 @@
+<section class="movies">
+
+  <h2>Ironhack Cinema</>
+
+  <h3>Click on the movie to check the showtimes</h3>
+ 
+  <% movies.forEach(movie => {%>
+  <article class="movie">
+    <img src="<%= movie.image %>" alt="film image">
+    <p class="film-title"><% movie.title %></p>
+    <p><a href="/movies/<%= movie._id %>">See more</a></p>
+  </article>
+  <% }) %>
+ 
+
+</section>
