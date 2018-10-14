@@ -19,16 +19,27 @@ const movieSchema = new Schema ({
 })
 
 const Movie = mongoose.model("Movie", movieSchema);
-const moviesArray = [];
 
 
 /* GET movies page. */
 router.get('/', function(req, res, next) {
   Movie.find()
-    .then(movie =>
-      res.render('movies', {movie}))
-
-  res.render('movies', { title: 'Movies' });
+    .then(movie => {
+      res.render('movies', {movie});
+    })
+    .catch(error => {
+      console.log('error', error);
+    })
 });
 
+router.get('/:_id', (req, res, next) => {
+  const id = req.params._id;
+  Movie.findById(id)
+    .then(movie => {
+      res.render("displayMovie", {movie});
+    })
+    .catch(error => {
+        console.log('Error finding movie ID',error);
+    })
+})
 module.exports = router;

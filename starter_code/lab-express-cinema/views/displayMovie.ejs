@@ -1,0 +1,19 @@
+<section class="display-movie-container  container">
+  <img src=" <%= movie.image %>" alt="">
+  <div class="container">
+   <h2><%= movie.title %></h2>
+   <h3>Director: <%= movie.director %></h3>
+   <ul>
+     <p>Stars</p>
+     <% movie.stars.forEach(star => { %>
+      <li><%= star %> </li>
+     <% }) %>
+   </ul>
+   <p> <%= movie.description %></p>
+   <p> <% movie.showtimes.forEach( time => { %>
+      <span><%= time %> |</span>
+   <% }) %>
+   </p>
+
+  </div>
+</section>

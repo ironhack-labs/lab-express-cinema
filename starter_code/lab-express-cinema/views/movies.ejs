@@ -1,9 +1,11 @@
-<section>
-  <h3>Ironhack Cinema</h3>
-  <p> Click on the movies to show the showtimes!</p>
-  <div class ="container">  
+<section class="movies">
+  <div class ="container main-container flex-wrap"> 
+  <div class="title-container  container  flex-column">
+    <h3>Ironhack Cinema</h3>
+    <p> Click on the movies to show the showtimes!</p> 
+  </div>
     <% movie.forEach(item => { %>
-      <% include partials/moviePartial.ejs %>
+      <%- include partials/moviePartial.ejs %>
     <% }) %>
 
   </div>
