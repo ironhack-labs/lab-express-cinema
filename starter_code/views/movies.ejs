@@ -1,1 +1,9 @@
-movies
+<div class="movie-container">
+  <% movies.forEach( movie => { %>
+    <div class="movie">
+      <img src="<%= movie.image %>">
+        <h3><%= movie.title %></h3>
+        <a href="/movies/<%= movie._id %>">See More</a>
+    </div>
+  <% }) %>
+</div>

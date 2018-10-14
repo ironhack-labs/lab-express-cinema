@@ -4,6 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const mongoose = require('mongoose');
 
 const indexRouter = require('./routes/index');
 const moviesRouter = require('./routes/movies');
@@ -25,6 +26,13 @@ app.set('layout', 'layouts/main')
 
 app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
+
+mongoose.connect('mongodb://localhost/moviesdb')
+  .then(() => {
+    console.log('Connected to Mongo!');
+  }).catch(err => {
+    console.error('Error connecting to mongo', err);
+  });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

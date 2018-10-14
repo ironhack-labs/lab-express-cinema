@@ -1,0 +1,16 @@
+<div class="movie-detail">
+  <div class="poster"><img src="<%= movie.image %>"></div>
+  <div class="details">
+    <h2><%= movie.title %></h2>
+    <h3>Directed by: <%= movie.director %></h3>
+    <h4>Stars: </h4>
+    <ul>
+      <% movie.stars.forEach(star => {%>
+        <li><%= star %></li>
+      <%})%>
+    </ul>
+    <p><%= movie.description %></p>
+    <% const showtime = movie.showtimes.join(' | ') %>
+    <p><%= showtime %></p>
+  </div>
+</div>

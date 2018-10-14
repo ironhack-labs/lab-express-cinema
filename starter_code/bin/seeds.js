@@ -1,16 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-
-const movieSchema = new Schema({
-  title: String,
-  director: String,
-  stars: Array,
-  image: String,
-  description: String,
-  showtimes: Array,
-});
-
-const Movie = mongoose.model('Movie', movieSchema);
+const Movie = require('../models/movie.js');
 
 const movies = [
   {
@@ -86,12 +75,10 @@ mongoose.connect('mongodb://localhost/moviesdb')
     console.error('Error connecting to mongo', err);
   });
 
-  Movie.insertMany(movies)
+Movie.insertMany(movies)
   .then(result => {
     console.log(result);
     mongoose.disconnect('mongodb://localhost/moviesdb');
   }).catch(err => {
     console.error(err);
   });
-
-  module.exports = Movie;

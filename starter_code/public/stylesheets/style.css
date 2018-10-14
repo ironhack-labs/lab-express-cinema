@@ -38,4 +38,30 @@ nav a {
 .home{
   height:92%;
   background:url("../images/home-background.jpg");
+  background-size: cover;
+}
+
+/* --- movie container --- */
+.movie-container{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: flex-start;
+  text-align:center;
+  padding:20px;
+}
+.movie{
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width:250px;
+  margin:30px;
+  padding:20px;
+  background:#f9f9f9;
+  box-shadow:2px 2px 8px black;
+  border-radius:4px;
+}
+.movie h3{
+  padding:3px;
+  font-size:16px;
 }
