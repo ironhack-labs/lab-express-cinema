@@ -1,1 +1,10 @@
-<h1>epa</h1>
+<section>
+  <h3>Ironhack Cinema</h3>
+  <p> Click on the movies to show the showtimes!</p>
+  <div class ="container">  
+    <% movie.forEach(item => { %>
+      <% include partials/moviePartial.ejs %>
+    <% }) %>
+
+  </div>
+</section>
