@@ -104,7 +104,7 @@ router.post('/add', (req,res) => {
   });
 })
 
-// Para eiminar una película
+// Para eliminar una película
 
 router.get('/delete', (req, res) => {
   Movie.find()
@@ -136,6 +136,101 @@ router.get('/delete/:id', (req, res) => {
         console.log('Película no encontrada.', error);
       })
 })
+
+
+// Para realizar el Update
+
+// Listado de las pekículas
+router.get('/update', (req, res) => {
+  Movie.find()
+  .then((movies) => {
+    res.render('moviesUpdateList',{movies});
+    console.log(movies);
+  })
+  .catch(error => {
+    console.log(error);
+  })
+
+});
+
+// Muestro el formulario con las películas
+router.get('/update/:id', (req,res) => {
+  const id = req.params.id;
+  Movie.findById(id)
+    .then((movie) => {
+        console.log('Entra en el update');
+        res.render('movieDetailUpdate', {movie: movie})
+    })
+    .catch((error) =>{
+      console.log('Error al mostrar para update', error);
+    });
+
+});
+
+// Actualizo la película.
+router.post('/update', (req,res) => {
+  const id = req.body.id;
+  let title = req.body.title;
+  let director = req.body.director;
+  let stars = req.body.stars;
+  let description = req.body.description;
+  let image = req.body.image;
+  let showTimes = req.body.showTimes;
+
+  if (image === ''){
+    image = '/images/not-found.png';
+  }
+  if (director === ''){
+    director = '';
+  }
+  if (stars === ''){
+    stars = '';
+  }
+  if (description === ''){
+    description = '';
+  }
+  if (showTimes === ''){
+    showTimes = '';
+  }
+  if (title === ''){
+    title = '';
+  }
+
+
+
+  const newMovie = new Movie ({
+    title: title,
+    director: director,
+    stars: stars,
+    description: description,
+    image: image,
+    showtimes: showTimes,
+  });
+
+
+ // Movie.insertOne(newMovie)
+ Movie.updateOne(
+   {title: title},
+   { 
+     $set: {
+          title: title, 
+          director: director, 
+          stars: stars, 
+          description: description, 
+          image: image,
+          showtimes: showTimes,
+    }
+  })
+  .then((resultado) => {
+   console.log('Película Actualizada');
+   console.log(resultado);
+   res.render('successMovie')
+ })
+ .catch((error) => {
+   console.log('No ha podido Actualizar la película',error);
+ });
+})
+
 
 module.exports = router;
 

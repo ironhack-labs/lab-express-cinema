@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detail Movie Update</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="add-movie-container">    
+    <form action="/movies/update" method="post">
+      <label>Título: </label><input type="text" name="title" size="20" value="<%= movie.title %>"><br/>
+      <label>Director:  </label> <input type="text" name="director" size="20" value="<%= movie.director %>"><br/>
+      <label>Estrellas:  </label> <input type="text" name="stars" size="20" value="<%= movie.stars %>"><br/>
+      <label>Descripción:  </label> <textarea rows="4" cols="50" name="description"><%= movie.description %></textarea> <br/>
+      <label>Url Imagen:  </label> <input type="text" name="image" size="20" value="<%= movie.image %>"><br/>
+      <label>Show Times:  </label> <input type="text" name="showTimes" size="20" value="<%= movie.showtimes %>"><br/>
+      
+      <input type="submit">
+    </form>
+    <div> <button onclick="history.back()">Go Back</button></div>
+  </div>
+    
+  </body>
+</html>
