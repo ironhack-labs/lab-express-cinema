@@ -1,8 +1,9 @@
-<body>
-  <h1>Malditas Películas</h1>
-  <div class = collection-container>
+<body class="container">
+  <h1>IronHack Cinema</h1>
+  <p>Click on the movies to check the showtimes!</p>
+  <div class ="collection-container">
     <% movies.forEach((movie) => { %>
-      <div class = movie-container>
+      <div class ="movie-container">
         <img src=" <%= movie.image %> " alt="<%= movie.title %> cover">
         <p> <%= movie.title %> </p>
         <a href= /movies/<%= movie._id %> >See More...</a>
