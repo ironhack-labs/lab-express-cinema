@@ -70,7 +70,7 @@ const movies = [
 ];
 
 const mongoose = require ('mongoose');
-const Movie = require ('../models/movie.js')
+const Movie = require ('../models/Movie.js')
 //conect to db
 
 mongoose.connect('mongodb://localhost/moviesDB', {

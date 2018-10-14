@@ -1,7 +1,9 @@
-<h2>Ironhack Cinema</h2>
-<p>Click on the movie to check the showtimes!</p>
-<section class="cards">
-<% movies.forEach( movie=>{ %>
-<%= include('/partials/moviescard.ejs', {movies}) %>
-<% }) %>
-</section>
+<div class=" movies-page">
+  <h2>Ironhack Cinema</h2>
+  <p>Click on the movie to check the showtimes!</p>
+  <section class="cards">
+    <% movies.forEach( movie=>{ %>
+      <%- include('partial/moviescard.ejs', {movie}) %>
+    <% }) %>
+  </section>
+</div>

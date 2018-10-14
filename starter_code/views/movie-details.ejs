@@ -1,0 +1,26 @@
+
+<section id="movie">
+
+<div class="movie-poster">
+  <img src="<%= movie.image %>" alt="film image">
+</div>
+
+<div class="movie-info">
+  <a href="../movies">Go back</a>
+  <h3><%= movie.title %></h3>
+  <h4>Director: <%= movie.director %></h4>
+  <h5>Stars</h5>
+  <ul>
+    <% movie.stars.forEach(star => { %>
+      <li class="stars"><%= star %></li>
+    <% }) %>
+  </ul>
+  <p><%= movie.description %></p>
+  <p > 
+    <% movie.showtimes.forEach( time => { %>
+      <%= time %> |
+    <% }) %>
+  </p>
+</div>
+
+</section>

@@ -28,3 +28,36 @@ a {
     margin-left: 65%;
     font-size: 1.5em;
   }
+
+  /* ----- MOVIES PAGE ---- */
+  .movies-page{
+    padding: 0 5%;
+  }
+  .cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5%;
+  }
+  .card{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 8%;
+    align-items: center;
+  }
+
+  /* ----- MOVIE DETAILS ---*/
+
+  #movie{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+  }
+  .movie-poster{
+    width: 30%;
+  }
+  .movie-info{
+    width: 50%;
+  }
+  
