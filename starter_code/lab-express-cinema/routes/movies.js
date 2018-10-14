@@ -22,7 +22,7 @@ const Movie = mongoose.model("Movie", movieSchema);
 
 
 /* GET movies page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   Movie.find()
     .then(movie => {
       res.render('movies', {movie});
