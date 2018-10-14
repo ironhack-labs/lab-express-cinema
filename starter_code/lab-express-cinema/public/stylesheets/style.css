@@ -1,0 +1,43 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* ------------- Generals ---------------*/
+.container {
+  display: flex;
+}
+
+.flex-column           { flex-direction: column;}
+.justity-content-right { justify-content: flex-end; }
+
+
+
+
+
+
+/* ----------- Index View --------------*/
+.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/cinema.jpg');
+  color: white;
+  background-size: cover;
+}
+
+.hero div {
+  max-width: 33%;
+  padding: 70px 86px 0 0;
+
+}
+
+.hero div h1 {
+  font-size: 80px;
+ 
+}
+
+
