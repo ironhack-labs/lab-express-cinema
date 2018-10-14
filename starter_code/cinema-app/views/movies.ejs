@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pelis</title>
+</head>
+<body>
+
+  <div>
+    <h2>Ironhack Cinema</h2>
+    <p>Click on the movie to check the showtimes!
+    </p>
+  </div>
+
+  <div class="container">
+    <% movies.forEach ((movie)=>{ %>
+        <div>
+          <img src="<%= movie.image %>" alt="">
+          <h3><%= movie.title %></h3>
+          <a href="<%= movie._id %>">See more</a>
+      
+        </div>
+    <% }) %>
+  </div>
+
+  
+</body>
+</html>

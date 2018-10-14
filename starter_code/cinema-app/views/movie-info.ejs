@@ -1,0 +1,39 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%=tabtitle%></title>
+</head>
+<body>
+
+<section class= "container">
+<div class="img-container">
+  <img src="<%= movie.image %>" id = "movie-info-poster" alt="<%= movie.title %> Movie Poster">
+</div>
+<div class = "info-container">
+  <a href = "/movies/" class = "movie-btton">Go back</a>
+  <h1 class = "movie-title"><%= movie.title %></h1>
+  <h2 class = "movie-director">Director: <%= movie.director %></h2>
+  <h3 class = "movie-stars-title">Stars</h3>
+  <ul class = "movie-stars">
+  <% movie.stars.forEach( star => { %>
+    <li> <%= star %></li>
+  <% }) %>
+  </ul>
+  <p class = "movie-description"><%= movie.description %>
+  <p class = "movie-showtimes"> 
+  <% movie.showtimes.forEach( time => { %>
+      <%= time %> |
+    <% }) %>
+  </p>
+</div>
+</section>
+
+
+  
+</body>
+</html>
