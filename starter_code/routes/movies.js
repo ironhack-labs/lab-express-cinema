@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const movie = require('../models/movie')
+const Movie = require('../models/Movie')
 
 /* GET movies listing. */
 router.get('/', (req, res, next) => {
-  movie.find()
+  Movie.find()
   .then(movies => {
+    console.log (movies);
     res.render('movies', { movies });
   }) 
   .catch(error => {
@@ -15,7 +16,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) => {
   const id = req.params.id
-  movies.findById(id)
+  Movie.findById(id)
   .then(movie => {
     res.render('movie-details', { movie: movie });
   }) 

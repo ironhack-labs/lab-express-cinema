@@ -4,9 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const expressLayouts= require ('express-ejs-layouts');
-const indexRouter = require('./routes/index');
-const moviesRouter = require('./routes/movies');
-const app = express();
+
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/moviesDB', {
@@ -14,7 +12,21 @@ mongoose.connect('mongodb://localhost/moviesDB', {
   useNewUrlParser: true,
   reconnectTries: Number.MAX_VALUE
 })
+.then ((result) =>{
+  console.log("conected");
+  
+})
+
+const indexRouter = require('./routes/index');
+const moviesRouter = require('./routes/movies');
+
+const app = express();
+
 // view engine setup
+app.use(expressLayouts);
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.set('layout', 'layouts/index');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -26,10 +38,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use(expressLayouts);
-app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-app.set('layout', 'layouts/index');
+
 
 app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
