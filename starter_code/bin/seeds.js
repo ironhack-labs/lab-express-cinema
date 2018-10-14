@@ -77,12 +77,9 @@ mongoose.connect('mongodb://localhost/moviesApp', {
 
 Movie.insertMany(movies)
   .then(result => {
+  console.log("Mongoose default connection closed");
   return mongoose.connection.close()
   })
-  .then(result => {
-  console.log("Mongoose default connection closed");
-  })
-  
   .catch(error => {
     console.log("error", error);
   });

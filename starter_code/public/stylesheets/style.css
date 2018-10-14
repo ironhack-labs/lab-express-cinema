@@ -60,6 +60,14 @@ div.container {
   margin-right: 15%;
 }
 
+@media (min-width: 375px) {
+ 
+  h1.home-title {
+    font-size: 5em;
+    padding-top: 30%;
+  }
+}
+
 /* --------------- movies -------------------- */
 
 div.movies-list-intro {
@@ -111,4 +119,22 @@ h5 {
 ul {
   margin: 0;
   padding: 5px 15px;
+}
+
+@media (min-width: 375px) {
+ 
+  section#movie {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.movie-poster {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  div.movie-info {
+    width: 85%;
+  }
 }
