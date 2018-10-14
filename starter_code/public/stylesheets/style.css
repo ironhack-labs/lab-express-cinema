@@ -1,0 +1,30 @@
+body {
+  margin:0;
+}
+h1{
+  margin: 0;
+}
+a {
+  color: #00B7FF;
+}
+
+.div-home{
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  background-repeat: none;
+  padding-bottom: 49vh;
+  }
+
+  .h1-home{
+    color: white;
+    font-size: 6em;
+    padding: 8% 0 5% 65%;
+  }
+
+  .btn-home{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 50px;
+    margin-left: 65%;
+    font-size: 1.5em;
+  }
