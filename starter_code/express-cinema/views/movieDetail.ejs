@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detail Movie</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <div class="display-container">
+      <div class="display-movie"> 
+        <img src="<%=  movie.image %>">
+      </div>
+        <div class="movie-information">
+          <button onclick="history.back()">Go Back</button>
+          <div class="display-movie-title"> <%= movie.title %></div>
+          <div class="display-movie-director">Director:<%= movie.director %></div>
+          <div class="display-movie-director">Stars:</div>
+          <ul> 
+            <% movie.stars.forEach((star) =>{%>
+              <li><%= star%></li>
+          <% }) %>
+          </ul>
+          <h3><%= movie.description %></h3>
+          <% movie.showtimes.forEach((showtime) =>{%>
+              <%= showtime%> |
+          <% }) %>
+
+        </div>
+
+    </div>
+  </body>
+</html>

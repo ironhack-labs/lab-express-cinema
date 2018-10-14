@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add new MovieMovies</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Añadir Movie</h1>
+
+    <div class="add-movie-container">
+    
+      <form action="/movies/add" method="post">
+        <label>Título: </label><input type="text" name="title" size="20"><br/>
+        <label>Director:  </label> <input type="text" name="director" size="20"><br/>
+        <label>Estrellas:  </label> <input type="text" name="stars" size="20"><br/>
+        <label>Descripción:  </label> <textarea rows="4" cols="50" name="description"></textarea> <br/>
+        <label>Url Imagen:  </label> <input type="text" name="image" size="20"><br/>
+        <label>Show Times:  </label> <input type="text" name="showTimes" size="20"><br/>
+        
+        <input type="submit">
+    </form>
+    <div> <button onclick="history.back()">Go Back</button></div>
+    
+    </div>
+  </body>
+</html>

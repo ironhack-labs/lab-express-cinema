@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Movies</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <nav>
+      <h1>IronHack Movies Delete Section</h1>
+      <h2>Click on the movie to DELETE the movie</h2> 
+      <button onclick="history.back()">Go Back</button>
+    </nav>
+      <div class="movies-container">
+      
+        <% movies.forEach(movie => { %>
+          <div class="each-movie"> 
+            <img src="<%=  movie.image %>">
+            <div class="each-movie-title"><%= movie.title %></div>
+            <a href="<%= movie._id %>">Delete Movie</a>
+          </div>
+        <%}) %>
+      </div>
+          
+  </body>
+</html>
