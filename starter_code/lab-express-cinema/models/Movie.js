@@ -27,5 +27,5 @@ const movieSchema = new Schema({
 // Definition of the Model
 const Movie = mongoose.model('Movie', movieSchema);
 
-// Export the model
+// Export the model 
 module.exports = Movie;

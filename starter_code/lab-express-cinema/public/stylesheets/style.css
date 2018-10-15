@@ -114,6 +114,7 @@ h2, h3 {
   color: #6EC2E9;
   font-size: 0.8em;
   font-weight: 700;
+  display: block;
 }
 
 @media (min-width: 768px) {
