@@ -9,7 +9,7 @@ const usersRouter = require('./routes/users');
 const moviesRouter = require('./routes/movies');
 
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
