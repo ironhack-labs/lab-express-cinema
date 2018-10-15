@@ -1,0 +1,19 @@
+<a href="/movies">Go back</a>
+<% movies.forEach(item => { %>
+  <h1><% item.title %> </h1>
+  <img src=<%= item.image %> alt="">
+  <h1><%= item.title %> </h1>
+  <h2>Director: <%= item.director %> </h2>
+  <h3>Stars</h3>
+  <ul>
+  <% item.stars.forEach( item => { %>
+    <li><%= item %> </li>
+  <% }) %> 
+  </ul>
+  <p><%= item.description %> </p>
+  <ul>
+  <% item.showtimes.forEach(item => { %>
+    <li><%= item %> | </li>
+  <% }) %> 
+  </ul>
+<% }) %> 
