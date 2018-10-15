@@ -78,7 +78,7 @@ mongoose.connect('mongodb://localhost/moviesdb')
 Movie.insertMany(movies)
   .then(result => {
     console.log(result);
-    mongoose.disconnect('mongodb://localhost/moviesdb');
+    mongoose.connection.close;
   }).catch(err => {
     console.error(err);
   });
