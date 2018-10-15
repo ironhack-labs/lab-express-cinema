@@ -6,14 +6,13 @@
    <ul>
      <p>Stars</p>
      <% movie.stars.forEach(star => { %>
-      <li><%= star %> </li>
+     <li> <%= star %> </li>
      <% }) %>
    </ul>
    <p> <%= movie.description %></p>
    <p> <% movie.showtimes.forEach( time => { %>
-      <span><%= time %> |</span>
+      <span> <%= time %> |</span>
    <% }) %>
    </p>
-
   </div>
 </section>

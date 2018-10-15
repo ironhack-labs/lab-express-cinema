@@ -8,7 +8,6 @@ mongoose.connect('mongodb://localhost/cinemaApp',{
   useNewUrlParser: true,
 });
 
-
 const movieSchema = new Schema ({
   title: String,
   director: String,
@@ -39,7 +38,8 @@ router.get('/:_id', (req, res, next) => {
       res.render("displayMovie", {movie});
     })
     .catch(error => {
-        console.log('Error finding movie ID',error);
+      console.log('Error finding movie ID', error);
     })
 })
+
 module.exports = router;
