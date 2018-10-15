@@ -1,5 +1,6 @@
 
 
+
 const movies = [
     {
       title : "A Wrinkle in Time",
@@ -67,26 +68,29 @@ const movies = [
     }
   ];
   
+  
   const mongoose = require('mongoose');
-  const Movie = require('../models/movie.js');
 
-
+  const MovieSchema = require('../models/Movie.js');
+  const Movie = mongoose.model('Movie', MovieSchema);
+  
   mongoose.connect('mongodb://localhost/movieApp')
   .then(() => {
     console.log('Connected to Mongo!');
   }).catch(err => {
     console.error('Error connecting to mongo', err);
-
   });
 
-
-  Movie.insertMany(data)
-    .then(() => {
-      console.log("Todo OK");
-      mongoose.connection.close();
-      })
-
-    .catch((error) => {
-      console.log(error, 'error')
+  Movie.insertMany(movies)
+  .then((result) => {
+    result.forEach(movie => {
+      console.log(movie.title)
     })
-  module.exports = movies;
+    mongoose.connection.close();
+    console.log("conexion cerrada");
+  })
+  .catch((error) => {
+    console.log('error to InsertMany:', error);
+})
+
+  //module.exports = movies;

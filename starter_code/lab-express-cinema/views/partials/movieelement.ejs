@@ -1,5 +1,11 @@
 <article class="movie-container">
-<img src="<%= movie.image%>" alt="movie-image">
-<h3><%= movie.title%></h3>
-<a href="/movies/<%= movie._id %>">See more</a>
+    <img src="<%=movie.image%>" alt="movie-image">
+    <h3><%= movie.title%></h3>
+    <a href="/movies/<%= movie._id %>">See more</a>
+    <a href="/movies/new">Add</a>
+    <a href="/movies/<%= movie._id %>/edit">Edit</a>
+    <form action="/movies/<%= movie._id%>/delete" method="post">
+        <input type="submit" value="delete">
+    </form>
+    
 </article>
