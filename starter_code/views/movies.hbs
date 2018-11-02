@@ -1,0 +1,13 @@
+{{!-- movies.hbs --}}
+
+{{!-- <h1>{{movies}}</h1>
+
+{{#each movies}}
+
+<p>{{this.title}}</p>
+{{/each}} --}}
+
+{{#each movies}}
+{{this.title}}
+<img src="{{this.image}}">
+{{/each}}

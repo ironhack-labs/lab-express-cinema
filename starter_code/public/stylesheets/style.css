@@ -1,20 +1,14 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("../images/cinema.jpg");
-  // background-repeat: none;
-  
-}
+  background-image: url("../images/cinema.jpg"); }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .right {
-  float:right;
-  padding: 70px 0;
-}
-
+  float: right;
+  padding: 70px 0; }
 
 #button {
   background-color: white;
@@ -26,6 +20,6 @@ a {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  border-radius: 12px;
-}
+  border-radius: 12px; }
 
+/*# sourceMappingURL=style.css.map */
