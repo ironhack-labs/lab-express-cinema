@@ -6,3 +6,50 @@ body {
 a {
   color: #00B7FF;
 }
+
+.home-page {
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  .home-content {
+    margin: 50px;
+    margin-left: 550px;
+    h1 {
+      color: white;
+      font-size: 80px;
+    }
+  }
+}
+.btn-continue {
+  background-color: white;
+  color:#00B7FF;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.movies-page {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  h1, h2 {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .movies-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.selectedMovie {
+  display: flex;
+  .movieInfo {
+    padding: 20px 0px 0px 40px;
+  }
+  h1, h3, h5, p {
+    padding: 20px 0px 0px 0px;
+  }
+}

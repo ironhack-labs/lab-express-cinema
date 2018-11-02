@@ -1,0 +1,22 @@
+<div class="selectedMovie">
+  <div class="poster">
+    <img src={{movie.image}} alt="" height=400px;>
+  </div>
+  <div class="movieInfo">
+    <a href="/movies">Go Back</a>
+    <h1>{{movie.title}}</h1>
+    <h3>Director: {{movie.director}}</h3>
+    <h5>Stars</h5>
+    <ul>
+      {{#each movie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>
+      {{#each movie.showtimes}}
+      {{this}} |
+      {{/each}}
+    </p>
+  </div>
+</div>
