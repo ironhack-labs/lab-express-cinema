@@ -1,11 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .index {
   background-image: url(../images/cinema.jpg);
@@ -17,47 +15,40 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 100px;
-}
+  padding-right: 100px; }
 
 .text {
-  width: 250px;
-}
+  width: 250px; }
 
 .index h1 {
-  font-size: 60px;
-}
+  font-size: 60px; }
 
 .index button a {
   text-decoration: none;
-  color: rgb(60, 88, 124);
-}
+  color: #3c587c; }
 
 .index button {
   height: 50px;
   width: 200px;
   border-radius: 20px;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .organisation {
   display: flex;
   box-sizing: content-box;
   width: 100%;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .eachmargin {
   margin: 35px;
   list-style: none;
-  text-align: center;
-}
+  text-align: center; }
 
 .movieinfo {
- display: flex;
-}
+  display: flex; }
 
 .right {
   display: block;
-  margin-left: 50px;
-}
+  margin-left: 50px; }
+
+/*# sourceMappingURL=style.css.map */
