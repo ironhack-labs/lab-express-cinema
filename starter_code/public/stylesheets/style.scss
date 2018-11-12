@@ -59,3 +59,21 @@ a {
   }
 }
 
+.movie-page{
+
+  margin: 7% 50px;
+  display: flex;
+
+  .right-side{
+    margin-left: 20px;
+  }
+
+  .left-side{
+    img{
+      -webkit-box-shadow: 10px 10px 46px -21px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 46px -21px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 46px -21px rgba(0,0,0,0.75);
+    }
+  }
+
+}
