@@ -1,0 +1,76 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100vh; }
+
+.homepage {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end; }
+  .homepage div {
+    width: 50%;
+    text-align: right;
+    align-items: flex-end;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .homepage div h1 {
+      margin: 0;
+      color: white;
+      font-size: 100px; }
+    .homepage div a {
+      text-decoration: none; }
+      .homepage div a button {
+        margin-top: 40px;
+        background-color: white;
+        border-color: none;
+        border-style: none;
+        border-width: 0;
+        padding: 20px 40px;
+        border-radius: 30px;
+        font-size: 17px;
+        width: 270px;
+        color: #679dad; }
+
+.list-section {
+  padding: 50px; }
+  .list-section h2 {
+    font-size: 30px;
+    font-weight: bold; }
+  .list-section .movie-div {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0; }
+    .list-section .movie-div .artist-div {
+      width: 100%;
+      height: auto;
+      padding: 20px 0; }
+      .list-section .movie-div .artist-div h6 {
+        font-weight: bold;
+        margin-top: 10px; }
+      .list-section .movie-div .artist-div a {
+        text-decoration: underline; }
+
+.movie-details {
+  padding: 50px 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .movie-details .movie-img {
+    margin-right: 30px; }
+  .movie-details .movie-content {
+    margin-left: 30px; }
+    .movie-details .movie-content a {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
