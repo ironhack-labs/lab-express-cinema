@@ -26,4 +26,17 @@ a {
       padding: 10px 15px;
       border-radius: 25px; }
 
+.movies-page ul {
+  margin: 0 5%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .movies-page ul li {
+    margin: 15px 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
 /*# sourceMappingURL=style.css.map */

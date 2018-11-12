@@ -39,5 +39,23 @@ a {
 }
 
 
+.movies-page{
 
+  ul{
+    margin: 0 5%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    li{
+      margin: 15px 2.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+}
 

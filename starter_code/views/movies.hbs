@@ -1,1 +1,9 @@
-Hello movies !
+<div class="movies-page">
+  <h3>Ironhack Cinema</h3>
+  <p>Click on the movie to check the showtime !</p>
+  <ul>
+    {{#each movies}}
+      {{> movieItem}}
+    {{/each}}
+  </ul>
+</div>
