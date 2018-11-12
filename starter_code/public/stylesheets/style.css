@@ -1,60 +1,49 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  height: 100vh;
-}
+  height: 100vh; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .main-page {
   height: 100%;
   width: 100%;
   background-image: url("https://st.depositphotos.com/1899403/2197/i/950/depositphotos_21979637-stock-photo-popcorn-isolated-on-white-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .main-content {
   position: absolute;
   height: 300px;
   width: 410;
   left: 50%;
-  top: 30%;
-}
+  top: 30%; }
 
 .main-content > h1 {
   font-size: 90px;
-  width: 300px;
-}
+  width: 300px; }
 
 .main-content > button {
-  // height: 100px;
-  // width: 310px;
   padding: 12px 35px;
   border-radius: 50px;
   font-size: 18px;
   background-color: white;
-  color: rgb(179, 179, 179);
-  outline: none;
-}
+  color: #b3b3b3;
+  outline: none; }
 
 .main-page a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .movie-grid {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   max-width: 60%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .movie-item {
   display: flex;
@@ -63,44 +52,38 @@ a {
   align-items: center;
   height: 330px;
   width: calc(100%/3);
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 .movie-item > * {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .list-header {
   margin-left: 20%;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .movie-details {
   display: flex;
   width: 60%;
   height: 320px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .movie-details > div:first-of-type {
   margin-left: 30px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .movie-details > div:nth-child(2) {
   margin-left: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .showtimes {
   list-style: none;
-  display: flex;
-}
+  display: flex; }
 
 .showtimes > li {
   border-right: 1px solid black;
   margin-right: 5px;
-  padding-right: 5px;
-}
+  padding-right: 5px; }
+
+/*# sourceMappingURL=style.css.map */

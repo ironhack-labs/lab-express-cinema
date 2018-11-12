@@ -1,0 +1,14 @@
+<div class="list-header">
+  <h1>{{title}}</h1>
+  <p>Click on the movie to check the showtimes</p>
+</div>
+
+<div class="movie-grid">
+  {{#each movieResults}}
+  <div class="movie-item">
+    <img class ="poster-list" src="{{this.image}}">
+    <p>{{this.title}}</p>
+    <a href="/movie/{{this._id}}">See more</a>
+  </div>
+  {{/each}}
+</div>
