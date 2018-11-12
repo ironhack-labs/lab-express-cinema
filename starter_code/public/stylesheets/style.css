@@ -1,8 +1,76 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+ }
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF; 
+  margin: 10px;}
+
+  .container{
+    background-image: url(../images/cinema.jpg);
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 /*# sourceMappingURL=style.css.map */
+
+.front-content{
+  position: absolute;
+  left: 57%;
+  height: 278px;
+  top: 50%;
+
+}
+.front-content>h1{
+  font-size: 85px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 30px;
+
+}
+.front-content>button{
+  border-radius: 50px;
+  background-color: white;
+  padding: 18px 44px;
+  font-size: 15px;
+  text-decoration: none;
+  width: 229px;
+}
+.movie-content{
+  margin-left: 20px;
+}
+.movie-pattern{
+  display: flex;
+   flex-wrap: wrap; 
+  align-items: center;
+  /* width: 244%; */
+  max-width: 60%;
+  margin: 0 auto;
+
+}
+.movie-detail{
+ 
+  width:33.33%;
+margin-top: 50px;
+}
+.movie-detail>h3{
+  margin: 17px;
+    font-size: 13px;
+}
+.singleMovie-container{
+  display: flex;
+  width: 78%;
+  margin-left: 30px;
+  
+
+}
+.singleMovie{
+  height: 50px;
+  margin-right: 44px;
+}
+.singleMovie-description>p{
+  font-family: 'Times New Roman', Times, serif;
+
+}

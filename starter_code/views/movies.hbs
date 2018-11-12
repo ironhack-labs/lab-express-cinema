@@ -1,13 +1,21 @@
+
+<div class="movie-content">
 <h1>Ironhack-cinema</h1>
 <h3>Click on the Movies to see the Check times</h3>
-<div>
+</div>
+<div class="movie-pattern">
   {{#each moviesArray}}
- 
+ <div class="movie-detail">
     <img  src="{{this.image}}" alt="">
+  
     <h3>{{this.title}}</h3>
      <a href="/movie/{{this.id}}">see more</a>
-  
+       
+  </div>
   {{/each}}
+  
+ 
+
 </div>
 
 
