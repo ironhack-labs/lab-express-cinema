@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+const Movie = require("./models/movie.js")
+
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express      = require('express');
@@ -11,7 +13,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/express-cinema-project', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -53,6 +55,31 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+
+
+app.get("/movies", (req,res,next)=>{
+  Movie.find()
+    .then(data=>{
+      res.locals.movieList = data;
+      res.render("movies.hbs")
+    })
+    .catch(err=>next(err));
+})
+
+
+
+app.get("/movies/:movieId", (req,res,next)=>{
+  const movieId = req.params.movieId;
+  Movie.findById(movieId)
+    .then(movie=>{
+      res.locals.movieDetails = movie;
+      res.render("movie-details.hbs")
+    })
+    .catch(err=>next(err));
+})
+
+
 
 
 module.exports = app;
