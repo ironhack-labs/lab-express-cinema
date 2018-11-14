@@ -1,6 +1,7 @@
 const mongoose =  require('mongoose');
 const Moviemaker = require('../models/Movie.js');
 
+Moviemaker.collection.drop()
 
 const movies = [
     {
