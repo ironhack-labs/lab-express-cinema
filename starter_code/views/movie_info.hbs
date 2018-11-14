@@ -1,6 +1,20 @@
-<div class="">
-  hola
-  <div class="">
-<a href="/">Go Back</a>
+<div class="totalMovies">
+    <div><img class="img" src="{{data.image}}" /></div>
+    <div class="infoMovie">
+        <a href="/">Go Back</a>
+        <h2> {{data.title}}</h2>
+        <h3>{{data.director}}</h3>
+        <h4>Stars</h4>
+        <ul>
+            {{#each data.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{data.description}}</p>
+        <ul class="row">
+            {{#each data.showtimes}}
+            <li>{{this}} |</li>
+            {{/each}}
+        </ul>
     </div>
- </div> 
+</div>

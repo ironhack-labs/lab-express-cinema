@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-const Movie = require('../routes/models/Movie.js');
+const Movie = require('../models/Movie.js');
 
-const dbName = 'Ironhack_Movies';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+mongoose.connect(
+  "mongodb://localhost/starter-code", {useNewUrlParser: true})
+        .then(() => console.log("Connected!"));
 
 const movies = [
   {
