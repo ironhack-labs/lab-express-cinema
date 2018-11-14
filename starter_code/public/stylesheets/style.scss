@@ -44,3 +44,26 @@ background-repeat: no-repeat;
   cursor: pointer;
   margin-top: 26px;
 }
+
+
+
+.all-movies{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.movie{
+  width: 33%;
+  text-align: center;
+  padding: 33px;
+}
+#image{
+  float:left;
+  margin-right: 30px;
+}
+
+#info ul{
+  // float: left;
+  list-style: none;
+}

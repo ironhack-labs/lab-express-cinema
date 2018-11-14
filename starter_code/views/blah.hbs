@@ -1,8 +1,26 @@
-<a href="/movies">Go back</a>
+
+
+
+<div id = "image">
 <img src="{{pickedMovie.image}}" alt="">
+</div>
+<div id = "info">
+<a href="/movies">Go back</a>
 <p>{{pickedMovie.title}}</p>
 <p>{{pickedMovie.director}}</p>
 <p>stars</p>
+<ul>
+  {{#each pickedMovie.stars}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
 {{!-- How to use each to pull elements from Array Stars and put them in the list --}}
 <p>{{pickedMovie.description}}</p>
+{{#each pickedMovie.showtimes}}
+<span>
+    {{this}} |
+</span>
+{{/each}}
 {{!-- horizontal list of elements of Time array --}}
+</div>
