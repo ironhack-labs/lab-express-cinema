@@ -9,7 +9,7 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
-mongoose.connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+mongoose.connect('mongodb://localhost/movie-list', {useNewUrlParser: true})
   .then(x => {
     console.log(`You are connected to Mongo, Rachel: "${x.connections[0].name}"`)
   })
@@ -42,8 +42,9 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 const index = require('./routes/index');
-const pageTwo = require('./views/moviesTwo')
 app.use('/', index);
-app.use('/movies', pageTwo);
+
+const movies = require('./views/movies')
+app.use('/movies', movies);
 
 module.exports = app;

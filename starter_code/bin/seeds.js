@@ -1,8 +1,14 @@
 const mongoose = require('mongoose');
-const Movie = require('../models/MovieRoute');
+const Movie = require('../models/MovieModel');
 
-const dbName = 'movie-list';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+mongoose.connect('mongodb://localhost/express-cinema', {useNewUrlParser: true})
+  .then(x => {
+    console.log(`You are connected to Mongo, Rachel: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
+    console.error('Rachel - There was an error connecting to mongo', err)
+  });
+
 
 
 const movies = [
@@ -72,7 +78,10 @@ const movies = [
     }
   ];
 
-  Movie.create(movies, (err) => {
-    if (err) { throw(err) }
-    console.log(`Created ${movies.length} movies`)
-  });
+  Movie.create(movies)
+  .then((response)=>{
+    console.log(response)
+  })
+  .catch((err)=>{
+    console.log(err)
+  })
