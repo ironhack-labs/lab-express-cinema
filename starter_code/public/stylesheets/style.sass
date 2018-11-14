@@ -1,0 +1,160 @@
+@import mixins
+
+$white: #F7F9F9
+$blue: #00B7FF
+$light-blue: #2081C3
+$dark-blue: #0A2C42
+$grey: rgba(145, 145, 145, 0.481)
+
+*
+  box-sizing: border-box
+  outline: none
+
+html, body
+  margin: 0
+  height: 100%
+  min-height: 100vh
+  height: max-content
+  font-size: calc(.9em)
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+
+ul
+  margin: 0
+  padding: 0
+  li
+    list-style: none
+
+p
+  margin: 0
+  padding: 0
+
+a
+  display: inline-block
+  text-decoration: none
+  color: $white
+  font-weight: bold
+  opacity: .6
+  +transition_default
+  &:hover
+    opacity: .4
+  &.active
+    opacity: 1
+    &::after
+      width: 100%
+  &::after
+    content: ''
+    display: block
+    background: white
+    width: 0px
+    height: .15em
+    margin-top: .03em
+    +transition-default
+  &:hover::after
+    width: 100%
+
+
+.main_container
+  min-height: calc(100vh - 7em)
+  height: max-content
+  background: $grey
+  +flex_center
+  .container
+    +flex_cColumn
+    margin: 3em 0
+    &.home_container
+      width: 100%
+      min-height: 100vh
+      height: max-content
+      background-image: url("../images/cinema.jpg")
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      > *
+        margin-top: 1em
+      img
+        width: 75%
+        margin-left: 16%
+      input
+        cursor: pointer
+        font-size: 1.2em
+        border: none
+        padding: .5em
+        min-width: 12em
+        border-radius: 5em
+        color: $white
+        background-color: $light-blue
+        font-weight: bold
+        border: 4px solid transparent
+        +transition(transform 300ms cubic-bezier(0.4, 0, 0.2, 1))
+        &:hover
+          border: 4px solid $white
+          +hover_scale_opacity
+    &.movies_container
+      width: 100%
+      padding-top: 4em
+      .movieBox
+        width: 80%
+        +flex_row_sb
+        .movie
+          display: flex
+          flex-flow: column nowrap
+          width: 30%
+          margin-bottom: 6em
+          .imgMovie
+            img
+              //width: 25%
+              height: 20em
+
+.movie
+  .movieBeer
+    text-align: center
+  .infoMovie
+    h1.title
+      margin: 1em 0 0
+    h2.director
+      font-size: 1.5em
+      opacity: .2
+      margin: .2em 0 0
+    p
+      &.description
+        font-size: 1.2em
+        margin: 1em 0 0
+      .bold
+        font-weight: bold
+    h3.stars
+      margin: 1em 0 .5em
+    ul
+      margin-bottom: 1.5em
+      padding-inline-start: 2em
+      li
+        list-style-type: disc
+
+
+
+@media (max-width: 976px)
+
+  .main_container
+    .container
+      &.movies_container
+        .movieBox
+          width: 85%
+          .movie
+            width: 45%
+
+
+
+@media (max-width: 597px)
+
+  .main_container
+    .container
+      &.movies_container
+        .movieBox
+          width: 80%
+          .movie
+            width: 100%
+            border-bottom: 2px solid $grey
+            padding-bottom: 4em
+            margin-bottom: 4em
+            &:last-child
+              border-bottom: none
+              padding-bottom: 0
