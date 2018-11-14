@@ -11,11 +11,36 @@ a {
 .home-image{
 min-height: 100vh;
 min-width: 100%;
-background-image: url("../images/cinema.jpg")
+background-image: url("../images/cinema.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 
 
 }
 .home-image img{
   height: 100%;
   width: 100%;
+}
+.cinema{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  float: right;
+  max-width: 40%;
+  margin-top: 13vh;
+  margin-right: 1vw;
+  color: white;
+}
+.cinema h1{
+  font-size: 8vw;
+  font-weight: bold;
+}
+.cinema button{
+  height: 65px;
+  width: 270px;
+  border-radius: 51px;
+  color: #689eb0;
+  font-size: 21px;
+  cursor: pointer;
+  margin-top: 26px;
 }
