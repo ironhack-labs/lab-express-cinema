@@ -3,15 +3,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 3%;
-}
+  margin-right: 3%; }
 
 .checkMovies {
   width: 17vw;
@@ -19,21 +17,19 @@ body {
   color: #00B7FF;
   font-size: 23px;
   border-radius: 55px;
-  margin-right: 12%;
-}
+  margin-right: 12%; }
 
 a:visited {
   text-decoration: none;
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 a:link {
   text-decoration: none;
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .bigTitle {
   font-size: 108px;
   color: white;
-  margin-bottom: 2%;
-}
+  margin-bottom: 2%; }
+
+/*# sourceMappingURL=style.css.map */

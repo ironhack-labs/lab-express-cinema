@@ -1,9 +1,20 @@
 const express = require('express');
 const router  = express.Router();
 
-/* GET home page */
+
 router.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('mainOne');
+});
+
+
+router.get('/movies', (req, res, next) => {
+    res.render('moviesTwo');
+  })
+
+
+
+router.get('/movies/specific', (req, res, next) => {
+  res.render('aMovieThree');
 });
 
 module.exports = router;
