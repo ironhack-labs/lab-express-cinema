@@ -59,3 +59,21 @@ body {
 .item button:hover {
   cursor: pointer;
 }
+
+.the-movie {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+  margin: 3rem;
+}
+
+.the-movie img {
+  height: 20rem;
+  width: 15rem;
+  margin: 0 5rem;
+
+}
+
+.the-movie li {
+  padding: 0.25rem 0;
+}

@@ -3,10 +3,6 @@ body {
   margin: 0;
   padding: 0; }
 
-  a {
-  color: #00B7FF; 
-  }
-
 .main {
   height: 100vh;
   width: 100%;
@@ -32,8 +28,7 @@ body {
   border: none;
   border-radius: 50px;
   width: 8rem;
-  color: #00B7FF; 
-}
+  color: #00B7FF; }
 
 .container {
   display: flex;
@@ -55,5 +50,19 @@ body {
 
 .item button:hover {
   cursor: pointer; }
+
+.the-movie {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+  margin: 3rem; }
+
+.the-movie img {
+  height: 20rem;
+  width: 15rem;
+  margin: 0 5rem; }
+
+.the-movie li {
+  padding: 0.25rem 0; }
 
 /*# sourceMappingURL=style.css.map */

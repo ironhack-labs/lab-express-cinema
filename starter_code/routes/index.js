@@ -15,4 +15,10 @@ router.get('/movies', (req, res, next) => {
     .catch(err => console.log('An error has ocurred when importing the movies', err));
 });
 
+router.get('/movies/:id', (req, res, next) => {
+  const myMovie = Movie.findById(req.params.id)
+    .then(movie => res.render('movie', { movie }))
+    .catch(err => console.log('An error has ocurred when importing the movies', err));
+});
+
 module.exports = router;
