@@ -1,7 +1,7 @@
 const mongoose =  require('mongoose');
 const Moviemaker = require('../models/Movie.js');
 
-Moviemaker.collection.drop()
+
 
 const movies = [
     {
@@ -69,4 +69,6 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
-module.exports=movies;
+  
+  Moviemaker.collection.drop()
+  Moviemaker.create(movies).then(()=> console.log("database ok"))

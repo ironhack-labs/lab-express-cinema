@@ -11,9 +11,7 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/movies", (req, res) => {
-  //no estoy seguro de que sea la forma correcta
-  movie.collection.drop()
-  movie.create(movieArr).then(movies => {
+  movie.find().then(movies => {
     res.render("movies", { movies });
   }).catch(e => console.log("error", e));
 });
