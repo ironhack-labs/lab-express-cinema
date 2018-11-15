@@ -6,3 +6,15 @@ a {
   color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
+#moviePartial {
+
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+#movie {
+
+  display: flex;
+  flex-wrap: wrap;
+}
