@@ -1,17 +1,18 @@
 require('dotenv').config();
 
-const bodyParser   = require('body-parser');
+const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const express      = require('express');
-const favicon      = require('serve-favicon');
-const hbs          = require('hbs');
-const mongoose     = require('mongoose');
-const logger       = require('morgan');
-const path         = require('path');
+const express = require('express');
+const favicon = require('serve-favicon');
+const hbs = require('hbs');
+const mongoose = require('mongoose');
+const logger = require('morgan');
+const path = require('path');
+const Movie = require("./models/Movie")
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/starter-code', { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -45,6 +46,16 @@ app.locals.title = 'Iron Cinema';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.get("/movies", (req, res, next) => {
+  Movie.find()
+      .then((movie) => {
+        res.status(200).render("movies",{movie})
+  })
+    .catch(err => {
+      console.log("In Movies"+err)
+    })
+})
 
 
 module.exports = app;

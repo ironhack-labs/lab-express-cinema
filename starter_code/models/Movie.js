@@ -7,7 +7,7 @@ const movieSchemas = new Schema({
   stars: { type: [String], minlength: 3, required: true },
   image: { type: String, required: true },
   description: { type: String, required: true },
-  showtimes: { type: [String], minlength: 5, required: true }
+  showtimes: { type: [String], minlength: 4, required: true }
 })
 
 
