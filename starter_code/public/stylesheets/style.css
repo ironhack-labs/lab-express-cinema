@@ -1,29 +1,25 @@
 body {
   padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  //background: url("../images/cinema.png") no-repeat center center fixed;
   background: black;
-  color: white;
-}
+  color: white; }
 
-h1{
-  font-size: 9em;
-}
+h1 {
+  font-size: 9em; }
 
 a {
   padding: 2em;
   color: #00B7FF;
   border: 3px solid white;
   border-radius: 50px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-.box-index{
-margin: 4em;
-}
+.box-index {
+  margin: 4em; }
 
-.dogy{
+.dogy {
   position: absolute;
   left: 40%;
-  bottom: 0;
-}
+  bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
