@@ -1,0 +1,18 @@
+<div class="moviesCard-container">
+  <div>
+    <img src="{{movie.image}}" alt="">
+  </div>
+  <div>
+    <h1>{{movie.title}}</h1>
+    <h2>{{movie.director}}</h2>
+    <ul>
+      {{#each movie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    {{#each movie.showtimes}}
+    <span>{{this}} |</span>
+    {{/each}}
+  </div>
+</div>
