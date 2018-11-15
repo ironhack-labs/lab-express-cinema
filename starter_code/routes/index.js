@@ -9,13 +9,19 @@ router.get('/', (req, res, next) => {
 
 router.get('/movies', (req, res, next) => {
   Movie.find().then(movies =>{
-    console.log(`Esto es lo que sale ${movies}`, movies);
-    data = movies[0];
-    console.log(`Esto es lo que sale ${data}`, data);
-    console.log(`Esta es la variable de entorno ${process.env.DBURL}`);
-    res.render('movies', data);
+    data = movies;
+    console.log(`Esto es lo que sale ${data}`);
+    res.render('movies', {data} );
   })
-  
 });
+
+router.get('/movies/:id', (req, res, next) => {
+  Movie.findOne({_id: req.params.id}).then(movies =>{
+    data2 = movies;
+    console.log(`Esto es lo que sale ${data}`);
+    res.render('detail', {data2} );
+  })
+});
+
 
 module.exports = router;

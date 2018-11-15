@@ -2,6 +2,11 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const Movie = require("../models/Movie");
 
+
+mongoose.connect(
+  "mongodb://localhost/starter-code", {useNewUrlParser: true})
+        .then(() => console.log("Connected!"));
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -85,24 +90,12 @@ const movies = [
   }
 ];
 
-mongoose
-  .connect(
-    process.env.DBURL,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("Connected!"));
+
 
 Movie.collection.drop();
 
-Movie.insertMany(movies, function(error, docs) {
-  if (docs) {
-    console.log("Insertados correctamente");
-    for (let i = 0; i < data.length; i++) {
-      console.log(data[i]);
-    }
-  }
-
-  if (error) {
-    console.log("No se ha agregado nada");
-  }
+Movie.create(movies, (err) => {
+  if (err) { throw(err) }
+  console.log(`Created ${movies.length} movies`)
+  mongoose.connection.close()
 });
