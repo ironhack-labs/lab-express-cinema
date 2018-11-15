@@ -19,4 +19,16 @@ router.get('/movies', (req, res, next) => {
 
 });
 
+router.get('/movie/:idMovie', (req, res, next) => {
+  let id = req.params.idMovie;
+  Movie.findById(id)
+  .then( movie => {
+    console.log(movie);
+    res.render('movie',{movie});
+  })
+  .catch(err=> console.log(err))
+
+
+});
+
 module.exports = router;
