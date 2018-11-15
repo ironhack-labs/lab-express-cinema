@@ -6,6 +6,7 @@ const movieSchema = new Schema({
     director: String,
     stars: [],
     image: String,
+    description: String,
     showtimes: []
   }, {
     timestamps: {
@@ -14,5 +15,5 @@ const movieSchema = new Schema({
     }
 });
 
-const Movie = mongoose.model('Cat', catSchema);
+const Movie = mongoose.model('Movie', movieSchema);
 module.exports = Movie;
