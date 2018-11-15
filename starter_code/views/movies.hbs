@@ -1,9 +1,15 @@
 <div class="movies-container">
   <div>
+    <h1>Ironahack Cinema!</h1>
+    <p>Click on the movie to chheck the showtimes!</p>
+  </div>
+  <div class="movies-container">
     {{#each movies}}
-    <img src="{{image}}" alt="">
-    <p>{{title}}</p>
-    <a href="/movie/{{_id}}">See More</a>
+    <div>
+      <img src="{{image}}" alt="">
+      <p>{{title}}</p>
+      <a href="/movie/{{_id}}">See More</a>
+    </div>
     {{/each}}
   </div>
 </div>

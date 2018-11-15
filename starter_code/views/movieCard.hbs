@@ -1,10 +1,12 @@
 <div class="moviesCard-container">
-  <div>
+  
+  <div id="mc1">
     <img src="{{movie.image}}" alt="">
   </div>
-  <div>
-    <h1>{{movie.title}}</h1>
-    <h2>{{movie.director}}</h2>
+  <div id="mc2">
+     <a href="/movies/">Go Back</a>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}}</h3>
     <ul>
       {{#each movie.stars}}
       <li>{{this}}</li>

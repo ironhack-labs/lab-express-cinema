@@ -1,54 +1,83 @@
 body {
-  padding: 0px;
-  margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
-  min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
 }
- 
-h1{
-  margin:0;
+
+h1 {
+    margin: 0;
 
 }
+
 a {
-  color: #00B7FF; }
+    color: #00B7FF;
+}
 
 #presentation {
-  background-image: url(/images/cinema.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-#presentation h1{
-  font-size: 40px;
-  color:white;
+    background-image: url(/images/cinema.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#presentation-in{
-  margin:40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#presentation h1 {
+    font-size: 50px;
+    color: white;
+    font-size: 80px;
+    color: white;
 }
 
-#btn{
-border-radius: 40px;
-font-size: 15px;
-padding: 3% 4%;
-background-color: white;
-text-align: center;
-width: 40%;
-text-decoration: none;
+#presentation-in {
+    margin: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn {
+    border-radius: 40px;
+    font-size: 15px;
+    padding: 3% 4%;
+    background-color: white;
+    text-align: center;
+    width: 40%;
+    text-decoration: none;
 
 }
 
-/*# sourceMappingURL=style.css.map */
+
+
+.movies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 2%1%;
+
+
+}
+.movies-container img{
+    width:33vh;
+    margin: 30px;
+
+}
 
 .moviesCard-container{
-  display: flex;
-  justify-content: space-around;
-  align-items: center
-  flex-direction: column;
+    display: flex;
+    margin:2% 5%;
+}
+.moviesCard-container img{
+    width:27vh;
+}
+#mc1 ,#mc2{
+    margin:2%;
+}
+img {
+    object-fit: cover;
+}
+#mc2 p{
+    width: 80vh;
 }
