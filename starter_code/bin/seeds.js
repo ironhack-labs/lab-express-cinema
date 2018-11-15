@@ -1,4 +1,8 @@
 // To insert in "bin/seeds.js"
+const mongoose = require("mongoose");
+
+const Movie = require("/models/Movies");
+
 
 const movies = [
   {
@@ -66,3 +70,16 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+mongoose
+  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    return Movie.collection.drop();
+  })
+  .then(()=> {
+    return Movie.insertMany(movies)
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
