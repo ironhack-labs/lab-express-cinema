@@ -1,6 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-const Movies = require('../models/Movie.js');
+const Movie = require('../models/Movie.js');
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -8,9 +8,19 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/movies', (req, res, next) => {
-  Movies.find({})
+  Movie.find({})
     .then(movies => {
       res.render("movies", { movies });
+    })
+    .catch(error => {
+      console.log(error)
+    })
+});
+
+router.get('/movie/:id', (req, res, next) => {
+  Movie.findById(req.params.id)
+    .then(movie => {
+      res.render("movie", { movie });
     })
     .catch(error => {
       console.log(error)
