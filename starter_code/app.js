@@ -49,13 +49,22 @@ app.use('/', index);
 
 app.get("/movies", (req, res, next) => {
   Movie.find()
-      .then((movie) => {
-        res.status(200).render("movies",{movie})
-  })
+    .then((movie) => {
+      res.status(200).render("movies", { movie })
+    })
     .catch(err => {
-      console.log("In Movies"+err)
+      console.log("In Movies" + err)
     })
 })
-
+app.get("/movie/:id", (req, res, next) => {
+  Movie.findById({_id:req.params.id})
+    .then((movie)=>{
+      console.log(movie)
+      res.status(200).render("movie",{movie})
+    })
+    .catch(err=>{
+      console.log("In Each Movie"+err)
+    })
+})
 
 module.exports = app;

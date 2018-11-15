@@ -38,10 +38,12 @@ button{
   text-align: center;
   /* margin: 10pxK */
 }
-.posters, .title, a{
+.movies .posters, .movies .title,.movies  a{
   margin: 0.5rem 1rem;
 }
-
+.title{
+  font-weight: 600;
+}
 h3{
   font-size: 30px;
   font-weight: 700;
@@ -49,4 +51,11 @@ h3{
 .movie-time{
   font-size: 22px;
   font-weight: 500;
+}
+.posters, .info-display, .sing-movie{
+  margin: 2rem;
+}
+.movie{
+  display: flex;
+  flex-direction: row;
 }
