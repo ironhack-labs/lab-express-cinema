@@ -1,9 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const movie = require("../models/Movie");
-const movieArr = require("../bin/seeds")
-
-
+const movieArr = require("../bin/seeds");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
@@ -11,15 +9,21 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/movies", (req, res) => {
-  movie.find().then(movies => {
-    res.render("movies", { movies });
-  }).catch(e => console.log("error", e));
+  movie
+    .find()
+    .then(movies => {
+      res.render("movies", { movies });
+    })
+    .catch(e => console.log("error", e));
 });
 
 router.get("/movies/:id", (req, res) => {
-  movie.find({ _id: req.params.id }).then(movie => {
-    res.render("movieinfo", { movie: movie[0] });
-  }).catch(e => console.log("error", e));;
+  movie
+    .find({ _id: req.params.id })
+    .then(movie => {
+      res.render("movieinfo", { movie: movie[0] });
+    })
+    .catch(e => console.log("error", e));
 });
 
 module.exports = router;
