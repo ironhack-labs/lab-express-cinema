@@ -24,6 +24,8 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
 
+hbs.registerPartials(__dirname + '/views/partials');
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -53,6 +55,5 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
-
 
 module.exports = app;
