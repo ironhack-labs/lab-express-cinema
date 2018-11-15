@@ -1,6 +1,20 @@
-const movies = [
-  {
-    title : "A Wrinkle in Time",
+
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie');
+
+mongoose
+  .connect('mongodb://localhost/starter-code', {
+    useNewUrlParser: true
+  })
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
+
+const movies = [{
+    title: "A Wrinkle in Time",
     director: "Ava DuVernay",
     stars: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -8,7 +22,7 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   },
   {
-    title : "The Strangers: Prey at Night",
+    title: "The Strangers: Prey at Night",
     director: "Johannes Roberts",
     stars: ["Christina Hendricks", "Bailee Madison", "Martin Henderson"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1OTIwODgzMV5BMl5BanBnXkFtZTgwMzUyMDgzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -16,7 +30,7 @@ const movies = [
     showtimes: ["13:50", "16:20", "19:20", "22:10"]
   },
   {
-    title : "The Hurricane Heist",
+    title: "The Hurricane Heist",
     director: "Rob Cohen",
     stars: ["Toby Kebbell", "Maggie Grace", "Ryan Kwanten"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMzg3Y2MyNjgtMzk4ZS00OTU3LWEwZmMtN2Y0NTdlZjU0NGFiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -24,7 +38,7 @@ const movies = [
     showtimes: ["13:10", "15:40", "18:20", "20:50", "23:10"]
   },
   {
-    title : "Gringo",
+    title: "Gringo",
     director: "Nash Edgerton",
     stars: ["Joel Edgerton", "Charlize Theron", "David Oyelowo"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyMTk2MTQ3Ml5BMl5BanBnXkFtZTgwNDQ2ODE0NDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -32,7 +46,7 @@ const movies = [
     showtimes: ["13:40", "15:50", "19:00", "21:20", "23:50"]
   },
   {
-    title : "Thoroughbreds",
+    title: "Thoroughbreds",
     director: "Cory Finley",
     stars: ["Anya Taylor-Joy", "Olivia Cooke", "Anton Yelchin"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BNDcyNDA4NDAzN15BMl5BanBnXkFtZTgwODQxMDQ5NDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -40,7 +54,7 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   },
   {
-    title : "The Leisure Seeker",
+    title: "The Leisure Seeker",
     director: "Paolo Virzì",
     stars: ["Helen Mirren", "Donald Sutherland", "Janel Moloney"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1NTg2MzcyNF5BMl5BanBnXkFtZTgwNjMwMDIzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -48,7 +62,7 @@ const movies = [
     showtimes: ["13:40", "15:50", "19:00", "21:20", "23:50"]
   },
   {
-    title : "Black Panther",
+    title: "Black Panther",
     director: "Ryan Coogler",
     stars: ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -56,7 +70,7 @@ const movies = [
     showtimes: ["13:50", "16:20", "19:20", "22:10"]
   },
   {
-    title : "Red Sparrow",
+    title: "Red Sparrow",
     director: "Francis Lawrence",
     stars: ["Jennifer Lawrence", "Joel Edgerton", "Matthias Schoenaerts"],
     image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MDkxOTc4NDdeQTJeQWpwZ15BbWU4MDAxNzgyNTQz._V1_UX182_CR0,0,182,268_AL_.jpg",
@@ -64,3 +78,12 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+Movie.collection.drop();
+Movie.create(movies)
+.then(()=>{
+  console.log(`Se han insertado en BBDD MONGO${movies.length} pelis`)
+  mongoose.disconnect();
+})
+
+
