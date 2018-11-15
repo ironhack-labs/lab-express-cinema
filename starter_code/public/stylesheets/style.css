@@ -38,4 +38,27 @@ a {
         background-color: #619DAF;
         color: #fff; }
 
+.movies h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 1rem 1rem; }
+
+.movies p.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+
+.movies .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px; }
+  .movies .cards .card {
+    margin: 1rem;
+    text-align: center; }
+    .movies .cards .card p {
+      font-weight: 700;
+      margin: .7rem; }
+
 /*# sourceMappingURL=style.css.map */

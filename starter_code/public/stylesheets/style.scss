@@ -50,3 +50,35 @@ a {
   }
 }
 
+.movies {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 1rem 1rem;
+  }
+
+  p.subtitle {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+
+    .card {
+      margin: 1rem;
+      text-align: center;
+
+      p {
+        font-weight: 700;
+        margin: .7rem;
+      }
+    }
+  }
+
+}
