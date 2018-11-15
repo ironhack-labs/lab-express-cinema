@@ -3,7 +3,7 @@ require('dotenv').config();
 const mongoose =  require('mongoose');
 const Movie = require('../models/Movie');
 
-mongoose.connect("mongodb://localhost/cinema", {useNewUrlParser: true})
+mongoose.connect(`mongodb://localhost/${process.env.DB}`, {useNewUrlParser: true})
         .then(() => console.log("Connected!"));
 
 

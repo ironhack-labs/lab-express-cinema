@@ -12,10 +12,7 @@ const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
 mongoose
-  .connect(
-    "mongodb://localhost/starter-code",
-    { useNewUrlParser: true }
-  )
+  .connect(`mongodb://localhost/${process.env.DB}`, { useNewUrlParser: true })
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`
