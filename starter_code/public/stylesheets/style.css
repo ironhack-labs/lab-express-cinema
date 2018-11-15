@@ -1,8 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .main {
   height: 100vh;
@@ -12,16 +11,13 @@ body {
   justify-content: center;
   align-items: flex-end;
   text-align: left;
-  background: url('/images/cinema.jpg');
+  background: url("/images/cinema.jpg");
   background-size: cover;
-  margin-right: 15rem;
-
-}
+  margin-right: 15rem; }
 
 .main h1 {
   font-size: 5rem;
-  color: white;
-}
+  color: white; }
 
 #my-button {
   display: flex;
@@ -32,5 +28,6 @@ body {
   border: none;
   border-radius: 50px;
   width: 8rem;
-  color: #00B7FF;
-}
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
