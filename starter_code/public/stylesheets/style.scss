@@ -34,3 +34,28 @@ body {
   width: 8rem;
   color: #00B7FF;
 }
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 0 10rem;
+}
+
+.item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width: 30%;
+}
+
+.item p {
+  margin: 0.5rem;
+  color: white;
+}
+
+.item button:hover {
+  cursor: pointer;
+}
