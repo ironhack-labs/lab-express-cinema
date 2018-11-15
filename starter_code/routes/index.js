@@ -1,7 +1,7 @@
 const express = require('express');
 const router  = express.Router();
+const Movie = require('../models/Movie')
 
-module.exports = router;
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -10,6 +10,13 @@ router.get('/', (req, res, next) => {
 
 
 router.get('/movies', (req, res, next) => {
-  res.render('movies');
+  Movie.find({})
+  .then( allMovies => {
+    res.render('movies',{allMovies});
+  })
+  .catch(err=> console.log(err))
+
+
 });
 
+module.exports = router;
