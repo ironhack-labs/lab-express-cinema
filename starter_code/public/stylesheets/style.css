@@ -7,7 +7,10 @@ a {
 
 .main {
   min-height: 100vh;
-  background-image: url("/images/cinema.jpg"); }
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   .main .col {
     width: 50%;
     position: absolute;
@@ -53,12 +56,45 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 900px; }
+  max-width: 900px;
+  margin: 0 auto; }
   .movies .cards .card {
     margin: 1rem;
     text-align: center; }
     .movies .cards .card p {
       font-weight: 700;
       margin: .7rem; }
+
+.movie {
+  display: flex;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto; }
+  .movie .info {
+    padding-left: 2rem; }
+    .movie .info p.title {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      font-weight: 600; }
+    .movie .info p.director {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem; }
+    .movie .info p.stars {
+      font-weight: 600;
+      font-size: 1.1rem; }
+    .movie .info ul {
+      list-style-type: disc;
+      margin: 1rem; }
+      .movie .info ul li {
+        margin-bottom: 1rem; }
+    .movie .info p.description {
+      margin-bottom: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
