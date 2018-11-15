@@ -1,22 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  // padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-}
-.index{
-
+.index {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
-
-}
+  flex-flow: column; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
