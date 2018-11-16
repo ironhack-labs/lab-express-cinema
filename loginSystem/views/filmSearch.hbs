@@ -7,11 +7,30 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body{
+            text-align: center;
+            font-family: arial, sans-serif;
+            color: white;
+            background: black;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            margin: 5%;
+            justify-content: center;
+            align-content: center;
+        }
+        button{
+            margin: 10px
+        }
+    </style>
     <form action="/filmmatch" method="POST">
         <table>
             <tbody>
                 <tr style="column-span: all">
-                    <td><h3>Film searcher</h3></td>
+                    <td><h3>Search for your movie</h3></td>
                 </tr>
                 <tr>
                     <td>
@@ -34,7 +53,7 @@
         <table class="table">
             <tr>
                 <td>
-                    <h3>ADD a movie to the database!</h3>
+                    <h3>Add a movie</h3>
                 </td>
                 <td>
                     <h3>Year of the movie</h3>
@@ -55,9 +74,10 @@
                 </td>
             </tr>
         </table>
-        <button type="submit">Click to Submit your movie</button>
-        <p>{{output2}}</p>
+        
+     
     </form>
-
+    <button type="submit">Click to Submit your movie</button>
+    <p>{{output2}}</p>
 </body>
 </html>

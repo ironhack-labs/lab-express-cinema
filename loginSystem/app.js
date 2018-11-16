@@ -135,7 +135,7 @@ app.post("/filmmatch", (req, res) => {
 
 app.post("/logOut", (req, res) => {
    cookie = false;
-   res.redirect("/")
+   res.render("index", {output: "You have logged out"})
 })
 
 /*POST LOG OUT END */
