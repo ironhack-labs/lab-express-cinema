@@ -3,5 +3,13 @@
   <img src="{{movies.image}}" alt="">
   <p>{{movies.title}}</p>
   <p>Director: {{movies.director}}</p>
+  
+  <ul>Stars
+    {{#each movies.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p>{{movies.description}}</p>
+  <p>{{movies.showtimes}}</p>
   {{!-- <p><a href="movie/{{_id}}">See more</a></p> --}}
 </div>
