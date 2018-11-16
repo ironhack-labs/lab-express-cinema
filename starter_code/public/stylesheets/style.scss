@@ -1,8 +1,26 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ 
 }
 
 a {
   color: #00B7FF;
+}
+
+.home-page-img{
+  width: 100%;
+}
+
+a{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding:10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.movie-preview{
+  float:left;
+  margin: 50px;
 }
