@@ -6,7 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie Details</title>
 </head>
-<body>
-    <h1>Movie Details Section</h1>
+<body class="movie-details">
+
+    <img class="movie-details-image" src="{{data.image}}" alt="film-image">
+    <div class="details-container">
+        <a class="movie-text" href="/movies">Go back</a>
+        <h1 class="movie-text title">{{data.title}}</h1>
+        <h2 class="movie-text director">Director: {{data.director}}</h2>
+        <h3 class="movie-text stars-title">Stars:</h3>
+        <ul>
+            {{#each data.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="movie-text description">{{data.description}}</p>
+        <p class="movie-text showtimes">
+            {{#each data.showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+    </div>
+    
 </body>
 </html>
