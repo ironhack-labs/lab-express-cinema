@@ -1,0 +1,11 @@
+<section class="movies">
+    {{#each movies}}
+    <div class="">
+        <img src=" {{this.images}}" alt="">
+        <div class="">
+            <h1>{{this.name}}</h1>
+            <button class="buttonCard" onclick="location.href=`/movies/{{this.id}}`">View Tracks</button>
+        </div>
+    </div>
+    {{/each}}
+</section>
