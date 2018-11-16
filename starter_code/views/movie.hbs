@@ -2,15 +2,15 @@
 
     <img src="{{movie.image}}" />
     <div id="ficha">
-        <a href="/movies">Go back</a>
-        <div>{{movie.title}}</div>
-        <div>{{movie.director}}</div>
-        <ul>
+        <a class="space" href="/movies">Go back</a>
+        <div class="space top">{{movie.title}}</div>
+        <div class="space">{{movie.director}}</div>
+        <ul class="space">
             {{#each movie.stars}}
             <li>{{this}}</li>
             {{/each}}
         </ul>
-        <div>{{movie.description}}</div>
+        <div class="space description">{{movie.description}}</div>
         {{#each movie.showtimes}}
         <span>{{this}} |</span>
         {{/each}}

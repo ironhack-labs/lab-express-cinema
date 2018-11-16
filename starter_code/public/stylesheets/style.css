@@ -60,7 +60,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-bottom: 5%;
-  width:33%;
+  width:25%;
   align-items: center;
   margin-top:5%;
  
@@ -68,7 +68,8 @@ h1 {
 
 #moviePartial img {
 
-  max-width: 40%;
+  max-width: 100%;
+  margin-bottom:4%;
 }
 
 #movies {
@@ -81,4 +82,32 @@ h1 {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+}
+
+#ficha {
+
+  max-width: 65%;
+}
+
+#movie img {
+
+  margin-right: 3%;
+}
+
+.space {
+
+  margin-bottom: 3%;
+}
+
+.top {
+
+  margin-top: 2%;
+}
+
+.description{
+
+  max-width: 50%;
 }
