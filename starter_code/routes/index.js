@@ -11,7 +11,6 @@ router.get('/movies', (req, res, next) => {
 
   Movie.find({})
     .then(movies => {
-      console.log(movies);
       res.render("movies", { movies });
     })
     .catch(error => {
@@ -20,12 +19,19 @@ router.get('/movies', (req, res, next) => {
 })
 
 
-router.get('/movie/:id', (res, req, nect) => {
-  Movie.find({ id: req.params.id })
+router.get('/movie/:id', (req, res, next) => {
+  console.log('entra');
+  console.log(req.params.id);
+  let movieId = req.params.id;
+
+  Movie.findById(movieId)
     .then((data) => {
+      console.log(data);
       res.render('movie',{data});
     })
-    .catch()
+    .catch(()=>{
+      console.log("Error finding the movie/ rendering the details site.")
+    })
 
 })
 
