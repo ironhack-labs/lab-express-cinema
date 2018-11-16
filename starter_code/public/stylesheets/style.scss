@@ -1,8 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-top: 50px;
+  padding: 20px 50px;
+  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("/images/cinema.jpg");
+  background-size: cover;
+  color:white;
+  
 }
 
 a {
   color: #00B7FF;
+}
+
+button {
+  margin-top:30px;
+  padding:20px;
+  font-size:30px;
+  border-radius:40px;
+}
+
+.float-right{
+  float:right;
+  width: 50%;
 }
