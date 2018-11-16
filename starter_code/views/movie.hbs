@@ -3,13 +3,17 @@
 <div class="movie">
   <img src="{{movie.image}}" alt="Movie Img" class="posters">
   <div class="info-display">
-    <p class="title">{{movie.title}}</p>
-    <p>Director: {{movie.director}}</p>
-    <p>Stars</p>
+    <p class="title black">{{movie.title}}</p>
+    <p class="black">Director: {{movie.director}}</p>
+    <p class="black">Stars</p>
     <ul>
-      <li>{{movie.stars}}</li>
+      {{#each movie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
     </ul>
     <p>{{movie.description}}</p>
-    <p>{{movie.showtimes}}</p>
+    {{#each movie.showtimes}}
+    <span>{{this}} |</span>
+    {{/each}}
   </div>
 </div>

@@ -42,7 +42,7 @@ button{
   margin: 0.5rem 1rem;
 }
 .title{
-  font-weight: 600;
+  font-size: 30px;
 }
 h3{
   font-size: 30px;
@@ -52,10 +52,21 @@ h3{
   font-size: 22px;
   font-weight: 500;
 }
+
+.sing-movie{
+  margin-right: 2rem;
+}
 .posters, .info-display, .sing-movie{
   margin: 2rem;
 }
 .movie{
   display: flex;
   flex-direction: row;
+}
+
+.black{
+  font-weight: 700;
+}
+.info-display{
+  width: 70%;
 }
