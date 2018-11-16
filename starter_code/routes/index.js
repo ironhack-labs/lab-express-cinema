@@ -10,7 +10,11 @@ router.get('/', (req, res, next) => {
 router.get('/movies', (req, res, next) => {
   Movies.find({})
     .then(movies => {
-      res.render("movies", { movies });
+      return res.render("movies", { movies });
+    })
+    .then(() => {
+      console.log('Connection close!')
+      mongoose.connection.close()
     })
     .catch(error => {
       console.log(error)
@@ -21,8 +25,12 @@ router.get('/movie/:id', (req, res, next) => {
     let movieId = req.params.id;
     Movies.find({_id: movieId})
     .then(movie => {
-      console.log(movie)
-      res.render("movie", {movie});
+      return res.render("movie", {movie});
+    })
+    .then(() => {
+      return res.render("movies", { movies });
+      mongoose.connection.close()
+
     })
     .catch(error => {
       console.log(error)
