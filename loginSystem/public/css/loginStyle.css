@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+table{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+tr{
+    text-align: center;
+}
+.input{
+    padding: 6px;
+    margin: 7px;
+    font-size: 17px;
+}

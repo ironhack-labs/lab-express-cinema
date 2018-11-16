@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="stylesheet" rel="text/css" href="css/loginStyle.css">
+    <link type="stylesheet" rel="text/css" href="helloWorld/helloWorld.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        table{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+
+        }
+        tr{
+            text-align: center;
+        }
+        .input{
+            padding: 6px;
+            margin: 7px;
+            font-size: 17px;
+        }
+    </style>
+    <form  action="/loggedIn" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <h2>Login to WebPage</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="username" type="text" value="Username" class="input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="password" value="Password" class="input password">
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Log In"></td></tr>
+        </table> 
+    </form>
+    <p>{{output}}</p>
+    <p>{{error}}</p>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

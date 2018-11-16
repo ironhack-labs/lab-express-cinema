@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/filmmatch" method="POST">
+        <table>
+            <tbody>
+                <tr style="column-span: all">
+                    <td><h3>Film searcher</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="movieTitle" value="Movie Title"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Search"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>{{output.movie}}, {{output.year}}</p>
+    </form>
+    <form action= "logOut" method="POST">
+        <button type="Submit" >Log Out</button>
+    </form>
+
+    <form action="/movienew" method="POST">
+        <table class="table">
+            <tr>
+                <td>
+                    <h3>ADD a movie to the database!</h3>
+                </td>
+                <td>
+                    <h3>Year of the movie</h3>
+                </td>
+                <td>
+                    <h3>Movie Author</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="moviename" value="Name of the movie here">
+                </td>
+                <td>
+                    <input type="text" name="movieduration" value="Year of the movie">
+                </td>
+                <td>
+                    <input type="text" name="moviedirector" value="Director of the movie">
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Click to Submit your movie</button>
+        <p>{{output2}}</p>
+    </form>
+
+</body>
+</html>
