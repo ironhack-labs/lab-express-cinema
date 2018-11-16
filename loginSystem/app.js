@@ -88,6 +88,7 @@ app.post("/loggedIn", (req, res) => {
 /*REGISTER POST*/
 
 app.post("/registerData", (req, res) => {
+   
     var userData = {
         username: req.body.username,
         password: req.body.password
@@ -110,19 +111,17 @@ app.post("/registerData", (req, res) => {
 app.post("/filmmatch", (req, res) => {
     var titleToSearch = req.body.movieTitle
     console.log(titleToSearch)
-    var connection = mongoose.connect("mongodb://localhost:27017/films")
+ 
     .then(()=> {
-        movie.find({movie: titleToSearch}, (err, movies) => {
-            console.log(movies)
-            res.render("filmSearch", {output: movies[0]})
-            connection.close()
+        movie.find({movie: titleToSearch}, (err, result) => {
+            console.log(result)
+            res.render("filmSearch", {output: result[0]})
             if(err) console.log(err)
         }) //finding right movie
 
     })
     .catch((err) => {
         console.log(err) //error in connection
-        connection.close()
     })
     
   
@@ -143,14 +142,14 @@ app.post("/logOut", (req, res) => {
 
 /*POST TO CREATE MOVIE*/
 app.post("/movienew", (req, res, next) => {
-    var connection = mongoose.connect("mongodb://localhost:27017/films")
+       
     var temporalMovie = {
         movie: req.body.moviename,
         year: req.body.movieduration,
         director: req.body.moviedirector,
     }
     new movie(temporalMovie)
-    .save()
+    movies.save()
     res.render("filmSearch", {output2: "Movie was uploaded correctly"})
  
  })

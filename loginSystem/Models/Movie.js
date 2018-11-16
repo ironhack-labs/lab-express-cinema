@@ -7,4 +7,4 @@ var movieSchema = new Schema({
     director: String,
 })
 
-module.exports = mongoose.model("movie", movieSchema)
+module.exports = mongoose.model("movie", movieSchema) //MOVIE IS THE REFERENCE TO THIS SCHEMA BUT ITS ALSO THE DIRECTORY WHERE FIND() WILL LOOK WHEN SEARCHING 
