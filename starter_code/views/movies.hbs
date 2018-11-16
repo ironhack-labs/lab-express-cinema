@@ -9,11 +9,14 @@
 </head>
 
 <body>
-    <h1>Welcome to the movies section</h1>
+    <h1 class="movies-title">Ironhack Cinema</h1>
+    <p class="movies-text">Click on a movie to check its showtimes!</p>
 
-    {{#each movies}}
-    <p>{{title}}</p>
-    {{/each}}
+    <div class="movies-container">
+        {{#each movies}}
+        {{>moviePartial this}}
+        {{/each}}
+    </div>
 
 </body>
 

@@ -3,7 +3,13 @@
   padding:0;
 }
 
-body {
+body{
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+  padding: 20px 50px;
+}
+
+.index{
   margin-top: 50px;
   padding: 20px 50px;
   font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -24,7 +30,26 @@ button {
   border-radius:40px;
 }
 
-.float-right{
+.index-float-right{
   float:right;
   width: 50%;
+}
+
+.movies-container {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.movie{
+  margin:0 5vw;
+}
+
+.movies-title{
+
+}
+
+.movies-text{
+  margin: 20px 0;
+  font-size: 150%;
 }
