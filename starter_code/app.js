@@ -25,6 +25,11 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
 
+app.get('/movies', (req, res, next) => {
+  res.render('movies');
+});
+
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -57,3 +62,5 @@ app.use('/', index);
 
 
 module.exports = app;
+
+
