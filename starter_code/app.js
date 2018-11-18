@@ -8,10 +8,11 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const Movie     = require('./models/movie')
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/Cinema', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -37,7 +38,7 @@ app.use(require('node-sass-middleware')({
   dest: path.join(__dirname, 'public'),
   sourceMap: true
 }));
-      
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -53,6 +54,40 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+
+
+app.get('/', (req, res, next) => {
+  res.render('index');
+});
+
+
+
+
+app.get('/movies', (req, res, next) => {
+  Movie.find()
+  .then(movie=>{
+
+    res.render('movies', {listOfMovies: movie});
+
+  })
+  .catch(error => {
+    next(error)
+  })
+});
+
+app.get('/movies/:id', (req, res, next)=>{
+  Movie.findById(req.params.id)
+  .then((theMovie)=>{
+
+    res.render('blah', {pickedMovie: theMovie})
+
+  })
+  .catch((err)=>{
+    next(err);
+  })
+})
+
 
 
 module.exports = app;
