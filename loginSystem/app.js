@@ -4,8 +4,9 @@ const hbs = require('hbs')
 const mongoose = require('mongoose')
 const bodyParser = require("body-parser")
 const path = require('path')
-const cookieParser = require('cookie-parser')
-var cookie = false;
+const cookieParser= require('cookie-parser')
+const bcrypt = require('bcrypt')
+
 
 //Database connection
 mongoose.connect("mongodb://localhost:27017/login")
@@ -24,9 +25,9 @@ app.set("view engine", "hbs") //Engine HBS
 app.set("views", __dirname +"/views") //Folder views (templates)
 app.use(express.static("public")) //Public is static (to get .js, images and .css)
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets'))); //Css folder specified (NOT WORKING)
-app.use(bodyParser.urlencoded({extended: false})) //Post Body Parser
 app.use(bodyParser.json()) //Parser for JSON files
-app.use(cookieParser())
+app.use(bodyParser.urlencoded({extended: true})) //Post Body Parser
+app.use(cookieParser()) //Using middleware cookie-parser
 
 //Setting partials
 hbs.registerPartials(__dirname + "/views/partials")
@@ -37,53 +38,63 @@ app.get("/", (req, res) => {
     res.render("index", {error : ""})
 })
 
+app.get("/filmSearch", (req, res) =>{
+    if(req.cookies.LoggedIn){
+        res.render("filmSearch")
+    }
+    else{
+        res.render("index", {error: "You have not logged in, faggot"})
+    }
+})
+
+app.get("/register", (req, res) =>{
+    res.render("register")
+})
 
 /*LOG IN POST */
 
 var errCount = 0
 
 app.post("/loggedIn", (req, res) => {
+
     var userData = {
         username: req.body.username,
         password: req.body.password
     }
-   
-    //Checking database
-    userProfile.find({})  //Finding in database
-    .then((registers) =>{ //Finding in registers directory
-        registers.forEach((data) =>{ //If any of the registers object username is a match with the input then check passowr
-            if(data.username == userData.username){
-                if(data.password == userData.password){ //If password = input then redirect with message
-                    // docCookies.setItem("LoggedIn", "true")
-                    cookie = true;
-                    res.render("filmSearch")
-                }
-                else{ //Else incorrect password 
-                    res.render("index", {error : "Invalid data"})
-                    errCount++;
-                }
-            }
-            else if(errCount > 3){ //If none of the password nor the username is a match I ask if he wants to register and if that true I redirect to register page
-                var check = prompt("Do you want to register?")
-                if(check){
-                    res.redirect("/register")
-                }
-                else{
-                    res.redirect("/")
-                }
 
-            }
-            else{
-                res.render("index", {error: "Invalid data"}) //Using render because with redirect and send data at the same time
-            }
-        })
-    })
-    .catch((err) =>{
-        console.log("Not found "+err)
-    })
+    userProfile.findOne({username: userData.username}, (err, data) => {
+       
+        if(err){console.log(err);} //Error in server
+        else if(!data){
+            res.render("index", {error: "Invalid credentials, if you want to create an accout press register"})
+        } //If there is no match password I render index
+        else{ //If none of the latter things happen I create a cookie for loggedIn and I redirect to the search film
+           bcrypt.compare(userData.password, data.password)
+           .then((match) => {
+                if(match){
+                    res.cookie('LoggedIn', true)
+                    res.redirect("/filmSearch")
+                }
+           })
+           .catch((err) => {
+                console.log(err)
+                res.render("index", {error: err})
+            })
+        }
+    })  //Finding in database
+
 })
 
 /*LOG IN POST END */
+
+/*REDIRECT POST START*/
+
+app.post("register", (err, res) => {
+    if(err) console.log("error")
+    else res.redirect("register")
+})
+
+/*REDIRECT POST END */
 
 /*REGISTER POST*/
 
@@ -93,14 +104,21 @@ app.post("/registerData", (req, res) => {
         username: req.body.username,
         password: req.body.password
     }   
-    new userProfile(userData)
-    .save()
-    .then(() => {
-        res.redirect("filmSearch")
-    })
-    .catch((err) =>{
-        console.log(err)
-    })
+    
+    bcrypt.hash(userData.password, 5)
+        .then((encryptedPass) => {
+            //Cookie missing It works!!!
+            userData.password = encryptedPass   
+            new userProfile(userData)
+            .save()
+            res.cookies('LoggedIn', true)
+            res.redirect("filmSearch")
+        })
+        .catch((err) =>{
+            console.log(err)
+        })
+    
+    
 
 })
 
@@ -118,8 +136,6 @@ app.post("/filmmatch", (req, res) => {
         if(err) console.log(err)
     }) //finding right movie
 
-    
-  
 })
 
 /*POST MOVIE CHECK END */
@@ -129,7 +145,7 @@ app.post("/filmmatch", (req, res) => {
 /*POST LOG OUT START*/
 
 app.post("/logOut", (req, res) => {
-   cookie = false;
+   res.clearCookie("LoggedIn")
    res.render("index", {output: "You have logged out"})
 })
 
@@ -150,6 +166,6 @@ app.post("/movienew", (req, res, next) => {
  })
 
 //App.listen to port 3000
-app.listen(3252, () =>{
+app.listen(3000, () =>{
     console.log("Listening to port")
 })
