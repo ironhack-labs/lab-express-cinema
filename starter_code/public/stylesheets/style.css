@@ -1,15 +1,11 @@
 body {
-
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
-
+  color: #00B7FF; }
 
 .landing-page {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   display: flex;
   justify-content: center;
   width: 120vw;
@@ -19,34 +15,25 @@ a {
   background-size: 80%;
   margin: 0 0 0 0;
   padding: 0 0 0 40px;
-  color: white;
-
-}
+  color: white; }
 
 .landing-page img {
-  width: 80vw;
-}
-
+  width: 80vw; }
 
 .btn {
-  padding: 150px 0 0 0px;
-  
-}
+  padding: 150px 0 0 0px; }
 
-button{
+button {
   width: 23vw;
   height: 9vh;
   color: skyblue;
   background-color: white;
   border-radius: 50em;
-  font-size: 20px;
-}
-
+  font-size: 20px; }
 
 h1 {
-  font-size: 85px;
-  
-}
+  font-size: 85px; }
+
 /*
 .movie-card{
   width: 150px;
@@ -60,3 +47,5 @@ h1 {
 
 
 */
+
+/*# sourceMappingURL=style.css.map */
