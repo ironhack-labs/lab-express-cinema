@@ -10,13 +10,22 @@ router.get('/', (req, res, next) => {
 router.get('/movies', (req, res, next) => {
   Movie.find()
   .then(movies=>{
-    // console.log(movies)
     res.render('movies',{movies});
-    // res.send(movies)
   })
   .catch(err=>{
     res.render('error')
-    // res.send(err)
   })
 });
+
+router.get('/movies/:id', (req, res, next) => {
+  const {id} = req.params
+  Movie.findById(id)
+  .then(movie=>{
+    res.render('detail',movie);
+  })
+  .catch(err=>{
+    res.render('error')
+  })
+});
+
 module.exports = router;

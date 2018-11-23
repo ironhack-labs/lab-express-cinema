@@ -3,8 +3,8 @@
 <div class="movies">
   {{#each movies}}
   <div class="movies-card">
-      {{#if this.image}} 
-      <img src="{{this.image}}" alt="movie pic" width="200px">
+      {{#if this.image}}
+      <a href="/movies/{{this.id}}"><img src="{{this.image}}" alt="movie pic" width="200px"></a>
       {{else}}
       <img src="https://i3.stycdn.net/images/2011/06/26/article/stylefile/bb10702/stylefile-blackbook-a4-hoch-930-medium-1.jpg" alt="" width="200px">
       {{/if}}
