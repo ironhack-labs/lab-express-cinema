@@ -8,6 +8,13 @@ const movieSchema = new Schema({
   image: String,
   description: String,
   showtimes: Array
+},{
+  timestamps:{
+    createdAt: 'created_at',
+    updatedAt: 'updated_at'
+  },
+  versionKey: false //se desactiva lo feo de mongoose
+
 })
 
 module.exports = mongoose.model('Movie', movieSchema);
