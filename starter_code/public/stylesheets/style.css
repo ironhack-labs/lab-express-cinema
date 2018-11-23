@@ -11,6 +11,10 @@ a {
 
 /*# sourceMappingURL=style.css.map */
 
+h1, h2 {
+  padding: 10px 50px;
+}
+
 .home {
   width: 100vw;
   height: 100vh;
@@ -43,4 +47,42 @@ a {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.header {
+  width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.movies-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 30vw;
+  margin: 10px;
+  text-align: center;
+}
+
+.movies-card img {
+  margin: 10px;
+}
+
+.movies-card h3 {
+  margin: 10px;
 }

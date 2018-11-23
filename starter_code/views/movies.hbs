@@ -1,1 +1,15 @@
-<h1>Movies</h1>
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+<div class="movies">
+  {{#each movies}}
+  <div class="movies-card">
+      {{#if this.image}} 
+      <img src="{{this.image}}" alt="movie pic" width="200px">
+      {{else}}
+      <img src="https://i3.stycdn.net/images/2011/06/26/article/stylefile/bb10702/stylefile-blackbook-a4-hoch-930-medium-1.jpg" alt="" width="200px">
+      {{/if}}
+      <h3>{{this.title}}</h3>
+      <a href="/movies/{{this.id}}">See more</a>
+  </div>
+  {{/each}}   
+</div>
