@@ -1,0 +1,27 @@
+<div class="movies-headers">
+  <h2>Ironhack Cinema</h2>
+  <p>Click on the movie to check the sowtimes!</p>
+</div>
+<div>
+  <div class="contenedor-movies">
+    {{#each movies}}
+    <div class="movie">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by5">
+            <img src="{{this.image}}" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <p class="title is-6">{{this.title}}</p>
+            </div>
+          </div>
+        </div>
+        <a href="/movie/{{this._id}}" class="button is-link is-outlined is-medium">Let's see!</a>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

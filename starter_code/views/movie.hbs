@@ -1,0 +1,52 @@
+<div>
+  <div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-4by5">
+        <img src="{{image}}" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <h3>{{title}}</h3>
+        <h4>{{director}}</h4>
+        <p style="font-weight: bold">Stars</p>
+        <ul>
+          <li>{{this.stars.[0]}}</li>
+          <li>{{this.stars.[1]}}</li>
+          <li>{{this.stars.[2]}}</li>
+        </ul>
+        <p>{{description}}</p>
+        <p>
+          <span>{{this.showtimes.[1]}}</span> |
+          <span>{{this.showtimes.[0]}}</span> |
+          <span>{{this.showtimes.[2]}}</span> |
+          <span>{{this.showtimes.[3]}}</span>
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item" aria-label="reply">
+            <span class="icon is-small">
+              <i class="fas fa-reply" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="retweet">
+            <span class="icon is-small">
+              <i class="fas fa-retweet" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a class="level-item" aria-label="like">
+            <span class="icon is-small">
+              <i class="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+  <div class="return-button">
+    <a href="/movies" class="button is-link is-outlined is-medium">RETURN</a>
+  </div>
+  </div>
+</div>
