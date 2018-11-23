@@ -1,38 +1,34 @@
 body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-
-.banner{
+.banner {
   background-position: center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/cinema.jpg')
-}
+  background-image: url("../images/cinema.jpg"); }
 
-.seach-box{
+.seach-box {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+
 .box h1 {
   font-size: 50px;
   font-weight: 400;
-  color: white;
-}
+  color: white; }
 
-.movies-container{
+.movies-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
-.perro{
+.perro {
   width: 350px;
-  padding: 10px 0;
-}
+  padding: 10px 0; }
+
+/*# sourceMappingURL=style.css.map */
