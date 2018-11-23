@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/style">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<h2>Movies</h2>
+<section class="peliculas">
+<div>
+{{#each movies}}
+<p>{{this.title}}</p> 
+<img src="{{image}}" alt="" width="100px">
+</div>
+<a href="/movies/{{this._id}}">View more...</a>
+{{/each}}
+</section>
