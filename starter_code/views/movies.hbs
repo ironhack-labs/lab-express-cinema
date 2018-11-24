@@ -1,0 +1,13 @@
+<h1>Ironmovies</h1>
+<div class="card-container">
+{{#each movies}}
+    <div>
+    <img src="{{this.image}}" alt=""> <br>
+    <p>{{this.title}}</p> <br>
+    <a href="/movies/{{this._id}}">View details</a>
+    </div>
+
+    
+{{/each}}
+
+</div>

@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: bisque
 }
 
 a {
@@ -11,3 +12,44 @@ a {
 .container{
   background-image: "https://www.ritcs.be/sites/default/files/styles/image_953x500_/public/2018-06/Cinema%20RITS.jpg?h=dccbe9e7&itok=dgmtlzLr",
 }
+
+h1{
+  text-align:center;
+  font-size: 4em
+}
+
+.index-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/cinema.jpg');
+  background-size: cover
+}
+
+.index-container button{
+  color: white;
+  background-color: #2081C3;
+  height: 70px;
+  width: 130px
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.card-container div{
+  width:25%;
+  text-align: center;
+  height: 550px;
+}
+

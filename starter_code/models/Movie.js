@@ -4,19 +4,11 @@ const Schema = mongoose.Schema
 const movieSchema = new Schema({
   title: String, 
   director: String,
-  stars: [
-    {
-        type:String
-    }
-  ],
+  stars:Array,
   image: String,
   description: String,
-  showtimes: [
-    {
-        type:String
-    }
-  ]
-}, {
+  showtimes:Array 
+},{
   timestamps:{
     createdAt: 'created_at',
     updatedAt: 'updated_at'
