@@ -1,0 +1,19 @@
+<div class="card" style="width: 33.333%;">
+  <div class="card-body">
+    <a href="/movies">go back</a>
+
+    <h1 class="card-title">{{title}}</h1>
+    <img class="card-img-top" src="{{image}}" alt="Card image">
+    <p>Director : {{director}}</p>
+
+    <ul> {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}</ul>
+
+    <p>{{description}}</p>
+
+    {{#each showtimes}}
+    <span>{{this}}|</span>
+    {{/each}}
+  </div>
+</div>
