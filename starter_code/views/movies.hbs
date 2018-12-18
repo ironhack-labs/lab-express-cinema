@@ -1,0 +1,23 @@
+{{!-- {{movie}} --}}
+
+<head>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+{{#each movie}}
+<div class="container">
+  <div class="artistImage">
+    <a target="_blank" href="/movie/{{this._id}}">
+    <img src="{{this.image}}" alt="Image">
+    </a>
+  </div>
+   <div class="artistName">
+    <h3>{{this.title}}</h3>
+  </div>
+    {{!-- <li>{{id}}</li>
+    <li>{{name}}</li>
+ --}}
+</div>
+{{/each}}
+</body>
