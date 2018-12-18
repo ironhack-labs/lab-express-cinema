@@ -1,0 +1,14 @@
+<html>
+ 
+  <head>
+   <link rel="stylesheet" type="text/css" href="./public/stylesheets/style.css" </head> <h1>OUR MOVIES</h1>
+   {{#each moviesArray }}
+   <div class="movie">
+     <img src="{{this.image}}" />
+     <p>{{this.title}}</p>
+     <a href="/movieinfo/{{_id}}">More info</a>
+   </div>
+   <br>
+   {{/each}}
+ 
+  </html> 
