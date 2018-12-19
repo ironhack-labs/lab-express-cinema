@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+ul,
+h4,
+p {
+  margin: 2% auto;
+}
+
+.h1-index {
+  color: white;
+  font-size: 8vw;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.background-index {
+  background-image: url(https://i2.wp.com/thinkmonsters.com/speakinghuman/media/wp-content/uploads/Oscars-create-new-category-for-popular-movies.jpg?fit=1080%2C540&ssl=1);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.movie-info {
+  padding: 2% 2% 5% 2%;
+}
+
+.movies {
+  margin-top: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */
