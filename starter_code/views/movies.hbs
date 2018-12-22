@@ -1,6 +1,14 @@
-<h1>Movies</h1>
-{{#each moviesArray}}
-  <p>{{this.title}} </p>  
-  <img src="{{this.image}}"></br>
+<h1>Ironhack Cinema!</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+<div class="movies-list">
+
+  {{#each moviesArray}}
+    <div class="movie-card">  
+      <img src="{{this.image}}" >
+
+   <p class="title-show"> {{this.title}} </p>
   <a href="/movies/{{this._id}}">See more</a>
-    {{/each}}
+  </div>
+  {{/each}}
+</div>
+
