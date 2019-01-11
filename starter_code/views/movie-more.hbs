@@ -1,0 +1,31 @@
+<div class="d-flex flex-row container">
+  <div>
+    <img src="{{movies.image}}" alt="Movies">
+  </div>
+  <div class="mov-id">
+    <a href="/movies">Go Back</a>
+    <h1>{{movies.title}}</h1>
+    <p>
+      <b>{{{movies.director}}}</b>
+    </p>
+    <p>
+      <b>Stars</b> 
+    <ul>
+      {{#each movies.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    </p> 
+    <p>
+      {{{movies.description}}}
+    </p>
+    <p>
+      {{#each movies.showtimes}}
+      <span>{{this}} |</span>
+      {{/each}}
+    </p>
+  </div>
+</div>
+
+
+
