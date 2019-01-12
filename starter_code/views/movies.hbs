@@ -1,5 +1,9 @@
-<h2>Ironhack Cinema</h2>
-<p>Click on the movie to check the showtimes!</p>
-{{#each movies}}
+<div class="ironhack-cinema">
+  <h2>Ironhack Cinema</h2>
+  <p>Click on the movie to check the showtimes!</p>
+</div>
+<div class="movies-container">
+  {{#each movies}}
   {{> moviesPartial this}}
-{{/each}}
+  {{/each}}
+</div>

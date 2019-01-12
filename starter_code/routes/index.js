@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Movie = require('../models/Movie')
-// const movies = require('../bin/seeds')
+const movies = require('../bin/seeds')
 
 /* GET home page */
 router.get('/', (req, res, next) => {

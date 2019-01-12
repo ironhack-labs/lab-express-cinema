@@ -1,11 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightgoldenrodyellow; }
 
 a {
   color: #00B7FF; }
 
+/* Welcome Page */
 .welcome-page {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
@@ -38,5 +40,41 @@ a {
   justify-content: center;
   font-size: 16pt;
   text-decoration: none; }
+
+/* Movies view */
+.ironhack-cinema {
+  margin: 2vh 2vw; }
+
+.movies-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.movie-card {
+  width: 25vw;
+  height: 50vh;
+  margin: 3vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+
+.movie-poster {
+  height: 80%;
+  box-shadow: 1px 1px 2px 2px black;
+  margin: 2%; }
+
+.movie-title {
+  margin: 2%;
+  font-weight: bold; }
+
+/* (Individual) Movie view */
+.movie-detail {
+  margin: 2vh 2vw;
+  width: 60vw; }
+
+.movie-detail img {
+  float: left;
+  margin: 0 3vw 0 0; }
 
 /*# sourceMappingURL=style.css.map */
