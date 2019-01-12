@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0; 
+  font-size: 10px;
+  }
+.img-home{
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+
+}
+ .home{
+  display: flex;
+	flex-direction: column;
+  align-items: flex-end;
+  }
+
+  .text-home{
+    color: #ffffff;
+    font-size: 10em;
+    margin: 1em ;
+    font-weight: bold;
+  } 
+  .btn{
+   margin-right: 25em;
+   margin-top: -10em;
+   font-weight: bold;
+   width: 300px; 
+   
+  }
+  .img-inf{
+    width: 300px;
+    height: auto;
+  }
+  .inf-general{
+    margin-top: 100px;
+  }
+  .inf{
+    margin-left: 50px;
+  }
+  .horarios{
+    display: inline;
+  }
+
+  
+
+
+

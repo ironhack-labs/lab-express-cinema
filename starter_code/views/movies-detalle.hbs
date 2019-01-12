@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="row inf-general">
+    <div>
+    <img class ='img-inf'src="{{movies.image}}" alt="">
+    </div>
+  <div class= "col inf">
+    <a href="/movies/{{this._id}}">Go back</a>
+    <h3>Titulo: {{movies.title}}</h3>
+
+    <p>Director: {{movies.director}}</p>
+    <p>Stars</p>
+    {{#each movies.stars}}
+      <ul>
+      <li>{{this}}</li>
+      </ul>
+    {{/each}}
+
+    <p>{{movies.description}}</p>
+
+    {{#each movies.showtimes}}
+      <p class="horarios">{{this}} |</p>
+    {{/each}}
+
+  </div>
+  </div>
+</div>
