@@ -1,0 +1,34 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+a {
+  color: #00B7FF; }
+
+div {
+  display: inline block;
+  }
+
+#title {
+  color: white;
+  text-align: right;
+  padding: 200px 100px;
+}
+
+.front {
+  background-image: url('../images/cinema.jpg');
+  height: 500px;
+  width: 1000px;
+}
+
+button {
+  float: right;
+  margin: -200px 100px 0 0;
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */
