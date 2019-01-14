@@ -1,0 +1,34 @@
+<div class="py-5 albums">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Ironhack Cinema</h2>
+                <h5>Click on a movie to see showtimes</h5>
+
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            {{#each movies}}
+            <div class="col-md-4">
+                <div class="card text-black bg-light mb-2 shadow-sm image">
+                    {{#if image}}
+                    <img src="{{image}}" alt="test">
+                    {{else}}
+                    <img src="/images/place.png" alt="image not found" id="album-image">
+                    {{/if}}
+                    <h6>
+                        {{this.title}}
+                    </h6>
+                    <div class="col-md-4 text-center">
+                        <a href="/movies/{{this._id}}" class="btn btn-sm  btn-danger">See more</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+
+</html>
