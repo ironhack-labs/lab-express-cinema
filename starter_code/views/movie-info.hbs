@@ -1,5 +1,15 @@
-<h1>{{this.title}}</h1>
-<h4>{{this.director}}</h4>
-<h5>{{this.stars}}</h5>
-<h5>{{this.description}}</h5>
-<h5>{{this.showtimes}}</h5>
+<div class="media">
+    <span class="media-left">
+        <img src="{{image}}" alt="movie-poster" class="poster-info">
+    </span>
+    <div class="media-body">
+        <h1>{{this.title}}</h1>
+        <h4>Director: {{this.director}}</h4>
+        <h5>Stars: {{this.stars}}</h5>
+        <p>
+            <h5>{{this.description}}</h5>
+        </p>
+        <h5>Showtimes: {{this.showtimes}}</h5>
+        <a href="/movies" class="btn btn-sm btn-primary">Return to movies</a>
+    </div>
+</div>

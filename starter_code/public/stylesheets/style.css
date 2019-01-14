@@ -3,8 +3,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+.button {
   color: #00b7ff;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .index-body {
@@ -15,12 +20,24 @@ a {
 
 #title-text {
   margin-top: 50%;
-  font-size: 600%;
+  font-size: 400%;
   color: white;
 }
 
 #title-holder {
   text-align: center;
 }
+
+.select-poster {
+  width: 60%;
+}
+
+.poster-info {
+  width: 100%;
+  margin-right: 10px;
+  padding-right: 20px;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
