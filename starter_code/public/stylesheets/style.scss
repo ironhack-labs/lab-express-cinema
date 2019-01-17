@@ -35,3 +35,36 @@ p {
 
   height: 400px;
 }
+
+#movie-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+#title{
+  margin: 5% 0% 0% 20%;
+}
+
+span{
+  margin-top: 20px;
+}
+
+#detail-page{
+  display: flex;
+  flex-direction: row;
+  margin: 120px 0px 10px 340px;
+}
+
+.movie-image{
+  width: 200px;
+  margin-top: 20px;
+}
+
+#detail-box{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 30px;
+  
+}

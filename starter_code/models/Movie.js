@@ -13,7 +13,7 @@ const movieSchema = new Schema({
     createdAt: "created_at",
     updatedAt: "updated_at"
   }
-});
+}, {collection: "movies"});
 
 const Movie = mongoose.model("Movie", movieSchema);
 

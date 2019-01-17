@@ -1,0 +1,16 @@
+
+<div id="detail-page">
+      <img src="{{movie.image}}" alt="" class="movie-image">
+  <div id="detail-box">
+    <h3>{{movie.title}}</h3>
+    <h4>Director: {{movie.director}}</h4>
+    <h4>Stars</h4>
+    <br>
+    {{#each movie.stars}}
+      <ul>{{this}}</ul>
+    {{/each}}
+    <span>{{movie.description}}</span>
+  </div>
+</div>
+<a href="/movies" style="margin-left: 590px; margin-top: 40px">Go Back</a>
+

@@ -1,0 +1,14 @@
+
+<div id="title">
+  <h1>Ironhack Cinema</h1>
+  <h2>click on the movie to see the showtimes!</h2>
+<div>
+<form action="/movies" method="POST">
+{{#each movie}}
+  <div id="movie-container">
+    <img src="{{this.image}}" alt="" class="movie-image">
+    <span>{{this.title}}</span>
+    <a href="/movies/{{this._id}}" style="margin-top:10px">See more</a>
+  </div>
+{{/each}}
+</form>
