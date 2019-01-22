@@ -1,12 +1,19 @@
 
-<div>
-  <div>
-{{#each movies}}
-  <img class= "row"src="{{this.image}}" alt="">
+
+
+<div class="container">
+
+<div class=" row ">
+  {{#each movies}}
+  <div class="movies">
+    <img class="col-12"src="{{this.image}}">
+    <div class="text-movie"> 
+    <span class="row">{{this.title}}</span>
+    <a class ="row"href="/movies/{{this._id}}">See more</a>
+    </div>
+  </div>
+  {{/each}}
+  
 </div>
-<div>
-  <span class="">{{this.title}}</span>
- </div> 
-<a href="/movies/{{this._id}}">See more</a>
-{{/each}}
+
 </div>

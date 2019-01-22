@@ -44,8 +44,13 @@ body {
   .horarios{
     display: inline;
   }
+ 
+  .movies{
+    padding-left: 40px
+  }
 
-  
 
 
-
+  .text-movie{
+  margin-left: 40px
+}
