@@ -1,0 +1,22 @@
+Movie Details
+
+{{#each movie}}
+<div class="col-sm-4">
+    <div class="card">
+        <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p>{{this.director}}</p>
+            <ul>
+                {{#each this.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{this.description}}</p>
+        </div>
+        {{this.showtimes}}
+    </div>
+</div>
+{{/each}}
+
+<a href="/" class="btn btn-primary">Check the movies!</a>
