@@ -1,8 +1,37 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
+
+.home-bg {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("../images/cinema.jpg");
+  color: white; }
+
+.home-bg > h1 {
+  margin-right: 10%;
+  font-size: 5rem; }
+
+.home-bg > a {
+  margin-right: 21%;
+  padding: 1rem 1.25rem;
+  width: 11.5%;
+  height: 2.5%;
+  background-color: white;
+  border-radius: 25px;
+  display: block;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
