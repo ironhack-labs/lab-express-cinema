@@ -1,12 +1,12 @@
+@charset "UTF-8";
 body {
   padding: 50px;
-  font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100%;
   color: white;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 a {
   color: #00B7FF; }
@@ -16,24 +16,22 @@ a {
   left: 50%;
   top: 20%;
   font-weight: bolder;
-  width: 30%;
-}
+  width: 30%; }
 
 .container h1 {
-  font-size: 4em;
-}
+  font-size: 4em; }
 
 .movielist {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
-.movie {
-background-color: red;
-}
+.movie  {
+  background-color: red; }
+
 .card {
   margin: 20px;
   color: black;
-  text-align: center;
-}
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
