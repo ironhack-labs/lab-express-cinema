@@ -1,0 +1,19 @@
+<div>
+  <button onclick=location.href="/movies">Go back</button>
+  {{movies}}
+  <div>
+    <img src="{{movie.image}}" alt="">
+    <p>{{movie.title}}</p>
+    <p>Director: {{movie.director}}</p>
+    <ul>
+      <p>Stars</p>
+      {{#each movie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  <p>{{movie.description}}</p>
+    {{#each movie.showtimes}}
+      {{this}} |
+    {{/each}}
+  </div> 
+</div>
