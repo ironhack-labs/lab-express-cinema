@@ -19,10 +19,12 @@ router.get('/movies', (req, res, next) => {
 });
 
 // GET movie details
-router.get('/movies/:movieId', (req, res, next) => {
-  Movie.findById(req.params.id)
+router.get('/movies/:id', (req, res, next) => {
+  let movieId = req.params.id;
+  Movie.findById(movieId)
     .then(movies => {
-      res.render("movie-details", {movies});
+      res.render("movie-detail", {movies});
+      console.log(movies)
     })
     .catch(error => {
       console.log(error);

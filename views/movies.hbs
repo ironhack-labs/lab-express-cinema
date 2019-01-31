@@ -1,11 +1,11 @@
-<h1>Ironhack Cinema</h1>
+<h1><a href="/">Ironhack Cinema</a></h1>
 <h2>Click on the movie to check the showtimes!</h2>
 <div class="movies-container">
   {{#each movies}}
     <div class="card">
       <img src="{{this.image}}" alt="">
       <p>{{this.title}}</p>
-      <p><a href="movie/{{this._id}}">See more</a></p>
+      <p><a href="movies/{{this._id}}">See more</a></p>
     </div>
   {{/each}}
 </div>
