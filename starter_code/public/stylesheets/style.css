@@ -1,19 +1,16 @@
-*{
-  box-sizing: border-box;
-}
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
 
 body {
   display: flex;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  color: #00B7FF;
-}
-
+  color: #00B7FF; }
 
 .index-container {
   display: flex;
@@ -22,20 +19,16 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .text-container {
   width: 30%;
   margin: 100px;
-  margin-bottom: 300px;
-}
+  margin-bottom: 300px; }
 
 .index-container h1 {
   color: white;
-  font-size: 6em;
- 
-}
+  font-size: 6em; }
 
 .index-container a {
   text-decoration: none;
@@ -44,34 +37,29 @@ a {
   width: 200px;
   color: #00B7FF;
   background-color: white;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 .movies-container {
   width: 1200px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .movies-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .movies-item-container {
-  margin: 30px;
-}
+  margin: 30px; }
 
 .movie-container {
   display: flex;
   width: 1200px;
-  margin: 100px auto;
-}
+  margin: 100px auto; }
 
 .image-container {
-  flex-basis: 40%;
-}
+  flex-basis: 40%; }
 
-.data-container {
-  flex-basis: 60%;
-}
+.data-container  {
+  flex-basis: 60%; }
+
+/*# sourceMappingURL=style.css.map */
