@@ -1,8 +1,76 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+}
 
 a {
   color: #00B7FF; }
 
+header {
+  background: url("../images/cinema.jpg") no-repeat;
+  background-size: cover; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+.title-container {
+  display:flex;
+  margin: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+}
+
+header button {
+
+  margin: 20px auto;
+  background-color: white;
+  color: lightblue;
+  font-size: 20px;
+  height: 75px;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 80px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 10px;
+  flex-grow: 1;
+  width: calc(33% - 2em)
+}
+
+.card img {
+  object-fit: contain;
+}
+
+.card h3 {
+  margin: 5px;
+}
+
+.movie-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.movie-info {
+  margin-left: 50px;
+}
 /*# sourceMappingURL=style.css.map */

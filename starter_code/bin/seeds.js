@@ -1,3 +1,14 @@
+const mongoose = require('mongoose');
+mongoose
+    .connect('mongodb://localhost/starter-code', { useNewUrlParser: true })
+    .then(x => {
+        console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    })
+    .catch(err => {
+        console.error('Error connecting to mongo', err)
+    });
+
+
 const movies = [
     {
         title: "A Wrinkle in Time",
@@ -64,3 +75,9 @@ const movies = [
         showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
 ];
+
+const Schema = require("../models/movie")
+
+Schema.insertMany(movies)
+    .then(() => console.log("Import Sucessful"))
+    .catch(() => console.log("An error has ocurred: "))
