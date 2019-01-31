@@ -45,10 +45,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
-
-}
+  flex-wrap: wrap;
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
 
 .tittle {
   align-content: center;
@@ -56,22 +54,18 @@ button {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  background-color: rgb(154, 0, 0);
+  background-color: #9a0000;
   color: white;
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
- }
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
 
- .card{
-   margin-top: 0px;
-   margin-bottom: 70px;
- }
+.card {
+  margin-top: 0px;
+  margin-bottom: 70px; }
 
+.movie {
+  background-color: #00B7FF; }
 
- .movie{
-  background-color: #00B7FF;
- }
- 
-.texttittle{
+.texttittle {
   border-radius: 10px;
   align-content: center;
   display: flex;
@@ -80,12 +74,9 @@ button {
   font-weight: bold;
   background-color: rgba(89, 89, 89, 0.831);
   color: white;
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
-}
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
 
-
-
-.director{
+.director {
   border-radius: 5px;
   align-content: center;
   display: flex;
@@ -93,11 +84,9 @@ button {
   align-items: center;
   font-weight: bold;
   color: black;
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
-}
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
 
-
-.stars{
+.stars {
   border-radius: 5px;
   align-content: center;
   display: flex;
@@ -105,11 +94,9 @@ button {
   align-items: center;
   font-weight: bold;
   color: black;
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
-}
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
 
-
-.description{
+.description {
   border-radius: 5px;
   align-content: center;
   display: flex;
@@ -117,14 +104,14 @@ button {
   align-items: center;
   font-weight: bold;
   color: black;
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
-}
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
 
-.showtimes{
+.showtimes {
   border-radius: 5px;
   font-weight: bold;
   color: black;
-  box-shadow: rgb(31, 31, 31) 3px 1px 17px 0px;
-}
+  box-shadow: #1f1f1f 3px 1px 17px 0px; }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+<div class="tittle">
+  <h2>IronHack Cinema</h2>
+</div>
+
+
+
+<div class="cards">
+  {{#each movie}}
+  <div class="card" style="width: 18rem;">
+    <img src="{{this.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text texttittle">{{this.title}}</p>
+      <p class="card-text director">Director: {{this.director}}</p>
+      <p class="card-text stars">Stars: {{this.stars}}</p>
+      <p class="card-text description">Description: {{this.description}}</p>
+      <p class="card-text showtimes"> <strong>Showtimes: </strong>{{this.showtimes}}</p>
+      <a href="/movies">Go Back</a>
+    </div>
+  </div>
+  {{/each}}
+</div>
