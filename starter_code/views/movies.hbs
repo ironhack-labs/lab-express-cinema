@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col movies-list">
+        {{#each movies}} 
+        <div class="card">
+          <img src="{{image}}">
+          <h2>{{title}}</h2>
+          <a href="movieinfo/{{_id}}">{{title}}</a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
