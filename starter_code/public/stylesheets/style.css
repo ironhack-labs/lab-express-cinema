@@ -1,12 +1,10 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 section {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .title {
   color: white;
@@ -14,51 +12,44 @@ section {
   font: 80px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-weight: bold;
   padding: 200px 200px;
-  margin: 10px;
-}
+  margin: 10px; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .movies-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-}
+  justify-content: left; }
 
 .movie-details-container {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-content: flex-start;
-}
+  align-content: flex-start; }
 
 .details-image {
-  margin: 0 20px;
-}
+  margin: 0 20px; }
 
 .details-text {
-  margin: 0 20px;
-}
+  margin: 0 20px; }
 
 .card {
   margin: 20px 60px;
   text-align: center;
   font-weight: bold;
   line-height: 30px;
-  padding: 30px;
-}
+  padding: 30px; }
 
 button {
   float: right;
   margin: -140px 300px 0 0;
-  border-radius: 20px;  
-  padding: 10px;
-}
+  border-radius: 20px;
+  padding: 10px; }
 
 button a {
   font-size: 18px;
   text-decoration: none;
-  color: grey;
-}
+  color: grey; }
+
+/*# sourceMappingURL=style.css.map */
