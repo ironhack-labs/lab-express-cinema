@@ -1,23 +1,19 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .home {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   color: white;
   width: 1000px;
   height: 600px;
-  margin: 0 100px;
-}
+  margin: 0 100px; }
 
 .home-text {
-  font: 35px Helvetica,  sans-serif;
-}
+  font: 35px Helvetica,  sans-serif; }
 
 .btn {
   background-color: whitesmoke;
@@ -31,5 +27,6 @@ a {
   margin: 4px 2px;
   border-radius: 50px;
   height: 10px;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
