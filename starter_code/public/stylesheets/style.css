@@ -1,7 +1,6 @@
 body {
   padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
   background: black;
   color: white; }
 
@@ -87,11 +86,14 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  .img-detail img {
-    width: 25vw;
-    height: 45vh;
-    margin-left: 2em; }
+
+.img-detail img {
+  width: 25vw;
+  height: 45vh;
+  margin-left: 2em; }
 
 ul li {
   margin: 3em;
   list-style: none; }
+
+/*# sourceMappingURL=style.css.map */

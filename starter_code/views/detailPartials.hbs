@@ -1,0 +1,21 @@
+<div class="detail-container">
+  <div class="img-detail">
+    <img src="{{data2.image}}" alt="foto movie">
+  </div>
+  <div class="detail-information">
+    <ul>
+      <li> <a href="/movies">Go back</a> </li>
+      <li>Titulo: {{data2.title}} </li>
+      <li>Director: {{data2.director}} </li>
+      <li> Estrellas:
+        {{#each data2.stars}}
+      <li>{{this}} |</li>
+      {{/each}} 
+      </li>
+      <li> Descipcion: {{data2.description}} </li>
+      <li> Showtime: {{data2.showtimes}} </li>
+
+    </ul>
+
+  </div>
+</div> 
