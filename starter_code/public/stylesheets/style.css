@@ -1,31 +1,26 @@
 body {
   margin: 0px;
   padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 h1 {
-  margin: 0;
-}
+  margin: 0; }
 
 .index-bg {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   height: 1000px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .text {
   padding: 150px 60%;
   color: white;
-  font-size: 80px;
-}
+  font-size: 80px; }
 
 .btn {
   height: 80px;
@@ -36,21 +31,17 @@ h1 {
   border-radius: 70px;
   display: flex;
   justify-content: center;
-  align-items: center; 
-}
+  align-items: center; }
 
 .btn:hover {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .wrap {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .container {
-  padding: 10%;
-}
+  padding: 10%; }
 
-
+/*# sourceMappingURL=style.css.map */
