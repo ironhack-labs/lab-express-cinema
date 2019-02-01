@@ -8,12 +8,20 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const Movie        = require('./models/Movie.js');
+const fs           = require("fs")
+const movies       = require("./bin/seeds.js")
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/movies', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+
+    let promise = Movie.insertMany(movies)
+    .then(movie=>{console.log('insert movie')})
+    .catch(error=>{console.log('error')})
+
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -55,4 +63,5 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
+app.listen(3000);
 module.exports = app;
