@@ -1,0 +1,14 @@
+<div class="movie-details-container">
+  <div class="card mb-3" style="max-width: 18rem;">
+    {{#each returnedMovie}}
+    <img src="{{this.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{this.title}}</h5>
+      <p class="card-text">{{this.description}}</p>
+      <p class="card-text">{{this.stars}}</p>
+      <p class="card-text">{{this.showtimes}}</p>
+      <p class="card-text"><small class="text-muted">Director: {{this.director}}</small></p>
+    </div>
+    {{/each}}
+  </div>
+</div>

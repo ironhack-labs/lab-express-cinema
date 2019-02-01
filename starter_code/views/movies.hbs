@@ -1,0 +1,15 @@
+<div class="mx-auto">
+  <div class="card-deck row">
+    {{#each returnedMovies}}
+    <div class="col-md-3 mx-auto">
+      <div class="card">
+        <img src="{{this.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{this.title}}</h5>
+          <a href="/movies/{{this._id}}" class="btn btn-primary">more...</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
