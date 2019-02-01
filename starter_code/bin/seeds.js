@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-const Movie = require('../models/movie');
-const dbtitle = 'lab-cinema-generator';
-mongoose.connect(`mongodb://localhost/${dbtitle}`);
-
-Movie.collection.drop();
+const Movie = require('../models/Movie');
+const dbName = 'myFilms';
+mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
 	{
@@ -87,3 +85,11 @@ const movies = [
 		howtimes: [ '13:00', '15:30', '18:00', '20:10', '22:40' ]
 	}
 ];
+
+Movie.insertMany(movies, (err) => {
+	if (err) {
+		throww(err);
+	}
+	console.log(`created ${movies.length} movies`);
+	mongoose.connection.close();
+});
