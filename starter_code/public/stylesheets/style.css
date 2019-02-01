@@ -1,0 +1,50 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF; 
+}
+
+.movies{
+  width:25%;
+  height:25%;
+}
+
+#movie img{
+  float:left;
+  margin-right:10px;
+}
+
+
+#container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies p{
+  text-align: center;
+}
+
+.movies img{
+  margin-left:10px;
+}
+
+.movies a{
+  
+  margin-left:70px;
+  
+ 
+}
+
+.movies {
+  flex: 0 0 200px;
+  margin: 10px;
+  padding:5px;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+} 
+
+
+/*# sourceMappingURL=style.css.map */
