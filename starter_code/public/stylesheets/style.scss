@@ -1,8 +1,29 @@
+*{
+  margin: 0;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  float: right;
+  display: inline-block;
+  color: black;
+  font-size: 50px;
+  margin-right: 30%;
+}
+
+button {
+  float: right;
+  margin-right: 35%;
+  font-size: 16px;
+}
+
+.cinema {
+  display: inline;
 }

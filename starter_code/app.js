@@ -22,6 +22,8 @@ mongoose
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
+hbs.registerPartials('views/partials');
+
 const app = express();
 
 // Middleware Setup
@@ -49,10 +51,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-
-
 const index = require('./routes/index');
 app.use('/', index);
-
 
 module.exports = app;
