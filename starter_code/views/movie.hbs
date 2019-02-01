@@ -1,0 +1,13 @@
+{{#each movies}}
+<div class="media">
+  <img src="{{this.image}}" class="align-self-start mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">{{this.title}}/h5>
+    <p>{{this.director}}</p>
+    <p>{{this.stars}}</p>
+    <p>{{this.description}}</p>
+    <p>{{this.showtimes}}</p>
+  </div>
+</div>
+{{/each}}
+
