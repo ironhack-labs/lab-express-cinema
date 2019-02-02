@@ -1,12 +1,12 @@
 <div class="movie-info-container">
   <div class="left-container">
-    <img src="<%= data.image %>" alt="<%= data.title %>">
+    <img class="movie-poster" src="<%= data.image %>" alt="<%= data.title %>">
   </div>
   <div class="right-container">
     <a class="navigation-link" href="/movies">Go back</a>
     <h3 class="movie-title"><%= data.title %></h3>
     <p class="director">Director: <%= data.director %></p>
-    <p>Stars</p>
+    <p class="bold-subtitle">Stars</p>
     <ul class="stars-list">
       <% data.stars.forEach(function(star){ %>
       <li class="list-item"><%= star %></li>
@@ -15,7 +15,7 @@
     <p class="movie-description"><%= data.description %></p>
     <ul class="showtime-list">
       <% data.showtimes.forEach(function(showtime){ %>
-        <li class="list-item"><%= showtime %></li>
+        <li class="list-item-row"><%= showtime %></li>
       <% }); %>
     </ul>
   </div>

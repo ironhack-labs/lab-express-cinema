@@ -56,4 +56,54 @@ a {
 .navigation-link {
   font-size: 1.5rem; }
 
+/* Movie info */
+.movie-info-container {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 3rem; }
+
+.left-container {
+  width: 20%; }
+
+.movie-poster {
+  width: 90%; }
+
+.right-container {
+  width: 60%; }
+
+.movie-title {
+  font-size: 2rem;
+  margin: 1rem auto; }
+
+.director {
+  font-size: 1.3rem;
+  font-weight: bold; }
+
+.bold-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.stars-list {
+  padding-left: 1rem; }
+
+.list-item {
+  font-size: 1.2rem;
+  margin: 0.5rem auto; }
+
+.movie-description {
+  font-size: 1.5rem;
+  line-height: 1.5; }
+
+.showtime-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0; }
+
+.list-item-row {
+  border-right: 1px solid black;
+  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 1.2rem; }
+
 /*# sourceMappingURL=style.css.map */
