@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const movies = [
   {
     title : "A Wrinkle in Time",
@@ -64,3 +66,20 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+const importMovies = require('../models/Movie.js');
+
+importMovies.deleteMany()
+  .then(() => {
+    console.log('connected to mongo!!')
+  })
+  .then(() => {
+    return importMovies.insertMany(movies);
+  })
+  .then((result) => {
+    console.log("HOLA")
+    // console.log(result);
+  })
+  .catch((err) => {
+    console.error('Error connecting to mongo', err);
+  })
