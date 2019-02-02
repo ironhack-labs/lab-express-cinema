@@ -1,0 +1,12 @@
+<h2>Ironhack cinema</h2>
+<p>Click on the movies to check the showtimes</p>
+
+<div class=movies-container>
+  <% movies.forEach(movie => { %>
+    <card class="movie">
+    <img src=<%= movie.image %> alt="movie-image">
+    <%= movie.title %>
+    <a href="/movies/<%= movie._id %>">See more</a>
+    </card>
+  <% }) %>
+</div>

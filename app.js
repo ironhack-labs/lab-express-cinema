@@ -3,8 +3,8 @@ require('dotenv').config();
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express      = require('express');
+const expressLayouts = require('express-ejs-layouts');
 const favicon      = require('serve-favicon');
-const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
@@ -13,7 +13,9 @@ const path         = require('path');
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
+    
+    const seeds = require('./bin/seeds.js');
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -27,6 +29,7 @@ const app = express();
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
+app.use(expressLayouts);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
@@ -40,7 +43,7 @@ app.use(require('node-sass-middleware')({
       
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
@@ -51,8 +54,9 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
-const index = require('./routes/index');
-app.use('/', index);
-
+const indexRoute = require('./routes/index');
+const moviesRoute = require('./routes/movies');
+app.use('/', indexRoute);
+app.use('/movies', moviesRoute);
 
 module.exports = app;

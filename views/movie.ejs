@@ -1,0 +1,20 @@
+<div class="movie-container">
+  <img src=<%= movie.image %> alt="movie-image">
+  <div class="movie-description">
+    <a href="/movies">Go back</a>
+    <h3><%= movie.title %></h3>
+    <p><strong>Director: <%= movie.director %></strong></p>
+    <p><strong>Stars</strong></p>
+    <ul>
+      <% movie.stars.forEach(star => { %>
+      <li><%= star %></li>
+      <% }) %>
+    </ul>
+    <p><%= movie.description %></p>
+    <p>
+    <% movie.showtimes.forEach(time => { %>
+    <span><%= time %> | </span>
+    <% }) %>
+    </p>
+  </div>
+</div>

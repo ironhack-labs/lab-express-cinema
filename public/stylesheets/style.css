@@ -1,0 +1,96 @@
+/* ---- reset ---- */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/* ---- typography ---- */
+body {
+  color: #111;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%; }
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: 900; }
+
+p {
+  margin: 0; }
+
+/* ---- layout ---- */
+.movies-container {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  width: 90vw;
+  margin: 3rem auto; }
+
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 2rem; }
+
+.movie-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem; }
+
+/* ---- components ---- */
+a {
+  color: #00B7FF; }
+
+strong {
+  font-weight: 700; }
+
+.intro-container {
+  position: relative;
+  top: 30vh;
+  left: 50vw;
+  height: 40vh;
+  width: 50vw; }
+
+.intro-container a {
+  background-color: #fff;
+  color: #00B7FF;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin-top: 2rem; }
+
+.movies-container card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.movie-container img {
+  display: block;
+  max-height: 100%;
+  width: auto; }
+
+.movie-description p {
+  width: 80%;
+  margin-bottom: 1rem;
+  font-size: 1rem; }
+
+/* ---- section ---- */
+.splash-container {
+  position: absolute;
+  background: url("../images/cinema.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+/*# sourceMappingURL=style.css.map */
