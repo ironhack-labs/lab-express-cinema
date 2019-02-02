@@ -7,7 +7,7 @@
         <img class="movie-image" src="<%= movie.image %>" alt="<%= movie.title %>">
       </div>
       <p class="movie-title"><%= movie.title %></p>
-      <a class="navigation-link" href="">See more</a>
+      <a class="navigation-link" href="/movies/<%= movie.id %>">See more</a>
     </div>
   <% }); %>
 </div>

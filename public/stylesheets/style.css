@@ -6,7 +6,6 @@ a {
   color: #00B7FF; }
 
 /* Index */
-
 .index-container {
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
@@ -27,42 +26,34 @@ a {
   border-radius: 50px; }
 
 /* Movies */
-
-.movies-title{
+.movies-title {
   font-size: 4rem;
-  margin-left: 10rem;
-}
+  margin-left: 10rem; }
 
-.subtitle{
+.subtitle {
   font-size: 2rem;
-  margin-left: 10rem;
-}
+  margin-left: 10rem; }
 
-.movies-container{
+.movies-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
-.movie{
+.movie {
   display: flex;
   flex-direction: column;
   width: 30%;
   margin: 3rem 1%;
-  align-items: center;
-}
+  align-items: center; }
 
-.movie-image{
-  height: 25rem;
-}
+.movie-image {
+  height: 25rem; }
 
-.movie-title{
+.movie-title {
   font-weight: bold;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
-.navigation-link{
-  font-size: 1.5rem;
-}
+.navigation-link {
+  font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
