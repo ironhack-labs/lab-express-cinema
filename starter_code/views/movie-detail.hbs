@@ -1,0 +1,25 @@
+<a href="/movies">Go back</a><br>
+{{#if   movie.image}}
+  <img src="{{movie.image}}" alt="" width="200">
+{{else}}
+  <p>The Movie doesn't have an image</p>
+{{/if}}
+<h2>{{movie.title}}</h2>
+<h3>Director: {{movie.director}}</h3>
+<h4>Stars</h4>
+<ul>
+  {{#each movie.stars}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+<p>{{movie.description}}</p><br>
+<h4>Showtimes: </h4>
+<ul>
+  {{#each movie.showtimes}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+
+
+
