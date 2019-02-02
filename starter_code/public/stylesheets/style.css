@@ -1,23 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  border: 0.5px solid #ccc;
+}  
+.div-index {
+  height:100%; 
+  width:100%;
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  color: white;
+  border: 1px solid #ccc;
+  position:absolute;
+}
+
+.div-1 {
+  width: 450px;
+}
+.button-agora{
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+.div-h1{
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.div-index-item{
+  float: right;
+  padding: 30px 120px 0 0;
+  font-size: 90px;
+}
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF; 
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+.p-tittle {
+  padding-top: 10px;  
+}
 
 .showtimes-li {
   display: inline;
 }
 
-/* Flex Container */
 .container {
-	max-width: 400px;
+	max-width: 100%;
 	margin: 0 auto;
-	display: flex;
 	border: 1px solid #ccc;
+} 
+.item {
+	max-width: 30%;
+	margin: 5px;
+	/* border: 1px solid #ccc; */
+	text-align: center;
+  font-size: 1.0em;
 }
-
-.row {
-	flex-direction: row;
+.img-detail {
+  padding: 30px 30px 30px 0;
+  float:left;
+}
+.movie-img {
+  float: clear;
 }
 /*# sourceMappingURL=style.css.map */
