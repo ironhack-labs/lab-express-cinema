@@ -14,9 +14,10 @@ router.get('/', (req, res, next) => {
 /* GET movie info page */
 
 router.get('/:id', (req, res, next) => {
-  const { _id } = req.params;
-  moviesModel.findOne(_id)
+  const { id } = req.params;
+  moviesModel.findById(id)
     .then((data) => {
+      console.log(data);
       res.render('movieInfo', { data });
     })
     .catch(error => console.log(error));
