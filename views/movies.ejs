@@ -1,0 +1,13 @@
+<h1>Ironhack Cinema</h1>
+<h2>Click on a movie</h2>
+
+
+
+<div class="container">
+    <% moviesArray.forEach((movie,cont)=>{ %>
+        <div class="container-movie">
+            <a href="/movies/detail/<%= cont %>"><%= movie.title %></a>    
+            <img src=<%= movie.image %> alt="" width="100px" heigth="100px">
+        </div>
+    <%  });  %>
+</div>

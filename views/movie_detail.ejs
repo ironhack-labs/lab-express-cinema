@@ -1,0 +1,26 @@
+<h1>Ironhack Cinema</h1>
+
+<div class="container">
+    <a href="/movies">Go Back</a>    
+
+    <h2><%= movie.title %></h1>
+    <h3>Director: <%= movie.director %></h3>
+
+    <h4>Stars:</h3>
+
+    <ul>
+        <% movie.stars.forEach((star)=>{ %>
+            <li><%= star%></li>
+        <%  });  %>
+    </ul>
+
+    <p><%= movie.description%></p>
+
+    <p><% movie.showtimes.forEach((time)=>{ %>
+        <%= time%> |
+    <%  });  %>
+    </p>
+
+    <img src=<%= movie.image %> alt="" width="100px" heigth="200px">
+</div>
+

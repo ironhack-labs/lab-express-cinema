@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start-dev": "nodemon ./bin/www",
     "start": "node ./bin/www",
     "dev": "DEBUG=starter-code:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www"
@@ -11,7 +12,9 @@
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-ejs-layouts": "^2.5.0",
     "hbs": "^4.0.1",
     "mongoose": "^5.3.6",
     "morgan": "^1.9.1",
