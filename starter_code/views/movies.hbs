@@ -1,9 +1,10 @@
 <div>
-  {{#each movies}}
-  <div>
-    <img src="{{this.image}}" alt="">
-    <p>{{this.title}}</p>
-    <button onclick=location.href="/movies/{{this._id}}">See more</button>
-  </div>
+  <h1>Ironhack Cinema</h1>
+  <h2>Click on the movie to check the showtimes</h2>
+
+  {{#each pelis}}
+  <img src="{{this.image}}" alt="">
+  <p>{{this.title}}</p>
+  <a href="/movie/{{this._id}}">See more</a>
   {{/each}}
 </div>

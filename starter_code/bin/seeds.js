@@ -1,3 +1,9 @@
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie");
+
+const dbName = "starter-code";
+mongoose.connect(`mongodb://localhost/${dbName}`);
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -80,3 +86,11 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+Movie.insertMany(movies, err => {
+  if (err) {
+    throw err;
+  }
+  console.log(`Created ${movies.length} movies`);
+  mongoose.connection.close();
+});
