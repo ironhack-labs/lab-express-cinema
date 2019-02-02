@@ -13,14 +13,20 @@ a {
   height: 100vh;
   width: 100vw; }
 
+  .container{
+    width: 35rem;
+    padding: 10rem 3rem 10rem 60rem;
+  }
+
 .site-title {
-  font-size: 2rem;
+  font-size: 6rem;
   color: white;
   text-transform: uppercase;
   margin-top: 0; }
 
 .button {
   text-decoration: none;
+  font-size: 1.5rem;
   background-color: white;
   padding: 1rem 2rem;
   border-radius: 50px; }
