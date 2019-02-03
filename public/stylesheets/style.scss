@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background: url("/images/cinema.jpg ") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 40vw;
+  float: right;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.btn a {
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  color: #00B7FF;
+  text-decoration: none;
+  background-color: white
+}
