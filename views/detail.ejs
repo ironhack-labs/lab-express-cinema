@@ -1,0 +1,14 @@
+<h1>Cinema Ironhack</h1>
+
+<div class="detail_container">
+
+  <h2><%= movie.title%></h2>
+  <h3><%= movie.director%></h3>
+  <img src="<%=movie.image%>" alt="">
+  <p><%=movie.description%></p>
+
+  <% movie.showtimes.forEach((showtime) => { %>
+  <p><%= showtime %></p>
+  <% }) %>
+
+  </div>
