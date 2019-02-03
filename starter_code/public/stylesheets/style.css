@@ -2,19 +2,27 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
-  background: url("/images/cinema.jpg ") 0 0 no-repeat;
-  background-size: cover; }
+  margin: 0;
+  padding: 0; }
 
 a {
   color: #00B7FF;
   text-decoration: none; }
 
+.background {
+  background: url("/images/cinema.jpg ") 0 0 no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh; }
+
 .container {
   width: 40vw;
-  float: right; }
+  padding-top: 20vh; }
 
 .title {
-  font-size: 3rem; }
+  font-size: 3rem;
+  width: 50%; }
 
 .btn {
   border-radius: 2rem;
