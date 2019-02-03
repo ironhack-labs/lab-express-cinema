@@ -41,7 +41,7 @@ app.use(require('node-sass-middleware')({
 }));
 
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 // app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));

@@ -66,4 +66,13 @@ body {
 .movie-img {
   width: 50%; }
 
+.movie-info-img {
+  float: left; }
+
+.movie-info-container {
+  padding: 10px; }
+
+h5 {
+  font-size: 1rem; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+<article class="movie-info-container">
+  <div class="movie-info-img">
+    <img src="<%= movie.image%>" alt="<%= movie.title%> image">
+  </div>
+  <div class="movie-info-text">
+
+    <h3><%= movie.title%></h3>
+    <h4>Director: <%= movie.director%></h4>
+    <h5>Star</h5>
+    <ul>
+      <% movie.stars.forEach(function(star){ %>
+        <li><%= star %></li>
+      <% }); %>
+    </ul>
+    <p><%= movie.description %></p>
+    <p>
+      <% movie.showtimes.forEach(function(showtime){ %>
+        <%= showtime %> |
+      <% }); %>
+    </p>
+
+  </div>
+</article>
