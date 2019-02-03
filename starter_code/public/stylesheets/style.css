@@ -1,40 +1,36 @@
 body, html {
-  
   height: 100%;
   margin: 0;
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; 
-}
+  color: #00B7FF; }
 
-.imageContainer{
+.imageContainer {
   background-image: url("/images/cinema.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
-.textContainer{
+.textContainer {
   position: absolute;
   top: 25%;
   left: 75%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 
-.moviesContainer{
+.moviesContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
-.movieCard{
+.movieCard {
   width: 182px;
   margin: 8vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */
