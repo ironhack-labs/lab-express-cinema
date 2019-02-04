@@ -18,7 +18,6 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/:movieId', (req, res, next) => {
-
   const { movieId } = req.params;
   importMovies.findById(movieId)
     .then((movie) => {

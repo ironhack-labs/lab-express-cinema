@@ -1,3 +1,4 @@
+
 $background-img:"/images/cinema.jpg ";
 
 body {
@@ -53,7 +54,7 @@ body {
 .movielist-container {
   width: 100vw;
   display: flex;
-
+  
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
@@ -96,3 +97,5 @@ body {
 h5 {
   font-size: 1rem;
 }
+
+
