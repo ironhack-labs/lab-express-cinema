@@ -8,6 +8,7 @@ const ejs          = require('ejs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const moviesDate   = require('./bin/seeds')
 var expressLayouts = require('express-ejs-layouts');
 
 mongoose
@@ -53,7 +54,7 @@ app.locals.title = 'Cinema Ironhack';
 
 
 const index = require('./routes/index');
+const movies = require('./routes/movies');
 app.use('/', index);
-
-
+app.use('/movies', movies);
 module.exports = app;

@@ -9,10 +9,8 @@ body {
   width: 40vw;
   float: right; }
 
-.title  {
-  font-size: 4rem;
-  font-weight: bolder;
-}
+.title {
+  font-size: 3rem; }
 
 .btn a {
   border-radius: 2rem;
@@ -21,5 +19,17 @@ body {
   color: #00B7FF;
   text-decoration: none;
   background-color: white; }
+
+.movies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  height: 100%;
+  width: 90%; }
+
+.movie-box {
+  color: black;
+  display: flex;
+  align-content: center; }
 
 /*# sourceMappingURL=style.css.map */

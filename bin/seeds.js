@@ -64,3 +64,13 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+const importMovies = require('../models/Movie.js');
+
+importMovies.deleteMany()
+  .then(() => {
+    return importMovies.insertMany(movies);
+  })
+  .catch((err) => {
+    console.error('Error connecting to mongo', err);
+  })

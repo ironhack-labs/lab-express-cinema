@@ -1,0 +1,13 @@
+
+  <div class=movies-container>
+  <h3><%= title %></h3>
+  <p>CLick on the movie to check the showtimes!</p>
+    <% movies.forEach(movie => { %>
+      <div class="movie-box">
+      <img src=<%= movie.image %> alt="movie-image">
+      <%= movie.title %>
+      <a href="/movies/<%= movie._id %>">See more</a>
+      </div>
+    <% }) %>
+  </div> 
+</div>

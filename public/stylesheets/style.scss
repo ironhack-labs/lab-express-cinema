@@ -23,3 +23,17 @@ body {
   text-decoration: none;
   background-color: white
 }
+
+.movies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  height: 100%;
+  width: 90%;
+}
+
+.movie-box {
+  color: black;
+  display: flex;
+  align-content: center;
+}
