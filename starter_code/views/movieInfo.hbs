@@ -1,0 +1,25 @@
+
+        <div class="card" style="width: 18rem;">
+                
+                    <img src="{{movieItem.image}}" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                    <h5 class="card-title">{{movieItem.title}}</h5>
+                        <h4>Stars</h4>
+                        <ul style="list-style-type: disc;">
+                        {{#each movieItem.stars}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                        </ul>
+
+                        <p>{{movieItem.description}}</p>
+
+                        <ul style="list-style-type: none;">
+                        {{#each movieItem.showtimes}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    
+                </div>
+        </div>
+     

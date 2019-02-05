@@ -7,34 +7,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 a {
   color: #00B7FF;
   font-size: 30px;
-  text-decoration: none;
-}
-.main{
+  text-decoration: none; }
+
+.main {
   height: 20%;
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-h1{
+  align-items: center; }
+
+h1 {
   font-size: 100px;
   color: white;
   display: flex;
-  align-items: right;
-}
-.moviesBtn{
+  align-items: right; }
+
+.moviesBtn {
   height: 50px;
   width: 200px;
-  border-radius: 30px;
-}
+  border-radius: 30px; }
+
 .card-img-bottom {
   color: #fff;
   height: 20rem;
-  background-size: cover;
-}
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */

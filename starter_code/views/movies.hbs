@@ -1,0 +1,27 @@
+<h1>Thomas Cinema</h1>
+
+<p>Click on the movies to check the showtime</p>
+
+
+    <div class="container">
+        <div class="row">
+                
+                {{#each moviesArray}}
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="text-center">
+                                <img class="card-img-top img-thumbnail rounded mx-auto d-block" src={{this.image}}  alt="...">
+                            </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.title}}</h5>
+                                    <button><a href="/movie/{{this._id}}">See more</a></button>
+                                </div>
+                        </div>
+                    </div>
+                {{/each}}
+
+            </div>
+    </div>
+
+
+    <a href="/">Home pageS</a>
