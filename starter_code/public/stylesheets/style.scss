@@ -3,6 +3,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  color: white;
+}
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+button {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
 }
