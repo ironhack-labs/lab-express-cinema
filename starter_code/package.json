@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "start-dev": "nodemon ./bin/www",
     "dev": "DEBUG=starter-code:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www"
   },
@@ -11,14 +12,18 @@
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "dotenv": "^6.1.0",
-    "express": "^4.16.3",
-    "hbs": "^4.0.1",
-    "mongoose": "^5.3.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.4.9",
     "morgan": "^1.9.1",
     "node-sass-middleware": "^0.11.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.9"
   }
 }
