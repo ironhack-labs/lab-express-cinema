@@ -1,0 +1,26 @@
+<div class="movie-panel">
+  <div class="movie-panel-left">
+    <img src="{{movieItem.image}}" alt="{{movieItem.title}}">
+  </div>
+  <div class="movie-panel-right">
+    <a href="/movies">Go back</a>
+    <h2>{{movieItem.title}}</h2>
+    <h3>Director: {{movieItem.director}}</h3>
+
+    <h4>Stars</h4>
+    <ul style="list-style-type: disc;">
+      {{#each movieItem.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p>{{movieItem.description}}</p>
+
+    <ul style="list-style-type: none;">
+      {{#each movieItem.showtimes}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+</div>
