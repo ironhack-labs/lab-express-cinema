@@ -1,11 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 body {
   background-image: url(../images/cinema.jpg);
@@ -13,13 +11,11 @@ body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: center; }
 
 h1 {
   color: white;
-  font-size: 42px;
-}
+  font-size: 42px; }
 
 .index {
   width: 50%;
@@ -27,61 +23,55 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: end;
-  margin-top: 15%;
-}
+  margin-top: 15%; }
+
 .welcome {
   font-size: 18px;
-  color: white;
-}
+  color: white; }
+
 button a {
   text-decoration: none;
   color: grey;
   font-size: 16px;
-  color: rgb(131, 32, 75);
-}
+  color: #83204b; }
 
 button {
   width: 175px;
-  border-radius: 8px;
-}
+  border-radius: 8px; }
+
 .movie-container {
   display: flex;
-  width: 100%;
-}
+  width: 100%; }
 
 .ul-movie {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .list-container {
   width: 25%;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .li {
   align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .h2-movie {
   text-align: center;
   font-size: 15vh;
-  color: rgb(131, 32, 75);
-  margin-top: 20px;
-}
+  color: #83204b;
+  margin-top: 20px; }
 
 .p-movie {
   text-align: center;
   font-size: 5vh;
-  color: rgb(131, 32, 75);
-}
+  color: #83204b; }
 
 h3 {
-  color: rgb(241, 165, 165);
-}
+  color: #f1a5a5; }
+
+/*# sourceMappingURL=style.css.map */

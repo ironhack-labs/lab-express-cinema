@@ -1,0 +1,17 @@
+<h2 class="h2-movie">Ironhack Cinema</h2>
+
+<p class="p-movie">Click on the movie to check the showtimes!</p>
+
+<div class="movie-container">
+  <ul class="ul-movie">
+    {{#each movieArray}}
+    <div class="list-container">
+      <li class="li">
+        <img src="{{this.image}}" alt="">
+        <h3>{{title}}</h3>
+        <button><a href="/movies/">See more</a></button>
+      </li>
+    </div>
+    {{/each}}
+  </ul>
+</div>
