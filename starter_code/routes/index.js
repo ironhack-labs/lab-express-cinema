@@ -1,7 +1,12 @@
 const express = require('express');
+
+// call mongo stuff to use with queries
+const mongoose = require("mongoose");
+const Movie = require('../models/Movie.js');
+
 const router = express.Router();
 
-/* GET home page */
+/*  # Home Page */
 router.get('/', (req, res, next) => {
 
 	// todo make hbs helper instead
@@ -9,6 +14,22 @@ router.get('/', (req, res, next) => {
 	res.locals.bodyClass = 'home';
 
 	res.render('index');
+});
+
+
+/* films #index  */
+router.get('/movies', (req, res, next) => {
+	Movie.find()
+		.sort({
+			title: -1
+		})
+		.then(queryResult => {
+
+			res.locals.filmArray = queryResult;
+			res.render('film-index');
+		})
+		// catch next(err) skip straight to error
+		.catch(err => next(err));
 });
 
 module.exports = router;

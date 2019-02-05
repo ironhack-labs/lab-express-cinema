@@ -1,0 +1,19 @@
+<div class="col-md-12">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="display-5">Here is a selection of curated films for you</h1>
+		</div>
+		<hr>
+		{{#each filmArray}}
+		<div class="col-sm-4 py-3 border-bottom border-left">
+			<div class=" text-center bg-white">
+				<a href="movie/{{this._id}}" class="text-danger">
+					<img class="mx-auto d-block shadow-sm p-1 mb-1 bg-white rounded poster-thumb" src="{{this.image}}" alt="{{this.title}}">
+				</a>
+				<h5 class="pt-3">{{this.title}}</h5>
+				<a href="movie/{{this._id}}" class="text-danger">Watch film </a>
+			</div>
+		</div>
+		{{/each}}
+
+	</div>
