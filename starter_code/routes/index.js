@@ -32,4 +32,27 @@ router.get('/movies', (req, res, next) => {
 		.catch(err => next(err));
 });
 
+
+/* films #show  */
+router.get('/movie/:filmId', (req, res, next) => {
+
+	const {
+		filmId
+	} = req.params;
+
+	//	res.send("filmId is set to " + filmId);
+
+	Movie.findById(filmId)
+		.then(queryResult => {
+
+			// console.log(queryResult)
+
+			res.locals.filmItem = queryResult;
+			res.render('film-show');
+		})
+		// catch next(err) skip straight to error
+		.catch(err => next(err));
+});
+
+
 module.exports = router;
