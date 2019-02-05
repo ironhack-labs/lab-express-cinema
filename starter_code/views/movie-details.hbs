@@ -1,25 +1,28 @@
-<img src="{{movieItem.image}}">
+<div class="detail-flex">
 
-<a href="/">Go back</a>
+  <img src="{{movieItem.image}}">
 
-<h2>{{movieItem.title}}</h2>
+  <div class="text-flex">
+    <a href="/">Go back</a>
+    <h2>{{movieItem.title}}</h2>
+    <h3>Director: {{movieItem.director}}</h3>
+    <h4>Stars</h4>
 
-<p>Director: {{movieItem.director}}</p>
-<p>Stars</p>
+    <ul>
+      {{#each movieItem.stars}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
 
-<ul>
-  {{#each movieItem.stars}}
-  <li>
-    {{this}}
-  </li>
-  {{/each}}
-</ul>
-
-<p>{{movieItem.description}}</p>
+    <p>{{movieItem.description}}</p>
 
 
-{{#each movieItem.showtimes}}
+    {{#each movieItem.showtimes}}
 
-{{this}} |
+    {{this}} |
 
-{{/each}}
+    {{/each}}
+  </div>
+</div>

@@ -3,12 +3,9 @@
 
 <ul class="flex">
   {{#each movieArray}}
-  <li>
-    <h3>{{this.title}}
-
-    </h3>
-
+  <li class="one-movie-flex ">
     <img src="{{this.image}}" />
+    <h3>{{this.title}}</h3>
     <a href="/movies/{{this._id}}">See More</a>
 
   </li>

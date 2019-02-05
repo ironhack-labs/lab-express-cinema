@@ -5,14 +5,43 @@ body {
 
 h1 {
   color: white;
+  padding: 100px 0px 0 700px;
 }
+
+.background {
+  background-image: url(http://suitelife.com/blog/wp-content/uploads/2017/12/empty-cinema.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
 a {
   color: #00b7ff;
-  text-decoration: none;
 }
 
 button {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 5px;
+  text-decoration: none;
+  margin-left: 700px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one-movie-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.detail-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-flex {
+  margin: 20px;
 }
