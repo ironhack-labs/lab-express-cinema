@@ -1,17 +1,21 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 h1 {
   color: white;
-  padding: 100px 0px 0 700px;
+  margin-right: 20%;
 }
 
 .background {
-  background-image: url(http://suitelife.com/blog/wp-content/uploads/2017/12/empty-cinema.jpg);
+  background-image: url("../images/cinema.jpg");
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
 }
 
 a {
@@ -23,7 +27,7 @@ button {
   border-radius: 30px;
   padding: 5px;
   text-decoration: none;
-  margin-left: 700px;
+  margin-right: 20%;
 }
 
 .flex {
