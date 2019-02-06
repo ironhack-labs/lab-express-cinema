@@ -1,0 +1,21 @@
+<div class="movies-page-header">
+  <h1>Welcome to Cinema IronHack 🍿</h1>
+
+  <h3>Click on the movie to check the showtimes!</h3>
+</div>
+
+<div class="container movie-container">
+  <div class="my-row">
+
+    <ul>
+      {{#each moviesAvailable}}
+      <li>
+        <img src="{{this.image}}" alt="movie image" class="card-img-top">
+        <h4>{{this.title}}</h4>
+        <button type="button" class="btn btn-light"><a href="/oneMovie/{{this._id}}">See more</a></button>
+      </li>
+      {{/each}}
+    </ul>
+
+  </div>
+</div>

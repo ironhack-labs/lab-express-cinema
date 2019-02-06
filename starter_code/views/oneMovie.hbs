@@ -1,0 +1,23 @@
+<button class="back-button "><a href="/movies-page">Go back</a></button>
+
+<div class="movie-info">
+  <img src="{{oneMovie.image}}" alt="Movie's image">
+  <div class="infos">
+    <h2><b>{{oneMovie.title}}</b></h2>
+    <h4><b>Director:</b> {{oneMovie.director}}</h4>
+    <h5><b>Stars:</b></h5>
+    <ul>
+      {{#each oneMovie.stars}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+    <p>{{oneMovie.description}}</p>
+    {{#each oneMovie.showtimes}}
+    <p>| {{this}} |</p>
+    {{/each}}
+  </div>
+  </li>
+  </ul>
+</div>
