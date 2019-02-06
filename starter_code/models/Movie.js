@@ -2,21 +2,22 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-// create the Book schema using the Mongoose "Schema" class
+// create the Movie schema using the Mongoose "Schema" class
 const movieSchema = new Schema(
   {
     // document structure & rules defined here
     title: { type: String, required: true },
-    director: { type: String, required: true },
+    director: { type: String },
     stars: { type: [String] },
     image: { type: String }, // add a match: urlRegexp
     description: { type: String },
     showtimes: { type: [String] }
-  },
-  {
-    // additional settings for the Schema class here
-    timestamp: true
   }
+  // ,
+  // {
+  //   // additional settings for the Schema class here
+  //   timestamp: true
+  // }
 );
 
 // use the schema to create the Movie model (it has the methods for db queries)

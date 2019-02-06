@@ -1,11 +1,11 @@
-// Seed File (run this to insert more books into the database)
+// Seed File (run this to insert more movies into the database)
 // -----------------------------------
 // connects seed.js to the .env file
 require("dotenv").config();
 
 const mongoose = require("mongoose");
 
-// Get the Book model to do our databse query
+// Get the Movie model to do our databse query
 const Movie = require("../models/Movie.js");
 
 const movieData = require("./movies.json");

@@ -1,0 +1,27 @@
+<section>
+  <div class="mini-poster">
+    <img src="{{movieItem.image}}" />
+  </div>
+  <div class="description">
+    <a href="/movies">Go Back</a>
+
+    <h3>{{movieItem.title}}</h3>
+    <h4>By: {{movieItem.director}}</h4>
+    <h5>Stars</h5>
+    <ul class="stars">
+      {{#each movieItem.stars}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+    <p>{{movieItem.description}}</p>
+    <ul>
+      {{#each movieItem.showtimes}}
+      <li class="showtimes">
+        {{this}} |
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

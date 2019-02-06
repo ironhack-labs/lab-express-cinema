@@ -1,8 +1,51 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #00b7ff; }
+
+.showtimes {
+  display: inline-block; }
+
+section {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; }
+
+.mini-poster {
+  width: 25%;
+  height: auto; }
+
+.description {
+  width: 60%;
+  height: auto; }
+
+article {
+  width: 30%; }
+
+.collection {
+  display: flex;
+  flex-wrap: wrap; }
+
+.items {
+  list-style-type: none;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0; }
+
+img {
+  display: block; }
+
+.catalogue {
+  display: flex;
+  justify-content: space-around; }
+
+.subtext {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
 
 /*# sourceMappingURL=style.css.map */

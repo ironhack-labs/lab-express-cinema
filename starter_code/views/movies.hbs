@@ -1,12 +1,20 @@
-<h2>Cinema Ironhack</h2>
-<p>Click on the movie to check the showtimes!</p>
+<h2>Ironhack Cinema</h2>
+<p><b>Click on the movie to check the showtimes!</b></p>
 
-<ul>
-  {{#each movieArray}}
-  <li>
-    {{!-- <img src="{{this.image}}" /> --}}
-    <h3>{{this.title}}</h3>
-    {{!-- <a href="/details/">See More</a> --}}
-  </li>
-  {{/each}}
-</ul>
+<div class="catalogue">
+  <ul class="collection">
+    {{#each movieArray}}
+    <li class="items">
+      <article>
+        <div class="thumbnail">
+          <img src="{{this.image}}" />
+        </div>
+        <div class="subtext">
+          <h4>{{this.title}}</h4>
+          <a href="/movies/{{this.id}}">See More</a>
+        </div>
+      </article>
+    </li>
+    {{/each}}
+  </ul>
+</div>
