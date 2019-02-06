@@ -1,0 +1,15 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.moviedeets {
+  list-style-type: none; }
+
+.movieicons {
+  display: flex;
+  flex-direction: row; }
+
+a {
+  color: #00b7ff; }
+
+/*# sourceMappingURL=style.css.map */

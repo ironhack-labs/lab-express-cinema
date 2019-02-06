@@ -3,6 +3,15 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.moviedeets {
+  list-style-type: none;
+}
+
+.movieicons {
+  display: flex;
+  flex-direction: row;
+}
+
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }

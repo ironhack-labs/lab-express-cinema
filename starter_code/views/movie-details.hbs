@@ -1,0 +1,27 @@
+<section>
+  <a href="/movies">Go Back</a>
+  <br>
+  <img src="{{movieItem.image}}">
+  <ul>
+    <li class="moviedeets">
+      <h2>{{movieItem.title}}</h2>
+    </li>
+    <li class="moviedeets">
+      {{movieItem.director}}
+    </li>
+    <li class="moviedeets">
+      Staring: <ul>
+        {{#each movieItem.stars}}
+        {{this}}
+        {{/each}}
+
+      </ul>
+    </li>
+    <li class="moviedeets">
+      {{movieItem.description}}
+    </li>
+    <li class="moviedeets">
+      {{movieItem.showtimes}}
+    </li>
+  </ul>
+</section>
