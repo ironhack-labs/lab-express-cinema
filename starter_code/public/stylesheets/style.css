@@ -1,8 +1,18 @@
+html {
+  margin: 0;
+  height: 100%; }
+
 body {
+  margin: 0;
+  height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00b7ff; }
+
+h1 {
+  color: white;
+  font-weight: bolder; }
 
 .showtimes {
   display: inline-block; }
@@ -47,5 +57,20 @@ img {
   display: flex;
   flex-direction: column;
   align-content: center; }
+
+.landing {
+  height: 100vh;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.discover {
+  margin: 5%; }
 
 /*# sourceMappingURL=style.css.map */
