@@ -1,3 +1,10 @@
+let mongoose = require('mongoose');
+let Movie = require('../models/Movie')
+
+mongoose.connect('mongodb://localhost:27017/ironhackcinema', {useNewUrlParser: true})
+  .then(x => console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`))
+  .catch(err => console.error('Error connecting to mongo', err));
+
 const movies = [
   {
     title : "A Wrinkle in Time",
@@ -64,3 +71,10 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+  Movie.create(movies)
+  .then(movie=>{
+    console.log(movie)
+    mongoose.connection.close()
+  })
+  .catch(e=>{console.log(e)})
