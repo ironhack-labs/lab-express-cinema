@@ -1,0 +1,9 @@
+<section id="movies-list">
+    {{#each movies as | movie |}}
+        <div>
+            <img src="{{movie.image}}">
+            <h3>{{movie.title}}</h3>
+            <button><a href="{{movie.id}}">See More</a></button>
+        </div>
+    {{/each}}
+</section>
