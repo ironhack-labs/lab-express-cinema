@@ -13,8 +13,10 @@ router.get('/', (req, res)=>{
 })
 
 router.get('/:id', (req, res)=>{
+	console.log(req.params.id)
 	Movie.findById(req.params.id)
 			.then(movie => {
+				console.log(movie)
 				res.render('movie-card', movie)
 			})
 			.catch(e=> {

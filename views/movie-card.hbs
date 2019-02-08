@@ -1,24 +1,24 @@
 <section>
     <div>
-        <img src="{{movie.image}}">
+        <img src="{{this.image}}">
     </div>
     <div>
-        <h2>{{movie.title}}</h2>
-        <h3>{{movie.director}}</h3>
+        <h2>{{this.title}}</h2>
+        <h3>{{this.director}}</h3>
         <h4>Stars:</h4>
         <ul>
-            {{#each movie.stars}}
-                <li>{{movie.stars}}</li>
+            {{#each this.stars}}
+                <li>{{this.stars}}</li>
             {{/each}}
         </ul>
-        <p>{{movie.description}}</p>
-        <ul>
-            {{#each movie.showtimes}}
-                <li>{{movie.showtimes}}</li>
+        <p>{{this.description}}</p>
+        <p>
+            {{#each this.showtimes}}
+                {{this.showtimes}} |
             {{/each}}
-        </ul>
+        </p>
     </div>
     <div>
-        <button><a href="/">Go back</a></button>
+        <button><a href="/movies">Go back</a></button>
     </div>
 </section>
