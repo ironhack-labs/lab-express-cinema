@@ -10,20 +10,19 @@ router.get('/', (req, res, next) => {
 
 router.get('/movies', (req, res, next)=>{
   Movie.find()
-  .then(movieArray => {
-    // res.locals.allMovies = movieArray;
-    console.log(movieArray)
-    res.render("movies", {movieArray})
+  .then(movies => {
+    // res.locals.allMovies = movies;
+    console.log(movies)
+    res.render("movies", {movies})
   })
   .catch(e=>res.send(e))
 });
 
-router.get("/movie/:movieid", (req, res, next) =>{
-  const {movieId} = req.params
-  Movie.findById(movieId)
-  .then(detalle => {
-    res.locals.detail = detalle;
-    res.render("detail.hbs");
+router.get("/movies/:id", (req, res) =>{
+  Movie.findById(req.params.id)
+  .then(movies => {
+    // res.locals.detail = movies;
+    res.render("detail.hbs", movies);
   })
   .catch(e=>res.send(e))
 });

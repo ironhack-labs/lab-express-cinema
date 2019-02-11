@@ -1,12 +1,11 @@
-<h2>Movies!</h2>
-<ul>
 
-    {{#each movieArray}}
-    <li>
-        <img src={{this.image}}/> {{this.title}}
-        <form method="GET" action="/movie/{{this._id}}">
-            <button>See more</button>
-        </form>
-    </li>
-    {{/each}}
-</ul>
+{{#each movies}}
+
+
+<h1 class="card-title"><img class="card-img-top" src="{{this.image}}"></h1>
+{{this.title}}
+
+<button><a href="/movies/{{this._id}}">See more</a></button> 
+
+
+{{/each}} </div>

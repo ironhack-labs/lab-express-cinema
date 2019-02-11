@@ -1,20 +1,27 @@
-<a href="/">Go back</a>
+<a href="http://localhost:3000/movies">Go back</a>
+<br>
+<br>
 
-<img src={{movieInfo.image}} />
-<p> {{movieInfo.title}}</p>
-<p> Director: {{movieInfo.director}}</p>
+<div>
+  <img src={{image}}>
 
-<p>Stars</p>
-<ul>
-  {{#each movieInfo.stars}}
-  <li>{{this}}</li>
-  {{/each}}
-</ul>
+  <div>
+    <h3>{{title}}</h3>
+    <h4>Director: {{director}}</h4>
+    <h4>Stars</h4>
 
-<p> {{movieInfo.description}}</p>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
 
-<ul class="showtimes">
-  {{#each movieInfo.showtimes}}
-  <li> {{this}} |</li>
-  {{/each}}
-</ul> 
+    <span>{{description}}</span>
+  </div>
+</div>
+
+{{#if showtimes}}
+{{#each showtimes}}
+{{this}} |
+{{/each}}
+{{/if}}
