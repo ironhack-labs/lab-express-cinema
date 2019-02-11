@@ -1,17 +1,38 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  padding: 0;
   margin: 0;
-}
-  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; 
-  text-decoration: none;
+  color: #00B7FF; }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.imgbk {
+  width: 100%;
+ 
+}
+
+.main-title{
+  position: absolute;
+  top: 10%;
+  left: 47%;
+  color: white;
+  font-size: 100px;
+}
+
+.mainbutton{
+  position: absolute;
+  top: 51%;
+  left: 47%;
+  font-size: 17px;
+  border-radius: 30px;
+  padding: 18px;
+  color: #7CCFE2;
+
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.container-movies {
-  width: 100%;
-}
