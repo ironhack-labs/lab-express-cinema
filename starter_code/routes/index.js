@@ -2,9 +2,7 @@ const express = require('express');
 const router  = express.Router();
 const Movie = require("../models/Movie")
 /* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
+
 
 // router.get("/movies",(req,res)=>{
 //   .then(movies=>{
@@ -15,7 +13,16 @@ router.get('/', (req, res, next) => {
 //     console.log(error);
 //   });
 // })
-router.get('/movies', (req, res, next) => {
+
+router.get('/index/movie/:id', (req, res, next) => {
+  const {id} =  req.params
+  Movie.findById(id)
+  .then(movie => {
+    res.render('movie', movie);
+  })
+  .catch(e=>res.send(e))
+});
+router.get('/index/movies', (req, res, next) => {
   Movie.find({image: {$exists: true}})
   .then(movies => {
     console.log({movies})
@@ -23,13 +30,8 @@ router.get('/movies', (req, res, next) => {
   })
   .catch(e=>res.send(e))
 });
-router.get('/movie/:id', (req, res, next) => {
-  const {id} =  req.params
-  Movie.findById(id)
-  .then(movie => {
-    res.render('detail', movie);
-  })
-  .catch(e=>res.send(e))
+router.get('/', (req, res, next) => {
+  res.render('index');
 });
 
 module.exports = router;
