@@ -1,15 +1,25 @@
-{{!-- <section>
-    {{this.movie.id}}
-</section> --}}
 
-
-
-{{!-- 
-{{#each movies as | movie |}}
-<div>
-    <p>{{movie.title}}</p>
-    <img src="{{movie.image}}" alt="movie image">
-    <button><a href="{{movie.id}}">See more</a></button>
+<section id="movie-detail">
+    <div>
+        <img src="{{this.image}}">
     </div>
-{{/each}} --}}
-
+    <div class="info">
+        <h2>{{this.title}}</h2>
+        <h3>{{this.director}}</h3>
+        <h4>Stars:</h4>
+        <ul>
+            {{#each this.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{this.description}}</p>
+        <p>
+            {{#each this.showtimes}}
+                {{this}} |
+            {{/each}}
+        </p>
+    </div>
+    <div>
+        <button><a href="/movies">Go back</a></button>
+    </div>
+</section>

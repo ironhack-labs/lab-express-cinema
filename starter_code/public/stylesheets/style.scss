@@ -5,10 +5,49 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
-#home-image{
-  background-image: src="/starter_code/public/images/cinema.jpg";
+#home-image {
+  background-image: url("/images/cinema.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100vw;
   height: 100vh;
-}
+  padding: 250px;
+  box-sizing: border-box;
+ }
+
+ #cinema-title{
+   font-size: 2em;
+   font-family:'Lucida Sans Unicode';
+   color: rgb(9, 9, 49)
+ }
+
+ #chck-btn{
+     border-radius: 20px;
+     background-color: whitesmoke;
+     color: #00B7FF;
+     width: 150px;
+     height: 50px;
+ }
+
+ #movies-l {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+#movies-l > div {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px; }
+
+
+
+h3 {
+  font-size: 20px; }

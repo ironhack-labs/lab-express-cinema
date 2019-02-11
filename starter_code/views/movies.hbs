@@ -1,12 +1,13 @@
-<section class="movies-l">
+<section id="movies-l">
 
 {{#each movies as | movie |}}
 <div>
-    <p>{{movie.title}}</p>
+    
     <img src="{{movie.image}}" alt="movie image">
-    <button><a href="{{movie.id}}">See more</a></button>
+    <p>{{movie.title}}</p>
+    <br>
+    <button id="see-more"><a href="/movies/{{movie._id}}">See more</a></button>
     </div>
 {{/each}}
 
 </section>
-
