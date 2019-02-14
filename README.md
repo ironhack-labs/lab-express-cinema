@@ -13,6 +13,18 @@ We will create a cinema web page, where we will display the showtimes for some m
 - Fork this repo
 - Clone this repo
 
+## Purpose:
+
+- Understand how to build routes in express
+- Understand how to seed a database
+- Understand how to fetch the information of a single move to redirect to a page detail with query params
+
+## What you'll do in the exercise:
+ - Generate the project
+- Seed the database
+- Build the home page
+- List the movies
+- Display movie info
 
 ## Submission
 
