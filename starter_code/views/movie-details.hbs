@@ -1,0 +1,28 @@
+
+
+<div class="container">
+  <div class="row">
+      <div class="info-img col-md-3">
+        <img class="info-img" src="{{movie.image}}">
+      </div>
+        
+      <div class="info-info col-md-7">
+          <a href="/movies">Go back</a>
+          <h2>{{movie.title}}</h2>
+          <h4>Director: {{movie.director}}</h4>
+
+          <h5>Stars</h5>
+            <ul>
+              <li>{{movie.stars.[0]}}</li>
+              <li>{{movie.stars.[1]}}</li>
+              <li>{{movie.stars.[1]}}</li>
+            </ul>
+          <p>
+            {{movie.description}}
+          </p>
+          <p>{{movie.showtimes.[0]}} | {{movie.showtimes.[1]}} | {{movie.showtimes.[2]}} | {{movie.showtimes.[3]}} | {{movie.showtimes.[4]}}</p>
+     </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,35 @@
+body {
+  padding: 30px; }
+
+.main-div {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  height: 100vh; }
+
+.title-div {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  height: 10%; }
+
+.title {
+  font-size: 6em;
+  color: white;
+  margin: 0;
+  padding: 0; }
+
+.btn-primary {
+  background-color: white;
+  color: lightblue;
+  border-radius: 20px;
+  border-color: white; }
+
+.card {
+  border: 0; }
+  .card h4 {
+    font-size: 18px; }
+
+.info-img {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */

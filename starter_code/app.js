@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/express-cinema', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -55,4 +55,20 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
+//ROUTES
+app.get('/movies', (req, res, next) => {
+  spotifyApi.getArtistAlbums(req.params.artistId)
+  .then(function(data) {
+    console.log('Artist albums', data);
+   //res.send(data.body);
+   res.render('albums', {artistAlbums: data.body.items});
+  },
+  
+  function(err) {
+    console.error(err);
+  });
+});
+
+
 module.exports = app;
+
