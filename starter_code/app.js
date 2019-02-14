@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config('');
 
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -8,11 +8,11 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const Movie = require('./models/Movie.js');
 
-
-mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
-  .then(x => {
+mongoose.connect('mongodb://localhost/movies-stats',
+ {useNewUrlParser: true})
+.then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
   .catch(err => {
@@ -37,7 +37,7 @@ app.use(require('node-sass-middleware')({
   dest: path.join(__dirname, 'public'),
   sourceMap: true
 }));
-      
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -56,3 +56,6 @@ app.use('/', index);
 
 
 module.exports = app;
+app.listen(4000, () => {
+  console.log('My first app listening on port 4000!');
+});
