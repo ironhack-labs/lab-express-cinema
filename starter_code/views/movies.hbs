@@ -1,0 +1,7 @@
+movies
+{{#each showMoviesInHBS}}
+  {{title}}
+  <img src='{{image}}' />
+  <a href="../movie/{{id}}">Details</a>
+  {{description}}
+{{/each}}
