@@ -1,75 +1,213 @@
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
-
 main {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
+h1 {
+	font-size: 2rem;
+	padding: 2rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	padding-left: 2rem;
+	padding-bottom: 1rem;
+}
+
+a {
+  color: #00b7ff;
+}
+
 .container {
   position: absolute;
   right: 0;
-  padding: 4rem;
+  padding: 10rem;
 }
 
 .container h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .container a {
-  // background-color:
+  background-color: white;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.movies-container {
+	margin: 0 auto;
+	max-width: 48rem;
+}
+
+.movies-content {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.list-container {
+	text-align: center;
+	width: 14rem;
+	padding: 1rem;
+}
+
+.list-container img {
+	width: 100%;
+	box-shadow: .2rem .2rem .3rem rgba(0, 0, 0, .6);
+}
+
+.list-container h3 {
+	padding: .5rem;
+}
+
+.movie-img {
+	padding: 2rem;
+	float: left;
+}
+
+.movie-text {
+	padding-top: 2rem;
+}
+
+.movie-text h3 {
+	padding: 2rem;
 }
