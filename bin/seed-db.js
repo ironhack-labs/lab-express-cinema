@@ -1,13 +1,13 @@
-
+require('dotenv').config()
 
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 
-const username = process.env.MONGO_USERNAME || 'DevServer';
-const password = process.env.MONGO_PASSWORD || 'BougieHaus1!';
-const host = process.env.MONGO_HOST || 'ds251588.mlab.com'
-const port = process.env.MONGO_PORT || 51588;
-const dbName = process.env.MONGO_DBNAME || 'dev-bougie-haus';
+const username = process.env.MONGO_USERNAME;
+const password = process.env.MONGO_PASSWORD;
+const host = process.env.MONGO_HOST;
+const port = process.env.MONGO_PORT;
+const dbName = process.env.MONGO_DBNAME;
 
 const uri = `mongodb://${username}:${password}@${host}:${port}/${dbName}`;
 
