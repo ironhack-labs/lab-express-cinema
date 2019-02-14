@@ -1,12 +1,73 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/movie-theater1.jpg");
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px black; }
+
+button {
+  padding: 5px;
+  border-radius: 15px; }
 
 a {
-  color: #00B7FF; }
+  color: white;
+  text-decoration: none; }
+
+h1, h2, h3, p, span {
+  padding: 10px 0; }
+
+.movies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.movies img {
+  padding-right: -50px; }
+
+.movies li {
+  display: flex;
+  list-style-type: none;
+  padding: 10px 0; }
+
+.movieBox {
+  width: 30%;
+  padding: 10px;
+  padding-left: 30px; }
+
+.movieBox2 {
+  width: 33%;
+  padding: 100px; }
 
 #index {
-  background-image: url("/public/images/cinema.jpg");
-  background-size: cover; }
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  height: 100vh;
+  filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+
+#welcome {
+  font-size: 6em;
+  color: white;
+  text-shadow: 2px 2px black; }
+
+#welcome h1 {
+  font-weight: 3em; }
+
+#movieDetails {
+  display: flex;
+  align-items: center;
+  padding-left: 150px; }
+
+#movieDetails li {
+  padding: 10px 0;
+  list-style-type: none;
+  text-indent: 15px; }
 
 /*# sourceMappingURL=style.css.map */

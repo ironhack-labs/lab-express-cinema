@@ -1,6 +1,12 @@
-{{#each moviesForHBS}} 
-  <a href="movie/{{id}}">
-    <li>{{title}}</li><li><img src="{{image}}"/></li>
-  </a>
-  <hr>
-{{/each}}
+<div class="movies">
+  {{#each moviesForHBS}} 
+  <div class="movieBox">
+    <a href="movie/{{id}}">
+      <ul>
+        <li><img src="{{image}}"/></li>
+        <li>{{title}}</li>
+      </ul>
+    </a>
+    </div>
+  {{/each}}
+</div>
