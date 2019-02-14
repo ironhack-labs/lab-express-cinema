@@ -2,10 +2,8 @@
   {{#each moviesForHBS}} 
   <div class="movieBox">
     <a href="movie/{{id}}">
-      <ul>
-        <li><img src="{{image}}"/></li>
-        <li>{{title}}</li>
-      </ul>
+        <img src="{{image}}"/>
+        <div id="title">{{title}}</div>
     </a>
     </div>
   {{/each}}

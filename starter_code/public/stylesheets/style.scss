@@ -28,12 +28,18 @@ h1, h2, h3, p, span {
 
 .movies {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#title {
+  display: flex;
+  justify-items: center;
 }
 
 .movies img{
   padding-right: -50px;
+  display: flex;
+  align-self: center;
 }
 
 .movies li {
@@ -45,8 +51,11 @@ h1, h2, h3, p, span {
 
 .movieBox {
   width: 30%;
-  padding: 10px;
-  padding-left: 30px;
+  padding: 20px;
+  align-items: center;
+  // padding-left: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .movieBox2 {
@@ -62,7 +71,7 @@ h1, h2, h3, p, span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 #welcome {
@@ -76,6 +85,7 @@ h1, h2, h3, p, span {
 }
 
 #movieDetails {
+  width: 70%;
   display: flex;
   align-items: center;
   padding-left: 150px;
