@@ -1,0 +1,37 @@
+/*PUT ALL CSS IN HERE */
+html {
+  box-sizing: border-box; }
+
+*, * :before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.main {
+  background-image: url("../images/cinema.jpg");
+  height: 600px;
+  background-position-x: 45%; }
+
+.container {
+  margin-inline-start: 5%;
+  margin-inline-end: 5%;
+  margin-top: 10%; }
+
+.hi {
+  padding: 20px; }
+
+.container h3 {
+  margin: 0; }
+
+a {
+  margin: 0; }
+
+.first {
+  padding-top: 2%; }
+
+.seeMore {
+  margin-left: 5%;
+  margin-right: 10%; }
+
+/*# sourceMappingURL=style.css.map */

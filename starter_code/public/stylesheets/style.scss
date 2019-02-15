@@ -1,8 +1,60 @@
+/*PUT ALL CSS IN HERE */
+
+html {
+  box-sizing: border-box;
+ }
+ 
+ *,* :before, *:after {
+  box-sizing: inherit;
+ }
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+ 
+}
+.main{
+  background-image:url('../images/cinema.jpg');
+ height: 600px;
+  background-position-x: 45%;
+}
+.container{
+margin-inline-start: 5%;
+margin-inline-end: 5%;
+margin-top: 10%;
+
+
+
+}
+.hi{
+  padding: 20px;
+  
+
 }
 
-a {
-  color: #00B7FF;
+.container h3{
+ margin: 0
 }
+a{
+  margin: 0
+ }
+
+// .container a{
+//   color: #00B7FF;
+//   margin-top: 30%;
+//   margin-left: -15%;
+// }
+
+.first{
+  padding-top:2%;
+}
+.seeMore{
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+
+
+
+
+
