@@ -9,6 +9,9 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const seed         = require('./bin/seeds.js')
+const Movie        = require('./models/Movie.js')
+
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
@@ -45,9 +48,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
+//Clear Database and then re-seed
+Movie.deleteMany({})
+  .then(obj => {
+    console.log('This many movies were deleted: ', obj);
+    console.log(seed);
+    seed.forEach(element => {
+      Movie.create(element)
+        .then(data => {console.log('The movie was created and its data is the following: ', data)})
+        .catch(err => {console.log('An error occurred: ', err)});
+    });
+  })
+  .catch(err => {
+    console.log('An error occurred: ', err);
+  });
 
+
+
+
+  
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinema Ironhack';
 
 
 
