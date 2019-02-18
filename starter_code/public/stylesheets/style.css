@@ -2,66 +2,57 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .index-container {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   background-size: 100% 100%;
   width: 100%;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .index-container h1 {
   margin-top: 0;
   color: white;
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
 .off-center {
   position: absolute;
   left: 60%;
-  top: 40%;
-}
+  top: 40%; }
 
 .movies-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 .movie-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
-  padding-top: 30px;
-}
+  padding-top: 30px; }
 
 .movie-card span {
   padding-top: 10px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .movie-details-container {
   display: flex;
   flex-direction: row;
   width: 75%;
   margin-top: 50px;
-  margin-left: 50px;
-}
+  margin-left: 50px; }
 
 .movie-details-container img {
   width: 300px;
   height: 100%;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 .movie-details {
   max-width: 450px;
-  padding-left: 50px;
-}
+  padding-left: 50px; }
+
+/*# sourceMappingURL=style.css.map */

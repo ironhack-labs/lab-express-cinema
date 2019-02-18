@@ -1,0 +1,9 @@
+<div class="movies-container">
+  {{#each moviesforhbsfile}}
+  <div class="movie-card">
+  <img src="{{image}}">
+  <span><strong>{{title}}</strong></span>
+  <a href='../movie/{{id}}'><button>See More</button></a>
+</div>
+{{/each}}
+</div>
