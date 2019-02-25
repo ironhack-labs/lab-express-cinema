@@ -1,8 +1,30 @@
-# Dependency directory
-node_modules
+# artefacts
+.eslintcache
+.npm
+.nyc_output
+*.log
+logs/
+node_modules/
+coverage/
+build/
+dist/
 
-# Debug log from npm
-npm-debug.log
+# ide
+.bak
+*.swp
+*~
+*#
 
-# Environment Variables should NEVER be published
+# spam
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# dotenv
 .env
