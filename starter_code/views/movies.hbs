@@ -1,0 +1,12 @@
+<div class="catalogtitle">
+  <h2>IronHack Cinema</h2>
+  <h4>Click on the movie to check the showtimes!</h4>
+</div>
+
+<div class="moviescontainer" id="test">
+  {{#each data}}
+    {{>movieCard this}}
+  {{/each}}
+</div>
+
+<script src="/javascripts/script.js"></script>

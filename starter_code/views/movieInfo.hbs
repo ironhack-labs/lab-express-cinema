@@ -1,0 +1,20 @@
+<div class="infocontainer">
+  <img src={{movie.image}}>
+  <div class="infomovie">
+    <a href="/movies">Go back</a>
+    <h2>{{movie.title}}</h2>
+    <h5>Director: {{movie.director}}</h5>
+    <h6>Stars</h6>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>
+      {{#each movie.showtimes}}
+        <span>{{this}} | </span>
+      {{/each}}
+    </p>
+  </div>
+</div>
