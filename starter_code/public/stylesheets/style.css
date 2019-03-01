@@ -1,0 +1,83 @@
+body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Staatliches';
+  background-color: #EB2448; }
+
+#title {
+  color: white;
+  font-size: 120px;
+  position: absolute;
+  right: 200px;
+  bottom: 200px; }
+
+#check-button {
+  text-decoration: none;
+  color: #E9FF76;
+  position: absolute;
+  right: 380px;
+  bottom: 200px;
+  background-color: gray;
+  border-radius: 15px;
+  width: 190px;
+  height: 50px;
+  font-size: 29px;
+  padding: 10px 20px;
+  font-weight: 700;
+  padding-top: 20px; }
+
+.each-movie {
+  text-align: center;
+  padding: 50px; }
+
+.each-movie img {
+  border: #E9FF76 10px solid; }
+
+#movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+#title-movies {
+  padding: 10px 0px 0px 95px;
+  font-size: 60px; }
+
+#tagline {
+  padding-left: 95px;
+  font-size: 18px;
+  color: black; }
+
+#see-more {
+  background-color: #FFC478;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 7px 18px; }
+
+#more-info-container {
+  padding: 30px 60px;
+  display: flex; }
+
+#more-info-container img {
+  height: 100%;
+  border: #E9FF76 10px solid; }
+
+#movie-info {
+  padding: 10px 40px; }
+
+#movie-title {
+  font-size: 60px;
+  color: white; }
+
+#movie-director {
+  font-size: 26px; }
+
+#info-highlight {
+  background-color: #FFC478;
+  color: black;
+  padding: 10px 20px; }
+
+.movie-title {
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */

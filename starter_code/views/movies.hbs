@@ -1,0 +1,7 @@
+<h1 id="title-movies">Ironhack Cinema</h1>
+<p id="tagline">Click on the movie to check the showtimes!</p>
+<section id="movies-container">
+    {{#each movies}}
+        {{> moviePartial this}}
+    {{/each}}
+</section>
