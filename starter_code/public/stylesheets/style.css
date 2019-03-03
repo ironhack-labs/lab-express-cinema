@@ -2,19 +2,16 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
-  background: url(../images/cinema.jpg) no-repeat center center fixed; 
-  background-size: cover;
-}
+  background: url(../images/cinema.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
 .movies-title-container {
-  margin: 3% 10%;
-}
+  margin: 3% 10%; }
 
 .movies-container {
   flex-direction: row;
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .movie-container {
   padding: 10px;
@@ -22,25 +19,22 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: rgba(0, 0, 0, 0.4)
-}
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .movie {
   padding: 10px;
   text-align: center;
-  width: 30%;
-}
+  width: 30%; }
 
 .title-container {
   margin: 0px 0px 0px 40%;
   width: 40%;
-  font-size: 3em;
-}
+  font-size: 3em; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .movie-image-container {
-  margin: 20px;
-}
+  margin: 20px; }
+
+/*# sourceMappingURL=style.css.map */
