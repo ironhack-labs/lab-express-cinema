@@ -54,6 +54,6 @@ app.locals.title = 'Cinema Ironhack';
 const index = require('./routes/index');
 app.use('/', index);
 
-const movie = require("./views/movies")
-
+const movies = require('./routes/movies')
+app.use('/movies', movies)
 module.exports = app;

@@ -4,8 +4,8 @@ const Schema = mongoose.Schema
 
 const MovieSchema = new Schema({
 director: String,
-stars: String,
-image: [String],
+stars: [String],
+image: String,
 description: String,
 showtimes: [String]
 },

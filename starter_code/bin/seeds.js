@@ -69,7 +69,21 @@ const movies = [
     }
   ];
 
-mongoose.connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+/*mongoose.connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
 .then(() => {
   console.log("connect to mongoose");
 })
+.then(() =>{
+  return Movie.insertMany(movies)
+})*/
+mongoose.connect(process.env.DB, {useNewUrlParser: true})
+	.then(() => {
+	  console.log(`Connected to mongoose`) 
+	})
+	.then(() => {
+	  return Movie.insertMany(movies)
+	})
+	.then(movies => {
+	  console.log(movies) 
+	  mongoose.connection.close() 
+	}) 

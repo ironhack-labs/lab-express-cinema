@@ -6,17 +6,26 @@ body {
   background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 30%
+  padding: 30%;
+  
 }
-h1{
-  margin: 0 auto; 
+.container{
+  color: white;
+  /*margin-right: 100px;
+  padding: 20px
+  */
+
 }
+
 button{
   padding: 15px;
   border: solid white 1px;
-  border-radius: 50px;
+  border-radius: 20px;
+  
   
 }
+
+
 
 a {
   color: #00B7FF;
