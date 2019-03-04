@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<h3>Click on the movie to check the showtimes!</h3>
+
+<div class="card-columns m-5 p-5">
+    {{#each movies}}
+        <div class="card bg-light border-dark p-4">
+            <img class="card-img-top" src={{image}} alt="">
+            <div class="card-body text-dark">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text"><a href="/movies/{{id}}">See more</a></p>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+
+
