@@ -7,7 +7,7 @@ Router.get("/", (req, res) => {
     Movie.find()
     .then(movies => {
       console.log(movies)
-      res.render("movie", {movies});
+      res.render("movies", {movies});
     })
     .catch(err => console.log('Error', err))
   })
