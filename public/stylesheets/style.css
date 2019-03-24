@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+}
+
+.back {
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+#cinema {
+  color: aliceblue;
+  padding-left: 60vw;
+  padding-top: 25vh;
+}
+
+#btn {
+  border-radius: 50px;
+  background-color: aliceblue;
+  color: teal;
+}
+
+#color-back {
+  background-color: aliceblue;
+}
+
+#encab {
+  padding: 2vw;
+}
+
+#order {
+  display: inline-block;
+}
+
+#card {
+  width: 20vw;
+  margin: 2.3vw;
+}
+
+.ord {
+  padding-left: 20vw;
+  padding-top: 20vh;
+  padding-bottom: 25vh;
+  width: 75vw;
+}
+
+#imge {
+  width: 20vw;
+}

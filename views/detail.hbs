@@ -1,0 +1,32 @@
+<div id="color-back">
+  <div class="ord">
+    <div class="col s12 m7">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img id="imge" src="{{image}}">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <h5>{{title}}</h5>
+            <h6> Director: {{director}}</h6> <br>
+            <h6>Stars:</h6>
+            <ul>
+            {{#each stars as |star|}}
+              <li>· {{star}}</li>
+            {{/each}}
+            </ul> <br>
+            <p>{{description}}</p> <br>
+            <p>           
+              {{#each showtimes as |showtime|}}
+                {{showtime}} |
+              {{/each}}
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="/movies">Go back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

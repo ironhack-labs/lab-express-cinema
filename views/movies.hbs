@@ -1,0 +1,23 @@
+<div id="color-back">
+  <div id="encab">
+    <h3>Cinema Ironhack</h3>
+    <h6>Click on the movie to check the showtimes!</h6>
+  </div>
+  <ul>
+    {{#each movies as |movie|}}
+    <div id="order">
+      <div class="col s12 m7">
+        <div id="card" class="card">
+          <div class="card-image">
+            <img src="{{image}}">
+          </div>
+          <div class="card-action">
+            <h7>{{title}}</h7> <br>
+            <a href="/detail/{{movie._id}}">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </ul>
+</div>
