@@ -1,0 +1,32 @@
+<div class="mastercontainer">
+<div class ="imgpeli">
+    <img src ={{image}}>
+    </img>
+</div>
+<div class ="datospeli">
+    <a  href ="../movies"> 
+        Back
+    </a>
+<h1>
+    {{title}}
+</h1>
+
+<p>
+    Director: {{director}}
+</p>
+
+<p>
+   Stars:
+   <ul>
+    {{#each stars}}
+   <li>{{this}}</li>
+   {{/each}}
+   </ul> 
+</p>
+
+<strong>
+     {{description}}
+</strong>
+<p> {{showtimes}}</p>
+</div>
+</div>
