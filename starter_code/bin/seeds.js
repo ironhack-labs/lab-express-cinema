@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Movie = require("../models/Movie");
 
-mongoose.connect("mongodb://localhost/movieLab",{ useNewUrlParser: true });
+mongoose.connect(`mongodb://localhost/${process.env.DBNAME}`,{ useNewUrlParser: true });
 
 const movies = [
   {

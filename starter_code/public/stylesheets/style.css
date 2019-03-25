@@ -1,34 +1,29 @@
 body {
-  // padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 main.main-sect {
   height: 100vh;
   background-image: url("../images/cinema.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 h1.title {
   font-size: 8em;
-  color: white;
-}
+  color: white; }
 
 .small-cont {
-  width: 30vw;
-}
+  width: 30vw; }
 
 a.btn-circle {
   width: 52%;
   padding: 1em;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-radius: 2em;
   text-decoration: none !important;
   font-size: 2em;
-  color: rgb(103, 157, 174);
-}
+  color: #679dae; }
+
+/*# sourceMappingURL=style.css.map */
