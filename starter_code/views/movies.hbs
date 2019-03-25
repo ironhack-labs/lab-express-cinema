@@ -1,0 +1,21 @@
+<h1>Movies</h1>
+<div>
+  <div> 
+    <ul>
+  {{#each movies as |movie|}}
+  <img src={{movie.image}} width="50px" height="50px" alt="">
+  <li>
+   <a href="/movie/{{movie._id}}">
+     <strong>{{movie.title}}</strong>
+   </a>
+  </li>
+  {{/each}}
+</ul>
+  </div>
+</div>
+
+
+{{!-- <div>
+    <img src={{movie.image}} alt="">
+  </div>
+  <div> --}}
