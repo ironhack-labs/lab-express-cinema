@@ -1,0 +1,19 @@
+<div class="detail-cont">
+  <img src="{{image}}" alt="">
+  <div id="detail-info">
+      <h1><strong>{{title}}</strong></h1>
+      <h3>Director: {{director}}</h3>
+      <h4>Stars:</h4>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <div id="showtimes">
+      {{#each showtimes}}
+      <p>{{this}} |</p>
+      {{/each}}
+      </div>
+  </div>
+</div>

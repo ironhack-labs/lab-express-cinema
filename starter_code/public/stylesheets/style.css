@@ -33,47 +33,40 @@ a {
   border-radius: 22px;
   color: #00B7FF;
   margin-top: 50px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .movies-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 .movies-list li {
   text-align: center;
   list-style-type: none;
-  margin: 20px;
-}
+  margin: 20px; }
 
 .movies-list p {
-  margin: 10px 0;
-}
+  margin: 10px 0; }
 
 .detail-cont {
   display: flex;
   justify-content: center;
   justify-self: center;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 #detail-info {
   margin: 10px 0 0 20px;
-  width: 500px;
-}
+  width: 500px; }
 
 #detail-info li {
-  margin-left: 40px;
-}
+  margin-left: 40px; }
 
 #detail-info h3, #detail-info h4, #detail-info ul, #detail-info p {
-  margin-top: 7px;
-}
+  margin-top: 7px; }
 
 #showtimes {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
+
+/*# sourceMappingURL=style.css.map */
