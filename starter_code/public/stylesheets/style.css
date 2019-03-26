@@ -2,25 +2,21 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/cinema.jpg");
-  background-size: cover;
-}
+  background-size: cover; }
 
 h1 {
   size: 100px;
-  color: white;
-}
+  color: white; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 #text {
   text-align: left;
   width: 500px;
   font-size: 80px;
   margin-right: 20px;
-  padding-left: 755px;
-}
+  padding-left: 755px; }
 
 .click {
   margin-left: 191px;
@@ -28,9 +24,8 @@ a {
   border-radius: 20px;
   color: #00B7FF;
   width: 200px;
-  height: 45px;
-}
+  height: 45px; }
 
-
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
