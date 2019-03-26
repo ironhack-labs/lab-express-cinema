@@ -24,6 +24,11 @@ a.btn-circle {
   border-radius: 2em;
   text-decoration: none !important;
   font-size: 2em;
-  color: #679dae; }
+  color: #679dae;
+  text-align: center; }
+
+.back-sect {
+  background-color: #312e2e;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

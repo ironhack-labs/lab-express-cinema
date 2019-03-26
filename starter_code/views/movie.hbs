@@ -1,11 +1,30 @@
-<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-    <div class="uk-card-media-left uk-cover-container">
-        <img src="{{image}}" alt="{{title}}-img" uk-cover>
-        <canvas width="600" height="400"></canvas>
+<hr class="uk-divider-icon">
+<section class="uk-section uk-padding-remove-top uk-section-muted">
+    <div class="uk-container uk-container-expand">
+        <h1>ShowTimes</h1>
     </div>
-    <div>
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">{{title}}</h3>
+    <div class="uk-container uk-container-expand">
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-card uk-card-default uk-card-body uk-width-auto">
+                <img data-src="{{image}}" alt="" uk-img>
+            </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-expand">
+                <a href="/movies">Go Back</a>
+                <h4>{{title}}</h4>
+                <p>Director: {{director}}</p>
+                <p>Stars:</p>
+                <ul>
+                    {{#each stars as |star|}}
+                    <li>{{star}}</li>
+                    {{/each}}
+                </ul>
+                <p>{{description}}</p>
+                <p>
+                    {{#each showtimes as |time|}}
+                    {{time}} |
+                    {{/each}}
+                </p>
+            </div>
         </div>
     </div>
-</div>
+</section>

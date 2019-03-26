@@ -17,7 +17,7 @@ movieSchema = new Schema({
   description:{
     type: String
   },
-  showTimes:{
+  showtimes:{
     type: Array
   }
 });
