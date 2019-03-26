@@ -1,14 +1,19 @@
-{{!-- <h1>Books</h1>
-{{#each books}}
-   <p><a href="books-{{this._id}}">{{this.title}}</a></p> 
-    <p><a href="/books/{{this._id}}">{{this.title}}</a></p>
-{{/each}}
 
-<h2>Reviews</h2>
-{{#each book.reviews}}
-<div class="review-item">
-  <p>{{this.comments}}</p>
-  <span>{{this.user}}</span>
-</div>
-{{/each}} --}}
+{{#if movie}}
+  <div><img src="{{movie.image}}" alt=""></div>
+  
+  <div>
+    <h1>{{movie.title}}</h1>
+    <h2>Director: {{movie.director}}</h2>
+    <h2>Stars</h2>
 
+     <ul>
+     {{#each stars}}
+      <li>{{this}}</li>
+    {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>{{movie.showtimes}}</p>
+  </div>
+
+{{/if}}

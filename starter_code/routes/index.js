@@ -10,11 +10,13 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/movies', (req, res, next) =>{
-  Movie.find()
-    .then(movies =>{
-        console.log( 'Retrieving movies from DB:',   movies  )
-    res.render( 'movies', { movies } );
-    }) 
+  Movie.find({}) // all object, if i give an empty object 
+    .then(fetchedMovies =>{
+      debugger;
+        console.log( 'Retrieving movies from DB:',   fetchedMovies[0]  )
+       res.render( 'movies', { movies: fetchedMovies } ); 
+    //messages is an [], to get an object, we say: {movies: movies} (the firrst of them is going to be the each loop)
+      }) 
     .catch(err => {
       console.log('Error while getting the books from the DB: ', err);
     })
@@ -22,10 +24,10 @@ router.get('/movies', (req, res, next) =>{
 
   /* GET /more page */
 router.get('/more/:movieId', (req, res, next) => {
-  Movie.findOne( { '_id':req.params.movieId } )
-  .then( theMovie => {
-      console.log('Found the movie', movie);
-      res.render('more', {theMovie});
+  Movie.findOne( { _id: req.params.movieId } )
+  .then( fetchedMovies => {
+      console.log('Found the movie', fetchedMovies);
+      res.render('more', {movie: fetchedMovies});
     debugger
     })
     .catch (err => {

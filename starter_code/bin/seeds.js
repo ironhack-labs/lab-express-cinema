@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/movie');
 
-const dbName = 'movies';
+const dbName = 'ironMovies';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
@@ -74,11 +74,14 @@ const movies = [
 ];
 
 // Call the Movies model's create method with the array as argument.
-Movie.create(movies, (err) => {
-  if (err) { throw(err) }
-  console.log(`Created ${movies.length} movies`)
-  mongoose.connection.close();
-});
-
+Movie.create(movies)
+.then(result => {
+  console.log(result)
+  mongoose.connection.close()
+})
+.catch(err => {
+  console.log(err);
+  mongoose.connection.close()
+})
 // And then run the following code (to update the db):
 // $ node bin/seeds.js

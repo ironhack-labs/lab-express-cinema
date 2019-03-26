@@ -1,5 +1,11 @@
- {{#each movies}} 
-   <p>{{this.title}}</p>
-  {{!-- <a href="/more">See More</a> --}}
-  
-{{/each}}
+ {{#each movies}}
+ <div class="flex">
+   <div id="intro">
+     <img src="{{image}}" alt="">
+     <p>{{title}}</p>
+     {{!-- <pre>{{this.director}}</pre> --}}
+     {{!-- <a href="/more">See More</a> --}}
+     <a style="display: block; margin-bottom: 80px" href="/more/{{_id}}">See More</a>
+   </div>
+ </div>
+ {{/each}}
