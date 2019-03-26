@@ -1,0 +1,16 @@
+<div class="maincontent">
+  <h1>Ironhack Cinema</h1>
+  <h2>Click on the movie to check the showtimes!</h2>
+
+  {{!-- Container for all movies (flexbox) --}}
+  <div class="overview-items">
+    {{#each movie}}
+    <div class="movie-item">
+      <img src="{{image}}" alt="Image of {{title}}">
+      <p>{{title}}</p>
+      <a href="/movies/{{_id}}">See more</a>
+    </div>
+    {{/each}}
+  </div>
+
+</div> 
