@@ -20,4 +20,17 @@ router.get('/movies', (req, res, next) => {
     })
 });
 
+
+
+router.get('/movies/:movieId', (req, res, next) => {
+  Movie.findOne({'_id': req.params.movieId})
+    .then(theMovie => {
+      res.render('movie-details', { movie: theMovie });
+    })
+    .catch(error => {
+      console.log('Error while retrieving movie details: ', error);
+    })
+});
+
+
 module.exports = router;
