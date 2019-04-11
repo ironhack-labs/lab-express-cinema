@@ -1,0 +1,8 @@
+<div class="albumslist">
+  {{#each movies}}
+  <img src="{{this.image}}" alt="">
+  <p>{{this.title}}</p>
+  <a href="/movie/{{this._id}}">See More</a>
+  <br>
+  {{/each}}
+</div>
