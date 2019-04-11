@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.index-container {
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;   
+  height: 100vh;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
