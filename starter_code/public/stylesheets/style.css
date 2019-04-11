@@ -1,14 +1,12 @@
 body {
-  padding: 0;;
-  margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
 .container a {
   background-color: white;
   padding: 15px;
   border-radius: 25px;
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .container {
   display: flex;
@@ -17,13 +15,14 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/cinema.jpg');
+  background-image: url("../images/cinema.jpg");
   background-repeat: round;
-  background-size: cover
-}
+  background-size: cover; }
+
 .container h1 {
   margin-left: 200px;
   display: block;
   color: white;
-  font-size: 80px;
-}
+  font-size: 80px; }
+
+/*# sourceMappingURL=style.css.map */
