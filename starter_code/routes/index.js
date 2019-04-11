@@ -7,7 +7,8 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 router.get('/movies', (req, res, next) => {
-  Movie.find().then(movie => console.log(movie));
+  Movie.find({})
+    .then(movie => console.log(movie));
 });
 
 router.get('/movie/:id', (req, res, next) => {
