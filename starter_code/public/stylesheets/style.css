@@ -5,28 +5,110 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0;
-  padding: 0;
-  font: 1.6rem "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 1.6rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh; }
 
 a {
   color: #00B7FF; }
 
+h1 {
+  font-weight: bold;
+  font-size: 5.4rem; }
+
 .btn {
   text-decoration: none;
   color: #00B7FF;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   background-color: #FAFAFA;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   box-shadow: 0.1rem 0.1rem 0.3rem #333; }
 
+.full-screen {
+  height: 100%;
+  position: relative; }
+  .full-screen .title-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -75%);
+    padding: 4rem 2rem;
+    color: #FAFAFA;
+    width: 30rem; }
+    .full-screen .title-box h1 {
+      font-size: 6.4rem;
+      margin-bottom: 2rem; }
+
 #main-screen {
-  width: 100vw;
-  height: 100vh;
   background-color: #00B7FF;
   background-image: url(../images/cinema.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+
+.section {
+  display: flex;
+  flex-direction: column; }
+  .section h1 {
+    font-size: 3.2rem;
+    padding: 1rem; }
+  .section p {
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1rem; }
+  .section .movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 80%;
+    justify-content: space-around; }
+    .section .movies-list .movie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem; }
+      .section .movies-list .movie img {
+        box-shadow: 0.1rem 0.1rem 0.3rem #333; }
+      .section .movies-list .movie h2 {
+        padding: 1rem 0;
+        font-weight: bold;
+        font-size: 1.4rem; }
+      .section .movies-list .movie a {
+        font-weight: bold;
+        font-size: 1.4rem; }
+
+#movie-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem; }
+  #movie-info .image-box {
+    margin-right: 5rem; }
+  #movie-info .description-box {
+    display: flex;
+    flex-direction: column; }
+    #movie-info .description-box a {
+      font-size: 1.4rem; }
+    #movie-info .description-box h1 {
+      font-size: 3.6rem;
+      padding: 1rem 0; }
+    #movie-info .description-box h2 {
+      font-weight: bold;
+      font-size: 2.4rem;
+      padding: 1rem 0; }
+    #movie-info .description-box h3 {
+      font-weight: bold;
+      font-size: 1.8rem;
+      padding: 1rem 0; }
+    #movie-info .description-box ul {
+      list-style: disc;
+      margin-left: 2rem;
+      padding: 1rem 0; }
+    #movie-info .description-box p {
+      padding: 1rem 0; }
+    #movie-info .description-box .showtimes {
+      display: flex;
+      flex-direction: row; }
+      #movie-info .description-box .showtimes span {
+        padding: .5rem; }
 
 /*# sourceMappingURL=style.css.map */

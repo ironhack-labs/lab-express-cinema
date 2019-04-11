@@ -1,19 +1,19 @@
 <div id="movie-info">
-  <a href="/movies">Go back</a>
-  <div class="movie-section">
-    <div class="image-box">
-      <img src="{{movie.image}}" alt="{{movie.title}}">
-    </div>
-    <div class="description-box">
-      <h1>{{movie.title}}</h1>
-      <h2>Director: {{movie.director}}</h2>
-      <h3>Stars</h3>
-      <ul>
-        {{#each movie.stars}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-      <p>{{movie.description}}</p>
+  <div class="image-box">
+    <img src="{{movie.image}}" alt="{{movie.title}}">
+  </div>
+  <div class="description-box">
+    <a href="/movies">Go back</a>
+    <h1>{{movie.title}}</h1>
+    <h2>Director: {{movie.director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <div class="showtimes">
       {{#each movie.showtimes}}
         <span>{{this}} |</span>
       {{/each}}
