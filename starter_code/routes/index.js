@@ -8,11 +8,15 @@ router.get('/', (req, res, next) => {
 });
 router.get('/movies', (req, res, next) => {
   Movie.find({})
-    .then(movie => console.log(movie));
+    .then(movies => res.render('movies', {movies}))
+    .catch(err => console.error(err));
 });
 
 router.get('/movie/:id', (req, res, next) => {
-
+  Movie.findById(req.params.id)
+    .then(movie => res.render('movie', {movie}))
+    // .then(movie => res.json({movie}))
+    .catch(err => console.error(err));
 });
 
 module.exports = router;
