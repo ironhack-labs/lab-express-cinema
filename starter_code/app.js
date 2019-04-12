@@ -53,10 +53,11 @@ app.locals.title = 'Cinema Ironhack';
 
 const index = require('./routes/index');
 const movies = require('./routes/movies');
+const movie = require('./routes/movie');
 
 app.use('/', index);
 app.use('/movies', movies);
+app.use('/movie/:movieId', movie);
 
 
 module.exports = app;
-app.listen(process.env.PORT)
