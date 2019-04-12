@@ -44,6 +44,7 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+hbs.registerPartials(__dirname + "/views/Partials")
 
 
 // default value for title local
@@ -55,4 +56,10 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
+app.post("/movies", (req, res, next) => {
+  
+});
+
 module.exports = app;
+
+app.listen(3000, () => console.log("My Cinema project running on port 3000"));
