@@ -1,0 +1,26 @@
+<div class="container">
+<a href="/movies" class="btn btn-danger">Go Back</a> 
+
+<div class="row container">
+    <div class="col-6">
+       
+            <img class="card-img-top" src="{{listMovies.image}}" alt="{{listMovies.title}}">     
+    </div>
+    <div class="col-6">
+        <div class="card-body text-center">
+            <h5 class="card-title">{{listMovies.title}}</h5>
+            <p class="card-text"> Director: {{listMovies.director}}</p>
+            <p class="card-text"> Stars: </p>
+            <p class="card-text"> {{#each listMovies.stars}}
+               <p>-{{this}}</p>
+                  {{/each}}</p>
+            <p class="card-text"> Synopsis: 
+            {{listMovies.description}}</p>
+            <p class="card-text"> Sessions:   
+        {{#each listMovies.showtimes}}
+            {{this}}
+        {{/each}}
+        </p>
+        </div>
+    </div>
+</div></div>
