@@ -6,3 +6,39 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.container-index{
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  }
+  
+  .title{
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3em;
+  }
+  
+  .container-title{
+  padding-left: 500px;
+  padding-top:100px;
+  }
+  
+  .container-movies{
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+  
+  }
+  
+  .movie-card{
+  
+   padding: 50px; 
+  
+  }
