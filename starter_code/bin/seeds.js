@@ -1,4 +1,7 @@
 // To insert in "bin/seeds.js"
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie');
+
 const dbName = 'cinema';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 

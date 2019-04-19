@@ -1,47 +1,8 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("../images/cinema.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;  
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; 
-}
-
-   .title {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 6em; 
-  }
-
-  .button{
-   color: blue;
-   font-size: 20px;
-   border-radius: 10px;
-  }
-  
-  .container-title {
-    padding-left: 500px;
-    padding-top: 100px; 
-  }
-  
-  .container-movies {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
-  }
-  
-  .movie-card {
-    padding: 50px; 
-  }
+  color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
