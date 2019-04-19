@@ -1,0 +1,26 @@
+<section class="movies-container movie-details">
+  {{#with this}}
+  <article class="poster  ">
+    <img src="{{image}}" alt="{{title}}">
+  </article>
+  <article class="detail">
+    <p><a href="/movies">Go back</a></p>
+    <h1>{{title}}</h1>
+    <p>Director: {{director}}</p>
+    <p>
+      Starts
+      <ul>
+        {{#each stars as | star |}}
+        <li>{{star}}</li>
+        {{/each}}
+      </ul>
+    </p>
+    <p>{{description}}</p>
+    <p>
+      {{#each showtimes as | showtime |}}
+      <span>{{showtime}} |</span>
+      {{/each}}
+    </p>
+  </article>
+  {{/with}}
+</section>
