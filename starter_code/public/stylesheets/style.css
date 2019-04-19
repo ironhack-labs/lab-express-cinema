@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF;
@@ -40,58 +39,45 @@ header h1 {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
-}
+  padding: 50px 0; }
 
 .movies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
-.detail-movie{
+.detail-movie {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .movie {
   width: 33%;
-  text-align: center;
-}
+  text-align: center; }
 
-.img-movie{
-  width: 30%;
-}
+.img-movie {
+  width: 30%; }
 
 .info-movie {
   width: 70%;
-  padding: 20px 0;
-}
+  padding: 20px 0; }
 
 @media (max-width: 768px) {
   .welcome {
     width: 100%;
     text-align: center;
-    align-self: center; } 
-
+    align-self: center; }
   .container {
-    width: 100%;
-  }
-
-  .movie{
-    width: 51%;
-  }
-
-  .img-movie{
-    width: 51%;
-  }
-  
+    width: 100%; }
+  .movie {
+    width: 51%; }
+  .img-movie {
+    width: 51%; }
   .info-movie {
-    width: 50%;
-  }
-}
+    width: 50%; } }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
