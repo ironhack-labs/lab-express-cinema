@@ -1,8 +1,121 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+#cinema-bg{
+  background: url(../images/cinema.jpg) no-repeat center center fixed;
+  background-size:cover;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#home{
+  float: right;
+  width: 40%;
+  min-width: 500px;
+  padding-top: 5%;
+}
+#home h1{
+color: white;
+font-size: 6em;
+width: 250px;
+text-align: center;
+overflow: visible;
+margin-bottom: 30px;
+}
+#home a{
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 3em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  width: 250px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.2em 2.8em;
+  color:#0f6ead;
+  text-decoration: none;
+  text-align: center;
+  border-color: white;
+  box-shadow: 0 0 40px 40px white inset, 0 0 0 0 white;
+  transition: all 150ms ease-in-out;
+}
+#home a:hover {
+  color:white;
+    box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+  }
+  
+#movies, #movie{
+  margin: 0 auto;
+  position: relative;
+  max-width: 800px;
+  padding-top: 1rem;
+  display: block;
+}
+#movies h1{
+  margin-bottom: 20px;
+}
+#movies div{
+  margin: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: stretch;
+  margin-top: 2rem;
+}
+#movies article img{
+  margin-bottom: 10px;
+}
+#movies article{
+  text-align: center;
+  width: 30%; 
+  margin-bottom: 2rem;
+}
+#movies article h3{
+  font-size: .9rem;
+  margin-bottom: 5px;
+}
+#movie{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+}
+#movie figure{
+  width: 20%;
+  padding-top: 20px;
+}
+#movie div{
+  width: 70%;
+  padding-left: 10%;
+}
+#movie div a{
+  margin-bottom: 20px;
+  display: block;
+}
+#movie h1{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+#movie h2, #movie h3{
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+#movie ul, #movie p{
+  margin-bottom: 20px;
 }
