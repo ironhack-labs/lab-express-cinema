@@ -6,3 +6,67 @@ body {
 a {
   color: #00B7FF;
 }
+
+.home-page{
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items:  center;
+
+}
+
+.home-page h1{
+  color: white;
+  font-size: 130px;
+  margin-top: -200px;
+}
+.home-page button{
+  background-color: white;
+  color: black;
+  width: 300px;
+  height:90px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: -100px;
+
+}
+
+.movies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left:200px;
+  margin-right: 200px;
+  padding:100px;
+}
+
+.movies img {
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:100px;
+}
+
+.text {
+  text-align: center;
+}
+.text span {
+  color: #00B7FF;
+}
+
+.detail{
+  display: flex;
+  justify-content: space-evenly;
+}
+.detailText{
+  width: 60%;
+}
+.subtitle h2{
+ font-size: 30px;
+}
+.subtitle p {
+  font-size: 30px,
+}
