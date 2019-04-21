@@ -1,6 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-const Movie = require('../models/Movie.js');
+const Movie = require('../models/Movie');
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -8,31 +8,17 @@ router.get('/', (req, res, next) => {
 });
 
 
-router.get('/movies', (req, res, next) => {
-  Movie.find()
-  .then(allMovies => {
-  console.log('Retrieved all movies from DB:', allMovies);
-  res.render('movies', { movies: allMovies });
+router.get('/movies', (req, res) => {
+  Movies.find()
+    .then(movies => res.render('movies', { movies }))
+    .catch(err => console.log(err))
+})
 
-  })
-  .catch(error => {
-  console.log('Error while getting the books from the DB: ', error);
-  })
-
-});
-
-router.get('/movies/:Idmovie', (req, res, next) => {
-  
-  Movie.findOne({'_id': req.params.Idmovie})
-  .then(Movie => {
-  console.log('Retrieved movie from DB:', Movie);
-  res.render('movieDetails', { movie: Movie });
-
-  })
-  .catch(error => {
-  console.log('Error while getting the books from the DB: ', error);
-  })
-
-});
+router.get('/movie/:id', (req, res) => {
+  const { id } = req.params
+  Movies.findById(id)
+    .then(movie => res.render('movie', movie))
+    .catch(err => console.log(err))
+})
 
 module.exports = router;

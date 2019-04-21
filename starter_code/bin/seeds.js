@@ -1,9 +1,12 @@
 // To insert in "bin/seeds.js"
-const mongoose = require('mongoose');
-const Movie = require('../models/Movie');
+require('dotenv').config();
 
-const dbName = 'cinema';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie.js');
+
+
+mongoose.connect(process.env.DB);
 
 const movies = [
   {
