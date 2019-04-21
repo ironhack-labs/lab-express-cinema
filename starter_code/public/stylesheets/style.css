@@ -1,0 +1,18 @@
+a {
+  color: #00B7FF; }
+
+.index__h1 {
+  color: white;
+  font-size: 90px;
+  margin-left: 63%;
+  margin-top: 2%;
+  letter-spacing: 3px; }
+
+.index__a {
+  color: grey !important;
+  border-radius: 40px !important;
+  margin-left: 63%;
+  margin-top: 2%;
+  padding: 0.8% 3% !important; }
+
+/*# sourceMappingURL=style.css.map */

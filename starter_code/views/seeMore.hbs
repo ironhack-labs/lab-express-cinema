@@ -1,0 +1,19 @@
+
+<div class="card" style="width: 25rem;">
+   {{#each data}}
+  <img class="card-img-top" src="{{this.image}}">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <h6 class="card-title">{{this.director}}</h6>
+    <p class="card-text">{{this.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">{{this.stars}}</ul>
+  <ul class="list-group list-group-flush">{{this.showtimes}}</ul>
+  <div class="card-body">
+    
+{{/each}}
+<a href="/" class="card-link">Go back</a>
+  </div>
+  
+</div>
+
