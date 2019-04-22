@@ -1,8 +1,66 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-a {
-  color: #00B7FF;
-}
+ body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
+
+ a {
+  color: #00b7ff; }
+
+ .cover {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-position-y: center; }
+
+ .cover article {
+  width: 40vw; }
+
+ .cover h1 {
+  color: #ffffff;
+  font-size: 7em; }
+
+ .cover a {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 30px; }
+
+ .movies-title {
+  margin: 50px; }
+
+ .movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px; }
+
+ .movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  margin-bottom: 50px; }
+
+ .movie-details {
+  display: flex;
+  justify-content: center; }
+
+ .movie-details .poster {
+  margin-right: 25px; }
+
+ .movie-details .detail {
+  width: 50vw; }
+
+ .movie-details .detail ul {
+  margin-left: 20px; }
+
+ .movie-details .detail > * {
+  margin-bottom: 20px; }
