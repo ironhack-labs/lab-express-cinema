@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row infoRow">
+        <div class="col-lg-4 text-center">
+            <img src="{{movies.image}}" width="300px" height="auto">
+        </div>
+        <div class="col-sm-8">
+            <a href="/movies">Go back</a>
+            <h4 class="mTitle">{{movies.title}}</h4>
+            <h6>{{movies.director}}</h6>
+            <h6>Stars:</h6><br>
+            <ul>
+                {{#each movies.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movies.description}}</p>
+            <h6>SHOWTIMES:</h6><br>
+            <p>
+                {{#each movies.showtimes}}
+                {{this}} |
+                {{/each}}
+            </p>
+        </div>
+    </div>
+</div>

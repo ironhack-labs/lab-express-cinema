@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>IRONHACK CINEMA</h1>
+            <p>CLICK ON THE MOVIE TO CHECK THE SHOWTIMES</p><br>
+        </div>
+    </div>
+
+    <div class="row">
+        {{#each movies}}
+        <div class="col-md-4 text-center">
+            <img src="{{image}}" width="200px" height="auto"><br>
+            <h4>{{title}}</h4>
+            <a href="/movies/{{id}}">See More</a>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
