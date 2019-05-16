@@ -54,9 +54,11 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = app_name
 
 
-
+//Routes
 const index = require('./routes/index');
 app.use('/', index);
+const movies = require('./routes/movies');
+app.use('/movies', movies);
 
 
 module.exports = app;

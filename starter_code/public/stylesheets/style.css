@@ -5,18 +5,19 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  background: url(/images/cinema.jpg) no-repeat center;
+  background: url('/images/cinema.jpg') no-repeat center;
   background-size: cover;
   height: 100vh;
   justify-content: start;
   color: white;
   flex-direction: column;
   padding: 50px 40px;
-  text-align: left;
+  text-align: center;
 }
 
 .hero h1,
 p {
+
   display: block;
 }
 
@@ -30,6 +31,16 @@ p {
 
 a {
   color: #00B7FF;
+}
+
+.movie-list {
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+.movie-list .movie {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
