@@ -1,0 +1,35 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background: url(/images/cinema.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  justify-content: start;
+  color: white;
+  flex-direction: column;
+  padding: 50px 40px;
+  text-align: left;
+}
+
+.hero h1,
+p {
+  display: block;
+}
+
+.button {
+  background: white;
+  border-radius: 100px;
+  text-align: center;
+  padding: 8px 30px;
+  display: inline-block;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*# sourceMappingURL=style.css.map */
