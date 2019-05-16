@@ -70,3 +70,11 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+
+Movie.create(movies)
+  .then(moviesCreated => {
+    console.log(`Creadas ${moviesCreated.length} peliculas`)
+    mongoose.connection.close()
+  })
+  .catch(err => console.log(`Hubo un error: ${err}`))
