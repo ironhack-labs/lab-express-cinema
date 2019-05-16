@@ -1,0 +1,20 @@
+<div class="container-random">
+  <figure class="detailImage">
+    <img src="{{image}}" alt="">
+  </figure>
+  <article class="movieDetailRight">
+    <h2 class="descriptionTitle">{{title}}</h2>
+    <h3 class="descriptionDir">{{director}}</h3>
+    <div class="description">
+      <h3>Stars: </h3>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="description">
+      <p>{{description}}</p>
+    </div>
+  </article>
+</div>
