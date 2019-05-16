@@ -42,5 +42,20 @@ a {
 .movie-list .movie {
   margin-bottom: 30px;
 }
+.container{
+  padding-top: 40px;
+}
+
+.showtime{
+  display:inline-block;
+  text-decoration: none;
+}
+.movie-card{
+  padding: 30px 50px;
+
+}
+.bold-text{
+  font-weight: 900;
+}
 
 /*# sourceMappingURL=style.css.map */

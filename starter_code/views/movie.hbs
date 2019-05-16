@@ -1,24 +1,34 @@
 <div class="container">
-
+<a href="/movies">Go back</a>
   <section class="movie-card">
-    <header>
-      <h1>Ironhack Cinema</h1>
-      <p>Click on the movie to check showtimes!</p>
-    </header>
     <div class="row">
-      {{#each movies}}
+      {{#with movie}}
       <div class="col-md-4 movie">
-        <article>
-          <figure>
-            <img src="{{image}}" alt="" srcset="" />
-          </figure>
+        <figure>
+            <img src="{{image}}" alt="{{title}}" />
+        </figure>
+      </div>
+
+      <div class="col-md-8">
           <h3>
             {{title}}
           </h3>
-          <a href="/movies/{{id}}">See more </a>
+          <p><span class="bold-text">Director:</span> {{director}}</p>
+          <p class="bold-text">Stars: </p>
+          <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <p>{{description}}</p>
+          <ul>
+            {{#each showtimes}}
+            <li class="showtime">{{this}} |</li>
+            {{/each}}
+          </ul>
       </div>
-      {{/each}}
+      
     </div>
-    </article>
+    {{/with}}
   </section>
 </div>
