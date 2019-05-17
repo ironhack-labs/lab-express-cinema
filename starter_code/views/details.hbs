@@ -1,0 +1,22 @@
+<div class="">
+
+    <article class="card">
+        <img  src="{{movie.image}}" alt="Card image cap">
+        <div class="card-body">
+            <h5>{{movie.title}} </h5>
+            <p>{{movie.description}}</p>
+            <p>Stars</p>
+            <ul>
+              {{#each movie.stars}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+        </div>
+        <div>
+          {{#each movie.showtimes}}
+          {{this}}
+          {{/each}}
+        </div>
+    </article>
+
+</div>

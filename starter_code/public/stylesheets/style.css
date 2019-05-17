@@ -1,11 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .hero {
   background: url("../images/cinema.jpg");
@@ -14,13 +12,13 @@ a {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
-}
+  width: 100vw; }
 
 .title {
   color: white;
   font-size: 2.5em;
   position: absolute;
   top: 25vh;
-  right: 15vw;
-}
+  right: 15vw; }
+
+/*# sourceMappingURL=style.css.map */
