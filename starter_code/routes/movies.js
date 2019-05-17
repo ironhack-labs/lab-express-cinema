@@ -16,16 +16,13 @@ router.get('/', (req, res, next) => {                             // ESTO ES EL 
 })
 
 
+router.get('/:_id', (req, res) => {
 
 
-
-/* router.get('/view/:book_id', (req, res) => {
-
-  //const id = req.params.book_id
-  Book.findById(req.params.book_id)
-    .then(theBook => res.render('book-detail', { book: theBook }))
+  Movie.findById(req.params._id)
+    .then(theMovie => res.render('movie-detail', { movies: theMovie }))
     .catch(error => console.log(error))
-}) */
+})
 
 
 
