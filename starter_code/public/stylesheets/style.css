@@ -1,24 +1,19 @@
 * {
-    padding: 0px;
-    margin: 0px;
-}
+  padding: 0px;
+  margin: 0px; }
 
 h1 {
   color: white;
   font-size: 8em;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 h3 {
   margin: 0;
-  padding: 20px 0 0 0;
-}
+  padding: 20px 0 0 0; }
 
 section {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  padding: 20px 0 0 20px;
-}
-
+  padding: 20px 0 0 20px; }
 
 .container-flex a {
   font-size: 1.5em;
@@ -27,44 +22,37 @@ section {
   padding: 10px 80px;
   border-radius: 20px;
   text-align: center;
-  width: 20%;
-}
+  width: 20%; }
 
 #cine-background {
   height: 100vh;
-  background: white url('../images/cinema.jpg') no-repeat center / cover;
+  background: white url("../images/cinema.jpg") no-repeat center/cover;
   display: flex;
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
-.container-flex{
-  margin: 50px 50px 0 0;
-}
+.container-flex {
+  margin: 50px 50px 0 0; }
 
 #movies-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 #movies-list img, a {
-  display: block;
-}  
-#movies-list a {
-  margin: 10px 0 30px;
-}
+  display: block; }
 
+#movies-list a {
+  margin: 10px 0 30px; }
 
 /* Movie-detail */
 #movie-detail {
-display: flex;
-margin-top: 50px;
-}
+  display: flex;
+  margin-top: 50px; }
 
 #movie-detail img {
-  margin-right: 40px;
-}
+  margin-right: 40px; }
 
 .content-film {
-  margin: 0 10px;
-}
+  margin: 0 10px; }
+
+/*# sourceMappingURL=style.css.map */
