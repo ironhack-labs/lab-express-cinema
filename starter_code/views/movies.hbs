@@ -1,0 +1,20 @@
+<section class="movies-page">
+
+    <h1>Elin Cinema</h1>
+    <p>Click on the movie to the check the showtime !</p>
+
+    <div id="wrapper-movies">
+    {{#each dbRes}}
+    <section id="movie-description">
+        <img src="{{this.image}}" alt="">
+        <p> {{this.title}} </p> 
+        <a href="/movies/:id">See more</a>
+    </section>
+
+    {{/each}}
+    </div>
+
+</section>
+
+
+

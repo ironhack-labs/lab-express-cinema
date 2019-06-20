@@ -1,0 +1,107 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  margin: 0; }
+
+a {
+  color: #00B7FF; }
+
+#home {
+  display: flex;
+  flex-flow: column nowrap;
+  background-image: url("/images/cinema.jpg");
+  width: 100%;
+  height: 100vh;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover; }
+
+#home {
+  display: flex;
+  justify-content: center; }
+
+#welcome {
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 20%;
+  padding-left: 60%; }
+
+#home h1 {
+  font-size: 8em; }
+
+#check-movies {
+  width: 40%;
+  padding: 15px 0;
+  color: #407286;
+  border-radius: 20px;
+  font-size: 1.5em; }
+
+.movies-page {
+  margin: 5%; }
+
+.movies-page h1 {
+  font-size: 2.5em; }
+
+#movies-page p {
+  font-size: 1.5em; }
+
+#wrapper-movies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+#movie-description {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5%; }
+
+#movie-description p {
+  font-weight: bold;
+  font-size: 1em; }
+
+/*# sourceMappingURL=style.css.map */
+
+#wrapper-movie{
+  display : flex; 
+  flex-flow: row nowrap; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+#movie-description-unique{
+  width: 50%; 
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10vh 5%;
+}
+
+#movie-description-unique h1{
+ font-size: 2em; 
+}
+
+#movie-description-unique h2{
+  font-size: 1.5em; 
+ }
+
+ #movie-description-unique h3{
+  font-weight: bold;
+  font-size: 1em; 
+}
+
+#movie-img-unique img{
+  width :100%; 
+  padding: 10vh 20%;
+
+}

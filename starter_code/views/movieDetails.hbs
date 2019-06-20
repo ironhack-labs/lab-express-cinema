@@ -1,0 +1,27 @@
+<div id="wrapper-movie">
+    <div id="movie-img-unique">
+        <img src="{{m.image}}" alt="">
+    </div>
+
+    <section id="movie-description-unique"> 
+        <a href="/movies">Go back</a>
+        <h1>{{m.title}}</h1>
+        <h2> Director: {{m.director}}</h2>
+        <h3>Stars: </h3>
+        <ul>
+            {{#each m.stars}}
+                <li>{{this}} </li>
+            {{/each}}
+        </ul>
+        <p>{{m.description}}</p>
+        <p>
+            {{#each m.showtimes}}
+                {{this}} |
+            {{/each}} 
+        </p>
+    </section>
+
+</div>
+
+
+
