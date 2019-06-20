@@ -43,10 +43,10 @@ a {
   border-radius: 20px;
   font-size: 1.5em; }
 
-.movies-page {
+#movies-page {
   margin: 5%; }
 
-.movies-page h1 {
+#movies-page h1 {
   font-size: 2.5em; }
 
 #movies-page p {
@@ -69,13 +69,11 @@ a {
   font-weight: bold;
   font-size: 1em; }
 
-/*# sourceMappingURL=style.css.map */
-
 #wrapper-movie{
-  display : flex; 
-  flex-flow: row nowrap; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 #movie-description-unique{
@@ -84,24 +82,11 @@ a {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 10vh 5%;
+  margin: 5%; 
 }
 
-#movie-description-unique h1{
- font-size: 2em; 
+#movie-img-unique{
+  margin: 5%; 
 }
 
-#movie-description-unique h2{
-  font-size: 1.5em; 
- }
-
- #movie-description-unique h3{
-  font-weight: bold;
-  font-size: 1em; 
-}
-
-#movie-img-unique img{
-  width :100%; 
-  padding: 10vh 20%;
-
-}
+/*# sourceMappingURL=style.css.map */
