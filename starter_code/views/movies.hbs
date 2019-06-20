@@ -1,0 +1,13 @@
+<h2>{{moviePageTitle}}</h2>
+<p class="text-content">Click on the movie to check the showtimes!</p>
+<div class="flex-container">
+  {{#each movie}}
+  <div class="img-title-container">
+    <img class="img-container" src="{{this.image}}" alt="">
+    <div class="title-movie-container">
+      <h3>{{this.title}}</h3>
+    </div>
+    <div><a href="/movie/{{this._id}}">See more</a></div>
+  </div>
+  {{/each}}
+</div>
