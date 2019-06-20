@@ -9,6 +9,8 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const seeds = require("./bin/seeds");
+const Movie = require("./models/movie");
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
@@ -50,9 +52,16 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 
-
 const index = require('./routes/index');
 app.use('/', index);
+
+// Movie.insertMany(seeds)
+// .then(res => {
+//   console.log("movies added");
+// })
+// .catch(err => {
+//   console.log("error adding movies");
+// });
 
 
 module.exports = app;

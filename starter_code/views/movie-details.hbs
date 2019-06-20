@@ -1,0 +1,25 @@
+<hr>
+<div class="detailed-movie">
+  <div class="movie-poster">
+    <img src="{{dbRes.image}}" alt="movie poster">
+  </div>
+  <div class="movie-specs">
+    <a href="/movies">Go back</a>
+    <h1>{{dbRes.title}}</h1>
+    <h2>Director: {{dbRes.director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+      {{#each dbRes.stars as |star|}}
+      <li>{{star}}</li>
+      {{/each}}
+    </ul>
+    <p>{{dbRes.description}}</p>
+    <p>
+      {{#each dbRes.showtimes as |showtime|}}
+        <span>{{showtime}} |</span>
+      {{/each}}
+    </p>
+   
+  </div>
+
+</div>
