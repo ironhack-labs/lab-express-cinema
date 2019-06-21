@@ -1,0 +1,19 @@
+<div id="movie">
+
+
+  <div id="filmimg"> <img id="img" src="{{dbRes.image}}" alt="img">
+
+
+    <ul>
+      <a id="goback" href="/movies">Go back</a>
+      <li id="lititle">{{ dbRes.title }}</li>
+      <li id="lidirector">{{dbRes.director}}</li>
+      <li id="listars"> Stars <ul>
+          {{#each dbRes.stars }}
+          <li> {{this}} </li>{{/each}} </ul>
+      </li>
+      <li id="lidescription"> {{dbRes.description}}</li>
+      <li id="lishowtimes"> {{#each dbRes.showtimes }} {{this}} | {{/each}} </li>
+    </ul>
+  </div>
+</div>

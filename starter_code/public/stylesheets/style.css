@@ -1,23 +1,15 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin: 0;
-
-}
-
+  margin: 0; }
 
 .flex-background-container {
-
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-
-}
+  height: 100vh; }
 
 #cinema_background {
   background-image: url("/images/cinema.jpg");
@@ -27,16 +19,13 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 #cinematitle {
   color: white;
   font-size: 5rem;
   width: 40%;
-  margin-top: 100px;
-
-}
+  margin-top: 100px; }
 
 #button {
   width: 260px;
@@ -45,17 +34,14 @@ body {
   color: #598a9c;
   border: 2px solid white;
   border-radius: 40px;
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
 #button a {
   color: #598a9c;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 #allbody {
-  text-align: center;
-}
+  text-align: center; }
 
 .films_block {
   text-align: center;
@@ -63,91 +49,65 @@ body {
   display: inline-block;
   justify-content: center;
   margin-bottom: 30px;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 .films_image {
-
   width: 300px;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-}
-
+  margin-bottom: 30px; }
 
 .films_titles {
   font-weight: bold;
   display: flex;
-  justify-content: center;
-}
-
-
+  justify-content: center; }
 
 .seemore {
   font-weight: bold;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 h1,
 h2 {
-  margin-left: 170px;
-
-}
+  margin-left: 170px; }
 
 #film {
   display: flex;
   justify-content: center;
-  width: 100%;
-}
+  width: 100%; }
 
 #filmimg {
   display: flex;
   justify-content: center;
   margin: 170px 150px;
-  width: 50%;
-
-}
+  width: 50%; }
 
 #img {
-  width: 200px;
-
-}
+  width: 200px; }
 
 #filmimg li {
   margin-bottom: 10px;
-  margin-top: 12px;
-}
+  margin-top: 12px; }
 
 #lititle {
   font-weight: bold;
   font-size: 1.3rem;
-  list-style: none;
-}
-
+  list-style: none; }
 
 #lidirector {
   font-weight: bold;
   font-size: 1.1rem;
-  list-style: none;
-}
-
+  list-style: none; }
 
 #listars {
   font-weight: bold;
-  list-style: none;
-
-}
-
+  list-style: none; }
 
 #lidescription {
-  list-style: none;
-}
-
-
+  list-style: none; }
 
 #lishowtimes {
-  list-style: none;
+  list-style: none; }
 
-}
+/*# sourceMappingURL=style.css.map */

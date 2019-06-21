@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<h2>{{subtitle}}</h2>
+<div id="allbody">
+  {{#each dbRes}}
+  <div class="films_block">
+    <div class="films_image">
+      <img src="{{this.image}}" alt="img"> </div>
+    <div class="films_titles"> {{this.title}} </div>
+    <div class="seemore"> <a href="/movies/{{this._id}}">See more</a></div>
+  </div> {{/each}}</div>
