@@ -1,47 +1,38 @@
 @import url("http://overpass-30e2.kxcdn.com/overpass-mono.css");
-
 body {
   padding: 20px;
   font-family: 14px overpass-mono;
   margin: 0 auto;
   padding: 0;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .imgMovie {
-  width: 220px;
-}
+  width: 220px; }
 
 .pageTitle {
-  text-align: center;
-}
+  text-align: center; }
+
 h1 {
   margin: 30px;
   font-size: 30px;
-  font-family: overpass-mono;
-}
+  font-family: overpass-mono; }
 
 h2 {
   font-size: 20px;
-  font-family: overpass-mono;
-}
+  font-family: overpass-mono; }
 
 h3 {
   font-size: 15px;
-  font-family: overpass-mono;
-}
+  font-family: overpass-mono; }
 
 a {
-  text-decoration: none !important;
-}
+  text-decoration: none !important; }
 
 a:visited {
-  color: #2f355f;
-}
+  color: #2f355f; }
 
 p {
-  margin: 0;
-}
+  margin: 0; }
 
 .bigBox {
   background-image: url("/images/cinema.jpg");
@@ -50,8 +41,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .fullBox {
   display: flex;
@@ -62,8 +52,7 @@ p {
   color: white;
   width: 625vh;
   height: 100%;
-  margin: 0 5vh;
-}
+  margin: 0 5vh; }
 
 .titleBox {
   width: 500px;
@@ -72,8 +61,7 @@ p {
   margin-right: 55px;
   margin-left: 200px;
   margin-top: 90px;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .buttonBox {
   height: 60px;
@@ -83,31 +71,26 @@ p {
   margin-left: 370px;
   margin-bottom: 20px;
   color: white;
-  font-weight: 500;
-}
+  font-weight: 500; }
 
 .emptyBox {
   width: 625vh;
   height: 100%;
-  margin: 0 5vh;
-}
+  margin: 0 5vh; }
 
 .bigaBox {
   display: flex;
-  direction: column;
-}
+  direction: column; }
 
 .lilBox1 {
   margin: 20px;
-  font-family: overpass-mono;
-}
+  font-family: overpass-mono; }
 
 .lilBox2 {
   text-align: left;
   margin: 10px 480px 20px 20px;
   font-family: overpass-mono;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .containerMovies {
   display: grid;
@@ -117,31 +100,27 @@ p {
   grid-row-gap: 2%;
   width: 80%;
   margin: 0 auto;
-  font-family: overpass-mono;
-}
+  font-family: overpass-mono; }
 
 .containerMovies img {
   width: 200px;
   box-shadow: 5px 5px 5px #2f355f;
-  align-self: center;
-}
+  align-self: center; }
 
 .gridChildren {
   display: flex;
   flex-direction: column;
   align-content: center;
   text-align: center;
-  margin: 7px;
-}
+  margin: 7px; }
 
 .containerMovies a {
-  color: #3553fa;
-}
+  color: #3553fa; }
 
 .containerMovies a:visited {
-  color: #00756f;
-}
+  color: #00756f; }
 
 .movieTitle {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */

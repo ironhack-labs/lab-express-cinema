@@ -1,0 +1,38 @@
+<h1>{{ movie.title }}</h1>
+
+<div class="bigaBox">
+  <div class="lilBox1">
+    <img class="imgMovie" src={{ movie.image }}>
+  </div>
+
+  <div class="lilBox2">
+    <h2>Directed by: {{ movie.director }}</h2>
+    <h3>Stars:</h3>
+
+
+    <ul>
+      {{#each movie.stars }}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+
+
+    {{ movie.description }}
+
+    </br></br>
+    ||
+    {{#each movie.showtimes }}
+    {{this}} ||
+    {{/each}}
+    </br>
+    </br>
+
+    <a href="/movies">Go back</a>
+
+
+  </div>
+
+
+
+</div>

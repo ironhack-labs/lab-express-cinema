@@ -1,0 +1,12 @@
+<h1 class="pageTitle">{{title}}</h1>
+
+<div class="containerMovies">
+
+  {{#each movies}}
+  <div class="gridChildren"> <img src="{{ this.image }}" alt="">
+    <p class="movieTitle">{{ this.title }}</p>
+    <a href="/movies/{{ this.id }}">more info</a>
+  </div>
+  {{/each}}
+
+</div>
