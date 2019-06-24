@@ -1,0 +1,22 @@
+<div class="single_movie_container">
+
+  <div class="image_container"> <img src={{dbRes.image}}> </div>
+  <div class="text_container">
+
+
+    <a href="/movies"> Go Back </a>
+    <h1> {{dbRes.title}} </h1>
+    <h2> {{dbRes.director}} </h2>
+    <p> Stars</p>
+    <ul>
+      {{#each dbRes.stars}} <li> {{this}} </li> {{/each}}
+    </ul>
+    <p> {{dbRes.description}} </p>
+    <p> {{dbRes.showtimes}} </p>
+
+
+  </div>
+
+
+
+</div>

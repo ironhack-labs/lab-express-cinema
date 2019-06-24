@@ -1,0 +1,10 @@
+<section class="movies_grid">
+
+  {{#each dbRes}}
+
+  <article class="movie">
+
+    <img class="movie_picture" src={{ this.image }}> </img>
+    <h2 class="movie_title"> {{ this.title }} </h2>
+    <a href="/movies/{{this._id}}"> See more </a>
+  </article> {{/each}} </section>

@@ -1,8 +1,78 @@
 body {
-  padding: 50px;
+ // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#main_section
+
+{
+
+  display: flex;
+  background-image:url('../images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row;
+  height: 1000px;
+  justify-content: flex-end;
+  
+
+}
+
+#main_section #container {
+
+padding-top: 5%;
+padding-right: 10%;
+width: 400px;
+letter-spacing: 1.5px;
+
+}
+
+#main_section h1 {
+
+  font-size: 100px;
+  color: white;
+  
+  }
+
+  #main_section a {
+
+    display: block;
+    padding: 3%;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: lightseagreen;
+    background-color: white;
+    text-align: center;
+    
+    }
+    
+  
+
+
+
+
 a {
   color: #00B7FF;
+}
+
+.movies_grid {
+
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-gap: 20px;
+ text-align: center;
+
+
+}
+
+.movie_title {
+
+  font-size: 15px;
+}
+
+.text_container { 
+
+  width: 30%;
 }
