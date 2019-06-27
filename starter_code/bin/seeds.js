@@ -1,3 +1,7 @@
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie');
+
+
 const movies = [
   {
     title : "A Wrinkle in Time",
@@ -64,3 +68,21 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+mongoose
+  .connect('mongodb://localhost/Perseguir_a_Germán', {useNewUrlParser: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+
+    Movie.insertMany(movies)
+    .then ((data) =>{
+      console.log(data)
+      console.log("Chachi")
+      mongoose.disconnect
+    }).catch((err) =>{
+      console.log(err)
+    } )
+  }) 
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
