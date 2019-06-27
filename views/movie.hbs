@@ -1,0 +1,22 @@
+<div class="movie">
+  <div class="movie__card">
+    <img src="{{movie.image}}" alt="" class="movie__img">
+    <div class="movie__content">
+      <h2>{{movie.title}}</h2>
+      <div class="movie__director">{{movie.director}}</div>
+      <div class="movie__description">
+        <p>{{movie.description}}</p>
+        <h4>Stars</h4>
+        <ul>
+          {{#each movie.stars}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <p> {{#each movie.showtimes}}
+          |{{this}}|
+          {{/each}}</p>
+          <a class="movie__backlink" href="/movies">back</a>
+      </div>
+    </div>
+  </div>
+</div>

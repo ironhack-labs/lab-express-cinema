@@ -1,31 +1,23 @@
-
-
-
 body {
   margin: 0;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url(/images/cinema.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-
-}
+  background-repeat: no-repeat; }
 
 .entrance {
   position: absolute;
   top: 20vh;
   left: 65vw;
   color: white;
-  width: 600px;
-
-}
+  width: 600px; }
 
 .entrance__heading {
   color: inherit;
   font-size: 90px;
   margin-bottom: 60px;
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 .entrance__button {
   width: 300px;
@@ -35,23 +27,19 @@ body {
   font-size: 22px;
   font-weight: 700;
   border-radius: 20%/50%;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .entrance__link {
   text-decoration: none;
-  color: inherit;
-
-}
+  color: inherit; }
 
 .movies {
   margin: 0 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; }
 
 .movies__card {
   width: 250px;
@@ -59,29 +47,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-
-}
+  color: white; }
 
 .movies__title {
   font-size: 20px;
   margin: 20px;
   color: inherit;
-  text-align: center;
-}
+  text-align: center; }
 
 .movies__link {
   text-decoration: none;
-  color: white;
-}
+  color: white; }
 
 .movie {
   display: flex;
   align-items: center;
-  height: 90vh;
-
-
-}
+  height: 90vh; }
 
 .movie__card {
   margin: 0 auto;
@@ -91,31 +72,25 @@ body {
   border-radius: 50px;
   display: flex;
   align-items: center;
-  padding: 15px;
-}
+  padding: 15px; }
 
 .movie__img {
-  margin-left: 20px;
-
-}
+  margin-left: 20px; }
 
 .movie__content {
   margin-left: 40px;
   align-self: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
+  justify-content: space-between; }
 
 .movie__director {
   font-size: 19px;
-  margin-bottom: 8px;
-
-}
+  margin-bottom: 8px; }
 
 .movie__backlink {
   display: block;
   text-align: right;
-  padding-right: 90px;
-}
+  padding-right: 90px; }
+
+/*# sourceMappingURL=style.css.map */
