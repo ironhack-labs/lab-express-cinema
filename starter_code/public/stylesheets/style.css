@@ -1,0 +1,43 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+.home-page {
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
+
+.home-page .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 110vh; }
+
+.home-page .title {
+  color: white;
+  font-size: 70px; }
+
+.movieList-title {
+  margin: 0 10vh; }
+
+.movieList-Container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.movieList-1movie {
+  margin: 15vh; }
+
+.SingleMovie-Container {
+  display: flex; }
+
+.singleMovie_text {
+  margin: 0 20px; }
+
+.singleMovie-despription {
+  max-width: 80vh; }
+
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */

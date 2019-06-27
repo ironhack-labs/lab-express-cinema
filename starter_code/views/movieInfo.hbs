@@ -1,0 +1,31 @@
+<h1> Movie Info </h1>
+
+<div class="SingleMovie-Container">
+
+
+<div>  <img src = {{movieID.image}}> </div>
+
+<div class="singleMovie_text">
+<h3>  {{movieID.title}} </h3>
+<h4>  {{movieID.director}} </h4>
+ <ul>{{#each movieID.stars}}
+<li>  {{this}} </li>
+{{/each}}
+ </ul> 
+ <div class="singleMovie-despription"> {{movieID.description}}</div>
+<div>
+  {{#each movieID.showtimes}}
+<a>  {{this}} </a> <a> | </a>
+  {{/each}}
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+

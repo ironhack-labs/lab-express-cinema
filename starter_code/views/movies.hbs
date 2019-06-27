@@ -1,0 +1,19 @@
+
+<div class="movieList-title">
+<h1> Iron Hack Cinema </h1>
+<h3> click on the moives to display the show time </h3>
+</div>
+
+
+<div class="movieList-Container">
+{{#each movies}}
+<div class="movieList-1movie">
+<div> <img src = {{this.image}} > </div>
+<div> {{this.title}} </div>
+<div> <a href = "/movies/{{this._id}}"> See more </a></div>
+</div>
+{{/each}}
+</div>
+
+
+
