@@ -22,3 +22,6 @@
     "nodemon": "^1.12.1"
   }
 }
+
+
+// npm run dev en la consola porque hoy el dev que se ve ahí arriba ya llama a nodemon...
