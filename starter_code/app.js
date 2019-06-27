@@ -44,6 +44,10 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+hbs.registerHelper("displayShowTimes", function(showtimes) {
+  // return showtimes.join("|");
+  return showtimes.toString().replace(/,/g,'|');
+});
 
 
 // default value for title local
@@ -53,6 +57,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
 
 
 module.exports = app;
