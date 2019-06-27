@@ -1,0 +1,24 @@
+<div class="oneMovie">
+  <div><img src="{{movie.image}}" alt=""></div>
+
+  <div class="oneText">
+    <button><a href="/movies">Go back</a></button>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}}</h3>
+    <p><b>Stars:</b></p>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+    <p>{{movie.description}} </p>
+    <div class="flexibleTimes">
+      {{#each movie.showtimes}}
+      <div class="timesG">{{this}}</div>
+      {{/each}}
+    </div>
+  </div>
+
+
+</div>
+<p class="adText">Google Ads:</p>
+<div class="centrate"><a href="https://www.youtube.com/watch?v=El53OmboUx8"><button class="button eachMovieBtn">💊 CLICK
+      HERE FOR FREE VIAGRA 💊</button></a></div>

@@ -78,7 +78,7 @@ mongoose
     .then ((data) =>{
       console.log(data)
       console.log("Chachi")
-      mongoose.disconnect
+      mongoose.disconnect()
     }).catch((err) =>{
       console.log(err)
     } )

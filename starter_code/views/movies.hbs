@@ -1,1 +1,15 @@
-<h1>Ironhack Cinema</h1>
+<div class="text">
+  <h1>Ironhack Cinema</h1>
+</div>
+<div class="container">
+  {{#each movies}}
+  <div class="eachMovie">
+    <img src="{{this.image}}" alt="" srcset="">
+
+    <h4>{{this.title}}</h4>
+    <button><a href="/movie/{{this._id}}">See More</a></button>
+  </div>
+  {{/each}}
+
+  <div class="centrate"><p>Google Ads:</p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="button">💊 CLICK HERE FOR FREE VIAGRA 💊</button></a></div>
+</div>
