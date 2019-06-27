@@ -13,7 +13,13 @@ a {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
+
+.title {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 40px; }
 
 .bg button {
   text-align: center;

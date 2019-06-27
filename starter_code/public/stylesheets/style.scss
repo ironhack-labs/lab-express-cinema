@@ -16,6 +16,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 40px;
 }
 
 .bg button {
@@ -30,7 +37,6 @@ a {
   text-decoration: none;
   color: rgb(28, 110, 135);
 }
-
 
 .container {
   display: flex;
@@ -54,10 +60,9 @@ a {
   margin-left: 50px;
 }
 
-
 .oneMovie {
   display: flex;
-  margin: 20px; 
+  margin: 20px;
 }
 
 .oneMovie img {
