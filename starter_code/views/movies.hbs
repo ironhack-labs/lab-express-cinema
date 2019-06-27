@@ -1,0 +1,23 @@
+<div class="movie-page">
+
+  <h1>Ironhack Cinema</h1>
+  <h2>Click on the movies to check the runtime!</h2>
+
+
+  <div class="gallery">
+    {{#each movies}}
+    <div class="card">
+      <img src="{{this.image}}" class="card__img">
+      <h3 class="card__title">{{this.title}}</h3>
+      <div>
+        <a class="button" href="/movie/{{this._id}}">See more</a>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+
+</div>
+{{!-- <a href="/company/{{this._id}}">
+      {{this.name}}
+    </a> --}}
