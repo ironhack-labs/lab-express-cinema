@@ -56,3 +56,5 @@ app.use('/', index);
 
 
 module.exports = app;
+
+// EN EL PACKAGE JSON: npm run dev en la consola porque hoy el dev que se ve ahí arriba ya llama a nodemon...
