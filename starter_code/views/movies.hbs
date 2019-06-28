@@ -1,0 +1,16 @@
+<div class="movies-all">
+  <div class="movie-card">
+    {{#each movies as |movie|}}
+    <img src="{{movie.image}}">
+    <p>{{movie.title}}</p><br>
+    <a href="/movies/{{movie._id}}">
+      See more
+    </a><br>
+    {{/each}}
+  </div>
+
+
+  {{#if err}}
+  <h1>{{err}}</h1>
+  {{/if}}
+</div>
