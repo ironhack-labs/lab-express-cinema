@@ -1,0 +1,17 @@
+<h2>Ironhack Cinema</h2>
+<p>Click a movie to see the movie times</p>
+
+<div class="blockouter">
+  {{#each movies as |movie|}}
+  <div class="movieblock">
+    <img src="{{movie.image}}" alt="">
+    <span><strong>{{movie.title}}</strong></span>
+    <a href="/movies/{{movie._id}}">
+      See more
+    </a>
+  </div>
+  {{/each}}
+</div>
+{{#if err}}
+<h1>{{err}}</h1>
+{{/if}}

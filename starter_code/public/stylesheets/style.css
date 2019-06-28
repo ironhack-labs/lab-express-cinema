@@ -1,49 +1,49 @@
 body {
   padding: 0;
   margin: 0;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-}
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
+
 #movieBack {
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/cinema.jpg');
-  background-size: cover;
-}
+  background-image: url("../images/cinema.jpg");
+  background-size: cover; }
+
 #button-home {
   width: 200px;
   height: 50px;
   background: white;
   border-radius: 8vh;
   border: none;
-  color: gray;
-}
+  color: gray; }
+
 #title-container {
   margin-top: 20vh;
-  margin-left: 55vw;
-}
+  margin-left: 55vw; }
+
 .title {
   font-size: 50px;
-  color: white;
-}
+  color: white; }
+
 .movieblock {
   margin: 0 7vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
+
 .blockouter {
   display: flex;
-  flex-flow: row wrap;
-}
+  flex-flow: row wrap; }
+
 .container-detail {
   margin: 5vh 0 0 5vw;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
+
 .container-info {
-  margin-left: 5vw;
-}
+  margin-left: 5vw; }
+
+/*# sourceMappingURL=style.css.map */
