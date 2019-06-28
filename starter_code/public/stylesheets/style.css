@@ -1,8 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px; }
 
 .principo {
   width: 100vw;
@@ -10,13 +9,13 @@ body {
   flex-direction: column;
   height: 100vh;
   background-image: url("../images/cinema.jpg");
-  background-size: cover;
-}
+  background-size: cover; }
+
 .principo h1 {
   margin-left: 54%;
   font-size: 15vh;
-  color: white;
-}
+  color: white; }
+
 .principo button {
   width: 19vw;
   height: 12vh;
@@ -24,33 +23,34 @@ body {
   background-color: white;
   color: lightblue;
   font-size: 3vh;
-  border-radius: 8vh;
-}
+  border-radius: 8vh; }
+
 .todas_p {
   margin-left: 10%;
   display: flex;
   width: 80%;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
+
 .peliculas {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 33%;
-  margin-bottom: 3%;
-}
+  margin-bottom: 3%; }
+
 .peliculas a {
-  color: blue;
-}
+  color: blue; }
+
 .pelicula_todo {
   display: flex;
   flex-direction: row;
   margin: 4%;
   width: 70vw;
-  height: 80vh;
-}
+  height: 80vh; }
+
 .pelicula_todo img {
   height: 50vh;
   width: 40vw;
-  margin-right: 8%;
-}
+  margin-right: 8%; }
+
+/*# sourceMappingURL=style.css.map */

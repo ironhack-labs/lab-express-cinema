@@ -1,0 +1,23 @@
+<div class="pelicula_todo">
+  <img src="{{image}}">
+  <div class="pelicula_texto">
+    <a href="/movies">Go back</a>
+    <h2>{{title}}</h2>
+    <h3>Director: {{director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each stars as |star|}}
+      <li>{{star}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    {{#each showtimes as |time|}}
+    <span>{{time}} |</span>
+    {{/each}}
+  </div>
+
+
+
+
+
+</div>
