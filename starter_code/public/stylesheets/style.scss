@@ -39,3 +39,17 @@ a {
 .button:hover{
   cursor: pointer;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.eachMovie{
+  text-align:center;
+}
+
+.eachMovie img{
+  margin-left: 20%;
+}
