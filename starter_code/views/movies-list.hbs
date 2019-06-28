@@ -1,0 +1,12 @@
+{{#each movies as |movie|}}
+  <h1>Hola</h1>
+  <img src="{{movie.image}}" alt="MovieIMG">
+  <h3>{{movie.title}}</h3>
+  <a href="/movies/{{movie.id}}">
+    <button type = "submit">See more</button>
+  </a>
+{{/each}}
+
+{{#if err}}
+  <h1>{{err}}</h1>
+{{/if}}
