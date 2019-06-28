@@ -1,0 +1,13 @@
+<div class="movies">
+  <h1>{{title}}</h1>
+  <p>Click on the movie to check the showtimes!</p>
+  <div class="movies-list">
+    {{#each movies as |movie|}}
+    {{> movieListDetail movie}}
+    {{/each}}
+  </div>
+</div>
+
+{{#if err}}
+<p>{{err}}</p>
+{{/if}}
