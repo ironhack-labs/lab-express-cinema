@@ -44,12 +44,32 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 1%;
 }
 
 .eachMovie{
   text-align:center;
+  width: 30%;
 }
 
 .eachMovie img{
   margin-left: 20%;
+  padding-bottom: 1%;
+  margin: 20px;
+}
+
+.titles{
+  padding: 50px;
+}
+
+.titles h1{
+  font-size: 3em;
+}
+
+.titles p {
+  font-size: 2em;
+}
+
+.buttonMovie:hover{
+  cursor: pointer;
 }
