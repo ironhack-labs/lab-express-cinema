@@ -59,4 +59,20 @@ a {
 .buttonMovie:hover {
   cursor: pointer; }
 
+.imageMovie {
+  padding: 50px; }
+
+.singleInfo {
+  padding: 50px;
+  width: 30%; }
+
+.singleInfo p {
+  font-size: 1.2em; }
+
+.singleInfo li {
+  font-size: 1.2em; }
+
+.singleInfo a {
+  font-size: 1.2em; }
+
 /*# sourceMappingURL=style.css.map */

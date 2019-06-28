@@ -3,12 +3,16 @@
 </div>
 
 <div class="singleInfo">
-  <a href="/movies">Go back</a>
-  <h1>{{title}}</h1>
-  <h3>Director: {{director}}</h3>
-  <h4>Stars</h4>
-  {{!-- stars array --}}
-  <p>{{description}}</p>
-  {{!-- showTime array --}}
+  <a href="/movies">Go back</a><br/><br/> 
+  <h1>{{title}}</h1><br/>
+  <h2>Director: {{director}}</h2><br/>
+  <h2>Stars</h2><br>
+  {{#each stars as |star|}}
+    <li>{{star}}</li>
+  {{/each}} <br/>
+  <p>{{description}}</p> <br/>
+  {{#each showtimes as |showtime|}}
+    {{showtime}} |
+  {{/each}}
 </div>
 
