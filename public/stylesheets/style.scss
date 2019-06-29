@@ -1,8 +1,24 @@
+*{
+   margin: 0; padding: 0;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+.principal{
+   background-image: url('/images/cinema.jpg');
+  width: 100%;
+  height: 100vh;
+}
+
+
+.grid-container{
+  display: grid;
 }
