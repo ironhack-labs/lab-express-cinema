@@ -40,7 +40,8 @@ server.on('error', error => {
       throw error;
   }
 });
-
+//server.listen(3000, () => {
 server.listen(process.env.PORT, () => {
   console.log(`Listening on http://localhost:${process.env.PORT}`);
 });
+
