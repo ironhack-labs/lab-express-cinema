@@ -1,6 +1,6 @@
 # Dependency directory
 node_modules
-
+.idea/
 # Debug log from npm
 npm-debug.log
 
