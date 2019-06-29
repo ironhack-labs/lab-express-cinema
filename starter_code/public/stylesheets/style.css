@@ -1,46 +1,41 @@
-*{
+* {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-.container{
+.container {
   width: 50%;
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
-.principal{
-  background: url("/images/cinema.jpg") no-repeat; 
+.principal {
+  background: url("/images/cinema.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
-.btn{
+.btn {
   border-radius: 50px;
   background-color: white;
   color: #777777;
   padding: 15px 20px;
-  text-decoration: none; 
-}
+  text-decoration: none; }
 
-.titulo{
+.titulo {
   font-size: 78px;
   color: white;
   text-align: right;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
