@@ -1,8 +1,132 @@
-body {
+/* body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+a {
+  color: #00B7FF; } */
+
+/*# sourceMappingURL=style.css.map */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.home {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-start;
+	background-image: url("../images/cinema.jpg");
+	background-position: 0 0;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.home-info {
+	width: 45%;
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	margin-top: 100px;
+}
+
+.home-info h1 {
+	font-size: 120px;
+	font-weight: bold;
+}
+
+.home-info a {
+	width: 140px;
+	color: #00b7ff;
+	text-decoration: none;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 30px;
+	border-radius: 20px;
+	margin-top: 10px;
+}
+
+.movies h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 20px 0 10px 30px;
+}
+
+.movies > p {
+	margin: 20px 0 10px 30px;
+}
+
+.movies-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.movies-list-detail {
+	width: 25%;
+	display: inherit;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.movies-list-detail img {
+	height: 200px;
+}
+
+.movies-list-detail small {
+	font-size: 12px;
+	font-weight: bolder;
+	margin-top: 15px;
+}
+
+.movies-list-detail a {
+	font-size: 12px;
+	color: #00b7ff;
+	margin-top: 15px;
+}
+
+.movie-detail {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.movie-detail img {
+	height: 400px;
+}
+
+.movie-detail-info {
+	width: 50%;
+	height: 700px;
+	display: inherit;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 80px;
+}
+
+.movie-detail-info > * {
+	margin-bottom: 30px;
+}
+
+.movie-detail-info .back {
+  color: #00b7ff;
+}
+
+.movie-detail-info .showtimes {
+	display: inline-block;
+}
+
+.movie-detail-info .showtimes::after {
+	content: " |";
+}
+
+.movie-detail-info .stars-list {
+	margin-left: 20px;
 }
