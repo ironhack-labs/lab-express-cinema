@@ -16,14 +16,17 @@ a {
   height: 100vh;
 }
 
-.button a{
-  border: 3px solid white;
-  border-radius: 5px;
+a{
+  border-radius: 25px;
   background: white;
-  position: relative;
-  left: 60%;
+  position: absolute;
+  left: 51%;
+  top: 55%;
+  padding: 20px;
 }
 .button h2{
   position: absolute;
   left: 50%;
+  font-size: 70px;
+  margin-top: 10%;
 }
