@@ -1,0 +1,8 @@
+<h1>If future-me sees this, they should be happy </h1>
+
+{{#each movies}}
+ <img src="{{this.image}}" alt="movie-poster">  <br>
+<p> {{this.title}} </p>   
+
+<p>  <a href="/movie/{{this._id}}">See more</a></p>
+{{/each}}   

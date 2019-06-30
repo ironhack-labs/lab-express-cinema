@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
 }
+
+.home {
+    background-image: url(../images/cinema.jpg);
+
+}
+
 
 a {
   color: #00B7FF;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 25px ;
 }
