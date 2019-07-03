@@ -4,7 +4,9 @@
         <div>
 
             <h3 style="color: #fff; font-size: 14px">Ironhack Cinema</h3>
-            <button >Check the movies</button>
+            <button >
+                <router-link to="/peliculas">Check the movies</router-link>
+            </button>
         </div>
     </div>
 

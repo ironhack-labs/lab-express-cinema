@@ -26,6 +26,21 @@
             return {
                 peliculas: []
             }
+        },
+        mounted(){
+
+            fetch('http://localhost:3000/movies')
+                .then((response)=>{
+                    return response.json()
+                })
+                .then((res) =>{
+                    this.peliculas =res;
+                })
+                .catch(error=>{
+                    alert(error);
+                })
+
+
         }
     }
 

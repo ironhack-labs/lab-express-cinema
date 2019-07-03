@@ -4,6 +4,7 @@ const router = express.Router();
 const Movie = require('../models/Movies');
 
 
+
 /* GET movies */
 router.get('/', (req, res, next) => {
 
