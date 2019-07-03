@@ -10,9 +10,8 @@ router.get('/', (req, res, next) => {
 
     Movie.find({},{title:1, image:1})
         .then((lista) => {
-            console.log(lista);
-            const data = {lista};
-            res.render('movies', data);
+
+            res.json(lista);
         })
         .catch(error => {
 
