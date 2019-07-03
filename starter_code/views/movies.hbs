@@ -2,5 +2,15 @@
 Click on a movie to check the showtimes
 <div class="grid-container">
   {{#each movies}}
+    <div class="item">
+      <img src="{{image}}" alt="{{title}}" class="img">
+      <h3 class="movie-title">
+        {{title}}
+      </h3>
+      <a href="/movies/{{_id}}" class="link">
+        See more
+      </a>
+      
+    </div>
   {{/each}}
 </div>
