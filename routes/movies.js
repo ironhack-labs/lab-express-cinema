@@ -8,13 +8,14 @@ const Movie = require('../models/Movies');
 router.get('/', (req, res, next) => {
 
 
-    Movie.find({},{title:1, image:1})
+    Movie.find({}, {title: 1, image: 1})
         .then((lista) => {
-
-            res.json(lista);
+            res.status(200).json(lista);
         })
         .catch(error => {
-
+                res.status(500).json(
+                    {text: "error de servidor", err}
+                );
             }
         );
 
