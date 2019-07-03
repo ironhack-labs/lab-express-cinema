@@ -7,9 +7,14 @@
             <div class="pelicula"
                  v-for="(pelicula, index) in peliculas"
                  :key="index"
+                 style="margin-bottom: 20px"
             >
                 <img :src="pelicula.image" alt=""/>
                 <p>{{pelicula.title}}</p>
+
+                <router-link :to="{name:'detallePelicula', params: {id:pelicula._id}}">
+                    Detalles
+                </router-link>
             </div>
 
         </div>
