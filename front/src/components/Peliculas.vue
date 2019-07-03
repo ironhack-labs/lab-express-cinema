@@ -33,8 +33,8 @@
                 .then((response)=>{
                     return response.json()
                 })
-                .then((res) =>{
-                    this.peliculas =res;
+                .then((json) =>{
+                    this.peliculas =json;
                 })
                 .catch(error=>{
                     alert(error);
