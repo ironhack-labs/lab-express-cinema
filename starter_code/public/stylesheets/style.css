@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  padding: 0;
+}
+a {
+  color: #00B7FF;
+}
+.container {
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  background-position: 0 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.movie-div {
+  width: 33%;
+  text-align: center;
+}
+.movies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie-title {
+  padding: 10px 0 20px;
+}
+.movie-about {
+  padding-bottom: 50px;
+}
+.h3-movies {
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+.movie-container {
+  display: flex;
+  width: 80%;
+}
+.movie-container img {
+  padding-right: 50px;
+}
+.movie-info {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  padding-inline-start: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.movies-link {
+  margin-bottom: 10px;
+}
+.outer-container {
+  padding: 50px;
+}
+.cinema-ironhack {
+  color: white;
+  font-size: 6em;
+  padding-bottom: 20px;
+}
+.index-info {
+  width: 300px;
+  padding-left: 60%;
+  padding-top: 10%;
+}
+button {
+  display:inline-block;
+  padding:1em 2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-size: 1.2em;
+  font-weight:300;
+  background-color:#FFFFFF;
+  color:#4eb5f1;
+  text-align:center;
+}
+/*# sourceMappingURL=style.css.map */
