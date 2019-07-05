@@ -21,6 +21,17 @@ router.get('/search', (req, res, next) => { //Sirve para búsquedas de parámetr
   console.log(Object.keys(req.query)) //Object.keys te da la certidfumbre de que tipo de información viene en el query
 })
 
+router.post('/', (req, res, next) => {
+  let titulo = req.body.titulo
+  let foto = req.body.foto
+    Movie.create({title: titulo, image: foto})
+    .then((movie) => {
+      res.status(200).json({text: 'OK', data: movie})
+    }).catch(err => {
+      res.status(500).json({text: 'Error', err})
+    })
+})
+
 router.get('/:id', (req, res, next) =>{
   Movie.findById({
     _id: req.params.id
@@ -36,17 +47,35 @@ router.get('/:id', (req, res, next) =>{
   })
 });
 
-router.post('/', (req, res, next) => {
-  //Vamos a recibir datos de las peliculas
-  //Titulo: String, foto: string
+router.put('/:id', (req, res, next) =>{
   let titulo = req.body.titulo
   let foto = req.body.foto
-    Movie.create({title: titulo, image: foto})
-    .then((movie) => {
-      res.status(200).json({text: 'OK'})
-    }).catch(err => {
-      res.status(500).json({text: 'Error', err})
-    })
+  
+  Movie.findOneAndUpdate({_id: req.params.id}, {$set:{title: titulo, image: foto}}, (err, doc) => {
+    res.status(200).json({text: 'Actualizado'})
+    if (err) {
+      res.status(500).json({
+        text: "Error en el servidor",
+        err: err
+      });
+    }
 })
+});
+
+// router.put('/:id', (req, res, next) =>{
+//   Movie.findByIdAndUpdate({_id: req.params.id})
+//   let titulo = req.body.titulo
+//   let foto = req.body.foto
+//   Movie.create({title: titulo, image: foto})
+//   .then(theMovie => {
+//     res.status(200).json({text: 'Actualizado', data: theMovie})
+//   })
+//   .catch(err => {
+//     res.status(500).json({
+//       text: "Error en el servidor",
+//       err: err
+//     })
+//   })
+// });
 
 module.exports = router;

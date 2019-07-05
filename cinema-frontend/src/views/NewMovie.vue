@@ -9,13 +9,7 @@
       <input type="url" id="foto" name="foto" v-model="foto" />
     </div>
     <div class="item">
-      <button type="submit">Enviar</button>
-      <router-link to="/">
-        <button type="menu">Go back</button>
-      </router-link>
-      <router-link to="/movies">
-        <button type="menu">Ir a películas</button>
-      </router-link>
+      <button type="submit" @click="$router.go(-1)">Enviar</button>
     </div>
   </form>
 </template>
@@ -40,27 +34,9 @@ export default {
         body: JSON.stringify({titulo: this.titulo, foto: this.foto})
       })
       .then(data => {
-        alert('Todo se guardo bien', data.text)
-        this.titulo = '';
-        this.foto = '';
+        console.log('guardado')
       }).catch(err => alert('Error, no se guardó la película', err))
     },
-    // sendData() {
-    //   (async () => {
-    //     const res = await fetch("http://localhost:3000/movies", {
-    //       method: "POST",
-    //       headers: {
-    //         'Accept': "application/json",
-    //         "Content-Type": "application/json"
-    //       },
-    //       body: JSON.stringify({ titulo: this.titulo, foto: this.foto })
-    //     });
-    //     const content = await res.json();
-    //     this.titulo = '';
-    //     this.foto = '';
-    //     console.log(content);
-    //   })();
-    // }
   }
 };
 </script>

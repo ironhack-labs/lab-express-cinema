@@ -3,8 +3,6 @@
     <div class="container">
       <span class="titulo">Cinema Ironhack</span>
       <router-link to="/movies" class="btn">Check the movies!</router-link>
-      <router-link to="/newMovie" class="btn">New movie!</router-link>
-      <!-- <a href="/movies" class="btn">Check the movies!</a> -->
     </div>
   </div>
 </template>
