@@ -1,37 +1,37 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-*{
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+* {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 a {
-  color: #00B7FF;
-}
-.homepage{
+  color: #00B7FF; }
+
+.homepage {
   background-image: url("/images/cinema.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
-}
-#home-content{
+  justify-content: flex-end; }
+
+#home-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin-right: 5%;
   margin-left: 50%;
-  margin-bottom: 10%;
-}
-#home-content h1{
+  margin-bottom: 10%; }
+
+#home-content h1 {
   font-size: 100px;
   color: white;
-  margin-bottom: 20px;
-}
-#home-content a{
+  margin-bottom: 20px; }
+
+#home-content a {
   border-radius: 15px;
   background-color: white;
   color: lightblue;
@@ -40,59 +40,59 @@ a {
   text-align: center;
   padding: 15px 5px 5px 5px;
   font-size: 20px;
-  text-decoration: none;
-}
-.all-movies{
+  text-decoration: none; }
+
+.all-movies {
   display: flex;
   flex-wrap: wrap;
-  margin: 5% 10% 5% 15%;
-}
-.each-movie{
+  margin: 5% 10% 5% 15%; }
+
+.each-movie {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   width: 20%;
   margin-right: 10%;
-  margin-bottom: 10%;
-}
+  margin-bottom: 10%; }
+
 .each-movie h4,
-.each-movie a{
-  text-align: center;
-}
-.each-movie *{
-  padding: 5px 0;
-}
-.oneMovie{
+.each-movie a {
+  text-align: center; }
+
+.each-movie * {
+  padding: 5px 0; }
+
+.oneMovie {
   display: flex;
-  margin: 5% 0 0 5%;
-}
-.oneMovie img{
+  margin: 5% 0 0 5%; }
+
+.oneMovie img {
   height: 300px;
-  width: 200px;
-}
-.movie-content{
+  width: 200px; }
+
+.movie-content {
   margin-left: 3%;
   display: flex;
   flex-direction: column;
-  width: 500px;
-}
+  width: 500px; }
+
 .movie-content a,
 .movie-content h2,
 .movie-content h3,
-.movie-content h4{
-  margin-bottom: 3%;
-}
-.stars{
-  margin-left: 10px;
-}
-.allstars{
-  margin-bottom: 2%;
-}
-.movie-content p {
-  margin-bottom: 3%;
-}
+.movie-content h4 {
+  margin-bottom: 3%; }
 
-.showtime *{
-  display: inline-block;
-}
+.stars {
+  margin-left: 10px; }
+
+.allstars {
+  margin-bottom: 2%; }
+
+.movie-content p {
+  margin-bottom: 3%; }
+
+.showtime * {
+  display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
