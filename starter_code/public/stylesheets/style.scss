@@ -35,3 +35,26 @@ a {
   border-radius: 50px;
   margin-top: 30px;
 }
+
+.movie-listing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie-listing-ind {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  margin: 20px 0;
+}
+
+.movie-container {
+  display: flex;
+  max-width: 1000px;
+}
+.movie-img-div {
+  margin: 20px;
+}
