@@ -1,97 +1,80 @@
 body {
   margin: 0;
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF !important;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 section#homepage {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   background-size: cover;
   height: 660px;
   color: white;
-  padding-top: 50px;
-}
+  padding-top: 50px; }
 
 section#movie {
-  padding-top: 50px;
-}
+  padding-top: 50px; }
 
 h1 {
   margin-bottom: 0;
   font-weight: 700;
-  font-size: 90px;
-}
+  font-size: 90px; }
 
 a.check-movies-btn {
   background-color: white;
   border: 1px solid transparent;
   border-radius: 20px;
   text-transform: initial;
-  font-weight: 500;
-}
+  font-weight: 500; }
 
 a.check-movies-btn:hover {
-  background-color: white;
-}
+  background-color: white; }
 
 div.movies-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 div.card {
   width: 30%;
   box-shadow: none;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 div.card-image {
-  text-align: center;
-}
+  text-align: center; }
 
 img.movie-img {
   width: 150px !important;
-  display: inline-block !important;
-}
+  display: inline-block !important; }
 
 div.card-content {
   text-align: center;
-  padding-top: 10px !important;
-}
+  padding-top: 10px !important; }
 
 div.card-content > span {
   font-size: 15px !important;
-  font-weight: 700 !important;
-}
+  font-weight: 700 !important; }
 
 h5 {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 p.director-p {
   font-weight: 700;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
 p.stars-t {
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 ul.stars-li {
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
 ul.stars-li > li {
-  list-style: disc !important;
-}
+  list-style: disc !important; }
 
 p.subtitle {
   font-weight: 500 !important;
-  font-size: 19px;
-}
+  font-size: 19px; }
+
+/*# sourceMappingURL=style.css.map */
