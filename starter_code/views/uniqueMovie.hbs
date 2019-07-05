@@ -1,0 +1,17 @@
+<div>
+  <button type="submit"><a href="/movies">go back</a></button>
+  <img src={{image}} alt="{{title}}">
+<h1>{{title}}</h1>
+<h3>{{director}}</h3>
+<ul>
+  {{#each stars}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+<p>{{description}}</p>
+<ul>
+  {{#each showtimes}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+</div>
