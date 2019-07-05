@@ -1,0 +1,21 @@
+<div class="flexbox">
+<div class="image">
+    <img src="{{image}}" alt="movie picture">
+</div>
+<div>
+<a href="/movies">Go back</a>
+<h1>{{title}}</h1>
+<h2>Director: {{director}}</h2>
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>{{description}}</p>
+
+<p>{{#each showtimes}}
+    {{this}} |
+    {{/each}}
+</p>
+</div>
+</div>
