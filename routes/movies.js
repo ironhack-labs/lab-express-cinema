@@ -33,4 +33,23 @@ router.get('/:id', (req, res) => {
         })
 });
 
+
+router.post('/', (req, res, next) => {
+
+    let title = req.body.titulo;
+    let image = req.body.foto;
+
+    let data = {title, image};
+
+    Movie.create(data)
+        .then((movie) => {
+            console.log('ok');
+            res.status(200).json({text: "OK"});
+        }).catch(error => {
+            res.status(500).json({text: "Error", err: error});
+    });
+
+});
+
+
 module.exports = router;
