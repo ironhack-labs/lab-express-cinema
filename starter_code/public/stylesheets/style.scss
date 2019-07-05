@@ -1,8 +1,93 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
 }
+$blue: #00B7FF;
+
+
+body {
+  padding: 0;
+  margin:0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
+  color: $blue; }
+
+.background {
+  background-image: url("../images/cinema.jpg"); 
+  height: 100vh;
+  width:100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column; 
+}
+
+.principle-title{
+  font-size: 50px;
+  color:white;
+}
+
+.padding{
+  padding-left: 50px;
+}
+
+.margin{
+  margin-right: 50px;
+}
+
+.container-img{
+}
+.btn{
+  padding: 17px 50px;
+  background-color: white;
+  border-radius: 30px;
+  border-style: none;
+  border: 1px solid $blue;
+  a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+.padding-rigth{
+padding-right: 10%; 
+}
+
+.list{
+  display: flex;
+  li{
+    list-style: none;
+    padding: 0 2%;
+    border-right: 1px solid black;
+  }
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  margin: 5%;
+  h3{
+    padding-bottom: 4px;
+  }
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  
 }

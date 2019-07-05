@@ -1,0 +1,24 @@
+<div class="card-container">
+  <div class="container-img">
+    <img src="{{image}}" alt="image">
+  </div>
+  <div class="card padding-rigth">
+    <h2>Director: {{director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <ul class='list'>
+      {{#each showtimes}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  
+</div>
+<div class="padding">
+<button class="btn"><a href='/movies'>Go Back</a></button>
+</div>

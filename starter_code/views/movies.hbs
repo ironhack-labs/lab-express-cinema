@@ -1,0 +1,16 @@
+<div class="padding">
+  <h1>IronHack Cinema</h1>
+  <h2>Click on the movie to check the showtimes!</h2>
+</div>
+
+<div class="container padding">
+  {{#each movies}}
+
+  <div class="card center">
+    <img src="{{image}}" alt="image">
+    <h3>{{title}}</h3>
+    <a href="/movies/{{id}}">See more</a>
+  </div>
+
+  {{/each}}
+</div>
