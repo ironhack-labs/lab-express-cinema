@@ -9,7 +9,9 @@
                  :key="index"
                  style="margin-bottom: 20px"
             >
-                <img :src="pelicula.image" alt=""/>
+                <img :src="pelicula.image"
+                     style="width: 300px"
+                     alt=""/>
                 <p>{{pelicula.title}}</p>
 
                 <router-link :to="{name:'detallePelicula', params: {id:pelicula._id}}">

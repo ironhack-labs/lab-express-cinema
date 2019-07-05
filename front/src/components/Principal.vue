@@ -7,6 +7,10 @@
             <button >
                 <router-link to="/peliculas">Check the movies</router-link>
             </button>
+
+            <button >
+                <router-link to="/nuevapeli">NuevaPeli</router-link>
+            </button>
         </div>
     </div>
 
