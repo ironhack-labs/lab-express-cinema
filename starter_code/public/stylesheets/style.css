@@ -2,71 +2,58 @@ body {
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #00b7ff;
-}
+  background: #00b7ff; }
+
 .home {
   background: url("./../images/cinema.jpg") no-repeat center top;
   background-size: cover;
-  
   height: 100vh;
-  width: auto;
-  div {
+  width: auto; }
+  .home div {
     position: absolute;
     right: 20%;
-    top: 30vh;
-  }
-  h1{
-    
+    top: 30vh; }
+  .home h1 {
     color: white;
-    font-size: 4em;
-    
-  }
-  a {
-  
+    font-size: 4em; }
+  .home a {
     background-color: white;
     color: #00b7ff;
     border-radius: 20px;
     padding: 10px 20px;
     box-sizing: border-box;
-    text-decoration: none;
-  }
-}
+    text-decoration: none; }
 
 .flex-container {
   padding: 0;
   margin: 0;
   list-style: none;
-
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  box-sizing: border-box;
-  
-  .flex-item {
+  box-sizing: border-box; }
+  .flex-container .flex-item {
     background: #f1f1f0;
-    border: rgb(220, 222, 223) solid 2px;
+    border: #dcdedf solid 2px;
     padding: 20px;
     width: 200px;
     text-align: center;
     margin: 20px;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    p {
+    justify-content: space-between; }
+    .flex-container .flex-item p {
       color: black;
       font-size: 1em;
-      font-weight: bold;
-    }
-    img {
+      font-weight: bold; }
+    .flex-container .flex-item img {
       width: 100%;
-      height: auto;
-    }
-    a {
+      height: auto; }
+    .flex-container .flex-item a {
       background: #00b7ff;
       border: none;
       padding: 5px 10px;
@@ -74,27 +61,23 @@ body {
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 0.7em;
-    }
-  }
-}
-.details{
+      font-size: 0.7em; }
+
+.details {
   margin: 30px auto;
   width: 80%;
   background: #f1f1f0;
-  border: rgb(220, 222, 223) solid 2px;
+  border: #dcdedf solid 2px;
   padding: 20px;
   box-sizing: border-box;
-  display: flex;
-  .image {
-   margin-right: 10px;
-  }
-  a {
+  display: flex; }
+  .details .image {
+    margin-right: 10px; }
+  .details a {
     color: #00b7ff;
     font-weight: bold;
-    text-decoration: none;
-    :hover {
-      text-decoration: underline;
-    }
-  }
-}
+    text-decoration: none; }
+    .details a :hover {
+      text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
