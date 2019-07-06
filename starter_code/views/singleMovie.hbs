@@ -1,0 +1,8 @@
+<img src="{{this.image}}">
+<div>{{this.title}}</div>
+<div>Director {{this.director}}</div>
+<div>Starts{{#each this.stars}}{{/each}}</div>
+<div>{{this.description}}/div>
+    <div>{{#each this.showtimes}}
+            {{this}} |
+        {{/each}}</div>
