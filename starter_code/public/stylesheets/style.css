@@ -1,14 +1,12 @@
 body {
   padding: 0px;
   margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-.home-container{
+.home-container {
   background: url(/images/cinema.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -16,25 +14,23 @@ a {
   height: 750px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
 
-.movies-call-to-action{
+.movies-call-to-action {
   width: 300px;
   height: 300px;
-  margin: 0px 200px 0px 0px;
-}
+  margin: 0px 200px 0px 0px; }
 
-.movies-call-to-action h1{
+.movies-call-to-action h1 {
   font-size: 58px;
-  color: white;
-}
+  color: white; }
 
-.movies-call-to-action a{
+.movies-call-to-action a {
   background: white;
   width: auto;
   height: auto;
   padding: 20px 40px;
   border-radius: 30px;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
