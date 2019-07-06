@@ -15,7 +15,19 @@ router.get('/movies', (req, res)=>{
       console.log("The received data from the API: ", data);
     })
     .catch(err => {
-      console.log("The error while searching artists occurred: ", err);
+      console.log("The error while searching movies occurred: ", err);
+    });
+});
+
+//GET SINGLE MOVIE BY ID
+router.get('/movie/:id', (req, res)=>{
+  Movie.findById(req.params.id)
+    .then(data => {
+      res.render('movie', {movie: data});
+      console.log("The received data from the API: ", data);
+    })
+    .catch(err => {
+      console.log("The error while searching movies occurred: ", err);
     });
 });
 
