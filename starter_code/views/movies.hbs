@@ -1,0 +1,22 @@
+<h1>All movies</h1>
+{{!-- {{#each allTheMovies}}
+  <p><a href="/moviedetail/{{this._id}}">{{this.title}}</a></p>
+{{/each}} --}}
+
+{{!--  --}}
+
+<div class="row">
+  {{#each allTheMovies}}
+  <div class="col-1"></div>
+  <div class="card col-2 my-3">
+    <img  class="card-img-top my-3" src="{{ this.image }}" alt="Card image cap">
+    <div class="card-body" >
+      <strong class="card-text my-3">{{this.title}}</strong>
+      <p class="card-text my-3"><a href="/moviedetail/{{this._id}}">see More</a></p>
+    </div>
+  </div>
+  <div class="col-1"></div>
+
+  {{/each}}
+  
+</div>
