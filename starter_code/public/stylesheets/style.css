@@ -31,7 +31,7 @@ body {
   .bigletters {
       margin-top: 25%;
   }
-  .card-body {
+  .cardBody {
     padding: 0;
     text-align: center;
     font-size: 0.65rem;
