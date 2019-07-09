@@ -104,7 +104,7 @@
 
         fetch(url, {
           mode: 'cors',
-          method: 'POST',
+          method: 'PUT',
           headers: {
             "Accept": "application/json",
             'Content-Type': "application/json"

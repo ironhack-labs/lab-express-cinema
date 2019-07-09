@@ -51,7 +51,7 @@ router.post('/', (req, res, next) => {
 
 });
 
-router.post('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
 
   let title = req.body.title;
   let description = req.body.description;
