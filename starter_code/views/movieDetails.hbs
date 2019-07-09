@@ -1,4 +1,21 @@
-<h1>{{theMovie.title}}</h1>
-<h4>{{theMovie.director}}</h4>
-<img src="{{theMovie.image}}" alt="{{theMovie.title}}">
-<p>{{theMovie.description}}</p>
+<h1 class="movies-title">{{theMovie.title}}</h1>
+<section class="movie-container">
+    <a class="go-back-btn" href="/movies">Go back</a>
+  <div>
+    <img src="{{theMovie.image}}" alt="{{theMovie.title}}">
+  </div>
+  <div class="movie-info">
+    <p><span class="bold">Director:</span> {{theMovie.director}}</p>
+    <p><span class="bold">Stars:</span></p>
+    <ul>
+      {{#each theMovie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <br>
+    <p>{{theMovie.description}}</p>
+    <p>
+      | {{#each theMovie.showtimes}}{{this}} | {{/each}}
+    </p>
+  </div>
+</section>

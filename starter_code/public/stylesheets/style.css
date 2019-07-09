@@ -1,8 +1,102 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 a {
   color: #00B7FF; }
+
+.background-main {
+  background-image: url(https://user-images.githubusercontent.com/23629340/36983687-49a3d64e-2093-11e8-8b86-b11813f0cdba.png);
+  background-size: cover;
+  height: 100vh; }
+
+.check-the-movies-btn {
+  position: absolute;
+  left: 847px;
+  top: 391px;
+  line-height: 69px;
+  width: 288px;
+  border-radius: 39px;
+  color: transparent; }
+
+.movies-title {
+  margin: 0;
+  padding-left: 40px;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.767);
+  line-height: 90px;
+  background-color: rgba(255, 255, 255, 0.712);
+  box-shadow: 10px 10px 10px black; }
+
+.movies-container {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.815);
+  display: grid;
+  grid-template-columns: calc(25% - 37.5px) calc(25% - 37.5px) calc(25% - 37.5px) calc(25% - 37.5px);
+  gap: 50px; }
+
+.movies-container a {
+  text-decoration: none;
+  color: white; }
+
+.movies-container a:hover {
+  transform: scale(1.1);
+  transition: all .3s; }
+
+.movies-container h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2rem; }
+
+.movie-card {
+  box-shadow: 3px 3px 8px black;
+  align-items: center;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.315); }
+
+.movie-card img {
+  width: 85%; }
+
+.movie-container {
+  color: white;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 190px); }
+
+.movie-info {
+  width: 50%;
+  padding-left: 50px;
+  font-size: 1.5rem;
+  font-weight: 100; }
+
+.movie-container img {
+  width: 300px; }
+
+.bold {
+  font-weight: 400; }
+
+.movie-info p:first-child {
+  margin-top: 0; }
+
+.go-back-btn {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  text-decoration: none;
+  font-size: 1.3rem; }
+
+.go-back-btn:hover {
+  border-bottom: 2px solid #00B7FF; }
+
+img {
+  box-shadow: 5px 5px 10px black; }
 
 /*# sourceMappingURL=style.css.map */
