@@ -87,14 +87,16 @@ a {
   margin-top: 0; }
 
 .go-back-btn {
+  color: white;
   position: absolute;
-  top: 140px;
-  left: 50px;
   text-decoration: none;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  top: 95px;
+  left: 40px; }
 
 .go-back-btn:hover {
-  border-bottom: 2px solid #00B7FF; }
+  transform: scale(1.1);
+  transition: all .3s; }
 
 img {
   box-shadow: 5px 5px 10px black; }
