@@ -57,6 +57,9 @@ app.use('/', index);
 const movies = require('./routes/movies');
 app.use('/', movies);
 
+const moviePage = require('./routes/movie-page');
+app.use('/', moviePage);
+
 
 // Final bits
 app.listen(process.env.PORT);
