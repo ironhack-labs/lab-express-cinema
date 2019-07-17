@@ -7,17 +7,30 @@ body {
   margin: 0; }
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF;
+  font-size: 1.3em; }
+
+p, li {
+  font-size: 1.3em; }
+
+ul {
+  margin: 0; }
 
 h1 {
   margin: 10px 0 0 0;
   font-size: 7em; }
 
 h2 {
-  margin: 20px; }
+  margin: 20px 0 10px 0;
+  font-size: 3em; }
 
 h3 {
-  margin: 20px; }
+  margin: 20px 0 10px 0;
+  font-size: 2em; }
+
+h4 {
+  margin: 20px 0 10px 0;
+  font-size: 1.6em; }
 
 .page-home {
   background-image: url("../images/cinema.jpg");
@@ -41,10 +54,13 @@ h3 {
   font-size: 1.7em;
   cursor: pointer; }
 
+.page-container {
+  margin: 0 20px; }
+
 .movie-list-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px; }
+  margin: 30px 100px; }
 
 .img-movie {
   height: 250px;
@@ -53,11 +69,36 @@ h3 {
 .movie-tile {
   display: flex;
   flex-direction: column;
-  align-items: left;
   margin: 40px;
-  width: 350px; }
+  width: 350px;
+  text-align: center; }
 
-.movie-tile p {
-  font-size: 1.4em; }
+.detailed-movie-info-container {
+  margin: 50px;
+  display: flex;
+  flex-direction: row; }
+
+.detailed-movie-info-tile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+  width: 600px;
+  text-align: left; }
+
+.showtimes-list-container {
+  display: flex;
+  align-items: center; }
+
+.showtimes-list {
+  display: flex;
+  list-style: none;
+  padding: 0; }
+
+.showtimes-list li {
+  margin: 0 0 0 15px; }
+
+.showtimes-list li::after {
+  content: "|";
+  padding: 0 0px 0 13px; }
 
 /*# sourceMappingURL=style.css.map */
