@@ -6,9 +6,9 @@ const Movie     = require('../models/movie');
 /* GET movies page */
 router.get('/movies', (req, res, next) => {
 
-  Movie.find({id_:0, title:1, image:1})
-      .then((movies)=> {
-        res.render('movies', {movies})
+  Movie.find({},{title:1, image:1})  
+    .then((movies) => {
+        res.render('movies', {movies: movies})
       })
 });
 
