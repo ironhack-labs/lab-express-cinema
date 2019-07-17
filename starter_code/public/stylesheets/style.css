@@ -13,6 +13,12 @@ h1 {
   margin: 10px 0 0 0;
   font-size: 7em; }
 
+h2 {
+  margin: 20px; }
+
+h3 {
+  margin: 20px; }
+
 .page-home {
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
@@ -34,5 +40,24 @@ h1 {
   background-color: white;
   font-size: 1.7em;
   cursor: pointer; }
+
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px; }
+
+.img-movie {
+  height: 250px;
+  align-self: center; }
+
+.movie-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 40px;
+  width: 350px; }
+
+.movie-tile p {
+  font-size: 1.4em; }
 
 /*# sourceMappingURL=style.css.map */
