@@ -19,7 +19,7 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
-// Other setup
+// Set up the app
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
@@ -32,7 +32,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
-
 app.use(require('node-sass-middleware')({
   src:  path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
@@ -61,6 +60,5 @@ const moviePage = require('./routes/movie-page');
 app.use('/', moviePage);
 
 
-// Final bits
-app.listen(process.env.PORT);
+// Export
 module.exports = app;
