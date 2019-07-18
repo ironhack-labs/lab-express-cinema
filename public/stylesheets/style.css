@@ -82,4 +82,16 @@ a {
 .content {
   padding: 25px 10%; }
 
+@media (max-width: 1200px) {
+  .home .description {
+    position: absolute;
+    top: 10%;
+    left: 40%; } }
+
+@media (max-width: 800px) {
+  .home .description {
+    position: absolute;
+    top: 10%;
+    left: 5%; } }
+
 /*# sourceMappingURL=style.css.map */

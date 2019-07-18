@@ -1,12 +1,19 @@
-<h1>Ironhack Cinema</h1>
-<p>Click on a movie for additional info</p>
+<div class="content">
+  <h1>Ironhack Cinema</h1>
+  <p>Click on a movie for additional info</p>
 
-<div class="movies">
-  {{#each movies}}
-  <div class="movie">
-    <img src="{{image}}" alt="{{title}}">
-    <h2>{{title}}</h2>
-    <a href="/movie/{{_id}}"></a>
+  <div class="movies">
+    {{#each movies}}
+    <div class="movie">
+      <img src="{{image}}" alt="{{title}}">
+      <h2>{{title}}</h2>
+      <a href="/movie/{{_id}}"></a>
+    </div>
+    {{else}}
+    {{!-- No movies in db... render seed button --}}
+    <form action="/seed" method="POST">
+      <button type="submit" name="delete" value="">Add some movies ;)</button>
+    </form>
+    {{/each}}
   </div>
-  {{/each}}
 </div>

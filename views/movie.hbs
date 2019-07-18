@@ -1,20 +1,25 @@
-<div class="single-movie">
-  {{#movie}}
-  <div class="img">
+<div class="content">
+  <div class="single-movie">
+    {{#movie}}
+    <div class="img">
       <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div class="description">
+      <a href="/movies">Back to Movies</a>
+      <h1>{{title}}</h1>
+      <p>Director: {{director}}</p>
+      <span>Stars</span>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <p>{{#each showtimes}}{{this}}{{#unless @last}} | {{/unless}}{{/each}}</p>
+      <form action="/delete/{{_id}}" method="POST">
+        <button type="submit" name="delete" value="{{_id}}">Delete this movie</button>
+      </form>
+    </div>
+    {{/movie}}
   </div>
-  <div class="description">
-    <a href="/movies">Back to Movies</a>
-    <h1>{{title}}</h1>
-    <p>Director: {{director}}</p>
-    <span>Stars</span>
-    <ul>
-      {{#each stars}}
-      <li>{{this}}</li>
-      {{/each}}
-    </ul>
-    <p>{{description}}</p>
-    <p>{{#each showtimes}}{{this}}{{#unless @last}} | {{/unless}}{{/each}}</p>
-  </div>
-  {{/movie}}
 </div>

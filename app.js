@@ -60,13 +60,8 @@ app.use('/', require('./routes/movies'));
 
 app.use('/', require('./routes/movie'));
 
-app.use('/seed', function(req, res) {
-  for(let movie of require("./bin/seeds.js")) {
-    let newMovie = new Movie(movie)
-    newMovie.save()
-  }
-  res.send('Database was seeded!');
-})
+app.use('/', require('./routes/delete'));
 
+app.use('/', require('./routes/seed'));
 
 module.exports = app;
