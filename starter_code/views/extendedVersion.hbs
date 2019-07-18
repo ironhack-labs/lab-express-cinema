@@ -1,0 +1,27 @@
+<div id="specific-movie">
+    {{!-- we are passing the object "movie", 
+    so we have to access that object as we usually do in js:
+    object.property --}}
+    <div>
+      <img src="{{movie.image}}">
+    </div>
+    <div id="text">
+      <a class="link" href="/movies">Go back</a>
+      <h1><strong>{{movie.title}}</strong></h1>
+      <h2><strong>Director: {{movie.director}}</strong></h2>
+      <div>
+        <p><Strong>Stars</Strong></p>
+        <ul>
+          {{#each movie.stars}}
+            <li class="list">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <p>{{movie.description}}</p>
+      <div id="showtimes">
+        {{#each movie.showtimes}}
+            <p>{{this}}|</p>
+          {{/each}}
+      </div>
+    </div>
+</div>

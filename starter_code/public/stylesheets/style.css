@@ -1,0 +1,82 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+#check-btn a {
+  color: #3a7085;
+  text-decoration: none;
+  font-size: 15px; }
+
+#cinema {
+  padding: 100px;
+  height: 100vh;
+  background-image: url("../images/cinema.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  color: white; }
+
+#inner-div {
+  width: 40%; }
+
+#cinema h1 {
+  font-size: 80px; }
+
+#check-btn {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px; }
+
+#ironhack-cinema, #click-on-movie {
+  padding-left: 20px; }
+
+#ironhack-cinema {
+  font-size: 25px;
+  padding-top: 20px; }
+
+#click-on-movie {
+  font-size: 20px; }
+
+#movies-page div {
+  margin: 0 auto; }
+
+#movies {
+  margin-top: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100;
+  margin: 0 auto; }
+
+#movies div {
+  width: 20%;
+  padding: 10px 40px; }
+
+a {
+  color: #00B7FF; }
+
+#each-movie {
+  text-align: center; }
+
+#specific-movie {
+  width: 50%;
+  display: flex; }
+
+#specific-movie img {
+  width: 200px;
+  height: 300px;
+  margin: 20px; }
+
+#text {
+  margin-top: 20px;
+  margin-left: 40px; }
+
+#text ul {
+  padding-left: 15px; }
+
+#showtimes {
+  display: inline-flex; }
+
+/*# sourceMappingURL=style.css.map */

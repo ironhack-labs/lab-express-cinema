@@ -1,0 +1,10 @@
+{{!-- Important to use camelCase in naming the file --}}
+<div id="movies-page"> 
+    <h1 id="ironhack-cinema">Ironhack Cinema</h1>
+    <p id="click-on-movie">Click on the movie to check the showtimes!</p>
+    <div id="movies">
+        {{#each movies}}
+            {{> moviePartial this}}
+        {{/each}}
+    </div>
+</div>
