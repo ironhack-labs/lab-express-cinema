@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  console.log('IronGenerator JS imported successfully!');
+  $(".check-movies").click(function() {
+    window.location.assign('movies');
+  })
 
 }, false);

@@ -1,0 +1,114 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+a {
+  color: #00B7FF; 
+}
+
+ul{
+  padding-inline-start: 20px;
+}
+
+.main{
+  background-image: url("../images/cinema.jpg");
+  display: block;
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 12em;
+  overflow: hidden;
+}
+
+.index{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  font-size: 80px;
+  color: white;
+  padding-top: 10%;
+  margin: 0;
+}
+
+h2{
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+h4{
+  font-size: 18px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+h3{
+  font-size: 15px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.check-movies{
+  background-color: white;
+  font-size: 15px;
+  color: #00B7FF;
+  border-radius: 3em;
+  border: 0;
+  padding: 10px;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin: 1em;
+}
+
+.moviePartial{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 400px;
+}
+
+.moviePartial img{
+  box-shadow: 0px 5px 5px black;
+}
+
+.movies-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.movies-home{
+  margin: 3em;
+}
+
+.single-movie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.movie-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3em;
+  width: 60%;
+}
