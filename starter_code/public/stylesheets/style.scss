@@ -1,8 +1,27 @@
 body {
-  padding: 50px;
+  // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+.main-sec{
+  height: 100vh;
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.title{
+  color: #fff;
+}
+.title-Container{
+  width: 70vw;
+  height: 40vh;
+}
+#boton{
+  background-color: #fff;
+  color: black;
 }

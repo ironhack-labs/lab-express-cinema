@@ -1,0 +1,36 @@
+<section class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-expand">
+    <h1 class="uk-text-primary">Show times</h1>
+
+  </div>
+  
+</section>
+<hr class="uk-divider-icon">
+<section class="uk-section uk-section-muted" >
+  <div class="uk-container uk-container-expand">
+      <div class="uk-card uk-card-default uk-card-body uk-width-auto" > 
+          <img data-src="{{image}}" alt="{{title}}" uk-img>
+      </div>
+      <div class="uk-card uk-card-default uk-card-body uk-width-expand">
+          <a href="/movies">go back</a>
+          <h4>{{title}}</h4>
+          <p>Director: {{director}}</p>
+          <p>Stars:</p>
+          <ul>
+            {{#each stars as |star|}}
+                <li>
+                    {{star}}
+                </li>
+            {{/each}}
+          </ul>
+          <p>Showtimes</p>
+          <ul>
+            {{#each showtimes as |showtime|}}
+                <li>
+                    {{showtime}}
+                </li>
+            {{/each}}
+          </ul>
+      </div>
+  </div>
+</section>
