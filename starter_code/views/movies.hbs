@@ -1,0 +1,6 @@
+<h1>Soy la lista de los libros</h1>
+
+{{#each allTheMovies}}
+<img src="{{this.image}}" alt="">
+<p>{{this.title}} <a href="/movies/detail/{{_id}}">Ver detalles</a></p>
+{{/each}}
