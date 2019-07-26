@@ -1,0 +1,6 @@
+<h1>Soy la lista de las peliculas</h1>
+
+{{#each movies}}
+<p>{{title}} <a href="/movies/detail{{_id}}">See more</a></p>
+<img src="{{images}}" alt="la fucking imagen">
+{{/each}}
