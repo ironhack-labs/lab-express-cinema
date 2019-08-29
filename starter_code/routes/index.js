@@ -8,15 +8,16 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/movies', (req, res) => {
-  console.log(MovieModel)
+  let bob;
   MovieModel.find()
     .then(dbRes => {
       console.log(dbRes)
+      res.render('movies', { movies: dbRes });
     })
     .catch(dbErr => {
       console.log(dbErr)
     })
-  res.render('movies');
+
 
 });
 
