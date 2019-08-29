@@ -8,6 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const port = process.env.PORT || 3000;
 
 
 mongoose
@@ -44,15 +45,22 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+// app.get("/",(req, res)=>{
+//    res.render("index");
+// });
+
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinema Ironhack';
 
 
 
 const index = require('./routes/index');
 app.use('/', index);
 
+const listener  = app.listen(3000, ()=>{ 
+  console.log(`server is ready @ http://localhost:${listener.address().port}`);
+});
 
 module.exports = app;
