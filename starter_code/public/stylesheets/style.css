@@ -1,13 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
-
-//index
+  color: #00b7ff; }
 
 #header {
   background-image: url("/images/cinema.jpg");
@@ -18,15 +14,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 #header h1 {
   font-size: 100px;
   color: white;
   width: 50%;
-  margin-left: 25%;
-}
+  margin-left: 25%; }
 
 #header a {
   background-color: white;
@@ -34,21 +28,16 @@ a {
   padding: 10px 50px;
   text-decoration: none;
   color: dodgerblue;
-  font-size: 15px;
-}
-
-//movies
+  font-size: 15px; }
 
 #moviesContainer {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 #moviesContainer h1 {
   color: dodgerblue;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 #moviesList {
   display: flex;
@@ -56,61 +45,51 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: space-around;
-  padding: 0;
-}
+  padding: 0; }
 
 .movie {
   list-style-type: none;
   width: 20%;
-  margin: 20px;
-}
+  margin: 20px; }
 
 .img {
-  width: 100%;
-}
+  width: 100%; }
 
 .movie div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
-//movie details
 .moviedetailcontainer {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .moviedetailcontainer .img {
   width: 30%;
-  border: 1px soldi black;
-}
+  border: 1px soldi black; }
 
 .moviedetailcontainer .img img {
-  width: 80%;
-}
+  width: 80%; }
 
 .movieInfos {
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .movieInfos h3 {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .movieInfos #showtimes {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding: 0;
-}
+  padding: 0; }
 
 #showtimes li {
   padding: 0 10px;
-  border-right: 1px solid black;
-}
+  border-right: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */
