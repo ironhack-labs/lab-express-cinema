@@ -1,0 +1,20 @@
+<div id="wrapper_details">
+  <img src="{{this.image}}" alt="image">
+  <div id="movie_details">
+    <a href="/movies">Go back</a>
+    <h1>{{this.title}}</h1>
+    <h2 id="director">{{this.director}}</h2>
+    <h2 id="star_title">Stars</h2>
+    <ul>
+      {{#each this.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p id="summary">{{this.description}}</p>
+    <div id="showtimes">
+      {{#each this.showtimes}}
+      <span class="showtime">{{this}} |</span>
+      {{/each}}
+    </div>
+  </div>
+</div>
