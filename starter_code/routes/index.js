@@ -27,13 +27,10 @@ router.get("/movies",(req,res)=>{
 })
 
 
-router.get("/movies/:title",(req,res)=>{
-  const foundMovie = moviesModel.filter(movie => movies.title === req.moviesModel.title)[0];
-   res.render("movies_details"
-  //  ,{
-  //      movies: foundMovie
-  //  }
-   );  
+router.get("/movies_details/:id",(req,res)=>{
+  moviesModel.findOne({_id:req.params.id}).then(dbRes =>{
+    res.render("movies_details",{ movies : dbRes });
+  }); 
 });
 
 module.exports = router;

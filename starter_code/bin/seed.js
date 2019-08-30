@@ -74,8 +74,8 @@ const movies = [
     }
   ];
 
-MovieModel.insertMany(movies).then(dbRes =>{
-    console.log(dbRes);
-}).catch(dbErr =>{
-    console.log(dbErr);
-});
+// MovieModel.insertMany(movies).then(dbRes =>{
+//     console.log(dbRes);
+// }).catch(dbErr =>{
+//     console.log(dbErr);
+// });

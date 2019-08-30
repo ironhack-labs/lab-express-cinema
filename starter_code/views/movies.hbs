@@ -1,9 +1,11 @@
-<div id="movies_list">
+<div class="movies_list">
     <ul class="movies">
     {{#each movies}}
+    <div class="wrapper">
             <li class="movie"><img src="{{this.image}}" alt="{{this.title}}"></li>
             <li class="movie">{{this.title}}</li>
-            <li class="movie"><a href="/movies_details">See more</a></li>
+            <li class="movie"><a href="/movies_details/{{this.id}}">See more</a></li>
+    </div>
     {{/each}}
     </ul>
 

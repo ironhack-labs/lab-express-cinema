@@ -1,6 +1,26 @@
-<div class="movies-list">
-    <p>Hello!</p>
-    {{#if movies}}
+<div class="movie-details">
+    <div class="affiche">
+        <img src="{{movies.image}}" alt="{{movies.title}}"/>
+    </div>
+    
+    <div class="content">
+        <h1 class="movie_title">{{movies.title}}</h1><br/>
+        <h2>Director: {{movies.director}}</h2><br/>
+        <h3>Stars</h3><br/>
+        <ul class="movie-stars">
+            {{#each movies.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul> <br/>
+        <p>{{movies.description}}</p><br>
+        <ul class="showtime">
+        {{#each movies.showtimes}}
+        <li class="horaire">{{this}}</li>
+        {{/each}}
+        </ul>
+        <br/>
+    <button class="calltoaction" id="cta_index"><a href="/movies">Go back</a></button>
+    </div>
 
-    {{/if}}
+
 </div>

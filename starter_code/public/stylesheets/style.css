@@ -49,14 +49,54 @@ a {
 .movies .movie {
   list-style: none;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start; }
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 30px; }
 
 .movies {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center; }
 
+.movies_list {
+  display: flex;
+  align-content: center;
+  height: auto;
+  width: 60%;
+  margin-left: 18%;
+  margin-top: 5%; }
+
+.movie-details {
+  display: flex;
+  flex-direction: row wrap;
+  margin-left: 18%;
+  margin-top: 5%; }
+
+.content {
+  width: 60%;
+  margin: 20px; }
+
+.showtime {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  list-style: none inside; }
+
+.movie-stars {
+  padding: 0;
+  list-style-position: inside; }
+
+.horaire {
+  padding: 5px;
+  border-right: solid black 1px; }
+
+.affiche {
+  padding-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
