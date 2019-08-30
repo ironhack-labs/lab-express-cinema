@@ -1,0 +1,34 @@
+{{!-- display a list of all the movies  --}}
+{{!-- Boucle avec "each": trouve moi et donne moi tous les éléments de la base de données. --}}
+
+<div class="page">
+  <h1 class="title">IronHack Cinema</h1>
+  <p>Click on the movie to check the showtimes</p>
+  
+  <div class="movie-container">
+  {{#each movies}}
+    
+    <div class="movie">
+      <img src="{{this.image}}" alt="movie-image">
+      <div class="high-level-info">
+        <p>{{this.title}}</p>
+        <a class="movie-details-link" href="/movies/{{this.id}}">See more</a>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+</div>
+
+  {{!-- <h1>Ironhack Cinema</h1>
+<br>
+
+<p>Click on the movies to check the showtimes!</p>
+
+<div>
+  {{#each movies}}
+   <img src="{{ this.image }}" alt="movie-image">
+    {{ this.title }}
+
+    <a href="/movies/{{this._id}}">See more</a>
+  {{/each}} --}}
+    {{!-- </div> --}}

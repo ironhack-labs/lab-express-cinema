@@ -9,9 +9,8 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
-
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/lab-express-cinema', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -55,4 +54,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
-module.exports = app;
+module.exports = app; // this is for the module to be exported
+
+// // the below is where the server should be listening:
+// const listener = app.listen(3000, () => console.log(`app is up @ http://localhost:${listener.address().port}`));
