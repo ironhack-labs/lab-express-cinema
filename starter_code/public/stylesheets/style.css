@@ -6,23 +6,19 @@ a {
   color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
-
 div#background {
   height: 100vh;
   width: 100%;
   background: url("../images/cinema.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  
-} 
+  background-size: cover; }
 
 #index-title {
   position: relative;
   top: 50px;
   left: 60%;
   color: white;
-  font-size: 6rem;
-}
+  font-size: 6rem; }
 
 .btn {
   background-color: white;
@@ -33,27 +29,21 @@ div#background {
   border-radius: 30px;
   text-decoration: none;
   color: #A5CADC;
-  padding: 20px 30px;
-
-}
+  padding: 20px 30px; }
 
 .wrapper {
   display: flex;
-  flex-flow: wrap;
-}
+  flex-flow: wrap; }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
-}
+  margin: 10px; }
 
 .movie-container {
   display: flex;
- flex-direction: row;
-
-}
+  flex-direction: row; }
 
 .movie-details {
   width: 60%;
@@ -61,10 +51,15 @@ div#background {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: auto;
-}
+  margin-left: auto; }
 
- 
-ul.showtimes {
+.movie-details#showtimes {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
-}
+  padding: 0; }
+
+ul.showtimes {
+  list-style-type: none; }
+
+/*# sourceMappingURL=style.css.map */
