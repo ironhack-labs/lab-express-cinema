@@ -4,11 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("../images/cinema.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 #cinema {
   color: white;
@@ -20,13 +16,31 @@ body {
   border-radius: 50px;
   padding: 20px;
   font-size: 25px;
-  margin: 0px 100px;
+  margin: 40px 100px;
   text-decoration: none; }
+
+#img {
+  padding: 10px; }
 
 /* --- class --- */
 .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-end;
+  padding: 115px 175px;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; }
+
+.content {
+  padding-top: 20px; }
+
+.content-title {
+  width: fit-content; }
+
+.container_movies {
+  padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */

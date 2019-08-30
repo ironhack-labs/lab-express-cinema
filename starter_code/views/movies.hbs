@@ -1,10 +1,12 @@
 {{!-- list of all movies --}}
 
-<div>
-    <h1>movies</h1>
+<div class="container_movies">
+    <h1 class="content">Ironhack Cinema</h1>
+    <p class="content">Click on the link to get more information about the movie.</p>
+    
     {{#each movies}}
-     <img src="{{ this.image }}" alt="img">
-     {{ this.title }}
+     <img src="{{ this.image }}" alt="img" id="img">
+     <p class="content content-title">{{ this.title }} </p>
      
      <a href="/movies/{{this._id}}">See more</a>
     {{/each}}

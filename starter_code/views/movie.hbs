@@ -1,10 +1,16 @@
 {{!-- display one movie when clicked on the button --}}
 
 <div>
-    {{ this.image }}
-    <a href="/movies/{{ this._id }}">Got back</a>
-    {{ this.title }}
-    {{ this.director }}
-    {{ this.stars }}
+    <img src="{{ movie.image }}" alt="image">
+    <a href="/movies/{{ movie._id }}">Got back</a>
+    <h1> {{ movie.title }}</h1>
+    <p>    {{ movie.director }} </p>
+    
+    <p>{{#each movie.stars}}
+        {{ this }}
+    {{/each}}
+    </p>
+    <p> {{ movie.description }} </p>
+    <p> {{ movie.showtimes }} </p>
 
 </div>

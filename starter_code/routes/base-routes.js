@@ -18,9 +18,11 @@ router.get('/movies', (req, res, next) => {
 });
 
 router.get('/movies/:id', (req, res, next) => {
-  console.log(req.params.id)
-  MovieModel.findById(req.params.id).then().catch()
-  res.render('movie');
+  // console.log(req.params.id)
+  MovieModel.findById(req.params.id).then(dbRes =>{
+    res.render('movie', {movie: dbRes});
+  }).catch(err => console.log(err));
+
 });
 
 // promiss
