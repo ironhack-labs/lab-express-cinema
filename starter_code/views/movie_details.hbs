@@ -1,0 +1,31 @@
+<div class="page">
+  <h1 class="title">Movie Details</h1>
+  
+  {{#unless movie}}  
+  <p>Sorry, no movie found</p>
+  {{/unless}}
+  {{#if movie}}
+    <div class= "movie-container-details">
+    <img src="{{movie.image}}" alt="movie image">
+    <div class="movie-desc">
+      <a href="/movies">Go Back</a>
+      <h3>{{movie.title}}</h3>
+      <h4>Director: {{movie.director}}</h4>
+      <h4>Stars</h4>
+      <ul class="movie-stars">
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul>
+      <p>{{movie.description}}</p>
+      <div class="movie-showtimes" >
+        {{#each movie.showtimes}}
+          <p>{{this}} | </p>
+        {{/each}}
+      </div>
+    </div>
+
+    </div>
+
+  {{/if}}
+</div>
