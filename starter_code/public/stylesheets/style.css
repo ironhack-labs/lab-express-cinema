@@ -1,46 +1,97 @@
+/* --- general ---*/
 * {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
+/* --- index.hbs file ---*/
+/* -- id -- */
 #cinema {
   color: white;
   font-size: 100px; }
 
 #btn {
-  color: #38a2cc;
   background-color: white;
   border-radius: 50px;
-  padding: 20px;
+  color: #38a2cc;
   font-size: 25px;
   margin: 40px 100px;
+  padding: 20px;
   text-decoration: none; }
 
+/* -- class -- */
+.container {
+  align-items: flex-end;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 115px 175px;
+  width: 100%; }
+
+/* --- movies.hbs file --- */
+/* -- id -- */
 #img {
   padding: 10px; }
 
-/* --- class --- */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 115px 175px;
-  background-image: url("../images/cinema.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh; }
-
-.content {
-  padding-top: 20px; }
-
-.content-title {
-  width: fit-content; }
-
+/* -- class -- */
 .container_movies {
   padding: 30px; }
+
+.container_movies p {
+  padding-top: 10px; }
+
+.movies_container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 2%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 auto;
+  padding: 30px 0 80px;
+  width: 80%; }
+
+.div_total {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.div_content {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+/* --- movie.hbs file ---*/
+/* -- id --*/
+#movie {
+  display: flex; }
+
+#stars {
+  padding: 10px 0; }
+
+#des {
+  padding: 10px 0; }
+
+/* -- class -- */
+.movie_div {
+  padding: 10px; }
+
+.movie_content {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px; }
+
+.movie_content ul {
+  padding: 0 25px; }
+
+.movie_content h1 {
+  padding: 15px 0; }
 
 /*# sourceMappingURL=style.css.map */
