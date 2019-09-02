@@ -8,17 +8,26 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/movies', (req, res) => {
-  let bob;
   MovieModel.find()
     .then(dbRes => {
-      console.log(dbRes)
       res.render('movies', { movies: dbRes });
+      console.log("All movies are found!")
     })
     .catch(dbErr => {
       console.log(dbErr)
     })
+});
 
-
+router.get('/movie/:id', (req, res) => {
+  let bob;
+  MovieModel.findOne({"_id":req.params.id})
+    .then(dbRes => {
+      console.log(`movie found : ${dbRes.title}`)
+      res.render('movie', {movie : dbRes});
+    })
+    .catch(dbErr => {
+      console.log(dbErr)
+    })
 });
 
 
