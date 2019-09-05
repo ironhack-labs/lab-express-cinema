@@ -1,11 +1,9 @@
 body {
   height: 100vh;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .btn {
   background-color: white;
@@ -19,8 +17,7 @@ a {
   width: 350px;
   align-self: flex-end;
   font-family: "Open Sans Condensed", sans-serif;
-  margin-right: 200px;
-}
+  margin-right: 200px; }
 
 .title {
   font-size: 80px;
@@ -29,70 +26,60 @@ a {
   margin-right: 100px;
   margin-top: 150px;
   font-family: "Open Sans Condensed", sans-serif;
-  margin-right: 320px;
-}
+  margin-right: 320px; }
 
 #titleContainer {
   display: flex;
   flex-direction: column;
   background-image: url(../images/cinema.jpg);
   background-size: cover;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .detailContainer {
-  display: flex;
-}
+  display: flex; }
 
 .imageDetail {
   margin-top: 130px;
   margin-left: 100px;
-  height: 350px;
-}
+  height: 350px; }
 
 .listMovies {
-  margin-top: 200px;
-}
+  margin-top: 200px; }
 
 .detailText {
   font-size: 20px;
   list-style-type: none;
   margin-left: 20px;
   margin-right: 100px;
-  font-family: "Quicksand", sans-serif;
-}
+  font-family: "Quicksand", sans-serif; }
 
 .detailTextTitle {
   font-family: "Oswald", sans-serif;
   list-style-type: none;
   font-size: 40px;
   margin-left: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .textGeneral {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .tit {
   font-family: "Oswald", sans-serif;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 .listImage {
   justify-content: center;
-  margin-top: 70px;
-}
+  margin-top: 70px; }
 
 #imagesListContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 300px;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 .headd {
-  margin-left: 500px;
-}
+  margin-left: 500px; }
+
+/*# sourceMappingURL=style.css.map */
