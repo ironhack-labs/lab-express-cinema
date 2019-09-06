@@ -1,0 +1,16 @@
+<div class="main-cont list">
+	<h1>Ironhack Cinema</h1>
+	<a href="/"> << Back to home</a>
+	<div class="movies">
+		{{#each movies}}
+		<div class="movie">
+			<div class="movie-image" style="background-image: url('{{this.image}}')"></div>
+			<span class="movie-title">{{this.title}}</span>
+			<a class="movie-link" href="/detail/{{this._id}}">ver Detalle</a>
+		</div>
+
+		{{/each}}
+	</div>
+	
+	<a href="/"> << Back to home</a>
+</div>

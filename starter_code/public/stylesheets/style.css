@@ -1,21 +1,16 @@
 html {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   margin: 0;
   padding: 0;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-
-  &:hover {
-    color: brown;
-  }
-}
+  color: #00B7FF; }
+  a:hover {
+    color: brown; }
 
 .space {
   display: flex;
@@ -23,8 +18,7 @@ a {
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 100%;
-}
+  width: 100%; }
 
 .main-cont {
   display: flex;
@@ -32,29 +26,21 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
-
-  &.home {
-    background-image: url('/images/cinema.jpg');
+  width: 100%; }
+  .main-cont.home {
+    background-image: url("/images/cinema.jpg");
     background-size: cover;
     background-position: center;
     align-items: flex-end;
-    height: 100vh;
-
-    & h1 {
+    height: 100vh; }
+    .main-cont.home h1 {
       font-size: 7.2vw;
       color: white;
-      max-width: 30%;
-
-    }
-  }
-
-  &-elems {
+      max-width: 30%; }
+  .main-cont-elems {
     margin-right: 12%;
     margin-bottom: 12%;
-    width: 30%;
-  }
-}
+    width: 30%; }
 
 .button {
   background-color: white;
@@ -62,58 +48,45 @@ a {
   box-shadow: 1px 1px 5px 1px #A1988F;
   padding: 20px 24px;
   color: cornflowerblue;
-  text-decoration: none;
-
-  &:hover {
+  text-decoration: none; }
+  .button:hover {
     background-color: cornflowerblue;
-    color: white;
-  }
-}
+    color: white; }
 
 .movie {
   display: flex;
   margin: 3%;
   flex-direction: column;
   width: 20%;
-  height: auto;
-
-  &-detail {
+  height: auto; }
+  .movie-detail {
     display: flex;
     margin: auto;
     flex-direction: column;
     width: 40%;
-    height: auto;
-
-    &-image {
+    height: auto; }
+    .movie-detail-image {
       background-position: center;
       margin: 8% 4%;
       height: 64vh;
       width: auto;
       background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
-
-  &-image {
+      background-repeat: no-repeat; }
+  .movie-image {
     background-position: center;
     background-position: center;
     height: 268px;
-    width: 180px;
-  }
-
-  &s {
+    width: 180px; }
+  .movies {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
     width: 70%;
     flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  &-title,
-  &-link {
+    align-items: flex-start; }
+  .movie-title, .movie-link {
     margin: 8% auto;
-    text-align: center;
-  }
-}
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
