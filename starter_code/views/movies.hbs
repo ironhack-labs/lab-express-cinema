@@ -1,0 +1,14 @@
+<div id="title-movies">
+<h1>Movies</h1>
+<h3>Click on the movie to check the show time</h3>
+</div>
+
+<div id="parent-movies">
+    {{#each movies as |movie|}}
+        <div id="single-movie">
+            <img src="{{this.image}}" alt="{{this.title}}">
+            <h3>{{this.title}}</h3>
+            <a href="/movies/{{this._id}}">See more</a>
+        </div>
+    {{/each}}
+</div>
