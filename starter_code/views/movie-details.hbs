@@ -1,0 +1,22 @@
+<main>
+  <article class="grid">
+    <img src={{this.image}} alt={{this.title}}>
+    <div>
+      <a href="/movies">Go back</a>
+      <h1>{{this.title}}</h1>
+      <h2>Director: {{this.director}}</h2>
+      <h2>Stars</h2>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{this.description}}</p>
+      <p>
+        {{#each showtimes}}
+        <span>{{this}}</span> |
+        {{/each}}
+      </p>
+    </div>
+  </article>
+</main> 
