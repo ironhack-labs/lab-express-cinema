@@ -49,7 +49,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-
+hbs.registerPartials(`${__dirname}/views/partials`)
 
 const index = require('./routes/index');
 app.use('/', index);

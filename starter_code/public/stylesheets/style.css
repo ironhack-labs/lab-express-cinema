@@ -1,59 +1,51 @@
 * {
-  margin: 0;
-}
+  margin: 0; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .principal {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
 
 .title {
   color: white;
   font-size: -webkit-xxx-large;
   max-width: min-content;
-  padding-right: 300px;
-}
+  padding-right: 300px; }
 
 .title button {
   background-color: white;
   border: none;
   border-radius: 25px;
   padding: 3vh 1.8vw;
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .title-movies {
-  margin: 8vh 12vw;
-}
+  margin: 8vh 12vw; }
 
 .movies-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   margin: 6vh 8vw;
-  grid-gap: 25px;
-}
+  grid-gap: 25px; }
 
 .movie-det {
-  display: flex;
-}
+  display: flex; }
 
 .movie-des {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 2vw;
-}
+  margin-left: 2vw; }
+
+/*# sourceMappingURL=style.css.map */

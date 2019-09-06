@@ -1,0 +1,10 @@
+<div class="title-movies">
+  <h2>Ironhack Cinema</h2>
+  <h6>Click on the movie to check the showtimes</h6>
+</div>
+
+<div class="movies-grid">
+  {{#each movies}}
+  {{>moviesPartial this}}
+  {{/each}}
+</div>
