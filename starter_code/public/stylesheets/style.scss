@@ -1,8 +1,98 @@
 body {
-  padding: 50px;
+  padding: 1px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#divsote{
+  background-image: url('/images/cinema.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+#title{
+  
+  font-size: 10em;
+  color: white;
+  margin-bottom: 20px;
+
+}
+
+#titulosbotones{
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  margin-top: 20vh;
+  margin-right: 10vw; 
+  float: right;
+}
+
+
+#check-movies{
+  border-radius: 15px;
+  padding: 15px;
+  background-color: white;
+  color: blue;
+  width: 300px;
+  font-size: 30px;
+
+}
+
+#chingodepelis{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70vw;
+}
+
+#namasuna{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  justify-content: space-between
+}
+
+#namasuna p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#namasuna a {
+  font-size: 14px;
+  text-align: center;
+  color: green
+}
+
+#namasuna img {
+  width: auto;
+  height: 40vh;
+}
+
+#descriptions{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+#descriptions span{
+  width: 50vw;
+  
+}
+
+#tododetails{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#movietitle{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#director{
+  font-weight: bold;
 }
