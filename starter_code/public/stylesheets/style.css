@@ -1,32 +1,27 @@
 body {
   padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-}
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 body {
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-}
+  display: flex; }
 
 .cinema {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 .cinema h1 {
   color: white;
   margin-left: 750px;
-  font-size: 100px;
-}
+  font-size: 100px; }
 
 button {
   padding: 20px 30px 20px 30px;
@@ -34,5 +29,6 @@ button {
   margin-right: 110px;
   margin-top: -40px;
   color: #00b7ff;
-  font-size: 30px;
-}
+  font-size: 30px; }
+
+/*# sourceMappingURL=style.css.map */
