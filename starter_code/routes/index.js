@@ -1,9 +1,9 @@
-const express = require('express');
-const router  = express.Router();
+const express = require('express')
+const router = express.Router()
+const { indexView, moviesList, movieSingle } = require('../controllers/index.controller')
 
-/* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
+router.get('/', indexView)
+router.get('/movies', moviesList)
+router.get('/movie/:id', movieSingle)
 
-module.exports = router;
+module.exports = router
