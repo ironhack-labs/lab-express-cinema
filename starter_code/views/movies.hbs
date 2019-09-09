@@ -1,0 +1,9 @@
+<div class="moviesContainer">
+  {{#each movieList}}
+  <div class="item-wrapper">
+    <img src="{{image}}" style="height:200px;">
+    <p>{{title}}</p>
+    <a href="movie/{{_id}}">see more</a>
+  </div>
+  {{/each}}
+</div>
