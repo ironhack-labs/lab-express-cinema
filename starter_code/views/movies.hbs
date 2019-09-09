@@ -1,0 +1,11 @@
+<h1>Cinema Ironhack</h1>
+<div class='mova'>
+{{#each movies as |movie|}}
+  <br>
+  <img src="{{movie.image}}" alt="">
+  <p>{{movie.title}}</p>
+  <br>
+  <a href="/movie/{{movie.id}}"><button>See more</button></a>
+  <br>
+{{/each}}
+</div>                                                                                                                    
