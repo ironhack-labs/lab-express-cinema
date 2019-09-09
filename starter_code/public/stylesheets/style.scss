@@ -1,8 +1,89 @@
 body {
-  padding: 50px;
+  // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
+
+.home-bg{
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: white;
+
+}
+
+.home-bg a{
+  background-color: white;
+  padding:10px;
+  margin: 30px 0px;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home-text{
+  display: flex;
+  flex-direction: column;
+  padding: 300px 100px 200px 800px;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-evenly;
+  padding: 50px;
+}
+
+.movie-container{
+  padding: 50px;
+  text-align: center;
+}
+
+.movie-container img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.movies-text{
+  padding: 10px;
+}
+
+.movie-details-container{
+  display: flex;
+  padding: 100px;
+}
+
+.text-details {
+  padding:30px;
+  margin: 30px;
+}
+
+.text-details > * {
+  padding:10px;
+
+}
+
+.text-details > ul{
+  padding-left: 20px;
+}
+
+.movie-details-container img{
+  height: 300px;
+  padding-top: 50px;
+}
+
