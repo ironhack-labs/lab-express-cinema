@@ -1,0 +1,44 @@
+<div class="page-container">
+
+  <h2>Detailed Movie Info</h2>
+
+  <div class="detailed-movie-info-container">
+
+    <img src="{{image}}" alt="{{title}}" class="img-movie">
+
+    <div class="detailed-movie-info-tile">
+      <h3>{{title}}</h3>
+    
+      <h4>Director: {{director}}</h4> 
+
+      <h4>Stars</h4> 
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+
+      <p>
+        {{description}}
+      </p>
+
+      
+      <div class="showtimes-list-container">
+        <p><b>Showtimes:</b></p>
+        <ul class="showtimes-list">
+          {{#each showtimes}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      
+      <a href="/movies">Go back to Movies</a>
+    </div>
+
+    
+
+  </div>
+
+
+
+</div>
