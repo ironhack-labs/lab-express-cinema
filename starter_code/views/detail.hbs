@@ -1,0 +1,24 @@
+<!--movies dekhar por See more e click krle ja dekhbo-->
+
+<div class="image">
+  <img src="{{movie.image}}" alt="{{movie.title}}">
+</div>
+<div class="description">
+  <h1>{{movie.title}}</h1>
+  <h2>Director: {{movie.director}}</h2>
+
+  <h3>Stars</h3>
+
+  <ul>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p>{{movie.description}}</p>
+  <p>
+  {{#each movie.showtimes}}
+    <li>{{this}}</li>
+    {{/each}}
+  </p>
+</div>
+
