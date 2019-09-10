@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const movieSchema = new Schema({
+  // TODO: write the schema
+  title:String,
+  director:String,
+  stars:Array,
+  image:String,
+  description:String,
+  showtimes:Array
+});
+
+const Movie = mongoose.model('movies', movieSchema);//movieSchemaというスキーマを使ってmoviesというcollectiveを作る。
+module.exports = Movie;

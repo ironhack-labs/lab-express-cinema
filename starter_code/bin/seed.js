@@ -1,64 +1,7 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie'); // Import of the model Movie from './models/Movie'
 
-# Express Cinema
-
-## Introduction
-
-![image](https://user-images.githubusercontent.com/23629340/36983687-49a3d64e-2093-11e8-8b86-b11813f0cdba.png)
-
-We will create a cinema web page, where we will display the showtimes for some movies!
-
-## Requirements
-
-- Fork this repo
-- Clone this repo
-
-
-## Submission
-
-Upon completion, run the following commands:
-```
-$ git add .
-$ git commit -m "done"
-$ git push origin master
-```
-
-- Create Pull Request so your TAs can check up your work.
-
-
-
-## Instructions
-
-### Iteration 0 | Initialize the project
-
-After forking and cloning the project, you will have to add a `starter_code/.env` file:
-
-```
-PORT=3000
-```
-
-And you have to install all the dependencies:
-
-
-```sh
-$ cd starter_code
-$ npm install
-```
-
-Now you are ready to start 🚀
-
-
-### Iteration 1 | Seed the database
-
-First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:
-- `models/Movie.js` for the Movie model
-- `bin/seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
-
-
-
-```javascript
 // To insert in "bin/seeds.js"
-
 const movies = [
   {
     title : "A Wrinkle in Time",
@@ -125,27 +68,22 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
-```
 
-### Iteration 2 | The Home Page
-
-We need our home page. Simple and beautiful, on the `index.hbs` create the following home page:
-
-![image](https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png)
-
-The `button` should be a link redirecting to the `/movies` route.
-
-### Iteration 3 | List the Movies
-
-On the `/movies` route, we need to list all the movies we have in our database. You should create a `movies.hbs` file, and display a list of all the movies.
-
-![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
-
-### Iteration 4 | Display Movie Info
-
-Finally, you have to create a view to display all the info about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button of the `/movies` view.
-
-![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
-
-
-Happy Coding! :heart:
+//make connection
+mongoose.connect('mongodb://localhost/movielist', { useNewUrlParser: true })
+.then(() => {
+  console.log('Connected to Mongo!');
+  return Movie.deleteMany();
+})
+//insert data
+.then(()=>{ 
+  return Movie.insertMany(movies);
+})
+//close connection
+.then(()=>{
+  mongoose.connection.close();
+  console.log("connection closed");
+})
+.catch(err => {
+  console.error('Error connecting to mongo', err);
+});

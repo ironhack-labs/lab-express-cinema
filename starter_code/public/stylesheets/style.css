@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.cinemaimg{
+  width:80%;
+}
+
+.allmoviecontainer{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+}
+.moviecontainer{
+  display:flex;
+  flex-flow:column nowrap;
+  width:33%;
+  margin-top:20px;
+}
+.moviecontainer img{
+  width:50%;
+  padding-left:25%;
+}
+.moviecontainer h6,.moviecontainer a{
+  text-align: center;
+}
+
+.movieinfoimg{
+  float:left;
+}
+.moviedetailcontainer{
+  margin-left: 200px;
+}
