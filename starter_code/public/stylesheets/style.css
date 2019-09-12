@@ -5,10 +5,7 @@ body {
   background-size: cover;
 }
 
-/* a {
-  color: #00B7FF; } */
-
-.home-container {  
+#home {  
   font: 60px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: left;
   color: white; 
@@ -16,7 +13,7 @@ body {
   justify-content: flex-end;  
   margin-right: 10%;
 }
-
+  
 #button {
   width: 14%;
   height: 55px;
@@ -27,7 +24,5 @@ body {
   top: 53%;
   right: 28.5%;
 }
-
-
 
 /*# sourceMappingURL=style.css.map */
