@@ -7,3 +7,11 @@ router.get('/', (req, res, next) => {
 });
 
 module.exports = router;
+
+
+
+
+router.get('/movies', (req, res, next) => {
+
+  res.render('movies');
+})
