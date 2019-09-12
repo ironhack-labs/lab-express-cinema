@@ -1,70 +1,59 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 body {
   padding: 50px;
   font: 1.4rem "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url('../images/cinema.jpg');
+  background-image: url("../images/cinema.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 100vh;
-}
+  height: 100vh; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 h1 {
   color: white;
   font-size: 9rem;
   font-weight: bold;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .index-container {
   position: absolute;
   left: 60vw;
-  top: 25vh;
-}
+  top: 25vh; }
 
 .btn {
   padding: 1.5rem 3.5rem;
   background-color: white;
   color: #8dabb3;
   text-decoration: none;
-  border-radius: 3rem;
-}
+  border-radius: 3rem; }
 
 .movies {
   background-color: white;
   height: auto;
   width: 100%;
-  padding: 2.5rem;
-}
+  padding: 2.5rem; }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 p {
   margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 .movies-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .each-movie {
   display: flex;
@@ -72,29 +61,26 @@ p {
   justify-content: center;
   align-items: center;
   margin: 2rem;
-  width: 30%;
-}
+  width: 30%; }
 
 h5 {
   font-weight: bold;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 .movie-details-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-}
+  padding: 2rem; }
 
 .movie-details-left {
-  margin-right: 3rem;
-}
+  margin-right: 3rem; }
+
+/*# sourceMappingURL=style.css.map */
