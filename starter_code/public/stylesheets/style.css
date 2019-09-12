@@ -1,14 +1,12 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .home {
   background-image: url("/images/cinema.jpg");
@@ -16,8 +14,7 @@ a {
   background-size: cover;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; }
 
 .container {
   width: 50%;
@@ -25,28 +22,24 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 h1 {
   font-size: 60px;
-  color: white;
-}
+  color: white; }
 
 .button {
   background-color: white;
   color: black;
   margin: 10px 0;
   padding: 20px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 .movies-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
-}
+  list-style: none; }
 
 .movie-preview {
   width: 30%;
@@ -55,43 +48,38 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  padding: 5px;
-}
+  padding: 5px; }
 
 .movie-detail {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
 
-.movie-img{
-  width: 30%;
-}
+.movie-img {
+  width: 30%; }
 
-.movie-info{
+.movie-info {
   width: 60%;
   display: flex;
   flex-direction: column;
-  padding: 5px;
-}
+  padding: 5px; }
 
 h5 {
   font-size: 20px;
-  margin: 10px 0;
-}
+  margin: 10px 0; }
 
 h6 {
   font-size: 16px;
-  margin: 0 0 5px 0;
-}
+  margin: 0 0 5px 0; }
 
-.showtimes{
+.showtimes {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
-  align-items: center;
-}
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */
