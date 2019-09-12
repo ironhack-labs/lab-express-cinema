@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* a {
+  color: #00B7FF; } */
+
+.home-container {  
+  font: 60px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: left;
+  color: white; 
+  display: flex;
+  justify-content: flex-end;  
+  margin-right: 10%;
+}
+
+#button {
+  width: 14%;
+  height: 55px;
+  border-radius: 25px;
+  color: #00B7FF;
+  position: absolute;
+  font-size: 17px;
+  top: 53%;
+  right: 28.5%;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
