@@ -1,0 +1,39 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background {
+  background-image: url("/images/cinema.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.title h1 {
+  font-size: 6em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.title a {
+  color: #669eaf;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 60px;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
+  -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
+  box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
+}
