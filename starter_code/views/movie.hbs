@@ -1,0 +1,18 @@
+<div class="singleMovie container">
+  <div class="left">
+    <img src="{{movie.image}}" alt="Movie poster for {{movie.title}}">
+  </div>
+  <div class="right">
+    <a href="/movies/">go back</a>
+    <h1>{{movie.title}}</h1>
+    <p><h2>Director: {{movie.director}}</h2></p>
+    <h3>Stars</h3>
+      <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul>
+    <p>{{movie.description}}</p>
+    <p>{{movie.showtimes}}</p>
+  </div>
+</div>

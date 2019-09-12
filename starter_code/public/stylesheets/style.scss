@@ -1,8 +1,125 @@
+$smallScreen: 480px;
+
+*,body,html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
+  text-decoration: none;
   color: #00B7FF;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(52, 52, 206);
+    background-color: rgb(221, 221, 221);
+  }
+}
+
+h1, h2, h3, p {
+  margin: 1rem 0;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+.btn {
+  padding: 1rem 1.2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.background {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal {
+  margin-top: 25%;
+  margin-left: 50%;
+  color: #fff;
+  font-size: 2.4rem;
+
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: $smallScreen) {
+    margin-top: 10%;
+      margin-left: 0;
+  }
+}
+
+.movies-container {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  .movie {
+    width: 30%;
+    margin: 2rem 0;
+    text-align: center;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    h2 {
+      margin: .9rem 0 7px;
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: $smallScreen) {
+      width: 100%;
+    }
+  }
+}
+
+.singleMovie {
+  .left {
+    width: 20%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    @media screen and (max-width: $smallScreen) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .right {
+    width: 80%;
+    padding-left: 2rem;
+
+    @media screen and (max-width: $smallScreen) {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
 }
