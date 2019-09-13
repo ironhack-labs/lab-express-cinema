@@ -1,0 +1,14 @@
+h1{
+  font-size: 40px;
+}
+.parent{
+
+}
+.container{
+  padding: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+p{
+  padding: 85px 50px
+}

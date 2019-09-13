@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="stylesheets/movies.css">
+
+<h1>Movies Page</h1>
+
+<div class="parentContainer">
+{{#each moviesToHBS}}
+<h2>{{title}}</h2>
+
+<div class='singleMovie'>
+
+
+<a href = "info/{{_id}}"><img src='{{image}}' width = '50'></a>
+    </div>
+
+{{/each}}
+</div>

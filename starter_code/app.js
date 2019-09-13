@@ -10,6 +10,8 @@ const logger       = require('morgan');
 const path         = require('path');
 
 
+//mongodb+srv://alex:alex@cluster0-ci3y7.mongodb.net/test?retryWrites=true&w=majority
+
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {

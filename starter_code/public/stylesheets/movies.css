@@ -1,0 +1,35 @@
+h1{
+    all: unset;
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center
+}
+
+body{
+    background-image:none;
+    background-color: aliceblue
+}
+
+.parentContainer{
+display: grid;
+justify-content: center
+}
+
+.singleMovie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2{
+font-size: 20px;
+padding: 0 0 20px 0;
+text-align: center
+}
+img{
+height: 100%;
+width: 200px;
+
+
+}
