@@ -3,23 +3,19 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/cinema.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 h1 {
   color: white;
-  font-size: 4em;
-}
-.checkMovies{
+  font-size: 4em; }
+
+.checkMovies {
   margin-left: 800px;
-  margin-top: 200px;
-  
-}
-button{
+  margin-top: 200px; }
+
+button {
   border-radius: 10px;
   padding: 20px 30px;
-  border: 0;
-}
+  border: 0; }
 
-
-
+/*# sourceMappingURL=style.css.map */
