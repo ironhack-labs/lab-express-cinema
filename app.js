@@ -1,17 +1,20 @@
 require("dotenv").config();
 
-const bodyParser = require("body-parser");
+const bodyParser   = require("body-parser");
 const cookieParser = require("cookie-parser");
-const express = require("express");
-const favicon = require("serve-favicon");
-const hbs = require("hbs");
-const mongoose = require("mongoose");
-const logger = require("morgan");
-const path = require("path");
-const dbtitle = "lab-express-cinema";
+const express      = require("express");
+const favicon      = require("serve-favicon");
+const hbs          = require("hbs");
+const mongoose     = require("mongoose");
+const logger       = require("morgan");
+const path         = require("path");
+const dbtitle = 'ironcinema';
 
 mongoose
-  .connect(`mongodb://localhost/${dbtitle}`, { useNewUrlParser: true })
+  .connect(
+    `mongodb+srv://e-narciso:5rP9zU2q8_AP9-r@mycluster-oaf86.mongodb.net/${dbtitle}?retryWrites=true&w=majority`,
+    { useNewUrlParser: true }
+  )
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`

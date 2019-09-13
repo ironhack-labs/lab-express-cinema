@@ -1,7 +1,11 @@
-const mongoose = require('mongoose');
-const Movie = require('../models/Movie');
-const dbtitle = 'lab-express-cinema';
-mongoose.connect(`mongodb://localhost/${dbtitle}`);
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie");
+const dbtitle = "ironcinema";
+
+mongoose.connect(
+  `mongodb+srv://e-narciso:5rP9zU2q8_AP9-r@mycluster-oaf86.mongodb.net/${dbtitle}?retryWrites=true&w=majority`,
+  { useNewUrlParser: true }
+);
 
 Movie.collection.drop();
 
@@ -88,13 +92,13 @@ const movies = [
   }
 ];
 
-Movie.insertMany(movies).then(
-  movies => {
+Movie.insertMany(movies)
+  .then(movies => {
     movies.forEach(movie => {
-      console.log(`${movie.title} added!`)
-    })
+      console.log(`${movie.title} added!`);
+    });
     mongoose.connection.close();
-  }
-).catch(err => {
-  console.error(err);
-})
+  })
+  .catch(err => {
+    console.error(err);
+  });
