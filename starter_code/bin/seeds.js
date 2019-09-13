@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 const dbName = 'ironcinema';
 
-mongoose.connect(`mongodb://localhost/${dbName}`);
+mongoose.connect(`mongodb+srv://neekyo:neekyo@cluster0-ciatq.mongodb.net/test?retryWrites=true&w=majority`);
 
 const movies = [{
     title: "A Wrinkle in Time",

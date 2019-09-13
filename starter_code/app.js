@@ -10,7 +10,7 @@ const logger       = require('morgan');
 const path         = require('path');
 
 mongoose
-  .connect('mongodb://localhost/ironcinema', {useNewUrlParser: true})
+  .connect('mongodb+srv://neekyo:neekyo@cluster0-ciatq.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "ironcinema"`)
   })
