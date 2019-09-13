@@ -7,15 +7,20 @@
         </div>
         <div class="col-6 p-2">
           <h5>{{b.title}}</h5>
-            {{b.director}}
+          <p>
+           <b>Director:</b> {{b.director}}
             </p>
           <p>{{b.description}}</p>
+
+          <b>Starring:</b>
           {{#each b.stars}}
            <li class="m-3">{{this}}</li> 
           {{/each}}
+          <p><b>Show Times:</b>
           {{#each b.showtimes}}
            {{this}} |
           {{/each}}
+          </p>
         </div>
    </div>
  </div>
