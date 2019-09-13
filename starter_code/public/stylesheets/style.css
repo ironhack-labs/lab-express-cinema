@@ -1,81 +1,58 @@
-// * {
-//   all: unset;
-// }
-
 body {
-  // padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .home-container img {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
-
-  z-index: -5;
-}
+  z-index: -5; }
 
 .intro {
   color: white;
   text-align: center;
   margin-top: 200px;
-  padding: 80px;
-}
+  padding: 80px; }
 
-.intro>h1 {
-  font-size: 3rem;
-}
+.intro > h1 {
+  font-size: 3rem; }
 
 .home-container a {
   color: #00B7FF;
   text-decoration: none;
   background-color: white;
   border-radius: 15px;
-  padding: 7px;
-}
+  padding: 7px; }
 
 .movies-container {
-  margin-left: 4rem;
-}
+  margin-left: 4rem; }
 
 .movie {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
 
 .movie-info {
-  margin: 50px;
-}
-
-// img:hover{
-//   transform: (1.2);
-//   }
+  margin: 50px; }
 
 .info-container {
   display: flex;
-  // justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
 
 .movie-image {
-  margin: 5rem;
-}
+  margin: 5rem; }
 
 .movie-text {
-  margin-right: 20rem;
-}
+  margin-right: 20rem; }
 
 .movie-text > ol {
-  list-style: none;
-}
+  list-style: none; }
+
+/*# sourceMappingURL=style.css.map */
