@@ -1,0 +1,14 @@
+body {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+a {
+  color: #00B7FF; }
+
+h1 {
+  font-size: 50px;
+  color: white;
+  justify-content: right; }
+
+/*# sourceMappingURL=style.css.map */
