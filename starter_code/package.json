@@ -24,5 +24,8 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
+  "bin": {
+    "starter-code": "seeds.js"
+  },
   "description": ""
 }
