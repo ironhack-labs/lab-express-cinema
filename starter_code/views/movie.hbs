@@ -1,21 +1,27 @@
 
-{{#with result}}
-  
-  <img src="{{image}}">
-  <h4><a href="/movies">Go back</a></h4>
-  <h1>{{title}}</h1>
-  <h2>Director: {{director}}</h2>
-  
-  <ul>
-    {{#each stars}}
-      <li>{{this}}</li>
-    {{/each}}
-  </ul>
+<div class="container-class">
+  <div class="movie-item">
 
-  <p>{{description}}</p>
+    {{#with result}}
+      
+      <img src="{{image}}">
+      <h4><a href="/movies">Go back</a></h4>
+      <h1>{{title}}</h1>
+      <h2>Director: {{director}}</h2>
+      
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
 
-  {{#each showtimes}}
-    {{this}} |
-  {{/each}}
+      <p>{{description}}</p>
 
-{{/with}}
+      {{#each showtimes}}
+        {{this}} |
+      {{/each}}
+
+    {{/with}}
+
+  </div>
+</div>

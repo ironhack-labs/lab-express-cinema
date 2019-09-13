@@ -1,7 +1,15 @@
 
-<h1>Ironhack Cinema</h1>
-<p>Click on the movie to check the showtimes!</p>
+<div class="movies-container">
+  
+  <div class="movies-title">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+  </div>
+  
+  <div class="movieCards">
+    {{#each result}}
+      {{> moviePartial}}
+    {{/each}}
+  </div>
 
-{{#each result}}
-  {{> moviePartial}}
-{{/each}}
+</div>
