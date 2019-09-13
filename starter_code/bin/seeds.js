@@ -1,3 +1,8 @@
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie'); 
+const dbName = 'ironcinema';
+mongoose.connect(`mongodb://localhost/${dbName}`);
+
 const movies = [
     {
       title : "A Wrinkle in Time",
