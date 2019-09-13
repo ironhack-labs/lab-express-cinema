@@ -1,0 +1,16 @@
+
+
+
+<div>
+    {{#each movies}}
+        <div>
+            <img src={{this.image}}
+            </br>
+            <h3>Title: {{this.title}}</h3>
+            <a href="/movielist/{{_id}}">See More</a>
+        </div>
+        <hr>
+    {{/each}}
+</div>
+     
+{{!-- {{movies}} --}}
