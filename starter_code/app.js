@@ -55,4 +55,16 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
+app.get('/movies',(req,res)=>{
+  Movies.find()
+    
+    .then(allMovies => {
+      res.render("movies", {Movies});
+    });
+
+
+})
+
+
 module.exports = app;
+app.listen(3000)
