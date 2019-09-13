@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Varela Round", Helvetica, Arial, sans-serif;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   height: 100vh;
-  width: 100vw;
+  width: 95vw;
+  background-color: #fffbee;
 }
 
 .background {
@@ -16,7 +20,7 @@ body {
 
 .title {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
 }
 
@@ -33,39 +37,63 @@ body {
   border-radius: 60px;
   font-size: 1.2em;
   text-decoration: none;
-  -webkit-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
-  -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
-  box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
+  -webkit-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.9);
+  box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.9);
 }
 
-.card-img-top{
+.card-img-top {
   width: 50%;
-  -webkit-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.70);
-  -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.70);
-  box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.70);
+  -webkit-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.7);
   border-radius: 20px;
+  transition: all .2s ease-in-out; 
 }
 
-.movies-head{
-  padding:20px;
+.card-img-top:hover { 
+  transform: scale(1.1); 
 }
 
-@media (min-width: 576px){
-.col-sm{
-  flex-grow: 0 !important;
-}}
+.movies-head {
+  padding: 20px;
+}
 
-.selected-movie{
-  padding:100px;
+@media (min-width: 576px) {
+  .col-sm {
+    flex-grow: 0 !important;
+  }
+}
+
+.selected-movie {
+  padding: 75px 0 0 100px;
   align-items: center;
-  border-bottom:1px solid grey;
 }
 
-.movie-img{
+.movie-img {
   width: 250px;
   border-radius: 20px;
 }
 
-.movie-description{
+.movie-description {
   max-width: 50%;
+}
+
+.movie-header {
+  background-color: white;
+  width: 98.83vw;
+  margin: 0;
+  padding: 0;
+  color: #669eaf;
+  padding: 15px 0 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+
+.movie-header a {
+  all:unset;
+}
+
+.movie-info{
+  margin-left: 40px;
 }

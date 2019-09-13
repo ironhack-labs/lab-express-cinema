@@ -7,29 +7,37 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.get('/movies', (req, res, next) => {
+router.get("/movies", (req, res, next) => {
   Movie.find({})
-  .then(movies => {
-    const dataMovies = movies;
-    console.log(dataMovies);
-    res.render("movies.hbs", { dataMovies });
-  })
-  .catch(err => {
-    console.error(err);
-    throw err;
-  });
-})
+    .then(movies => {
+      const dataMovies = movies;
+      console.log(dataMovies);
+      res.render("movies.hbs", { dataMovies });
+    })
+    .catch(err => {
+      console.error(err);
+      throw err;
+    });
+});
 
-router.get('/movie/:id', (req, res, next) => {
+router.get("/movie/:id", (req, res, next) => {
   Movie.findById(req.params.id)
-  .then(data => {
-      data.showtimes = data.showtimes.join(' | ')
-      res.render('movie', { movie: data })
-  })
-  .catch(err => {
-      console.log(`Ran into an error getting movie ${req.id}: ${err}`)
-      res.send(err)
-  })
-})
+    .then(data => {
+      data.showtimes = data.showtimes.join(" | ");
+      res.render("movie", { movie: data });
+    })
+    .catch(err => {
+      console.log(`Ran into an error getting movie ${req.id}: ${err}`);
+      res.send(err);
+    });
+});
+
+// Async/Await syntax
+// router.get("/movie/:id", async (req, res, next) => {
+//   id = req.params.id;
+//   movie = await Movie.findById(id);
+//   res.render('movie', { movie })
+// });
+
 
 module.exports = router;

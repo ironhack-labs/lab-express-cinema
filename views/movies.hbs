@@ -3,18 +3,21 @@
   <h6>Click on the movie to check the showtimes!</h6>
 </div>
 <div class="row">
-{{#each dataMovies}}
-<div class="col-md-4 artist mx-auto d-block text-center">
+  {{#each dataMovies}}
+  <div class="col-md-3 artist mx-auto d-block text-center">
+    <a href="/movie/{{ this.id }}">
       <img
         class="card-img-top mx-auto d-block"
-        src='{{ this.image }}'
+        src="{{ this.image }}"
         alt="Card image cap"
         onerror="if (this.src != 'https://cdn.sstatic.net/Sites/stackoverflow/img/404.svg') this.src = 'https://cdn.sstatic.net/Sites/stackoverflow/img/404.svg';"
-      />
-      <div class="card-body">
-        <h6 class="card-title"><b>{{ this.title }}</b></h6>
-  <a href="/movie/{{this.id}}" class='btn btn-link'>See More</a>
-      </div>
+    /></a>
+    <div class="card-body">
+      <h6 class="card-title">
+        <b>{{ this.title }}</b>
+      </h6>
+      <a href="/movie/{{ this.id }}" class="btn btn-link">See More</a>
     </div>
-{{/each}}
   </div>
+  {{/each}}
+</div>
