@@ -1,5 +1,7 @@
 <ul>
   {{#each movies}}
-    <button><a href="/movies/{{_id}}" style="none"><li>{{title}} see more</li></a></button>
+    {{title}}
+    <img src={{image}} width="200"/>
+    <li><button><a href="/movies/{{_id}}" style="none"><li>see more</li></a></button>
   {{/each}}
 </ul>
