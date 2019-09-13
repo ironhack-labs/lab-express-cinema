@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/cinema', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -45,7 +45,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
-
+const Movies = require("./models/Movie");
+hbs.registerPartials(__dirname + '/views/partials');
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
@@ -53,6 +54,20 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.get('/', (req, res, next) => {
+  res.render('index');
+});
+
+app.get('/movies', (req, res) => 
+   Movies.find({}).then( movies => {
+     console.log(movies)
+     res.render('movies', { movies });
+   }
+ ));
+
+  
+
 
 
 module.exports = app;
