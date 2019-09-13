@@ -1,0 +1,29 @@
+<!-- selected-movie.hbs -->
+<div class="row justify-content-center selected-movie">
+  <div class="col-sm">
+    <img
+      class="movie-img"
+      src={{movie.image}}
+    />
+</div>
+<div class='col-lg'>
+  <a href="/movies">Go Back</a>
+  <br>
+  <br>
+    <div class="content-heading"><h4><b>{{movie.title}}</b></h4></div>
+    <h6 class="content-tagline"><b>Director: {{movie.director}}</b></h6>
+    <br>
+<p><b>Starring:</b></p>
+<ul>
+{{#each movie.stars}}
+           <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    <p class="movie-description">
+      {{movie.description}}
+    </p>
+    <br>
+        <h6>Showtimes: </h6><span>{{movie.showtimes}}</span>
+  </div>
+  </div>
+</div>

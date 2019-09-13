@@ -37,3 +37,34 @@ body {
   -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
   box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.90);
 }
+
+.card-img-top{
+  width: 50%;
+  -webkit-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.70);
+  -moz-box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.70);
+  box-shadow: 10px 11px 5px -10px rgba(0, 0, 0, 0.70);
+  border-radius: 20px;
+}
+
+.movies-head{
+  padding:20px;
+}
+
+@media (min-width: 576px){
+.col-sm{
+  flex-grow: 0 !important;
+}}
+
+.selected-movie{
+  padding:100px;
+  align-items: center;
+  border-bottom:1px solid grey;
+}
+
+.movie-img{
+  width: 250px;
+}
+
+.movie-description{
+  max-width: 50%;
+}

@@ -1,13 +1,10 @@
-<header>
-  <div class="row justify-content-between page-header">
-    <div class="col-12 header-tracks">
-        Artists Matching Your Query
-    </div>
-  </div>
-</header>
+<div class="movies-head">
+  <h3><b>Ironhack Cinema</b></h3>
+  <h6>Click on the movie to check the showtimes!</h6>
+</div>
 <div class="row">
 {{#each dataMovies}}
-<div class="col-md-4 artist mx-auto d-block">
+<div class="col-md-4 artist mx-auto d-block text-center">
       <img
         class="card-img-top mx-auto d-block"
         src='{{ this.image }}'
@@ -15,8 +12,8 @@
         onerror="if (this.src != 'https://cdn.sstatic.net/Sites/stackoverflow/img/404.svg') this.src = 'https://cdn.sstatic.net/Sites/stackoverflow/img/404.svg';"
       />
       <div class="card-body">
-        <h4 class="card-title"><b>{{ this.title }}</b></h4>
-  <a href="/albums/{{this.id}}" class='btn btn-primary'>View Albums</a>
+        <h6 class="card-title"><b>{{ this.title }}</b></h6>
+  <a href="/movie/{{this.id}}" class='btn btn-link'>See More</a>
       </div>
     </div>
 {{/each}}
