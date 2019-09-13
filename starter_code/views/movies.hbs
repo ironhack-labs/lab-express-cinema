@@ -1,7 +1,13 @@
-<h3>Ironhack Cinema</h3>
-<p>Click on the movie to check the showtimes!<p>
-<div id="movies">
-  {{#each movies}}
-  {{> movie this}}
-  {{/each}}
-</div>
+<h3 class="tabbed">Ironhack Cinema</h3>
+<p class="tabbed">Click on the movie to check the showtimes!<p>
+    <div id="movies">
+      {{#each movies}}
+      <div class="padding">
+        <img src="{{image}}">
+        <p>{{title}}</p>
+        <div class="link">
+          <a href="/movie/{{_id}}"> See More </a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
