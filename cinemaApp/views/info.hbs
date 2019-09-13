@@ -1,22 +1,21 @@
  <div class="container">
    <div class="row">
-    {{#each b}}
+
+   
          <div class="col-6 p-1">
-          <img class="mx-auto d-block" src="{{image}}">
+          <img class="mx-auto d-block" src="{{b.image}}">
         </div>
         <div class="col-6 p-2">
-          <h5>{{title}}</h5>
-          <p>
-            {{director}}
+          <h5>{{b.title}}</h5>
+            {{b.director}}
             </p>
-          <p>{{description}}</p>
-          {{#each stars}}
+          <p>{{b.description}}</p>
+          {{#each b.stars}}
            <li class="m-3">{{this}}</li> 
           {{/each}}
-          {{#each showtimes}}
+          {{#each b.showtimes}}
            {{this}} |
           {{/each}}
         </div>
-      {{/each}}
    </div>
  </div>
