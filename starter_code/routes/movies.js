@@ -16,9 +16,9 @@ router.get('/movies', (req, res, next) => {
 
 router.get('/movies/:moviesId', (req, res, next) => {
   Movies.findById(req.params.moviesId)
-  .then(function(data) {
-    console.log('Movies list ===>', data);
-      res.render('moviesInfo', {movies: data.body.movies});
+  .then(function(movies) {
+    console.log('Movies list ===>', movies);
+      res.render('movieInfo', {movies: movies});
   }, function(err) {
     console.error(err);
   });
