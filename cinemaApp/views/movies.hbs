@@ -1,0 +1,12 @@
+
+<div class="container">
+  <div class="row">
+    {{#each films}}
+      <div class="col-4 p-2">
+        <img class="img-thumbnail img-fluid mx-auto d-block" src="{{image}}">
+        <h5 class="text-center">{{title}}</h5>
+        <a  class="viewMovie btn btn-sm btn-dark d-block mx-auto " href="/info/{{_id}}">Movie Info</a>
+      </div>
+    {{/each}}
+  </div>
+</div>
