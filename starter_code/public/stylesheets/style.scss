@@ -8,31 +8,60 @@ a {
 }
 
 body {
-  background-image: url(../images/cinema.jpg);
-  background-repeat: no-repeat;
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+#main {
+  background-image: url('../images/cinema.jpg');
+  height: 100vh;
+  width: auto;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
 }
 
-.cinema {
+#movielist {
+  padding: 0 50px;
+}
+
+#movielist h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#movies {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#moviecard {
+  width: 250px;
+  height: 300px;
+  margin: 50px 80px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  align-items: flex-end;
+  align-content: center;
+  align-items: center;
 }
 
-.cinema h1 {
-  color: white;
-  margin-left: 750px;
-  font-size: 100px;
+#details-card {
+  display: flex;
+  flex-direction: row;
 }
 
-button {
-  padding: 20px 30px 20px 30px;
-  border-radius: 30%;
-  margin-right: 110px;
-  margin-top: -40px;
-  color: #00b7ff;
-  font-size: 30px;
+#moviedetail {
+  width: 600px;
+  margin: 0 50px;
 }
