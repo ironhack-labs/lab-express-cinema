@@ -1,13 +1,10 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
-
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px;
-  padding: 0px;
- }
+  padding: 0px; }
 
 p {
-  margin: 0px; 
-}
+  margin: 0px; }
 
 .index-container {
   background-image: url("../images/cinema.jpg");
@@ -17,53 +14,43 @@ p {
   height: 100vh;
   width: 100%;
   color: white;
-  font-size: 32pt; 
-}
+  font-size: 32pt; }
 
 .welcome-container {
   float: right;
-  padding: 10px 65px 0px 0px; 
-}
-  .welcome-container .check-movies {
-    color: white;
-    text-decoration: none;
-    width: 200px;
-    height: 55px;
-    border-radius: 35px; 
-  }
-  .welcome-container .check-movies a {
-    text-decoration: none;
-    font-size: 13pt;
-    text-align: center;
-    justify-content: center;
-    color: #52a396;
-    padding: 13px;
-    display: flex; 
-  }
+  padding: 10px 65px 0px 0px; }
 
-  .check-movies {
-    color: white;
-    text-decoration: none;
-    width: 200px;
-    height: 55px;
-    // margin-top: 20px;
-    border-radius: 35px;
-  }
-  
-  .check-movies a {
-    text-decoration: none;
-    font-size: 13pt;
-    text-align: center;
-    justify-content: center;
-    color: #52a396;
-    padding: 13px;
-    display: flex;
-  }
-    // display: flex;
-    // align-items: center;
-    // flex-direction:;
-    // align-content: space-between;
+.welcome-container .check-movies {
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  height: 55px;
+  border-radius: 35px; }
 
-  a {
-    color: #00B7FF;
-  }
+.welcome-container .check-movies a {
+  text-decoration: none;
+  font-size: 13pt;
+  text-align: center;
+  justify-content: center;
+  color: #52a396;
+  padding: 13px;
+  display: flex; }
+
+.check-movies {
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  height: 55px;
+  border-radius: 35px; }
+
+.check-movies a {
+  text-decoration: none;
+  font-size: 13pt;
+  text-align: center;
+  justify-content: center;
+  color: #52a396;
+  padding: 13px;
+  display: flex; }
+
+a {
+  color: #00B7FF; }

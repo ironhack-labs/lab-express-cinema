@@ -9,8 +9,10 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+// .connect('mongodb+srv://elba:elba@cluster0-6floo.azure.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
+
 mongoose
-  .connect('mongodb+srv://elba:elba@cluster0-6floo.azure.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
+  .connect(process.env.MONGODB_URI, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
