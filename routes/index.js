@@ -1,6 +1,6 @@
 const express = require("express");
-const router = express.Router();
-const Movie = require("../models/Movie");
+const router  = express.Router();
+const Movie   = require("../models/Movie");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
