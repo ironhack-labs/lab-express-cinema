@@ -63,6 +63,7 @@ body {
 
 .movie-img{
   width: 250px;
+  border-radius: 20px;
 }
 
 .movie-description{
