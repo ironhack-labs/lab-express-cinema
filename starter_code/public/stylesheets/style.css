@@ -93,4 +93,11 @@ ul {
       width: 100%;
       padding-left: 0; } }
 
+.singleMovie .showtimes span {
+  padding-right: 5px;
+  border-right: 1px solid #1b1b1b; }
+  .singleMovie .showtimes span:last-child {
+    padding-right: 0;
+    border-right: 0; }
+
 /*# sourceMappingURL=style.css.map */

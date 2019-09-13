@@ -13,6 +13,10 @@
       {{/each}}
       </ul>
     <p>{{movie.description}}</p>
-    <p>{{movie.showtimes}}</p>
+    <p class="showtimes">
+      {{#each movie.showtimes}}
+        <span>{{this}}</span>
+      {{/each}}
+    </p>
   </div>
 </div>
