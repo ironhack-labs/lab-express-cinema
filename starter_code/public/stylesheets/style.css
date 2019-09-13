@@ -97,9 +97,26 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 50%;
   margin: 20px;
   padding: 60px;
   background-color: rgba(245, 245, 220, 0.513); }
+
+.movie-item h4 {
+  padding: 10px 60px;
+  background-color: #a02727;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  margin: 20px 0; }
+
+.movie-item a {
+  text-decoration: none;
+  color: beige; }
+
+.movie-item h2 {
+  margin: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */
