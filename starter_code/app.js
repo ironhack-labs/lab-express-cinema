@@ -8,10 +8,11 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const dbName = 'ironcinema';
 
 
 mongoose
-  .connect('mongodb://localhost/ironcinema', {useNewUrlParser: true})
+  .connect(`mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@justlask-1n3ac.mongodb.net/${dbName}?retryWrites=true&w=majority`, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "ironcinema"`)
   })

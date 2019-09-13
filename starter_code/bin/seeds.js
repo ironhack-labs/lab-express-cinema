@@ -1,7 +1,9 @@
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie'); // Import of the model Recipe from './models/Recipe'
 const dbName = 'ironcinema';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+mongoose.connect(`mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@justlask-1n3ac.mongodb.net/${dbName}?retryWrites=true&w=majority`);
 
 const movies = [
   {
