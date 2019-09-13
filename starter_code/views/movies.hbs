@@ -1,0 +1,9 @@
+<ul class="all-movies">
+    {{#each allMovies}}
+    <li>
+      <img src={{image}}>
+      <p>{{title}}</p>
+      <a href="{{../host}}/movie/{{_id}}">See more</a>
+    </li>
+    {{/each}}
+</ul>

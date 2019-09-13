@@ -8,10 +8,11 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const Movies = require("./models/Movies");
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/cinema', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -54,5 +55,28 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+app.get("/", (req, res) => {
+    res.render("index");
+});
+
+app.get("/movies", (req, res) => {
+  Movies.find()
+  .select({ title: 1, image: 1})
+  .then(allMovies => {
+    res.render("movies", {
+      allMovies
+    });
+  });
+});
+
+app.get("/movie/:id", (req, res) => {
+  Movies.findById(req.params.id).then(oneMovie => {
+    res.render("movie-detail", { oneMovie, host: process.env.HOST });
+  });
+});
+
 
 module.exports = app;
+app.listen(process.env.PORT, () => {
+  console.log(`Listening on port ${process.env.PORT}`);
+});
