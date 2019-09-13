@@ -12,7 +12,7 @@ const dbtitle = 'ironcinema';
 
 mongoose
   .connect(
-    `mongodb+srv://e-narciso:5rP9zU2q8_AP9-r@mycluster-oaf86.mongodb.net/${dbtitle}?retryWrites=true&w=majority`,
+    `mongodb+srv://e-narciso:5rP9zU2q8_AP9-r@mycluster-oaf86.mongodb.net/test?retryWrites=true&w=majority`,
     { useNewUrlParser: true }
   )
   .then(x => {
