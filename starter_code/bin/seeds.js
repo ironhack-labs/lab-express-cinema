@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie'); // Import of the model Recipe from './models/Recipe'
-
+const dbName = 'ironcinema';
+mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
   {
@@ -74,6 +75,7 @@ Movie.insertMany(movies).then(movies => {
   movies.forEach(movie => {
     console.log(movie.title)
   })
+  moongoose.connection.close();
  }).catch(error =>{
    console.log(error);
- })
+ });

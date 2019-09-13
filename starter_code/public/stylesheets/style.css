@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 * {
+  font-family: 'Poppins';
+}
+
+body {
   padding: 0;
   margin: 0;
+  background-color: #f7f7f7;
 }
 a {
   color: #00B7FF; 
+}
+
+
+header {
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #00B7FF;
+  padding: 10px 0 10px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+}
+
+header a{
+  font-size: 40px;
+  text-decoration: none;
 }
 
   #hero {
@@ -20,9 +44,9 @@ a {
   }
 
 #hero div {
-  padding-top: 100px;
-  font-size: 58px;
-  width: 40vw;
+  padding-top: 50px;
+  font-size: 48px;
+  width: 50vw;
 }
 
 #hero div a {
@@ -31,4 +55,52 @@ a {
   font-size: 16px;
   border-radius: 6px;
   text-decoration: none;
+  margin-left: 50px;
+}
+
+.wrapper {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie div {
+  margin: 25px;
+}
+
+.movie img,
+.single img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.single {
+  margin: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.single a {
+  font-size: 16px;
+}
+
+#info {
+  width: 50vw;
+  height: 100%;
+}
+
+ol li {
+  display: inline;
 }
