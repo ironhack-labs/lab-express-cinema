@@ -10,7 +10,7 @@ const logger       = require('morgan');
 const path         = require('path');
 
 mongoose
-  .connect('mongodb://localhost/cinemaApp', {useNewUrlParser: true})
+  .connect('mongodb+srv://elba:elba@cluster0-6floo.azure.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })

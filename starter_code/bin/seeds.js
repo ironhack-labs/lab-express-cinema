@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 // const Schema = mongoose.Schema;
 const Movies = require('../models/Movies');
 
-const dbName = 'cinemaApp';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+// const dbName = 'cinemaApp';
+mongoose.connect(`mongodb+srv://elba:elba@cluster0-6floo.azure.mongodb.net/test?retryWrites=true&w=majority`);
 
 const movies = [
   {
