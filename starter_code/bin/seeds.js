@@ -2,11 +2,11 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.js')
 const dbtitle = 'lab-express-cinema';
-mongoose.connect(`mongodb://localhost/${dbtitle}`);
+mongoose.connect(`mongodb+srv://cole:cole@cluster0-ojg2o.mongodb.net/test?retryWrites=true&w=majority`);
 
 Movie.collection.drop();
 
-const Movie = [
+const movies = [
     {
       title : "A Wrinkle in Time",
       director: "Ava DuVernay",
@@ -75,14 +75,15 @@ const Movie = [
   
   module.exports = Movie;
 
-  Movie.insertMany(Movie)
+  Movie.insertMany(movies)
   .then(Movie => {
-    Movie.forEach(Movie => {
+    movies.forEach(Movie => {
       console.log(`${Movie.title} added!`)
     })
-    Mongoose.connection.close();
   })
   .catch( error => {
     console.log(error)
   })
   console.log(Movie)
+
+  // mongoose.connection.close();
