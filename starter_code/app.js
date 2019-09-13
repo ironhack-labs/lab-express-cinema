@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/lab-express-cinema', {useNewUrlParser: true})
+  .connect(`mongodb+srv://Jennifer:Jennifer@cluster0-ianha.mongodb.net/test?retryWrites=true&w=majority`, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
