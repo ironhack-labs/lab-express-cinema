@@ -3,7 +3,8 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 const dbName = 'lab-express-cinema';
-mongoose.connect(`mongodb+srv://Jennifer:Jennifer@cluster0-ianha.mongodb.net/test?retryWrites=true&w=majority`);
+mongoose.connect(process.env.MONGODB_URI);
+//mongoose.connect(`mongodb+srv://Jennifer:Jennifer@cluster0-ianha.mongodb.net/test?retryWrites=true&w=majority`);
 
 
 const movies = [
