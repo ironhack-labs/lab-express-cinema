@@ -10,7 +10,7 @@ const logger       = require('morgan');
 const path         = require('path');
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/cinemaApp', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -55,8 +55,5 @@ app.use('/', index);
 
 const movies = require('./routes/movies');
 app.use('/', movies);
-
-
-
 
 module.exports = app;

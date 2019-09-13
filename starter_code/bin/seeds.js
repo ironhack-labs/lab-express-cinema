@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // const Schema = mongoose.Schema;
 const Movies = require('../models/Movies');
 
-const dbName = 'movies-cinema';
+const dbName = 'cinemaApp';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
@@ -72,6 +72,12 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+// Movies.deleteMany({})
+//   .then(res => {
+//     console.log("Delete Sucessful", res);
+//   })
+//   .catch(err => console.error(err))
 
 Movies.insertMany(movies)
 .then (movies => {
