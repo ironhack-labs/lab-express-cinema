@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
-const database = 'mongodb://localhost/cinemaApp'
+const database = 'mongodb+srv://ironhack:ironhack@lab-express-cinema-2q2z1.mongodb.net/test?retryWrites=true&w=majority'
 
 const movies = [
   {
