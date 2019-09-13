@@ -12,16 +12,17 @@ router.get('/movies', (req, res, next) => {
   .catch(err => {
     console.log(err);
   })
-})
+});
 
 router.get('/movies/:moviesId', (req, res, next) => {
   Movies.findById(req.params.moviesId)
-  .then(function(movies) {
+  .then(movies => {
     console.log('Movies list ===>', movies);
       res.render('movieInfo', {movies: movies});
-  }, function(err) {
+  })
+  .catch(err => {
     console.error(err);
-  });
+  })
 });
 
 module.exports = router;
