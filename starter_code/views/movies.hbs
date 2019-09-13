@@ -1,0 +1,14 @@
+<div class="container">
+  <a href="/" class="go-back" data-fadein>Home</a>
+  <ul class="movies">
+    {{#each listOfMovies}}
+    <li class="movie" data-scale>
+      <div>
+        <img src="{{image}}" alt="" class="movie__image">
+        <h2 class="movie__title">{{title}}</h2>
+        <a href="/movie/{{_id}}" class="movie__link">See more</a>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>

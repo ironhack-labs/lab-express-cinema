@@ -1,0 +1,37 @@
+<div class="container">
+  <a href="/" class="go-back" data-fadein>Home</a>
+  <a href="/movies" class="go-back" data-fadein>Movies</a>
+  <div class="movie-card">
+    <div class="movie-card__image-container">
+      <img src="{{movieFound.image}}" alt="{{movieFound.title}}"
+        class="movie-card__image" data-fadein>
+    </div>
+    <div class="movie-card__info" data-fadein>
+      <h2 class="movie-card__title" data-fadein>{{movieFound.title}}</h2>
+      <dl class="movie-card__information" data-fadein>
+        <div data-fadein>
+          <dt>Director</dt>
+          <dd>{{movieFound.director}}</dd>
+        </div>
+        <div data-fadein>
+          <dt>Stars</dt>
+          {{#each movieFound.stars}}
+          <dd>
+            {{this}}
+          </dd>
+          {{/each}}
+        </div>
+        <div data-fadein>
+          <dt>Description</dt>
+          <dd>{{movieFound.description}}</dd>
+        </div>
+        <div class="inline" data-fadein>
+          <dt>Showtimes</dt>
+          {{#each movieFound.showtimes}}
+          <dd>{{this}}</dd>
+          {{/each}}
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>

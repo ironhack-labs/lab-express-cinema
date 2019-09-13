@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #232323;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.go-back {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.go-back:first-of-type::before {
+  content: "/";
+  margin-right: 1rem;
+}
+
+.go-back:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.go-back:not(:last-of-type)::after {
+  content: "/";
+  margin-left: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.index-container {
+  background-image: url("/images/cinema.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.index-content {
+  position: absolute;
+  max-width: 700px;
+  right: 2rem;
+  top: 2rem;
+}
+
+.main-title {
+  color: #FFFFFF;
+  font-size: 7rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: 150px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.movies {
+  margin: 0 0 3rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .movies {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .movies {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.movie {
+  text-align: center;
+  padding: 2rem;
+  background-color: #343434;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.movie__image {
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.movie__title {
+  font-size: 1rem;
+  margin-bottom: .75rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+[data-fadein] {
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+[data-scale] {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.scale {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.movie-card {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  color: #FFFFFF;
+  background-color: #343434;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  .movie-card {
+    -ms-grid-columns: 200px 1fr;
+        grid-template-columns: 200px 1fr;
+  }
+}
+
+.movie-card__image {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .movie-card__image {
+    margin-bottom: 0;
+  }
+}
+
+.movie-card__title {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #EEEEEE44;
+}
+
+.movie-card__information div {
+  margin-bottom: 1rem;
+}
+
+.movie-card__information dt {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.movie-card__information dd {
+  color: #AAAAAA;
+  line-height: 1.25;
+}
+
+.movie-card__information dd:not(:last-child) {
+  margin-bottom: .25rem;
+}
+
+.movie-card__information .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.movie-card__information .inline dt {
+  width: 100%;
+}
+
+.movie-card__information .inline dd:not(:last-child) {
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */
