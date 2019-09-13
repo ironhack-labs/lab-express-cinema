@@ -18,6 +18,7 @@ router.get('/movies', (req, res, next) => {
 router.get('/movie/:id', (req, res, next) => {
   Movie.findById(req.params.id).then(movie => {
       console.log(movie)
+      movie.showtimes = movie.showtimes.join(' | ')
       res.render('movie', {movie})
   }).catch(error => console.log(error))
 })
