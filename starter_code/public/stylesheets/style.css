@@ -9,6 +9,8 @@ p {
 .index-container {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100%;
   color: white;
@@ -17,20 +19,38 @@ p {
 .welcome-container {
   float: right;
   padding: 10px 65px 0px 0px; }
-  .welcome-container .check-movies {
-    color: white;
-    text-decoration: none;
-    width: 200px;
-    height: 55px;
-    border-radius: 35px; }
-  .welcome-container .check-movies a {
-    text-decoration: none;
-    font-size: 13pt;
-    text-align: center;
-    justify-content: center;
-    color: #52a396;
-    padding: 13px;
-    display: flex; }
+
+.welcome-container .check-movies {
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  height: 55px;
+  border-radius: 35px; }
+
+.welcome-container .check-movies a {
+  text-decoration: none;
+  font-size: 13pt;
+  text-align: center;
+  justify-content: center;
+  color: #52a396;
+  padding: 13px;
+  display: flex; }
+
+.check-movies {
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  height: 55px;
+  border-radius: 35px; }
+
+.check-movies a {
+  text-decoration: none;
+  font-size: 13pt;
+  text-align: center;
+  justify-content: center;
+  color: #52a396;
+  padding: 13px;
+  display: flex; }
 
 a {
   color: #00B7FF; }

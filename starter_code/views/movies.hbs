@@ -1,7 +1,11 @@
-<ul>
+<div class="movie-card">
+  <div class="movies-info">
+  <ul>
   {{#each movies}}
-    {{title}}
     <img src={{image}} width="200"/>
-    <li><button><a href="/movies/{{_id}}" style="none"><li>see more</li></a></button>
+    {{title}}
+    <button><a href="/movies/{{_id}}" style="none">See more</a></button>
   {{/each}}
 </ul>
+</div>
+</div>
