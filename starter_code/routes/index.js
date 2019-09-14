@@ -9,10 +9,19 @@ router.get('/', (req, res, next) => {
 	res.render('index');
 });
 
-router.get('/movies', async (req, res, next) => {
-	const movieArr = await Movie.find({});
-	console.log(movieArr);
-	res.render('movies', movieArr);
+router.get('/movies', (req, res, next) => {
+	Movie.find({})
+		.then((allTheMoviesFromTheDB) => {
+			//found all the movies in the database
+			res.render('movies.hbs', { moviesToHBS: allTheMoviesFromTheDB }); //redner
+		})
+		.catch((err) => console.error(err));
+});
+
+router.get('/info/:id', async (req, res, next) => {
+	let id = req.params.id;
+	let movie = await Movie.findById(id);
+	res.render('movie', { movie });
 });
 
 module.exports = router;
