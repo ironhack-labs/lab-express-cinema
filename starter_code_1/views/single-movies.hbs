@@ -1,0 +1,22 @@
+<div id="parent-content">
+    <div id="single-image">
+        <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div id="single-content">
+      <a href="/movies">Go back</a>
+      <h1>{{this.title}}</h1>
+      <h2>Director: {{this.director}}</h2>
+      <h2>Stars</h2>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{this.description}}</p>
+      <p>
+        {{#each showtimes}}
+        <span>{{this}}</span> |
+        {{/each}}
+      </p>
+    </div>
+</div> 
