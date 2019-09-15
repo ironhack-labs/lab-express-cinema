@@ -1,7 +1,6 @@
 require('dotenv').config()
 
 const bodyParser = require('body-parser')
-const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const express = require('express')
 const favicon = require('serve-favicon')
@@ -10,19 +9,8 @@ const mongoose = require('mongoose')
 const logger = require('morgan')
 const path = require('path')
 
-const express = require('express')
-const app = express()
-const favicon = require('serve-favicon')
-const hbs = require('hbs')
-const mongoose = require('mongoose')
-const logger = require('morgan')
-const path = require('path')
-
 mongoose
-  .connect('mongodb://localhost/starter-code', { useNewUrlParser: true })
-  .connect('mongodb://localhost/starter-code', {
-    useNewUrlParser: true
-  })
+  .connect('mongodb://localhost/movies', { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })

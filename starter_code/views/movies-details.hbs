@@ -1,18 +1,16 @@
-<div id="details-card">
-  <div id="imgdetail"><img src="{{image}}" alt="{{title}}"></div>
-  <div id="moviedetail">
-    <a href="/movies">Go Back</a>
-    <br>
-    <h2>{{title}}</h2>
-    <h3>Stars</h3>
-    <ul>
-      {{#each stars}}
-      <li>{{this}}</li>
-      {{/each}}
-    </ul>
-    <p>{{description}}</p>
-    {{#each showtimes}}
-    <span>{{this}}|</span>
-    {{/each}}
-  </div>
-</div>
+<img src="{{movie.image}}" alt="">
+<h3>{{movie.title}}</h3>
+<h4>Director: {{movie.director}}</h4>
+<h4>Stars</h4>
+<ul>
+  {{#each movie.stars}}
+  <li>{{ this }}</li>
+  {{/each}}
+</ul>
+<p>{{movie.description}}</p>
+{{#each movie.showtimes}}
+<span>{{ this }} |</span>
+{{/each}}
+<a href="/movies">
+  <p>Back</p>
+</a>

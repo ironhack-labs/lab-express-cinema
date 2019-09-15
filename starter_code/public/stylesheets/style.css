@@ -5,30 +5,66 @@ body {
 a {
   color: #00b7ff; }
 
-body {
-  background-image: url(../images/cinema.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex; }
+h1 {
+  font-size: 5rem; }
 
-.cinema {
+#start-logo {
+  margin-left: 40vw; }
+
+.wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  min-height: 100vh;
+  justify-content: center; }
+
+.wrapper > * {
+  padding: 20px; }
+
+.pagina-principal {
+  flex-grow: 1; }
+
+:root {
+  --main-white-color: white;
+  --main-purple-color: #9e89b8; }
+
+.pagina-principal {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end; }
+  min-height: 350px;
+  background: url("/images/cinema.jpg") no-repeat center/cover;
+  background-blend-mode: luminosity;
+  color: var(--main-white-color); }
 
-.cinema h1 {
-  color: white;
-  margin-left: 750px;
-  font-size: 100px; }
+.pagina-principal div {
+  max-width: 500px; }
 
-button {
-  padding: 20px 30px 20px 30px;
-  border-radius: 30%;
-  margin-right: 110px;
-  margin-top: -40px;
-  color: #00b7ff;
-  font-size: 30px; }
+@media screen and (min-width: 768px) {
+  .pagina-principal {
+    padding-left: 90px; } }
+
+.boton {
+  background-color: white;
+  border: none;
+  color: darkblue;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px; }
+
+#movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; }
+
+#movie-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */
