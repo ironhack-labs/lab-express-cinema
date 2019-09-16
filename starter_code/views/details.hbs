@@ -1,0 +1,27 @@
+<div class="flex">
+  <div class="movieTitle">
+    <img src="{{movie.image}}" />
+  </div>
+
+  <div class="movieTimes">
+    <h1> {{movie.title}} </h1>
+    <h2> {{ movie.director}} </h2>
+    <p> Stars </p>
+    <ul>
+      {{#each movie.stars}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+
+    {{#each movie.showtimes}}
+    <span> {{this}} </span>
+    {{/each}}
+
+
+    <p>{{movie.description}}</p>
+
+  </div>
+
+</div>

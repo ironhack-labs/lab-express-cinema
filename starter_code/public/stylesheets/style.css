@@ -13,9 +13,60 @@ h1 {
   margin-left: 800px;
   margin-top: 200px; }
 
-button {
+a {
   border-radius: 10px;
   padding: 20px 30px;
-  border: 0; }
+  border: 0;
+  background-color: white;
+  text-decoration: none;
+  color: lightblue;
+  font-weight: 600; }
+
+a:hover {
+  cursor: pointer; }
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.images {
+  margin-left: 100px; }
+
+.movies img {
+  border: solid black 2px;
+  transition: all 1s ease-in-out; }
+
+.movies img:hover {
+  width: 220px;
+  cursor: pointer; }
+
+.flex {
+  display: flex;
+  flex-direction: row; }
+
+.movieTitle img {
+  width: 400px;
+  height: auto; }
+
+.movieTimes {
+  margin-left: 200px; }
+
+span {
+  border-right: 1px solid black;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: white; }
+
+p {
+  margin-top: 20px;
+  width: 400px;
+  color: white; }
+
+h2 {
+  color: white; }
+
+li {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

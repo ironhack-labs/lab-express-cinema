@@ -2,7 +2,8 @@
 const Movie = require('../models/Movie')
 const dbtitle = 'lab-cinema-generator';
 const mongoose     = require('mongoose');
-mongoose.connect(`mongodb://localhost/${dbtitle}`);
+
+mongoose.connect(`mongodb+srv://cinema_user:cinema_pw@cluster0-yyvow.mongodb.net/test?retryWrites=true&w=majority`);
 
 Movie.collection.drop();
 
