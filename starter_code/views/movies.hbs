@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="container">
+    {{#each data as |movie|}}
+    <div class="d-flex flex-column text-center mr-5 ml-5 mt-5">
+      <img src="{{movie.image}}" alt="{{movie.title}}" width="182px" />
+      <small class="font-weight-bold">{{movie.title}}</small>
+      <small><a href="/movies/{{movie.id}}">See more</a></small>
+    </div>
+    {{/each}}
+  </div>
+</div>
