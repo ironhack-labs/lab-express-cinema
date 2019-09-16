@@ -1,41 +1,40 @@
 body {
   padding: 0px;
-  margin: 0px;
-}
-section{
-  height:100vh;
-  background-image: url('/images/cinema.jpg');
+  margin: 0px; }
+
+section {
+  height: 100vh;
+  background-image: url("/images/cinema.jpg");
   background-size: cover;
   background-repeat: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-}
-.info{
-  padding: 5%;
-  p{
+  align-items: center; }
+
+.info {
+  padding: 5%; }
+  .info p {
     font-size: 5rem;
     font-weight: 700;
     color: white;
-    margin: 0;
-  }
-}
-button{
+    margin: 0; }
+
+button {
   border-radius: 20px;
   background-color: white;
   padding: 10px 25px;
-  color:#456f94;
-}
-.container{
-  padding: 3%;
-}
-.movie{
+  color: #456f94; }
+
+.container {
+  padding: 3%; }
+
+.movie {
   display: flex;
   align-items: center;
   flex-direction: column;
   align-content: space-between;
-  margin-bottom: 20px;
-  p{
-    margin: 0;
-  }
-}
+  margin-bottom: 20px; }
+  .movie p {
+    margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

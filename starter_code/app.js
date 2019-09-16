@@ -1,4 +1,6 @@
 require('dotenv').config();
+const Movie = require('./models/Movie'); // Import of the model Recipe from './models/Recipe'
+const data = require('./data.js');  // Import of the data from './data.js'
 
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -11,9 +13,11 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/cinema', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+   // const creaNuevo2= Movie.create(data)
+      //creaNuevo2.forEach(e=>console.log(e.title))
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
