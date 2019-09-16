@@ -1,0 +1,10 @@
+this is all the movies
+<div class="movies">
+{{#each moviesToHBS}}
+    <div>
+        <h6><a href="info/{{_id}}">{{title}}</a></h6>
+        <img src="{{image}}"/>
+    </div>
+{{/each}}
+
+</div>
