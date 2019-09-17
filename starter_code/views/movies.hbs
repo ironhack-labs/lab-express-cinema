@@ -1,18 +1,15 @@
-<div class="page-container">
 
   <h2>Ironhack Cinema</h2>
 
-  <h3>Click on the movie to check the showtimes</h3>
+<p>Check the showtimes!</p>
 
-  <a href="/">Go back to Home</a>
-
-  <div class="movie-list-container">
-
-      {{#each movies}}
-        {{>movie_tile}}
-      {{/each}}
-
-  </div>
-
-
+<ul>
+  {{#each data}}
+    <li>
+      <img src={{this.image}}/>
+      <h4>{{this.title}}</h4>
+      <a href='movies/{{this._id}}'>See more</a>
+    </li>
+  {{/each}}
+</ul>
 </div>
