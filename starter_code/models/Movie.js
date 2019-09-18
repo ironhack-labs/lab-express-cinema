@@ -7,7 +7,8 @@ const MovieSchema = new Schema({
   stars: Array,
   image: String,
   description: String,
-  showtimes: Array
+  showtimes: Array,
+  
 });
 
 const Movie = mongoose.model("Movie", MovieSchema);

@@ -87,7 +87,7 @@ var movies = [
 console.log("in the seeds file <<<<<< ");
 
 mongoose
-.connect('mongodb://localhost/movies', {useNewUrlParser: true})
+.connect('mongodb://localhost/video', {useNewUrlParser: true})
 .then(x=> {
   console.log(`Connected to Mongo! Database name:"${x.connections[0].name}`)
 })

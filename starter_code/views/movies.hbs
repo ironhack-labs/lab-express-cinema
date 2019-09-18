@@ -1,3 +1,5 @@
-{{#each movies}}
-
+{{#each hbsObj.movies }}
+<p>{{this.title}}</p>
+<img src="{{this.image}}" alt="didnt work">
+<a href="/movies/{{this.id}}">Show more</a>
 {{/each}}
