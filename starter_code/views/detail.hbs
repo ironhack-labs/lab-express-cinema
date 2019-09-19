@@ -1,0 +1,25 @@
+<div class="flex-container2">
+  <div>
+  <img src='{{movies.0.image}}' width="200px" height="="100px"/>
+  </div>
+  <div>
+    
+            <a class="detail" href="/movies">Go back</a><br><br>
+  <h1 class='pdetail'><strong></strong>{{movies.0.title}}</strong></h1>
+  <h3 class='pdetail'><strong></strong>{{movies.0.director}}</strong></h3>
+  <br>
+  <h4>stars</h4>
+  <ul>
+ {{#each movies.0.stars}}
+ <li>{{this}}</li>
+   {{/each}}
+  </ul>
+  
+  <br> <br>
+  <p class='pdetail'><strong></strong>{{movies.0.description}}</strong></p>
+  
+  <br>
+  <p class='pdetail'><strong></strong>{{movies.0.showtimes}}</strong></p>
+  </div>
+  
+</div>

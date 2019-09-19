@@ -8,7 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const func=require('./func');
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
@@ -23,6 +23,8 @@ const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
 const app = express();
+const Movie = require('./models/movie.js'); // <== add this line
+
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -53,6 +55,38 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+
+app.get('/movies', (req, res, next) => {
+  
+  
+  Movie.find()
+  .then(movies => {
+   var allData=func.format(movies);//reminder allData comes normalized with key
+   console.log('Retrieved movies from DB:', JSON.stringify(allData));
+   res.render('movies',allData);
+  })
+  .catch(error => {
+   console.log('Error while getting the movies from the DB: ', error);
+  })
+  
+})
+
+app.get('/detail', (req, res, next) => {
+  
+ 
+  Movie.find(req.query)
+  .then(movies => {
+   console.log('Retrieved movies from DB:', JSON.stringify(movies));
+   res.render('detail',{movies});
+  })
+  .catch(error => {
+   console.log('Error while getting the movies from the DB: ', error);
+  })
+   
+  
+  
+})
 
 
 module.exports = app;

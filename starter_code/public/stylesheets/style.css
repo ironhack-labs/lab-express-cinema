@@ -1,77 +1,60 @@
 body {
   padding-top: 10px;
-  
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .flex {
   display: flex;
- 
-  flex-direction:column;
-  
-}
+  flex-direction: column; }
 
-img{
+img {
   margin-top: 40px;
-     display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
-body{
-padding-left: 100px;
-padding-right: 100px;
-}
+body {
+  padding-left: 100px;
+  padding-right: 100px; }
 
 .container {
   position: relative;
-  width: 100%;
- 
-}
+  width: 100%; }
 
-.row{
+.row {
   margin-left: 300px;
-  width:900px;
-}
-.mycenter{
-  text-align: center;
-}
-.cinema{
-color:white;
-position: absolute;
-font-size: 100px;
-top: 15%;
-left: 62%;
-}
+  width: 900px; }
+
+.mycenter {
+  text-align: center; }
+
+.cinema {
+  color: white;
+  position: absolute;
+  font-size: 100px;
+  top: 15%;
+  left: 62%; }
 
 .flex-container2 {
   display: flex;
-  flex-direction: row;
- 
-}
+  flex-direction: row; }
 
 .flex-container2 > div {
- 
   margin: 10px;
-  padding: 20px;
- 
-}
+  padding: 20px; }
 
-.cinema2{
-  color:white;
+.cinema2 {
+  color: white;
   position: absolute;
   font-size: 100px;
   top: 25%;
-  left: 62%;
-  }
+  left: 62%; }
+
 .container img {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .container .btn {
   position: absolute;
@@ -86,9 +69,9 @@ left: 62%;
   border: none;
   cursor: pointer;
   border-radius: 25px;
-  text-align: center;
-}
+  text-align: center; }
 
 .container .btn:hover {
-  background-color: black;
-}
+  background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

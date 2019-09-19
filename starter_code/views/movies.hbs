@@ -1,0 +1,29 @@
+<h1>IronHack Cinema</h1>
+<h4>Click on the movie to check the showtimes</h4>
+
+{{#each allData}}
+
+   <div class="row">
+  {{#each myrow}}
+
+  <div class="myitem col-sm-4" >
+	       <div class='flex'>
+		      <img src='{{this.image}}' width="200px" height="="100px"/>
+			  <div >
+          <br>
+			    <p class='mycenter'><strong></strong>{{this.title}}</strong></p>
+			
+        
+            <a class="detail" href="/detail?title={{this.title}}">See more</a>
+       
+			   
+        </div>
+		   </div>
+	  
+	  </div>
+    
+  {{/each}}
+    
+	</div>
+  {{/each}}
+
