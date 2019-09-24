@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div(class="movies-container")
+    each movie in movies
+      div(class="movie-item")
+        div(class="image-container")
+          img(src=movie.image, alt="")
+        p(class="movie-title") #{movie.title}    
+        a(class="see-more",href=`/movies/${movie._id}`)    
+          p(class="see-more-text") See More

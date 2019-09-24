@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto:400,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+.main-sec {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-div {
+  width: 50%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.title {
+  color: white;
+  font-family: Roboto;
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+.home-a-button {
+  width: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.home-button {
+  width: 40%;
+  height: 2em;
+  border-radius: 40px;
+  font-size: 1em;
+}
+
+.movies-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(105, 105, 105, 0.041);
+}
+
+.movie-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 1.66%;
+  flex: 0 0 30%;
+  flex-flow: column;
+}
+.movie-title {
+  padding: 0;
+  margin: 3%;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div(class="one-movie-container")
+    a(class="go-back", href=`/movies`)    
+      p(class="go-back-text") Go back
+    div(class="one-movie-image-container")
+      img(src=movie.image, alt="")
+    p(class="one-movie-title") #{movie.title}
+    p(class="one-movie-director") #{movie.director}
+    ul(class="one-movie-stars")
+      each star in movie.stars
+        li(class="star") #{star}
+    p(class="one-movie-description") #{movie.description}
+    ul(class="one-movie-showtime")
+      each show in movie.showtimes  
+        li(class="show") #{show}
+          
+        
