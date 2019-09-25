@@ -1,14 +1,11 @@
 body {
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 /* index */
-
 #index-container {
   margin: 0;
   width: 100vw;
@@ -17,117 +14,97 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .box {
   width: 50%;
-  height: 100%;
-}
+  height: 100%; }
 
 #index-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .title {
   color: white;
   font-size: 7.8em;
-  margin: 0;
-}
+  margin: 0; }
 
 #title-box {
   width: 70%;
-  margin: 100px 0 50px 0;
-}
+  margin: 100px 0 50px 0; }
 
 #btn-box {
   width: 70%;
-  margin: 0;
-}
+  margin: 0; }
 
 #btn-check-movies {
   background-color: white;
   border-radius: 40px;
   padding: 22px 45px;
-  color: rgb(121, 164, 170);
+  color: #79a4aa;
   text-decoration: none;
   font-size: 1.5em;
-  box-shadow: rgb(37, 37, 37) 0 3px 3px;
-}
+  box-shadow: #252525 0 3px 3px; }
 
 /* movie-list */
 #opening-container {
-  margin: 0 60px;
-}
+  margin: 0 60px; }
 
 #opening-title {
-  font-size: 2.3em;
-}
+  font-size: 2.3em; }
 
 #opening-text {
   font-weight: normal;
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 #movies-container {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 #movies-box {
   width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .movie {
   width: 30%;
   margin: 20px 0;
   display: flex;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .movie img {
   box-shadow: lightgray 0 5px 5px;
-  width: 65%;
-}
+  width: 65%; }
 
 /* movie */
-
 #movie-container {
   margin: 20px 0;
   width: 100vw;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 #movie-img {
   width: 20%;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 #movie-img img {
-  box-shadow: lightgray 0 5px 5px;
-}
+  box-shadow: lightgray 0 5px 5px; }
 
 #movie-info {
-  width: 40%;
-}
+  width: 40%; }
 
 #movie-title {
-  font-size: 1.7em;
-}
+  font-size: 1.7em; }
 
 #movie-director {
-  font-size: 1.3em;
-}
+  font-size: 1.3em; }
 
+/*# sourceMappingURL=style.css.map */
