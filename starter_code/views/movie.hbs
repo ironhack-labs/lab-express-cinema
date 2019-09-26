@@ -14,6 +14,11 @@
         <p>{{movie.description}}</p>
         <p> {{#each movie.showtimes}}
             {{this}} |
-            {{/each}}</p>
+            {{/each}}
+        </p>
+
+        <div id='btn-box-delete'>
+            <a href='/movie/delete?id={{movie.id}}' id='delete-btn'>Delete movie</a>
+        </div>
     </div>
 </div>

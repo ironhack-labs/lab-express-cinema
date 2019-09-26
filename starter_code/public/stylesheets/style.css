@@ -96,7 +96,8 @@ a {
   align-items: center; }
 
 #movie-img img {
-  box-shadow: lightgray 0 5px 5px; }
+  box-shadow: lightgray 0 5px 5px;
+  margin: 0 0 40px 0; }
 
 #movie-info {
   width: 40%; }
@@ -106,5 +107,54 @@ a {
 
 #movie-director {
   font-size: 1.3em; }
+
+#btn-box-delete {
+  margin: 30px 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: gray 0 2px 2px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#delete-btn {
+  color: white;
+  text-decoration: none; }
+
+/* create movie */
+#create-container {
+  margin: 50px 0 0 60px; }
+
+#form {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.label {
+  margin: 10px 0;
+  font-weight: bold; }
+
+.input {
+  height: 30px;
+  border-radius: 4px; }
+
+#btn-create {
+  background-color: #79a4aa;
+  box-shadow: gray 0 2px 2px;
+  color: white;
+  width: 180px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 1em; }
+
+#btn-box {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

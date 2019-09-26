@@ -1,4 +1,4 @@
-<div id='opening-container'>
+<!-- <div id='opening-container'>
     <h1 id='opening-title'>Ironhack Cinema</h1>
     <h2 id='opening-text'>Click on the movie to check the showtimes!</h2>
 </div>
@@ -9,6 +9,23 @@
                 <img src="{{image}}" alt="">
                 <h3>{{title}}</h1>
                 <a href="movie/{{this.id}}">See more</a>
+            </div>
+        {{/each}}
+    </div>
+</div> -->
+
+<div id='opening-container'>
+    <h1 id='opening-title'>Ironhack Cinema</h1>
+    <h2 id='opening-text'>Click on the movie to check the showtimes!</h2>
+    <a href='movies/create'>Create movie</a>
+</div>
+<div id='movies-container'>
+    <div id='movies-box'>
+        {{#each movies}}
+            <div class='movie'>
+                <img src="{{image}}" alt="">
+                <h3>{{title}}</h1>
+                <a href="movie/?id={{this.id}}">See more</a>
             </div>
         {{/each}}
     </div>
