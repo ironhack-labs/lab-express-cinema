@@ -1,0 +1,28 @@
+
+{{#each movies}}
+  <div>
+    <h3>{{title}}</h3>
+    <img src="{{image}}" alt="">
+    <a href="/movie?id={{_id}}">See more</a>
+    <a href="/delete?id={{_id}}"><button>Delete</button></a>
+  </div>
+{{/each}}
+
+<div>
+  <form action="/create" method="POST">
+    <label for="">Title</label>
+    <input type="text" name="title" id="">
+    <label for="">Director</label>
+    <input type="text" name="director" id="">
+    <label for="">Stars</label>
+    <input type="text" name="stars" id="">
+    <label for="">Description</label>
+    <input type="text" name="description" id="">
+    <label for="">Showtimes</label>
+    <input type="text" name="showtimes" id="">
+    <label for="">Image</label>
+    <input type="text" name="image" id="">
+
+    <button type="submit">Add movie</button>
+  </form>
+</div>
