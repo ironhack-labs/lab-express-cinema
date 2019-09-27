@@ -19,3 +19,16 @@ a{
   text-decoration: none;
   padding: 10px 30px;
 }
+
+.title{
+  background-color: white;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  width: 200px;
+// display: inline;
+}

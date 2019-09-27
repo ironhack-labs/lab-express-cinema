@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movies.js');
 
-const dbName = 'lab-movies';
+const dbName = 'starter-code';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
