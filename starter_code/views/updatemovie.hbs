@@ -1,0 +1,27 @@
+{{!-- <form action="/movie/update/{{movie._id}}" method="POST">
+  <input type="text" name="title" value="{{movie.title}}">
+  <input type="text" name="image" value="{{movie.image}}">
+  <button type="submit">Update</button>
+</form> --}}
+
+<form action="/movie/update/{{movie._id}}" method="POST" class="mt-3">
+  <div class="form-group">
+    <label for="title" class="text-white">Movie Name:</label>
+    <input type="text" class="form-control" id="title" name="title" value="{{movie.title}}">
+  </div>
+  <div class="form-group">
+    <label for="url" class="text-white">Movie Director: </label>
+    <input type="text" class="form-control" id="director" name="director" value="{{movie.director}}">
+  </div>
+  <div class="form-group">
+    <label for="image" class="text-white">Movie Image:</label>
+    <input type="text" class="form-control" id="image" name="image" value="{{movie.image}}">
+  </div>
+  <div class="form-group">
+    <label for="stars" class="text-white">Movie Stars:</label>
+    <input type="text" class="form-control" id="stars" name="starone" value="{{movie.stars.[0]}}">
+    <input type="text" class="form-control" id="stars" name="startwo" value="{{movie.stars.[1]}}">
+    <input type="text" class="form-control" id="stars" name="starthree" value="{{movie.stars.[2]}}">
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>

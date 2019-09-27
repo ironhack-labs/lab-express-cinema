@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <h1>Ironhack Cinema</h1>
+  <p>Click on the movie to check the showtimes!</p>
+  <a href="/addmovie" class="btn btn-primary">Add a New Movie</a>
+  <div class="container">
+    {{#each movies}}
+      {{> movieCard}}
+    {{/each}}
+  </div>
+</div>
