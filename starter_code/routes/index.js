@@ -20,8 +20,8 @@ router.get("/movies", (req, res, next) => {
 router.get("/movie/:id", (req, res, next) => {
   Movie.findOne({ _id: req.params.id })
     .then(theMovie => {
+      theMovie.showtimes = theMovie.showtimes.join(" | ");
       res.render("movie", { movie: theMovie });
-      console.log(allMyMovies);
     })
     .catch(err => {
       console.log(err);
