@@ -27,4 +27,17 @@ a {
 .card {
   width: 200px; }
 
+.movie-description {
+  display: flex; }
+
+.movie-img {
+  margin: 20px; }
+
+.text {
+  margin: 30px 20px; }
+
+.text > a {
+  text-decoration: underline;
+  background: none; }
+
 /*# sourceMappingURL=style.css.map */

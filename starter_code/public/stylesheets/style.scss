@@ -32,3 +32,20 @@ a{
   width: 200px;
 // display: inline;
 }
+
+.movie-description{
+  display: flex;
+}
+
+.movie-img{
+  margin:20px;
+}
+
+.text{
+  margin: 30px 20px;
+}
+
+.text > a{
+  text-decoration:  underline;
+  background: none;
+}
