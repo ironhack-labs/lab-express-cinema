@@ -1,15 +1,14 @@
 * {
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
+
 .cinema {
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0px -65px;
-  height: 624px;
+  height: 624px; }
 
-}
 .cinema > h1 {
   font-size: 110px;
   color: white;
@@ -17,9 +16,7 @@
   left: 800px;
   top: 80px;
   width: 100px;
-  font-weight: bold;
-}
-
+  font-weight: bold; }
 
 .home-btn {
   position: relative;
@@ -27,48 +24,41 @@
   top: 90px;
   font-size: 20px;
   border-radius: 50px;
-  color:#679eb3;
+  color: #679eb3;
   border-color: white;
   border-style: none;
-  padding: 8px 15px;
-}
+  padding: 8px 15px; }
 
 .container {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .head-movies {
   margin-left: 180px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 .head-movies > h2 {
   font-size: 30px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .head-movies > p {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .col-4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .movie-details {
-display: flex;
-flex-direction: row;
-margin-top: 100px;
-margin-left: 40px;
-}
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-left: 40px; }
 
 .description {
-  margin-left: 50px;
-}
+  margin-left: 50px; }
 
 .p {
-  font-size: 15px;
-}
+  font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */

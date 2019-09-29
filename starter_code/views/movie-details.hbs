@@ -1,0 +1,28 @@
+  <div class="movie-details">
+
+
+  <div>
+
+  <figure>
+    <img src="{{movie.image}}" alt="felipao lindao">
+  </figure>
+  </div>
+<div class="description">
+  <h1>{{movie.title}}</h1>
+
+  <div class="p">
+
+  <p>Director: {{movie.director}}</p>
+
+  <ul>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p>{{movie.description}}</p>
+
+  <p>{{movie.showtimes}}</p>
+  </div>
+
+</div>
+  </div>
