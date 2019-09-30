@@ -1,4 +1,11 @@
-{{#each movieSelected}}
-<img src="{{this.image}}" alt="">
-<h2> {{this.title}} </h2>
+<h1 class="titleMoviesList">Ironhack Cinema</h1>
+<h3 class="descriptionMoviesList">Click on the movie to check the showtimes!</h3>
+<div class="divMoviesList">
+{{#each moviesAll}}
+  <div class="divMovies">
+    <img src="{{this.image}}" alt="Movie cover">
+    <h2 class="titleMovie"> {{this.title}} </h2>
+    <a href="/movies/{{this.title}}">See more</a>
+  </div>
 {{/each}}
+</div>

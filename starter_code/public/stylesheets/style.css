@@ -1,8 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF; 
+}
+
+.coverPage {
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.divCoverPage{ 
+  padding: 150px 200px 0 0;
+}
+
+.titleCoverPage {
+  color: white;
+  font-size: 150px;
+}
+
+.buttonCheckMovies {
+  padding: 20px 40px;
+  margin: 10px 0;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 40px;
+}
+
+.textButtonCheckMovies {
+  font-size: 20px;
+  text-decoration: none;
+  color: #00B7FF;
+}
+
+.divMoviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.titleMoviesList{
+  padding: 20px 20px 10px 20px;  
+}
+
+.descriptionMoviesList {
+  padding: 10px 20px 20px 20px;  
+}
+
+.divMovies {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.titleMovie {
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.movieDetails {
+  display: flex;
+}
+
+.imageMovie {
+  padding: 50px 50px 0 100px;
+}
+
+.movieInformation{
+  padding: 50px 400px 0 50px
+}
+
+.titleMoviesDetails {
+  margin: 20px 0 10px 0;
+}
+
+.diretorMoviesDetails {
+  margin: 10px 0 10px 0;
+}
+
+.titleStarMoviesDetails {
+  margin: 10px 0 10px 0;
+}
+
+.listStarMoviesDetails {
+  list-style: inside;
+  margin: 10px 0 10px 0;
+}
+
+.movieDescription {
+  margin: 10px 0 10px 0;
+}
+
+.listShowtimes {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.itemShowtimes {
+  list-style: none;
+  padding: 0 10px 0 10px;
+  border-right: 1px solid black;
+}
+
 
 /*# sourceMappingURL=style.css.map */
