@@ -1,0 +1,21 @@
+<div id='sign-up-container'>
+    <form id="form" action="/signup" method="POST" id='form'>
+        <h2>Sign up</h2>
+        <label for="username" class='sign-up-label'>Username</label><br>
+        <input type="text" name="username"
+        placeholder="Your username" class='input'>
+
+        <label for="password" class='sign-up-label'>Password</label><br>
+        <input type="password" name="password"
+        placeholder="********" class='input'>
+
+        <div id='btn-box'>
+            <button type="submit" id='btn-create'>Create account</button>
+        </div>
+    </form>
+    {{#if errorMessage}}
+    <div class="error-message">{{ errorMessage }}</div>
+    {{/if}}
+
+      <a href='/' class='back-link'>Go back</a>
+</div>

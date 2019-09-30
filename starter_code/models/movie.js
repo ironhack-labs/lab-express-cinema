@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 
 const Movie = mongoose.model("Movie", {
     title: String,
-    director: String,
+    director: {type: mongoose.Types.ObjectId, ref: "director"},
     stars: Array,
     image: String,
     description: String,

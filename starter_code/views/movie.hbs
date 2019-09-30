@@ -5,7 +5,7 @@
     <div id='movie-info'>
         <a href='/movies'>Go back</a>
         <h1 id='movie-title'>{{movie.title}}</h1>
-        <h2 id='movie-director'>Director: {{movie.director}}</h2>
+        <h2 id='movie-director'>Director: {{movie.director.name}}</h2>
         <h3>Stars</h3>
         <ul>{{#each movie.stars}}
             <li>{{this}}</li>
@@ -19,6 +19,9 @@
 
         <div id='btn-box-delete'>
             <a href='/movie/delete?id={{movie.id}}' id='delete-btn'>Delete movie</a>
+        </div>
+         <div id='btn-box-update'>
+            <a href='/movie/update?id={{movie.id}}' id='update-btn'>Update movie</a>
         </div>
     </div>
 </div>

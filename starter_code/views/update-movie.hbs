@@ -1,0 +1,33 @@
+<div id='update-container'>
+<h1>Update the movie</h1>
+<form action="/movie/update" method="post" id='form'>
+  <label for="title" class='label'>Title:</label>
+  <input type="text" name="title" value='{{movie.title}}' class='input'>
+
+  <label for="director" class='label'>Director:</label>
+  <select name="director" id="directorId">
+        {{#select movie.director._id}}
+        {{#each directors}}
+            <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+         {{/select}}
+  </select>
+
+  <label for="stars" class='label'>Stars:</label>
+  <input type="text" name="stars" value='{{movie.stars}}' class='input'>
+
+  <label for="description" class='label'>Description:</label>
+  <input type="text" name="description" value='{{movie.description}}' class='input'>
+
+  <label for="image" class='label'>Image (url):</label>
+  <input type="text" name="image" value='{{movie.image}}' class='input'>
+
+ <input type="hidden" name="id" value='{{movie._id}}' class='input'>
+
+  <div id='btn-box'>
+  <button type="submit" id='btn-update'>Update</button>
+  </div>
+
+</form>
+  <a href='/movies' class='back-link'>Go back</a>
+  </div>

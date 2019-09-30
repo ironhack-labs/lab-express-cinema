@@ -1,0 +1,23 @@
+<div id='login-container'>
+    <form action="/login" method="POST" id="form">
+    <h2>Login</h2>
+
+    <label for="username" class='login-label'>Username</label>
+    <input type="text" name="username" class='input'>
+
+    <label for="password" class='login-label'>Password</label>
+    <input type="password" name="password" placeholder='********' class='input'>
+
+    {{#if errorMessage }}
+        <div class="error-message">{{ errorMessage }}</div>
+    {{/if}}
+    <div id='btn-box'>
+        <button id='btn-create'>Sign in</button>
+        <p id="account-message">
+        Don't have an account? <a href="/signup">Sign up</a>
+        </p>
+    </div>
+    </form>
+
+    <a href='/' class='back-link'>Go back</a>
+</div>

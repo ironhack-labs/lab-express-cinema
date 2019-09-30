@@ -5,10 +5,14 @@
   <input type="text" name="title" class='input'>
 
   <label for="director" class='label'>Director:</label>
-  <input type="text" name="director" class='input'>
+  <select name="director" id="directorId">
+        {{#each directors}}
+            <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+  </select>
 
   <label for="stars" class='label'>Stars:</label>
-  <input type="text" name="stars" class='input'>
+  <input type="text" name="stars" class='input' placeholder='Star1, star2, star3'>
 
   <label for="description" class='label'>Description:</label>
   <input type="text" name="description" class='input'>
