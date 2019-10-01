@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const moviesSchema = new Schema({
   title: String,
-  director: String,
+  director: {type: Schema.Types.Mixed, ref: "director"},
   stars: Array,
   image: String,
   description: String,

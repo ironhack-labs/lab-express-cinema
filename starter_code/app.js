@@ -32,7 +32,7 @@ hbs.registerPartials(__dirname + "/views/partials");
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Express View engine setup
@@ -53,6 +53,9 @@ app.use('/', index);
 
 const movieRoute = require("./routes/movies");
 app.use("/", movieRoute);
+
+const directorRoute = require("./routes/directors");
+app.use("/", directorRoute);
 
 app.listen(port, () => {
   console.log(`App listening to ${port}`);

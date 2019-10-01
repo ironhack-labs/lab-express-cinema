@@ -1,10 +1,15 @@
 const express = require('express');
 const router  = express.Router();
 const Movies = require("../models/movies");
+const Director = require("../models/directors");
+const mongoose = require("mongoose");
+const multer = require("multer");
+const upload = multer({ dest: './public/uploads/' });
 
 /* GET movies page */
 router.get('/movies', (req, res, next) => {
   Movies.find()
+  // .populate("director")
   .then((movies)=>{
     // console.log(movies)
     res.render('movies', {movies});
@@ -31,6 +36,7 @@ router.get('/movies', (req, res, next) => {
 //req.query method
 router.get('/movie/detail', (req, res, next) => {
   Movies.findById(req.query.movieId)
+  .populate("director")
   .then((movie) => {
     // console.log(movie)
     res.render("eachmovie", {movie})
@@ -41,7 +47,6 @@ router.get('/movie/detail', (req, res, next) => {
 })
 
 router.get("/movie/delete", (req,res)=> {
-  debugger
   Movies.findOneAndRemove({_id: req.query.movieId})
   .then(()=>{
     console.log("deleted");
@@ -53,14 +58,18 @@ router.get("/movie/delete", (req,res)=> {
 })
 
 router.get("/addmovie", (req, res, next) => {
-  res.render("createnew");
+  Director.find({})
+  .then((directors)=>{
+    res.render("createnew", {directors});
+  })
 })
 
-router.post("/addmovie", (req,res,next) => {
+router.post("/addmovie", upload.single('url'), (req,res,next) => {
   var newMovie = new Movies({
     title: req.body.title,
-    director: req.body.director,
-    image: req.body.url,
+    director: mongoose.Types.ObjectId(req.body.directorId),
+    image: req.file.filename,
+    description: req.body.description,
     stars: [req.body.starone, req.body.startwo, req.body.starthree]
   })
 
@@ -75,21 +84,34 @@ router.post("/addmovie", (req,res,next) => {
 })
 
 router.get("/movie/update/:id", (req,res,next)=>{
+  let updateMovie;
   Movies.findById(req.params.id)
+  // .populate("director")
   .then((movie)=>{
-    res.render("updatemovie", {movie});
-  }).
-  catch((error)=>{
+    updateMovie = movie;
+    return Director.find({})
+    // res.render("updatemovie", {movie});
+  })
+  .then((directors)=>{
+    debugger
+    res.render("updatemovie", {directors: directors, movie: updateMovie});
+  })
+  .catch((error)=>{
     console.log(`Oops, you  got an error, ${error}`)
   })
 })
 
-router.post("/movie/update/:id", (req,res,next)=>{
-  let stars = [req.body.starone, req.body.startwo, req.body.starthree]
-  req.body.stars = stars;
-  Movies.findByIdAndUpdate(req.params.id, {$set: req.body})
+router.post("/movie/update/:id", upload.single('image'), (req,res,next)=>{
+  console.log(req.file.filename);
+   var userInput = {
+    title: req.body.title,
+    director: req.body.directorId,
+    description: req.body.description,
+    image: req.file.filename,
+    stars: [req.body.starone, req.body.startwo, req.body.starthree]
+  }
+  Movies.findByIdAndUpdate(req.params.id, {$set: userInput})
   .then(()=>{
-    console.log(req.body.starone);
     res.redirect("/movies")
   })
   .catch((error)=>{
