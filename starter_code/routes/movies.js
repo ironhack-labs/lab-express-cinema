@@ -1,27 +1,31 @@
 var express = require("express")
 var app = express()
-
 var Movie = require("../models/movie")
+var Director = require("../models/director")
+var mongoose = require("mongoose")
+var multer = require("multer")
+var upload = multer({ dest: `${__dirname}/../uploads` })
 
 app.get('/movies', (req, res, next) => {
-  Movie.find({})
-    .then((movies) => {
-      res.render('movies', {movies:movies})
+    console.log(req.session)
+    Promise.all([Movie.find({}), Director.find({})])
+    .then((returnedPromise) => {
+      res.render('movies', {movies: returnedPromise[0], directors: returnedPromise[1]})
     })
     .catch((err) => {
       res.send(err)
     }) 
 })
 
-app.post("/create", (req, res) => {
-  console.log(req.body)
+app.post("/create", upload.single("image"), (req, res) => {
+
   var newMovie = new Movie({
     title: req.body.title,
-    director: req.body.director,
+    director: mongoose.Types.ObjectId(req.body.directorId),
     stars: req.body.stars,
     description: req.body.description,
     showtimes: req.body.showtimes,
-    image: req.body.image
+    image: req.file.filename
   })
   newMovie.save()
     .then((movie) => {

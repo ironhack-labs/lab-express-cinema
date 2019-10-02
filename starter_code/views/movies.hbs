@@ -9,11 +9,19 @@
 {{/each}}
 
 <div>
-  <form action="/create" method="POST">
+  <form action="/create" method="POST" enctype="multipart/form-data">
     <label for="">Title</label>
     <input type="text" name="title" id="">
+
+    <select name="directorId" id="directorId">
+      {{#each directors}}
+        <option value="{{_id}}">{{name}}</option>
+      {{/each}}
+    </select>
+
     <label for="">Director</label>
     <input type="text" name="director" id="">
+
     <label for="">Stars</label>
     <input type="text" name="stars" id="">
     <label for="">Description</label>
@@ -21,7 +29,7 @@
     <label for="">Showtimes</label>
     <input type="text" name="showtimes" id="">
     <label for="">Image</label>
-    <input type="text" name="image" id="">
+    <input type="file" name="image" id="">
 
     <button type="submit">Add movie</button>
   </form>

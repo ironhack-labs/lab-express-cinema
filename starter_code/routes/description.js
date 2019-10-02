@@ -15,7 +15,9 @@ var Movie = require("../models/movie")
 
 app.get("/movie", (req, res, next) => {
   Movie.findOne({_id: req.query.id})
+  .populate("director","name")
   .then((movie) => {
+    console.log(movie)
     res.render("description", {movie:movie})
   })
   .catch((err) => {
