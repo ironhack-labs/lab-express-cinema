@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .movies-container
+    each movie in movies
+      .movie-container
+        img(src=movie.image, alt=movie.title)
+        h3=movie.title
+        a(href="/movies/#{movie._id}") See More
