@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .img-container
+    img(src=movie.image, alt=movie.title)
+  .info-container
+    a(href="/movies") Go back
+    h2=movie.title
+    h4=movie.director
+    h5 Stars
+    ul
+      each star in movie.stars
+        li=star
+    p=movie.description
+    each showtime in movie.showtimes
+      #{showtime} |
