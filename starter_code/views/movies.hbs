@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<p>Click on the movie to check the show time</p>
+<ul class="list" id="movies">
+    {{#each movies}}
+    <li class="item movie">
+        <img src="{{this.image}}" alt="">
+        <p>{{this.title}}</p>
+        <a href="/movies/{{this.id}}">see more</a>
+    </li>
+    {{/each}}
+</ul>
