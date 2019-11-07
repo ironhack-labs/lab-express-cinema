@@ -1,28 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
+
 .container_index {
   background-image: url(../images/cinema.jpg);
   background-size: cover;
   width: 100%;
-  height: 100vh;
-}
+  height: 100vh; }
+
 .title_container {
   position: absolute;
   top: 10%;
-  left: 60%;
-}
+  left: 60%; }
+
 h1 {
   color: white;
   font-size: 7.5em;
-  width: 400px;
-}
+  width: 400px; }
+
 button {
   position: absolute;
   top: 55%;
@@ -35,35 +34,33 @@ button {
   text-align: center;
   margin: 0 auto;
   font-size: 1.3em;
-  color: darkcyan;
-}
-.list {
-  // margin: 0 auto;
-}
+  color: darkcyan; }
+
 ul {
   display: grid;
-  grid-template-columns: auto auto auto;
-}
+  grid-template-columns: auto auto auto; }
+
 li {
   list-style: none;
   padding-bottom: 20px;
-  text-align: center;
-}
+  text-align: center; }
+
 .title_movie {
   font-size: 1.3em;
   color: black;
-  padding-left: 165px;
-}
+  padding-left: 165px; }
+
 .item_movies {
-  padding: 15px;
-}
+  padding: 15px; }
+
 img {
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
+
 .p {
   padding-left: 165px;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
+
 .link {
-  padding: 20px;
-}
+  padding: 20px; }
+
+/*# sourceMappingURL=style.css.map */
