@@ -1,20 +1,16 @@
 body {
-  //padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  width: 100vw; // relatif à l'écran
-  height: 100vh;
-}
+  width: 100vw;
+  height: 100vh; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 h1 {
   color: white;
   font-size: 3.5rem;
-  width: 100px;
-}
+  width: 100px; }
 
 .btn {
   font-size: 0.8rem;
@@ -22,9 +18,7 @@ h1 {
   background: white;
   border-radius: 20px;
   width: 10rem;
-  padding: 10px 20px;
-
-}
+  padding: 10px 20px; }
 
 .main {
   display: flex;
@@ -35,10 +29,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .elements {
-  margin-right: 200px; // sinon les éléments se retrouvent hors de la div
-  margin-bottom: 100px;
-}
+  margin-right: 200px;
+  margin-bottom: 100px; }
+
+/*# sourceMappingURL=style.css.map */
