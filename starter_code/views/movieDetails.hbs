@@ -1,0 +1,21 @@
+<div class="movieDetails">
+  <img src="{{movieDisplayDetails.image}}" alt="movie poster">
+  <div class="details">
+    <a href="/movies">Go back</a>
+    <h1>{{movieDisplayDetails.title}}</h1>
+    <h2>Director: {{movieDisplayDetails.director}}</h2>
+    <h3>Stars</h3>
+    <ul class="stars">
+      {{#each movieDisplayDetails.stars}}
+      <!-- stars = propriété de la base de données-->
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movieDisplayDetails.description}}</p>
+    <ul class="showtimes">
+      {{#each movieDisplayDetails.showtimes}}
+      <li>{{this}} | </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

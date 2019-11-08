@@ -1,0 +1,17 @@
+<header class="header">
+  <h2>Ironhack Cinema</h2>
+  <h3>Click on the movie to checke the showtimes!</h3>
+</header>
+
+<div class="container">
+  <ul>
+    {{#each moviesDisplay}}
+    <li class="eachMovie">
+      <img class="imgDisplay" src="{{this.image}}" alt="movie poster">
+      <h5 class="titleDisplay">{{this.title}}</h5>
+      <a href="/movies/{{this.id}}">See More...</a>
+      <!-- attention dans le href mettre le lien de l'URL et pas la view !!-->
+    </li>
+    {{/each}}
+  </ul>
+</div>

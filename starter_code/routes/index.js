@@ -9,11 +9,32 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/movies', (req, res) => {
-  moviesModel.find().then(dbRes => {
-    res.render('movies', {
-      movies: dbRes
+  moviesModel
+    .find() // aucun parametre pour selectionner donc all par default
+    .then(dbRes => {
+      res.render('moviesView', {
+        moviesDisplay: dbRes // fais le lien avec movies utilisé dans moviesView.hbs
+      });
+    })
+    .catch(error => {
+      console.log("error while retrieving movies View", error);
     });
-  });
 });
+
+router.get('/movies/:id', (req, res) => {
+  moviesModel
+    .findOne({ // on aurait pu utiliser findById aussi
+      "_id": req.params.id
+    }) // id est une propriété de params qui est une propriété de la request
+    .then(theMovie => {
+      res.render('movieDetails', {
+        movieDisplayDetails: theMovie
+      });
+    })
+    .catch(error => {
+      console.log("error while retrieving moviE details", error);
+    });
+});
+
 
 module.exports = router;

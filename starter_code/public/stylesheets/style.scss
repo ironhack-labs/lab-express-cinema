@@ -42,3 +42,77 @@ h1 {
   margin-right: 200px; // sinon les éléments se retrouvent hors de la div
   margin-bottom: 100px;
 }
+
+// **************** CSS de notre view moviesView
+
+.header {
+  margin-left: 90px;
+  padding-bottom: 20px;
+}
+
+.container ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 50px;
+  padding: 0; // le ul a un padding par défaut pour la puce
+}
+
+.eachMovie {
+  list-style: none;
+  text-align: center;
+}
+
+.imgDisplay {
+  -webkit-box-shadow: 2px 11px 9px -3px rgba(196, 190, 196, 1);
+  -moz-box-shadow: 2px 11px 9px -3px rgba(196, 190, 196, 1);
+  box-shadow: 2px 11px 9px -3px rgba(196, 190, 196, 1);
+}
+
+// **************** CSS de notre view movieDetails
+
+.movieDetails {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 300px;
+  margin: 20px;
+}
+
+.movieDetails h1 {
+  font-size: 1.5rem;
+  color: black;
+  width: 100%;
+}
+
+.movieDetails h2 {
+  font-size: 1rem;
+}
+
+.movieDetails h3 {
+  font-size: 0.8rem;
+}
+
+.showtimes li {
+  list-style: none;
+  display: inline;
+}
+
+.stars {
+  padding-left: 14px;
+}
+
+.details {
+  margin-left: 50px;
+  width: 60%;
+}
+
+.details .showtimes {
+  padding: 0;
+}
+
+.movieDetails img {
+  -webkit-box-shadow: 2px 11px 9px -3px rgba(196, 190, 196, 1);
+  -moz-box-shadow: 2px 11px 9px -3px rgba(196, 190, 196, 1);
+  box-shadow: 2px 11px 9px -3px rgba(196, 190, 196, 1);
+  height: 280px;
+}
