@@ -1,14 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  max-width: 100vh;
-}
+  max-width: 100vh; }
 
 .homeImage {
   display: flex;
@@ -18,8 +15,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .btnHome {
   color: #60aebc !important;
@@ -32,47 +28,39 @@ body {
   justify-content: center;
   border: none;
   transition: all 0.4s ease 0s;
-  max-width: 190px;
-}
+  max-width: 190px; }
 
 .btnHome:hover {
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 6px white;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
-}
+  transition: all 0.4s ease 0s; }
 
 .textContent {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  padding-right: 250px;
-}
+  padding-right: 250px; }
 
 h1 {
   font-size: 5em;
-  color: #fff;
-}
+  color: #fff; }
 
 #ironhack {
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
 
 /* page avec les movies */
-
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .movies {
-  display: flex;
-}
+  display: flex; }
 
 .movies .movie {
-  border: 1px solid;
-}
+  border: 1px solid; }
 
 /*Page un movie*/
 .moviePage {
-  border: 1px solid;
-}
+  border: 1px solid; }
+
+/*# sourceMappingURL=style.css.map */
