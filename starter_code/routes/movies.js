@@ -10,9 +10,10 @@ router.get("/movies", (req, res) => {
   });
 });
 router.get("/movies/:id", (req, res) => {
-  Movie.findOne().then(dbRes => {
+  Movie.findOne({ _id: req.params.id }).then(dbRes => {
     console.log(dbRes);
-    res.render("movies", { movies: dbRes });
+    res.render("infos", { movie: dbRes });
   });
 });
+
 module.exports = router;
