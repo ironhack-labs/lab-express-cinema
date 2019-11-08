@@ -6,3 +6,46 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.move-btn {
+  display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 40% 60%;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  justify-self: start;
+  border-radius: 40px;
+  color: rgb(75, 76, 77);
+  font-size: 15px;
+ background-color: white;
+ text-align: center;
+padding-top: 20px;
+text-decoration: none;
+}
+
+.title1 {
+  grid-column-start: 2;
+  color: #ffffff;
+  font-size: 80px;
+  justify-self: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li .item-movies {
+  display: flex;
+  flex-direction: column;
+  // display: inline-block;
+}
+
