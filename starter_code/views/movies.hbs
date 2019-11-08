@@ -1,0 +1,15 @@
+<div id="movies-container">
+    <h1 id="movies-title">{{title}}</h1>
+    <p id="movies-subtitle">Click on the movie to check the showtimes!</p>
+    <div class="movies-wrap">
+        {{#each movies}}
+        <div class="display-movie">
+            <div class="movie-image">
+                <img src={{this.image}}alt="movie-image">
+            </div>
+            <p id="movie-title">{{this.title}}</p>
+            <a id="see-more-title" href="/movie/{{this.id}}">See more</a>
+        </div>
+        {{/each}}
+    </div>
+</div>
