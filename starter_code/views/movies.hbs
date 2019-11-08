@@ -1,0 +1,11 @@
+<ul class="list" id="movies">
+  {{#each movies}}
+  <li class="inch">
+    <div class="centrage">
+      <img src="{{this.image}}" alt="test">
+      <h5 class="titleM">{{this.title}}</h5>
+      <a class="centre" href="/movies/{{id}}">See More</a>
+    </div>
+  </li>
+  {{/each}}
+</ul>

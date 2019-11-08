@@ -1,38 +1,24 @@
-// body {
-//   padding: 50px;
-//   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-// }
-
 .home-container {
   width: 100vw;
   height: 100vh;
   background-image: url(../images/cinema.jpg);
-  background-size: cover;
-}
+  background-size: cover; }
 
 .home-container h1 {
   margin: 0%;
   padding: 100px 0 0 38%;
-  color: white;
-
-}
-
+  color: white; }
 
 .moviesbutton {
-  color: rgb(78, 129, 150);
+  color: #4e8196;
   text-decoration: none;
   font-size: 14px;
-  font-family: arial;
-
-}
+  font-family: arial; }
 
 .intro {
   text-align: center;
   font-size: 70px;
-  margin-left: 50%;
-
-}
-
+  margin-left: 50%; }
 
 .home_button {
   display: block;
@@ -40,51 +26,43 @@
   width: 15%;
   height: 50px;
   border-radius: 20px;
-  margin-top: 3%
-}
+  margin-top: 3%; }
 
 .list {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-left: 5%;
-}
+  margin-left: 5%; }
 
 .inch {
   list-style-type: none;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .centrage {
-  margin-right: 45%;
-}
+  margin-right: 45%; }
 
 .centre {
   display: block;
   text-align: center;
   font-size: 11px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .titleM {
-  text-align: center;
-}
+  text-align: center; }
 
 .movie {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  margin-left: 3%
-}
+  margin-left: 3%; }
 
 #showtimes {
   padding: 0%;
   list-style: none;
-  display: inline;
-}
+  display: inline; }
 
-#showtimes>li {
-  display: inline;
-}
+#showtimes > li {
+  display: inline; }
 
 .text {
-  margin-left: 20px;
-}
+  margin-left: 20px; }
+
+/*# sourceMappingURL=style.css.map */
