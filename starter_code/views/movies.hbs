@@ -1,0 +1,12 @@
+<div class="background-movies">
+
+    <ul class="all-movies" id="movies">
+        {{#each movies}}
+        <li class="item-movies">
+            <img src="{{this.image}}" alt="">
+            <p class="title-movie">{{this.title}}</p>
+            <a href="/movies/{{this._id}}">See more</a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
