@@ -1,11 +1,9 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
-  font-style: "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font-style: "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .background-container {
   width: 100%;
@@ -14,101 +12,83 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-}
+  position: relative; }
 
 .header-box {
   position: absolute;
   top: 80px;
-  right: 80px;
-}
+  right: 80px; }
 
 .header-box h1 {
   color: white;
-  font-size: 3em;
-}
+  font-size: 3em; }
 
 .header-box button {
   margin-top: 10px;
   background-color: white;
   width: 160px;
   height: 35px;
-  border-radius: 25px;
-}
+  border-radius: 25px; }
 
 .header-box button a {
   text-decoration: none;
   font-size: 1em;
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .movies-header {
-  margin: 10px 0 20px 10px;
-}
+  margin: 10px 0 20px 10px; }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
+  justify-items: center; }
 
 .movie-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .movie-box img {
   height: 150px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .movie-box h4 {
   font-size: 0.55em;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .movie-box a {
   font-size: 0.6em;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .movie-container {
-  display: flex;
-}
+  display: flex; }
 
 .movie-img {
   flex: 1;
-  padding: 15px;
-}
+  padding: 15px; }
 
 .movie-img img {
-  height: 200px;
-}
+  height: 200px; }
 
 .movie-data {
   flex: 2;
   display: flex;
   flex-direction: column;
-  font-size: 0.7em;
-}
+  font-size: 0.7em; }
 
 .movie-data h2 {
-  margin: 15px 0;
-}
+  margin: 15px 0; }
 
 .movie-data h4 {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .movie-data span {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .movie-data ul {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .movie-data p {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */
