@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 body {
   font-size: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,28 +7,53 @@ body {
 
 a,
 .link {
-  color: rgb(105, 194, 250);
+  color: $link-color;
   text-decoration: underline;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+
+  &:hover {
+    color: $link-color-hov;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+  }
 }
 
 .btn {
   &-custom {
-    color: rgb(139, 189, 206);
-    background-color: #fff;
+    color: $btn-color;
+    background-color: $btn-color-bg;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    text-decoration: none;
     padding: 1rem 2rem;
     box-shadow: 0px 2px 3px 0px #3d3d3d;
+
+    &:hover {
+      background-color: $btn-color-hov;
+      color: $btn-color-bg-hov;
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+    }
   }
 }
 
 .home {
   &-container {
     height: 100vh;
-    color: #fff;
+    color: $white-color;
     background-image: url("/images/cinema.jpg");
     background-position: top;
     background-size: cover;
