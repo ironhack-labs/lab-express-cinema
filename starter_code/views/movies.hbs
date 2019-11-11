@@ -1,0 +1,9 @@
+<div class="movies-container">
+  {{#each movies}}
+  <div class="movies-subcontainer">
+    <img src="{{image}}" alt="Poster for {{title}}">
+    <h2>{{title}}</h2>
+    <a href="/movies/{{_id}}">See more</a>
+  </div>
+  {{/each}}
+</div>

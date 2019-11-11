@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 10px; }
+
+body {
+  font: 1.4rem "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.landing {
+  background: url("../images/cinema.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .landing .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%; }
+    .landing .text-container h1 {
+      margin: 1em 0 0.5em;
+      font-size: 10rem;
+      color: #FFF;
+      word-wrap: break-word; }
+    .landing .text-container .btn-view-movies {
+      background: #FFF;
+      color: #8bbcc9;
+      border-radius: 1.5em;
+      padding: 1em 2em;
+      text-decoration: none;
+      font-size: 2rem;
+      box-shadow: -1px 2px 7px 1px rgba(33, 33, 33, 0.2); }
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto; }
+  .movies-container .movies-subcontainer {
+    width: 25%;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px 2px 7px 1px rgba(33, 33, 33, 0.2);
+    padding: 1em 0; }
+    .movies-container .movies-subcontainer > * {
+      margin: 0.5em; }
+    .movies-container .movies-subcontainer img {
+      min-width: 60%; }
+    .movies-container .movies-subcontainer h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin: 1em 2em; }
+    .movies-container .movies-subcontainer a {
+      font-size: 1.8rem;
+      margin-bottom: 1.5em; }
+
+.movie-container {
+  height: 100vh;
+  margin: auto 15%;
+  display: flex; }
+  .movie-container img {
+    min-height: 60%;
+    max-height: 80%;
+    flex: 1;
+    margin: 5em;
+    align-self: center; }
+  .movie-container .text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 2em 2em;
+    justify-content: center; }
+    .movie-container .text-container > * {
+      margin: 0.75em 0; }
+    .movie-container .text-container ul {
+      margin-left: 1em; }
+      .movie-container .text-container ul li {
+        padding: 0.25em 0; }
+
+/*# sourceMappingURL=style.css.map */
