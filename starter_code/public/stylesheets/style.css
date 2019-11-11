@@ -1,37 +1,30 @@
 body {
   margin: 0;
   padding: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .index-background img {
   position: relative;
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .index-words {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
   position: absolute;
   top: 200px;
-  right: 100px;
-}
+  right: 100px; }
 
 .index-words h1 {
   color: white;
-  font-size: 5rem;
-}
+  font-size: 5rem; }
 
 .index-words a {
   background-color: white;
-  color: rgb(111, 150, 164);
+  color: #6f96a4;
   border-radius: 26px;
   padding: 16px 31px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
