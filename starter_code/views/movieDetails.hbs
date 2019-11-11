@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row mt-5">
+    {{#with movie}}
+    <div class="col-md-2">
+      <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div class="col-md-9 offset-md-1">
+      <a href="/movies" class="link">Go back</a>
+      <h3 class="font-weight-bold my-3">{{title}}</h3>
+      <p class="font-weight-bold">Director: {{director}}</p>
+      <p class="font-weight-bold">Stars</p>
+      <ul class="pl-3">
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <ul class="pl-0 list-inline list-custom">
+        {{#each showtimes}}
+        <li class="list-inline-item">{{this}}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/with}}
+  </div>
+</div>

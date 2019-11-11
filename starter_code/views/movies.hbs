@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="flex-column row mb-5">
+    <h1 class="font-weight-bold mb-3">{{title}} Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+  </div>
+
+  <div class="row">
+    {{#each movies}}
+    <div class="align-self-stretch col-lg-4 d-flex flex-wrap justify-content-center mb-3">
+      <img src="{{image}}" class="mb-3" alt="{{title}}">
+      <h5 class="mb-2 text-center w-100 font-weight-bold">{{title}}</h5>
+      <p class="align-self-end"><a class="link" href="/movies/{{_id}}">See more</a></p>
+    </div>
+    {{/each}}
+  </div>
+</div>
