@@ -15,6 +15,7 @@ router.get("/movies", (req, res) => {
     .catch(err => {
       console.log(err);
     });
+    
 });
 
 router.get("/movies/:movieId", (req, res) => {

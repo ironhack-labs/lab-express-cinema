@@ -1,13 +1,24 @@
 body {
   padding: 50px;
-  background-image: url(/images/cinema.jpg);
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.index-container {
+  font: 60px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: right;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#check-movies {
+  font: 22px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 20px 45px 20px 45px;
+  background-color: white;
+  border-radius: 50px 50px 50px 50px;
+  text-decoration: none;
+  color: #87CEEB; }
 
 a {
   color: #00b7ff; }
-
-#popcorn {
-  position: absolute; }
 
 #movie-title {
   list-style: none; }
