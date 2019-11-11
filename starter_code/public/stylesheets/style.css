@@ -7,14 +7,16 @@ a {
 
 body.home {
   display: flex;
-  justify-content: right;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white; }
   body.home h1 {
-    font-size: 100px;
+    font-size: 100px; }
+  body.home div {
+    margin: 0 0 0 auto;
     width: 50%; }
   body.home a {
     border: 1px solid gray;

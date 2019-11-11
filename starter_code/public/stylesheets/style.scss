@@ -10,16 +10,19 @@ a {
 
 body.home {
   display: flex;
-  // flex-direction: row;
-  justify-content: right;
-  align-items: center;
+  // flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+
   h1 {
     font-size: 100px;
-    // display: inline-block;
+  }
+  div {
+    margin: 0 0 0 auto;
     width: 50%;
   }
 
