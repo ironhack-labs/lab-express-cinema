@@ -1,0 +1,21 @@
+<div class="flex">
+    {{#with movie}}
+    <div class="img-box">
+        <img src="{{image}}" alt="movie-poster">
+    </div>
+    <div class="info-box">
+        <a href="/movies">Go back</a>
+
+        <h2>{{title}}</h2>
+        <p>Director: {{director}}</p>
+        <p>Stars</p>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <span>{{#each showtimes }} {{this}} | {{this}} {{/each}}</span>
+    </div>
+    {{/with}}
+</div>
