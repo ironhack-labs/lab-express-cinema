@@ -1,23 +1,30 @@
 {{#with movie}}
-<div class="movie-container">
-  <img src="{{image}}" alt="Poster for {{title}}">
-  <div class="text-container">
-    <a href="/movies">Go back</a>
-    <h2>{{title}}</h2>
-    <h3>{{director}}</h3>
-    <h4>Stars</h4>
-    <ul>
-      {{#each stars}}
-      <li>{{this}}</li>
-      {{/each}}
-    </ul>
-    <p>{{description}}</p>
-    <h4>Showtimes</h4>
-    <ul>
-      {{#each showtimes}}
-      <li>{{this}}</li>
-      {{/each}}
-    </ul>
+<div class="page">
+  <div class="movie-container">
+    <img src="{{image}}" alt="Poster for {{title}}">
+    <div class="text-container">
+      <a href="/movies">Go back</a>
+      <h2>{{title}}</h2>
+      <h3>{{director}}</h3>
+      <div class="star">
+        <h4>Stars</h4>
+        <ul>
+          {{#each stars}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <p>{{description}}</p>
+      <div class="showtimes">
+
+        <h4>Showtimes</h4>
+        <ul>
+          {{#each showtimes}}
+          <li> {{this}} </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 {{/with}}
