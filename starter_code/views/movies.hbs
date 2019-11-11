@@ -1,0 +1,17 @@
+<div>
+    <h1>Movies</h1>
+    <h2>Click on the movie to check the showtimes!</h2>
+</div>
+
+<div class="flex flex-grid">
+    {{#each movies}}
+    <a href="/movies/{{_id}}">
+        <div class="movie-container">
+            <img src="{{image}}" alt="">
+            <p>{{title}}</p>
+            See more
+    </a>
+</div>
+
+{{/each}}
+</div>

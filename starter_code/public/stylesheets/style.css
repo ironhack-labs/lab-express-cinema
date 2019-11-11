@@ -1,72 +1,57 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  // display: flex;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 body.home {
   display: flex;
-  // flex-direction: row;
   justify-content: right;
   align-items: center;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  h1 {
+  color: white; }
+  body.home h1 {
     font-size: 100px;
-    // display: inline-block;
-    width: 50%;
-  }
-
-  a {
+    width: 50%; }
+  body.home a {
     border: 1px solid gray;
     background-color: white;
     border-radius: 50px;
     padding: 24px 60px;
-    text-decoration: none;
-  }
-}
+    text-decoration: none; }
 
 .movie-container {
   margin: 30px;
   padding: 15px;
   box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
   text-align: center;
-  border: 1px solid rgba(128, 128, 128, 0.5);
-}
+  border: 1px solid rgba(128, 128, 128, 0.5); }
 
 .movie-container:hover {
   box-shadow: 5px 5px 5px rgba(0, 167, 179, 0.5);
-  border: 1px solid rgba(128, 128, 128, 0.5);
-}
+  border: 1px solid rgba(128, 128, 128, 0.5); }
 
 .flex {
-  display: flex;
-}
+  display: flex; }
 
 .flex-grid {
   justify-content: space-around;
-  // align-items: center;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
-#details {
-  img {
-    width: 250px;
-    height: auto;
-  }
-  div {
-    margin: 30px 30px;
-  }
-  ul {
-    padding: 0 20px;
-  }
-  span {
-    margin: 20px 0;
-  }
-}
+#details img {
+  width: 250px;
+  height: auto; }
+
+#details div {
+  margin: 30px 30px; }
+
+#details ul {
+  padding: 0 20px; }
+
+#details span {
+  margin: 20px 0; }
+
+/*# sourceMappingURL=style.css.map */
