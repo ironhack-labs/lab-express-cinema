@@ -48,6 +48,7 @@ a {
   margin: 0 auto; }
   .movies-container .movies-subcontainer {
     width: 25%;
+    min-width: 20em;
     margin: 2em;
     display: flex;
     flex-direction: column;
@@ -115,7 +116,7 @@ a {
         content: '|';
         margin: 1em; }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .movie-container {
     margin: 0 1em; }
   .text-container {
