@@ -1,0 +1,19 @@
+{{#with movie}} {{!-- so we dont have to use book.<value> all the time --}}
+
+<a href="/movies">Go back</a>
+<p><img src={{image}} alt="Picture of the movie cover"> </p>
+<h2>{{title}}</h2>
+<h4>Director: {{director}}</h4>
+<div>
+  <p><strong>Stars</strong></p>
+  <ul>
+    {{#each stars}}
+    <li>
+      {{this}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
+<p>{{description}}</p>
+<p>{{showtimes}}</p>
+{{/with}}
