@@ -1,72 +1,60 @@
 body {
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .lead-img {
   background-size: cover;
-  width: 100%;
-}
+  width: 100%; }
 
 .header {
   position: absolute;
   top: 25vh;
-  left: 70vw;
-}
+  left: 70vw; }
 
 .header h1 {
   font-size: 5em;
-  color: white;
-}
+  color: white; }
 
 .header button {
   padding: 1.5vh 3vw;
   font-size: 1.2em;
   border-radius: 40px;
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .details-container {
   display: flex;
   flex-direction: row;
-  margin: 3vh 20vw 3vh 3vw;
-}
+  margin: 3vh 20vw 3vh 3vw; }
 
-.details-container img{
- margin-right: 5vw;
-}
+.details-container img {
+  margin-right: 5vw; }
 
 .movies-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2vh 5vw;
-}
+  margin: 2vh 5vw; }
 
 .movies-container img {
-  width: 20vw;
-}
+  width: 20vw; }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
-.movies-container h1{
+.movies-container h1 {
   width: 20vw;
   font-size: 1.3em;
-  margin-top: 3vh;
-}
+  margin-top: 3vh; }
 
-.movies-container a{
-  width: 20vw;
-}
+.movies-container a {
+  width: 20vw; }
 
 .movies-headers {
-  margin: 3vh 3vh;
-}
+  margin: 3vh 3vh; }
+
+/*# sourceMappingURL=style.css.map */
