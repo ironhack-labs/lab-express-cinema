@@ -1,14 +1,11 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .movies-container {
-  padding: 50px
-}
+  padding: 50px; }
 
 .home {
   padding: 0px 0px 0px 0px;
@@ -17,61 +14,47 @@ a {
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  color: white;
-}
+  color: white; }
 
 .home h1 {
-  font-size: 100px;
-}
+  font-size: 100px; }
 
 .home-info {
   position: absolute;
   left: 50%;
-  top: 20%;
-}
+  top: 20%; }
 
 .home-button {
   position: absolute;
-  left: 20%;
-}
+  left: 20%; }
 
 .movies-overview {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
-}
+  padding: 20px 20px; }
 
 .movie-info-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .movie-img {
   display: flex;
   align-items: center;
-  width: 100%;
-}
+  width: 100%; }
 
 .movieDetails-container {
   padding: 50px;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .movieDetails-info {
-  padding: 0px 20px 20px 20px;
-}
+  padding: 0px 20px 20px 20px; }
 
-.list {
-  &-custom li {
-    &:not(:last-child):after {
-      content: "|";
-    }
-  }
-}
+.list-custom li:not(:last-child):after {
+  content: "|"; }
 
 a,
 .link {
@@ -81,8 +64,7 @@ a,
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
-}
+  -o-transition: color 0.2s; }
 
 a:hover,
 .link:hover {
@@ -91,5 +73,6 @@ a:hover,
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
-}
+  -o-transition: color 0.2s; }
+
+/*# sourceMappingURL=style.css.map */
