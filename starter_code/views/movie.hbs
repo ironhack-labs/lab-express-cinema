@@ -1,0 +1,23 @@
+<div class="movies-wrapper">
+  {{#each movie}}
+  <div class="card-xl">
+    <img src="{{image}}">
+    <h2>{{title}}</h2>
+    <p>Director: {{director}}</p>
+    <p>Stars:</p>
+    <ul>
+      {{#each stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>Showtimes!</p>
+     <ul>
+      {{#each showtimes}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <a href="/movies">go back</a>
+  </div>
+  {{/each}}
+</div>

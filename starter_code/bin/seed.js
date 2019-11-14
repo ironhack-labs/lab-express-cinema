@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
-const Movies = require("./models/Movie");
+const Movies = require("../models/Movie");
 
-
-
+mongoose
+  .connect("mongodb://localhost/movies", { useNewUrlParser: true })
+  .then(x => console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`))
+  .catch(err => console.error("Error connecting to mongo", err));
 
 
 const movies = [
@@ -71,3 +73,5 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+Movies.insertMany(movies)
