@@ -53,6 +53,7 @@ h4{
 p, a{
   font-size: 1.4rem;
   text-decoration: none;
+  margin-bottom: 1.2rem;
 }
 button{
  
@@ -113,7 +114,4 @@ margin: 4rem;
   margin: 0 3rem;
 }
 
-.info{
- 
-}
 /*# sourceMappingURL=style.css.map */
