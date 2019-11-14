@@ -1,9 +1,10 @@
 <div class="moviesWrapper">
   {{#each movie}}
+  <div class="card">
   <img src="{{image}}" alt="">
    
-        <h1>{{title}}</h1>
+        <h2>{{title}}</h2>
         <a href="/movie/{{_id}}">See more</a>
-   
+   </div>
    {{/each}}
 </div>

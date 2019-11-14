@@ -1,8 +1,119 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
-a {
-  color: #00B7FF; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: 10px 'Rubik', sans-serif;
 
+}
+
+body{
+  
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+  color:white;
+font-size: 8rem;
+font-weight: 700;
+margin-bottom: 2rem;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 700;
+  margin:2rem 0;
+}
+
+h3{
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+p, a{
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+button{
+ 
+  padding: 1.5rem;
+
+}
+
+button>a{
+  color: steelblue;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+
+.section {
+  background-image: url('../images/cinema.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  height: 100%;
+}
+
+.section div.titles{
+  float: right;
+  text-align: center;
+  padding: 20rem;
+  margin-bottom: 2rem;
+
+}
+
+.moviesWrapper{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.card{
+text-align: center;
+margin: 4rem;
+}
+
+.card a {
+  color: #00B7FF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#movie{
+  display:flex;
+  justify-content: space-around;
+  padding: 10rem;
+}
+
+#movie img{
+  margin: 0 3rem;
+}
+
+.info{
+ 
+}
 /*# sourceMappingURL=style.css.map */
