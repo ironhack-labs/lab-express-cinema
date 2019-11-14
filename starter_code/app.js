@@ -8,6 +8,8 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const Movie        = require('./models/Movie')
+
 
 
 mongoose
@@ -53,6 +55,21 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.get('/movies', (req, res) => {
+  Movie.find()
+  .then(moviesFromDb => {
+    res.render('movies', {moviesFromDb})
+  })
+  
+})
+
+app.get('/movie/:id', (req, res) =>{
+  Movie.findById(req.params.id)
+  .then(movieById => {
+    res.render('movieInfo', movieById)
+  })
+})
 
 
 app.listen(3000, () => console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊"));
