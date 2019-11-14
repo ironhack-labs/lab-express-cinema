@@ -1,0 +1,21 @@
+<p><a href="/movies">< Go Back To Movies</a></p>
+
+{{#each moviePayload}}
+<img src={{image}} alt="">
+<h1>{{title}}</h1>
+<h2>{{director}}</h2>
+<p>{{description}}</p>
+
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<ul>
+    {{#each showtimes}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+{{/each}}
