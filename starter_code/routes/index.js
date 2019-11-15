@@ -1,9 +1,14 @@
-const express = require('express');
-const router  = express.Router();
+const express = require("express");
+const router = express.Router();
 
-/* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
+const {
+    home,
+    movies
+} = require("../controllers/index.controller");
 
-module.exports = router;
+router.get("/", home);
+
+router.get("/movies", movies);
+
+
+module.exports = router; 
