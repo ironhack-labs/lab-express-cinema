@@ -1,0 +1,16 @@
+<div class="contenedor">
+    <div class="contenido">
+        <h1>{{title}} Cinema</h1>
+        <p>Click on the movie to check the showtimes!</p>
+    </div>
+
+    <div id="peliculas">
+        {{#each movies}}
+        <div>
+            <img src="{{image}}" class="mb-3" alt="{{title}}">
+            <p>{{title}}</p>
+            <p><a class="link" href="/movies/{{_id}}">See more</a></p>
+        </div>
+        {{/each}}
+    </div>
+</div>
