@@ -1,0 +1,14 @@
+<h1>Ironhack Cinema</h1>
+<p>Click to the movie to check the showtimes!</p>
+{{#with movie}}
+<a href="#">Go back</a>
+<img src="{{this.image}}" alt="">
+<h1>{{this.title}}</h1>
+<p><strong>Director: {{director}}</strong></p>
+<p><strong>Stars</strong></p>
+
+<p>{{description}}</p>
+{{!-- <p>{{showtimes}}</p> --}}
+
+
+{{/with}}
