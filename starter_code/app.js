@@ -8,10 +8,12 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+// const data         = require('./bin/seeds')
+// const Movies       = require('./models/movies.model')
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/movie-app-webmad1019', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -47,12 +49,14 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinema Ironhack';
+
+
+app.use('/', require('./routes/index.routes'));
+app.use('/movies', require('./routes/movies.routes'));
 
 
 
-const index = require('./routes/index');
-app.use('/', index);
 
 
 module.exports = app;
