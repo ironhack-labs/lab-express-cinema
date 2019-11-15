@@ -2,17 +2,16 @@ body {
   padding: 50px;
   font: 150px "sans-serif", Helvetica, Arial, sans-serif;
   background-image: url(../images/cinema.jpg);
-  background-size: cover;
-}
+  background-size: cover; }
 
 .title {
   margin-left: 650px;
-  color: white;
-}
+  color: white; }
 
 .btn {
   background-color: white;
   color: #00B7FF;
   border-radius: 25px;
-  margin-left: 100px;
-}
+  margin-left: 100px; }
+
+/*# sourceMappingURL=style.css.map */
