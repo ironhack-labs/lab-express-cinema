@@ -2,22 +2,19 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url(../images/cinema.jpg);
-  background-size: cover;
-}
+  background-size: cover; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-.btn{
+.btn {
   border-radius: 25px;
   background: white;
-  color:blue;
-  
-  }
+  color: blue; }
 
-  .movieT{
-   font-size: 60px;
-   color:white;
-   margin-left: 950px;
-  }
+.movieT {
+  font-size: 60px;
+  color: white;
+  margin-left: 950px; }
+
+/*# sourceMappingURL=style.css.map */
