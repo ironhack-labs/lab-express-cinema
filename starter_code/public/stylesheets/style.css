@@ -21,7 +21,7 @@ time, mark, audio, video {
 }
 
 body{
-  
+
   width: 100vw;
   height: 100vh;
 }
@@ -55,7 +55,7 @@ p, a{
   text-decoration: none;
 }
 button{
- 
+
   padding: 1.5rem;
 
 }
@@ -112,5 +112,6 @@ margin: 4rem;
 #movie img{
   margin: 0 3rem;
 }
+
 
 /*# sourceMappingURL=style.css.map */
