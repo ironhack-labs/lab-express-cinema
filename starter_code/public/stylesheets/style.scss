@@ -6,3 +6,43 @@ body {
 a {
   color: #00B7FF;
 }
+
+.movies-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.movies-container div{
+  width: 25%;
+  margin: 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detail-container{
+  width: 100%;
+}
+
+.detail-container img{
+  float: left;
+}
+
+.detail-container > div {
+  width: 65%;
+  margin-left: 25%;
+}
+
+.detail-container > div >  ul:nth-child(7) {
+  list-style: none;
+}
+
+.detail-container > div >  ul:nth-child(7) li {
+  display: inline;
+}
