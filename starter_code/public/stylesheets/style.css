@@ -14,13 +14,13 @@ main.index {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
-  padding-left: 50vw;
-  padding-bottom: 40vh; }
+  padding-left: 60vw;
+  padding-bottom: 50vh; }
 
 main.index h1 {
-  font-size: 400%;
+  font-size: 500%;
   color: white; }
 
 main.index a {
