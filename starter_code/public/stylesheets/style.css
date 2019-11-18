@@ -2,13 +2,10 @@ body {
   margin: 0%;
   padding: 0%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: white;
-
-}
+  color: white; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 #home {
   margin: 0%;
@@ -16,5 +13,6 @@ a {
   background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
   width: 1920px;
-  height: 1080px;
-}
+  height: 1080px; }
+
+/*# sourceMappingURL=style.css.map */
