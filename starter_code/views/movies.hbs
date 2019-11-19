@@ -1,6 +1,20 @@
-<h2>Catálogo</h2>
-{{#each movies as |movie|}}
-    <img id="pics" src="{{movie.image}}">
-    <h3>{{movie.name}} </h3>
-    <a href="/movies/{{movie.name}}"><p>View Album </p></a>
-{{/each}}
+
+<style>
+    body{
+        background-image: none;
+    }
+</style>
+
+    <h2>Catálogo</h2>
+    
+<div id="movies-container">
+    {{#each pelis as |movie|}}
+        <div class="movie-display">
+            <img id="pics" src="{{movie.image}}">
+            <h3>{{movie.title}}</h3>
+            <a href="info/{{movie.id}}"><p>See more</p></a>
+        </div>
+    {{/each}}
+</div>
+    
+

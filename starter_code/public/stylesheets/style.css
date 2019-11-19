@@ -1,0 +1,20 @@
+body{
+  background-image: url("../images/cinema.jpg");
+  background-size: 100%;
+}
+
+#boton-check{
+  left: 500px;
+}
+
+
+#movies-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie-display{
+  margin: 10px;
+  width: 30%;
+}

@@ -1,12 +1,22 @@
-//const Movie = require("models/Movie");
+const Movie = require("../models/Movie");
 
 exports.home = async (req, res)=> {
     res.render("index");
 }
 
-exports.movies = async(req, res)=> {
-    const movie = await (req.query.q).catch()
-    res.render("movies", {items});
-}
+exports.movies = async (req, res) => {
 
-router.get("/movies", movies);
+    const pelis = await Movie.find();
+    res.render("movies", { pelis });
+  };
+
+exports.info = (req, res) => {
+    const { id } = req.params
+    .then(data => {
+        const peli = Movie.findById(id)
+        res.render("info", {peli});
+      })
+    .catch(err => {
+        console.log(err)
+    })     
+}
