@@ -1,0 +1,26 @@
+<style>
+    body{
+      background-image: none;
+    }
+  </style>
+
+
+<p>
+ <img src="{{movie.image}}" alt="">
+</p>
+
+<aside class='info'>
+
+  <a href="/movies">Go back</a>
+  <h2>{{movie.title}}</h2>
+  <h3>Director: {{movie.director}}</h3>
+  <h4>Stars</h4>
+  <ul>
+    <li>{{movie.stars.[0]}}</li>
+    <li>{{movie.stars.[1]}}</li>
+    <li>{{movie.stars.[2]}}</li>
+  </ul>
+  <p style="width: 70%;">{{movie.description}}</p>
+  <span>{{movie.showtimes}}</span>
+
+</aside>

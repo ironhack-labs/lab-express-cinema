@@ -3,21 +3,18 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-}
+  background-size: 100%; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-h1{
+h1 {
   position: absolute;
   left: 60%;
   font-size: 80px;
-  color: white;
-}
+  color: white; }
 
-button{
+button {
   position: absolute;
   border-radius: 30px;
   left: 60%;
@@ -26,29 +23,26 @@ button{
   top: 55%;
   background-color: white;
   font-weight: bolder;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
-button a{
+button a {
   text-decoration: none;
-  color: lightseagreen;
-}
+  color: lightseagreen; }
 
-.card{
+.card {
   padding: 15px;
   width: 30%;
   font-size: 15px;
   font-weight: bolder;
-  text-align: center;
-}
+  text-align: center; }
 
-.films{
+.films {
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
-.info{
+.info {
   position: absolute;
   top: 50px;
-  left: 300px;
-}
+  left: 300px; }
+
+/*# sourceMappingURL=style.css.map */
