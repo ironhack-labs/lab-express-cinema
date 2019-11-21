@@ -1,46 +1,38 @@
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF;
   text-decoration: none;
-  font-size: 15px
-}
+  font-size: 15px; }
 
 #imagen {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
-  height: 800px
-}
+  height: 800px; }
 
 #content {
   margin-left: 60%;
-  padding-top: 8%
-}
+  padding-top: 8%; }
 
-#content > h2{
+#content > h2 {
   font-size: 7rem;
-  color: white;
-}
+  color: white; }
 
 #content > button {
   padding: 15px;
   border: 5px solid white;
-  border-radius: 30px;
-}
+  border-radius: 30px; }
 
 #all {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center
-}
+  justify-content: center; }
 
 #movie {
   display: flex;
@@ -49,34 +41,29 @@ a {
   align-items: center;
   width: 15%;
   height: 20%;
-  margin: 80px
-}
+  margin: 80px; }
 
 #top {
   margin-top: 10px;
-  margin-left: 60px;
-}
+  margin-left: 60px; }
 
 #card {
   display: flex;
   margin-left: 80px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 #right {
   text-align: left;
-  margin-left: 40px;
-}
+  margin-left: 40px; }
 
-#right > ul{
+#right > ul {
   margin: 10px 0;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
 #right > p {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 #right > h1 {
-  margin: 10px 0;
-}
+  margin: 10px 0; }
+
+/*# sourceMappingURL=style.css.map */
