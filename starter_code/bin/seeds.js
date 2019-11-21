@@ -70,12 +70,14 @@ const movies = [{
   }
 ];
 
-Movie.create(movies)
-  .then(movies => {
-    console.log(` ${movies.length} added`)
-    mongoose.connection.close()
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie");
+
+mongoose.connect("mongodb://localhost/cinema-ironhack");
+
+Movie.insertMany(movies)
+  .then(documents => {
+    console.log(`Success" ${documents.length} movies were added`);
+    mongoose.connection.close();
   })
-  .catch(err => {
-    console.log(err)
-    mongoose.connection.close()
-  })
+  .catch(err => console.log(err));
