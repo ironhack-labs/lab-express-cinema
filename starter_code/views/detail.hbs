@@ -1,0 +1,11 @@
+<p><a href='/movies'>Go back</a></p>
+<img src = {{mubi.img}}>
+<h1>{{mubi.name}}</h1>
+<h4>Director: </h4> <h4>{{mubi.director}}</h4>
+<h4>Stars:</h4>
+<ul>{{#each mubi.star as |famosow|}}<li>{{famosow}}</li>{{/each}}
+</ul>
+<p>{{mubi.description}}</p>
+{{#each mubi.showtimes as |time|}}<p>{{time}} |</p>{{/each}}
+
+<h3></h3>
