@@ -1,7 +1,14 @@
 <h2>movie description</h2>
 
-{{#each movies as |movie|}}
-<img src="{{this.image}}" alt="">
-</p>{{this.title.id}}</p>
+<img src="{{movies.image}}" alt="">
+<br>
+<h2>{{movies.title}}</h2>
+<br>
+<h2>{{movies.director}}</h2>
 
-{{/each}}
+<br>
+<p>{{movies.description}}</p>
+<br>
+<p>{{movies.stars}}</p>
+<br>
+<p>{{movies.showtimes}}</p>
