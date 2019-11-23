@@ -1,4 +1,8 @@
-// To insert in "bin/seeds.js"
+require('dotenv').config();
+
+
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie");
 
 const movies = [{
     title: "A Wrinkle in Time",
@@ -65,3 +69,16 @@ const movies = [{
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+
+mongoose
+  .connect(process.env.DB, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+  })
+  .then(async () => {
+    const moviesData = await Movie.create(movies);
+    console.log(`${movies.length} created successfully`);
+    mongoose.connection.close();
+  })
+  .catch(err => console.log(err));

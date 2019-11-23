@@ -13,6 +13,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  color: white;
+  font-size: 50px;
+}
 
 .wrapper-index {
   background-image: url(/images/cinema.jpg);
@@ -27,4 +31,13 @@ body {
 .main-btn {
   position: relative;
   padding: 20px;
+  border: 1px solid white;
+  border-radius: 40px;
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #72A7B5;
+
+  }
 }

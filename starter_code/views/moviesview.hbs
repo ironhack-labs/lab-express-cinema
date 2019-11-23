@@ -1,0 +1,11 @@
+{{!-- <h4>{{title}}</h4> --}}
+<h5>Click on a movie to check the showtime!</h5>
+
+
+{{#each movies as |movie|}}
+<img src="{{this.image}}" alt="">
+</p>{{this.title}}</p>
+<a href="/movie-description/{{movie.id}}">see more</a>
+{{!-- <a href="/products/{{product._id}}">{{product.name}}</a> --}}
+<br>
+{{/each}}
