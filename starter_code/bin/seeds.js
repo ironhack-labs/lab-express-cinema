@@ -71,9 +71,11 @@ const movies = [
   ];
 
   mongoose
-  .connect('mongodb://localhost/starter-code', { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('mongodb://localhost/lab-cinema', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(async() => {
     const pelis = await Movie.create(movies);
     mongoose.connection.close();
     })
   .catch(err => console.log(err));
+
+  module.exports = Movie;

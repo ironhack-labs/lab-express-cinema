@@ -1,0 +1,29 @@
+
+<style>
+    body{
+        background-image: none;
+    }
+</style>
+
+    <h2>Información</h2>
+    
+<div>
+  <div class="movie-display">
+    <img src="{{oneMovie.image}}">
+    <h3>{{oneMovie.title}}</h3>
+    <h4>Director: {{oneMovie.director}}</h4>
+    <ul>
+      <h4>Stars</h4>
+      {{#each oneMovie.stars as |star|}}
+          <li><p>{{star}}</p></li>
+      {{/each}}
+    </ul>
+    <p>{{oneMovie.description}}</p>
+    <p>
+        {{#each oneMovie.showtimes as |showtime|}}
+          {{showtime}} |
+        {{/each}}
+    </p>
+  </div>
+</div>
+    
