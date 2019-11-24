@@ -1,7 +1,6 @@
-const {
-  Schema,
-  model
-} = require("mongoose");
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
 
 const movieSchema = new Schema({
   title: {
@@ -26,5 +25,7 @@ const movieSchema = new Schema({
     type: Array
   }
 });
+const Movie = mongoose.model("Movie", movieSchema);
 
-module.exports = model("Movie", movieSchema);
+
+module.exports = Movie;

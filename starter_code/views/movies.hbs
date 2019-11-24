@@ -1,0 +1,17 @@
+<h1>Ironack cinema</h1>
+
+<div class="movies">
+  
+  {{#each this.movies}}
+  <article class="movie"><div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <img src="{{this.image}}" alt="{{this.title}}">
+    <h1>{{this.title}}</h1>
+    <a href="/movie/{{this.id}}">View Movie</a>
+  </article>
+  {{/each}}
+
+</div>

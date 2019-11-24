@@ -1,11 +1,6 @@
-require("dotenv").config();
-
 const mongoose = require("mongoose");
 const Movie = require("../models/Movie");
-mongoose.connect('mongodb://localhost/starter-code', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+
 
 const movies = [{
     title: "A Wrinkle in Time",
@@ -73,11 +68,17 @@ const movies = [{
   }
 ];
 
-
-Movie.create(movies).then(movies => {
-  console.log(`Created ${movies.length} movies`);
-  mongoose.connection.close();
-}).catch(err => {
-  console.log(err);
-  mongoose.connection.close()
-});
+mongoose
+  .connect("mongodb://localhost/starter-code", {
+    useNewUrlParser: true
+  })
+  .then(async () => {
+    const insertManyResult = await Movie.insertMany(movies);
+    insertManyResult.forEach(({
+      title
+    }) => console.log(`Inserted: ${title}`));
+    mongoose.connection.close();
+  })
+  .catch(err => {
+    console.error("Error connecting to mongo", err);
+  });

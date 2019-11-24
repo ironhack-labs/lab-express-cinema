@@ -8,7 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
-const fs = require('fs');
+
 
 
 
@@ -55,14 +55,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Cinema Ironhack';
 
-
-
 const index = require('./routes/index');
 app.use('/', index);
-
-/*
-app.listen(process.env.PORT, () => {
-  console.log(`Listening on ${process.env.PORT}`);
-});*/
 
 module.exports = app;
