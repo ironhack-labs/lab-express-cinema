@@ -1,14 +1,22 @@
-<h2>movie description</h2>
-
-<img src="{{movies.image}}" alt="">
-<br>
-<h2>{{movies.title}}</h2>
-<br>
-<h2>{{movies.director}}</h2>
-
-<br>
-<p>{{movies.description}}</p>
-<br>
-<p>{{movies.stars}}</p>
-<br>
-<p>{{movies.showtimes}}</p>
+<div class="wrapper2">
+  <h2>movie description</h2>
+  <div>
+    <img src="{{movies.image}}" alt="">
+    <div class="right-content">
+      <h2>{{movies.title}}</h2>
+      <h3>{{movies.director}}</h3>
+      <span>Stars</span>
+      <ul>
+        {{#each movies.stars as |st|}}
+        <li>{{st}}</li>
+        {{/each}}
+      </ul>
+      <p>{{movies.description}}</p>
+      <br>
+      {{#each movies.showtimes as |time|}}
+      <p class="showtime">{{time}} | </p>
+      {{/each}}
+      {{!-- <p>{{movies.showtimes}}</p> --}}
+    </div>
+  </div>
+</div>

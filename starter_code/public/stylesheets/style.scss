@@ -15,7 +15,7 @@ body {
 
 h1 {
   color: white;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 .wrapper-index {
@@ -23,21 +23,113 @@ h1 {
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
+.content-index {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 
 .main-btn {
   position: relative;
   padding: 20px;
+  width: 300px;
   border: 1px solid white;
+  margin-top: 50px;
   border-radius: 40px;
 
   a {
     text-decoration: none;
     font-size: 20px;
     color: #72A7B5;
+  }
+}
+
+.wrapper {
+  margin: 40px;
+
+  h4 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      width: 30%;
+      padding: 40px 10px;
+      text-align: center;
+
+      p {
+        font-size: 20px;
+        padding: 14px 0;
+      }
+
+      a {
+        font-size: 18px;
+      }
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+.wrapper2 {
+  margin: 40px;
+
+  h2 {
+    padding-bottom: 40px;
+  }
+
+  div {
+    display: flex;
+
+    img {
+      width: 400px;
+    }
+
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      margin: 40px;
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+
+      ul {
+        padding: 20px;
+      }
+
+      p {
+        width: 60%;
+      }
+    }
 
   }
 }

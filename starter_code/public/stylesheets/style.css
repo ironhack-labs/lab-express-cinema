@@ -10,23 +10,80 @@ body {
 
 h1 {
   color: white;
-  font-size: 50px; }
+  font-size: 100px; }
 
 .wrapper-index {
   background-image: url(/images/cinema.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  object-fit: cover; }
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.content-index {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
 
 .main-btn {
   position: relative;
   padding: 20px;
+  width: 300px;
   border: 1px solid white;
+  margin-top: 50px;
   border-radius: 40px; }
   .main-btn a {
     text-decoration: none;
     font-size: 20px;
     color: #72A7B5; }
+
+.wrapper {
+  margin: 40px; }
+  .wrapper h4 {
+    font-size: 24px;
+    padding-bottom: 10px; }
+  .wrapper h5 {
+    font-size: 20px;
+    padding-bottom: 20px; }
+  .wrapper .movies-container {
+    display: flex;
+    flex-wrap: wrap; }
+    .wrapper .movies-container div {
+      width: 30%;
+      padding: 40px 10px;
+      text-align: center; }
+      .wrapper .movies-container div p {
+        font-size: 20px;
+        padding: 14px 0; }
+      .wrapper .movies-container div a {
+        font-size: 18px; }
+      .wrapper .movies-container div img {
+        width: 200px; }
+
+.wrapper2 {
+  margin: 40px; }
+  .wrapper2 h2 {
+    padding-bottom: 40px; }
+  .wrapper2 div {
+    display: flex; }
+    .wrapper2 div img {
+      width: 400px; }
+    .wrapper2 div .right-content {
+      display: flex;
+      flex-direction: column;
+      margin: 40px; }
+      .wrapper2 div .right-content h2 {
+        font-size: 28px; }
+      .wrapper2 div .right-content h3 {
+        font-size: 24px;
+        padding-bottom: 20px; }
+      .wrapper2 div .right-content span {
+        font-size: 20px; }
+      .wrapper2 div .right-content ul {
+        padding: 20px; }
+      .wrapper2 div .right-content p {
+        width: 60%; }
 
 /*# sourceMappingURL=style.css.map */
