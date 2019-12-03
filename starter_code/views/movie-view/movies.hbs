@@ -3,14 +3,18 @@ Movie List
 
 </h1>
 
+<div class="movie-list">
 
 {{#each theMovies}}
-<div>
-
-<h2>
+<a href="/movie-detail/{{this._id}}">
+<div class="movie-thumb">
+<img src="{{this.image}}" alt="{{this.title}}" width="200px">
+<h3>
 
 {{this.title}}
-</h2>
+</h3>
 </div>
+</a>
 
 {{/each}}
+</div>

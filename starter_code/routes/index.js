@@ -22,17 +22,16 @@ router.get("/add-new-movie", (req, res, next) => {
 });
 
 router.post("/create-movie", (req, res, next) => {
-  let theTitle = req.body.newMovieTitle;
-  let theDirector = req.body.newMovieDirector;
-  let theImage = req.body.newMovieImage;
-  let theDescription = req.body.newMovieDescription;
+  let {title, director, image, description, stars} = req.body;
+  // let theTitle = req.body.newMovieTitle;
+  // let theDirector = req.body.newMovieDirector;
+  // let theImage = req.body.newMovieImage;
+  // let theDescription = req.body.newMovieDescription;
 
-  Movie.create({
-    title: theTitle,
-    director: theDirector,
-    img: theImage,
-    description: theDescription
-  })
+
+  Movie.create(
+    {title, director, image, description, stars}
+    )
     .then(Response => {
       res.redirect("/movies");
     })
@@ -40,5 +39,16 @@ router.post("/create-movie", (req, res, next) => {
       next(err);
     });
 });
+
+router.get("/movie-detail/:movieId", (req,res,next)=>{
+  let id=req.params.movieId;
+  Movie.findById(id)
+  .then((theMovie)=>{
+    res.render("movie-view/movie-detail", {movie: theMovie})
+  })
+  .catch((err)=>{
+    next(err)
+  })
+})
 
 module.exports = router;

@@ -1,19 +1,24 @@
-<form action="/create-movie" method="POST">
+<form action="/create-movie" method="POST" class="add-movie-form">
 
-  <label for="newMovieTitle">Title</label>
-  <input type="text" name="newMovieTitle" id="newMovieTitle" placeholder="Enter a Movie Title">
+  <label for="title">Title</label>
+  <input type="text" name="title" id="title" placeholder="Enter a Movie Title" value="Movie Testing">
   <hr>
 
-  <label for="newMovieImage">Image URL</label>
-  <input type="text" name="newMovieImage" id="newMovieImage" placeholder="Paste an image URL">
+  <label for="image">Image URL</label>
+  <input type="text" name="image" id="image" placeholder="Paste an image URL" value="https://s.studiobinder.com/wp-content/uploads/2017/12/Movie-Poster-Template-Dark-with-Image.jpg?x81279">
 
   <hr>
-  <label for="newMovieDirector">Director</label>
-  <input type="text" name="newMovieDirector" id="newMovieDirector" placeholder="Ex. Steven Spielberg">
+  <label for="director">Director</label>
+  <input type="text" name="director" id="director" placeholder="Ex. Steven Spielberg" value="Steven Spielberg">
+
+  <label for="stars">Stars</label>
+  <input type="text" name="stars" id="stars" value="Tom Cruise" placeholder="Ex. Tom Cruise">
+  <input type="text" name="stars" id="stars" value="Emma Stone" placeholder="Emma Stone">
+
 
   <hr>
-  <label for="newMovieDescription">Description</label>
-  <textarea name="newMovieDescription" id="newMovieDescription" placeholder="Description of the movie....."></textarea>
+  <label for="description">Description</label>
+  <textarea name="description" id="description" placeholder="Description of the movie.....">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</textarea>
 
   <hr>
 
