@@ -11,8 +11,5 @@ const movieSchema = new Schema({
 })
 
 const Movie = mongoose.model("Movie", movieSchema)
-// name of the model should ALWAYS be capitalized and ALWAYS be singular
-// this will create a collection called 'books'
-
 
 module.exports = Movie;
