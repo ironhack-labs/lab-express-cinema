@@ -1,37 +1,32 @@
 body {
-  // padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .index {
-  background-image: url('../images/cinema.jpg');
+  background-image: url("../images/cinema.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .index-info {
   position: absolute;
   right: 60px;
-  top: 100px;
-}
+  top: 100px; }
 
 .index-info h1 {
   font-size: 5em;
   color: white;
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
 .index-info .button {
   padding: 20px 30px;
   background-color: white;
-  color: rgb(56, 155, 185);
+  color: #389bb9;
   border: 1px black solid;
   border-radius: 60px;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
