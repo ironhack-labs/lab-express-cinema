@@ -1,0 +1,22 @@
+
+{{#each theMovies}}
+
+<div>
+    <a href="/movies/{{this._id}}">
+
+        <h3>
+            Title:
+            {{this.title}}
+        </h3>
+    </a>
+
+    <h5>By: {{this.director}}</h5>
+    <img style='width:140px; height: 200px' src="{{this.image}}">
+</div>
+
+
+
+
+<hr>
+
+{{/each}}
