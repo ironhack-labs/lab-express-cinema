@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add a Movie</title>
+</head>
+<body>
+  <header>
+    <div class="headerbox container">
+    <div class="logo">
+      <img src="../images/logo.png" alt="logo" />
+    </div>
+    <a href="/">Home</a>
+    <a href="/movies">Movies</a>
+    </div>
+  </header>
+  <div class="container">
+  <h2>Add New Movie</h2>
+
+    <form action="/create-the-movie" method="POST">
+
+    <p>Title</p>
+    <input type="text" name="theNewMovieTitle">
+
+    <p>Director</p>
+    <input type="text" name="theDirector">
+
+    <p>Description</p>
+    <input type="text" name="theDescription">
+
+
+    <p>Image URL</p>
+    <input type="text" name="img">
+
+        <button>Save!</button>
+    </form>
+  </div>
+</body>
+</html>
