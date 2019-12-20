@@ -1,0 +1,26 @@
+<div class="details-container">
+  <figure>
+    <img src="{{image}}" alt="{{title}}">
+  </figure>
+  <div class="details">
+    <a href="/movies">Go back</a>
+    <h2>{{title}}</h2>
+    <h3>Director: {{director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <p>
+      {{#each showtimes}}
+      {{#if @last}}
+      <span>{{this}}</span>
+      {{else}}
+      <span>{{this}} |</span>
+      {{/if}}
+      {{/each}}
+    </p>
+  </div>
+</div>
