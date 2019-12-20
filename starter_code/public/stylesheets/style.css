@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.home-page {
+  background-image: url("/images/cinema.jpg"); 
+  background-repeat:no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-page > h1 {
+  font-size: 120px;
+  color: white;
+  position: absolute;
+  margin-left: 940px;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+
+.myButton {
+	box-shadow: 0px 0px 0px 0px #ffffff;
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#679dad;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+  text-shadow:0px 0px 0px #679dad;
+  position: absolute;
+  margin-left: 1110px;
+  margin-top: 400px;
+}
+.myButton:hover {
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+       
