@@ -5,4 +5,15 @@ body {
 a {
   color: #00B7FF; }
 
+img {
+  width: 100%;
+}
+
+.homePage {
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
 /*# sourceMappingURL=style.css.map */

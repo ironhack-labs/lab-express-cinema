@@ -1,0 +1,26 @@
+
+<figure>
+  <img src="{{image}}" alt="Movie Poster">
+</figure>
+<h2>{{title}}</h2>
+<h3>{{director}}</h3>
+<ul>
+{{#each stars }}
+<li>
+  {{this}}
+</li>
+{{/each }}
+</ul>
+
+<p>{{description}}</p>
+{{#each showtimes}}
+  {{this}}
+{{/each}}
+
+{{!-- 
+title: String,
+  director: String,
+  stars: Array,
+  image: String,
+  description: String,
+  showtimes: Array --}}
