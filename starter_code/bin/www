@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-require('dotenv').config();
-
 
 const http = require('http');
 
@@ -25,7 +23,6 @@ app.use((err, req, res, next) => {
 
 let server = http.createServer(app);
 
-
 server.on('error', error => {
   if (error.syscall !== 'listen') { throw error }
 
@@ -45,5 +42,5 @@ server.on('error', error => {
 });
 
 server.listen(process.env.PORT, () => {
-  console.log(`Listeningggggg on http://localhost:${process.env.PORT}`);
+  console.log(`Listening on http://localhost:${process.env.PORT}`);
 });

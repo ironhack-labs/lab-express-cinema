@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Movie = require('../models/Movie.js');
+const Movies = require('../models/Movies');
 
-const dbName = 'starter-code';
+const dbName = 'movies-database';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
@@ -71,9 +71,8 @@ const movies = [
   }
 ];
 
-
-Movie.create(movies, (err) => {
+Movies.create(movies, (err) => {
   if (err) { throw(err) }
-  console.log(`Created ${movies.length} movies`)
+  console.log(`Created ${movies .length} books`)
   mongoose.connection.close();
 });

@@ -1,6 +1,23 @@
-<figure><img src="{{this.image}}" alt=""></figure>
-<h1>{{this.title}}</h1>
-<h2>{{this.director}}</h2>
-<h3>{{this.stars}}</h3>
-<p>{{this.description}}</p>
-<a href="/movies">Back</a>
+<div class="container ">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{movies.image}}" alt="">
+    </div>
+    <div class="col-md-9">
+      <p><a href="/movies">Go back</a></p>
+      <p>{{movies.title}}</p>
+      <p>Director: {{movies.director}}</p>
+      <p><strong>Stars</strong></p>
+      <ul>
+        {{#each movies.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{movies.description}}</p>
+      {{#each movies.showtimes}}
+      {{this}} |
+      {{/each}}
+
+    </div>
+  </div>
+</div>

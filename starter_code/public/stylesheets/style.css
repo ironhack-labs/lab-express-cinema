@@ -1,17 +1,8 @@
-* {
-  margin: 0;
-  padding: 0; }
-
 body {
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
-
-.homepage {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/cinema.jpg");
-  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */
