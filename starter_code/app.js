@@ -11,12 +11,15 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter_code', {useNewUrlParser: true})
-  .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(x => {
+  console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
-  .catch(err => {
-    console.error('Error connecting to mongo', err)
+.catch(err => {
+  console.error('Error connecting to mongo', err)
   });
 
 const app_name = require('./package.json').name;
