@@ -1,4 +1,8 @@
-// To insert in "bin/seeds.js"
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie.model');
+require('../config/db.config');
+
+//Movie.collection.drop()
 
 const movies = [
   {
@@ -82,3 +86,11 @@ const movies = [
     showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40'],
   },
 ];
+
+//Create movies collection in mongo database
+movies.map(movie => {
+  return new Movie(movie)
+    .save()
+    .then(movie => console.log(movie))
+    .catch(err => console.log(`Impossible to add the movie. ${err}`));
+});
