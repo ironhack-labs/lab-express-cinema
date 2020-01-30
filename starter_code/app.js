@@ -48,10 +48,8 @@ app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 app.locals.title = "Express - Generated with IronGenerator";
 
 const index = require("./routes/index");
+const movies = require("./routes/movies");
 app.use("/", index);
-
-app.listen(PORT => {
-  console.log("Server is running at https://localhost/" + PORT);
-});
+app.use(movies);
 
 module.exports = app;
