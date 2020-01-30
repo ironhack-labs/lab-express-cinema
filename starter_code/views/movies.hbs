@@ -1,0 +1,14 @@
+<h1>
+    INRONHAQUE CINEMA
+</h1>
+<p>Click on the movie</p>
+
+<div class="movie-container">
+ <ul>{{#each movies}}
+    <li><img src = "{{this.image}}"/>
+    <div class= "movie-title">{{this.title}}</div>
+    <a href="movie/{{this._id}}"><div class= "movie-link">See MOAR</div></a>
+    </li>
+    {{/each}}</ul>
+</div>
+
