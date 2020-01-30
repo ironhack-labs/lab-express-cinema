@@ -17,7 +17,7 @@ a {
   justify-content: center;
   align-items: flex-end;
 }
-.header-title {
+.main-title {
   font-size: 2.5rem;
   width: 45vw;
   height: 80vh;
@@ -27,13 +27,13 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.header-title h1 {
+.main-title h1 {
   margin: 0;
   color: #fff;
   letter-spacing: 0.1rem;
   padding-left: 1rem;
 }
-.header-title button {
+.main-title button {
   font-size: 1rem;
   padding: 1rem 2rem;
   margin: 1.2rem 0 0 1.2rem;
@@ -41,7 +41,43 @@ a {
   border: none;
   border-radius: 30px;
 }
-.header-title button a {
+.main-title button a {
   text-decoration: none;
   /* color: #333; */
+}
+
+/* movies page*/
+.movies-header {
+  margin: 0 0 0 5rem;
+}
+.movies-header h2 a {
+  text-decoration: none;
+}
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.movie-box {
+  width: 25vw;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about page  */
+.details-container {
+  width: 55vw;
+}
+.details-container ul li {
+  line-height: none;
+}
+.the-movie {
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
