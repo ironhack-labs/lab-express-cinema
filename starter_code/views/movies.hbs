@@ -1,0 +1,16 @@
+<div class="page">
+    <h1>{{title}}</h1>
+    <p>Click on the movie to check the showtimes</p>
+    <div id="list_movies">
+        {{#unless movies}}
+        <p>No movies available</p>
+        {{/unless}}
+        {{#each movies}}
+        <div class="movie">
+            <img src="{{image}}" />
+            <h2>{{title}}</h2>
+            <a href="movies/{{this._id}}">See more</a>
+        </div>
+        {{/each}}
+    </div>
+</div>
