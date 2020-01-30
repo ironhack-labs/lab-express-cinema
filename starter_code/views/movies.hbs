@@ -1,0 +1,24 @@
+<div class="container">
+    <div id="title-page">
+        <h1> Ironhack Cinema </h1>
+    </div>
+    <div id="sub-title">
+        <h2>Click on the movie to check the showtimes !</h2>
+    </div>
+
+    <div id="all-boxes">
+        {{#each dbRes}}
+        <div class="box">
+            <div class="img">
+                <img src="{{this.image}}">
+            </div>
+
+            <div class="title-movie">
+                <h2>{{this.title}}</h2>
+            </div>
+
+            <a href="/movie-infos/{{this._id}}">See more</a>
+        </div>
+        {{/each}}
+    </div>
+</div>

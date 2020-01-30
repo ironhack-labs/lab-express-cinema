@@ -1,0 +1,31 @@
+<div class="container wrapper-info">
+    <div id="info-img">
+        <img src="{{movie.image}}">
+    </div>
+
+    <div id="infos-movie">
+        <div class="goback">
+            <a href="/movies"><span>go back</span></a>
+        </div>
+        <div id="info-title">
+            <h1>{{movie.title}}</h1>
+        </div>
+
+        <div id="stars">
+            <ul>
+                {{#each movie.stars}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        
+        <div id="description">
+            <p>{{movie.description}}</p>
+        </div>
+        <div id="showtimes">
+            {{#each movie.showtimes}}
+                {{this}} |
+            {{/each}}
+        </div>
+    </div>
+</div>
