@@ -1,11 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 #image-background {
   width: 1000px;
@@ -13,15 +11,13 @@ a {
   background-image: url(../images/cinema.jpg);
   display: flex;
   flex-direction: column;
-  margin-left: 90px
-}
+  margin-left: 90px; }
 
 #title {
   font-size: 75px;
   color: white;
   margin-left: 60%;
-  margin-bottom: 25px
-}
+  margin-bottom: 25px; }
 
 #btn {
   width: 200px;
@@ -30,8 +26,7 @@ a {
   font-size: 18px;
   color: #94c2d3;
   margin-left: 60%;
-  margin-top: 0
-}
+  margin-top: 0; }
 
 #list-movies {
   list-style: none;
@@ -41,8 +36,7 @@ a {
   margin-right: 25px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .movie {
   margin: 40px;
@@ -50,42 +44,35 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 #title-movies {
-  margin-left: 40px;
-}
+  margin-left: 40px; }
 
 #subtitle-movies {
   margin-left: 40px;
-  font-weight: lighter;
-}
+  font-weight: lighter; }
 
 .link {
   font-weight: lighter;
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
 #page-movie-info {
   display: flex;
   flex-direction: row;
-  width: 800px;
-}
+  width: 800px; }
 
 #list-stars {
-  margin-left: -23px;
-}
+  margin-left: -23px; }
 
 #list-showtimes {
   list-style: none;
-  margin-left: -40px;
-}
+  margin-left: -40px; }
 
 #list-showtimes li {
-  display: inline;
-}
+  display: inline; }
 
 #movie-image {
-  margin: 15px 50px 15px 20px;
-}
+  margin: 15px 50px 15px 20px; }
+
+/*# sourceMappingURL=style.css.map */
