@@ -1,0 +1,35 @@
+<div class="center-container movies-title">
+  <h2>{{movie.title}} <a id="go-back-link" href="/movies">&lt; Back to all</a></h2>
+</div>
+
+<div class="center-container">
+
+  <div id="detailed-card">
+
+    <img id="detailed-img" src="{{movie.image}}" alt="{{movie.title}}">
+
+    <div id="movie-details">
+      <div><b>Director : </b>{{movie.director}}</div>
+
+      <div><b>Stars :</b>
+        <ul>
+        {{#each movie.stars}}
+          <li>{{this}}</li>
+        {{/each}}
+        </ul>
+      </div>
+
+      <p>{{movie.description}}</p>
+
+      <div>
+        <b>Show times :</b>
+        {{#each movie.showtimes}}
+          <span>{{this}}</span>|
+        {{/each}}
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

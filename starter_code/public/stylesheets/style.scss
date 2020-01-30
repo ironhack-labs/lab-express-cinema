@@ -13,6 +13,12 @@ a {
 }
 
 /* General CSS */
+ul { list-style-position: inside; }
+
+.movies-title {
+  padding-top:30px;
+}
+
 .center-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,10 +66,6 @@ a {
 }
 
 /* Movies */
-#movies-title {
-  padding-top:30px;
-}
-
 .movie-card {
   display: flex;
   flex-direction: column;
@@ -79,4 +81,29 @@ a {
 
 .movie-img, .movie-title {
   margin-bottom: 10px;
+}
+
+/* Specific movie page */
+#go-back-link {
+  font-size:0.8rem;  
+}
+
+#detailed-card {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-top:30px;
+}
+
+#detailed-card img {
+  margin-right:50px;
+}
+
+#movie-details div {
+  width:80%;
+  margin-bottom:20px;
+}
+
+#movie-details p {
+  margin-bottom:20px;
 }

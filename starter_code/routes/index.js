@@ -19,5 +19,15 @@ router.get('/movies', (req, res, next) => {
     })
 });
 
+/* GET a specific movie page */
+router.get('/movie/:movieId', (req, res, next) => {
+  Movie.findById(req.params.movieId)
+    .then(movie => {
+      res.render('movie', { movie });
+    })
+    .catch(error => {
+      console.log("Error getting one movie from DB : ", error);
+    })
+});
 
 module.exports = router;
