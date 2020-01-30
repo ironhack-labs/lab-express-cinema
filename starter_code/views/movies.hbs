@@ -1,0 +1,15 @@
+<div id="movies-title" class="center-container">
+  <h2>All the movies a the A fish :</h2>
+</div>
+
+<div id="movies-container" class="center-container">
+
+  {{#each movies}}
+    <div class="movie-card">
+      <img class="movie-img" src="{{this.image}}" alt="{{this.title}}">
+      <span class="movie-title">{{this.title}}</span>
+      <a href="">See more</a>
+    </div>
+  {{/each}}
+
+</div>
