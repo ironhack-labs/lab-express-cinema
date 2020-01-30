@@ -48,7 +48,7 @@ a {
 
 /* movies page*/
 .movies-header {
-  margin: 0 0 0 5rem;
+  margin: 0 0 0 7vw;
 }
 .movies-header h2 a {
   text-decoration: none;
@@ -60,7 +60,7 @@ a {
   align-items: center;
 }
 .movie-box {
-  width: 25vw;
+  width: 250px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -72,12 +72,10 @@ a {
 .details-container {
   width: 55vw;
 }
-.details-container ul li {
-  line-height: none;
-}
 .the-movie {
-  height: 50vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
