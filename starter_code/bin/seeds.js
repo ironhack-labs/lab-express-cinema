@@ -1,5 +1,6 @@
 // To insert in "bin/seeds.js"
-
+const MovieModel = require("./../models/Movie")
+const mongoose = require("mongoose");
 const movies = [
     {
       title : "A Wrinkle in Time",
@@ -66,3 +67,25 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
+
+mongoose
+  .connect("mongodb://localhost/starter-code", { useNewUrlParser:
+  true })
+  .then(x => {
+    console.log(
+      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+    );
+  })
+  .catch(err => {
+    console.error("Error connecting to mongo", err);
+  });
+
+  MovieModel.insertMany(movies)
+    .then(dbSuccess => {
+      console.log("Movies Inserted Successfuly", dbSuccess);
+    })
+    .catch(dbErr => {
+      console.log("OH NO !", dbErr);
+    })
+
+module.exports = movies;

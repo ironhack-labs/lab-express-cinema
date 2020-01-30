@@ -1,37 +1,33 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background-image: url(/images/cinema.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 #title-container {
   margin: 30px auto;
   width: 40%;
-  float: right;
-}
+  float: right; }
 
 #title {
   color: #fff;
-  font-size: 7em;
-}
+  font-size: 7em; }
 
-.btn {
+#btn {
   font-size: 1.5em;
   color: grey;
   background: #fff;
   margin: 30px auto;
   padding: 20px 40px;
-  border-radius: 40px;
-}
+  border-radius: 40px; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
