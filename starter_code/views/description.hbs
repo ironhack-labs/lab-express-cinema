@@ -1,0 +1,18 @@
+
+<div id="description-cont">
+    <img src="{{this.image}}">
+    <div id="description">
+        <h4>{{this.title}}</h4>
+        <ul>{{#each this.stars as |star|}}
+            <li>{{star}}</li>
+            {{/each}}
+        </ul>
+        <p>{{this.description}}</p>
+        <div id="showtime">
+        {{#each this.showtimes as |star|}}
+            <p>{{star}}</p>
+        {{/each}}
+    </div>
+    <a href="/movies">RETURN</a>
+    </div>
+</div>

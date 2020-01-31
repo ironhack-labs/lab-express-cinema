@@ -3,6 +3,60 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#home{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#home h1{
+  font-size: 4rem;
+  width: 200px;
+  text-align: center;
+}
+
+#home a{
+  font-size: 1.5rem;
+  border-radius: 2%;
+  border: 1px solid blue;
+  width: 230px;
+  text-align: center;
+  background-color: cyan;
+}
+
+#movies-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#movie{
+  text-align: center;
+  padding: 2%;
+  border: 1px solid brown;
+}
+
+#showtime{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#showtime p{
+  padding-right: 2%;
+}
+
+#description-cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#description{
+  padding-left: 4%;
+}
+
 a {
   color: #00B7FF;
 }
