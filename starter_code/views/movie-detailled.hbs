@@ -1,0 +1,28 @@
+<div class="detailled-movie">
+  <div>
+    <img class="img-movie-detailled" src={{movie.image}} alt=" detailled movie image">
+  </div>
+
+  <div class="text-content-detailled-movie">
+    <a class="link" href="/movies">Go back</a>
+    <h3>{{movie.title}}</h4>
+      <h4>Director : {{movie.director}}</h4>
+      <h5>Stars:</h5>
+      <ul class="list-star-detailled-movie">
+        {{#each movie.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <div class="description-movie-detailled">{{movie.description}}</div>
+
+      <ul class="showtimes-movie-detailled">
+        {{#each movie.showtimes}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+
+
+
+  </div>
+
+</div>
