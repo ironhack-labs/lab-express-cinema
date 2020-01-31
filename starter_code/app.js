@@ -9,11 +9,16 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const Movies = require("./models/movie")
+const movies = require("./bin/seeds")
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    // Movies.create(movies)
+    // .then(success => console.log('DB Ready'))
+    // .catch(err => console.log(err))
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -32,10 +37,11 @@ app.use(cookieParser());
 
 // Express View engine setup
 
+
 app.use(require('node-sass-middleware')({
   src:  path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  sourceMap: true
+  //sourceMap: true
 }));
       
 
@@ -53,6 +59,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
 
 
 module.exports = app;

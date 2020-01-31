@@ -1,0 +1,14 @@
+{{#each info}}
+   <img src="{{this.image}}">
+   <h3>{{title}}</h3>
+   <h5>{{director}}</h5>
+   {{#each stars}}
+        <li>{{this}}</li>
+    {{/each}}
+    <p>{{description}}</p>
+    <select>
+    {{#each showtimes}}
+        <option>{{this}}</option>
+    {{/each}}
+    </select>
+{{/each}}
