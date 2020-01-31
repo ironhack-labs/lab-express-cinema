@@ -53,4 +53,38 @@ a {
   align-self: start;
   justify-self: center; }
 
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.text-container {
+  width: 50%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column; }
+
+.go-back {
+  margin-bottom: 10px; }
+
+.movie-title {
+  margin: 10px 0; }
+
+.director {
+  margin: 10px 0; }
+
+.list-stars {
+  margin: 10px 0; }
+
+ul.list-stars li {
+  margin-left: 20px; }
+
+.description {
+  margin: 10px 0; }
+
+.showtimes-list {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row; }
+
 /*# sourceMappingURL=style.css.map */
