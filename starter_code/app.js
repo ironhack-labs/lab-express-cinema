@@ -9,10 +9,13 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const movie = require("./models/movie")
+const seed = require("./bin/seeds")
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
+    movie.create(seed);
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
   .catch(err => {
@@ -54,5 +57,6 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+//const PORT = process.env.PORT
 
 module.exports = app;
