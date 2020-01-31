@@ -32,3 +32,10 @@ a {
 #inicio>a{
   margin-right: 150px;
 }
+#detalle{
+  display: flex;
+  flex-flow: row nowrap;
+}
+#texto{
+  padding: 20px;
+}

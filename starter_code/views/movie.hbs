@@ -1,5 +1,6 @@
+<div id="detalle">
   <img src="{{this.image}}" alt="">
-<div>
+<div id="texto">
   <a href="/movies">Go back</a>
   <h3>{{this.title}}</h3>
   <h4>Director: {{this.director}}</h4>
@@ -11,8 +12,9 @@
   </ul>
   <p>{{this.description}}</p>
  {{#each this.showtimes as |time|}}
-    {{this.time}}|
+    {{time}}|
     {{/each}}
  
   
+</div>
 </div>
