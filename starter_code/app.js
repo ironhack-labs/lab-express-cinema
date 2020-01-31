@@ -28,7 +28,7 @@ const app = express();
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Express View engine setup
@@ -50,13 +50,8 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Cinema Ironhack';
 
-
-
 const index = require('./routes/index');
 app.use('/', index);
-app.get('/movies', (req, res) => {
-  res.render("movies")
-})
 
 
 module.exports = app;
