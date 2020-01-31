@@ -1,5 +1,5 @@
 {{#each data}}
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 700px;">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img src="{{image}}" class="card-img" alt="imagenUnica">
@@ -9,11 +9,18 @@
             <h5 class="card-title">{{title}}</h5>
             <p class="card-text">Stars</p>
             <ol>
-            {{#each data.stars}}
-                <li>121</li>
+            {{#each stars}}
+                <li>{{this}}</li>
             {{/each}}
             </ol>
-            <p class="card-text">{{description}}</p>
+            <p class="card-text" style="text-align: justify;">{{description}}</p>
+            <ul class="list-group list-group-horizontal">
+                {{#each showtimes}}
+                <li class="list-group-item">{{this}}</li>
+                {{/each}}
+            </ul>
+            <br>
+            <a class="btn btn-primary btn-block" href="/movies" role="button"><strong>Go back...</strong></a>
           </div>
         </div>
       </div>
