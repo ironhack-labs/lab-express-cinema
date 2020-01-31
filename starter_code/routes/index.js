@@ -10,5 +10,10 @@ router.get('/', (req, res, next) => {
   let movieArr= await Movie.find({})
   res.render('movies',{movieArr})
 })
+.get('/movies/:movieId',async (req,res)=>{
+  id=
+  let movieArr= await Movie.find({_id:})
+  res.render('movie-detail',{movieArr})
+})
 
 module.exports = router;
