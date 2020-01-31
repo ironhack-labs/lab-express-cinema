@@ -2,7 +2,10 @@ const { model, Schema } = require("mongoose");
 
 const movieSchema = new Schema(
   {
-    title: String,
+    title:{
+      type:String,
+      unique:true
+    },
     director: String,
     stars: Array,
     image:String,

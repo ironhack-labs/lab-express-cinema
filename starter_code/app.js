@@ -9,6 +9,8 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const Movie = require('./models/Movie')
+const movies = require('./bin/seeds')
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true,useUnifiedTopology: true})
@@ -17,6 +19,11 @@ mongoose
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
+  })
+  .then(async x=>{
+    await Movie.create(movies)
+         .then(success => console.log('DB Ready'))
+         .catch(err=>console.log("No need to populate DB"))
   });
 
 const app_name = require('./package.json').name;
