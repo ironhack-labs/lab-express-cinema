@@ -4,24 +4,36 @@ const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express      = require('express');
 const favicon      = require('serve-favicon');
-const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
-
+//Crear base de datos
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
-  .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  .connect('mongodb://localhost:27017/movie-app', {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   })
-  .catch(err => {
-    console.error('Error connecting to mongo', err)
-  });
+  .then(async x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+
+    //Solo se ejecuta una vez para cargar los datos a mongodb, despues la dejo comentada
+    //para que no se agregue continuamente la misma lista en cada actualizacion
+    await Movie.insertMany(seeds);
+    //-----------------------------------------------------------------------------------
+
+  })
+  .catch(err => console.error('Error connecting to mongo', err));
+
+//Termina base de datos
+
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
+
+//Crear servidor
 const app = express();
 
 // Middleware Setup
@@ -47,12 +59,16 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+//app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.listen(process.env.PORT, () => {
+  console.log(`Running on http://localhost:${process.env.PORT}`)
+})
 
 
 module.exports = app;

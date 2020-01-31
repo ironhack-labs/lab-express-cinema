@@ -1,0 +1,17 @@
+<section id="section-movies">
+
+<header>
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+</header>
+
+<div>
+{{#each movies as |pelis|}}
+<article>
+<img src="{{pelis.image}}" alt="images">
+<h5><b>{{pelis.title}}</b></h5>
+<a href="/movies/{{pelis._id}}">See More</a>
+</article>
+{{/each}}
+</div>
+</section>
