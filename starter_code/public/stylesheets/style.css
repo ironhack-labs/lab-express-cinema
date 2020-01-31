@@ -3,12 +3,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #1339e2;
   background-image: url(../images/cinema.jpg);
-  background-size: cover;
-}
+  background-size: cover; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .btn {
   background-color: white;
@@ -18,19 +16,19 @@ a {
   font-size: 20px;
   color: #94C2D3;
   text-align: center;
-  line-height: 50px;
-}
+  line-height: 50px; }
 
-header{
+header {
   position: absolute;
   display: flex;
   flex-direction: column;
   width: 15vw;
-  top:20vh;
-  left:55vw;
-}
-header h1{
+  top: 20vh;
+  left: 55vw; }
+
+header h1 {
   text-align: center;
   font-size: 60px;
-  color: #fff;
-}
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
