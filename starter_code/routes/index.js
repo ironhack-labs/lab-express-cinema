@@ -10,9 +10,9 @@ router.get('/', (req, res, next) => {
 
 
 router.get('/movies', (req,res)=>{
-    const muvis = movie.find()
+movie.find()
     .then(muvis => {
-      console.log(muvis);
+      
       res.render('movies',{muvis})
     })
     .catch((error) => {console.log(error)})

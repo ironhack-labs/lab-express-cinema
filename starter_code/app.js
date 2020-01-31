@@ -10,12 +10,18 @@ const logger       = require('morgan');
 const path         = require('path');
 
 const Movie        = require('./models/Movie')
+const films        = require('./bin/seeds')
 
 // { useUnifiedTopology: true }
 mongoose
   .connect("mongodb://localhost/starter-code", {useNewUrlParser: true, useUnifiedTopology: true })
   .then(x => {
+ /*       Movie.create(films)
+      .then(dbcreated => {'films created'})
+      .catch(error => console.log(eror))
+ */
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -23,9 +29,8 @@ mongoose
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
-  `${app_name}
-  :${path.basename(__filename)
-    .split('.')[0]}`);
+  `${app_name}:${path.basename(__filename).split('.')[0]}`
+  );
 
 const app = express();
 
