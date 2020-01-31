@@ -1,0 +1,18 @@
+<!--
+Se crea un each de las movies
+con referencia a la imagen de dicha movie
+tambien el tittulo puesto que esos pide
+y tambien se hace mencion a la movi y de esa movie el ID
+el cual se ocupara para jalarlo de la BD 
+
+
+
+-->
+
+{{#each movies}}
+<div>
+  <img src="{{this.image}}" alt="">
+  <h5>{{this.title}}</h5>
+  <a href="/movie/{{this._id}}">See more</a>
+</div>
+{{/each}}

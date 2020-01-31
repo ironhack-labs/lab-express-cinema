@@ -1,0 +1,25 @@
+<!-- 
+Se crea un each el cual recordando la clase hace que
+recorra todo el arreglo o bueno todas las peliculas,
+con referencia a la imagen para que esta se muestra,
+tambien el titulo y demas cosas 
+
+
+-->
+
+{{#each movie}}
+<img src="{{image}}" alt="">
+<h2>{{title}}</h2>
+<h3>{{director}}</h3>
+<ul>
+  {{#each stars}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+<p>{{description}}</p>
+<ul>
+  {{#each showtimes}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+{{/each}}
