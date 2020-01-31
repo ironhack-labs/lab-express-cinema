@@ -1,113 +1,87 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100vh;
-  width: 100vw;
-}
+  width: 100vw; }
 
 #home-body {
-  display:flex;
+  display: flex;
   height: 100vh;
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
-#home-set{
+#home-set {
   margin-bottom: 250px;
-  margin-left: 300px;
-}
+  margin-left: 300px; }
 
 #home-set h1 {
   color: white;
   font-size: 80px;
-  width: 50px;
-  
-}
+  width: 50px; }
+
 #home-btn {
   padding: 10px 20px;
   border-radius: 25px;
-  border: none;
-}
+  border: none; }
 
-#home-btn>a {
+#home-btn > a {
   color: #00B7FF;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-
-// MOVIES ROUTE //
-
-.movies-body>h1>a {
+.movies-body > h1 > a {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .list-movie a {
   color: #00B7FF;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .list-movie {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-}
+  grid-template-rows: auto auto auto; }
 
 .list-movie li {
   text-align: center;
   list-style: none;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
-.movies-body>* {
-  padding: 10px;
-}
+.movies-body > * {
+  padding: 10px; }
 
-.list-movie li>* {
-  padding: 5px 0;
-}
-
-
-// MOVIE DESCRIPTION
+.list-movie li > * {
+  padding: 5px 0; }
 
 .oneMovie-body {
   margin: 30px;
-  display: flex;
-}
+  display: flex; }
 
 .oneMovieImg {
-  width: 250px;
-}
+  width: 250px; }
 
-.oneMovieImg>img {
+.oneMovieImg > img {
   max-width: 100%;
   height: auto;
-  box-shadow: grey 2px 2px;
-}
-
+  box-shadow: grey 2px 2px; }
 
 .container li {
-  list-style: inside;
-}
+  list-style: inside; }
 
-.container>p {
-  width: 400px;
-}
+.container > p {
+  width: 400px; }
 
-.container>* {
-  padding: 10px;
-}
+.container > * {
+  padding: 10px; }
 
-.container>a {
+.container > a {
   color: #00B7FF;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
