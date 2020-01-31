@@ -87,10 +87,14 @@ const movies = [
   },
 ];
 
-//Create movies collection in mongo database
+//1-Way | Create movies collection in mongo database
 movies.map(movie => {
   return new Movie(movie)
     .save()
     .then(movie => console.log(movie))
     .catch(err => console.log(`Impossible to add the movie. ${err}`));
 });
+//2-Way | Create movies collection in mongo database
+// Movie.create(movies)
+//   .then(movie => console.log(movie))
+//   .catch(err => console.log(`Impossible to add the movie. ${err}`));
