@@ -24,6 +24,17 @@ h1 {
   margin-top: 10vh;
   margin-right: 20vw; }
 
+h2 {
+  color: #00B7FF;
+  font-size: 3rem;
+  margin-top: 5vh;
+  margin-left: 5vw; }
+
+p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-left: 5vw; }
+
 #main-button {
   width: 200px;
   height: 50px;
@@ -33,6 +44,74 @@ h1 {
   padding-top: 15px;
   box-sizing: border-box;
   font-size: 1.2rem;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-right: 25vw;
+  margin-top: 7vh; }
+
+#movies-container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.movies-cards {
+  padding: 20px 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 200px; }
+  .movies-cards h5 {
+    margin: 5px 0;
+    font-size: 1rem; }
+  .movies-cards a {
+    background-color: #00B7FF;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 5px; }
+
+#single-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around; }
+  #single-container #single-movie {
+    margin: 50px; }
+    #single-container #single-movie img {
+      width: 23vw;
+      height: auto;
+      margin-left: 20px; }
+  #single-container #info-container {
+    background-color: whitesmoke;
+    margin: 50px 100px 50px 50px;
+    padding: 40px; }
+    #single-container #info-container h3 {
+      color: #00B7FF;
+      font-size: 2rem;
+      margin-bottom: 10px; }
+    #single-container #info-container h4 {
+      font-size: 1.5rem;
+      margin-bottom: 20px; }
+    #single-container #info-container ul {
+      margin-left: 20px;
+      margin-bottom: 20px; }
+    #single-container #info-container p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      margin-left: 0; }
+    #single-container #info-container #showtimes {
+      margin-top: 20px;
+      display: flex;
+      list-style: none; }
+      #single-container #info-container #showtimes li {
+        margin: 10px 4px 0 0; }
+    #single-container #info-container a {
+      background-color: #00B7FF;
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */

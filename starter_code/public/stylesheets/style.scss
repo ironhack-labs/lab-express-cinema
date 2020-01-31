@@ -28,6 +28,19 @@ h1 {
   margin-right: 20vw;
 }
 
+h2 {
+  color: #00B7FF;
+  font-size: 3rem;
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-left: 5vw;
+}
+
 #main-button {
   width: 200px;
   height: 50px;
@@ -38,4 +51,101 @@ h1 {
   box-sizing: border-box;
   font-size: 1.2rem;
   text-decoration: none;
+  margin-right: 25vw;
+  margin-top: 7vh;
+}
+
+#movies-container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movies-cards {
+  padding: 20px 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 200px;
+
+  h5 {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  a {
+    background-color: #00B7FF;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+}
+
+#single-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+
+  #single-movie {
+    margin: 50px;
+
+
+    img {
+      width: 23vw;
+      height: auto;
+      margin-left: 20px;
+    }
+  }
+
+  #info-container {
+    background-color: whitesmoke;
+    margin: 50px 100px 50px 50px;
+    padding: 40px;
+
+    h3 {
+      color: #00B7FF;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    #showtimes {
+      margin-top: 20px;
+      display: flex;
+      list-style: none;
+      
+      li {
+        margin: 10px 4px 0 0;
+      }
+    }
+
+    a {
+      background-color: #00B7FF;
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+
+  }
 }
