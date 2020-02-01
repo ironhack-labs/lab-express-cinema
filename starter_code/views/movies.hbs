@@ -1,0 +1,8 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movies to see some shit</p>
+{{#each movies}}
+<ul><li>{{this.title}}</li>
+<li><img src="{{this.image}}" alt="ta mère"></li>
+<li><a href="/movies/{{this.id}}">See more</a></li>
+</ul>
+{{/each}}
