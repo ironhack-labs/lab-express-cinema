@@ -2,10 +2,12 @@
   <img src="{{movie.image}}" alt="">
 <div>
 
-<div>
+<div class="info">
   <a href="/movies">Go Back</a>
-  <div>{{movie.director}}</div>
-  <div>{{movie.stars}}</div>
-  <div>{{movie.description}}</div>
-  <div>{{movie.showtimes}}</div>
+  <p class='movtitle'>{{movie.title}}</p>
+  <p class="movdir">{{movie.director}}</p>
+  <p>Star</p>
+  <p class="movstar">{{movie.stars}}</p>
+  <p>{{movie.description}}</p>
+  <p>{{movie.showtimes}}</p>
 </div>
