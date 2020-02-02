@@ -8,10 +8,11 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const Movie        = require('./models/Movie');
+const data         = require('./bin/seeds.js');
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true, useUnifiedTopology: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -21,7 +22,6 @@ mongoose
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
-
 const app = express();
 
 // Middleware Setup
@@ -31,28 +31,33 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
-
 app.use(require('node-sass-middleware')({
   src:  path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
   sourceMap: true
 }));
       
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
-
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
-
-
+app.locals.title = 'Cinema Ironhack';
 
 const index = require('./routes/index');
 app.use('/', index);
 
+//Iteration 1: seeding the databse
+const importMovies = Movie.insertMany(data)
+  .then (data => console.log(`The movie ${data.map(movie => movie.title)} has been saved!`))
+  .catch(error => console.error(`Ouch! An error happened while saving a bunch of new movies: ${error}`)); 
+
+Promise.all([importMovies])
+  .then(values => {
+  console.log(`Life is magic! All promises were filled: ${values}`);
+  mongoose.connection.close();})
+  .catch(error => console.error(`Sadness, something went wrong resolving all promises: ${error}`))
 
 module.exports = app;
