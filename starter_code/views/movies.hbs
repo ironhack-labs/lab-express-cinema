@@ -1,6 +1,8 @@
  <ul>
     {{#each movies}}
-    <li>{{this.title}}</li>
+    <li>{{this.title}}
+        <a href="/movies/{{this.id}}">See more</a>
+    </li>
     {{/each}}
 </ul>
 
