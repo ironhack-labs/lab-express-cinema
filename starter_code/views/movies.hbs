@@ -9,5 +9,13 @@
 
     <ul class="list movies">
         {{#each movies}}
+                <li class="movie">
+            {{this.title}}
+            <a class="link" href="/movies/{{this._id}}">... see more</a>
+            <form action="/movies/{{this._id}}/delete" method="post" >
+                <input class="btn" type="submit" value="delete">
+            </form>
+        </li>
+        {{/each}}``
     </ul>
 </div>
