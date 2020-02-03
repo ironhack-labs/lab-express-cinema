@@ -24,4 +24,28 @@ a {
   padding: 18px;
   margin-right: 175px; }
 
+.movie-header {
+  margin-top: 20px;
+  color: white;
+  text-align: center; }
+
+.movie-header h1 {
+  font-size: 44px; }
+
+.movie-header p {
+  font-size: 18px; }
+
+.movie-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+  font-size: 16px; }
+
+.movie-poster {
+  margin: 1px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+
 /*# sourceMappingURL=style.css.map */
