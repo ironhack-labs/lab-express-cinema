@@ -1,0 +1,21 @@
+<section class="movie-site">
+  <div class="fi-image">
+    <img src={{this.image}} alt="Movie poster of {{this.title}}">
+  </div>
+  <div class="text-part">
+    <a href="/movies">Go back</a>
+    <h1>{{this.title}}</h1>
+    <h2>{{this.director}}</h2>
+    <h3>Stars</h3>
+    <ul>{{#each this.stars}}
+
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p>{{this.description}}</p>
+    <p>{{this.showtimes}}</p>
+  </div>
+
+
+</section>
