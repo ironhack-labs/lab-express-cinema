@@ -1,37 +1,28 @@
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
-  // padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .front-page {
   width: 100vw;
   height: 100vh;
   background-image: url("/images/cinema.jpg");
   background-size: 100% 100%;
-  background-color: red;
-}
-
-// FRONT PAGE
+  background-color: red; }
 
 .front-page-container {
   padding-top: 10%;
   padding-left: 50%;
-  width: 400px;
-}
+  width: 400px; }
 
 .front-page-container h1 {
   font-size: 4em;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 .front-page-container button {
   background-color: #ffffff;
@@ -39,44 +30,35 @@ a {
   padding: 10px 20px;
   font-size: 1.2em;
   color: #00b7ff;
-  margin-top: 20px;
-}
-
-// MOVIES PAGE
+  margin-top: 20px; }
 
 .movies-page {
-  padding: 20px;
-}
+  padding: 20px; }
 
 .movies-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
 .movie-card {
   margin: 20px;
   width: 30%;
-  text-align: center;
-}
+  text-align: center; }
 
-// MOVIE DETAILS
 .movie-details {
   display: flex;
   flex-direction: row;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .movie-image {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .movie-info {
   padding: 10px;
-  width: 40%;
-}
+  width: 40%; }
 
 .movie-info ul {
-  list-style-position: inside;
-}
+  list-style-position: inside; }
+
+/*# sourceMappingURL=style.css.map */
