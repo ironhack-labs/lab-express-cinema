@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.movies-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-details > div:nth-child(2) {
+  width: 80%;
+  padding: 0 2.5rem;
+}

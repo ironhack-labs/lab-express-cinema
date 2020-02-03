@@ -9,7 +9,7 @@ router.get('/', (req, res, next) => {
 });
 
 
-// GET home page 
+// GET movies page 
 router.get('/movies', (req, res, next) => {
     Movie.find()
     .then(allMoviesFromDB => {
@@ -17,6 +17,15 @@ router.get('/movies', (req, res, next) => {
         res.render('movies', { movies: allMoviesFromDB });
     })
     .catch(err => console.log(`An error has occured ${err}`));
+});
+
+// GET movie details page
+router.get('/movie-details/:id', (req, res, next) => {
+  Movie.findById(req.params.id)
+  .then(theMovie => {
+    res.render('movie-details', {movie: theMovie});
+  })
+  .catch(err => console.log(`An error has occured ${err}`));
 });
 
 module.exports = router;

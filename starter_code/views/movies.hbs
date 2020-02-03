@@ -1,5 +1,4 @@
 <div class="movies-container">
-    <h1>Movies</h1>
     {{#each movies}}
     <div>
         <div>
@@ -7,7 +6,7 @@
         </div>
         <div>
             <h3>{{this.title}}</h3>
-            <a href="">See more</a>
+            <a href="/movie-details/{{this._id}}">See more</a>
         </div>
     </div>
     {{/each}}
