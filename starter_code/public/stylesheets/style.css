@@ -1,0 +1,30 @@
+body {
+  background-image: url('/images/cinema.jpg');
+  background-size: cover;
+  padding: 200px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+a {
+  color: white;
+}
+
+.moviesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.eachMovie {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+/*# sourceMappingURL=style.css.map */
