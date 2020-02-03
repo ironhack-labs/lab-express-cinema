@@ -1,0 +1,20 @@
+<a href="/movies" style="color: white">Back</a>
+
+
+<div class="movie-detail-wrapper">
+    <img src="{{image}}" alt="{{title}} image">
+    <div class="content-wrapper">
+        <h2 class="movie-title">{{title}}</h2
+        >
+        <p class="large">{{director}}</p>
+        <p class="bold">Stars</p>
+        <ul>
+            {{#each stars}}
+                <li>{{this}}</li>
+            {{/each}}
+
+        </ul>
+        <p>{{description}} </p>
+        <p>{{#each showtimes}}<span>{{this}}</span>|{{/each}}</p>
+    </div>
+</div>
