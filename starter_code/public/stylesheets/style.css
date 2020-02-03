@@ -1,52 +1,52 @@
 body {
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00b7ff;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 .back {
   background-image: url("/images/cinema.jpg");
   background-size: cover;
   width: 100vw;
-  height: 100vh;
-}
+  height: 100vh; }
+
 .home {
   padding-top: 50px;
   float: right;
-  width: 40%;
-}
+  width: 40%; }
+
 .home h1 {
   font-size: 80px;
-  color: white;
-}
+  color: white; }
+
 .home button {
   padding: 15px 25px;
   border: 0.5px solid black;
   border-radius: 25px;
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
+
 .heading {
-  padding: 40px 0px 40px 40px;
-}
+  padding: 40px 0px 40px 40px; }
+
 .movies {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-left: 100px;
-  padding-right: 100px;
-}
+  padding-right: 100px; }
+
 .movieCard {
   width: 25%;
   padding: 20px;
-  text-align: center;
-}
+  text-align: center; }
+
 .infoCard {
   display: flex;
-  padding: 100px;
-}
+  padding: 100px; }
+
 .infoCard img {
-  padding-right: 40px;
-}
+  padding-right: 40px; }
+
+/*# sourceMappingURL=style.css.map */
