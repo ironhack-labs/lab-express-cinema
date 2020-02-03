@@ -1,0 +1,28 @@
+<div class="moviecard">
+  <p><img src={{image}} /></p>
+  <h1>{{this.title}}</h1>
+  <p> directed by: {{ director }} starring </p>
+
+  <ul>
+    {{#each this.stars}}
+    <li>{{this}} </li>
+    {{/each }}
+    </p>
+  </ul>
+
+
+  <h3>{{stars}}</h3>
+
+  <p>{{description}} </p>
+
+  Showtimes:
+  {{#each this.showtimes}}
+
+  {{this}}
+
+  {{/each }}
+  </p>
+
+
+
+</div>
