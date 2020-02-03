@@ -1,0 +1,19 @@
+<div class="movieCardcontainer">
+    <img src="{{this.image}}" alt="">
+    <div class="info-container">
+        <a href="/movies">Go back</a>
+        <h3>{{this.title}}</h3>
+        <h5>{{this.director}}</h5>
+        <ul> <b>Stars</b>
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{this.description}}</p>
+        <ul class="showtimes">
+            {{#each this.showtimes}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
