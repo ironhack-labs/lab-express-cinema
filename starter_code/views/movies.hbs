@@ -1,12 +1,16 @@
+<H1>All available movies</H1>
 <div class="moviecard">
-  <H1>All available movies</H1>
-  {{this.name}}
 
-  {{#each moviesList}}
-  <p></p>
-  <a href="/movies/{{_id}}">
-    {{title}}</a> by {{director}}</p>
-  <img src={{image}} />
+  {{this.name}}
+  
+    {{#each moviesList}}
+<div class="eachmovie">
+    <p><img src={{image}} />
+      <p><a href="/movies/{{_id}}"></p>
+      {{title}}</a>
+      <p> by {{director}}</p>
+  </div>
+  
   {{/each}}
 
 </div>
