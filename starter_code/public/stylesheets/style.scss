@@ -43,16 +43,32 @@ a {
 }
 
 .movie-list {
+  background-color: white;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content: center;
-  color: white;
   font-size: 16px;
 }
 
 .movie-poster {
   margin: 1px;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.movie-result {
+  background-color: white;
+  display: flex;
+  padding: 40px;
+  margin-top: 50px;
+  flex-flow: row nowrap;
+}
+
+.movie-result h1 {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+.movie-details {
+  margin-left: 35px;
 }
