@@ -1,15 +1,12 @@
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .content {
   background-image: url("/images/cinema.jpg");
@@ -20,24 +17,20 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .right-content {
   width: 40%;
   margin-top: 100px;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 h1 {
   color: #fff;
-  font-size: 72px;
-}
+  font-size: 72px; }
 
 h2 {
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
 button {
   background-color: #fff;
@@ -46,50 +39,42 @@ button {
   height: 44px;
   border-radius: 20px;
   color: #679dad;
-  margin-top: 16px;
-}
+  margin-top: 16px; }
 
 .header {
-  margin: 24px;
-}
+  margin: 24px; }
 
 .movies-container {
   margin: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .movie-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 48px;
-}
+  margin: 48px; }
 
 .movie-page {
   display: flex;
   flex-direction: row;
   padding: 48px;
   width: 60%;
-  margin: auto;
-}
+  margin: auto; }
 
 .movie-details {
   padding-left: 48px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-
-  h1 {
+  align-items: flex-start; }
+  .movie-details h1 {
     color: #000;
-    font-size: 24px;
-  }
+    font-size: 24px; }
+  .movie-details h2 {
+    font-size: 18px; }
 
-  h2 {
-    font-size: 18px;
-  }
-}
+/*# sourceMappingURL=style.css.map */
