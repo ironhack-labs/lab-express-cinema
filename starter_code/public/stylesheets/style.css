@@ -2,36 +2,31 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url(/images/cinema.jpg);
-  background-size: cover;
-}
+  background-size: cover; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .movielist-header {
-  background-color: white;
-}
+  background-color: white; }
 
 .movie-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: white;
-}
+  background-color: white; }
 
 .movie-card {
   margin: 1em;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-}
+  align-items: center; }
 
 .movie-content {
   display: flex;
-  flex-flow: row nowrap;
-}
+  flex-flow: row nowrap; }
 
 .movie-description {
-  margin-left: 2em;
-}
+  margin-left: 2em; }
+
+/*# sourceMappingURL=style.css.map */
