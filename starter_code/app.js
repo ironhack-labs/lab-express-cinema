@@ -8,6 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const movies       = require('./models/Movies')
 
 
 mongoose
@@ -29,6 +30,32 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// routes 
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+
+app.get("/movies", (req, res) => {
+  movies
+    .find()
+    .then(dbRes => {
+      res.render("movies", { movies: dbRes });
+    })
+    .catch(err => console.log(err));
+});
+
+app.get("/movies/:id", (req, res) => {
+  movies
+    .findById(req.params.id)
+    .then(dbRes => {
+      res.render("movies-details", { movies: dbRes });
+    })
+    .catch(err => console.log(err));
+});
+
 
 // Express View engine setup
 
@@ -53,6 +80,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.listen(process.env.PORT, () => {
+  console.log(`server ready @ http://localhost:${process.env.PORT}`)
+})
 
 
 module.exports = app;
