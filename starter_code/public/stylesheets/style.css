@@ -1,34 +1,27 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  height: 100vh;
-}
+  height: 100vh; }
 
 a {
-  color: #00B7FF;
-}
-
+  color: #00B7FF; }
 
 h1 {
   color: white;
-  font-size: 80px;
-  
-}
+  font-size: 80px; }
 
-nav, nav>ul, nav>ul>li, nav>ul>li>a{
+nav, nav > ul, nav > ul > li, nav > ul > li > a {
   background-color: black;
   color: white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   text-decoration: none;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
-nav>ul>li{
-  padding-right: 20px;
-}
+nav > ul > li {
+  padding-right: 20px; }
 
-.image{
+.image {
   padding: 50px;
   background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
@@ -37,86 +30,71 @@ nav>ul>li{
   display: flex;
   flex-direction: column;
   justify-content: right;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
-.titre{
-  width: 40%;
-}
+.titre {
+  width: 40%; }
 
-
-button{
+button {
   text-decoration: none;
   border-radius: 25px;
   width: 50%;
-  height: 50px;
-}
+  height: 50px; }
 
-a{
-  color: rgb(84, 138, 160);
+a {
+  color: #548aa0;
   text-decoration: none;
-  font: 1.8em "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 1.8em "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-section{
-  padding: 0 30px;
-}
+section {
+  padding: 0 30px; }
 
-.nothing{
+.nothing {
   margin-top: 50px;
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
-.grid div{
+.grid div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
-img{
-  box-shadow: 2px 2px 5px grey;
-}
+img {
+  box-shadow: 2px 2px 5px grey; }
 
-.grid p{
-  font-weight: bold;
-}
+.grid p {
+  font-weight: bold; }
 
-.grid div a{
-  color: rgb(0, 183, 255);
+.grid div a {
+  color: #00b7ff;
   font-size: 1em;
   text-decoration: underline;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.movie{
+.movie {
   display: flex;
-  padding: 20px 30px;
-}
+  padding: 20px 30px; }
 
-.show{
-  margin-right: 30px;
-}
+.show {
+  margin-right: 30px; }
 
-.time{
-  width: 50%;
-}
+.time {
+  width: 50%; }
 
-.movie a{
-  color: rgb(0, 183, 255);
+.movie a {
+  color: #00b7ff;
   font-size: 1em;
   text-decoration: underline;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.stars{
-  font-weight: bold;
-}
+.stars {
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
