@@ -2,5 +2,11 @@
 <img src={{image}} alt="">
 <p>Directed by {{director}}</p>
 <p>Description: {{description}}</p>
-<p>Stars: {{stars}}</p>
+<p>Stars:</p>
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
 <p>Showing times: {{showtimes}}</p>
+<a href="/movies">Go back</a>

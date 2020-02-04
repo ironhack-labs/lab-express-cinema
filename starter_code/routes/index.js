@@ -16,12 +16,10 @@ router.get("/movies", (req, res, next) => {
   });
 });
 
-router.get("/movie/:movieId", (req, res, next) => {
+router.get("/movies/:movieId", (req, res, next) => {
   console.log(req.params);
-  Movie.findById(req.params.id)
+  Movie.findById(req.params.movieId)
     .then(movie => {
-      console.log(movie[0]._id);
-
       res.render("movieDetails.hbs", movie);
     })
     .catch(err => {
