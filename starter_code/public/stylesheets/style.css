@@ -1,0 +1,35 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#cinema {
+  width: auto;
+  height: 1029px;
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
+}
+
+#cinema .presentation {
+  color: white;
+  font-size: 10rem;
+  float: right;
+  padding: 2% 10%;
+}
+
+#cinema button {
+  position: absolute;
+  right: 650px;
+  top: 55%;
+}
+
+#btn-cinema {
+  background: #FFFFFF;
+  border-radius: 47px;
+  color: #0059A0;
+  font-family: Open Sans;
+  font-size: 20px;
+}
