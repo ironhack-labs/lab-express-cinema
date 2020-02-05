@@ -2,6 +2,8 @@
 
 const http = require('http');
 
+
+// The following line means smthg has been exported:
 let app = require('../app');
 
 // catch 404 and render a not-found.hbs template

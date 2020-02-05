@@ -1,55 +1,45 @@
 * {
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 #fullPage {
-  // border: 5px solid orange;
   height: 85vh;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-image: url('../images/cinema.jpg');
+  background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 #titleAndButtonHolder {
   height: 40vh;
   width: 60%;
   box-sizing: border-box;
-  // border: 5px solid pink;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-
- 
-}
+  flex-direction: column; }
 
 .mainTitle {
   color: white;
   font-size: 12vh;
   box-sizing: border-box;
-  text-align: center;
-}
+  text-align: center; }
 
 #buttonHolder {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #movieButton {
   margin-top: 5vh;
-  font-size: 2vh;
-}
+  font-size: 2vh; }
+
+/*# sourceMappingURL=style.css.map */
