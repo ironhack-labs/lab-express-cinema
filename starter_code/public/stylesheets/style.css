@@ -1,0 +1,12 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover; }
+
+a {
+  color: #00B7FF; }
+
+.card {
+  margin: 30px; }
+
+/*# sourceMappingURL=style.css.map */

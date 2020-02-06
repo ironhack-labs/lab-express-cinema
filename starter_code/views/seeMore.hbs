@@ -1,0 +1,31 @@
+<div class="container m-5 bg-white">
+  <div class="row">
+    <div class="col-3 m-5" >
+      <figure>
+        <img src="{{image}}">
+      </figure>
+    </div>
+    <div class="col-6">
+      <h1>
+        {{title}}
+      </h1>
+      <h2>Director : {{director}}</h2>
+      <h3>
+        Stars:
+      </h3>
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>
+        {{description}}
+      </p>
+      <ol>
+        {{#each showtimes}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+</div>
