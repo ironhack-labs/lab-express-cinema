@@ -1,17 +1,14 @@
 * {
   padding: 0px;
-  margin: 0;
-}
+  margin: 0; }
 
 h2,
 h3,
 h4 {
-  margin: 10px;
-}
+  margin: 10px; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .cinema {
   width: 100vw;
@@ -19,18 +16,15 @@ body {
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .cinema-text {
-  padding: 5em 5em 5em 50vw;
-}
+  padding: 5em 5em 5em 50vw; }
 
 .cinema h1 {
   color: whitesmoke;
   font-size: 70px;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .cinema a {
   background-color: whitesmoke;
@@ -38,12 +32,10 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26);
-  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26);
-}
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26); }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .movies {
   display: flex;
@@ -51,47 +43,41 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .oneMovie {
-  margin: 10px 60px;
-}
+  margin: 10px 60px; }
 
 .oneMovie img {
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26);
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.26);
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .movieSelect {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
-}
+  margin: 30px; }
 
 .movieSelText {
   width: 50vw;
-  margin-left: 30px;
-}
+  margin-left: 30px; }
 
 .movieSelText h3,
 h4,
 p,
 ul,
 li {
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .movieSelText li {
   margin: 0 10px 3px 10px;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 .showtimes {
   display: flex;
   justify-content: left;
-  align-items: center;
-}
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */
