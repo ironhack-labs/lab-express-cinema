@@ -1,11 +1,8 @@
 body {
-  // padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 .jumbotron {
   height: 600px;
@@ -13,21 +10,17 @@ a {
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: left;
-}
+  text-align: left; }
 
 h1 {
-  // left: 900px;
   color: white;
-  font-size: 5em;
-}
+  font-size: 5em; }
 
 .movies-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
-  flex-wrap: wrap;
-}
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .movie-box {
   height: 300px;
@@ -37,6 +30,6 @@ h1 {
   justify-content: center;
   align-content: center;
   padding: 10px;
-  margin: 10px;
-}
+  margin: 10px; }
 
+/*# sourceMappingURL=style.css.map */

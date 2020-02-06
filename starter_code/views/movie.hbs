@@ -1,0 +1,33 @@
+<div class="movie-show">
+    <div>
+        {{#if movie}}
+        <h2>
+            {{movie.title}}
+        </h2>
+        
+        <div>
+        <img src={{movie.image}} alt="">
+    </div>
+        
+        <h3>
+            {{movie.director}}
+        </h3>
+        <h4>
+            Stars
+        </h4>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>
+            {{movie.description}}
+        </p>
+        <p>
+            {{#each movie.showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+    </div>
+    {{/if}}
+</div>
