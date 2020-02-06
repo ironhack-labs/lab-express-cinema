@@ -1,8 +1,13 @@
-
-<div>
-    {{#each movies}}
-    <img src="{{image}}" alt="">
-    <p>{{title}}</p>
-    <button><a href="/movie/{{id}}">See more</a></button>
-    {{/each}}
+<div class="movies">
+    <div>
+        {{#each movies}}
+        <div>
+            <img src="{{image}}" alt="">
+        </div>
+        <div>
+            <p>{{title}}</p>
+            <a href="/movie/{{id}}">See more</a></button>
+        </div>
+        {{/each}}
+    </div>
 </div>

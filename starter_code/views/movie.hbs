@@ -1,11 +1,17 @@
 <div>
     <button><a href="/movies">Go back</a></button>
-    <img src="{{image}}" alt="">
-    <p>{{title}}</p>
-    <p>{{director}}</p>
-    <p>{{starts}}</p>
-    <p>{{description}}</p>
-    {{#each showtimes}}
-    <p>{{this}}</p>
-    {{/each}}
+    <div class="oneMovie">
+        <div>
+            <img src="{{image}}" alt="">
+        </div>
+        <div>
+            <p>{{title}}</p>
+            <p>{{director}}</p>
+            <p>{{starts}}</p>
+            <p>{{description}}</p>
+            {{#each showtimes}}
+            <span>{{this}} |</span>
+            {{/each}}
+        </div>∫
+    </div>
 </div>
