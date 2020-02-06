@@ -1,0 +1,25 @@
+<section class="moviedetails">
+    <a href="/movies">Go back</a>
+    <div class="card">
+        <div class="photo">
+            {{#movie}}
+            <img src="{{image}}" alt="{{title}}">
+        </div>
+        {{!-- <div class="details">
+        <h2>{{title}}</h2>
+        <h3>Director: {{director}}</h3>
+        <h4>Stars:</h4>
+        <ul class="stars">
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <ul class="showtimes">
+            {{#each this.showtimes}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul> --}}
+        {{/movie}}
+    </div>
+</section>

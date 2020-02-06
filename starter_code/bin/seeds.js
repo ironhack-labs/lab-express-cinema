@@ -71,7 +71,7 @@ const movies = [
   ];
 
 mongoose
-    .connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(`mongodb://localhost/moviesCinema`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
     

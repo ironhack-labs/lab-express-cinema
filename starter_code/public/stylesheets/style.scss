@@ -9,7 +9,6 @@ body {
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -24,7 +23,7 @@ body {
   padding-right: 20rem;
 }
 
-a {
+.home a {
   color: #00B7FF;
   margin-right: 20rem;
   background-color: white;
