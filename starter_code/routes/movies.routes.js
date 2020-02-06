@@ -5,10 +5,8 @@ const Movie = require('../models/movie.model')
 
 router.get('/', (req, res) => {
   Movie.find()
-    .then(allMovies => {
-      res.render('movies', { movie: allMovies })
-    })
-    .catch(err => console.log("Error consultadno los libros en la BBDD: ", err))
+    .then(allMovies => res.render('movies/movies-list', { movies: allMovies }))
+    .catch(err => console.log("Error consultadno las películas en la BBDD: ", err))
 })
 
 // router.get('/details/:theBookIdFromTheURL', (req, res) => {

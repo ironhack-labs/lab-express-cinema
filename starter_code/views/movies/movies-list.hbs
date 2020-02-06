@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<p>Click on the movie to check the showtimes!</p>
+
+<div class="container">
+  <div class="row">
+    {{#each movies}}
+    {{> moviespartial }}
+    {{/each}}
+  </div>
+</div>
