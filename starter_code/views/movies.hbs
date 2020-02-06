@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+<div class="col-6">
+<h1>MIS PELICULAS:</h1>
+{{#each movie}}
+</br>
+{{title}}
+</br>
+{{director}}
+</br>
+<img src="{{image}}"></img>
+</br>
+<a href="/movies/details/{{id}}" class="btn btn-primary btn-sm">MAS INFORMACION</a>
+</br>
+{{/each}}
+</div>
+</div>
+</div>
