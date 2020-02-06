@@ -6,3 +6,37 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin-top: 20px;
+
+}
+
+.btn {
+  padding: 20px 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.col-md-4 {
+  margin-bottom: 50px;
+}
+
+.bg {
+  background-image: url(/images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px 0;
+}
+
+.link-movies {
+  text-decoration: none;
+  font-size: 20px;
+}
