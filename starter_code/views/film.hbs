@@ -1,0 +1,17 @@
+<h1>Estoy en film.hbs</h1>
+
+{{#each filmFound}}
+    <li>
+        <img src="{{this.image}}" alt="{{name}}">
+        {{this.title}}
+        {{this.director}}
+        {{this.stars}}
+        {{this.description}}
+        {{this.showtimes}}
+        <a href="window.history.back()">Go back</a>
+    </li>
+{{/each}} 
+
+
+
+

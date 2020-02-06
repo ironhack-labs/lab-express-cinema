@@ -1,0 +1,12 @@
+<h1>Estoy en movies.hbs</h1>
+{{#each moviesFound}}
+    <li>
+        <img src="{{this.image}}" alt="{{name}}">
+        {{this.title}}
+        <a href="/film/{{this.id}}">See more</a>
+    </li>
+{{/each}}
+
+
+
+
