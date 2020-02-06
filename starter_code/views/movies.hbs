@@ -1,0 +1,13 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtimes</p>
+{{#each moviesFound}}
+<div class="movie"><img src={{this.image}} alt={{this.title}} />
+  <h2> {{this.title}}</h2>
+  <a href="/movies/{{this.id}}">View more</a>
+</div>
+{{!-- <audio src={{this.preview_url}}></audio> --}}
+{{!-- <audio src={{this.preview_url}}></audio> --}}
+{{!-- <audio>{{this.preview_url}}</audio> --}}
+{{!-- <img src={{this.images.1.url}} alt={{this.name}} /> --}}
+{{!-- <a href="/tracks/{{this.id}}">View tracks: {{this.name}}</a> --}}
+{{/each}}
