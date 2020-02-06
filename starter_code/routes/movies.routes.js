@@ -9,13 +9,13 @@ router.get('/', (req, res) => {
     .catch(err => console.log("Error consultadno las películas en la BBDD: ", err))
 })
 
-// router.get('/details/:theBookIdFromTheURL', (req, res) => {
+router.get('/details/:id', (req, res) => {
 
-//   const bookId = req.params.theBookIdFromTheURL
+  const movieId = req.params.id
 
-//   Book.findById(bookId)
-//     .then(theBook => res.render('books/book-details', theBook))
-//     .catch(err => console.log("Error consultadno el libro en la BBDD: ", err))
-// })
+  Book.findById(movieId)
+    .then(theMovie => res.render('movies/movie-details', theMovie))
+    .catch(err => console.log("Error consultadno el libro en la BBDD: ", err))
+})
 
 module.exports = router
