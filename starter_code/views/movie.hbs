@@ -1,0 +1,28 @@
+<div class="movie-wrapper">
+  <div class="container">
+    <div class="row align-items-center box">
+      <div class="col-3">
+        <img src="{{image}}" alt="{{title}} image" />
+      </div>
+      <div class="col-9 movie-data">
+        <div class="link">
+          <a href="/movies">Go back</a>
+        </div>
+        <h2>{{title}}</h2>
+        <p class="director"> Director: {{director}}</p>
+        <p class="stars">Stars:</p>
+        <ul>
+          {{#each stars}}
+          <li>-{{this}}</li>
+          {{/each}}
+        </ul>
+        <p class="description">{{description}}</p>
+        <div class="showtimes">
+          {{#each showtimes}}
+          {{this}} |
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
