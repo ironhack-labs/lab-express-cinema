@@ -1,0 +1,27 @@
+<div id="container">
+    <h1 class="ironhack-title">Ironhack cinema</h1>
+    <div id="container-movie">
+        {{#movieDetail}}
+            <div class="info-image">
+                <img src="{{this.image}}" alt="{{this.title}}" class="image-detail">
+            </div>
+            <div class="info-movie">
+                <a href="/movies">Go back</a>
+                <h3 class="title-movie">{{title}}</h3>
+                <p class="director">Director: {{director}}</p>
+                <p class="stars-title">Stars</p>
+                <ul class="stars">
+                    {{#each stars}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="description">{{this.description}}</p>
+                <ul class="movies-time">
+                    {{#each showtimes}}
+                    <li class="showtime">{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/movieDetail}}
+    </div> 
+</div>

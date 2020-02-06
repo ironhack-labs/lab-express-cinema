@@ -1,43 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap");
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 #home {
-  background-image: url('../images/cinema.jpg');
+  background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  position: relative;
-}
+  position: relative; }
 
 #home h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 110px;
   font-weight: 600;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 .ironhack-title {
   font-family: 'Montserrat',sans-serif;
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: -10px;
-}
+  margin-bottom: -10px; }
 
 .subtitle-movies {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   font-weight: 400;
-  width: 100%;
-}
+  width: 100%; }
 
 .title-container {
   width: 500px;
@@ -45,111 +38,93 @@ a {
   color: #fff;
   position: absolute;
   right: 80px;
-  top: 35px;
-}
+  top: 35px; }
 
 .btn-home {
   width: 280px;
   text-align: center;
-  background-color: rgb(249, 249, 249);
+  background-color: #f9f9f9;
   height: 60px;
   border-radius: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  color: rgb(113, 146, 158);
-  cursor: pointer;
-}
+  color: #71929e;
+  cursor: pointer; }
 
 .btn-home a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 #container {
   width: 80%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #container-movies {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
+
+#container-movies ul {
+  display: flex; }
 
 #container-movies ul {
   display: flex;
-}
-
-#container-movies ul {
-  display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 #container-movies li {
   list-style-type: none;
   text-align: center;
   width: 30%;
   flex-direction: column;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 .link {
-  font-family: 'Montserrat', sans-serif;
-}
+  font-family: 'Montserrat', sans-serif; }
 
 .title-movie {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 #container-movie {
   width: 100%;
   padding-top: 0;
   display: flex;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 .info-image {
-  margin-right: 50px;
-}
+  margin-right: 50px; }
 
 .image-detail {
-  height: 450px;
-}
-
+  height: 450px; }
 
 .director {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .stars-title {
   font-family: 'Montserrat',sans-serif;
   font-weight: 600;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .stars {
   padding-left: 17px;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 .description {
   font-family: 'Montserrat',sans-serif;
   font-size: 16px;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
-.movies-time{
+.movies-time {
   display: flex;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 .showtime {
   list-style-type: none;
   margin-right: 7px;
   border-right: 1px solid black;
-  padding-right: 7px;
-}
+  padding-right: 7px; }
+
+/*# sourceMappingURL=style.css.map */
