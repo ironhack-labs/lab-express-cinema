@@ -1,0 +1,14 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtimes</p>
+
+{{!-- solicito mediante un #each las pelis (movies), lo meto en una col para medio organizar, y solicito el titulo y la imagen, a esto añado un boton para la sigueinte funcion (ver mas) --}}
+{{#each movies}}
+<br><br>
+<div class="col-7">
+  <h2>{{title}}</h2>
+  <br>
+  <img src="{{image}}">
+  <br><br>
+  <a class="btn btn-primary btn-sm-dark" href="/movies/details/{{id}}" role="button">See More</a>
+</div>
+{{/each}}
