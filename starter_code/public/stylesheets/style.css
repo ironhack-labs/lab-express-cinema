@@ -1,24 +1,18 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-.display {
-  font-size: 5.5rem;
-  font-weight: 500;
-  line-height: 1;
-  margin: 1.5rem 0;
-  color: white;
-}
-
-.movie-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10% 5% 0 60%;
-}
 /*# sourceMappingURL=style.css.map */
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+  align-content: space-around;
+  margin: 5% 25%;
+}
