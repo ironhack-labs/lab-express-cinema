@@ -53,6 +53,12 @@ body {
   align-items: center;
 }
 
+.movieCard img {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 a {
   color: #00B7FF;
 }
@@ -72,11 +78,15 @@ a {
 .photo img {
   width: 15rem;
   margin: 2rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .showtimes {
   list-style: none;
   display: flex;
+  padding-left: 0;
 }
 
 .showtimes li {
@@ -84,5 +94,12 @@ a {
   padding: 0 1rem;
   border-right: 1px solid gray;
 }
+
+.showtimes li:first-child {
+  padding-left: 0; 
+}
+
+
+
 
 
