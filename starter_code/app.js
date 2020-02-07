@@ -8,7 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const Movie = require('./models/movie.model')
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
@@ -55,4 +55,29 @@ const index = require('./routes/index');
 app.use('/', index);
 
 
+
+app.listen(process.env.PORT)
+
 module.exports = app;
+
+
+
+app.get('/movies', (req, res) => {
+  
+  Movie.find()      
+      .then(allMovies => {
+          console.log(`Se encontraron ${allMovies} peliculas:`)
+          res.render('movies', {movies: allMovies})     
+      })
+      .catch(err => console.log("Se produjo un error...." + err))
+  })
+
+  app.get('/movies/:id', (req, res) => {
+    console.log(req.params)
+    Movie.findById(req.params.id)
+    .then(movieDetail => {
+              console.log(`La pelicula tiene estos detalles ${movieDetail}`)
+              res.render('movie-details', {movie: movieDetail} )
+          })
+          .catch(err => console.log("Se produjo un error...." + err))
+})

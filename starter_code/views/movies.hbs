@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Peliculas</h1>
+
+    <div class="row">
+
+        {{#each movies}}
+        {{this.title}}
+        <img class="photoFilm" src="{{this.image}}">
+
+    <div class="col">
+        <a href="/movies/{{this._id}}">
+            <button type="button" class="btn btn-link">See more</button>
+        </a>
+    </div>
+        {{/each}}
+
+    </div>
+
+
+
+
+</div>
