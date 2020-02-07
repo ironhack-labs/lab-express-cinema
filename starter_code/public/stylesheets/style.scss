@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -12,7 +11,12 @@ h1 {
   margin-bottom: 40px;
 }
 
-h3 {
+main {
+  margin-top: 50px;
+}
+
+h3,
+h2 {
   margin-top: 20px;
 
 }
@@ -39,4 +43,8 @@ h3 {
 .link-movies {
   text-decoration: none;
   font-size: 20px;
+}
+
+p {
+  margin-bottom: 30px;
 }
