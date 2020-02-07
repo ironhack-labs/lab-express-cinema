@@ -70,6 +70,11 @@ const movies = [{
     }
 ];
 
-Movie.create(movies)
-    .this(console.log(`Created ${movies.length} books`))
-    .catch(err => console.log('Error connecting to DB', err))
+Movie.create(movies, (err) => {
+    if (err) {
+        console.log('Hay una error al final del seed')
+        throw (err)
+    }
+    console.log(`Created ${movies.length}`)
+    mongoose.connection.close();
+})

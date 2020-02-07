@@ -20,7 +20,11 @@ const movieSchema = new Schema({
         type: String
     },
     showtimes: {
-        type: String
+        type: Array
     },
-
+}, {
+    timestamps: true
 })
+const Movie = mongoose.model('Movie', movieSchema);
+
+module.exports = Movie
