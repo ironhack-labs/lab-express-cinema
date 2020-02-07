@@ -14,7 +14,7 @@ router.get("/movies", (req, res, next) => {
 
 router.get("/movie/:Id", (req, res, next) => {
   let {Id} = req.params;
-  Movies.findById(Id).then(movieFound => res.render("movie", {movieFound}));
+  Movies.findById(Id).then(movieFound => res.render("movie", movieFound));
 
 });
 

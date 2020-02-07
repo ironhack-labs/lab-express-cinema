@@ -1,9 +1,13 @@
 <a href="/movies">< Go Back To Movies</a>
 
 
-{{#each movieFound}}
-<div>
-    <img src={{this.image}} alt="{{this.title}}">
+
+<div id="movie">
+    <div>
+        <img src={{this.image}} alt="{{this.title}}">
+    </div>
+    
+  <div>
     <h1>{{this.title}}</h1>
     <h2>{{this.director}}</h2>
 
@@ -18,5 +22,5 @@
         <li>{{this}}</li>
         {{/each}}
     </ul>
+  </div>
 </div>
-{{/each}}
