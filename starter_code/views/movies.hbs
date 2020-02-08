@@ -1,15 +1,24 @@
-{{!-- <div class="heading">
+<div id="cards-movie">
+
     <h1>Ironhack Cinema</h1>
     <h3>Click on the movie to check the showtimes!<h3>
-</div>
-  <div class="home-button">
-  <button class="btn"><a href="/movies">Check the movies!</a></button>
-  </div> --}}
+ 
 
-  {{#each  pelicula}}
+ {{#each  pelicula}}
+ <div class="peliculas">
     <img src="{{image}}" alt="image not found">
-      <h1>{{title}}</h1>
-        <div class="home-button">
-          <button class="btn"><a href="/movie/{{this._id}}">see more</a></button>
-        </div>
-    {{/each}}
+      <h3>{{title}}</h3>
+
+    <button class="btn"><a href="/movie/{{_id}}">see more</a></button>
+  
+ </div>
+
+    {{/each}} 
+</div>
+
+
+  
+
+
+  
+ 

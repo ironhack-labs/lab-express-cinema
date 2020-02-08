@@ -2,7 +2,53 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
+* {
+  padding: 0;
+  margin: 0; }
+
 a {
   color: #00B7FF; }
+
+#index {
+  background-image: url(/images/cinema.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.heading {
+  color: white;
+  font-size: 4em;
+  padding-right: 120px;
+  padding-top: 150px; }
+
+.home-button {
+  padding-right: 300px;
+  padding-top: 30px;
+  text-decoration: none; }
+
+.btn-index {
+  width: 180px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center; }
+
+.cards-movie {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw; }
+
+.peliculas {
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */

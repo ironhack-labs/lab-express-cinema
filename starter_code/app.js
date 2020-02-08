@@ -13,13 +13,13 @@ const movie = require("./models/movie")
 const seed = require("./bin/seeds")
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true, useUnifiedTopology: true })
   .then(x => {
     movie.create(seed);
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    //console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
   .catch(err => {
-    console.error('Error connecting to mongo', err)
+    //console.error('Error connecting to mongo', err)
   });
 
 const app_name = require('./package.json').name;
