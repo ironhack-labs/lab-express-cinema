@@ -56,3 +56,29 @@ a {
   margin-top: 0;
   margin-bottom: 0rem;
 }
+
+/* movie detail page */
+.movie-container {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  padding: 2em 10em;
+}
+
+.movie-times {
+  display:flex;  
+  list-style:none;
+  padding: 0em;
+}
+
+.movie-info {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0em 15em 0em 2em;
+}

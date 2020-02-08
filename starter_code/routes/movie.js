@@ -12,4 +12,13 @@ router.get('/movies', (req, res, next) => {
   .catch( err => console.log('Error while getting movies ', err ) )
 });
 
+/* GET movie's detail page */
+router.get('/movie/:movieId', (req, res, next) => {
+  Movie.findById( req.params.movieId)
+  .then( foundMovie => {
+    res.render('movie-info', {foundMovie});
+  })
+  .catch( err => console.log(`Error while getting movie's details ${err}`) )
+})
+
 module.exports = router;
