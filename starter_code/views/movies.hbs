@@ -4,8 +4,10 @@
     {{#each foundMovies}}
     <div class="movie"> 
         <img src="{{this.image}}" alt="">
-        <p>{{this.title}}</p>
-        <a href="/movie/{{this._id}}">See more</a>
+        <div class="info">
+            <p class="title">{{this.title}}</p>
+            <a href="/movie/{{this._id}}">See more</a>
+        </div>
     </div>
     {{/each}}
 </div>

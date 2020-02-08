@@ -6,13 +6,53 @@ a {
   color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
+.movie-text {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+  padding: 5% 5% 5% 60%;
+}
 
+.display {
+  font-size: 7em;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+}
+
+/*   movies page     */
 .grid {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-  align-content: space-around;
-  margin: 5% 25%;
+	align-content: space-around;
+  margin: 5% 15%;
+}
+
+.movie, .info {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+
+.movie {
+  padding: 2em;
+}
+
+.info {
+  padding: .8em 0;
+  line-height: 2em;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0rem;
 }
