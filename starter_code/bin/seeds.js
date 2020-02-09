@@ -1,3 +1,15 @@
+/*
+In this file we create our database.
+We require mongoose to be able to use it and also the movies model created in the
+file models so the objects that we are going to create adapt to the model we
+already have.
+
+We setup a data base name, and for this case we name it express-cinema and
+use mongoosee to connect to a database through local host with this specific name.
+
+After all this initial setup, we create an array named movies which will contain
+objects which in turn will have the info that will be passed to our model.
+*/
 const mongoose = require('mongoose')
 const Movie = require('../models/Movies')
 
@@ -71,6 +83,14 @@ const movies = [
   }
 ];
 
+/*
+Finally we create our model with the information from the array of objects called
+movies and close the connection of our database.
+
+To import this information to our local database we write in the console:
+node bin/seeds.js
+As this is the file where our information for our database is stored.
+*/
 
 Movie.create(movies, (err) => {
   if (err) { throw(err) }
