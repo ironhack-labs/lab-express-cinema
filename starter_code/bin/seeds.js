@@ -1,7 +1,10 @@
-const Movie = require("./../models/Movies");
-const mongoose = require(`mongoose`)
+const mongoose = require('mongoose')
+const Movie = require('../models/Movies')
 
-movie.exports = [
+const dbName = 'express-cinema'
+mongoose.connect(`mongodb://localhost/${dbName}`)
+
+const movies = [
   {
     title : "A Wrinkle in Time",
     director: "Ava DuVernay",
@@ -68,14 +71,9 @@ movie.exports = [
   }
 ];
 
-mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
-  .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-    Movie.create(movies)
-    .then(() => 
-    console.log(`Created database with ${movies}`))
-  })
-  .catch(err => {
-    console.error('Error connecting to mongo', err)
-  });
+
+Movie.create(movies, (err) => {
+  if (err) { throw(err) }
+  console.log(`Created ${movies.length} movies`)
+  mongoose.connections.close()
+})

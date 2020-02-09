@@ -3,6 +3,10 @@ body {
   padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
+#background-color {
+  background-color: crimson; }
+
+/*Styles for landing page*/
 #landing {
   background-image: url("../images/cinema.jpg");
   margin: 0;
@@ -20,6 +24,9 @@ body {
   margin-block-end: 5vh;
   color: white; }
 
+.movie-poster > h5 {
+  color: white; }
+
 #button-landing {
   font-size: 1.5em;
   margin-inline-start: 55vw;
@@ -32,5 +39,81 @@ body {
   color: #00B7FF;
   text-decoration: none;
   margin: 1em; }
+
+/*Styles for all movies page*/
+#landing-movies {
+  background-color: #00B7FF;
+  color: white; }
+
+#landing-movies > h2 {
+  margin-top: 0;
+  padding-top: 2vh;
+  margin-inline-start: 5vw; }
+
+#landing-movies > p {
+  margin-bottom: 5vh;
+  padding-bottom: 2vh;
+  margin-inline-start: 5vw; }
+
+#all-movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0; }
+
+.movie-poster {
+  margin-inline-start: 2vw;
+  margin-inline-end: 2vw;
+  margin-block-end: 2vh; }
+
+.movie-poster > a {
+  text-decoration: none;
+  color: #00B7FF; }
+
+/*Styles for singe movie page*/
+#single-movie {
+  display: flex;
+  justify-content: space-around;
+  margin-block-start: 10vh;
+  background-color: crimson; }
+
+#movie {
+  margin-inline-start: 5vw;
+  margin-inline-end: 5vw; }
+
+#description {
+  margin-inline-end: 5vw;
+  color: white; }
+
+#description > a {
+  text-decoration: none;
+  color: #00B7FF; }
+
+/*
+<div id="single-movie">
+  {{#each movie}}
+  <div id="movie">
+    <img src="{{image}}" alt="">
+  </div>
+  <div id="description">
+    <h3>{{title}}</h3>
+    <h4>{{director}}</h4>
+    <h5>Stars:</h5>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <ul id="showtimes">
+      {{#each showtimes}}
+      <li>{{this}} |</li>
+      {{/each}}
+    </ul>
+    <a href="/movies/">Go back</a>
+  </div>
+  {{/each}}
+</div> 
+*/
 
 /*# sourceMappingURL=style.css.map */

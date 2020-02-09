@@ -1,0 +1,24 @@
+<div id="single-movie">
+  {{#each movie}}
+  <div id="movie">
+    <img src="{{image}}" alt="">
+  </div>
+  <div id="description">
+    <h3>{{title}}</h3>
+    <h4>{{director}}</h4>
+    <h5>Stars:</h5>
+    <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <ul id="showtimes">
+      {{#each showtimes}}
+      <li>{{this}} |</li>
+      {{/each}}
+    </ul>
+    <a href="/movies/">Go back</a>
+  </div>
+  {{/each}}
+</div> 
