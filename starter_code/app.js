@@ -9,11 +9,18 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+const Movie = require('./models/Movie')
+const movies = require('./bin/seeds')
+
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/ironhack-cinema', {useNewUrlParser: true, useUnifiedTopology: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+
+    Movie.create(movies)
+    .then(succes => console.log('data base ready'))
+    .catch(err => console.log(err))
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
