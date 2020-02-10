@@ -1,19 +1,15 @@
 * {
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: rgb(63, 124, 173);
-}
+  color: #3f7cad; }
 
 .check a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .bgImage {
   height: 100vh;
@@ -24,31 +20,26 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 .title {
   color: white;
   font-size: 6em;
   margin-right: 50px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .check {
   padding: 20px;
   border-radius: 20%/50%;
   font-size: 1em;
-  // color: #00b7ff;
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .movie-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .movie-bloc {
   display: flex;
@@ -57,28 +48,22 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  margin: 10px;
-}
+  margin: 10px; }
 
 .movie-bloc img {
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px black;
-}
+  box-shadow: 0 2px 5px black; }
 
 .movie-title {
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-// ONE MOVIE
 .container-oneMovie {
   display: flex;
   justify-content: space-between;
-  width: 800px;
-}
+  width: 800px; }
 
 .container-oneMovie img {
-  box-shadow: 0 2px 5px black;
-}
+  box-shadow: 0 2px 5px black; }
 
 .oneMovie-infos {
   display: flex;
@@ -86,5 +71,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
+
+/*# sourceMappingURL=style.css.map */
