@@ -1,0 +1,14 @@
+<h1>This page has all of our movies on it</h1>
+
+<div class = "all-movies">
+{{#each allTheMovies}}
+<div>
+
+  <img src = {{this.image}}/>
+  <br>
+  <a href = "/movies/{{this.id}}">
+  {{this.title}}
+  </a>
+</div>
+{{/each}}
+</div>
