@@ -1,5 +1,9 @@
+<div class="movie-display">
 {{#each movies}}
-<img src="{{this.image}}">
-<h4>{{this.title}}</h4>
-<a href="/movie/{{this.id}}">see more</a>
+<div class="movie-card">
+  <img src={{this.image}} class="card-img" alt="...">
+    <h5 class="card-title">{{this.title}}</h5>
+    <p class="index-button"><a href="/movie/{{this._id}}" id="see-more">See more</a></p>
+</div>
 {{/each}}
+</div>
