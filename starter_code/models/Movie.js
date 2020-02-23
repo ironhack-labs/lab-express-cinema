@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const {model, Schema} = require('mongoose')
+const { Schema } = require('mongoose')
 
 const movieSchema = new Schema ({
     title: String,

@@ -3,7 +3,8 @@ const router  = express.Router();
 const Movies = require('../models/Movie')
 
 /* GET home page */
-router.get('/', (req, res) => {
+router
+  .get('/', (req, res) => {
     res.render('index');
 });
 
@@ -12,6 +13,7 @@ router.get('/movies', (req, res) => {
     .then(base => {
       res.render('movies', {base})
   })
+    .catch(err => console.log(err))
 })
 
 router.get('/movie/:id', (req,res) => {
