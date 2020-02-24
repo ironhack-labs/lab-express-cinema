@@ -1,0 +1,26 @@
+<h1>Detalles de: {{title}}</h1>
+<p>Director: {{director}}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h2>Sinopsis:</h2>
+      <p>{{description}}</p>
+    </div>
+    <div class="col-6">
+      <img src="{{image}}"></img>
+    </div>
+  </div>
+  <h2>ACTORS:</h2>
+  <ul>{{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+
+  </ul>
+
+  <h3>TIME:</h3>
+  <p>{{#each showtimes}}
+    [{{this}}]
+    {{/each}}
+
+  </p>
+</div> 

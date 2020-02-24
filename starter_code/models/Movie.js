@@ -7,6 +7,8 @@ const MovieSchema = new Schema ({
     image: String,
     description: String,
     showTime: Array,
-})
+}, {
+    timestamps: true
+  })
 
 module.exports = model("movie", MovieSchema)
