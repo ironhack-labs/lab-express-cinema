@@ -8,7 +8,9 @@ router
     res.render('index');
 });
 
-router.get('/movies', (req, res) => {
+router.get('/movies', async (req, res) => {
+  
+
   Movies.find()
     .then(base => {
       res.render('movies', {base})

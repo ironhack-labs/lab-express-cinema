@@ -9,12 +9,14 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 const Movies = require('./models/Movie')
-const movie = require('./bin/seeds')
+const data = require('./bin/seeds')
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true, useUnifiedTopology: true})
-  .then(x => {
+  .then(async x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    //const movies = await Movies.create(data)
+    //console.log(movies)
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
