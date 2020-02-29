@@ -11,18 +11,17 @@ a {
 .home {
   display: flex;
   align-items: flex-end;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .title-home {
   color: #fff;
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 .button-movies {
   background-color: #fff;
   text-decoration: none;
   border-radius: 25px;
   width: fit-content;
-  padding: 10px 20px;
-}
+  padding: 10px 20px; }
+
+/*# sourceMappingURL=style.css.map */
