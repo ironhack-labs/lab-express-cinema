@@ -9,14 +9,17 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     console.log(res.body) ;
-    res.render('list');
-    //const { title, director, stars, image, description, showtimes } = req.body;
-   // const newmovie = new Movie ({
 
-
-   // })
-
+    const { title, director, stars, image, description, showtimes } = req.body;
+    const newmovie = new Movies ({ title, director, stars, image, description, showtimes })
+    newmovie.save()
+    .then((movie) => {
+        console.log(movie);
+        return res.redirect('/movie?id='+ movie.id);})
+    .catch((error) => {
+        console.log(error);})
 
 });
 
 module.exports = router;
+
