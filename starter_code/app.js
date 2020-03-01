@@ -16,18 +16,6 @@ mongoose
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
-  // .then(() => {
-  //   Movie.deleteMany({}, function (err) {
-  //     if (err) console.log(err);
-  //     console.log("Successful deletion");
-  //   });
-  // })
-  // .then(() => {
-  //   return Movie.insertMany(data);
-  // })
-  // .then(movies => {
-  //   movies.forEach(movie => console.log(movie.title));
-  // })
   .catch(err => {
     console.error('Error connecting to mongo', err)
   });

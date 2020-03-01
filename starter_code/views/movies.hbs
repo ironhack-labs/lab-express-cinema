@@ -1,7 +1,9 @@
-<h2>Ironhack cinema</h2>
-<p>Click on the movie to check the showtimes!</p>
-<div class="grid-movies">
-{{#each movies}}
-{{>moviesCard}}
-{{/each}}
+<div class="movies-page">
+  <h2 class="title-grid">Ironhack Cinema</h2>
+  <p class="subtitle-grid">Click on the movie to check the showtimes!</p>
+  <div class="grid-movies">
+    {{#each movies}}
+      {{>moviesCard}}
+    {{/each}}
+  </div>
 </div>

@@ -1,4 +1,18 @@
-module.exports =
+const mongoose = require('mongoose');
+
+const Movie = require('../models/Movie');
+
+// const DB_TITLE = 'ironhack-lab-express-cinema';
+
+mongoose.connect(`mongodb://localhost/atarter-code`, {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+
+
+const movies =
 [
   {
     "title": "A Wrinkle in Time",
@@ -65,3 +79,10 @@ module.exports =
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+Movie.create(movies)
+  .then(savedMovies => {
+    console.log(`Created ${savedMovies.length} records`);
+    mongoose.connection.close();
+  })
+  .catch(err => console.log(`Error during data saving: ${err}`))
