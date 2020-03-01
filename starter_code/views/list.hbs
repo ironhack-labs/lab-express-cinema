@@ -1,10 +1,17 @@
-<h1>List of Movies</h1>
+<h1 id="list-title">List of Movies</h1>
+    <br>
+<a id="add-movie" href="http://localhost:3000/add">Add a new movie!</a>
 
-<ul>
+<div class="movie-container">
     {{#each movies}}
-    <li>{{this.title}}</li>
-    <a href="http://localhost:3000/movie?id={{this._id}}">see more</a>
+    <div class="movie">
+        <img src="{{this.image}}" alt="">
+        <p class="movie-title">{{this.title}}</p>
+        <br>
+        <div class="see-more"><a href="http://localhost:3000/movie?id={{this._id}}">see more</a></div>
+    </div>
     {{/each}}
-</ul>
+</div>
 
-    <a href="http://localhost:3000/add">Create a movie!</a>
+
+

@@ -62,11 +62,14 @@ const list = require('./routes/list');
 const movie = require('./routes/movie');
 const edit = require('./routes/edit');
 const add = require('./routes/add');
+const remove = require('./routes/delete');
 
 app.use('/', index);
 app.use('/list', list);
 app.use('/movie', movie);
 app.use('/edit', edit);
 app.use('/add', add);
+app.use('/delete', remove)
+
 
 module.exports = app;

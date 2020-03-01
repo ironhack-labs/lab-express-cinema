@@ -1,11 +1,23 @@
-<h1>Movie detail</h1>
+<h1 id="movie-detail-title">Movie detail</h1>
+<div class="movie-detail-container">
+
+    <img src="{{this.movie.image}}" alt="">
+    <div class="movie-detail-unit"></div>
+    {{this.movie.title}}
+    <br>Director: {{this.movie.director}}
+    <br>stars
+    <br>{{this.movie.stars}}
+    <br>{{this.movie.description}}
+    <br>{{this.movie.showtimes}}
+
+</div>
+</div>
+
+<div class="buttons-container">
+    <button><a href="http://localhost:3000/edit?id={{this.movie._id}}">Edit this movie</a></button>
+
+    <button><a href="http://localhost:3000/delete?id={{this.movie._id}}">Delete this movie</a></button>
 
 
-{{this.movie.title}} <br>
-{{this.movie.director}}<br>
-{{this.movie.stars}}<br>
-{{this.movie.image}}<br>
-{{this.movie.description}}<br>
-{{this.movie.showtimes}}<br>
-</br>
-<a href="http://localhost:3000/edit?id={{this.movie._id}}">Edit this movie</a>
+    <button><a href="http://localhost:3000/list">Back to the list</a></button>
+</div>
