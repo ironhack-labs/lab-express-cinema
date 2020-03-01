@@ -1,0 +1,10 @@
+<h1>List of Movies</h1>
+
+<ul>
+    {{#each movies}}
+    <li>{{this.title}}</li>
+    <a href="http://localhost:3000/movie?id={{this._id}}">see more</a>
+    {{/each}}
+</ul>
+
+    <a href="http://localhost:3000/add">Create a movie!</a>
