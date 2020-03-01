@@ -1,0 +1,65 @@
+{{#each data}}
+<div class="contentmovie">
+  <div class="movieitemid">
+
+
+
+    <form action="/movies/update" method="POST">
+      <h1 class="center">Add movie</h1>
+      <div class="addform">
+        <label class="nameform" for="title">Title </label>
+        <input name="title" class="itemform" value="{{this.title}}" type="text">
+        <label class="nameform" for="director">Director </label>
+        <input name="director" value="{{this.director}}" class="itemform" type="text">
+
+        <div class="">
+          <label class="nameform" for="description">Description </label>
+          <input name="description" value="{{this.description}}" class="itemform" rows="3" type="text">
+        </div>
+      </div>
+      <div class="addform">
+        <label class="center" for="stars1">Stars</label>
+        <div>
+          <ul class="lista3">
+
+            {{#each this.stars}}
+
+            <input class=" starsadd" value="{{this}}  " name="stars{{@index}}" class="itemform" type="text">
+
+
+            {{/each}}
+          </ul>
+        </div>
+
+
+
+      </div>
+
+      <div class="addform">
+
+        <label for="image">Image</label>
+        <input name="image" value="{{this.image}}" class="itemformlarge" type="text">
+      </div>
+      <div class="addform">
+        <label class="center" for="times">Show times</label>
+        <div>
+          <ul class="lista4">
+            {{#each this.showtimes}}
+            <input class="starsadd" name="time{{@index}}" value="{{this}}" class="itemform" type="text">
+
+
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="addform">
+
+        <input type="submit" class="btnsubmit" value="Enviar">
+
+      </div>
+
+    </form>
+  </div>
+</div>
+
+{{/each}}

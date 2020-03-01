@@ -1,0 +1,48 @@
+<div class="  contentmovie">
+
+
+  {{#each data }}
+
+  <div class="movieitemid">
+
+    <img class="movieimage" src="{{this.image}}"></img>
+    <div class="movieinfo">
+      <h1 class="idtitle center">{{this.title}}</h1>
+      <h2 class="iddirector">
+        <span class="directorsmall"><em>Director: </em></span> {{this.director}}
+      </h2>
+      <h3 class="iddirector ">Stars</h3>
+      <ul>
+        {{#each this.stars}}
+        <li class="lista1">{{this}}</li>
+        {{/each}}
+      </ul>
+      <p class="iddirector ">{{this.description}}</p>
+
+      <div>
+        <ul>
+          {{#each this.showtimes}}
+          <li class="lista2">{{this}} | </li>
+          {{/each}}
+        </ul>
+
+        <a class=" iddirector idtitle center" href="/movies">Back</a>
+
+        <form method="POST" action="/movies/delete/{{this._id}}">
+
+          <button class="idtitle center" type="submit">DELETE</button>
+
+        </form>
+        <form method="POST" action="/movies/edit/">
+          <input type="text" name="id" value="{{this._id}}" hidden>
+          <button class="idtitle center" type="submit">Edit</button>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+  {{/each}}
+
+</div>

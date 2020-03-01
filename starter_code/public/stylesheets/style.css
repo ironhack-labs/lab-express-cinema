@@ -1,0 +1,139 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF;
+text-decoration: none;
+}
+
+
+.contentmovies{
+display: flex;
+  flex-wrap: wrap;
+}
+.movieitem, .movieitemnew{
+
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 14vw;
+}
+.movieitem img{
+
+  width: 14vw;
+  height: 36vh;
+}
+.center{
+  text-align: center;
+
+}
+/*# sourceMappingURL=style.css.map */
+
+ .movieitemid{
+
+width: 60%;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+ }
+ .movieimage{
+width: 40%;
+  border: solid 2px cornflowerblue;
+ }
+.movieinfo{
+
+  width: 100%;
+
+}
+.idtitle{
+  font-weight: bold;
+}
+.iddirector{
+font-size: 120%;
+  padding-left: 20px;
+}
+
+.directorsmall{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(75, 75, 75);
+  font-size: 110%;
+}
+
+.lista1{
+  list-style-type: square;
+}
+.lista2{
+  display: inline;
+  margin-right: 10px;
+}
+.movieitemnew{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  background-color: rgb(148, 156, 156);
+}
+.addnewstyle{
+font-size: 300%;
+  color: white;
+}
+
+.addform{
+display: flex;
+background-color: rgb(211, 211, 211);
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin-left:20px;
+  border: solid gray 2px;
+  border-radius: 20px;
+  padding: 20px;
+
+  margin-bottom: 15px;
+}
+.nameform{
+
+text-align: center;
+
+}
+.itemform{
+
+  margin-left: 18px;
+   margin-right: 18px;
+width: 10vw;
+}
+.itemformlarge{
+ margin-left: 18px;
+   margin-right: 18px;
+width: 20vw;
+
+}
+.formaddspace{
+  margin-top: 20px;
+}
+
+.starsadd{
+  margin-bottom: 10px;
+  height: 20px;
+  width: 220px;
+  margin-left: 10px;
+}
+.lista3 li{
+  list-style: none;
+}
+
+.lista4{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btnsubmit{
+
+
+
+
+
+}

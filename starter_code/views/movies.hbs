@@ -1,0 +1,23 @@
+<div class="contentmovies">
+
+
+
+  {{#each data }}
+
+  <div class="movieitem">
+
+    <img src="{{this.image}}"></img>
+    <p class="center">{{this.title}}</p>
+    <p class="center"><a href="movies/info/{{this._id}}">Ver mas</a></p>
+  </div>
+  {{/each}}
+
+
+  <div class="movieitemnew">
+    <a href="/movies/add">
+      <img src="{{this.image}}"></img>
+      <p class="center addnewstyle">+</p>
+      <p class="center addnewstyle">ADD</p>
+    </a>
+  </div>
+</div>
