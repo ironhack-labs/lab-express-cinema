@@ -8,27 +8,26 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-//Require The Model Movie and de Data
-const Movie = require('./models/Movie.js');
-const data = require('./bin/seeds');
+hbs.registerPartials(__dirname + "/views/partials");
+
 
 mongoose
   .connect('mongodb://localhost:27017/starter-code', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
-  .then(() => {
-    Movie.deleteMany({}, function (err) {
-      if (err) console.log(err);
-      console.log("Successful deletion");
-    });
-  })
-  .then(() => {
-    return Movie.insertMany(data);
-  })
-  .then(movies => {
-    movies.forEach(movie => console.log(movie.title));
-  })
+  // .then(() => {
+  //   Movie.deleteMany({}, function (err) {
+  //     if (err) console.log(err);
+  //     console.log("Successful deletion");
+  //   });
+  // })
+  // .then(() => {
+  //   return Movie.insertMany(data);
+  // })
+  // .then(movies => {
+  //   movies.forEach(movie => console.log(movie.title));
+  // })
   .catch(err => {
     console.error('Error connecting to mongo', err)
   });
@@ -66,7 +65,9 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 const index = require('./routes/index');
+const movie = require('./routes/movie');
 app.use('/', index);
+app.use('/', movie);
 
 
 module.exports = app;

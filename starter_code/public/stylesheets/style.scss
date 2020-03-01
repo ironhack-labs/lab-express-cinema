@@ -1,9 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url(/images/cinema.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
+}
 
 a {
   color: #00B7FF; }
@@ -12,11 +10,17 @@ a {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 800px;
+  margin: 0; 
 }
 
 .title-home {
   color: #fff;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .button-movies {
@@ -25,4 +29,15 @@ a {
   border-radius: 25px;
   width: fit-content;
   padding: 10px 20px;
+}
+
+.grid-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card{
+  width: 20%;
+  margin: 0px 40px 15px;
 }
