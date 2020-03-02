@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/stylesheets/movie-index.css">
+<div class="movie">
+    <img src="{{movie.image}}">
+    <div class="content">
+        <a href="/movies">Go back</a>
+        <h1>{{movie.title}}</h1>
+        <h2>Director: {{movie.director}}</h2>
+        Starts:
+        <ul>
+            {{#each movie.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+
+        <p>{{#each movie.showtimes}}
+            {{this}} |
+        {{/each}}</p>
+        <form action="/movie/delete/{{movie.id}}" method="post">
+            <button type="submit">Delete</button>
+        </form>
+        <form action="/movie/edit/{{movie.id}}" method="get">
+            <button type="submit">Edit</button>
+        </form>
+    </div>
+</div>

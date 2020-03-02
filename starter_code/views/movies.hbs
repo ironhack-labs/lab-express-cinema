@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/stylesheets/movies-index.css">
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movies to check the showtime!</h2>
+<div class="movies">
+    {{#each movies}}
+        <div class="movie">
+            <img src="{{this.image}}">
+            <h3>{{this.title}}</h3>
+            <a href="/movie/{{this.id}}">See more</a>
+        </div>
+    {{/each}}
+</div>

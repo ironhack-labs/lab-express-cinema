@@ -1,0 +1,29 @@
+body {
+    width: 100vw;
+    height: 100vh;
+     background: url("../images/cinema.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 140px;
+    font-weight: bold;
+    color:white;
+}
+
+a {
+    padding: 20px 30px;
+    border-radius: 50px;
+    color:#00B7FF;
+    font-size: 30px;
+    background: white;
+    text-decoration: none;
+}
+
+.to-right{
+    position: absolute;
+    right: 10vw
+
+}

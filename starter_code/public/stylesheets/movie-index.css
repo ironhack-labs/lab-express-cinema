@@ -1,0 +1,13 @@
+.movie {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1000px;
+    margin:0 auto;
+}
+.movie img {
+    width:20%;
+}
+.movie .content {
+    width: 80%;
+    margin-left:20px;
+}

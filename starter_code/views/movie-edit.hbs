@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/stylesheets/movie-index.css">
+
+<form action="/movie/edit/{{movie.id}}" method="post">
+    <div class="movie">
+        <div>
+            <img src="{{movie.image}}"><br>
+            <input type="text" name="image" value="{{movie.image}}">
+        </div>
+        <div class="content">
+            <a href="/movies">Go back</a><br>
+            Title: <input type="text" name="title" value="{{movie.title}}"><br>
+            Director: <input type="text" name="director" value="{{movie.director}}"><br>
+            Starts:
+            <ul id="stars">
+                {{#each movie.stars}}
+                    <li><input type="text" name="stars" value="{{this}}"> <a
+                            onclick="this.parentNode.remove()">Remove</a></li>
+                {{/each}}
+                <li><input type="text" id="addStar">
+                    <a onclick="addStar()">Add</a>
+                </li>
+            </ul>
+            <br>
+            Description: <textarea type="text" name="description">{{movie.description}}"</textarea>
+
+            <p>{{#each movie.showtimes}}
+                {{this}} |
+            {{/each}}</p>
+
+            <button type="submit">Save</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    function addStar() {
+        const string = `<li><input type='text' name='stars' value='${document.querySelector('#addStar').value}'> <a onclick='this.parentNode.remove()'>Remove</a></li>`;
+        document.querySelector('#stars').insertAdjacentHTML('afterbegin', string);
+        document.querySelector('#addStar').value = '';
+    }
+</script>
