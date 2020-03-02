@@ -1,15 +1,6 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 
-const DB_NAME = 'cinema-project';
-
-mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-
-
 const movies = [
     {
       title : "A Wrinkle in Time",
