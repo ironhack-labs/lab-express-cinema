@@ -17,6 +17,11 @@ router.get('/movies', (req, res, next) => {
     })
 });
 
+//important to put this before the one with movieId
+router.get('/movies/create', (req, res, next) => {
+	res.render('create');
+});
+
 router.get('/movies/:movieId', (req, res, next) => {
   Movie.findById(req.params.movieId)
     .then(movie => {
@@ -26,5 +31,20 @@ router.get('/movies/:movieId', (req, res, next) => {
       console.log('Error while retrieving movie details: ', error);
     })
 });
+
+
+
+// router.post('/movies', (req, res, next) => {
+// 	const { title, director, description } = req.body;
+// 	Resort.create({
+// 		title,
+// 		director,
+// 		description,
+// 	})
+// 		.then(() => {
+// 			res.redirect('/movies');
+// 		})
+// 		.catch(next);
+// });
 
 module.exports = router;

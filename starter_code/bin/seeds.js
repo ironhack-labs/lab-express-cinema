@@ -1,6 +1,14 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 
+// const DB_NAME = 'cinema-project';
+
+// mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
+//   useCreateIndex: true,
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+
 const movies = [
     {
       title : "A Wrinkle in Time",
@@ -68,10 +76,10 @@ const movies = [
     }
   ];
 
-  Movie.create(movies, err => {
-    if (err) {
-      throw err;
-    }
-    console.log(`Created ${movies.length} movies`);
-    mongoose.connection.close();
-  });
+  // Movie.create(movies, err => {
+  //   if (err) {
+  //     throw err;
+  //   }
+  //   console.log(`Created ${movies.length} movies`);
+  //   mongoose.connection.close();
+  // });
