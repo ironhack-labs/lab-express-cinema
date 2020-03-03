@@ -1,0 +1,13 @@
+<h2 class="title-create">Create Movie</h2>
+<form action="/movies/{{movie.id}}/update" method="post" class="create-section">
+  <input type="text" name="title" placeholder="Enter the title here" value="{{movie.title}}">
+  <input type="text" name="director" placeholder="Enter the Director here" value="{{movie.director}}">
+  <input type="text" name="stars" placeholder="Enter the Stars here" value="{{movie.stars}}">
+  <input type="text" name="image" placeholder="Enter the image here" value="{{movie.image}}">
+  <input type="text" name="description" placeholder="Enter the description  here" value="{{movie.description}}">
+  <input type="text" name="showtimes" placeholder="Enter the showtimes here" value="{{movie.showtimes}}">
+  <button class="button">Update Film</button>
+</form>
+<div class="go-back">
+  <a href="/movies" class="button">Go back</a>
+</div>

@@ -2,13 +2,6 @@ const mongoose = require('mongoose');
 
 const Movie = require('../models/Movie');
 
-// const DB_TITLE = 'ironhack-lab-express-cinema';
-
-mongoose.connect(`mongodb://localhost/atarter-code`, {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
 
 
 
