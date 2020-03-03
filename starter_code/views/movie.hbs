@@ -1,0 +1,26 @@
+<h2>{{movie.title}}</h2>
+<div class="parent">
+            <img class="movie-image" src="{{movie.image}}" alt="{{movie.title}}"><br>
+</div>
+<p class="bold">Director: {{movie.director}} </p>
+Stars:
+<ul>
+  {{#each movie.stars}}
+  <li>{{this}}</li>   <!--Importante tener en cuenta que hace referencia a todas las entradas del array-->
+  {{/each}}
+</ul>
+<p>{{movie.description}}</p>
+
+You can see the film at:
+<ul>
+  {{#each movie.showtimes}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+You want to change the director?
+<form action="/movies/movie/{{movie.id}}/edit" method="POST">
+    <input type="text" id="director" name="director"><br>
+    <button class="btn" type="submit">Change it!</button>
+</form>
+

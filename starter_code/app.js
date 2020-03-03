@@ -9,14 +9,15 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
-const Movie = require('./models/Movie'); // Import of the model Movie
-const data = require('./bin/seeds.js'); // Import of the data from './seeds.js'
+const Movies = require('./models/Movie'); // Import of the model Movie
+const data = require('./bin/seeds'); // Import of the data from './seeds.js'
 //nose si hará falta hacer un module export dentro
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    Movies.collection.drop()
+    return Movies.insertMany(data)  //importing the data
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -52,9 +53,10 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-
 const index = require('./routes/index');
 app.use('/', index);
 
+const movies = require('./routes/movies');
+app.use('/movies', movies)
 
 module.exports = app;

@@ -1,6 +1,6 @@
 // To insert in "bin/seeds.js"
 
-const movies = [
+module.exports =[  //he cambiado esta línea, si no, no se introducían los datos en la bbdd
   {
     title : "A Wrinkle in Time",
     director: "Ava DuVernay",
