@@ -1,0 +1,23 @@
+<section>
+  <form action="/update/{{movie._id}}" method="post">
+    <label for="title">title</label><br>
+    <input type="text" id="title" name="title" value="{{movie.title}}"><br><br>
+
+    <label for="director">director</label><br>
+    <input type="text" id="director" name="director" value="{{movie.director}}"><br><br>
+
+    <label for="stars">stars</label><br>
+    <input type="text" id="stars" name="stars" value="{{movie.stars}}"><br><br>
+
+    <label for="image">image</label><br>
+    <input type="text" id="image" name="image" value="{{movie.image}}"><br><br>
+
+    <label for="description">description</label><br>
+    <input type="text" id="description" name="description" value="{{movie.description}}"><br><br>
+
+     <label for="showtimes">showtimes</label><br>
+    <input type="text" id="showtimes" name="showtimes" value="{{movie.showtimes}}"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>

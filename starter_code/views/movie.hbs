@@ -1,0 +1,16 @@
+<section>
+    <h1> {{movie.title}} </h1>
+    <h2> {{movie.director}} </h2>
+    <h2> {{movie.stars}}</h2>
+    <img src="{{movie.image}}">   
+    <h2> {{movie.description}} </h2>
+    <h2> {{movie.showtimes}} </h2>
+</section>
+
+<section>
+        <form action="/delete/{{movie._id}}" method="POST">
+                <button type="submit"> Delete </button>
+        </form> 
+        <a href="/update/{{movie._id}}"> Update </a>
+</section>
+
