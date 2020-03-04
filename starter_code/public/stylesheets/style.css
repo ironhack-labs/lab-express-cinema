@@ -1,8 +1,41 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+body{
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-a {
-  color: #00B7FF; }
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-/*# sourceMappingURL=style.css.map */
+}
+.movies-container{
+  margin: 2%;
+  height: 400px;
+  width: 28%;
+}
+
+.movie-image{
+  height: 300px;
+  width: 220px;
+}
+.btn{
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+.tracks-container{
+  margin: 1%;
+  height: 50px;
+  width: 33%;
+}
