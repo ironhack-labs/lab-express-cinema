@@ -11,7 +11,11 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/movie-app', {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -54,10 +58,12 @@ app.locals.title = 'Cinema Ironhack';
 const index = require('./routes/index');
 app.use('/', index);
 
+
 const movies = require('./routes/movies');
 app.use('/movies', movies);
 
-hbs.registerPartials(path.join(__dirname, '/views/partials'));
+
+//hbs.registerPartials(path.join(__dirname, '/views/partials'));
 
 
 module.exports = app;

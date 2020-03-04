@@ -1,10 +1,17 @@
 const express = require('express');
-const Movies = require('../models/Movie');
+const Movie = require('../models/Movie');
+const fileMovies = require('../bin/seeds.js');
 const router  = express.Router();
 
-/* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('movies');
-});
 
-module.exports = router;
+
+router.get('/', (req, res, next) => {
+    //res.render('movies');
+    Movie.find()
+    .then((movies) => {
+      res.render('movies', { movies })
+    })
+    .catch()
+  });
+
+  module.exports = router;
