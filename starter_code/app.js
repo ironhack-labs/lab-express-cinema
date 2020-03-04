@@ -9,6 +9,14 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 
+// npm install --save dotenv
+// leer archiv
+// añadir en el git ignore .env
+// poner la ruta
+// process.env.mongodb_uri  (mongodb_uri es una variable de .env)
+
+// .env.sample
+// dar pista para lo que tiene que poner en el .env
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
