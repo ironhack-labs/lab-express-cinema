@@ -11,17 +11,17 @@ const movieSchema = new Schema({
         type: String,
         required: true
     },
-    stars: { type: String },
+    stars: { type: Array },
     image: { type: String },
     description: {
         type: String,
         required: true
     },
     showtime: {
-        type: String,
+        type: Array,
         required: true
     }
-}),
+});
 
 const Movie = mongoose.model('Movie', movieSchema);
 

@@ -1,3 +1,21 @@
+const mongoose = require('mongoose');
+const Movie = require('../models/movie');
+
+mongoose
+  .connect('mongodb://localhost/SuperMovies', {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    // modelMovie.create(seedsData)
+    
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
+
 const movies = [
     {
       title : "A Wrinkle in Time",
@@ -64,3 +82,11 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
+
+  Movie.create(movies, err => {
+    if (err) {
+      throw err;
+    }
+    console.log(`Created ${movies.length} books`);
+    mongoose.connection.close();
+  });
