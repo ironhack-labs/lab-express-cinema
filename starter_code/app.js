@@ -52,11 +52,9 @@ app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 app.locals.title = "Cinema Ironhack";
 
 const index = require("./routes/index");
+const movies = require("./routes/movies");
+
 app.use("/", index);
-
-// const movies = require("./routes/movies");
-// app.use("/movies", movies);
-
-// hbs.registerPartials(path.join(__dirname, "/views/partials"));
+app.use("/movies", movies);
 
 module.exports = app;

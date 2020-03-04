@@ -3,6 +3,24 @@
   "configurations": [
     {
       "type": "node",
+      "request": "launch",
+      "name": "nodemon",
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceFolder}/bin/www",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/bin/www",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node",
       "request": "attach",
       "name": "DEBUG Irongenerate",
       "port": 9229,
