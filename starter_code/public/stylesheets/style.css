@@ -5,6 +5,7 @@ body {
 a {
   color: #00B7FF; }
 
+/* INDEX */
 .index-container {
   background-image: url("../images/cinema.jpg");
   background-repeat: space;
@@ -36,6 +37,7 @@ a {
   width: 12.5rem;
   padding: 1.2rem; }
 
+/* MOVIES */
 .movies-container {
   display: grid;
   grid-template-columns: repeat(3, 25em);
@@ -59,5 +61,23 @@ a {
 
 .movie-title {
   font-size: 1rem; }
+
+/* MOVIE INFO */
+.movieInfo-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem; }
+
+.movieInfo-box {
+  width: 50rem; }
+
+.movieInfo-image {
+  height: 20rem; }
+
+.movieInfo-showtime {
+  margin-bottom: 0; }
+
+.showtimes-box {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */

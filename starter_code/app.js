@@ -13,7 +13,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/SuperMovies', {
+  .connect('mongodb://localhost/CinemaMovies', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true

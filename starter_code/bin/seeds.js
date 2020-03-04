@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Movie = require('../models/movie');
 
 mongoose
-  .connect('mongodb://localhost/SuperMovies', {
+  .connect('mongodb://localhost/CinemaMovies', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -87,6 +87,6 @@ const movies = [
     if (err) {
       throw err;
     }
-    console.log(`Created ${movies.length} books`);
+    console.log(`Created ${movies.length} movies`);
     mongoose.connection.close();
   });

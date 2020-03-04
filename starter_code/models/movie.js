@@ -17,7 +17,7 @@ const movieSchema = new Schema({
         type: String,
         required: true
     },
-    showtime: {
+    showtimes: {
         type: Array,
         required: true
     }
