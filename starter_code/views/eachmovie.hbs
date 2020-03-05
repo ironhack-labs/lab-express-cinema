@@ -1,16 +1,22 @@
-<h1>Each fucking movie</h1>
 
 <section class="each-movie-section">
-  <img src="{{foundMovie.image}}" alt="">
+  <img class="each-movie-image" src="{{foundMovie.image}}" alt="">
   <div>
-    <p>{{ foundMovie.title }}</p>
-    <p>Director: {{ foundMovie.director }}</p>
+    <a href="/movies">Go back</a>
+    <p class="each-movie-title">{{ foundMovie.title }}</p>
+    <p class="each-movie-director">Director: {{ foundMovie.director }}</p>
     <p>Stars</p>
     <ul>
-      {{#each stars}}
-      <li>{{ this }}</li>
+      {{#each foundMovie.stars}}
+        <li>{{ this }}</li>
       {{/each}}
     </ul>
     <p>{{ foundMovie.description }}</p>
+    <div>
+    {{#each foundMovie.showtimes}}
+       {{this}} | 
+    {{/each}}
+    </div>
   </div>
 </section>
+<a href="/movies/{{ foundMovie._id }}/edit" class="btn-edit">Edit Movie</a>

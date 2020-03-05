@@ -50,4 +50,25 @@ a {
 .each-movie-section {
   display: flex; }
 
+.each-movie-image {
+  margin-right: 2rem; }
+
+.each-movie-title {
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.each-movie-director {
+  font-weight: bold; }
+
+.btn-edit {
+  width: 10%;
+  border: 1px solid white;
+  border-radius: 3rem;
+  box-shadow: 0 0 8px 0 black;
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
