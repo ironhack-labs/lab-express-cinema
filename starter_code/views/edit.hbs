@@ -1,0 +1,17 @@
+
+<h2>Edit information</h2>
+<form class="edit"  action="/movies/{{aMovie._id}}/edit" method="post">
+  <label for="title">title</label>
+  <input type="text" name="title" id="movie-title" placeholder="title" value="{{aMovie.title}}">
+  <label for="director">director</label>
+  <input type="text" name="director" id="movie-director" value="{{aMovie.director}}">
+  <label for="stars">stars</label>
+  <input type="text" name="stars" id="movie-stars" value="{{aMovie.stars}}">
+  <label for="image">image</label>
+  <input type="text" name="image" id="movie-image" value="{{aMovie.image}}">
+  <label for="description">description</label>
+  <input type="text" name="description" id="movie-description" value="{{aMovie.description}}">
+  <label for="showtimes">showtimes</label>
+  <input type="text" name="showtimes" id="movie-showtimes" value="{{aMovie.showtimes}}">
+  <button type="submit">submit</button>
+</form>

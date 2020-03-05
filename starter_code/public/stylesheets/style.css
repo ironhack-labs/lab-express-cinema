@@ -15,4 +15,9 @@ a {
   margin: 2rem 6rem;
   align-items: center; }
 
+.edit {
+  display: flex;
+  flex-direction: column;
+  width: 35rem; }
+
 /*# sourceMappingURL=style.css.map */

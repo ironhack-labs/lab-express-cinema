@@ -20,4 +20,9 @@
    {{this}} |
     {{/each}}
 </ul>
+
+<button><a href="/movies/{{aMovie._id}}/edit">Edit</a></button>
+<form action="/movies/{{aMovie._id}}/delete" method="post">
+      <button type="submit">Delete</button>
+    </form>
 </div>
