@@ -1,23 +1,22 @@
-<h2>{{movie.title}}</h2>
-<div class="general">
-            <img class="movie-image" src="{{movie.image}}" alt="{{movie.title}}"><br>
-</div>
-<p class="bold">Director: {{movie.director}} </p>
-Stars:
-<ul>
+<img class="movie-image" src="{{movie.image}}" alt="{{movie.title}}">
+<div class="info">
+  <a class="back" href="/movies">Go back</a> 
+  <h2>{{movie.title}}</h2>
+  <h3>Director: {{movie.director}}</h3>
+  <h3>Stars:</h3>
+  <ul> 
   {{#each movie.stars}}
   <li>{{this}}</li>  
   {{/each}}
-</ul>
-<p>{{movie.description}}</p>
+  </ul>
+  <p>{{movie.description}}</p>
 
-You can see the film at:
-<ul>
+  <ul>
   {{#each movie.showtimes}}
-  <li>{{this}}</li>
+  {{this}}|
   {{/each}}
-</ul>
-
-<a href="/movies/update/{{movie.id}}">EDIT</a> 
+  </ul>
+  </div>
+  <a class="edit" href="/movies/update/{{movie.id}}">Edit movie</a> 
 
 
