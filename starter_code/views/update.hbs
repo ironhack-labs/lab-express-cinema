@@ -1,0 +1,13 @@
+<h1>Update Movie</h1>
+<form action="/movies/update/{{ movie.id }}" method="POST">
+ 
+  Title <input type="text" name="title" id="title" placeholder="{{movie.title}}">>
+  Director: <input type="text" name="director" id="director" placeholder="{{movie.director}}">
+  Stars: <input type="text" name="stars" id="stars" placeholder="{{movie.stars}}">
+  Image: <input type="url" name="image" id="image" placeholder="{{movie.image}}">
+  Description: <input type="text" name="description" id="description" placeholder="{{movie.description}}">
+  Showtimes: <input type="text" name="showtimes" id="showtimes" placeholder="{{movie.showtimes}}">
+ 
+  <button>Submit</button>
+  
+</form> 

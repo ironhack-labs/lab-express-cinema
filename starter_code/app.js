@@ -8,12 +8,16 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const data         = require('./bin/seeds');
+const Movies       = require('./models/Movie');
 
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    Movies.collection.drop()
+    return Movies.insertMany(data)
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -47,12 +51,15 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Ironhack';
 
 
 
-const index = require('./routes/index');
+const index = require('./routes/movies');
 app.use('/', index);
+
+const movies = require('./routes/movies');
+app.use('/movies', movies)
 
 
 module.exports = app;

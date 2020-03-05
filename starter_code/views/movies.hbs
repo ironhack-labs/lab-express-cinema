@@ -1,0 +1,17 @@
+<h2>Ironhack Cinema</h2>
+<h3>Click on the movie to check the showtimes!</h3>
+
+<div class="movies">
+    {{#each movies}}
+        <div class="list">
+            <img src="{{this.image}}" alt="{{title}}"><br>
+            {{title}}<br>
+            <a href="/movies/movie/{{this.id}}" class="button">See more</a>
+            <form action="/movies/{{this._id}}/delete" method="POST"><button class="delete">Delete</button></form>
+
+        </div>
+    {{/each}}
+</div>
+
+
+<a class="search" href="/movies/add">Search a movie</a>

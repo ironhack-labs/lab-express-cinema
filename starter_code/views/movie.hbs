@@ -1,0 +1,22 @@
+<img class="movie" src="{{movie.image}}" alt="{{movie.title}}">
+<div class="movie-info">
+  <a class="back-button" href="/movies">Go back</a> 
+  <h2>{{movie.title}}</h2>
+  <h3>Director: {{movie.director}}</h3>
+  <h3>Stars:</h3>
+  <ul> 
+  {{#each movie.stars}}
+  <li>{{this}}</li>  
+  {{/each}}
+  </ul>
+  
+  <p>{{movie.description}}</p>
+  
+  <ul>
+  {{#each movie.showtimes}}
+  {{this}}|
+  {{/each}}
+  </ul>
+
+  </div>
+  <a class="search" href="/movies/update/{{movie.id}}">Search a movie</a> 
