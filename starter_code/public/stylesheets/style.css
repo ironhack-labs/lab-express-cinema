@@ -71,4 +71,16 @@ a {
   font-size: 1rem;
   text-align: center; }
 
+.form-edit {
+  display: flex;
+  flex-direction: column;
+  width: 40%; }
+
+.form-edit label {
+  font-weight: bold;
+  margin: 0.5rem 0; }
+
+.edit-btn-submit {
+  margin: 2rem 0; }
+
 /*# sourceMappingURL=style.css.map */

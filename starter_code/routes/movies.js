@@ -26,14 +26,12 @@ router.get('/:id', (req, res, next) => {
 
 //GET /movies/:id/edit
 router.get('/:id/edit', (req, res, next) => {
-  res.render('edit');
-
-  // const { id } = req.params;
-  // Movie.findById(id)
-  // .then(foundMovie => {
-  //   res.render('edit', { foundMovie });
-  // })
-  // .catch(err => console.log('Error while rendering movie data: ', err));
+  const { id } = req.params;
+  Movie.findById(id)
+  .then(foundMovie => {
+    res.render('edit', { foundMovie });
+  })
+  .catch(err => console.log('Error while rendering movie data: ', err));
   console.log('edit each movie');
 });
 
