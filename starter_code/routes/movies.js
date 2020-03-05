@@ -1,0 +1,21 @@
+const express = require('express');
+const router = express.Router();
+const Movie = require('../models/Movie');
+
+router.get('/',(req, res, next) => {
+  Movie.find()
+  .then(movies => {
+    res.render('movies', { movies } );
+  })
+  .catch(err => console.log('Error while rendering movies: ', err));
+});
+router.get('/:id',(req, res) =>{
+const { id } = req.params;
+Movie.findById(id)
+.then(aMovie => {
+  res.render('eachmovie', { aMovie });
+})
+.catch(err => console.log('Error while rendering movies: ', err));
+});
+
+module.exports = router;
