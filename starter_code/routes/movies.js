@@ -35,4 +35,23 @@ router.get('/:id/edit', (req, res, next) => {
   console.log('edit each movie');
 });
 
+//POST /movies/:id/edit
+router.post('/:id/edit', (req, res, next) => {
+	const { id } = req.params;
+	const { title, director, image, description, stars, showtimes } = req.body;
+	Movie.findByIdAndUpdate(id, {
+    title, 
+    director, 
+    image, 
+    description, 
+    stars, 
+    showtimes,
+	})
+		.then(moviesUpdated => {
+			res.redirect(`/movies/${id}`);
+		})
+		.catch(next);
+});
+
+
 module.exports = router;
