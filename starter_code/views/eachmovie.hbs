@@ -19,4 +19,8 @@
     </div>
   </div>
 </section>
-<a href="/movies/{{ foundMovie._id }}/edit" class="btn-edit">Edit Movie</a>
+<a href="/movies/{{ foundMovie._id }}/edit">Edit Movie</a>
+
+<form action="/movies/{{foundMovie._id}}/delete" method="post">
+  <button type="submit">Delete Movie</button>
+</form>

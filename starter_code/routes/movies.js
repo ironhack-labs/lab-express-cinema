@@ -53,5 +53,14 @@ router.post('/:id/edit', (req, res, next) => {
 		.catch(next);
 });
 
+// POST movies/:id/delete
+router.post('/:id/delete', (req, res, next) => {
+	const { id } = req.params;
+	Movie.findByIdAndDelete(id)
+		.then(() => {
+			res.redirect('/movies');
+		})
+		.catch(next);
+});
 
 module.exports = router;
