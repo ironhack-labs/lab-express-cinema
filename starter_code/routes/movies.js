@@ -20,18 +20,19 @@ router.get('/detail/:id', (req, res) => {
     })
 })
 
-// GET movie form page
+// GET movie form page "add"
 router.get('/add', (req, res) => { 
     res.render('form')
 })
 
 // POST create new movie
 router.post('/', (req, res, next) => {
-    const { title, director, stars, description, showtimes } = req.body;
+    const { title, director, stars, image, description, showtimes } = req.body;
     Movie.create({
         title,
         director,
         stars,
+        image,
         description,
         showtimes,
     })
@@ -44,10 +45,36 @@ router.post('/', (req, res, next) => {
 // POST delete movie
 router.post('/detail/:id/delete', (req, res ,next) => {
     const { id } = req.params;
-    console.log("IDDDDDD: ",req.params)
     Movie.findByIdAndDelete(id)
     .then(() => {
         res.redirect('/movies');
+    })
+})
+
+// GET movie form page "update"
+router.get('/detail/:id/update', (req, res, next) => {
+    const { id } = req.params;
+    Movie.findById(id)
+    .then(specificFilmInfo => {
+        res.render('update', { specificFilmInfo })
+    })
+    .catch(next);    
+})
+
+router.post('/detail/:id', (req, res) => {
+    const { id } = req.params;
+    console.log('THIS IS THE ID: ',id)
+    const { title, director, stars, image, description, showtimes } = req.body;
+    Movie.findByIdAndUpdate(id, {
+        title,
+        director,
+        stars,
+        image,
+        description,
+        showtimes,
+    })
+    .then(() => {
+        res.redirect(`/movies/detail/${id}`);
     })
 })
 

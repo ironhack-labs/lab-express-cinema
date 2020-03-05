@@ -37,6 +37,9 @@ a {
   width: 12.5rem;
   padding: 1.2rem; }
 
+.check-cinema-button:active {
+  transform: translateY(4px); }
+
 /* MOVIES */
 .movies-container {
   display: grid;
@@ -103,9 +106,34 @@ a {
 .showtimes-box {
   display: flex; }
 
+.movieInfo-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; }
+
+.delete-button {
+  margin-right: 2rem;
+  font-size: 1rem;
+  box-shadow: 0 0 8px 0 black; }
+
+.delete-button:active {
+  transform: translateY(4px); }
+
+.edit-button {
+  box-shadow: 0 0 8px 0 black;
+  font-size: 1rem;
+  text-align: center; }
+
+.edit-button:active {
+  transform: translateY(4px); }
+
+.edit-link {
+  text-decoration: none;
+  color: black; }
+
 .form-container {
   width: 20rem;
-  height: 30rem;
+  height: 35rem;
   margin-left: 38%;
   background-color: grey;
   text-align: center;

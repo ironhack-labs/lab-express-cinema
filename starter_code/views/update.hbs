@@ -1,0 +1,20 @@
+<div class="form-container">
+    <form action="/movies/detail/{{ specificFilmInfo._id }}" method="post">
+    <div class="form-box">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="form-title" placeholder="Title" value="{{ specificFilmInfo.title }}">
+        <label for="director">Director</label>
+        <input type="text" name="director" id="form-director" placeholder="Director" value="{{ specificFilmInfo.director }}">
+        <label for="stars">Stars</label>
+        <input type="text" name="stars" id="form-stars" placeholder="Stars" value="{{ specificFilmInfo.stars }}">
+        <label for="image">Image</label>
+        <input type="text" name="image" id="form-image" placeholder="URL of the image" value="{{ specificFilmInfo.image }}">
+        <label for="stars">Description</label>
+        <input type="text" name="description" id="form-description" placeholder="Description" value="{{ specificFilmInfo.description }}">
+        <label for="showtimes">Showtimes</label>
+        <input type="text" name="showtimes" id="form-showtimes" placeholder="Showtimes" value="{{ specificFilmInfo.showtimes }}">
+        <button class="create-button" type="submit">Upload</button>
+    </div>
+        
+    </form>
+</div>
