@@ -13,6 +13,29 @@ router.get('/', (req, res, next) => {
   console.log('printing movies');
 });
 
+//GET /movies/add
+router.get('/add', (req, res) => {
+	res.render('add');
+});
+
+// POST /movies/add
+router.post('/add', (req, res, next) => {
+	const { title, director, image, description, stars, showtimes } = req.body;
+	Movie.create({
+		title, 
+    director, 
+    image, 
+    description, 
+    stars, 
+    showtimes,
+	})
+  .then(() => {
+    res.redirect('/movies');
+  })
+  .catch(err => console.log('Error while adding movie: ', err));
+});
+
+
 //GET /movies/:id
 router.get('/:id', (req, res, next) => {
   const { id } = req.params;
@@ -62,5 +85,6 @@ router.post('/:id/delete', (req, res, next) => {
 		})
 		.catch(next);
 });
+
 
 module.exports = router;
