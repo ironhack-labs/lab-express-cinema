@@ -35,11 +35,20 @@ router.post('/', (req, res, next) => {
         description,
         showtimes,
     })
-    
     .then(() => {
         res.redirect('/movies');
     })
     .catch(next);
+})
+
+// POST delete movie
+router.post('/detail/:id/delete', (req, res ,next) => {
+    const { id } = req.params;
+    console.log("IDDDDDD: ",req.params)
+    Movie.findByIdAndDelete(id)
+    .then(() => {
+        res.redirect('/movies');
+    })
 })
 
 

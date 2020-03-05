@@ -1,5 +1,14 @@
 <div class="movieInfo-container">
-    <img class="movieInfo-image" src="{{ filmsInfo.image }}" alt="Movie image">
+    <div class="movieInfo-image-buttons-box">
+        <img class="movieInfo-image" src="{{ filmsInfo.image }}" alt="Movie image">
+        <div class="movieInfo-buttons">
+            <form action="/movies/detail/{{ filmsInfo._id }}/delete" method="post">
+                <button class="delete-button">Delete</button>
+            </form>
+            <a href="/movies/detail/{{ this._id }}">Edit</a>
+        </div>
+        
+	</div>
     <div class="movieInfo-box">
         <a href="/movies">Go back</a>
         <h1 class="movieInfo-title">{{ filmsInfo.title }}</h1>

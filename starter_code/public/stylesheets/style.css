@@ -103,4 +103,34 @@ a {
 .showtimes-box {
   display: flex; }
 
+.form-container {
+  width: 20rem;
+  height: 30rem;
+  margin-left: 38%;
+  background-color: grey;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 2rem;
+  box-shadow: 0 0 8px 0 grey; }
+
+input {
+  width: 10rem;
+  margin-bottom: 2rem;
+  font-size: 1rem; }
+
+.form-box {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.create-button {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 8px 0 black; }
+
 /*# sourceMappingURL=style.css.map */
