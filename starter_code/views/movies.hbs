@@ -1,0 +1,18 @@
+<h3>The list of the movies:</h3>
+
+<div class="general">
+    {{#each movies}}
+        <div class="movies-container">
+            <img class="movie-image" src="{{this.image}}" alt="{{title}}"><br>
+            {{title}}<br>
+            <a href="/movies/movie/{{this.id}}" class="btn">See more</a>
+            <form action="/movies/{{this._id}}/delete" method="POST"><button>Delete</button></form>
+
+        </div>
+    {{/each}}
+</div>
+
+
+<h1>Add movie</h1>
+<a href="/movies/add">Add movie</a>
+

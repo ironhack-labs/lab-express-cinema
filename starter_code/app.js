@@ -8,12 +8,16 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const data         = require('./bin/seeds');
+const Movies        = require('./models/Movie');
 
 
 mongoose
   .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+    Movies.collection.drop()
+    return Movies.insertMany(data) 
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)
@@ -53,6 +57,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const movies = require('./routes/movies');
+app.use('/movies', movies)
+
 
 
 module.exports = app;
