@@ -20,5 +20,27 @@ router.get('/detail/:id', (req, res) => {
     })
 })
 
+// GET movie form page
+router.get('/add', (req, res) => { 
+    res.render('form')
+})
+
+// POST create new movie
+router.post('/', (req, res, next) => {
+    const { title, director, stars, description, showtimes } = req.body;
+    Movie.create({
+        title,
+        director,
+        stars,
+        description,
+        showtimes,
+    })
+    
+    .then(() => {
+        res.redirect('/movies');
+    })
+    .catch(next);
+})
+
 
 module.exports = router;

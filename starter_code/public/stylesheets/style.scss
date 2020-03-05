@@ -74,6 +74,31 @@ a {
   font-size: 1rem;
 }
 
+.add-button {
+  border: 1px solid rgb(230, 227, 227);
+  color: black;
+  background-color: rgb(230, 227, 227);
+  box-shadow: 0 0 8px 0 rgb(56, 56, 56);
+  text-decoration: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.add-button-box {
+  border: 1px solid grey;
+  border-radius: 2rem;
+  box-shadow: 0 0 8px 0 grey;
+  background-color: grey;
+  width: 15rem;
+  height: 21rem;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* MOVIE INFO */
 
 .movieInfo-container {
