@@ -26,13 +26,14 @@ a {
   font-size: 5rem;
   width: 1rem;
   color: white;
+  padding-right: 25rem;
 }
 
 .container-movies button {
-  background-color: white;
-  width: 22rem;
-  height: 5rem;
-  font-size: 2rem;
-  padding: 20px;
+  ackground-color: white;
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.3rem;
   border-radius: 30px;
+  color: lightskyblue;
 }
