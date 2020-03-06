@@ -29,11 +29,12 @@ a {
   padding-right: 25rem;
 }
 
-.container-movies button {
-  ackground-color: white;
-  width: 12rem;
-  height: 4rem;
+.index-button {
+  background-color: white;
+  width: 13rem;
+  height: 3rem;
   font-size: 1.3rem;
   border-radius: 30px;
   color: lightskyblue;
+  text-decoration: none;
 }
