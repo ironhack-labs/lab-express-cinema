@@ -7,7 +7,8 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  text-decoration: none;
+}
 
 main {
   width: 100%;
@@ -31,10 +32,11 @@ main #call-to-action {
   margin-top: 120px;
 }
 
-main #call-to-action button {
-  width: 250px;
-  margin-top: 20px;
+main #call-to-action .button {
+  width: 200px;
   padding: 13px 20px;
+  margin-top: 20px;
+  display: block;
   border: 0;
   border-radius: 22px;
   font-size: 22px;
@@ -43,12 +45,12 @@ main #call-to-action button {
   color: darkcyan;
 }
 
-main #call-to-action button:hover {
+main #call-to-action .button:hover {
   background-color: darkcyan;
   color: white;
 }
 
-main #call-to-action button:active {
+main #call-to-action .button:active {
   background-color: cyan;
   color: white;
 }
