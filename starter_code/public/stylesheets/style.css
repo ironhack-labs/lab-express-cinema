@@ -87,7 +87,12 @@ a {
 #movies #add-button {
   margin-left: 20px; }
 
-#movies .button {
+#movie-detail #back-button {
+  display: block;
+  width: 56px; }
+
+#movies .button,
+#movie-detail .button {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -109,10 +114,6 @@ a {
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
-
-#movie-detail a {
-  text-decoration: underline;
-  color: darkcyan; }
 
 .movie-card {
   margin-top: 50px;
