@@ -1,10 +1,7 @@
-* {
-  padding: 0;
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;
 }
-
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   text-decoration: none;
@@ -116,6 +113,34 @@ a {
 .movie-info .button:active {
   background-color: cyan;
   color: darkcyan;
+}
+
+#movie-detail {
+  width: 70%;
+  min-height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#movie-detail a {
+  text-decoration: underline;
+  color: darkcyan;
+}
+
+.movie-card {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-thumb-container {
+  min-width: 350px;
+  text-align: center;
+}
+
+.movie-thumb {
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

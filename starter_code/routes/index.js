@@ -22,4 +22,20 @@ router.get('/movies', (req, res, next) => {
   })
 });
 
+router.get('/movie/:id', (req, res, next) => {
+  const { id } = req.params;
+  console.log('id');
+  Movie.findById(id)
+  .then((movie) => {
+    console.log(movie);
+    res.render('movie', {
+      movie
+    });
+  })
+  .catch((error) => {
+    console.log('An error happened while finding a movie: ', error);
+    next(error);
+  })
+});
+
 module.exports = router;
