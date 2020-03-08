@@ -38,4 +38,17 @@ router.get('/movie/:id', (req, res, next) => {
   })
 });
 
+router.post('/movie/:id/delete', (req, res, next) => {
+	const { id } = req.params;
+	Movie.deleteOne( {_id: id})
+		.then(success => {
+			console.log(`Deleted movie`);
+			res.redirect('/movies');
+		})
+		.catch(error => {
+			console.log('Error while deleting a movie: ', error);
+			next(error);
+		});
+});
+
 module.exports = router;

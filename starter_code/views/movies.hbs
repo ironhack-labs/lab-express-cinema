@@ -7,7 +7,12 @@
       <img src="{{this.image}}" />
       <div class="movie-info">
         <h2>{{this.title}}</h2>
-        <a class="button" href="movie/{{this.id}}">See more</a>
+        <div id="buttons">
+          <a class="button" href="movie/{{this.id}}">See more</a>
+          <form action="movie/{{this.id}}/delete" method="post">
+            <input class="button" type="submit" value="Delete" />
+          </form>
+        </div>
       </div>
     </div>
     {{/each}}

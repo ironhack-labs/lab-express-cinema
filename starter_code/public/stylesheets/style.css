@@ -1,11 +1,9 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 #home {
   width: 100%;
@@ -16,18 +14,15 @@ a {
   align-items: flex-end;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 #home #call-to-action h1 {
   color: white;
-  font-size: 100px;
-}
+  font-size: 100px; }
 
 #home #call-to-action {
   width: 600px;
-  margin-top: 120px;
-}
+  margin-top: 120px; }
 
 #home #call-to-action .button {
   width: 200px;
@@ -39,44 +34,36 @@ a {
   font-size: 22px;
   font-weight: 400;
   background-color: white;
-  color: darkcyan;
-}
+  color: darkcyan; }
 
 #home #call-to-action .button:hover {
   background-color: darkcyan;
-  color: white;
-}
+  color: white; }
 
 #home #call-to-action .button:active {
   background-color: cyan;
-  color: white;
-}
+  color: white; }
 
 #movies h1 {
-  padding: 20px 0 0 20px;
-}
+  padding: 20px 0 0 20px; }
 
 #movies p {
   font-size: 16px;
-  padding: 15px 0 0 20px;
-}
+  padding: 15px 0 0 20px; }
 
 #movie-results {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .movie {
   width: 280px;
-  padding: 30px 100px;
-}
+  padding: 30px 100px; }
 
 .movie img {
   display: block;
-  width: 280px;
-}
+  width: 280px; }
 
 .movie-info {
   width: 280px;
@@ -84,15 +71,18 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .movie-info h2 {
   font-size: 18px;
   font-weight: 200;
   margin: 10px 0;
-  padding: 5px;
-}
+  padding: 5px; }
+
+.movie-info #buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 200px; }
 
 .movie-info .button {
   padding: 5px 10px;
@@ -102,45 +92,39 @@ a {
   font-size: 14px;
   font-weight: 400;
   background-color: darkcyan;
-  color: white;
-}
+  color: white; }
 
 .movie-info .button:hover {
   background-color: cyan;
-  color: white;
-}
+  color: white; }
 
 .movie-info .button:active {
   background-color: cyan;
-  color: darkcyan;
-}
+  color: darkcyan; }
 
 #movie-detail {
   width: 70%;
   min-height: 600px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 #movie-detail a {
   text-decoration: underline;
-  color: darkcyan;
-}
+  color: darkcyan; }
 
 .movie-card {
   margin-top: 50px;
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .movie-thumb-container {
   min-width: 350px;
-  text-align: center;
-}
+  text-align: center; }
 
 .movie-thumb {
-  width: 300px;
-}
+  width: 300px; }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
