@@ -45,11 +45,11 @@ a {
   color: white; }
 
 #movies h1 {
-  padding: 20px 0 0 20px; }
+  padding: 10px 20px; }
 
 #movies p {
   font-size: 16px;
-  padding: 15px 0 0 20px; }
+  padding: 10px 20px; }
 
 #movie-results {
   display: flex;
@@ -84,10 +84,11 @@ a {
   justify-content: space-around;
   width: 200px; }
 
-.movie-info .button {
+#movies #add-button {
+  margin-left: 20px; }
+
+#movies .button {
   padding: 5px 10px;
-  margin-top: 10px 0;
-  border: 0;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 400;

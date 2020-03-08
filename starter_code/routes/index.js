@@ -3,7 +3,6 @@ const router  = express.Router();
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 
-/* GET home page */
 router.get('/', (req, res, next) => {
   res.render('index');
 });
@@ -20,6 +19,10 @@ router.get('/movies', (req, res, next) => {
     console.log('An error happened while finding movies: ', error);
     next(error);
   })
+});
+
+router.get('/add', (req, res) => {
+	res.render('add');
 });
 
 router.get('/movie/:id', (req, res, next) => {
