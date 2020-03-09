@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Movie = require('../models/Movie');
 
 router.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('index', { layout: 'layout-no-nav.hbs' });
 });
 
 router.get('/movies', (req, res, next) => {

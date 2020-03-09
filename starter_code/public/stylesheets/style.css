@@ -44,8 +44,24 @@ a {
   background-color: cyan;
   color: white; }
 
+nav {
+  background-color: darkcyan;
+  height: 60px;
+  display: flex;
+  align-items: center; }
+
+nav a {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white; }
+
 #movies h1 {
   padding: 10px 20px; }
+
+#add-movie h1 {
+  padding: 10px 0; }
 
 #movies p {
   font-size: 16px;
@@ -92,7 +108,8 @@ a {
   width: 56px; }
 
 #movies .button,
-#movie-detail .button {
+#movie-detail .button,
+#add-movie .button {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -108,7 +125,8 @@ a {
   background-color: cyan;
   color: darkcyan; }
 
-#movie-detail {
+#movie-detail,
+#add-movie {
   width: 70%;
   min-height: 600px;
   margin: 0 auto;
@@ -126,6 +144,15 @@ a {
 
 .movie-thumb {
   width: 300px; }
+
+#add-movie form label {
+  font-size: 16px; }
+
+#add-movie form input {
+  font-size: 18px;
+  padding: 5px 0;
+  margin: 5px 0;
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
 
