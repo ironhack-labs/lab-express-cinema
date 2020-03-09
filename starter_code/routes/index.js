@@ -10,7 +10,6 @@ router.get('/', (req, res, next) => {
 router.get('/movies', (req, res, next) => {
   Movie.find()
   .then((movies) => {
-    console.log(movies);
     res.render('movies', {
       movies
     });
@@ -27,10 +26,8 @@ router.get('/add', (req, res) => {
 
 router.get('/movie/:id', (req, res, next) => {
   const { id } = req.params;
-  console.log('id');
   Movie.findById(id)
   .then((movie) => {
-    console.log(movie);
     res.render('movie', {
       movie
     });
@@ -42,7 +39,10 @@ router.get('/movie/:id', (req, res, next) => {
 });
 
 router.post('/movies', (req, res, next) => {
-  const { title, director, stars, image, description, showtimes } = req.body;
+  const { title, director, image, description } = req.body;
+  let { stars, showtimes } = req.body;
+  stars = stars.split(',');
+  showtimes = showtimes.split(',');
   const movie = { title, director, stars, image, description, showtimes };
   Movie.create(movie)
     .then((movie) => {

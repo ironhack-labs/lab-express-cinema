@@ -178,10 +178,18 @@ nav a {
 }
 
 #add-movie form input {
-  font-size: 18px;
+  width: 50%;
   padding: 5px 0;
   margin: 5px 0;
+  font-size: 18px;
+}
+
+#add-movie form textarea {
   width: 50%;
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 18px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
