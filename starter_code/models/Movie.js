@@ -1,6 +1,6 @@
 let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
-let MovieSchema = new Schema({
+let movieSchema = new Schema({
   title: {
     type: String,
     unique: true
@@ -12,4 +12,6 @@ let MovieSchema = new Schema({
   showtimes: Array
 });
 
-let Movie = mongoose.model("Movie", MovieSchema);
+let Movie = mongoose.model("Movie", movieSchema);
+
+module.exports = Movie;

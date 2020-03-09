@@ -8,16 +8,22 @@ const hbs = require("hbs");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
+const seeds = require("./bin/seeds");
+require("dotenv").config();
+
+const dbPath = process.env.MONGODB_URI;
 
 mongoose
-  .connect("mongodb://localhost/starter-code", { useNewUrlParser: true })
-  .then(x => {
-    console.log(
-      `Connected to Mongo! Database name: "${x.connections[0].name}"`
-    );
+  .connect(dbPath, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   })
-  .catch(err => {
-    console.error("Error connecting to mongo", err);
+  .then(() => {
+    console.log(`conected to ${dbPath}`);
+  })
+  .catch(error => {
+    console.error(error);
   });
 
 const app_name = require("./package.json").name;
@@ -55,6 +61,7 @@ const index = require("./routes/index");
 const movies = require("./routes/movies");
 
 app.use("/", index);
+
 app.use("/movies", movies);
 
 module.exports = app;
