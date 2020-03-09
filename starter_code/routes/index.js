@@ -41,6 +41,20 @@ router.get('/movie/:id', (req, res, next) => {
   })
 });
 
+router.post('/movies', (req, res, next) => {
+  const { title, director, stars, image, description, showtimes } = req.body;
+  const movie = { title, director, stars, image, description, showtimes };
+  Movie.create(movie)
+    .then((movie) => {
+      console.log(`Added ${movie}`);
+      res.redirect('/movies');
+    })
+    .catch((error) => {
+      console.log('Error saving movie', error);
+      res.render('movie/new');
+    })
+});
+
 router.post('/movie/:id/delete', (req, res, next) => {
 	const { id } = req.params;
 	Movie.deleteOne( {_id: id})
