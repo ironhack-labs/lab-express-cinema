@@ -67,6 +67,30 @@ router.post('/movies', (req, res, next) => {
     .catch((error) => {
       console.log('Error saving movie', error);
       res.render('movie/new');
+      next(error);
+    })
+});
+
+router.post('/movies/:id', (req, res, next) => {
+	const { id } = req.params;
+  const { title, director, image, description } = req.body;
+  let { stars, showtimes } = req.body;
+  stars = stars.split(',');
+  showtimes = showtimes.split(',');
+	Movie.findByIdAndUpdate(id, {
+    title,
+    director,
+    stars,
+    image,
+    description,
+    showtimes
+	})
+    .then(() => {
+      res.redirect('/movies');
+    })
+    .catch((error) => {
+      console.log('Error updating movie', error);
+      next(error);
     })
 });
 
