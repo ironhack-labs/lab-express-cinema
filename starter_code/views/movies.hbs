@@ -1,5 +1,5 @@
 <main id="movies">
-  <h1>Ironhack Cinema > Movie Listings</h1>
+  <h1>Ironhack Cinema > Movie listings</h1>
   <p>Click on the movie to check showtimes!</p>
   <div id="movie-results">
     {{#each movies}}
@@ -9,6 +9,7 @@
         <h2>{{this.title}}</h2>
         <div id="buttons">
           <a class="button" href="movie/{{this.id}}">See more</a>
+          <a class="button" href="movie/{{this.id}}/edit">Update</a>          
           <form action="movie/{{this.id}}/delete" method="post">
             <input class="button" type="submit" value="Delete" />
           </form>

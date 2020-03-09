@@ -2,6 +2,9 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0; }
 
+input, textarea, button {
+  font-family: inherit; }
+
 a {
   text-decoration: none; }
 
@@ -60,7 +63,8 @@ nav a {
 #movies h1 {
   padding: 10px 20px; }
 
-#add-movie h1 {
+#add-movie h1,
+#update-movie h1 {
   padding: 10px 0; }
 
 #movies p {
@@ -98,7 +102,7 @@ nav a {
 .movie-info #buttons {
   display: flex;
   justify-content: space-around;
-  width: 200px; }
+  width: 250px; }
 
 #movies #add-button {
   margin-left: 20px; }
@@ -109,7 +113,8 @@ nav a {
 
 #movies .button,
 #movie-detail .button,
-#add-movie .button {
+#add-movie .button,
+#update-movie .button {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -126,7 +131,8 @@ nav a {
   color: darkcyan; }
 
 #movie-detail,
-#add-movie {
+#add-movie,
+#update-movie {
   width: 70%;
   min-height: 600px;
   margin: 0 auto;
@@ -145,21 +151,25 @@ nav a {
 .movie-thumb {
   width: 300px; }
 
-#add-movie form label {
+#add-movie form label,
+#update-movie form label {
+  font-size: 16px;
+  font-weight: 800; }
+
+#add-movie form input,
+#update-movie form input {
+  width: 70%;
+  padding: 10px 0;
+  margin: 10px 0 20px 0;
   font-size: 16px; }
 
-#add-movie form input {
-  width: 50%;
-  padding: 5px 0;
-  margin: 5px 0;
-  font-size: 18px; }
-
-#add-movie form textarea {
-  width: 50%;
-  padding: 5px 0;
-  margin: 5px 0;
-  font-size: 18px;
-  height: 100px; }
+#add-movie form textarea,
+#update-movie form textarea {
+  width: 70%;
+  padding: 10px 0;
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  height: 60px; }
 
 /*# sourceMappingURL=style.css.map */
 

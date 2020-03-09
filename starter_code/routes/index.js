@@ -38,6 +38,21 @@ router.get('/movie/:id', (req, res, next) => {
   })
 });
 
+router.get('/movie/:id/edit', (req, res, next) => {
+	const { id } = req.params;
+	Movie.findById(id)
+		.then(movie => {
+      console.log(`updating ${movie}`);
+			res.render('update', {
+        movie
+      });
+		})
+		.catch(error => {
+			console.log('Error while finding a movie to update: ', error);
+			next(error);
+		});
+});
+
 router.post('/movies', (req, res, next) => {
   const { title, director, image, description } = req.body;
   let { stars, showtimes } = req.body;
@@ -46,7 +61,7 @@ router.post('/movies', (req, res, next) => {
   const movie = { title, director, stars, image, description, showtimes };
   Movie.create(movie)
     .then((movie) => {
-      console.log(`Added ${movie}`);
+      console.log(`Added movie: ${movie}`);
       res.redirect('/movies');
     })
     .catch((error) => {
