@@ -1,0 +1,21 @@
+<section>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <p class="h3 text-uppercase font-weight-bold">IronHack Cinema</p>
+        <p class="h5">Click on the movie to check the showtimes!</p>
+        <hr class="mb-4 mt-0"  />
+      </div>
+    </div>
+    <div class="row align-items-top">
+      {{#each movies}}
+      <div class="col text-center mr-4 mb-5">
+        <a href="/movies/overview/{{_id}}"><img class="shadow-sm" src="{{image}}" alt="image" /></a>
+        <p class="font-weight-bold mt-3 mb-2 text-dark">{{title}}</p>
+        <p><a href="/movies/overview/{{_id}}">See more</a></p>
+      </div>
+      {{/each}}
+      
+    </div>
+  </div>
+</section>

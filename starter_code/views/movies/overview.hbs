@@ -1,0 +1,29 @@
+<section>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <p class="h3 text-uppercase font-weight-bold">IronHack Cinema</p>
+        <p class="h5">Current movie overview</p>
+        <hr class="mb-4 mt-0"  />
+      </div>
+    </div>
+    <div class="row align-items-top justify-content-left">
+      <div class="col-4 text-center mr-4 my-5">
+        <img class="shadow-sm" src="{{overview.image}}" alt="image" /></a>
+      </div>
+      <div class="col mr-4 my-5">
+        <p><a href="/movies/">Go back</a></p>
+        <p class="h4 font-weight-bold text-dark my-3">{{overview.title}}</p>
+        <p class="h5 font-weight-bold text-dark my-3">Director: {{overview.director}}</p>
+        <p class="font-weight-bold text-dark">Stars</p>
+        <ul>
+          {{#each overview.stars}}
+          <li>{{[0]}}</li>
+          {{/each}}
+        </ul>
+        <p class="text-dark">{{overview.description}}</p>
+        <p class="text-dark">| {{#each overview.showtimes}}{{[0]}} | {{/each}}</p>
+      </div>   
+    </div>
+  </div>
+</section>
