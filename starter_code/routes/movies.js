@@ -20,7 +20,7 @@ router.get(
 );
 
 /* GET movie info (overview) page */
-router.get("/overview/:id", (req, res, next) => {
+router.get("/movie/:id", (req, res, next) => {
   console.log(req.params.id);
   Movie.findById(req.params.id)
     .then(overview => {

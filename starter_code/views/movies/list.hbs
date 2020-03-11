@@ -10,9 +10,9 @@
     <div class="row align-items-top">
       {{#each movies}}
       <div class="col text-center mr-4 mb-5">
-        <a href="/movies/overview/{{_id}}"><img class="shadow-sm" src="{{image}}" alt="image" /></a>
+        <a href="/movies/movie/{{_id}}"><img class="shadow-sm" src="{{image}}" alt="image" /></a>
         <p class="font-weight-bold mt-3 mb-2 text-dark">{{title}}</p>
-        <p><a href="/movies/overview/{{_id}}">See more</a></p>
+        <p><a href="/movies/movie/{{_id}}">See more</a></p>
       </div>
       {{/each}}
       
