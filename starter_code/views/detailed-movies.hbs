@@ -1,0 +1,10 @@
+<a href="/movies">Return to check the movies!</a>
+
+{{#each allTheMoviesFromDB}}
+<img src={{this.image}} alt="hola">
+<h6>{{this.title}}</h6>
+<h6>{{this.director}}</h6>
+<h6>{{this.stars}}</h6>
+<h6>{{this.description}}</h6>
+<h6>{{this.showtimes}}</h6>
+{{/each}}
