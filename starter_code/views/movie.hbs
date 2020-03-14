@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Ironhack Cinema</h2>
+            <p>Movie details!</p>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-3 p-3">
+                <div class=""><img src="{{movie.image}}" class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="col-md-6 p-3">
+                <p><a href="/movies" class="edit-button">Go back</a></p>
+                <p class="font-weight-bold pt-2">{{movie.title}}</p>
+                <p class="font-weight-bold pt-2">Director: {{movie.director}}</p>
+                <strong>Stars:</strong>
+                <ul>
+                    {{#each movie.stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="pt-2">{{movie.description}}</p>
+                {{#each movie.showtimes}}
+                    <b class="font-weight-normal">{{this}} | </b>
+                {{/each}}
+            </div>
+            <div class="col-md-3 p-3">
+            </div>
+    </div>
+</div>
+
+
+
+
+

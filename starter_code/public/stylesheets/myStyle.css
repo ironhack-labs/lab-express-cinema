@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto Mono', monospace !important;
+  }
+  
+.myBackground {
+    background-image: url('/images/cinema.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    padding: 50px 0px 30px 0px;
+    font-size: 6rem;
+}
+
+.myHomeButton {
+    width: 350px;
+    border-radius: 35px !important;
+    background-color: rgba(255,255,255,0.8) !important;
+    font-size: 1.5rem !important;
+    color: grey !important;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
