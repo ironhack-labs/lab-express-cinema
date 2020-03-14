@@ -1,0 +1,21 @@
+<div class="d-flex align-content-start flex-wrap results">
+  
+    <div class="cards card" style="width: 18rem;">
+        <img class="card-img-top" src={{movie.image}} alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-text">{{movie.title}}</h2>
+            <h3>Director :{{movie.director}}</h3>
+            <h4>Stars:</h4>
+                <ul>
+                    {{#each movie.stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            <span>{{movie.description}}</span>
+
+           
+            <a href="/movies"><button action=/movies method="GET" class="btn btn-danger" type="submit">Back</button></a>
+        </div>
+    </div>
+    
+</div>
