@@ -4,5 +4,25 @@ body {
 
 a {
   color: #00B7FF; }
+.container-card{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: space-around;
+}
+.ajust{
+max-height: 400px;
+}
 
+.container-body{
+background-image: url('/images/cinema.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.bodyT{
+padding-top: 3em;
+}
 /*# sourceMappingURL=style.css.map */

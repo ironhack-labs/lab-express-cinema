@@ -1,9 +1,22 @@
-    <h1>Movies</h1>
-{{#each movies}}
+    <h1 class=" text-center">Movies</h1>
+    <div class="container-card">
+    {{#each movies}}
+    <div class="row col-3">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center pt-2">
+    <div class="card flex-wrap ajust">
+    <div class="card-body flex-wrap">
     <p>
-       <a href=""><img src= {{this.image}} alt="" srcset=""></a>
-        <p>{{this.title}}</p>
-    <button  class="btn btn-danger " type="submit"><a href= "/movies/{{this._id}}"" class="edit-button">>See More</a></button>     
-        
+       <a href=""><img class="card-img-top" src= {{this.image}} alt="" srcset=""></a>
+        <p class="text-center">{{this.title}}</p>
+    <div class="card-text text-center">
+    <button  class="btn btn-danger " type="submit"><a href= "/movies/{{this._id}}" class="edit-button">>See More</a></button>  
+    
+        </div>
     </p>
+</div>
+</div>
+</div>
+</div>
 {{/each}}
+</div>
+ <a href="/">Return</a>  
