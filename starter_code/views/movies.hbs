@@ -1,0 +1,9 @@
+    <h1>Movies</h1>
+{{#each movies}}
+    <p>
+       <a href=""><img src= {{this.image}} alt="" srcset=""></a>
+        <p>{{this.title}}</p>
+    <button  class="btn btn-danger " type="submit"><a href= "/movies/{{this._id}}"" class="edit-button">>See More</a></button>     
+        
+    </p>
+{{/each}}
