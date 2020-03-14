@@ -1,0 +1,63 @@
+@import url(//db.onlinewebfonts.com/c/1eb1bc766f809b7cc20a9bb6b29794eb?family=Ek+Mukta);
+@font-face {font-family: "Ek Mukta"; src: url("//db.onlinewebfonts.com/t/1eb1bc766f809b7cc20a9bb6b29794eb.eot"); src: url("//db.onlinewebfonts.com/t/1eb1bc766f809b7cc20a9bb6b29794eb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1eb1bc766f809b7cc20a9bb6b29794eb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1eb1bc766f809b7cc20a9bb6b29794eb.woff") format("woff"), url("//db.onlinewebfonts.com/t/1eb1bc766f809b7cc20a9bb6b29794eb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1eb1bc766f809b7cc20a9bb6b29794eb.svg#Ek Mukta") format("svg"); }
+
+* {
+    font-family: "Ek Mukta", Helvetica, Arial, sans-serif; 
+    font-weight: lighter;
+ }
+
+ .image-main-page {
+    background-image: url('/images/cinema.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* Set rules to fill background */ 
+    min-height: 100%;
+    min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+  
+
+a {
+  color: #00B7FF; 
+  
+
+}
+
+.main-title {
+    font-family: "Ek Mukta", Helvetica, Arial, sans-serif; 
+    color: white;
+    font-size: 100px;
+    line-height: 90px;
+    margin-left: 90px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+
+.check-mov-button {
+  font-size: 20px;
+  color:grey;
+  padding: 10px 30px;
+  background-color: white;
+  width: 500px;
+  border-radius: 50px;
+  margin-left: 90px;
+  box-shadow: 1px 2px 1px 1px darkslategray;
+  
+  
+  
+  
+}
+
+
+/*# sourceMappingURL=style.css.map */

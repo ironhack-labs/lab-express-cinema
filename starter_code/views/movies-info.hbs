@@ -1,0 +1,32 @@
+<div class="d-flex">
+<!--IMAGE-->
+<img class="p-3" src={{movie.image}}>
+
+<div class="p-3">
+
+<a href="/movies">Go back</a>
+<!--TITLE-->
+<h3>{{movie.title}}</h3>
+
+<!--DIRECTOR-->
+<h5>Director: {{movie.director}}</h5>
+
+<!--STARS-->
+<h6>Stars</h6>
+<ul>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+
+<!--DESCRIPTION-->
+<p>{{movie.description}}</p>
+
+<!--SHOWTIMES-->
+{{#each movie.showtimes}}
+<span>{{this}} | </span>
+{{/each}}
+
+</div>
+</div>

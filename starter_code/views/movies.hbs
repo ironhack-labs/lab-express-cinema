@@ -1,0 +1,22 @@
+
+
+<h1 class="pl-3 pt-3">Ironhack Cinema</h1>
+<p class="pl-3">Click on the movie to check the showtimes!</p>
+<div class="d-flex flex-row flex-wrap">
+
+  
+
+
+        {{#each movies}}
+     <div class="d-flex flex-column p-3">
+        <img src={{this.image}}>
+        <h6 class="pt-3">{{this.title}}</h6>
+        <a href="/movies/{{this.id}}">See more</a>
+
+     </div>   
+
+        {{/each}}
+
+</div>
+
+
