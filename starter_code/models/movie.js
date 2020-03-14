@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-const recipeSchema = new Schema(
+const movieSchema = new Schema(
   {
     title: { type: String, unique: true },
     director: { type: String },
@@ -14,8 +14,8 @@ const recipeSchema = new Schema(
   { timestamps: true }
 );
 
-const Recipe = mongoose.model('Recipe', recipeSchema);
-module.exports = Recipe;
+const Movie = mongoose.model('Movie', movieSchema);
+module.exports = Movie;
 
 
 

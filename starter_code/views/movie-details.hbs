@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-lg-3 d-flex justify-content-end">
+      <img class="movie-poster mr-2" src="{{this.image}}" alt="">
+    </div>
+    <div class="col-lg-5">
+      <h1 class="display-3 text-center">{{title}}</h1>
+      <p class="text-center mb-5">Directed by: {{director}}</p>
+      <p class="font-weight-bold"> Stars:</p>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p class="card-text">{{description}}</p>
+      <p class="font-weight-bold"> Showtimes:</p>
+      <p class="d-inline"> |</p>
+      {{#each showtimes}}
+      <p class="d-inline">{{this}} |</p>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+{{!-- 
+
+    title: { type: String, unique: true },
+    director: { type: String },
+    stars: { type: Array },
+    image: { type: String, default: "https://radionadlanu.stream/assets/images/imdbnoimage.jpg" },
+    description: { type: String},
+    showtimes: { type: Array },
+    
+     --}}

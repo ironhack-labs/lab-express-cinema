@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+
+
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express      = require('express');
@@ -11,7 +13,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/recipe-app-dev', {
+  .connect('mongodb://localhost/ironhack-cinema', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -64,4 +66,3 @@ module.exports = app;
 
 
 
-app.listen(3000, () => console.log('My project running on port 3000'));

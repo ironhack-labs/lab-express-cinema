@@ -1,3 +1,10 @@
+const mongoose = require('mongoose');
+const Movie = require('../models/movie');
+
+const dbtitle = 'ironhack-cinema';
+mongoose.connect(`mongodb://localhost/${dbtitle}`, { useNewUrlParser: true, useUnifiedTopology: true });
+Movie.collection.drop();
+
 
 const movies = [
   {
@@ -65,3 +72,10 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+
+Movie.create(movies, (err) => {
+  if (err) { throw(err) }
+  console.log(`Created ${movies.length} movies`)
+  mongoose.connection.close();
+});

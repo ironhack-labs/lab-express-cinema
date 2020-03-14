@@ -10,9 +10,9 @@ a {
 
 .welcome {
   background-image: url(/images/cinema.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   font-size: 4em;
 }
@@ -25,4 +25,12 @@ a {
 
 .btn {
   font-size: 0.4em !important;
+}
+
+.card  {
+  width: 200px !important;
+}
+
+.movie-poster {
+  height: 500px;
 }
