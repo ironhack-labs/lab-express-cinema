@@ -1,7 +1,7 @@
-<div class="d-flex align-content-start flex-wrap results">
+<div class="">
   
-    <div class="cards card" style="width: 18rem;">
-        <img class="card-img-top" src={{movie.image}} alt="Card image cap">
+    <div class="cards card" >
+        <img class="card-img-top" src={{movie.image}} alt="Card image cap" style="width: 18rem;">
         <div class="card-body">
             <h2 class="card-text">{{movie.title}}</h2>
             <h3>Director :{{movie.director}}</h3>
@@ -12,9 +12,10 @@
                     {{/each}}
                 </ul>
             <span>{{movie.description}}</span>
+            <span>ShowTimes:</span><p>{{#each movie.showtimes}}{{this}}|{{/each}}</p>
 
            
-            <a href="/movies"><button action=/movies method="GET" class="btn btn-danger" type="submit">Back</button></a>
+            <a href="/movies">Back</a>
         </div>
     </div>
     
