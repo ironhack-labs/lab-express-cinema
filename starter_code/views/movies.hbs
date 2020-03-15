@@ -1,0 +1,13 @@
+<div class="theater">
+        <div class="d-flex align-content-start flex-wrap results d-flex justify-content-center">
+{{#each movies}}
+<div class="cards card" style="width: 18rem;">
+  <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h3 class="card-text">{{this.title}}</h3>
+    <a href="/movies/{{this._id}}"><button class="btn btn-danger" type="submit">See movie</button></a>
+  </div>
+</div>
+{{/each}}
+        </div>
+        </div>

@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font: "Lucida Grande", Helvetica, Arial, sans-serif; 
+}
+
+.contenedor{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: url("/images/cinema.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.col-intro{
+    margin-left:550px;
+    margin-top: -250px;
+}
+.col-intro p{
+    color: white;
+    font-size: 100px;
+}
+/*# sourceMappingURL=style.css.map */
+
+.btn-index{
+    background-color: white;
+    color: #00B7FF;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+
+.cards{
+margin: 10px;
+}
+
+.card-body{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.img-profile{
+    max-width: 370px;
+}
+
+.theater{
+    height: 100%;
+    width: 100%;
+    background: url("/images/cinema-room.jpg") no-repeat center fixed;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conta{
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
