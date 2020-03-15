@@ -1,0 +1,66 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.bg {
+  background-image: url("/images/cinema.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: 30px;
+  padding-right: 40px;
+  float: right;
+}
+
+.container > h1 {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.checkTheMovies-btn{
+  color: rgb(107, 161, 182);
+  margin-top: 21px;
+  font-size: 18px;
+  border-radius: 25px;
+  height: 3rem;
+  width: 12rem;
+}
+
+.playbill{
+  padding-top: 2em;
+ display: flex;
+ margin: 2em;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.movieSpot{
+  margin-right: 10em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.movieSpec{
+  display:flex;
+}
+
+.movieSpecText{
+  padding-left: 4rem;
+  width: 37rem;
+}

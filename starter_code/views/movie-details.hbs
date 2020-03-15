@@ -1,0 +1,19 @@
+<div class="movieSpec">
+    <span class="specImg">
+<img src={{movieId.image}}></span>
+<div class="movieSpecText">
+<a href="/movies">Go Back</a> 
+<h2><strong>{{movieId.title}}</strong></h2>
+<h3></strong>Director: {{movieId.director}}</strong></h3>
+<h4><strong>Stars</strong></h4>
+<ul>
+    {{#each movieId.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>{{movieId.description}}</p>
+{{#each movieId.showtimes}}
+<span>{{this}} | </span>
+{{/each}}
+</div>
+</div>
