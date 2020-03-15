@@ -1,8 +1,55 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
+  color: #00B7FF; }
+
+.peliculadetallle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+
+.card {
+  margin: 30px; }
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.divposicionamiento {
+  color: white;
+  position: fixed;
+  font-size: xx-large;
+  top: 25%;
+  right: 20%; 
+
 }
+.divposicionamiento h1{
+  margin:10px
+}
+
+.botonpelis {
+  border-radius: 30px;
+  height: 40px;
+  width: 180px;
+ }
+.padrelistadopelis{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+}
+
+/*# sourceMappingURL=style.css.map */
