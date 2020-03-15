@@ -1,0 +1,15 @@
+body {
+  padding: 50px; }
+
+a {
+  color: #00B7FF; }
+
+.go-back {
+  height: 50px; }
+
+.main-back {
+  background-image: url("./public/images/cinema.jpg");
+  background-size: cover;
+  height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */
