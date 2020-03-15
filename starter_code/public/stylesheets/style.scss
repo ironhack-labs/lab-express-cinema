@@ -1,8 +1,71 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Sen;
 }
 
 a {
   color: #00B7FF;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.button-title {
+  margin-right: 35%;
+  margin-top: 10%;
+}
+
+.cinema-ironhack {
+  width: 150px;
+  font-size: 10vw;
+  color: #FFF;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 7px 20px;
+  height: 40px;
+  width: 170px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: mintcream;
+  border: none;
+  background-image: -webkit-linear-gradient(45deg, white 0%, grey 100%);
+  background-image: linear-gradient(45deg, white 0%, grey 100%);
+  transition: .4s;
+}
+
+.btn:hover {
+  background-image: -webkit-linear-gradient(45deg, white 0%, grey 100%);
+  background-image: linear-gradient(45deg, white 0%, grey 100%);
+  color: black;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title {
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.column {
+  width: 30%;
+  padding: 10px;
 }
