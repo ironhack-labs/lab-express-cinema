@@ -1,0 +1,21 @@
+<div class="d-flex align-items-start justify-content-center align-content-center">
+    <div>
+        <img class="mr-5" src="{{image}}">
+    </div>
+    <div>
+        <a class="button" href="/movies">Go back</a>
+        <h3 class="title">{{title}}</h3>
+        <h4>Director: {{director}}</h4>
+        <h5>Stars</h5>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+    </div>
+    
+</div>
+
+
+
