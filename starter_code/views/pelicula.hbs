@@ -1,0 +1,25 @@
+<div class="peliculadetallle">
+    <div>
+        <img class="card" src={{respuesta.image}} alt="Card image cap">
+    </div>
+    <div>
+        <div class="card">
+             <a href="/movies">Go back</a>
+
+            <h5>{{respuesta.title}}</h5>
+            <h6>{{respuesta.director}}</h6>
+            <p>stars</p>
+            <ul>
+                {{#each respuesta.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <p class=" card">{{respuesta.description}}</p>
+            {{#each respuesta.showtimes}}
+            {{this}} |
+            {{/each}}
+        </div>
+    </div>
+   
+</div>
