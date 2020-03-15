@@ -69,3 +69,12 @@ a {
   width: 30%;
   padding: 10px;
 }
+
+@media only screen and (max-width: 500px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+}
