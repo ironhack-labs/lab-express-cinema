@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+}
+
+.container{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-end;
+  align-content: stretch;
+  height: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('/images/cinema.jpg') ;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+.container button{
+  height: 60px;
+  width: 200px;
+  border-radius: 35px;
+  color:#00B7FF; 
+  font-size: 20px;
+  margin-bottom: 90%;
+  margin-top: 20px;
+}
+.container h1{
+  color: white;
+  font-size: 80px;
+  margin: 0px 10px 5px 0px;
+}
+.card{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+  align-content: space-around;
+
+}
+.card img{
+  padding: 30px;
+}
+.card a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.card  img:hover{
+  width: 200px;
+}
+.movie{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.movie p{
+  display: inline;
+}
+.movieFlex{
+  display: flex;
+  margin: 20px;
+}
+.title{
+  margin: 20px 50px;
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */

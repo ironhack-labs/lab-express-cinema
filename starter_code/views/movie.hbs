@@ -1,0 +1,27 @@
+
+ 
+
+ <div class="movieFlex">
+     <img src={{image}} alt="">
+ 
+
+ <div class="movie">
+     <a href="/movies">Go Back</a>
+    <h1>{{title}}</h1>
+    <h2>{{director}}</h2>
+    <h3>Stars</h3>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    <h4>{{description}}</h4>
+    <div>
+        {{#each showtimes}}
+            <p>{{this}} |</p>
+        {{/each}}
+    </div>
+
+    
+</div> 
+</div>
