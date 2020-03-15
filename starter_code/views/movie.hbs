@@ -1,0 +1,23 @@
+
+  <div class="container">
+    <div class="row d-flex align-items-start m-5">
+      <div class="col-4 d-flex justify-content-center align-content-center align-items-center">
+        <img class="my-5 py-5" src="{{image}}" alt="">
+      </div>
+      <div class="col-8">
+        <p><a href="/movies">Go Back</a></p>
+        <p class="h3 py-3">{{title}}</p>
+        <p class="h5 py-3">Director: {{director}}</p>
+        <p class="h5 py-3">Stars</p>
+        <ul>
+          {{#each stars}}
+          <li>
+            {{this}}
+          </li>
+          {{/each}}
+        </ul>
+        <p class="py-3">{{description}}</p>
+        <p class="py-3">| {{#each showtimes}}{{this}} | {{/each}}</p>
+      </div>
+    </div>
+  </div>
