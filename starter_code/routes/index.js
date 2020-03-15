@@ -11,7 +11,6 @@ router.get('/', (req, res, next) => {
 router.get('/movies', (req, res, next) => {
   Movie.find()
     .then(movies => {
-      console.log('Retrieved movies from DB:', movies);
       res.render('movies', { movies: movies });
     })
     .catch(error => {
