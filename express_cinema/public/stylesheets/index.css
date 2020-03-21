@@ -1,0 +1,22 @@
+body {
+    background-image: url("../images/cinema.jpg");
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    background-position-x: center;
+    background-position-y: top;
+
+   }
+
+   .container {
+
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+
+  .centered {
+    position: absolute;
+    left: 70%;
+    transform: translate(-40%, 40%);
+  }
