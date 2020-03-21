@@ -1,0 +1,14 @@
+<h1>All movies</h1>
+
+{{#each moviesFound}}
+
+<div>
+    <img src="{{image}}" alt="">
+</div>
+<h2>
+    {{ title }}
+</h2>
+<div><a href="/movies/{{_id}}">See more</a></div>
+<hr>
+
+{{/each}} 
