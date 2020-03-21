@@ -1,21 +1,58 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  background-color: antiquewhite;
+}
 
 a {
   color: #00B7FF; }
 
 
-h1{
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
-}
+  #grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
 
-
-h3{
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
-  font-weight: bold;
-  font-size: large;
-
-}
   
+  #areaB {
+    
+    text-align: left;
+  }
+
+  .flex-list {
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+    list-style: none;
+}
+.flex-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 350px;
+    padding-left: 0vmin;
+}
+.flex-list li {
+    flex-grow: 3;
+    flex-basis: auto;
+    margin: .10em .10em;
+    padding: 0 1em;
+    text-align: left;
+    border-left: 2px solid #ccc;
+    background-color:antiquewhite;
+    list-style: none;
+    margin-right: 1px;
+    padding-left:  5px;
+    padding-right:  5px;
+    text-align: left;
+    width: 1px
+}
+
 /*# sourceMappingURL=style.css.map */
+
+
+
+
