@@ -1,77 +1,65 @@
 body {
-	padding: 50px;
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-	color: #00b7ff;
-}
-
-/*# sourceMappingURL=style.css.map */
+  color: #00B7FF; }
 
 .background {
-	background-image: url("/images/cinema.jpg");
-	height: 100vh;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+  background-image: url("/images/cinema.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .checkTheMovies-btn {
-	color: rgb(107, 161, 182);
-	margin-top: 21px;
-	font-size: 17px;
-	border-radius: 25px;
-	height: 3rem;
-	width: 12rem;
-}
+  color: #6ba1b6;
+  margin-top: 21px;
+  font-size: 17px;
+  border-radius: 25px;
+  height: 3rem;
+  width: 12rem; }
 
-.back-btn{
-  color: rgb(107, 161, 182);
+.back-btn {
+  color: #6ba1b6;
   margin-top: 5px;
-  margin-left:80px;
+  margin-left: 80px;
   font-size: 10px;
   border-radius: 25px;
   height: 1rem;
-  width: 5rem;
-}
+  width: 5rem; }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 30%;
-	margin: 30px;
-	padding-right: 40px;
-	float: right;
-	margin-right: 50px;
-}
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: 30px;
+  padding-right: 40px;
+  float: right;
+  margin-right: 50px; }
 
 .container h1 {
-	color: white;
-	font-size: 75px;
-	margin-bottom: 0;
-}
+  color: white;
+  font-size: 75px;
+  margin-bottom: 0; }
 
 .movie-details-card {
-	display: flex;
-}
+  display: flex; }
 
 .movie-details {
-	margin-left: 20px;
-}
+  margin-left: 20px; }
 
-.show{
+.show {
   padding-top: 2em;
   display: flex;
   margin: 2em;
   flex-direction: row;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .card {
-  
-    margin-right: 10em;
-    margin-bottom: 2em;
-    text-align: center;
-}
+  margin-right: 10em;
+  margin-bottom: 2em;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
