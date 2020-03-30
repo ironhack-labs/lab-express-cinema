@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.movie-details {
+  display: flex;
+  /* align-content: space-between;
+  justify-content: space-around; */
+}
+
+.movie-text {
+  padding-left: 30px;
+  width: 50%;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+  align-content: space-around;
+  width: 70%;
+  border: none;
+  margin-top: 50px;
+}
+
+.card li {
+  list-style-type: none;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
