@@ -1,0 +1,14 @@
+
+<div class="row row-cols-1 row-cols-md-4">
+  {{#each data}}
+  <div class="col mb-4">
+    <div class="card">
+      <img src="{{image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <a class="card-text" href="/movie/{{id}}">See more</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

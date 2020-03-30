@@ -1,0 +1,47 @@
+{{!-- <div>
+    <img src="{{image}}" alt="image">
+</div>
+<div>
+    <h1>{{title}}</h1>
+    <h2>{{director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+      {{#each stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <ul>
+      {{#each showtimes}}
+        <li>{{this}} |</li>
+      {{/each}}
+    </ul>
+</div> --}}
+
+
+
+<div class="card mb-3 card-grande" style="max-width: 70vw;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{image}}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <h6 class="card-title">{{director}}</h6>
+        <h6 class="card-title">Stars</h6>
+        <ul>
+          {{#each stars}}
+            <li class="card-text">{{this}}</li>
+          {{/each}}
+        </ul>
+        <p class="card-text">{{description}}</p>
+        <ul class="showtime">
+          {{#each showtimes}}
+            <li class="card-text showtimes">| {{this}} |</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
