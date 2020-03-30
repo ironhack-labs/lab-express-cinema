@@ -1,15 +1,15 @@
 <h1>Ironhack Cinema</h1>
 <p>Click on the movie to check the showtimes!</p>
+<a href="/"><button class = "back-btn">Back</button></a>
 <div class="show">
-    <p>test</p>
-{{#each movies}}
-<div class="card">
-    <img src={{this.image}}>
-    <h3>{{this.title}}</h3>
-</div>
-<div>
-    <a href="/movies/{{this._id}}"> See more</a>
-</div>
-{{/each}}
 
-</div>
+    {{#each movies}}
+    <div class="card" style="width:18rem">
+    <img class="card-img" src={{this.image}}>
+    <div class="card-body">
+    <h3>{{this.title}}</h3>
+    <a href="/movies/{{this._id}}"> See more</a>
+    </div>
+    </div>
+    {{/each}}
+</div> 
