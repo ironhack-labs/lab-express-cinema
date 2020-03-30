@@ -8,8 +8,16 @@ a {
   color: #00B7FF;
 }
 
-.background {
+#background {
   background-image: url('../images/cinema.jpg');
   background-size: cover;
   height: 100vh;
+  padding-right: 100px;
+  padding-top: 100px;
 }
+
+#font-size {
+  font-size: 15px;
+  font-weight: bold;
+}
+
