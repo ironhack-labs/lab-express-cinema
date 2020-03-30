@@ -6,3 +6,38 @@ a {
   color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
+
+.background{
+  background-image: url("/images/cinema.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.checkTheMovies-btn{
+  color: rgb(107, 161, 182);
+  margin-top: 21px;
+  font-size: 17px;
+  border-radius: 25px;
+  height: 3rem;
+  width: 12rem;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:30%;
+  margin:30px;
+  padding-right: 40px;
+  float:right;
+  margin-right: 50px;
+}
+
+.container h1{
+  color:white;
+  font-size: 75px;
+  margin-bottom: 0;
+
+}
