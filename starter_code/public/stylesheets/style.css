@@ -37,7 +37,6 @@ a {
 }
 
 .container {
-<<<<<<< HEAD
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -61,23 +60,6 @@ a {
 .movie-details {
 	margin-left: 20px;
 }
-=======
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width:30%;
-  margin:30px;
-  padding-right: 40px;
-  float:right;
-  margin-right: 50px;
-}
-
-.container h1{
-  color:white;
-  font-size: 75px;
-  margin-bottom: 0;
-
-}
 
 .show{
   padding-top: 2em;
@@ -93,4 +75,3 @@ a {
     margin-bottom: 2em;
     text-align: center;
 }
->>>>>>> 1af3ea6ee19fbadd9901af718b327181ea050d42
