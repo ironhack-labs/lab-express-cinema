@@ -12,9 +12,12 @@
       {{/each}}
     </ul>
     <p>{{movie.description}}</p>
-    {{#each movies.showtimes}}
-      {{this}} |
-    {{/each}}
+    <div>
+      {{#each movie.showtimes}}
+        <span>{{this}} |</span>
+      {{/each}}
+    </div>
+    <br>
     <a href="/movies">Back</a>
   </div>
 </div>
