@@ -1,0 +1,30 @@
+
+<div class="movie-text">
+    {{#with movie}}
+    <div>
+        <img class="movie-img" src={{this.image}} alt="Card image cap">
+    </div>
+    <div class="movie-info">
+        <a href="/movies">Go Back</a>
+        <br>
+        <br>
+        <h3><b>{{this.title}}</b></h3><br>
+        <h4>{{this.director}}</h4><br>
+        <h5>Stars</h5><br>
+
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+        <br>
+        <p>{{this.description}}</p><br>
+        <div class="row">
+        {{#each showtimes}}
+        {{#if this}}
+        <p>{{this}} | </p>
+        {{/if}}
+        {{/each}}
+        </div>
+
+    </div>
+    {{/with}}
+</div>
