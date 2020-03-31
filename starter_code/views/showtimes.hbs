@@ -1,0 +1,26 @@
+{{#each moviesData}}
+    <div class="showtimes_container">
+        <div class="showtimes_content">
+            <div class="showtimes_img">
+                <img src="{{image}}" alt="{{title}} movie poster">
+            </div>
+
+            <div class="showtimes_text">
+                <a href="/movies" class="go_back">Go back</a>
+                <h1>{{title}}</h1>
+                <h2>Director: {{director}}</h2>
+                <ul class="cast"> Stars
+                    {{#stars}}
+                    <li>{{this}}</li>
+                    {{/stars}}
+                    <p class="description">{{description}}</p>
+                    <div class="times_container">
+                        {{#showtimes}}
+                        <p class="times">{{this}}|</p>
+                        {{/showtimes}}
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+{{/each}} 

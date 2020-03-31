@@ -3,159 +3,122 @@
   padding: 0;
   border: none;
   text-decoration: none;
-
   box-sizing: border-box;
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 button {
   cursor: pointer;
-  transition: transform 0.2s linear, box-shadow 0.2s linear;
-}
+  transition: transform 0.2s linear, box-shadow 0.2s linear; }
 
-button:hover{
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.8);
+button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
   transform: scale(1.03);
-
-  transition: transform 0.2s linear, box-shadow 0.2s linear;
-}
+  transition: transform 0.2s linear, box-shadow 0.2s linear; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  // color: #00B7FF;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .container {
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: flex-end;
-
-  background-image: url('../images/cinema.jpg');
-  background-size: cover;
-}
+  background-image: url("../images/cinema.jpg");
+  background-size: cover; }
 
 .content {
   width: 40%;
   height: 100%;
-  padding-top: 80px;
-}
+  padding-top: 80px; }
 
 .main_title {
   font-size: 10rem;
   color: #fff;
   width: 30%;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
+  text-shadow: 2px 2px 5px black; }
 
 .start_btn {
   padding: 15px 40px;
   margin-top: 20px;
   border-radius: 50px;
-  color: #679dad;
-
-  a {
-    font-size: 2rem;
-  }
-
-}
-
-// =================
-// MOVIES SECTION
+  color: #679dad; }
+  .start_btn a {
+    font-size: 2rem; }
 
 .movies_content {
   width: 100vw;
-  height: 100vh;
-}
+  height: 100vh; }
 
 .header {
   width: 100vw;
-  padding-left: 50px;
-}
+  padding-left: 50px; }
 
 .title {
   margin: 20px 30px;
   font-size: 3rem;
-  font-weight:bold;
-}
+  font-weight: bold; }
 
 .subtitle {
   margin: 20px 30px;
   font-size: 1.5rem;
-  font-weight: lighter;
-}
+  font-weight: lighter; }
 
 .movies_container {
   width: 80vw;
   margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 40px;
-
-}
+  grid-row-gap: 40px; }
 
 .movie {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 .movie > h2 {
   margin-top: 20px;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
 
 .movie > a {
   margin-top: 20px;
   font-size: 1.2rem;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .movie > img {
-  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.8);
-}
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8); }
 
-// SINGLE MOVIE SECTION
-//+++++++++++++++++++++
 .showtimes_container {
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+
 .showtimes_content {
   max-width: 900px;
   display: flex;
   padding: 40px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
-}
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); }
 
 .showtimes_img img {
-  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.8);
-}
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.8); }
 
 .showtimes_text {
   padding: 0 40px;
-  line-height: 25px;
-}
+  line-height: 25px; }
 
 .showtimes_text > a {
   margin-top: 20px;
   font-size: 1.2rem;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .times_container {
-  display: flex;
-}
+  display: flex; }
 
 .cast ul {
   font-size: 20px;
-  font-weight: bold;
-}
+  font-weight: bold; }
+  .cast ul li {
+    padding-left: 20px; }
+
+/*# sourceMappingURL=style.css.map */
