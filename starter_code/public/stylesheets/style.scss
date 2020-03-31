@@ -142,7 +142,22 @@ a {
 
 .showtimes_text {
   padding: 0 40px;
-  line-height: 25px;
+
+  & > h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 25px 0;
+  }
+  
+  & > h2 {
+    font-size: 1.5rem;
+    font-weight:lighter;
+    margin:20px 0px;
+  }
+
+  & > h3 {
+    margin-bottom: 20px;
+  }
 }
 
 .showtimes_text > a {
@@ -155,7 +170,27 @@ a {
   display: flex;
 }
 
-.cast ul {
+ul {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 10px;
+
+  li {
+    margin-left: 10px;
+  }
 }
+
+ul + p {
+  margin-bottom: 10px;
+}
+
+.times {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 700px){
+  .movies_container {
+    grid-template-columns: 1fr;
+  }
+}
+

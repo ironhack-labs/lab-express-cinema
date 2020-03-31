@@ -9,17 +9,18 @@
                 <a href="/movies" class="go_back">Go back</a>
                 <h1>{{title}}</h1>
                 <h2>Director: {{director}}</h2>
-                <ul class="cast"> Stars
+                <h3>Stars</h3>
+                <ul class="cast"> 
                     {{#stars}}
                     <li>{{this}}</li>
                     {{/stars}}
-                    <p class="description">{{description}}</p>
-                    <div class="times_container">
-                        {{#showtimes}}
-                        <p class="times">{{this}}|</p>
-                        {{/showtimes}}
-                    </div>
                 </ul>
+                <p class="description">{{description}}</p>
+                <div class="times_container">
+                    {{#showtimes}}
+                    <p class="times">{{this}} |</p>
+                    {{/showtimes}}
+                </div>
             </div>
         </div>
     </div>
