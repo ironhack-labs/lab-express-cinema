@@ -2,28 +2,23 @@ body,
 html {
   padding: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00b7ff;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:hover {
-  color: darkorchid;
-}
+  color: darkorchid; }
 
 p {
   margin-top: 10px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .container {
   max-width: 700px;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 .landing-page {
   height: 100vh;
@@ -31,72 +26,59 @@ p {
   background: url("https://source.unsplash.com/evlkOfkQ5rE");
   background-position: center center;
   background-repeat: none;
-  background-size: cover;
-  h1 {
+  background-size: cover; }
+  .landing-page h1 {
     color: white;
-    font-size: 5em;
-  }
-  .header {
+    font-size: 5em; }
+  .landing-page .header {
     width: 400px;
     padding: 10vh 5vw 0 0;
-    margin-left: auto;
-  }
-  a {
+    margin-left: auto; }
+  .landing-page a {
     padding: 1em 40px;
     font-size: 1em;
     background: white;
-    border-radius: 1.5em;
-  }
-}
+    border-radius: 1.5em; }
 
 .movies {
   justify-content: flex-start;
   display: flex;
-  flex-wrap: wrap;
-  .one-movie {
+  flex-wrap: wrap; }
+  .movies .one-movie {
     width: 33%;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
-    text-align: center;
-    h2 {
+    text-align: center; }
+    .movies .one-movie h2 {
       font-size: 1em;
-      color: black;
-    }
-  }
-  .one-movie:hover {
+      color: black; }
+  .movies .one-movie:hover {
     background: #fcfcfc;
-    box-shadow: 0 0 15px 0px #fcfcfc;
-  }
-}
+    box-shadow: 0 0 15px 0px #fcfcfc; }
 
 .movie {
-  display: flex;
-  .poster,
-  .info {
-    display: inline-block;
-  }
-  .poster {
-    margin-right: 10px;
-  }
-}
+  display: flex; }
+  .movie .poster,
+  .movie .info {
+    display: inline-block; }
+  .movie .poster {
+    margin-right: 10px; }
 
 h1.container {
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 h2 {
   margin-top: 0;
-  padding-top: 0;
-}
+  padding-top: 0; }
 
 p.showtimes {
   display: flex;
-  justify-content: center;
-  a {
+  justify-content: center; }
+  p.showtimes a {
     margin-left: 10px;
-    margin-right: 10px;
-  }
-}
+    margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */

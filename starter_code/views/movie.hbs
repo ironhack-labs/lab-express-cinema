@@ -1,0 +1,19 @@
+<h1 class="container">Ironhack Cinema</h1>
+<p class="container">
+  <a href="/movies">« Return</a>
+</p>
+<div class="container movie">
+  <div class="poster">
+    <img class="poster" src="{{movie.image}}" alt="{{movie.title}} poster">
+  </div>
+
+  <div class="info">
+    <h2>{{movie.title}}</h2>
+    <p><strong>Director:</strong> {{movie.director}}</p>
+    <p><strong>Starring:</strong>
+      {{#each movie.stars}}{{#unless @first}}, {{/unless}}{{#if @last}}and
+      {{/if}}{{this}}{{else}}{{/each}}</p>
+    <p><strong>Description:</strong> {{movie.description}}</p>
+    <p class="showtimes">{{#each movie.showtimes}}<a href="#">{{this}}</a>{{#unless @last}} | {{/unless}}{{/each}}</p>
+  </div>
+</div>
