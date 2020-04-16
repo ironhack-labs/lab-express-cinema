@@ -24,11 +24,16 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
 
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+//  Declaring Partials Directory
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 
 // Express View engine setup
 
@@ -47,12 +52,13 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinema Ironhack';
 
 
-
+// Enrouting
 const index = require('./routes/index');
 app.use('/', index);
 
+app.use('/movies', require("./routes/movies"))
 
 module.exports = app;

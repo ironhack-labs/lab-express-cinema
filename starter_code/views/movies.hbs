@@ -1,0 +1,16 @@
+<div class="container movie-container justify-content-center">
+
+  <h1 class="movies-title">Ironhack Cinema</h1>
+  <p class="movies-cta">Click on the movie to check the showtimes!</p>
+  
+  <div class="container">
+    <div class="row">
+        {{#each allMovies}}
+          <div class="col-sm-4">
+             {{> moviePartial this}}
+          </div>
+        {{/each}}
+    </div>
+  </div>
+
+</div>

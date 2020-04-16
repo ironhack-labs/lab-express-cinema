@@ -1,18 +1,11 @@
-
-// General
-
 body {
   margin: 0;
   padding: 0;
-
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-// Home
 .home-container {
   margin: 0;
   padding: 0;
@@ -21,68 +14,50 @@ a {
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
 .home-container h1 {
   color: white;
   font-size: 8em;
   font-weight: 700;
-  padding: 50px 0px;
-}
+  padding: 50px 0px; }
 
 .home-container a {
   padding: 25px 50px;
   background-color: white;
   border-radius: 5px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-// Movies Catalog
-.movie-container { 
-  padding-top: 50px;
-}
+.movie-container {
+  padding-top: 50px; }
 
 .movie-container h1, p {
   padding-top: 20px;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-.movie-container  p {
+.movie-container p {
   font-size: 1.5em;
-  padding-bottom: 50px; 
-}
+  padding-bottom: 50px; }
 
 .card {
-  border: none;
-}
-
-// Movies Details
+  border: none; }
 
 .details-container {
-  padding: 50px;
-}
+  padding: 50px; }
 
-.movie-details-container {
-
-}
-
-.movie-details-container h1, h2, h3{  
+.movie-details-container h1, h2, h3 {
   margin-top: 10px;
   font-size: 1.5em;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-.movie-details-container h2, h3{  
-  font-size: 1.1em
-}
+.movie-details-container h2, h3 {
+  font-size: 1.1em; }
 
 .movie-details-container ul {
-
-  padding: 10px;
-}
+  padding: 10px; }
 
 .movie-details-container p {
   padding-top: 0px;
-  font-weight: 500;
-}
+  font-weight: 500; }
+
+/*# sourceMappingURL=style.css.map */
