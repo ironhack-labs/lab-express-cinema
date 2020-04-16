@@ -3,6 +3,50 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.hero{
+  width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}h1{
+  font-size: 120px;
+  text-align: center;
+  color: white;
+}#button{
+      padding: 23px;
+    border-radius: 50px;
+    margin: 6px;
+    width: 260px;
+    text-align: center;
+    background: #cfcec9;
+    font-size: 19px;
+    color: #425a7c;
+    text-decoration: none;
 }
+
+a {
+  color: #00B7FF; }
+
+#background{
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
+  height: 800px;
+}
+
+#details-information{
+      padding-left: 65px;
+} a{
+  text-decoration: underline;
+}h3{font-size: 30px;
+font-weight: 900;
+padding-top: 10px;}h4{font-size: 20px;}
+
+#movies {
+    text-align: center;
+    padding: 21px 14px
+}h3{font-size: 18px;
+}h2{font-size: 30px;
+font-weight: 700;}p{font-size: 20px;}
