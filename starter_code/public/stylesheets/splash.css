@@ -20,4 +20,10 @@ section a {
     font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+section a:hover {
+    color: #000;
+    background: #a9cad4;
 }
