@@ -1,0 +1,24 @@
+<div class="outer-container">
+  <div class="hero-title">
+    <h1>{{title}}</h1>
+    <p>Click on the movie to check the showtimes!</p>
+    {{#unless movies}}
+    <p class=“nothing”>Sorry, nothing here yet...</p>
+    {{/unless}}
+  </div>
+
+  <div class="movie-container">
+    {{#each movies}}
+    <a href="/{{this._id}}">
+      <div class="movie">
+        <img src="{{this.image}}">
+        <div class="title">
+          <p>{{this.title}}</p>
+          <button>See more</button>
+        </div>
+      </div>
+    </a>
+    {{/each}}
+  </div>
+</div>
+</div>
