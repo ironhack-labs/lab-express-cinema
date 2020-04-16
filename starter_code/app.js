@@ -8,6 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const Movie = require('./models/Movie')
 
 
 mongoose
@@ -54,5 +55,24 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
-
+app.listen(process.env.PORT, () => {
+  console.log(`Listening on port ${process.env.PORT}`);
+});
 module.exports = app;
+
+
+app.get('/movies', (req, res) => {
+  Movie.find()
+    .then(allTheMovies => {
+    res.render('movies', {movies: allTheMovies})
+    })
+    .catch(err => console.log(`An error ocurred: ${err}`))  
+})
+
+app.get('/movies/:id', (req, res) => {
+  Movie.findById(req.params.id)
+  .then(movieInfo => {
+    res.render('movie-details', {movie: movieInfo})
+  })
+  .catch(err => console.log(`An error ocurred: ${err}`))
+})
