@@ -1,0 +1,26 @@
+<a href="../movies" class="btn btn-dark link-button">Go back</a>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div class="col-8">
+      <h2>{{title}}</h2>
+      <p><span class="movie-emphasis">Director:</span> {{director}}</p>
+      <p class="movie-emphasis">Stars:</p>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <p class="movie-emphasis">Showtimes:</p>
+      <ul class="showtime-list">
+        {{#each showtimes}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

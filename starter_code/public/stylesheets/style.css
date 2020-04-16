@@ -25,4 +25,20 @@ a {
   width: 200px;
   color: whitesmoke; }
 
+.card {
+  margin-bottom: 24px; }
+
+.link-button {
+  display: block;
+  width: 100px;
+  margin: 16px 32px; }
+
+.movie-emphasis {
+  font-weight: bold; }
+
+.showtime-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; }
+
 /*# sourceMappingURL=style.css.map */
