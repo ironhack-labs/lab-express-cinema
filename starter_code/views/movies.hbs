@@ -1,0 +1,19 @@
+<div class="centered">
+<div class="movies-page">
+
+<h1>{{title}}</h1>
+<p>Click on the movie to check the showtimes!</p>
+<a href="/" id="speciala">Back to main page</a>
+
+<ul>
+    {{#each movies}}
+    <li>
+        <img src="{{this.image}}">
+        <h2>{{this.title}}</h2>
+        <a href="/{{this._id}}">see more</a>
+    </li>
+    {{/each}}
+</ul>
+
+</div>
+</div>
