@@ -1,7 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .card {
   width: 30vw;
@@ -9,19 +8,17 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 40px;
-}
+  margin: 40px; }
 
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .oneMovie {
-  display: flex;
-}
+  display: flex; }
 
 .textBlock, .poster {
-  margin: 20px;
-}
+  margin: 20px; }
+
+/*# sourceMappingURL=style.css.map */

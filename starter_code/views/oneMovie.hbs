@@ -1,0 +1,21 @@
+<div class="oneMovie">
+
+  <img class="poster" src="{{movie.image}}" alt="Movie poster">
+
+  <div class="textBlock">
+    <a href="./">Go back</a>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    {{#each movie.showtimes}}
+      {{this}} |
+    {{/each}}
+  </div>
+
+</div>
