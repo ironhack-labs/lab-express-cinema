@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+#accueil {
+  background-image: url("https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?cs=srgb&dl=bobine-cassette-cinema-cinematographie-65128.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh; }
+
+#accueil h1 {
+  font-size: 8vh;
+  position: absolute;
+  right: 22%;
+  bottom: 30%; }
+
+#accueil a {
+  font-size: 3vh;
+  font-weight: bold;
+  position: absolute;
+  right: 30%;
+  bottom: 20%;
+  text-decoration: none;
+  background-color: grey;
+  padding: 15px;
+  color: white; }
+
+#moviespage {
+  margin: auto;
+  padding-top: 2%; }
+
+#moviespage h1 {
+  margin-bottom: 15px; }
+
+#moviespage h1 {
+  margin-bottom: 15px;
+  text-align: center; }
+
+#moviespage h3 {
+  margin-bottom: 30px;
+  text-align: center; }
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: auto;
+  grid-row-gap: 5%;
+  padding-bottom: 5%; }
+
+.movie {
+  text-align: center; }
+
+.movie p {
+  text-align: center;
+  font-weight: bold; }
+
+#oneMovie {
+  padding: 40px; }
+
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%; }
+
+#blablamovie {
+  width: 60%;
+  margin-left: 5%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#blablamovie li {
+  margin-left: 2%; }
+
+/*# sourceMappingURL=style.css.map */
