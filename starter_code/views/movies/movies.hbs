@@ -1,0 +1,13 @@
+<main id="movies-main">
+  <div class="container">
+    <h1>Ironhack Cinema</h1>
+    <h3>Click on the movie to check the showtimes!</h3>
+    <div class="row">
+
+      {{#each movies}}
+      {{>movieCard this}}
+      {{/each}}
+
+    </div>
+  </div>
+</main>
