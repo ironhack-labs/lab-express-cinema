@@ -1,0 +1,38 @@
+
+
+<div class="page-container">
+
+
+                
+
+<div class="decription-container">
+
+    <div class="part-left" >
+    <img src="{{movies.image}}">
+    </div>
+
+<div class="part-right" >
+    <a href="/movie"> Go back</a>
+    <h2>{{movies.title}}</h2>
+    <h3>Director : {{movies.director}}</h3>
+    <div>
+    <h3>Stars</h3>
+        {{#each movies.stars}}
+        <li>
+            {{this}}
+        </li>
+        {{/each}}
+</div>
+
+    <p>{{movies.description}}</p>
+
+        <ul class="list">
+        {{#each movies.showtimes}}
+            <li>
+                {{this}} |
+            </li>
+            {{/each}}
+            </ul>
+ </div>
+</div>
+</div>

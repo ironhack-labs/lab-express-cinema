@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+main {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end; }
+
+a {
+  color: #00b7ff; }
+
+.main-container {
+  margin-right: 20%; }
+
+.main-container h1 {
+  width: 10%;
+  font-size: 8em;
+  color: white;
+  margin-bottom: 30px; }
+
+.main-container a {
+  padding: 15px 30px;
+  font-size: 1em;
+  color: mediumturquoise;
+  background-color: white;
+  border-radius: 30px;
+  text-decoration: none; }
+
+.page-container {
+  padding: 50px; }
+
+.title-page {
+  font-size: 3em; }
+
+.description-page {
+  font-size: 2em;
+  margin-bottom: 50px; }
+
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.movies-card {
+  margin: 10px 20px 10px 0;
+  width: 180px; }
+
+.part-2 {
+  text-align: center; }
+
+.decription-container {
+  display: flex; }
+
+.part-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 60%; }
+
+.list {
+  display: flex;
+  list-style-type: none; }
+
+/*# sourceMappingURL=style.css.map */
