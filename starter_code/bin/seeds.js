@@ -1,3 +1,12 @@
+const mongoose = require('mongoose')
+const Movie = require('../models/movie')
+
+const dbName = 'ironhack-cinema-screenings'
+mongoose.connect(`mongodb://localhost/${dbName}`, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+
 const movies = [
   {
     title: 'A Wrinkle in Time',
@@ -80,3 +89,11 @@ const movies = [
     showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40'],
   },
 ]
+
+Movie.create(movies)
+.then((allTheMovies) => {
+  console.log(`${allTheMovies.length} movie entries created!`)
+  mongoose.connection.close()
+}).catch((err) => {
+  console.log("An error ocurred when seeding the DB: ", err)
+});
