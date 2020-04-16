@@ -1,13 +1,11 @@
 body {
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-}
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .home-background {
-  background-image: url('/../images/cinema.jpg');
+  background-image: url("/../images/cinema.jpg");
   margin: 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,17 +13,16 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: right;
-}
+  justify-content: right; }
 
 .home-container {
   position: absolute;
-  left: 900px;
-}
+  left: 900px; }
 
 .home-title {
   font-size: 6em;
   font-weight: bold;
   width: 200px;
-  color: whitesmoke;
-}
+  color: whitesmoke; }
+
+/*# sourceMappingURL=style.css.map */

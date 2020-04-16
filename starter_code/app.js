@@ -47,7 +47,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinema Ironhack';
 
 
 
@@ -56,3 +56,5 @@ app.use('/', index);
 
 
 module.exports = app;
+
+app.listen(process.env.PORT, () => console.log("Movies app listening on port: ", process.env.PORT))
