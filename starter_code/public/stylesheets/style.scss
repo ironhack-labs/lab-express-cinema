@@ -1,8 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   padding: 50px;
-  font: 14px Arial, sans-serif;
+  font: 14px "Roboto", Arial, sans-serif;
 }
 
 a {
   color: #00b7ff;
+}
+.body-container {
+  position: relative;
+  width: 1000px;
+  height: 668px;
+  background: center center url("../images/cinema.jpg");
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  .movie {
+    display: flex;
+    flex: 1 1 30%;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+  }
+}
+.single-movie {
+  width: 50%;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-info {
+  width: 70%;
+}
+ol {
+  margin: 0;
+  padding: 0;
+}
+.showtimes {
+  li {
+    &::after {
+      content: "|";
+      padding-left: 4px;
+      display: inline-block;
+    }
+    &:last-child {
+      &::after {
+        content: " ";
+      }
+    }
+    display: inline-block;
+  }
+}
+.button {
+  right: 100px;
+  top: 50%;
+
+  position: absolute;
+  background-color: #f1f1f1;
+  border: none;
+  color: #48a3ff;
+  padding: 15px 32px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.hero-txt {
+  font-size: 64px;
+  position: absolute;
+  top: 25%;
+  right: 100px;
+  color: #f1f1f1;
 }
