@@ -1,0 +1,24 @@
+
+<section id="one-movie">
+
+<div>
+<img src="{{movie.image}}" alt="">
+</div>
+
+<div class="movie-details">
+
+<a href="/movies">Go back</a>
+<h2>{{movie.title}}</h2>
+<h3>{{movie.director}}</h3>
+<h4>Stars</h4>
+<ul>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>{{movie.description}}</p>
+<p>{{#each movie.showtimes}}{{this}} | {{/each}}</p>
+
+</div>
+
+</section>

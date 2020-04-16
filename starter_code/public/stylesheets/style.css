@@ -3,12 +3,10 @@ body {
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 #home {
   position: relative;
@@ -16,51 +14,38 @@ a {
   background-size: cover;
   background-position: center top;
   height: 100%;
-  width: 100%;
-
-  div {
+  width: 100%; }
+  #home div {
     position: absolute;
     right: 150px;
-    top: 80px;
-
-    h1 {
+    top: 80px; }
+    #home div h1 {
       color: white;
-      font-size: 5rem;
-    }
-
-    a {
+      font-size: 5rem; }
+    #home div a {
       padding: 20px 50px;
       background-color: white;
       border-radius: 50px;
-      text-decoration: none;
-    }
-  }
-}
+      text-decoration: none; }
 
 #movies {
-  padding: 25px 50px;
-
-  .ctn {
+  padding: 25px 50px; }
+  #movies .ctn {
     margin: 75px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .box {
+    grid-template-columns: 1fr 1fr 1fr; }
+  #movies .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-  }
-}
+    margin-bottom: 50px; }
 
 #one-movie {
   padding: 25px 50px;
-  display: flex;
-
-  .movie-details {
+  display: flex; }
+  #one-movie .movie-details {
     margin-left: 50px;
-    width: 50%;
-  }
-}
+    width: 50%; }
+
+/*# sourceMappingURL=style.css.map */
