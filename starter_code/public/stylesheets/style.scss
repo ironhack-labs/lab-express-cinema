@@ -1,8 +1,36 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.intro {
+  padding: 2.3% 6%;
+  border-radius: 50px;
+  box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.308);
+  color: rgb(15, 128, 173);
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 15px
+
+}
+
+.home {
+  width: 100%;
+  color: white;
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  height: 1000px;
+  
+}
+
+.home h1 {
+  font-size: 8em;
+  font-weight: bold;
+}
+
+.cinema-iron {
+  margin-top: 15%;
 }
