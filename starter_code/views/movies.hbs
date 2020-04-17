@@ -1,0 +1,21 @@
+<main id="movies-main">
+    <div class="container">
+        <h1>Ironhack Cinema</h1>
+        <h3>Click on the movie to check the details!</h3>
+        <div class="row">
+
+            {{#each movies}}
+            <div class="col-md-6 col-lg-4">
+                <article class="movie-card">
+                    <figure>
+                        <img src="{{image}}" alt="{{title}}">
+                    </figure>
+                    <h5>{{title}}</h5>
+                    <a class="navigation-link" href="/movies/more/{{_id}}">See more</a>
+                </article>
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+</main>

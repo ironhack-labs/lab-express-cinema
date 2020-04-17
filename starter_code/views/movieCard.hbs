@@ -1,0 +1,33 @@
+<main id="details-main">
+    <div class="container">
+        <section>
+            <div class="row align-items-center justify-content-around">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="{{image}}" alt="{{title}} movie poster">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <article>
+                        <a class="navigation-link" href="/movies">Go back</a>
+
+                        <h1>{{title}}</h1>
+                        <h4>Director: {{director}}</h4>
+                        <h5>Stars</h5>
+                        <ul>
+                            {{#each stars}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <p>{{description}}</p>
+                        <p>
+                            {{#each showtimes}}
+                            {{this}} |
+                            {{/each}}
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
