@@ -30,6 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
 // Express View engine setup
 
 app.use(require('node-sass-middleware')({
@@ -53,6 +54,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+app.use('/movies', require('./routes/movies'))
 
 
 module.exports = app;
