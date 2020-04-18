@@ -1,0 +1,17 @@
+<div class="movie-div-container">
+    <div><img src="{{toto.image}}" alt="movieImg"> </div>
+    <div class="movie-info">
+        <p><a href="/movies">Go back</a></p>
+        <h3>{{toto.title}}</h3>
+        <h4>{{toto.director}}</h4>
+        <ul>
+            {{#each toto.stars}}
+            <li>
+                {{this}}
+            </li>
+            {{/each}}
+        </ul>
+        <p>{{toto.description}}</p>
+        <p>{{toto.showtimes}}</p>
+    </div>
+</div>

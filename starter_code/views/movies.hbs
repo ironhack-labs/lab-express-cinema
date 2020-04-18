@@ -1,0 +1,17 @@
+
+<h2>Ironhack Cinema</h2>
+<p>Click on the movie to check the showtimes!</p>
+
+<div class="flex-container">
+    <ul class="movie-ul">
+        {{#each toto}}
+        <li class="flex-item">
+            
+            <img src="{{this.image}}" alt="movieImg">
+           <h5>{{this.title}}</h5>
+           <p><a href="/movies/{{this._id}}">See more</a></p>
+            
+        </li>
+        {{/each}}
+    </ul>
+</div>
