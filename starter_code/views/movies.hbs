@@ -1,0 +1,16 @@
+<div class="page-padding">
+  <h1>Ironhack Cinema</h1>
+  <h3>Click on the movie to check the showtimes!</h3>
+
+  <div class="movies-grid">
+  {{#each movies}}
+
+    <div class="movie">
+    <img src="{{this.image}}" alt="movie-image">
+    <h5>{{this.title}}</h5>
+    <a href="/{{this._id}}">See more</a>
+    </div>
+
+  {{/each}}
+  </div>
+</div>
