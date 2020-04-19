@@ -1,9 +1,10 @@
 require('dotenv').config()
 
-const Movies = require('../models/Movies')
+const Movies = require('../models/Movie')
 const mongoose = require('mongoose')
+const DataBase = 'mongodb://localhost/cinema'
 
-const movies = [
+const mockData = [
   {
     title: 'A Wrinkle in Time',
     director: 'Ava DuVernay',
@@ -85,3 +86,17 @@ const movies = [
     showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40'],
   },
 ]
+
+const connectDB = async () => {
+  await mongoose.connect(DataBase, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  console.log(`DB Ready`)
+  await Movies.create(mockData)
+  console.log(`Database populated with ${mockData}`)
+  await mongoose.disconnect()
+}
+
+connectDB().catch((error) => console.error(error))
