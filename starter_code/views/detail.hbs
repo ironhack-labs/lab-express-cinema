@@ -1,0 +1,13 @@
+<h1>IMDB</h1>
+<div class="movie-container">
+  {{#each detailsMovie}}
+  <h1>{{title}}</h1>
+  <img src="{{image}}" alt="">
+  <p>{{director}}</p>
+  <p>{{description}}</p>
+  <p>{{stars}}</p>
+  <p>{{showtimes}}</p>
+  {{/each}}
+</div>
+
+<a href="/movies">Go back</a>

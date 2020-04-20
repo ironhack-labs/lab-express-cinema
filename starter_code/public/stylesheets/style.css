@@ -15,9 +15,11 @@ a {
   height: 100vh;
 }
 
-.movie-container {
+#movie-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
+
+/*# sourceMappingURL=style.css.map */
