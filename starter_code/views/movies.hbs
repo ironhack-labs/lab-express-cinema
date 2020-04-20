@@ -1,0 +1,9 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtimes</p>
+{{#each movies}}
+<article style="border: 1px solid black">
+    <h2>{{title}}</h2>
+    <a href="/movies/{{_id}}">See more</a>
+    <img src="{{image}}" alt="">
+</article>
+{{/each}}

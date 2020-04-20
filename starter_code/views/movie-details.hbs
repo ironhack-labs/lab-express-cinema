@@ -1,0 +1,18 @@
+{{#with movie}}
+
+<h1>{{title}}</h1>
+<h2>{{director}}</h2>
+<p>Stars</p>
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<img src="{{image}}" alt="">
+<p>{{description}}</p>
+<ul>{{#each showtimes}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+{{/with}}
