@@ -10,7 +10,7 @@ a {
 .homepage {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
-  text-align: end;
+  text-align: start;
   height: 800px;
   color: aliceblue;
   font-size: 3em;
@@ -38,10 +38,21 @@ a {
 }
 
 h1 {
-  padding-top: 100px;
-  padding-right: 100px;
+  padding-top: 200px;
+  padding-left: 700px;
 }
 
-.button {
-  margin-right: 200px;
+/* .button {
+  margin-right: 250px;
+  margin-bottom: 550px;
+} */
+
+.button1 {
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.5em;
+  /*width: 150px; */
+  height: 40px;
+  margin-left: 700px;
+  color: gray;
 }
