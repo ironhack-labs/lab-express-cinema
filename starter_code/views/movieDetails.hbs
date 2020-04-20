@@ -1,0 +1,26 @@
+{{!-- Iteration 4 | Display Movie Info --}}
+
+<div class="movieDetailsDiv">
+    {{#with movieDetails}}
+    <div class="movieDetailsImg">
+        <img src="{{this.image}}" alt="porter of a movie">
+    </div>
+    <div class="movieDetailsText">
+        <a href="/movies">Go back</a>
+        <h2>{{this.title}}</h2>
+        <h3>Director: {{this.director}}</h3>
+        <h4>Stars</h4>
+        <ul>
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{this.description}}</p>
+        <ul class="showtimes">
+            {{#each this.showtimes}}
+            <li>{{this}} |</li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/with}}
+</div>

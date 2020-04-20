@@ -1,48 +1,38 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .allMoviesDiv {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .oneMovieDiv {
   margin: 1em 5em 2em 5em;
   text-align: center;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .oneMovieDiv img {
-  width: 170px;
-}
+  width: 170px; }
 
 .movieDetailsDiv {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .movieDetailsImg {
-  margin: 3em;
-}
-
-.movieDetailsText {
-}
+  margin: 3em; }
 
 .showtimes {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  padding: 0;
-}
+  padding: 0; }
 
 .showtimes li {
-  margin-right: 0.5em;
-}
+  margin-right: 0.5em; }
+
+/*# sourceMappingURL=style.css.map */
