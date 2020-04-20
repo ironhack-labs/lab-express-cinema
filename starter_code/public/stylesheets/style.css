@@ -1,8 +1,127 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0px;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  padding: 0px;
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.homepage {
+  background-image: url('/images/cinema.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vh;
+
+  display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10rem;
+  
+}
+
+.homepage > div {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
+  align-content: center;
+  width: 40rem;
+}
+
+.homepage h1 {
+  color: white;
+  font-size: 8rem;
+  margin-bottom: 3rem;
+}
+
+.homepage a {
+  color: #00B7FF;
+  background-color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.allMovies {
+  margin: 4rem;
+}
+
+.allMovies > header {
+  font-size: 1.5rem;
+}
+
+.allMovies > div {
+  display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  width: 90%;
+}
+
+.movie {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem 2rem 2rem;
+  width: 15rem;
+}
+
+.movie img {
+  width: 15rem;
+}
+
+.movie h3 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF;
+  font-size: 1.2rem;
+}
+
+.movieCard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+  padding: 5rem;
+  font-size: 1.5rem;
+}
+
+.movieCard img {
+  width: 20rem;
+}
+
+.movieDetails {
+  padding-left: 3rem;
+}
+
+.movieDetails a, h2, h3, h4 {
+  padding: .7rem 0; 
+}
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */

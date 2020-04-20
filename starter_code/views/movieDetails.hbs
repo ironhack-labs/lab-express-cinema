@@ -1,30 +1,39 @@
-<div>
+<div class="movieCard">
 
-    {{#with movie}}
+    <div>
 
-    <img src='{{image}}'>
 
-    <p><a href='javascript:javascript:history.go(-1)'>Go back</a></p>
+        {{#with movie}}
 
-    <h2>{{title}}</h2>
-    <h3>Director: {{director}}</h3>
-    <h4>Stars</h4>
-    <ul>
-        {{#each stars}}
-        <li>{{this}}</li> 
+        <img src='{{image}}'>
+
+    </div>
+
+    <div class="movieDetails">
+
+        <p><a href='javascript:javascript:history.go(-1)'>Go back</a></p>
+
+        <h2>{{title}}</h2>
+        <h3>Director: {{director}}</h3>
+        <h4>Stars</h4>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li> 
+            {{/each}}
+        </ul>
+
+        <p>{{description}}</p>
+
+        <ul>
+        {{#each showtimes}}
+        <li>{{this}}</li>
+
         {{/each}}
-    </ul>
+        </ul>
+        
+        {{/with}}
 
-    <p>{{description}}</p>
-
-    <ul>
-    {{#each showtimes}}
-     <li>{{this}}</li>
-
-    {{/each}}
-    </ul>
-    
-    {{/with}}
+    </div>
 
 
 </div>
