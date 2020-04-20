@@ -1,9 +1,8 @@
-{{#each allMovies}}
-<div style="display: flex;">
-  <div>
-    <img src="{{image}}" alt="movie-image">
-    <p>{{title}}</p>
-    <a href="/detail/{{id}}">More Info</a>
-  </div>
+<h1>Ironhack Cinema</h1>
+  <p>Click on the movie to check the showtimes!</p>
+
+<div>
+  {{#each Movie}}
+    {{> movieTiles this}}
+  {{/each}}
 </div>
-{{/each}}
