@@ -3,9 +3,9 @@
   <div class="row text-center">
     {{#each movies}}
     <div class="col-md-4">
-        <img src="{{this.image}}" alt="{{title}}">
-        <p class="mt-2">{{this.title}}</p>
-      <a href="/movie/{{this._id}}">See more</a>
+      <img src="{{this.image}}" alt="{{title}}">
+      <p class="mt-2">{{this.title}}</p>
+      <a href="/movie/{{_id}}">See more</a>
     </div>
     {{/each}}
   </div>
