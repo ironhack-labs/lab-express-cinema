@@ -1,6 +1,7 @@
-
+{{#each allMovies}}
 <div>
-<h2>que pedo perro</h2>
-
-<p>{{title}}</p>
+  <img src="{{image}}" alt="">
+  <p>{{title}}</p>
+  <a href="/detailMovie/{{id}}">Details</a>
 </div>
+{{/each}}

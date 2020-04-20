@@ -10,7 +10,7 @@ const logger = require('morgan')
 const path = require('path')
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {
+  .connect('mongodb://localhost/cinema', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
