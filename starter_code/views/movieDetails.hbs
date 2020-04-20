@@ -1,0 +1,32 @@
+{{!-- <div class="movie-container">
+    <a href="/movies"> Go back</a>
+    {{#with movie}}
+    <h1>{{title}}</h1>
+    <span>written by {{auther}}</span>
+    <p>summery {{decription}}</p>
+    <p>rating:{{rating}}</p>
+    {{/with}}
+
+</div> --}}
+
+<div class="flex-container">
+    {{#with movie}}
+    <div class="column"><img src="{{image}}" alt=""></div>
+    <div class="column bg-alt">
+        <a href="/movies"> Go back</a>
+        <h2>{{title}}</h2>
+        <h6>Director:{{director}}</h6>
+
+        <h6> stars</h6>
+
+        {{#each stars}}
+        <li> {{this}}</li>
+        {{/each}}
+        <br>
+        <p>{{description}}</p>
+        <p>{{#each showtimes}}
+            {{this}}|
+            {{/each}}</p>
+    </div>
+    {{/with}}
+</div>
