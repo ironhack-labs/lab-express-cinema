@@ -10,6 +10,12 @@ a {
 
 /*# sourceMappingURL=style.css.map */
 
+.homepage {
+  background-image: url(/images/cinema.jpg);
+  height: 600px;
+  display: flex;
+}
+
 .giant-movies-div {
   display: flex;
   flex-wrap: wrap;
