@@ -1,21 +1,17 @@
-const express = require('express');
-const router  = express.Router();
-const Movie = require('../models/Movies');
+const express = require('express')
+const router = express.Router()
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index');
-});
+  res.render('index')
+})
 
-router.get('/movies', async (req, res, next) => {
-  const movies = await Movie.find({});
-  res.render('movies', { movies });
-});
+const { listView, detailView } = require('../controllers/movie')
+router.get('/', (req, res) => {
+  res.render('index')
+})
 
-router.get('/movie/:id', async (req, res, next) => {
-  const [movie] = await Movie.find({ _id: req.params.id });
-  console.log(movie);
-  res.render('movie', { movie, title: 'test' });
-});
+router.get('/movies', listView)
+router.get("/movie/:id", detailView);
 
-module.exports = router;
+module.exports = router

@@ -1,7 +1,8 @@
 require('dotenv').config()
 
-const Movies = require('../models/Movies')
+const Movie = require('../models/Movie')
 const mongoose = require('mongoose')
+const DataBase = 'mongodb://localhost/cinema'
 
 const movies = [
   {
@@ -85,3 +86,18 @@ const movies = [
     showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40'],
   },
 ]
+
+const connectDB = async () => {
+  await mongoose.connect(DataBase,{
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,  
+  } )
+  console.log(`DB ready`)
+  await Movie.create(movies)
+  console.log(`Database populate with {movies}`)
+  await mongoose.connection.close()
+}
+
+connectDB().catch((error) => console.log(error))
+
