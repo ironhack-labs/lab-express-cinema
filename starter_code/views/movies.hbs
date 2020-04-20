@@ -1,8 +1,12 @@
-<h1>Movies available</h1>
-<div class="movie-container">
-  {{#each moviesView}}
-  <h2>{{title}}</h2>
-  <img src="{{image}}" alt="movies-img">
-  <a href="/detail/{{_id}}">More info</a>
+<div class="background-img">
+  <h1>Prime time</h1>
+  <div id="movie-list">
+    {{#each moviesView}}
+    <div id="movie-box">
+      <h2>{{title}}</h2>
+      <img src="{{image}}" alt="movies-img">
+      <a href="/detail/{{_id}}" class="info-button">More info</a>
+    </div>
+    {{/each}}
+  </div>
 </div>
-{{/each}}
