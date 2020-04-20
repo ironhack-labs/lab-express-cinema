@@ -1,0 +1,29 @@
+<section class="section">
+
+    <div id="seemorecol1">
+        <img src="{{Movie.image}}" alt="Image of the movie: {{Movie.title}}">
+    </div>
+
+    <div id="seemorecol2">
+        <a href="/Movies">Go back</a>
+        <h2>{{Movie.title}}</h2>
+        <h3>Director: {{Movie.director}}</h3>
+        <p>
+            <b>Stars</b>
+            <ul id="ul">
+                {{#each Movie.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </p>
+        <p>{{Movie.description}}</p>
+        <ul id='ul2'>
+            {{#each Movie.showtimes}}
+            {{this}} | 
+            {{/each}}
+        </ul>
+    </div>
+
+    <div id="seemorecol3"></div>
+    
+</section>
