@@ -1,7 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .body {
   background-image: url("../images/cinema.jpg");
@@ -9,23 +8,20 @@ body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
 
 a {
-  color: #00B7FF;
-  ;
-}
+  color: #00B7FF; }
 
 .button {
   height: 100px;
   width: 300px;
   border: 1px solid white;
   background-color: white;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 h1 {
   font-size: 50px;
-  color: white;
-}
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
