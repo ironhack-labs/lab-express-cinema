@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
 <p>Click on the movie to check the showtimes!</p>
-
+<a href="/">Go back</a>
 {{#each movies}}
     <div class="single-movie-list-item">
         <img src="{{image}}" alt="movie poster">
@@ -8,6 +8,6 @@
             {{title}}
         </p>
 
-        <a href="/movie-info">See more</a>
+        <a href="/movie/{{_id}}">See more</a>
     </div>
 {{/each}}
