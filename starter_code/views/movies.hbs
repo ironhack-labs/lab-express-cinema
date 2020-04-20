@@ -1,0 +1,29 @@
+<div class="row movie-title">
+
+ <h1 class="text-white">Movies</h1>
+ </div>
+
+<div class="card-columns movies-container ">
+ 
+ 
+
+ {{#each moviesList}}
+
+    <div class="card movies-card" >
+      <img src="{{image}}" class="card-img-top" onerror="this.style.display='none'" alt="album: {{title}}">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <hr>
+        <p class="card-text text-info">Title:<span class="text-primary"> {{title}}</span></p>
+ 
+     
+
+        <a class="btn btn-info" href="/movies/{{_id}}" role="button">See more</a>
+      </div>
+
+
+</div>
+  
+      {{/each}}
+
+</div> 

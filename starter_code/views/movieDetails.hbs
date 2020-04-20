@@ -1,0 +1,46 @@
+<div class="row movie-title">
+
+ <h1 class="text-white">{{movie.title}}</h1>
+ </div>
+
+<div class=" movies-container ">
+
+{{#with movie}}
+
+<div class="card mb-3" >
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{image}}" class="card-img" alt="{{title}}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body movieDetails-card">
+        <h5 class="card-title"><span class="font-weight-bold">Directed by: </span>{{director}}</h5>
+        <hr>
+        <p class="card-text"><span class="font-weight-bold">Summary: </span></p><p> {{description}}</p>
+        <p class="card-text"><span class="font-weight-bold">Featured Stars: </span>  </p>
+        <ul class="list-group list-group-flush">
+  <li class="list-group-item">{{stars.[0]}}</li>
+  <li class="list-group-item">{{stars.[1]}}</li>
+  <li class="list-group-item">{{stars.[2]}}</li>
+  <hr>
+
+</ul>
+
+        <p class="card-text"><span class="font-weight-bold">Showtimes: </span>  </p>
+        <ul class="list-group list-group-horizontal">
+  <li class="list-group-item">{{showtimes.[0]}}</li>
+  <li class="list-group-item">{{showtimes.[1]}}</li>
+  <li class="list-group-item">{{showtimes.[2]}}</li>
+  <li class="list-group-item">{{showtimes.[3]}}</li>
+  <li class="list-group-item">{{showtimes.[4]}}</li>
+</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{{/with}}
+
+</div>
