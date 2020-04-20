@@ -1,0 +1,32 @@
+.home-container {
+  background: url('/images/cinema.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  .container2 {
+    padding: 5rem;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .initial {
+    color: white;
+    font-size: 5rem;
+    text-align: right;
+  }
+
+  .btn {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px 5px rgba(26, 26, 26, 0.1);
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}

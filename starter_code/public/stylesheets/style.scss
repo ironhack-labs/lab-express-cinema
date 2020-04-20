@@ -1,8 +1,24 @@
+@import '_variables';
+@import '_moviesCards';
+@import '_movieDetailsCard';
+@import '_home';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+h1,
+h4,
+h5,
+p {
+  margin: 15px 0;
 }

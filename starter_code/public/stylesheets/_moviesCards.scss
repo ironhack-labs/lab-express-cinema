@@ -1,0 +1,13 @@
+.moviesCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  div {
+    padding: 20px;
+  }
+}
+
+.container {
+  margin: 2rem;
+}

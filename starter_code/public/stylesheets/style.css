@@ -1,0 +1,65 @@
+.moviesCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .moviesCard div {
+    padding: 20px; }
+
+.container {
+  margin: 2rem; }
+
+.movieDetailsCon {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .movieDetailsCon img {
+    padding-right: 60px; }
+  .movieDetailsCon ul {
+    padding: 0;
+    list-style-position: inside; }
+
+.home-container {
+  background: url("/images/cinema.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; }
+  .home-container .container2 {
+    padding: 5rem;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap; }
+  .home-container .initial {
+    color: white;
+    font-size: 5rem;
+    text-align: right; }
+  .home-container .btn {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px 5px rgba(26, 26, 26, 0.1);
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00b7ff; }
+
+h1,
+h4,
+h5,
+p {
+  margin: 15px 0; }
+
+/*# sourceMappingURL=style.css.map */
