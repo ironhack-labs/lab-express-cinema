@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+  background-color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.allmovies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.moviescontainer {
+  margin: 2%;
+}
+/*# sourceMappingURL=style.css.map */
+.bodyindex {
+  background-image: url("/images/cinema.jpg");
+}
+.filmcontainer {
+  display: flex;
+}
+.maringleft {
+  margin-left: 2%;
+}
+
+body > div > div > h1 {
+  margin-top: 0px;
+}

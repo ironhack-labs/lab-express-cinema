@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="bodyindex">
+    <div class="filmcontainer">
+        <img src="{{det.image}}">
+        <div class="maringleft">
+            <h1>{{det.title}}</h1>
+            <h3>Director: {{director}}</h3>
+            <p>Stars</p>
+            <ul>
+                {{#each det.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            <p>Hours</p>
+
+            <p></p>{{#each det.showtimes}}
+            *{{this}}
+            {{/each}}</p>
+            <a href="javascript:history.back()">Go back</a>
+        </div>
+    </div>
+</body>
+
+</html>
