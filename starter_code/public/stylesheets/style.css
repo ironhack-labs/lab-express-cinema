@@ -1,10 +1,8 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 #jumbo {
   background: url(/images/cinema.jpg) no-repeat;
@@ -15,21 +13,17 @@ a {
   justify-content: center;
   align-items: center;
   color: #ffff;
-  font-size: 6vh;
-
-  #content {
+  font-size: 6vh; }
+  #jumbo #content {
     padding-left: 80vh;
-    padding-bottom: 50vh;
-    button {
+    padding-bottom: 50vh; }
+    #jumbo #content button {
       background-color: white;
       border-radius: 10%;
       height: 10vh;
-      width: 35vh;
-
-      a {
+      width: 35vh; }
+      #jumbo #content button a {
         font-size: 3vh;
-        text-decoration: none;
-      }
-    }
-  }
-}
+        text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
