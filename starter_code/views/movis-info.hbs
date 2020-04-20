@@ -1,7 +1,21 @@
 <section>
-<h1>{{movie.title}}</h1>
-
-<img src="{{movie.image}}">
-    
-
+    <div>
+        <img src={{movie.image}} alt="">
+    </div>
+    <div>
+        <h1>{{movie.title}}</h1>
+        <h2>Director: {{movie.director}}</h2>
+        <ul>
+            <p>Stars</p>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <ul>
+            {{#each movie.showtimes}}
+            <li>{{this}} |</li>
+            {{/each}}
+        </ul>
+    </div>
 </section>
