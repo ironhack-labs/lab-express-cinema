@@ -1,0 +1,15 @@
+<h2>Ironhack Cinema</h2>
+<p>click on the movies to check the showtimes!</p>
+<div class="movie-card">
+  <div class="movie-details">
+    
+    {{#each this.moviesAll}} 
+    {{!-- "artistAlbums" has to match / defined by 'res.render' 2nd parameter. --}}
+    <p>Name: {{this.title}}</p>
+    <img src="{{this.image}}" >
+    <button><a href="movie/{{this._id}}">See more</a></button> 
+    {{!-- this.id will become a url parameter --}}
+    {{/each}}
+
+  </div>
+</div>
