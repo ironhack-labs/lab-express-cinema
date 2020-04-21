@@ -2,16 +2,19 @@ const express = require('express')
 const router = express.Router()
 const Movie = require('../models/Movie')
 
-console.log("BEYONCE.....................")
-
 router.get('/movies', (req, res) => {
     // get all the movies
     Movie.find().then(movies => {
-        console.log("What is movies....:", movies)
         // render a 'movies' view with the movies data
         res.render('movies', { moviesList: movies });
-        console.log("What is moviesList....:", { moviesList: movies })
     })
 });
+
+router.get('/movies/:movieId', (req,res) => {
+    const movieId = req.params.movieId
+    Movie.findById(movieId).then(movie => {
+        res.render('movieDetails', {movie: movie})
+    })
+})
 
 module.exports = router
