@@ -1,0 +1,14 @@
+ {{!-- --- iteration 3 --- --}}
+
+{{!-- <p>Welcome in Movies page</p> --}}
+<div class="gridPosters">
+    {{#each movlist}}
+    <article class="movArticle">
+        <img src="{{this.image}}" alt="" class="posters">
+        <p class="movieTitle">{{this.title}}</p>
+        <a href="/gallery/{{this._id}}" class="seeMore">See more</a>
+        {{!-- <p>{{this._id}}</p> --}}
+    </article>
+    {{/each}}
+
+</div>
