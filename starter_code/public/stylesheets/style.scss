@@ -1,6 +1,8 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+
+}
 
 a {
   color: #00B7FF; }
@@ -13,9 +15,11 @@ a {
   /* border: 1px dotted red; */
   position: relative;
   height: 50vh;
+  max-width: 800px;
   background-image: url(../images/cinema.jpg);
   background-size: cover;
-  background-position: left; }
+  background-position: center;
+}
 
 .mainSec {
   /* border: 1px dotted blue; */

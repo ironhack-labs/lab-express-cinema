@@ -1,21 +1,26 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 
 a {
-  color: #00B7FF; }
+  color: #00B7FF;
+}
 
 /* --- iteration 2 --- */
 .subtil {
-  color: gray; }
+  color: gray;
+}
 
 .firstMain {
   /* border: 1px dotted red; */
   position: relative;
   height: 50vh;
+  max-width: 800px;
   background-image: url(../images/cinema.jpg);
   background-size: cover;
-  background-position: left; }
+  background-position: center;
+}
 
 .mainSec {
   /* border: 1px dotted blue; */
@@ -23,13 +28,15 @@ a {
   margin: 0 20px;
   width: 200px;
   top: 10px;
-  right: 80px; }
+  right: 80px;
+}
 
 .firstTitle {
   /* border: 1px dotted green; */
   color: white;
   font-size: 60px;
-  text-shadow: 1px 1px 1px grey; }
+  text-shadow: 1px 1px 1px grey;
+}
 
 .checkLink {
   /* border: 1px dotted purple; */
@@ -37,11 +44,13 @@ a {
   text-decoration: none;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 1px 1px 3px black; }
+  box-shadow: 1px 1px 3px black;
+}
 
 .gridPosters {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 .movArticle {
   /* border: 1px dotted red; */
@@ -50,18 +59,21 @@ a {
   margin: 25px;
   text-align: center;
   font-size: 12px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .posters {
   width: 80%;
-  box-shadow: 1px 1px 6px black; }
+  box-shadow: 1px 1px 6px black;
+}
 
 /* --- iteration 4--- */
 .seeMore {
   /* border: 1px dotted red; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .postersDtls {
   /* border: 1px dotted blue; */
@@ -69,12 +81,14 @@ a {
   margin-bottom: 40px;
   width: 30vw;
   max-width: 240px;
-  box-shadow: 1px 1px 6px black; }
+  box-shadow: 1px 1px 6px black;
+}
 
 .movieDtls {
   /* border: 1px dotted blue; */
   width: 50vw;
-  height: 30vh; }
+  height: 30vh;
+}
 
 /*# sourceMappingURL=style.css.map */
 
