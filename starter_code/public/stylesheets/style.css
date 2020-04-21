@@ -1,0 +1,20 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.home {
+  background-image: url(/images/cinema.jpg);
+  height: 668px;
+  width: 1000px; }
+
+.textbox {
+  text-align: right; }
+
+h1 {
+  color: white;
+  text-emphasis: bold; }
+
+a {
+  text-decoration: none;
+  color: grey; }
+
+/*# sourceMappingURL=style.css.map */
