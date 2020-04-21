@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+
 const bodyParser   = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express      = require('express');
@@ -19,9 +20,11 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
+
+
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
-
+S
 const app = express();
 
 // Middleware Setup
@@ -48,6 +51,10 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
+
+app.listen(process.env.PORT, () => {
+  console.log(`Listening on http://localhost:${process.env.PORT}`);
+});
 
 
 
