@@ -57,7 +57,6 @@ a {
   box-shadow: 1px 1px 6px black; }
 
 /* --- iteration 4--- */
-
 .seeMore {
   /* border: 1px dotted red; */
   display: flex;
@@ -67,6 +66,7 @@ a {
 .postersDtls {
   /* border: 1px dotted blue; */
   margin: 10px;
+  margin-bottom: 40px;
   width: 30vw;
   max-width: 240px;
   box-shadow: 1px 1px 6px black; }
@@ -78,3 +78,4 @@ a {
 
 /*# sourceMappingURL=style.css.map */
 
+/*# sourceMappingURL=style.css.map */
