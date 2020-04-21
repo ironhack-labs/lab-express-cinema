@@ -1,0 +1,13 @@
+<h1>Iron Cinema</h1>
+<h2>Click on the movie to check the screening times!</h2>
+
+<div class="movie-container">
+    {{#each movieList}}
+    <p>{{title}}</p>
+    <!--with or without this, both work -->
+    <img src="{{this.image}}" alt=" movie image">
+    <!--Images not showing up in database and not rendering in browser but I don't get why-->
+    <a href=/movies/{{this._id}}>See movie</a>
+    {{/each}}
+
+</div>

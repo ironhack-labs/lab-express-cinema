@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie screening times</title>
+</head>
+
+<body>
+    <h1>Movie screening times</h1>
+    {{#with movieObject}}
+    <h2>Title: {{this.title}}</h2>
+    <img src="{{image}}" alt="movie poster">
+    <h3>Starring:</h3>
+    <ul>
+        {{#each stars}}
+        <li>{{this.stars}}</li>
+        {{/each}}
+    </ul>
+
+    <h3>Director: {{director}}</h3>
+    <p>Screening times:
+        {{#each showtimes}}
+        <li>{{this}}</li>
+        {{/each}}
+    </p>
+    <p>{{this.description}}</p>
+    {{/with}}
+</body>
+
+</html>
