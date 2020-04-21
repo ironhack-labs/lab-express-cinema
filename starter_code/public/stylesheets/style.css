@@ -47,7 +47,7 @@ a {
   /* border: 1px dotted red; */
   width: 180px;
   height: 340px;
-  margin: 30px;
+  margin: 25px;
   text-align: center;
   font-size: 12px;
   font-weight: bold; }
@@ -56,4 +56,25 @@ a {
   width: 80%;
   box-shadow: 1px 1px 6px black; }
 
+/* --- iteration 4--- */
+
+.seeMore {
+  /* border: 1px dotted red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.postersDtls {
+  /* border: 1px dotted blue; */
+  margin: 10px;
+  width: 30vw;
+  max-width: 240px;
+  box-shadow: 1px 1px 6px black; }
+
+.movieDtls {
+  /* border: 1px dotted blue; */
+  width: 50vw;
+  height: 30vh; }
+
 /*# sourceMappingURL=style.css.map */
+

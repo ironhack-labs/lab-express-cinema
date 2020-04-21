@@ -34,17 +34,15 @@ router.get('/gallery/:id', (req, res, next) => {
   console.log('Requesting id')
   Movie
 
-    .findById(req, params, id)
+    .findById(req.params.id)
 
-    .then((dbmovie) => {
-      console.log(dbmovie)
-      // console.log(dbmovie);
-      res.render('/gallery/seeMore', {
-        details: dbmovie
+    .then((dbResult) => {
+      res.render('gallery/seeMore', {
+        details: dbResult
       })
     })
 
-    .chatch((dberr) => {
+    .catch((dberr) => {
       console.log(dberr)
     })
 })
