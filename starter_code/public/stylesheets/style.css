@@ -1,0 +1,45 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+color:rgb(238, 1, 147); }
+button{
+  border-radius: 3rem;
+  background-color: rgb(238, 1, 147);
+  color:pink;
+  height:4rem;
+  width:15rem; 
+}
+a{
+  color:rgb(238, 1, 147);
+
+}
+
+.Homepage-Container{
+ height:40rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.col-md-3{
+  margin:2rem 2rem 2rem 2rem;
+}
+
+.infobox{
+  padding: 8rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.infotext{
+  display: flex;
+  text-align: center;
+}
+

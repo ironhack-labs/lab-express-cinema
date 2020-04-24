@@ -1,0 +1,23 @@
+<div class="details">
+<title>details</title>
+
+{{#with movie }}
+<a href="/movies">Go back </a>
+<div class="infobox">
+<img src={{image}}>
+<div class="infoText">
+<h2>{{title}}</h2>
+<h3>{{director}}</h3>
+<ul>
+    {{#each start}}
+    <li{{stars}}</li>
+    {{/each}}
+    <p>{{description}}</p>
+    <p>{{showtimes}}</p>
+</ul>
+</div>
+</div>
+{{/with}}
+
+
+</div>
