@@ -51,13 +51,10 @@ app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 // default value for title local
 app.locals.title = "Express - Generated with IronGenerator";
 
-
-
 // aqui conecto los reutes fuera de app.js
 
 const index = require("./routes/index");
 app.use("/", index);
-
 
 const movies = require("./routes/movies");
 app.use("/movies", movies);

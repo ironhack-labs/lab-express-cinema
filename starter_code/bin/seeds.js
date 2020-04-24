@@ -5,7 +5,9 @@ const Movie = require("../models/Movie");
 mongoose.connect("mongodb://localhost/movies", {
   useNewUrlParser: true,
 });
+
 console.log("HOLAAAAAAA BANANANANANAN");
+
 const movies = [
   {
     title: "A Wrinkle in Time",

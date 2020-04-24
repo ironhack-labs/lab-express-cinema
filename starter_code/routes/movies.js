@@ -10,4 +10,14 @@ router.get("/", (req, res, next) => {
   });
 });
 
+router.get("/:id", (req, res, next) => {
+  console.log("reading detail route");
+
+  console.log(req.params.id);
+  Movie.findById(req.params.id).then((movie) => {
+    console.log(movie);
+    res.render("details", { movie: movie });
+  });
+});
+
 module.exports = router;
