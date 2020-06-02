@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{image}}">
+        </div>
+        <div class="col-md-8">
+            <a href="/movies">Return</a>
+            <h2>{{title}}</h2>
+            <h3>Director: {{director}}</h3>
+
+            <h4>Stars:</h4>
+            <ul>
+                {{#each stars}}
+                <li></li>
+                {{/each}}
+            </ul>
+
+            <p>{{description}}</p>
+
+            <p>{{showtimes}}</p>
+        </div>
+    </div>
+</div>
