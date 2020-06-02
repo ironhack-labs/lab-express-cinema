@@ -1,0 +1,21 @@
+<h1> Movie details </h1>
+
+<img src="{{detailsMovie.image}}">
+
+<p>
+<h3>{{detailsMovie.title}} </h3>
+<h4>Director: {{detailsMovie.director}} </h4>
+
+
+<ul> Stars
+    {{#each detailsMovie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<li> {{detailsMovie.description}}</li>
+{{#each detailsMovie.showTimes}}
+<li>{{this}}</li>
+{{/each}}
+</p>
+
+<a href="/movies" class="btn btn-primary">Go Back</a>
