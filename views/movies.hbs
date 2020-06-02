@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-12 text-center p-3">
+    <h1>
+      Ironhack Cinema
+    </h1>
+    <p>
+      Click on the movie to see the show times
+    </p>
+  </div>
+</div>
+<div class="row">
+  {{#each movies}}
+    <div class="col-md-4 pb-5">
+      <img src="{{image}}" alt="" />
+      <p>
+        {{title}}
+      </p>
+      <a href="/movies/{{_id}}">
+        See more
+      </a>
+    </div>
+  {{/each}}
+</div>

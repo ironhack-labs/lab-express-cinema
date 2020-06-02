@@ -1,0 +1,35 @@
+<div class="d-flex flex-row m-3">
+  <div class="m-2">
+    <img src="{{movie.image}}" />
+  </div>
+  <div class="d-flex flex-column m-2">
+    <a name="" id="" href="/movies" role="button">
+      Go back
+    </a>
+    <h2>
+      {{movie.title}}
+    </h2>
+    <h4>
+      Director:
+      {{movie.director}}
+    </h4>
+    <span>
+      Stars
+    </span>
+    <ul>
+      {{#each movie.stars}}
+        <li>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+    <p>
+      {{movie.description}}
+    </p>
+    <span>
+      {{#each movie.showtimes}}
+        {{this}}|
+      {{/each}}
+    </span>
+  </div>
+</div>
