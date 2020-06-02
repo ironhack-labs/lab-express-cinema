@@ -1,0 +1,9 @@
+.movie-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.movie-item {
+    width: 33.33%;
+}
