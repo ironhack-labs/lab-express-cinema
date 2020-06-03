@@ -1,10 +1,9 @@
 <h1>MOVIES</h1>
+<h2>Check on the movie to check showtimes</h2>
 {{#each movies}}
-<p>
-    <div>
-        <img href="{{image}}">
-    </div>
-    <h3>{{title}}</h3>
-  <a href="/movies/{{_id}}">See more</a>
-</p>
+<div class="card">
+    <img class="card-img-top" src="{{image}}">
+    <h3 class="card-title">{{title}}</h3>
+    <a href="movies/{{_id}}">See more</a>
+</div>
 {{/each}}

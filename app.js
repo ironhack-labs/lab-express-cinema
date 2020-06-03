@@ -8,6 +8,8 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const index = require('./routes/index');
+const movies = require('./routes/movies');
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
@@ -35,14 +37,8 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-const index = require('./routes/index');
-const movies = require('.')//aixo es per la ruta, la ruta ja es index, no? Llavors potser per aixo hem de fer un altre arxiu: routes/movies.js
-//jo recordo que les primers express ho feiem tot a index. despres ho probo :) --> Hhahaha ok! si pots passam el codi pls
-// Si, faig un push i et passo
-
 
 app.use('/', index);
-app.use('/movies', movies); // Seria aixi? mmm no ho se segur.
-
+app.use('/movies', movies);
 
 module.exports = app;
