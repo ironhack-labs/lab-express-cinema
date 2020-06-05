@@ -1,0 +1,24 @@
+<main class="container">
+    <article class="d-flex mt-5 pt-5">
+        <div>
+            <img src="{{this.image}}" alt="">
+        </div>
+        <div class="d-flex flex-column pl-3">
+            <a href="/movies">Go back</a>
+            <h4><b>{{this.title}}</b></h4>
+            <p><b>Director: {{this.director}}</b></p>
+            <p><b>Stars</b></p>
+            <ul>
+                {{#each this.stars }}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{this.description}}</p>
+            <p>
+                {{#each showtimes }}
+                <span>{{this}} |</span>
+                {{/each}}
+            </p>
+        </div>
+    </article>
+</main>
