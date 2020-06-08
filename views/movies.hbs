@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>List of movies</h1>
+            <p>Click on the movie to check the showtimes!</p>
+            <div class="wrapper d-flex flex-wrap">
+                {{#each movies}}
+                <div class="item p-2 text-center" style="width: 33.33%;">
+                    <img src="{{image}}" alt="{{title}}">
+                    <h4 class="mt-3">{{title}}</h4>
+                    <a href="/movies/{{_id}}" title="See more">See more</a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="{{movie.image}}" alt="{{movie.title}}">
+        </div>
+        <div class="col-sm-9">
+            <a href="/movies" title="< Go back">< Go back</a>
+            <h1>{{movie.title}}</h1>
+            <h2>Director: {{movie.director}}</h2>
+            <p><b>Stars</b></p>
+            <ul>
+                {{#each movie.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movie.description}}</p>
+            <p>{{#each movie.showtimes}} <span>{{this}} | </span>{{/each}}</p>
+        </div>
+    </div>
+</div>
