@@ -15,7 +15,10 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) => {
     Movie.findById(req.params.id)
-    .then(movie => res.render('see-more', {movie}))
+    .then(movie => {
+        console.log(movie);
+        res.render('see-more', movie);
+})
     .catch(err => console.log(err));
 });
 

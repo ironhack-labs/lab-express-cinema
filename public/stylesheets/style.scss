@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -10,4 +10,8 @@ a {
 .hero-image {
   min-height: 100vh;
   background-image: url('../images/cinema.jpg')
+}
+
+.container {
+  padding: 50px;
 }
