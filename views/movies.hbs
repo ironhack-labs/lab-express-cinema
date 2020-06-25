@@ -1,0 +1,21 @@
+<main class='container-fluid movies'>
+
+    <h2>Ironhack Cinema</h2>
+    <br>
+    <p>Click on the movie the showtimes!</p>
+
+    <div class='row'>
+
+    {{#each moviesArr}}
+
+            <div class='col-4'>
+                <img src='{{this.image}}'>
+                <p>{{this.title}}</p>
+                <a href='/movies/{{this.id}}'>See more</a>
+            </div>
+
+    {{/each}}
+
+    </div>
+
+</main>
