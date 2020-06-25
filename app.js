@@ -22,7 +22,9 @@ require('./configs/db.config');
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(cookieParser());
 
 // Express View engine setup
@@ -32,10 +34,11 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
-// default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
-
-const index = require('./routes/index');
-app.use('/', index);
+const index = require('./routes/index')
+const movie = require("./routes/movies.route")
+const detail = require("./routes/detail.route")
+app.use('/', index)
+app.use("/movies", movie)
+app.use("/movie", detail)
 
 module.exports = app;
