@@ -1,0 +1,15 @@
+<a href="/movies">Go back</a>
+{{#each themovie}}
+<img src="{{image}}" alt="image">
+{{title}}
+Director: {{director}}
+Stars
+     <ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+    </ul>
+{{description}}
+{{showtimes}}
+
+{{/each}}
