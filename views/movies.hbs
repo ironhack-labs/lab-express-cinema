@@ -1,0 +1,9 @@
+{{#each allMovies}}
+<h1>{{title}}</h1>
+<hr>
+<h3>Click on the movie to check the showtimes!</h3>
+<hr>
+<img src="{{image}}" alt="movie billboard">
+<hr>
+<a href="/movies/:{{id}}">See more!</a>
+{{/each}}
