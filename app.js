@@ -43,14 +43,6 @@ app.use('/', index);
 
 const Movie = require('./models/Movie.model')
 
-app.use('/movies', (req, res) => {
-
-  Movie.find()
-  .then(allMovies => res.render('movies', { allMovies }))
-  .catch(err => console.log("Error en la BBDD", err))
-})
-
-
 app.use('/movies/:id', (req, res) => {
 
   Movie.findById(req.params.id)
@@ -59,6 +51,15 @@ app.use('/movies/:id', (req, res) => {
 
   .catch(error => console.log('Error al cargar movie', error))
 })
+app.use('/movies', (req, res) => {
+
+  Movie.find()
+  .then(allMovies => res.render('movies', { allMovies }))
+  .catch(err => console.log("Error en la BBDD", err))
+})
+
+
+
 
 
 
