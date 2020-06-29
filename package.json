@@ -1,20 +1,22 @@
 {
-  "name": "starter-code",
-  "version": "2.0.0",
+  "name": "lab-express-cinema",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "DEBUG=starter-code:* nodemon ./bin/www",
+    "dev": "DEBUG=lab-express-cinema:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "mongoose": "^5.9.13",
     "morgan": "^1.10.0",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "node-sass-middleware": "^0.11.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
