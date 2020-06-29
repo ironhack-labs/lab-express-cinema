@@ -3,7 +3,6 @@ const router = express.Router();
 const Film = require('../models/film');
 
 const getAllFilms = async () => {
-    console.log('test')
     return await Film.find()
 }
 
