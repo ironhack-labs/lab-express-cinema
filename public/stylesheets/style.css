@@ -1,0 +1,52 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style:  none;
+}
+a{
+  text-decoration: none;
+}
+.hero-image{
+  background: url("/images/cinema.jpg");
+  height:100vh;
+  max-width:100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+}
+.hero-description{
+ display:flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ margin:100px;
+ 
+ 
+}
+.hero-title{
+  font-size:4rem;
+  color: #fff;
+}
+.title{
+  max-width: 600px;
+}
+.btn-movies{
+  background:#fff;
+  padding:15px 30px;
+  border-radius: 30px;
+  max-width: 200px;
+  
+  
+}
