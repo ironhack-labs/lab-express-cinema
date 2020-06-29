@@ -19,3 +19,13 @@ router.get('/movies', (req, res) => {
         console.log('Error while getting the books from the DB: ', error);
       })
 });
+
+router.get('/movie/:id', (req, res, next) => {
+    Movie.findById(req.params.id)
+    .then(movieList => {
+      res.render('movie-details', { movies: movieList });
+    })
+    .catch(error => {
+      console.log('Error while retrieving book details: ', error);
+    })
+});
