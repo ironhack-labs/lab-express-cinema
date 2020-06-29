@@ -1,0 +1,12 @@
+<h1>Express Cinema</h1>
+<p>Click on a movie to see more details!</p>
+
+{{#each movies}}
+
+<div class="movies">
+  <img src="{{this.image}}">
+  <p>{{this.title}}</p>
+  <a href="/movies/{{_id}}">See more ...</a>
+</div>
+
+{{/each}}
