@@ -18,7 +18,12 @@ const app = express();
 
 // require database configuration
 require('./configs/db.config');
-
+// this is where we fucked up: we connected TWICE
+// mongoose.connect(`mongodb://localhost/lab-express-cinema`, {
+//   useCreateIndex: true,
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+//   }).then(console.log("OK")).catch(err => console.log(err));
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -39,3 +44,4 @@ const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
