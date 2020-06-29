@@ -1,0 +1,19 @@
+{{#with movie}}
+    <div class = "movie-wrapper">
+        <div><img src="{{image}}" alt="movie cover"></div>
+        <div class = "movie-description">
+            <h2>{{title}}</h2>
+            <h3>Director: {{director}}</h3>
+            <h4>Stars</h4>
+            <ul>
+                {{#each stars}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            {{#each showtimes}}
+                {{this}} |
+            {{/each}}
+        </div>
+    </div>
+{{/with}}

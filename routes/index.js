@@ -1,4 +1,5 @@
 const express = require('express');
+const { render } = require('../app');
 const router = express.Router();
 
 /* GET home page */
