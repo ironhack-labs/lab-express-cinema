@@ -1,0 +1,18 @@
+<a class="btn back" href="/movies">Go back</a>
+<div class="movie-container">
+    {{#each movie}}
+    <figure>
+        <img class="card-img" src={{image}} alt="{{title}}" srcset="">
+    </figure>
+    <div class="movie-details">
+        <h2 class="movie-title">{{title}}</h2>
+        <p><strong>Director: </strong>{{director}}</p>
+        <ul><strong>Stars: </strong>
+            {{#each stars}}
+            <li class="list-stars">{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="movie-description">{{description}}</p>
+        {{/each}}
+    </div>
+</div>

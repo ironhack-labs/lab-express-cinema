@@ -2,9 +2,7 @@
 
 const mongoose = require('mongoose');
 const Film = require('../models/film');
-
-const dbName = 'films-project';
-mongoose.connect(`mongodb://localhost/${dbName}`);
+const dbConnection = require('../configs/db.config');
 
 const movies = [
     {
