@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const dbName = 'express-cinema-dev';
+const Movies = 'express-cinema-dev';
 const Movie = require('../models/Movie.model')
 
-mongoose.connect('mongodb://localhost/${dbName}', {
+mongoose.connect('mongodb://localhost/Movies', {
     useNewUrlParser: true
 });
 
@@ -93,7 +93,7 @@ const movies = [
 Movie.create(movies)
   .then(movies => {
       console.log(`Positive! Added ${movies.length} to the database`);
-    //   mongoose.connect.close();
+      mongoose.connect.close();
   }).catch(err => {
       console.log(err); 
   });
