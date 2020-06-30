@@ -19,6 +19,13 @@ const app = express();
 // require database configuration
 require('./configs/db.config');
 
+mongoose.connect('mongodb://localhost/library', {
+  useNewUrlParser: true
+}).then(x => 
+  {console.log("I am connected with mongoose ");}).catch(err => {
+    console.log(err);
+  });
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -37,5 +44,9 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const movie = require('./routes/movies');
+app.use('/', movie)
+
 
 module.exports = app;
