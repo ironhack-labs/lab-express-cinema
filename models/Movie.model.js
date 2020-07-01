@@ -9,8 +9,8 @@ const movieSchema = new Schema({
     description: String,
     showtimes: [String],
 
-})
+});
 
-const Movie = mongoose.model('Book', movieSchema)
+const Movie = mongoose.model('Book', movieSchema);
 
-module.exports = Movie
+module.exports = Movie;
