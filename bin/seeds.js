@@ -1,7 +1,6 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
 
 require('../configs/db.config')
+const Movie = require('../models/Movie.model')
 
 const data = [
   {
@@ -86,22 +85,7 @@ const data = [
   }
 ]
 
-const moviesSchema = new Schema({
-  title: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  director: String,
-  stars:[String],
-  image: String,
-  description: String,
-  showtimes:[String]
-})
-
-const Movies = mongoose.model('Movies', moviesSchema)
-
-Movies.deleteMany({})
-  .then(Movies.insertMany(data))
-  .then(() => console.log('Created registers correctly', Movies.find({}).limit(1)))
+Movie.deleteMany({})
+  .then(Movie.insertMany(data))
+  .then(() => console.log('Created registers correctly'))
   .catch((err) => console.log(err))
