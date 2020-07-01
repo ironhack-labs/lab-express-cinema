@@ -1,0 +1,21 @@
+<div class="container-movie">
+  <img src="{{Movie.image}}" alt="image of {{Movie.title}}">
+  <div class="text">
+    <a href="javascript:history.back()">Go back</a>
+    <h2>{{Movie.title}}</h2>
+    <h3>Director: {{Movie.director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each Movie.stars as |star|}}
+      <li>{{star}}</li>
+      {{/each}}
+    </ul>
+    <p>{{Movie.description}}</p>
+    <p>
+      {{#each Movie.showtimes as |time|}}
+      <span>{{time}}</span>
+      {{/each}}
+      </p>
+  </div>
+
+</div>
