@@ -1,0 +1,55 @@
+body,
+html {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("../images/cinema.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* The hero image */
+.hero-image.error {
+  background-image: url("../images/error.jpg");
+}
+/* Place text in the middle of the image */
+.hero-text {
+  position: absolute;
+  top: 20%;
+  text-align: left;
+  right: 20%;
+  max-width: 30%;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  line-height: 5.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+.hero-text p {
+  color: white;
+  font-size: 2rem;
+  line-height: 2.1rem;
+}
+
+.hero-text .btn {
+  border-radius: 20px;
+  color: #00B7FF;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  box-shadow: 1px 1px 1px black;
+}
