@@ -35,7 +35,25 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
+const seedDb = require('./bin/seeds');
+
 const index = require('./routes/index');
 app.use('/', index);
+
+const Movie = require('./models/Movie.model.js');
+const movies = require('./routes/movies');
+app.use('/movies', (req, res) => {
+  Movie.find()
+  .then(allMovies => res.render('movies', allMovies))  
+  .catch((error) => console.log('[app.js] Error occurred while finding Movies:', error))
+})
+
+const movie = require('./routes/movie');
+app.use('/movie/:movieId', (req, res, next) => {
+  const { movieId } = req.params;
+  Movie.find({ _id : movieId})
+  .then(theMovie => res.render('movie', theMovie[0])) 
+  .catch((error) => console.log('[app.js] Error occurred while finding the Movie:', error))
+})
 
 module.exports = app;

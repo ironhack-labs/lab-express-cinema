@@ -1,0 +1,19 @@
+<div class="row" id="selected-movie">
+    <img class="col-3" src="{{this.image}}" alt="image of {{this.title}}">
+    <div class="col-9">
+        <a href="javascript:history.back()">Go back</a>
+        <h3>{{this.title}}</h3>
+        <h4>{{this.director}}</h4>
+        <p><b>Stars</b></p>
+        <ul>
+            {{#each stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{this.description}}</p>
+        <p>{{this.showtimes}}</p>
+    </div>
+</div>
+
+
+ 
