@@ -1,0 +1,19 @@
+<div class="container mt-5">
+<img class="float-left mr-5 mb-5" src="{{movie.image}}">
+    <div>
+        <a href="/movies">Go back</a>
+        <h3 class="font-weight-bold mb-3 mt-3">{{movie.title}}</h3>
+        <h6 class="font-weight-bold mb-3">Director: {{movie.director}}</h6>
+        <h6 class="font-weight-bold mb-3">Stars</h6>
+            <ul>
+                {{#each movie.stars}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        <p>{{movie.description}}</p>
+            {{#each movie.showtimes}}
+                    {{this}} |
+            {{/each}}
+    </div>
+
+</div>
