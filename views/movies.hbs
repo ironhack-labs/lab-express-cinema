@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col pt-5 pl-5">
+             <h3>Ironhack Cinema</h3>
+            <h5 class="pt-3">Click on the movie to check the showtimes!</h5>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        {{#each movies as |movie|}}
+        <div class="col-md-4 text-center py-5">
+            <img src="{{movie.image}}" alt="{{movie.title}}">
+            <h6 class="text-center py-3">{{movie.title}}</h6>
+            <a href="">See More</a>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,5 +1,8 @@
 require('dotenv').config();
 
+require("./configs/db.config.js")
+const Movie = require('./models/Movie.models.js')
+
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express = require('express');
@@ -37,5 +40,13 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.get('/movies', (req, res) => {
+  Movie.find()
+  .then(findMovies => res.render('movies', { movies: findMovies }))
+  .catch(err => console.log("Error en la BBDD", err))
+})
+
+
 
 module.exports = app;
