@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.4rem 'Raleway', sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  background: #f7f6fb;
+  height: 100vh;
+}
+
+a {
+  color: #2dc5fa;
+}
+
+nav {
+  border-bottom: 0.1rem solid #2dc5fa;
+  padding: 1rem 5rem;
+  margin-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+nav img {
+  width: 3rem;
+}
+
+nav strong {
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #2dc5fa;
+}
+
+#homepage {
+  background: url(../images/cinema.jpg) no-repeat center center/cover;
+  position: relative;
+}
+
+#homepage .block {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+#homepage .block h1 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 10rem;
+}
+
+#homepage .block a {
+  background: #fff;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.2rem solid #fff;
+  width: 200px;
+}
+
+#homepage .block a:hover {
+  background: transparent;
+  color: #fff;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+#movies .movie-block {
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 3rem;
+  height: 20rem;
+  background: #fff;
+}
+
+#movies .movie-block h4 {
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+#movies .movie-block h4,
+#movies .movie-block p {
+  color: #333;
+}
+
+#movies .movie-block .movie-image {
+  height: 15rem;
+  margin-top: -4rem;
+  margin-left: -0.5rem;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  border-radius: 0 0 4rem 0;
+  color: #333;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+#movies a:hover {
+  text-decoration: none;
+}
+
+#movies a:hover .movie-image {
+  height: 20rem;
+  margin-top: 0;
+  margin-left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  border-radius: 0 0 2rem 0;
+  position: relative;
+}
+
+#movies a:hover .movie-image::before {
+  content: '+';
+  font-weight: 600;
+  font-size: 10rem;
+  color: #fff;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(45, 197, 250, 0.9);
+  top: 0;
+  left: 0;
+}
+
+#movie nav {
+  margin-bottom: 0;
+}
+
+#movie .big-img {
+  height: 30vh;
+  position: relative;
+}
+
+#movie .big-img:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(45, 197, 250, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+#movie .movie-info {
+  position: relative;
+  padding-left: 30rem;
+}
+
+#movie .movie-info img {
+  -webkit-box-shadow: inset 0px 0px 40px 40px #fff;
+          box-shadow: inset 0px 0px 40px 40px #fff;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  width: 25rem;
+  height: auto;
+  border: 1rem solid #f7f6fb;
+}
+
+#movie .movie-info strong {
+  color: #2dc5fa;
+}
+
+#movie .movie-info h4 {
+  font-weight: 600;
+  color: #2dc5fa;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+#movie .movie-info .description {
+  font-size: 1.6rem;
+}
+
+#movie .movie-info .back {
+  color: #333;
+  font-weight: 600;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+#movie .movie-info .back:hover {
+  text-decoration: none;
+  color: #2dc5fa;
+}
+
+#movie .movie-info .back:before {
+  content: '<';
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

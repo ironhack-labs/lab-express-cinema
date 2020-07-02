@@ -1,8 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+$white: #fff;
+$blue: #2dc5fa;
+
+html {
+  font-size: 10px;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 1.4rem 'Raleway', sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  background: #f7f6fb;
+  height: 100vh;
 }
 
 a {
-  color: #00B7FF;
+  color: $blue;
+}
+
+nav {
+  border-bottom: 0.1rem solid $blue;
+  padding: 1rem 5rem;
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  background: $white;
+
+  img {
+    width: 3rem;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+#homepage {
+  background: url(../images/cinema.jpg) no-repeat center center / cover;
+  position: relative;
+
+  .block {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    h1 {
+      font-weight: 600;
+      color: $white;
+      font-size: 10rem;
+    }
+
+    a {
+      background: $white;
+      padding: 1rem 3rem;
+      border-radius: 5rem;
+      display: flex;
+      justify-content: center;
+      border: 0.2rem solid $white;
+      width: 200px;
+
+      &:hover {
+        background: transparent;
+        color: $white;
+        transition: all 200ms ease-in-out;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#movies {
+  .movie-block {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 3rem;
+    height: 20rem;
+    background: $white;
+
+    h4 {
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+
+    h4,
+    p {
+      color: #333;
+    }
+
+    .movie-image {
+      height: 15rem;
+      margin-top: -4rem;
+      margin-left: -0.5rem;
+      transform: rotate(8deg);
+      border-radius: 0 0 4rem 0;
+      color: #333;
+      transition: all 100ms ease-in-out;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+
+      .movie-image {
+        height: 20rem;
+        margin-top: 0;
+        margin-left: 0;
+        transform: rotate(0deg);
+        border-radius: 0 0 2rem 0;
+        position: relative;
+
+        &::before {
+          content: '+';
+          font-weight: 600;
+          font-size: 10rem;
+          color: $white;
+          border-radius: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: rgba($blue, 0.9);
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+#movie {
+  nav {
+    margin-bottom: 0;
+  }
+
+  .big-img {
+    height: 30vh;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba($blue, 0.7);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .movie-info {
+    position: relative;
+    padding-left: 30rem;
+    img {
+      box-shadow: inset 0px 0px 40px 40px $white;
+      position: absolute;
+      top: -5rem;
+      left: 0;
+      width: 25rem;
+      height: auto;
+      border: 1rem solid #f7f6fb;
+    }
+
+    strong {
+      color: $blue;
+    }
+
+    h4 {
+      font-weight: 600;
+      color: $blue;
+      font-size: 4rem;
+      margin-top: 2rem;
+    }
+
+    .description {
+      font-size: 1.6rem;
+    }
+
+    .back {
+      color: #333;
+      font-weight: 600;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $blue;
+      }
+
+      &:before {
+        content: '<';
+        margin-right: 1rem;
+      }
+    }
+  }
 }

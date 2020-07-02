@@ -1,0 +1,23 @@
+<body id="movies">
+    {{>nav}}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                {{#each this}}
+                {{#if title}}
+                <a href="/movie/{{id}}" class="col-12 col-sm-3 movie">
+                    <div class="col-12 movie-block">
+                        <div class="row">
+                            <div class="col-12 movie-image"
+                                style="background: url({{image}}) no-repeat center center / cover;"></div>
+                        </div>
+                        <h4>{{title}}</h4>
+                        <p>See more</p>
+                    </div>
+                </a>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</body>

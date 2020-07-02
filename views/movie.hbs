@@ -1,0 +1,25 @@
+<body id="movie">
+    {{>nav}}
+    <div class="container-fluid big-img" style="background: url({{image}}) no-repeat center center / cover;"></div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row block">
+                <div class="col-10 movie-info">
+                    <img src="{{image}}" alt="{{title}}">
+                    <h4>{{title}}</h4>
+                    <p>An <strong>{{director}}</strong> film</p>
+                    <p class="description">{{description}}</p>
+                    <p><strong>Stars</strong>
+                        {{#each stars as |star|}}
+                        {{star}},
+                        {{/each}}</p>
+                    <p><strong>Showtimes</strong>
+                        {{#each showtimes as |showtime|}}
+                        {{showtime}},
+                        {{/each}}</p>
+                    <a href="/movies" class="back">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
