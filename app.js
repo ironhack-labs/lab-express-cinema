@@ -44,7 +44,13 @@ app.use('/', index);
 app.get('/movies', (req, res) => {
   Movie.find()
   .then(findMovies => res.render('movies', { movies: findMovies }))
-  .catch(err => console.log("Error en la BBDD", err))
+  .catch(err => console.log("Error in movies!", err))
+})
+
+app.get('/movie:id', (req, res) => {
+  Movie.findById(req.params.id)
+  .then(OneMovie => res.render('movie', { movie: OneMovie}))
+  .catch(err => console.log("Error in movie!", err))
 })
 
 
