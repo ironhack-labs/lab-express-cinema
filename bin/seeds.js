@@ -1,12 +1,6 @@
 // To insert in "bin/seeds.js"
 const Movie = require('../models/Movie.model.js')
-const mongoose = require('mongoose')
-
-mongoose.connect('mongodb://localhost/express-cinema-dev', {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+require('../configs/db.config')
 
 const movies = [
     {
@@ -91,9 +85,7 @@ const movies = [
     }
   ]
 
-Movie.create(movies)
-    .then(()=> {
-        console.log(`Created movies`)
-        mongoose.connection.close()
-    }) 
-    .catch(error => console.log(`Error ${error}`))
+Movie.deleteMany({})
+  .then(() => Movie.insertMany(movies))
+  .then((movie) => console.log('Movies added!'))
+  .catch((er) => console.log(er))
