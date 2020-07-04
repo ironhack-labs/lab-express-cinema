@@ -1,0 +1,32 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+  padding: 50px;
+
+}
+
+
+.cinema-back {
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.cinema-title {
+  font-size: 90px;
+  padding-top: 120px;
+}
+
+.cinema-button {
+  font-size: 30px;
+}
+
+.go-back {
+  margin-top: 10px;
+}
