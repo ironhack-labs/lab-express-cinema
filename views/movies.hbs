@@ -1,0 +1,19 @@
+{{#each this}}
+
+<div class="card-group mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+          {{#if image}}
+    <div class="col-md-4 align-self-center">
+          <a href="/movies/{{id}}"><img src="{{image}}" class="card-img justify-content-center" style="max-height: 450px" alt="random-beer"></a>
+    </div>
+    <div class="col-md-8 align-self-center">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+          <a href="/movies/{{id}}">See more</a>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>
+
+{{/each}}
