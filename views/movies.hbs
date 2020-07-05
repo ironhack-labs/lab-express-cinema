@@ -1,25 +1,26 @@
-<h2>Ironhack Cinema</h2>
-<p>Click on the movie to check the showtimes!</p>
+<div id="movies-h">
+    <h2>Ironhack Cinema</h2>
+    <h5>Click on the movie to check the showtimes!</h5>
+</div>
 
-{{#each allMovies}}
+<div class="container">
 
+    <div class="row">
 
-<div class="row">
+        {{#each allMovies}}
 
-  <div class="col-sm-6">
+            <div class="col-lg-4 movies-container">
+                <img src="{{this.image}}" class="movie-image" alt="{{this.name}} image">
+                <div class="movie-info-container">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <a href="/movies/{{this._id}}" class="btn btn-primary">See more</a>
+                </div>
+            </div>
 
-    <div class="card list">
-
-        <img src="{{this.image}}" class="card-img-top" alt="{{this.name}} image">
-        <div class="card-body">
-            <h5 class="card-title">{{this.name}}</h5>
-            <a href="/movies/{{this._id}}" class="card-link btn btn-success">See more</a>
-        </div>
+        {{/each}}
 
     </div>
 
-  </div>
-
 </div>
 
-{{/each}}
+
