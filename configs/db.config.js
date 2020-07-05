@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+console.log("Connecting to mongoose")
 
 mongoose
   .connect('mongodb://localhost/express-cinema-dev', {
