@@ -1,0 +1,16 @@
+<div class="movie-div">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes !</p>
+</div>
+
+<section id="movie-section">
+    <ul class="list-movies">
+        {{#each movies}}
+        <li class="item">
+            <img class="movie-img" src="{{this.image}}"> <br> <b>{{this.title}}</b> <br> <a href="/movies/{{_id}}">See
+                more</a>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</section>
