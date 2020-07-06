@@ -1,0 +1,31 @@
+<div class="full-wrap flex">
+
+    <img class="mov-img"
+         src="{{image}}"
+         alt="Movie image" />
+
+    <div class="mov-details">
+
+        <a href="/movies"
+           class="link">Go back</a>
+
+        <h2 class="title">{{title}}</h2>
+
+        <h3 class="subtitle">{{director}}</h3>
+
+        <p class="subtitle">Stars</p>
+
+        <ul class="list">
+            {{#each stars}}
+            <li class="item">{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p class="text description">{{description}}</p>
+
+
+        <p class="text showtime">{{#each showtimes}}{{this}} | {{/each}}</p>
+
+    </div>
+
+</div>

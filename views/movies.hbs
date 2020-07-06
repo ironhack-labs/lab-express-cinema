@@ -1,0 +1,23 @@
+<div class="full-wrap">
+
+    <h2 class="title">Ironhack Cinema</h2>
+    <h3 class="subtitle">Click on the movie to check the showtimes!</h3>
+
+    <div class="movies-wrap">
+
+        {{#each movies}}
+
+        <div class="mov-box">
+            <img class="mov-img"
+                 src="{{image}}"
+                 alt="Movie image" />
+            <p class="mov-title">{{title}} </p>
+            <a href="/movie/{{_id}}"
+               class="link">See more</a>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</div>

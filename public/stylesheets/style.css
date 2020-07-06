@@ -1,0 +1,99 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* TEXT ----- TITLE */
+a {
+   color: #00b7ff;
+}
+.title {
+   font-size: 30px;
+   margin: 20px 0px;
+}
+.subtitle {
+   font-weight: bold;
+   margin: 20px 0px 10px;
+}
+
+#home-title {
+   font-size: 100px;
+   color: white;
+   position: absolute;
+   top: 10%;
+   left: 60%;
+}
+
+/* CONTAINERS */
+
+body {
+   padding: 50px;
+   height: 100vh;
+   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+.full-wrap {
+   height: 100%;
+   width: 90%;
+   margin: auto;
+}
+
+/* HOME PAGE */
+
+.home.full-wrap {
+   position: relative;
+   background: url('./../images/cinema.jpg') no-repeat center;
+   background-size: cover;
+}
+
+#check-mov-btn {
+   margin-top: 30px;
+   padding: 20px 40px;
+   border-radius: 30px;
+   position: absolute;
+   top: 40%;
+   left: 60%;
+   background-color: white;
+   color: rgb(18, 90, 197);
+   text-decoration: none;
+}
+
+/* ALL MOVIES */
+
+.movies-wrap {
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   align-content: flex-start;
+   flex-wrap: wrap;
+}
+.mov-box {
+   width: fit-content;
+   margin: 50px;
+   text-align: center;
+}
+
+.mov-title {
+   font-weight: bold;
+   margin: 20px 0px;
+}
+
+/* ONE MOVIE ----- DETAILS */
+
+.full-wrap.flex {
+   display: flex;
+   justify-content: flex-start;
+   height: fit-content;
+   width: 80%;
+}
+.mov-img {
+   margin-right: 30px;
+   height: 300px;
+}
+.list {
+   margin: 0px 0px 10px 20px;
+}
+.text.description {
+   margin-bottom: 20px;
+}
