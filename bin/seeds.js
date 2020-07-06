@@ -87,20 +87,6 @@ const movies = [
     }
   ];
   
-  // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-
- /*  async function seeding  () {
-      try { const dbRes = await MovieModel.insertmany(movies);
-console.log(dbRes);
-
-      }
-      catch (err) {
-console.error(err)
-      }
-  }
-
-  seeding();
-  */
 
  MovieModel.insertMany(movies)
  .then(dbRes => console.log(dbRes))

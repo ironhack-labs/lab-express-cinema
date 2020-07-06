@@ -5,6 +5,8 @@ const MovieModel = require("./../models/Movie.model.js");
 /* GET home page */
 router.get("/", (req, res, next) => res.render("index"));
 
+
+
 router.get("/movies", async (req, res) => {
   try {
       //console.log("in /movies try")
@@ -16,12 +18,14 @@ router.get("/movies", async (req, res) => {
   }
 });
 
+
+
 router.get("/movies/:id", async (req, res) => {
     try {
-        console.log(`movie id is ${req.params.id}`)
-        console.log("in movies/:id try")
+        //console.log(`movie id is ${req.params.id}`)
+        //console.log("in movies/:id try")
         const movie = await MovieModel.findById(req.params.id);
-        console.log("got the movie by id")
+        //console.log("got the movie by id")
         res.render("movie", {movie}) 
     } catch (err) {
         console.error(err)

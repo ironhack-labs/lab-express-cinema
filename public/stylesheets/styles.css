@@ -64,7 +64,6 @@ a {
   font-size: 1.3rem;
 }
 
-
 #movies_display {
   box-sizing: border-box;
   display: grid;
@@ -82,20 +81,16 @@ a {
   justify-content: baseline;
   align-items: center;
   box-shadow: 1.2px 0.9px 4.2px -1.2px var(--color-dark);
-
 }
 
 h3 {
   margin: 15px 4px 5px 4px;
 }
 
-
-
-
 #movie_img {
-float: left;
-width: 25vw;
-margin: 1vh 3vw 1vh 3vw;
+  float: left;
+  width: 25vw;
+  margin: 1vh 3vw 1vh 3vw;
 }
 
 .movie_textarea {
@@ -103,7 +98,6 @@ margin: 1vh 3vw 1vh 3vw;
   margin-top: 5vh;
   width: 65vw;
   font-size: 1rem;
-
 }
 
 .movie_textarea h4 {
@@ -113,8 +107,6 @@ margin: 1vh 3vw 1vh 3vw;
 .movie_textarea p {
   margin: 7vh 0vw 5vh 0vw;
 }
-
-
 
 #a_goback {
   text-decoration: underline;
