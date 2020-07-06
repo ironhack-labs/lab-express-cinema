@@ -1,0 +1,13 @@
+*{
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+@import url("/home.css");
+@import url("/oneMovie.css");
+@import url("/allMovies.css")
