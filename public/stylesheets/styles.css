@@ -89,12 +89,33 @@ h3 {
   margin: 15px 4px 5px 4px;
 }
 
-.movie_display {
-  display: flex;
-  flex-direction: column;
+
+
+
+#movie_img {
+float: left;
+width: 25vw;
+margin: 1vh 3vw 1vh 3vw;
 }
 
 .movie_textarea {
-  display: flex;
-  flex-direction: column; 
+  box-sizing: border-box;
+  margin-top: 5vh;
+  width: 65vw;
+  font-size: 1rem;
+
+}
+
+.movie_textarea h4 {
+  margin-top: 5vh;
+}
+
+.movie_textarea p {
+  margin: 7vh 0vw 5vh 0vw;
+}
+
+
+
+#a_goback {
+  text-decoration: underline;
 }
