@@ -56,9 +56,36 @@ h2 {
   margin-bottom: 20px;
 }
 
-
 .movie-box p {
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+#movie-details {
+  display: flex;
+}
+
+#text-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#movie-details img {
+  margin: 40px;
+}
+
+#text-info a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#text-info ul {
+  list-style-type: disc;
+  padding-left: 3%;
+  overflow: hidden;
 }
