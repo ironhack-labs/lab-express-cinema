@@ -1,9 +1,5 @@
-require('dotenv').config();
-require("./../configs/db.config");
-
-const MovieModel = require("./../models/movie.model");
-
-
+require("./../configs/db.config")
+const movieModel= require("./../models/movie.model")
 
 const movies = [
     {
@@ -86,12 +82,15 @@ const movies = [
         "Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.",
       showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
-];
+  ];
   
-MovieModel.create(movies)
-.then(dbRes => {
-    console.log(dbRes)
+movieModel.create(movies)
+  .then((dbRes) => {
+  console.log(dbRes);
+  
 })
-.catch(dbErr => {
-    console.error(dbErr)
+  .catch((err) => {
+  console.log(err);
+  
 })
+  
