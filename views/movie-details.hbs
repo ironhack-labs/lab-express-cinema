@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <img src="{{movie.image}}" alt="{{movie.title}}">
+        </div>
+        <div class="col">
+            <a href="/movies">Go back</a>        
+            <h3 class="font-weight-bold">
+                {{movie.title}}
+            </h3>
+            <p class="font-weight-bold">
+                Directed by: <span class="font-weight-normal">{{movie.director}}</span>
+            </p>     
+            <p class="font-weight-bold">Stars:</p>
+            <ul>
+                {{#each movie.stars as |star|}}
+                <li>{{star}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movie.description}}</p>
+            <div>
+                {{#each movie.showtimes as |showtime|}}
+                <span>{{showtime}}|</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

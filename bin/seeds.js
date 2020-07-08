@@ -90,5 +90,5 @@ const movies = [
 
 Movie.deleteMany({})
   .then(() => Movie.insertMany(movies))
-  .then((movie) => console.log("Added Movies Successfully.", movie))
+  .then((movie) => console.log("Added Movies Successfully."))
   .catch((error) => console.log(error))
