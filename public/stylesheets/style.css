@@ -1,0 +1,17 @@
+div#cinema-ironhack{
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/cinema.jpg');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    height: 100%;
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646;
+}

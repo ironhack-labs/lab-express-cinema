@@ -1,0 +1,15 @@
+<h2 class="text-center">Ironhack Cinema!</h2>
+<h5 class="text-center">Click on See More for more info</h5>
+<div class="container">
+    <div class="card-deck">
+        {{#each allMovies}}
+        <div class="col-3">
+            <div class="card p-3">
+                <img src="{{image}}" alt="{{title}}">
+                <h6>{{title}}</h4>
+                <a href="/movie/{{id}}">See More</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div> 

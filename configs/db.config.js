@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 mongoose
   .connect('mongodb://localhost/express-cinema-dev', {
     useCreateIndex: true,

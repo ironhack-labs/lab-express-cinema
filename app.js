@@ -33,9 +33,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Express - Generated with IronGenerator'; //para generar variables para todo el proyecto con app.locals!!
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.use('/home', index);
+app.use('/movies', index);
+app.use('/movie', index);
 
 module.exports = app;
