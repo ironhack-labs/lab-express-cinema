@@ -17,6 +17,7 @@ const debug = require('debug')(
 const app = express();
 
 // require database configuration
+const seed = require("./bin/seeds")
 require('./configs/db.config');
 
 // Middleware Setup

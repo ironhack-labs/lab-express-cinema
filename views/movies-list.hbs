@@ -1,0 +1,14 @@
+<h2>Ironhack Cinema</h2>
+<div class="row">
+{{#each moviesFromDB as |movie|}}
+  <div class="col-sm-3">
+    <div class="card list">
+        <img src="{{movie.image}}" class="card-img-top" alt="{{movie.name}} image">
+        <div class="card-body">
+            <h5 class="card-title">{{movie.name}}</h5>
+            <a href="/movies/{{movie._id}}" class="card-link btn btn-info">See more</a>
+        </div>
+    </div>
+  </div>
+{{/each}} 
+</div>

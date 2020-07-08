@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+.image-index {
+  width: 100%;
+  height: auto;
+}
+
+.img-movie {
+  width: 100rem;
+  margin: 4.5rem;
+}

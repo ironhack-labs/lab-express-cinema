@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h4 class="display-4">{{movie.title}}</h4>
+  <h5>Director: {{movie.director}}</h5>
+  <h5>Stars</h5>
+    {{#each movie.stars}}
+        <p>{{this}}</p>
+    {{/each}}
+  <p class="lead">{{movie.description}}</p>
+  <hr class="my-4">
+        <select class="form-control" id="exampleFormControlSelect1">
+      {{#each movie.showtimes}}
+        <option value="{{this}}">{{this}}</option>
+      {{/each}}
+        </select>
+  <img class="img-movie" src="{{movie.image}}" class="card-img-top" alt="{{movie.title}} image">
+  <a class="btn btn-primary btn-lg" href="/movies" role="button">Go back</a>
+</div>
