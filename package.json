@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "DEBUG=starter-code:* nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www"
+    "dev-windows": "nodemon ./bin/www",
+    "seeds": "node ./bin/seeds.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
@@ -14,6 +15,7 @@
     "hbs": "^4.1.1",
     "mongoose": "^5.9.21",
     "morgan": "^1.10.0",
+    "node-sass": "^4.14.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {

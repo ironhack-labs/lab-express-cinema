@@ -1,5 +1,3 @@
-// Ejecutar index.js para importar la BBDD a Mongo Local
-
 // require database configuration
 require('../configs/db.config');
 
