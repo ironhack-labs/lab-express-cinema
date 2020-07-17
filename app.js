@@ -17,6 +17,7 @@ const debug = require('debug')(
 const app = express();
 
 // require database configuration
+const seed = require("./bin/seeds")
 require('./configs/db.config');
 
 // Middleware Setup
@@ -38,17 +39,5 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
-
-app.get('/movies', (req, res, next) => {
-
-  spotifyApi
-  .searchArtists()
-  .then(data => {
-    
-   res.render('movies',{})
-   
-  })
-  .catch(err => console.log('The error while searching movies occurred: ', err));
-})
 
 module.exports = app;
