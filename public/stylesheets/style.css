@@ -1,4 +1,5 @@
 body {
+
   padding: 0px;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -48,4 +49,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#container-movies-info {
+  display: flex;
+  margin: 1em;
+}
+
+.movies-details {
+  margin-left: 1em;
+}
+
+.bold {
+  font-weight: bold;
 }
