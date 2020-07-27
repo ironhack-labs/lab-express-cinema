@@ -1,0 +1,26 @@
+
+.cinema    {
+height: 1000px;
+position: relative;
+
+max-width: 100%;
+}
+ .container h1  {
+color: #FFF;
+font-size: 75px;
+position: absolute;
+left: 50%;
+top:50%;
+text-align: center;
+}
+.btn            {
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    text-align: center;
+    border-radius: 35px;
+    text-decoration:none ;
+    padding:20 px;
+    
+}
