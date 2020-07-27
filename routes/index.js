@@ -20,7 +20,8 @@ router.get('/movies', (req, res, next) => {
         })
 })
 
-router.get('/movies/:id', (req, res, next) => {
+//IT-4
+router.get('/movies/:id', (req, res, next) => { //Este :id viene del elemento "a" en el hbs "movies"
     Movie.findById(req.params.id)
         .then(thisMovieDB => {
             res.render('show.hbs', {
