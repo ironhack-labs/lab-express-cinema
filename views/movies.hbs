@@ -1,9 +1,11 @@
-<h1>{{title}}</h1>
-<p>Click on the movie to check the showtimes!</p>
-{{#each movie}}
-<div>
-    <img src="{{this.image}}" alt="">
-    <p>{{this.title}}</p>
-    <a href="/movies/{{this.id}}">See more</a>
+<h1 class="tit-two">{{title}}</h1>
+<p class="phrase">Click on the movie to check the showtimes!</p>
+<div class="movies-container">
+    {{#each movie}}
+    <div class="movies">
+        <img src="{{this.image}}" alt="">
+        <p>{{this.title}}</p>
+        <a href="/movies/{{this.id}}">See more</a>
+    </div>
+    {{/each}}
 </div>
-{{/each}}

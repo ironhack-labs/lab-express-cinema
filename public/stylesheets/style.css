@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.tit-two {
+  padding-left: 2rem;
+}
+
+.title {
+  color: white;
+  font-size: 6rem;
+}
+
+.phrase {
+  padding-left: 2rem;
+}
+
+.home {
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.home-items {
+  padding-right: 10rem;
+  width: 400px;
+}
+
+.btn {
+  color: #4aa58d;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  border-radius: 8rem;
+}
+
+.movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem;
+}
+
+.movies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.movie-container {
+  padding-left: 2rem;
+}
+
+.hrs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carat {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
