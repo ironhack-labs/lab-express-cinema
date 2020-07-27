@@ -1,9 +1,10 @@
-<section>
-    <div>
+<section class="indivMovie-container">
+    <div class="detail-box">
         <img src="{{movie.image}}" alt="">
-        <div>
-            <p>{{movie.title}}</p>
-            <p>Director: {{movie.director}}</p>
+        <div class="text-box">
+            <a href="/movies">Go back!</a>
+            <h4>{{movie.title}}</h4>
+            <h5>Director: {{movie.director}}</h5>
             <p>Stars:</p>
             {{#each movie.stars}}
                 <li>{{this}}</li>            

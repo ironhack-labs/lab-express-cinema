@@ -1,8 +1,150 @@
+
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  
 }
 
-a {
-  color: #00B7FF;
+/* Index Page */
+.index-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url('../images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: initial;
+  
+}
+
+.text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 80%;
+  width: 45%;
+  margin: 0;
+  
+  
+  
+  h1{
+    color: white;
+    font-size: 8rem;
+    width: 66%;
+    height: 50%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    
+  }
+  
+  a {
+    padding: 1rem 2.4rem;
+    background-color: white;
+    text-decoration: none;
+    color: rgb(104, 107, 134);
+    font-size: 1.4rem;
+    border-radius: 2.4rem;
+    
+    
+  }
+  
+}
+
+/* Movies page */
+
+h2 {
+  font-size: 1.8rem;
+  margin: 1rem 1.5rem
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem
+  
+  
+}
+
+.movie-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+  margin: 1rem;
+  
+  img {
+    width: 100%;
+    box-shadow: 2px 2px 6px black;
+  }
+  
+  h3 {
+    font-size: .8rem;
+    text-align: center;
+  }
+  
+  a {
+    color: rgb(19, 159, 247);
+    font-size: .9rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+  }
+  
+}
+
+/* Indiv Movie page */
+
+.indivMovie-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 100vh;
+
+  
+  
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // border: 2px solid green;
+  height: 35%;
+  width: 80%;
+  
+  
+  
+  font-size: 1rem;
+  
+  img {
+    box-shadow: 2px 2px 6px black;
+    
+  }
+  
+  .text-box {
+    font-size: .95rem;
+    // border: 2px solid red;
+    padding: .15rem 2rem;
+    box-shadow: 2px 2px 6px black;
+
+    a {
+      color: rgb(19, 159, 247);
+      font-size: .8rem;
+    }
+    
+    
+
+  }
+
 }
