@@ -22,4 +22,25 @@ a {
   top: 6rem;
 }
 
-#cinema-container h1 {}
+.card {
+  margin: 1rem 2rem;
+  border: none;
+}
+
+.card-img-top {
+  height: 16rem;
+  max-width: 15rem;
+  align-self: center;
+}
+
+.card-body {
+  text-align: center;
+}
+
+#show-info {
+  display: flex;
+}
+
+#img-show {
+  margin-right: 10px;
+}

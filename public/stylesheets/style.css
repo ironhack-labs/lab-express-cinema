@@ -21,4 +21,31 @@ a {
   right: 6rem;
   top: 6rem;
 }
+
+.card {
+  margin: 1rem 2rem;
+  border: none;
+}
+
+.card-img-top {
+  height: 16rem;
+  max-width: 15rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card-body {
+  text-align: center;
+}
+
+#show-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#img-show {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */
