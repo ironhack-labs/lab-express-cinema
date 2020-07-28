@@ -6,21 +6,26 @@ position: relative;
 max-width: 100%;
 }
  .container h1  {
+font-size:175px;
 color: #FFF;
-font-size: 75px;
 position: absolute;
 left: 50%;
-top:50%;
-text-align: center;
+top:10%;
 }
 .btn            {
     font-size: 25px;
     position: absolute;
     left: 50%;
-    top:50%;
-    text-align: center;
-    border-radius: 35px;
+    top:80%;
+    border-radius: 40px;
     text-decoration:none ;
     padding:20 px;
-    
-}
+    }
+    .film  {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .filmitem  {
+        flex-direction: row;
+    }

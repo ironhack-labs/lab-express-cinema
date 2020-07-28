@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const Movies = require('../models/Movie');
+const Movie = require('../models/Movie');
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
 router.get('/movies', (req, res, next) => {
-    Movies.find()
+    Movie.find()
     .then(allTheMoviesFromDB => {
         console.log('retrieved movies: ', allTheMoviesFromDB);
     res.render('movies', {
@@ -18,9 +18,11 @@ router.get('/movies', (req, res, next) => {
 
 
   router.get('/movies/:movieId', (req, res, next) => {
-    Movie.findById(req.params.movieId)
+    let movieId = req.params.movieId;
+    Movie.findById(movieId)
       .then(theMovie => {
-        res.render('/movie-details', { movie: theMovie });
+console.log(theMovie);
+        res.render('movie-details', { movie: theMovie });
       })
       .catch(error => {
         console.log('Error while retrieving movie details: ', error);

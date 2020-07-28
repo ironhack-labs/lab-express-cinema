@@ -1,1 +1,12 @@
-<h1>Hola</h1>{{#this.movie}}
+
+<div class="cinema">
+<img src={{this.movie.image}}>
+<a href="/movies">Go back</a>
+<h1>{{this.movie.title}}</h1>
+<h3>Director:{{this.movie.director}}</h3>
+<h4>Stars</h4>
+<p>{{this.movie.stars}}</p>
+<p>{{this.movie.description}}</p>
+<p>{{this.movie.showtimes}}</p>
+</div>
+    
