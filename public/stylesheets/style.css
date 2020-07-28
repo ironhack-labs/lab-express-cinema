@@ -1,0 +1,17 @@
+*,
+body {
+    margin: 0;
+
+}
+
+.backimg {
+    position: absolute;
+
+}
+
+.homepage {
+    width: 27%;
+    position: absolute;
+    right: 8em;
+    top: 30vh;
+}
