@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+.main-photo {
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.main-photo > div {
+  position: absolute;
+  float: right;
+  top: 30%;
+}
