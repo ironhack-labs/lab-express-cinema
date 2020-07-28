@@ -1,0 +1,11 @@
+<div class="d-flex flex-row justify-content-between flex-wrap">
+    {{#each movies}}
+        <div class="card" style="width: 18rem;">
+            <img src={{this.image}} class="card-img-top" alt={{this.image}}>
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <a href="/movies/{{this.id}}" class="btn btn-primary">See More</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
