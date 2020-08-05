@@ -1,9 +1,16 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.render('../views/movies.hbs', { title: 'Movies'});
+//movies route
+router.get('/movies', (req, res, next) => {
+    Movie.find()
+      .then(allTheMoviesFromDB => {
+        console.log('Retrieved Movies from DB:', allTheMoviesFromDB);
+        res.render('movies', { movies: allTheMoviesFromDB });
+      })
+      .catch(error => {
+          console.log('Error while getting the movies from the DB: ', error);
+      })
 });
 
 module.exports = router;
