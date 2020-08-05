@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const express = require('express');
 const favicon = require('serve-favicon');
 const hbs = require('hbs');
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
 const app_name = require('./package.json').name;
@@ -17,7 +17,8 @@ const app = express();
 
 // require database configuration
 require('./bin/configs/db.config');
-const movieRouter = require('./routes/movies.hbs');
+const indexRouter = require('./routes/index')
+const movieRouter = require('./routes/movies');
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -35,10 +36,9 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-const index = require('./routes/index');
-app.use('/', index);
-app.use('/movie', movieRouter);
 
+app.use('/', indexRouter);
+app.use('/movies', movieRouter);
 
 
 module.exports = app;
