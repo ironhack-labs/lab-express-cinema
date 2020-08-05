@@ -1,0 +1,57 @@
+/* hard reset */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* micro clear fix (clears floats) */
+.contain:before,
+.contain:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.contain:after {
+  clear: both;
+}
+.contain {
+  *zoom: 1;
+}
+
+html {
+  height: 100%; /* 01 */
+}
+
+body {
+  min-height: 100%; /* 02 */
+  /* expands to push html to the limit */
+}
+
+.movies-details-card {
+  display: flex;
+}
+
+.movies-details-card img {
+  margin: 2%;
+}
+.movie-info {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.movie-info h3 {
+  margin: 0.3em 0;
+}
+
+.movie-info ul {
+  margin: 0.2em 0;
+}
+.movie-info li {
+  text-indent: 1.5em;
+  margin: 0.3em 0;
+}

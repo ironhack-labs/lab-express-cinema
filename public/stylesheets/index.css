@@ -1,0 +1,91 @@
+/* hard reset */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* micro clear fix (clears floats) */
+.contain:before,
+.contain:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.contain:after {
+  clear: both;
+}
+.contain {
+  *zoom: 1;
+}
+
+html {
+  height: 100%; /* 01 */
+}
+
+body {
+  min-height: 100%; /* 02 */
+  /* expands to push html to the limit */
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #00b7ff;
+}
+
+main {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: flex-end;
+}
+
+.home-heading {
+  width: 50%;
+  height: 40%;
+  font-size: 3.5em;
+  display: flex;
+  justify-content: left;
+}
+
+.home-heading h1{
+  text-align: left;
+}
+
+.button-container {
+  width: 50%;
+  height: 50%;
+  display:flex;
+  align-items: flex-start;
+}
+
+.button-home {
+  font-size: 1.2em;
+  padding: 15px;
+  margin: 10px;
+  background-color:white;
+  color: green;
+  border: 0;
+  border-radius: 45px;
+  margin-top: 2em;
+}

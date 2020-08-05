@@ -1,0 +1,19 @@
+<section class="movies-details-card">
+
+    <img src="{{movie.image}}" alt="">
+
+    <div class="movie-info">
+        <h1>{{movie.title }}</h1>
+        <h3>{{movie.director }}</h3>
+        <ul>
+            <h3>Stars</h3>
+            {{#each this.movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        {{#each this.movie.showtimes}}
+        {{this}} |
+        {{/each}}
+    </div>
+</section>
