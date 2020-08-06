@@ -19,6 +19,7 @@ const app = express();
 require('./bin/configs/db.config');
 const indexRouter = require('./routes/index')
 const movieRouter = require('./routes/movies');
+const movieDetailsRouter = require('./routes/movie-details')
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -39,6 +40,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 app.use('/', indexRouter);
 app.use('/movies', movieRouter);
+app.use('/movie-details', movieDetailsRouter);
 
 
 module.exports = app;

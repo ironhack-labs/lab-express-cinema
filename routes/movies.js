@@ -13,4 +13,11 @@ router.get('/', (req, res, next) => {
       })
 });
 
+router.get('/:id', (req, res, next) => {
+    Movie.findById(req.params.id)
+        .then((movieFromDB)=> {
+            res.render('movie-details', {movie: movieFromDB})
+        })
+})
+
 module.exports = router;
