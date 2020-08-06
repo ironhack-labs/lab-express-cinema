@@ -29,10 +29,95 @@ a {
   color: white;
   font-size: 90px;
   font-weight: bold;
-  margin-bottom: 4%;
+  margin-bottom: 8%;
 }
 
 .home-content {
   width: 45%;
-  margin-top: 8%;
+  margin-top: 10%;
+}
+.home-content > a{
+  color: #6EA3B1;
+  font-weight: normal;
+  text-decoration: none;
+  border-radius: 30px;
+  border-style: none;
+  background-color: white;
+  padding: 15px 35px;
+}
+
+.movies{
+  margin: 0 2%;
+}
+
+.headings {
+  height: 20vh;
+  display: flex;
+  padding: 10px 5px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.headings > a {
+  text-decoration: none;
+}
+
+.headings > a > h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  margin: 1% 4%;
+  text-align: center;
+}
+
+.movie-card > h4 {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.movie-card > a {
+  color: #6EA3B1;
+  margin: 5px;
+}
+
+.movie-details {
+  margin: 2% 2%;
+  display: flex;
+}
+
+.movie-details-info {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.movie-details-info > a {
+  color: #6EA3B1;
+}
+
+.movie-details-info > h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.movie-details-info > h3 {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.movie-details-info > h4 {
+  font-weight: bold;
+}
+.movie-details-info > ul > li {
+  list-style-position: inside;
 }
