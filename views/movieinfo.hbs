@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row ">
+        {{#with movieInformation}}
+        <div class="col-3">
+            <img class="all-img img-fluid w-10 h-10" src={{this.image}} alt="Active"></img>
+        </div>
+
+        <div class="col-6">
+            <a href="/movies/"> Go Back</a>
+            </br>
+            <p class="font-weight-bold mt-4">{{this.title}} </p>
+            <div>
+                Director : {{this.director}}
+            </div>
+
+
+            <p class="mt-2"> Stars</p>
+            <ul id="stars">{{#each stars}}
+                <li> {{ this}} </li>
+                {{/each}}</ul>
+
+            <p>{{this.description}} </p>
+
+            {{#each showtimes}}
+            {{ this}} |
+            {{/each}}
+        </div>
+        {{/with}}
+    </div>
+</div>

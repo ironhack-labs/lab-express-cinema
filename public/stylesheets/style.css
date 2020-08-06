@@ -1,0 +1,45 @@
+body {
+  padding: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.main {
+  background: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.main h1 {
+  color: cornsilk;
+  padding-top: 20%;
+}
+
+#chk-movies-btn {
+  width: 50%;
+  height: 50px;
+  color: cadetblue;
+  border-radius: 25px;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#stars {
+  margin-top: -10px;
+}
+
+.viewMovie {
+  border: none;
+  text-decoration: revert;
+  font-weight: normal;
+  font-size: inherit;
+  margin-top: -5px;
+}
