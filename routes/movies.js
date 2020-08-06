@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
-
+const express = require('express');
+const router = express.Router();
+const Movie = require('../models/Movie.model')
 //movies route
-router.get('/movies', (req, res, next) => {
+router.get('/', (req, res, next) => {
     Movie.find()
       .then(allTheMoviesFromDB => {
         console.log('Retrieved Movies from DB:', allTheMoviesFromDB);
