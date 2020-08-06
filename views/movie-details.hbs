@@ -1,0 +1,26 @@
+<div id="movies-container">
+    <div>
+<h1>Cinema Ironhack</h1>
+<p>Movie Details</p>
+<a href="javascript:history.back()">Back</a>
+<div class="row">
+
+<div class="movie-details-card">
+    <div><img src="{{image}}" height="400" alt=""></div>
+    <div>
+        <h2>{{title}}</h2>
+        <p>Director: {{director}}</p>
+        <p>Stars:</p>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+            {{#each showtimes}}{{this}} | {{/each}}
+    </div>
+</div>
+
+</div>
+</div>
+</div>
