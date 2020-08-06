@@ -18,18 +18,25 @@ a {
 }
 
 .main h1 {
+  font-size: 5em;
   color: cornsilk;
   padding-top: 20%;
 }
-
-#chk-movies-btn {
-  width: 50%;
+#chk-movies {
+  padding-left: 15%;
+  padding-top: 15%;
+}
+#chk-movies a {
+  width: 100%;
   height: 50px;
+  padding-top: 15px;
   color: cadetblue;
   border-radius: 25px;
   border: none;
   font-size: 1em;
   font-weight: 600;
+  background-color: azure;
+  margin-top: 10px;
 }
 
 #stars {

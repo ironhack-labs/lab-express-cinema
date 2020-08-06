@@ -5,9 +5,10 @@ const movieModel = require("../models/Movie.model");
 console.log(" insode movieinfo  js ");
 
 /* GET movies page */
-router.get("/", (req, res, next) => {
+// router.get("/", (req, res, next) => {
+router.all("/", (req, res, next) => {
   console.log(" movie information page called ");
-  console.log(req.body._id);
+  console.log(req.params);
   const id = "5f2b02ef60e86539e8e96979";
   movieModel
     .find({ _id: id })
