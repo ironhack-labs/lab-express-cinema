@@ -98,15 +98,18 @@ mongoose
   })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
-    Movie.collection.drop();
+    
+    Movie.collection.drop(); //cleans the database
 
     Movie.create(movies)
         .then(moviesFromDB => {
             console.log(`created ${moviesFromDB.length} movies`);
         }).catch(err => console.log(`error seeding the DB: ${err}`))
+
     setTimeout(() => {
         mongoose.connection.close();
         mongoose.disconnect();
     }, 5000)
+    
   })
   .catch(err => console.error('Error connecting to mongo', err));
