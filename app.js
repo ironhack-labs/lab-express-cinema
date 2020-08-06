@@ -43,5 +43,5 @@ app.locals.title = "Cinema IronHack";
 
 app.use("/", index);
 app.use("/movies", moviesRouter);
-app.use("/movieinfo/:id", movieInfoRouter);
+app.use(movieInfoRouter); // "/movieinfo/:id",
 module.exports = app;
