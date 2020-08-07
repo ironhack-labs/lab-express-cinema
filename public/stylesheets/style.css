@@ -30,3 +30,16 @@ h1 {
   text-align: center;
   border-radius: 15px;
 }
+
+.main-details {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+}
