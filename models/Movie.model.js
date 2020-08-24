@@ -6,10 +6,10 @@ const movieSchema = new Schema (
     {
     title: { type: String },
 	director: { type: String },
-	stars: { type: [String] },
+	stars: { type: [] },
 	image: { type: String },
 	description: { type: String },
-	showtimes: { type: [String] },
+	showtimes: { type: [] },
     }
 );
 const Movie = model("Movie", movieSchema);
