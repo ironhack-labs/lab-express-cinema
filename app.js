@@ -38,4 +38,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+const movies = require('./routes/movies')
+app.use('/movies', movies)
+
+
+app.listen(3000, () => console.log('My first app listening on port 3000!'));
+
 module.exports = app;
