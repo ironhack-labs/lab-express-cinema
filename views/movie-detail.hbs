@@ -1,0 +1,15 @@
+<section class="row">
+  <img src="{{theMovie.image}}" alt="{{theMovie.title}} poster">
+  <div class="content">
+    <a href="/movies/">Go back</a>
+    <h3>{{theMovie.title}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each theMovie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{theMovie.description}}</p>
+    <p>{{#each theMovie.showtimes}} {{this}} |{{/each}}</p>
+  </div>
+</section>
