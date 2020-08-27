@@ -1,0 +1,12 @@
+  <div class="container">
+    <br>
+    <h1>IronHack Cinema</h1>
+    <h2>Click on the movie to check the showtimes!</h2>    
+     <a href="/" class="buttonLink" style="">Go Back to Home!</a>
+    <hr>
+    <div class="row">
+      {{#each movies}}
+      {{> moviePartial this}}
+      {{/each}}
+    </div>
+  </div>
