@@ -8,11 +8,14 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+// const sass = require('node-sass-middleware');
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
-  `${app_name}:${path.basename(__filename).split('.')[0]}`
+    `${app_name}:${path.basename(__filename).split('.')[0]}`
 );
+
+const Movie = require('./models/Movie');
 
 const app = express();
 
@@ -22,8 +25,17 @@ require('./configs/db.config');
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 app.use(cookieParser());
+/*
+app.use(sass.middleware({
+    src: __dirname + '/public/stylesheets', //where the sass files are 
+    dest: __dirname + '/public/stylesheets', //where css should go
+    debug: true // obvious
+}));
+*/
 
 // Express View engine setup
 
