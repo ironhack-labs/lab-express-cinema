@@ -1,0 +1,15 @@
+<div class="full-page">
+    <div ="main-content">
+        <div class ="header">
+        <h2 class = "movies-title">IronHack Cinema</h2>
+        <p>Click on the movie to check the showtimes!</p>    
+        <hr>
+        </div>
+    
+        <div class="movies">
+        {{#each movies}}
+        {{> movieList this}}
+        {{/each}}
+        </div>
+    </div>
+ </div>
