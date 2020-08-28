@@ -1,30 +1,15 @@
-{{!-- <div class = "titulo movie-description">
-<div>
-    <img src="{{this.image}}" alt=" {{this.title}}" class="movie-img">
-</div> --}}
+<div class="detail">
+    <div class="detailcard">
+      <img src="{{image}}">
+      <div>
+        <a href="/movies">Go Back</a>
+        <h4>{{title}}</h4>
+        <h3>{{director}}</h3>
+        <h5>{{stars}}</h5>
 
-{{!-- <div class="contenido">
-    <a href="/movies">Regresar</a>
-    <h1>{{this.title}}</h1>
-    <h2>{{this.director}}</h2>
-    <h3>Stars</h3>
-    <ul>
-      {{#each this.stars}}
-      <li>
-        {{this}}
-      </li>
-      {{/each}}
-    </ul>
-    <p>{{this.description}}</p>
-    <p>
-      {{#each this.showtimes}}
-      {{this}} |
-      {{/each}}
-      </p>
+        <p>{{description}}</p>
+        <p>{{showtimes}}</p>
+      </div>
+    </div>
   </div>
-</div>
- --}}
 
-{{#each movies}}
-{{> movieCard.hbc}}
-{{/each}}

@@ -1,14 +1,20 @@
 // To insert in "bin/seeds.js"
 
-const mongoose = require('mongoose');
-const Movie = require('../models/MovieModel');
 
 
 
 /* const baseDeDatosEjemploMai = 'lab-movies';
 mongoose.connect(`mongodb://localhost/${baseDeDatosEjemploMai}`); */
 
-const movies = [
+
+  // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+  
+  // ... your code here
+  const mongoose = require('mongoose');
+  mongoose.connect('mongodb://localhost/lab-movies')
+  const Movie = require("../models/MovieModel")
+
+  const movies = [
     {
       title: 'A Wrinkle in Time',
       director: 'Ava DuVernay',
@@ -90,20 +96,14 @@ const movies = [
       showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
   ];
-  
-  // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-  
-  // ... your code here
-
-  async function saveMovies() {
-    const allMovies = await Movie.insertMany(movies)
-        .then(movies => {
-            console.log('Las peliculas se guardaron y sus nombres son:');
-            movies.forEach(movie => console.log(movie.title));
-        })
-        .catch(err => { console.log('Ocurrio un error:', err) });
-}
-
-saveMovies() 
 
 
+  async function addMovie(){
+    const pelis=await Movie.insertMany(movies)
+    console.log("agregando las pelis")
+    pelis.forEach(pel => {
+      console.log(pel.title);
+    });
+  }
+
+  addMovie()
