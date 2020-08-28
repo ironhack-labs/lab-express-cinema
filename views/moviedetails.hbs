@@ -1,0 +1,30 @@
+{{!-- <div class = "titulo movie-description">
+<div>
+    <img src="{{this.image}}" alt=" {{this.title}}" class="movie-img">
+</div> --}}
+
+{{!-- <div class="contenido">
+    <a href="/movies">Regresar</a>
+    <h1>{{this.title}}</h1>
+    <h2>{{this.director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+      {{#each this.stars}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+    <p>{{this.description}}</p>
+    <p>
+      {{#each this.showtimes}}
+      {{this}} |
+      {{/each}}
+      </p>
+  </div>
+</div>
+ --}}
+
+{{#each movies}}
+{{> movieCard.hbc}}
+{{/each}}
