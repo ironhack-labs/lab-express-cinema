@@ -1,0 +1,82 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.dContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dInfo {
+  width: 700px;
+  padding-left: 30px;
+}
+
+.principal {
+  position: relative;
+}
+
+.fondo {
+  width: 100%;
+  padding: 0;
+}
+
+.titulo {
+  font-size: 90px;
+  position: relative;
+  top: 30;
+  right: 90px;
+  color: white;
+}
+
+.button {
+  position: absolute;
+  top:32px;
+  right: 90px;
+  color: white;
+}
+
+.button button {
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  border-style: none;
+  color: #00B7FF;
+  font-weight: bold;
+}
+
+.Pelicula {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.lContainer {
+  padding: 20px 30px;
+}
+
+.mDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+}
+
+.thumbnail-link {
+  color: #00B7FF;
+}
+
