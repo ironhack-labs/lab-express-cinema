@@ -26,16 +26,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Express Cinema';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const movies = require('./routes/movie');
+app.use('/movies', movies);
+
+const onemovie = require('./routes/onemovie');
+app.use('/movies/:id', onemovie);
 
 module.exports = app;

@@ -1,0 +1,9 @@
+<h1>Express Cinema</h1>
+<h2>Check the Movies</h2>
+{{#each everything}}
+<ul>
+<img src='{{image}}' alt='{{title}}'>
+<li>{{title}}</li>
+<li><a href='/movies/{{id}}'>See more</a></li>
+</ul>
+{{/each}}
