@@ -20,5 +20,14 @@ router.get('/movies', (req, res, next) => {
             res.render('movies', {data})
         })
 });
+router.get('/movie/:id', (req, res, next) => {
+    const {id }= req.params
+    Cinemas.findById(id)
+    .then(data => {
+        res.render('one-movie', data)
+    })
+   
+})
+
 
 module.exports = router;
