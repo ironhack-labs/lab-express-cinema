@@ -1,0 +1,10 @@
+<img src="{{movie.image}}" alt="{{movie.title}}">
+<p>{{movie.title}}</p>
+<p>{{movie.director}}</p>
+<ul>
+    {{#each movie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>{{movie.description}}</p>
+<p>{{movie.showtimes}}</p>
