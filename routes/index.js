@@ -13,7 +13,7 @@ const Cinemas = require('../models/Movie.model')
 router.get('/', (req, res, next) => res.render('index'));
 
 router.get('/movies', (req, res, next) => {
-    console.log('16')
+  //  console.log('16')
     Cinemas.find()
         .then(data => {
             console.log(data)
@@ -24,6 +24,8 @@ router.get('/movie/:id', (req, res, next) => {
     const {id }= req.params
     Cinemas.findById(id)
     .then(data => {
+       // console.log('dodo')
+       // console.log(data.stars)
         res.render('one-movie', data)
     })
    

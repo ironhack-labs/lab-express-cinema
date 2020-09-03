@@ -1,0 +1,56 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* all movies page  */
+
+.movie-preview {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+
+.all-movies-preview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+
+
+/* one movie page */
+
+.full-info {
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.one-text {
+  order: 2;
+  width: 40%
+}
+
+.one-image {
+  order:1; 
+  width: 40%;
+  margin-left: 10%;
+}
+
+.one-image img {
+  width: 70%;
+}
+.line {
+  display:inline;
+}

@@ -1,7 +1,22 @@
-
-    <div class="full-info">
+<div class="full-info">
+    <div class="one-text">
         <h1>{{title}}</h1>
+        <h3>{{director}}</h3>
+        <h4>Stars</h4>
+        <ul>
+            {{#each stars}}
+            <li>{{[]}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        {{#each showtimes}}
+            <p class='line'>{{[]}} | </p>
+        {{/each}}
+
+        
     </div>
 
-
-<h1>test</h1>
+    <div class="one-image">
+        <img src="{{image}}" alt="">
+    </div>
+</div>
