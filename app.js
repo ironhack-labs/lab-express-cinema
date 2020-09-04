@@ -38,9 +38,9 @@ const index = require('./routes/index');
 app.use('/', index);
 
 const movies = require('./routes/movie');
-app.use('/movies', movies);
+app.use('/', movies);
 
 const onemovie = require('./routes/onemovie');
-app.use('/movies/:id', onemovie);
+app.use('/:id', onemovie);
 
 module.exports = app;
