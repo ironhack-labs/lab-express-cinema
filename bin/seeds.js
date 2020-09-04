@@ -2,13 +2,6 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 
-// const DB_NAME = 'movie-project';
-
-// mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
-//   useCreateIndex: true,
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// });
 
 const movies = [
     {
