@@ -1,4 +1,10 @@
-<div class="header-wrapper">
+<div class="header">
+    <div class="nav-container">
+        <a href="/">Home</a>
+    </div>
+</div>
+<section class="main-page">
+    <div class="header-wrapper">
     <h1>Ironhack Cinema</h1>
     <p>Click on the movie to check the showtimes!</p>
 </div>
@@ -6,7 +12,7 @@
 <div class="all-movies-preview">
     {{#each data}}
     <div class="movie-preview">
-                <div class="image-preview">
+        <div class="image-preview">
             <img src="{{image}}" alt="">
         </div>
         <h5>{{title}}</h5>
@@ -15,3 +21,6 @@
     </div>
     {{/each}}
 </div>
+</section>
+
+
