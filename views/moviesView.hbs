@@ -1,0 +1,14 @@
+<main id="movies">
+  <h1>{{title}}</h1>
+  <p>Click on the movie to check the showtimes!</p>
+  <section>
+
+    {{#each movies}}
+    <article>
+      <img src="{{image}}" height="200px" alt="{{title}}">
+      <p>{{title}}</p>
+      <a href="/movies/{{_id}}">See more</a>
+    </article>
+    {{/each}}
+  </section>
+</main>

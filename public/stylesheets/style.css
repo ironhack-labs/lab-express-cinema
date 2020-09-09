@@ -8,7 +8,7 @@ a {
   color: #00B7FF;
 }
 
-main {
+#index {
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -20,7 +20,7 @@ main {
   flex-direction: row-reverse;
 }
 
-main>div {
+#index>div {
   width: 50%;
   max-width: 750px;
   height: 75%;
@@ -30,13 +30,13 @@ main>div {
   align-content: center;
 }
 
-main>div h1 {
+#index>div h1 {
   color: white;
   font-size: 6.5rem;
   margin: 2rem 0;
 }
 
-main>div a {
+#index>div a {
   margin: 1rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
@@ -50,7 +50,30 @@ main>div a {
   text-align: center;
 }
 
-main>div a:hover {
+#index>div a:hover {
   background-color: lightgray;
   box-shadow: 0 0 10px 3px rgba(255,255,255,0.5);
+}
+
+#movies {
+  width: clamp(350px, 75vw, 1050px);
+  margin: 0 auto;
+}
+
+#movies>section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+#movies>section>article {
+  justify-content: space-evenly;
+  width: 250px;
+  text-align: center;
+  margin: 1rem;
+}
+
+#movies>section>article img {
+  box-shadow: 0 0 10px 3px rgba(128,128,128,0.5);
 }
