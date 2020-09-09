@@ -6,7 +6,16 @@ router.get('/', (req, res, next) => {
 
   Movies.find()
     .then(movies => {
-      res.render('moviesView', {movies});
+      res.render('movies', {movies});
+    })
+    .catch(err => {next(err);});
+});
+
+router.get('/:id', (req, res, next) => {
+
+  Movies.findOne({_id: req.params.id})
+    .then(movie => {
+      res.render('movieDetails', {movie});
     })
     .catch(err => {next(err);});
 });

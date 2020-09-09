@@ -77,3 +77,35 @@ a {
 #movies>section>article img {
   box-shadow: 0 0 10px 3px rgba(128,128,128,0.5);
 }
+
+#movie-details {
+  display: flex;
+  width: clamp(300px, 75vw, 40rem);
+  margin: auto;
+}
+
+#movie-details article {
+  padding: 1rem;
+}
+
+#movie-details article h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+#movie-details article h2 {
+  font-size: 1.5rem;
+}
+
+#movie-details article h3 {
+  font-size: 1.1rem;
+}
+
+
+#movie-details .img-container>img {
+  padding: 1rem;
+}
+
+#movie-details article span:not(:last-child):after {
+  content: " | ";
+}
