@@ -1,8 +1,17 @@
  
+<body id='one'>
+<div class='movie-1'>
 <img src='{{image}}'>
-<p>{{title}}</li>
-<p>{{description}}</p>
-<p>[{{showtimes}}]</p>
+<h2>{{title}}</h2>
+<h3>Director: {{director}}</h3>
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p class='description'>{{description}}</p>
+<p class='description'>[{{showtimes}}]</p>
 <a href='/movies'>Go back to the list</a>
-
+</div>
+</body>
 
