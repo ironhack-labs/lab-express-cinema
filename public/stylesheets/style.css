@@ -1,33 +1,27 @@
 body {
   padding: 50px;
   font-family: sans-serif;
-  color: white;
-}
+  color: white; }
 
 .bc-index {
-  background-image: url('../images/cinema.jpg');
+  background-image: url("../images/cinema.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
+  background-size: cover; }
 
 h1 {
   font-family: sans-serif;
   font-size: 5em;
-  color: black;
-}
+  color: black; }
 
 .h1-index {
-  color:white;
-}
+  color: white; }
 
-p{
-  color: black;
-}
+p {
+  color: black; }
 
 .cinema-text {
-margin-left: 700px;
-}
-  
+  margin-left: 700px; }
+
+/*# sourceMappingURL=style.css.map */
