@@ -1,11 +1,14 @@
 <div class="container">
+    <div class="titulo">
+            <h2>Ironhack cinema</h2>
+            <p>Click on the movie to check the showtimes!</p>
+    </div>
     <div class="row">
-        <h2>Ironhack cinema</h2>
-        <p>Click on the movie to check the showtimes!</p>
-        <ul>
+
+        
             {{#each allMovies}}
-                <li>
-                    <article class="col-lg-4">
+               
+                    <article class="col-4">
                         <div class="card" style="width: 18rem;">
                             <img src="{{image}}" class="card-img-top" alt="{{title}}">
                             <div class="card-body">
@@ -15,8 +18,8 @@
                         </div>
 
                     </article>
-                </li>
+                
             {{/each}}
-        </ul>
+        
     </div>
 </div>
