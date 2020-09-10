@@ -1,0 +1,39 @@
+<section class="movie-list">
+
+<h1>Cinema Ironhack</h1>
+
+<h2>Click on the movie to check the showtimes!</h2>
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        {{#each movies}}
+
+        <article class="col-md-4 col-lg-4">
+
+            <div class="row">
+
+                <div class="col-12">
+        
+                    <img src="{{image}}" alt="movie image" />
+        
+                    <hr>
+        
+                    <h3>{{title}}</h3>
+        
+                    <a href="/movies/details/:movie_id">See more</a>
+
+                </div>
+
+            </div>
+        
+        </article>
+
+        {{/each}}
+
+    </div> 
+
+</div>
+
+</section>
