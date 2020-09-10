@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+};
+
+.hero {
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF; }
+
+/*# sourceMappingURL=style.css.map */
