@@ -1,0 +1,28 @@
+<div class="container d-flex">
+    <div class="row">
+        
+        <div class="col-4 align-items-center">
+            <img class="movie-detail" src="{{image}}" alt="{{title}}">
+        </div>
+
+        <div class="col-8">
+            <a class="back-btn btn btn-primary" href="/movies">Go back</a>
+
+            <h2>{{title}}</h2>
+            <h3>Director: {{director}}</h3>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+                {{#each showtimes}}
+                {{#if @last}}
+                {{this}}
+                {{else}}
+                {{this}} |
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+</div>
