@@ -1,42 +1,32 @@
 html, body {
-  height: 100%;
-}
+  height: 100%; }
 
 h1, h2, h3 {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 a {
   color: #00B7FF;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 a:hover {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
 article {
-  margin-top: 140px;
-}
-
-// Index section
+  margin-top: 140px; }
 
 header {
-  background-image: url('/images/cinema.jpg');
+  background-image: url("/images/cinema.jpg");
   height: 100%;
-  background-size: cover;
-}
+  background-size: cover; }
 
 header .row {
   height: 500px;
-  align-items: center;
-}
+  align-items: center; }
 
 header h1 {
   font-weight: bold;
   font-size: 4em;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 header a {
   background-color: #fff;
@@ -46,37 +36,27 @@ header a {
   font-size: 1.1em;
   padding: 20px 40px;
   border-radius: 50px;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 header a:hover {
-  text-decoration: none;
-}
-
-// Movies list section
+  text-decoration: none; }
 
 .movie-list {
   text-align: center;
-  margin: 25px 0;
-}
+  margin: 25px 0; }
 
 .movie-list h4 {
   font-size: 1em;
   font-weight: bold;
-  margin: 20px 0;
-}
-
-
-// Movie detail section
+  margin: 20px 0; }
 
 .movie-detail h1, h2, h3 {
-  margin: 15px 0;
-}
+  margin: 15px 0; }
 
 .movie-detail h2 {
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
 
 .movie-detail h3 {
-  font-size: 1em;
-}
+  font-size: 1em; }
+
+/*# sourceMappingURL=style.css.map */
