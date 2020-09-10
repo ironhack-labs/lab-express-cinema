@@ -8,6 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const sass = require('node-sass-middleware')
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
