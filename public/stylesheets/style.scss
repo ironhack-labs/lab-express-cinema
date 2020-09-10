@@ -1,4 +1,161 @@
-body {
-  padding: 50px;
-  font-family: sans-serif;
+html, body {
+  padding: 0;
+  margin:0;
+  font-family: sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
+
+.button{
+
+  padding: 15px 40px; 
+
+}
+
+ul{
+
+  padding: 0;
+  list-style-position: inside;
+
+}
+
+a{
+
+  text-decoration: underline;
+
+}
+
+a:hover{
+
+  text-decoration: none;
+
+}
+
+.button.checker{
+
+  background-color: white;
+  border-radius: 30px;
+  color: darkcyan;
+
+  font-size: 1.1em;
+
+}
+
+/* Check movies Section */
+
+.check-movies{
+  
+  height: 100vh;
+
+  background-image: url('../images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+}
+
+.check-movies div{
+
+  position: absolute;
+  top: 20%;
+  right: 10%;
+
+  width: 600px;
+  
+
+}
+
+.check-movies h1 {
+
+  color:white;
+  font-size: 7em;
+  font-weight: 900;
+  margin-bottom: 40px;
+
+}
+
+/* OFFER */
+
+.offer{
+
+  text-align: center;
+  padding: 60px 0
+
+}
+
+.offer img{
+
+  display: block;
+
+  margin: 0 auto
+
+}
+
+.offer h2{
+
+  margin-top: 15px;
+
+  font-size: 1em;
+  font-weight: 900;
+
+}
+
+.film-card{
+
+  padding: 20px
+
+}
+
+.offer p{
+
+  margin-bottom: 30px;
+
+}
+
+/* DETAILS */
+
+.details{
+
+  padding: 60px 0
+
+}
+
+.details img {
+
+  max-height: 300px;
+
+}
+
+.details h1 {
+
+  font-size: 1.6em;
+  font-weight: 900;
+
+  margin-top: 10px
+
+}
+
+.details h2 {
+
+  font-size: 1.2em;
+  font-weight: 900;
+
+}
+
+.details h3 {
+
+  font-size: 1em;
+  font-weight: 900;
+
+}
+
+.details p, .details li{
+
+  font-size: .9em;
+
+}
+
+.details .horas {
+
+  margin: 0
 }

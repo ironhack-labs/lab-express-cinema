@@ -1,0 +1,45 @@
+<section class="container details">
+
+    <div class="row justify-content-start">
+
+        <div class="col-lg-3 d-flex justify-content-center align-items-center">
+
+            <img src="{{image}}" alt="{{title}} film cover">
+
+        </div>
+
+        <div class="col-lg-9">
+
+            <a href="/movies/all">Go back</a>
+
+            <h1>{{title}}</h1>
+
+            <h2>{{director}}</h2>
+
+            <h3>Stars</h3>
+
+            <ul>
+                {{#each stars}}
+
+                <li>{{this}}</li>
+
+                {{/each}}
+            </ul>
+
+            <p>{{description}}</p>
+
+            <div class="row horas">
+
+                {{#each showtimes}}
+
+                <p>{{this}}{{#unless @last}} |{{/unless}}&nbsp</p>
+
+                {{/each}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

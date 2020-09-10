@@ -1,0 +1,28 @@
+<section class="container offer">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+
+    <div class="row justify-content-around">
+
+        {{#each films}}
+
+        <div class="col-md-6 col-lg-4">
+
+            <div class="film-card">
+
+                <img src="{{image}}" alt="{{title}} film cover">
+                <h2>{{title}}</h2>
+                <a href="/movies/{{id}}">See more</a>
+
+            </div>
+
+        </div>
+
+
+        {{/each}}
+
+
+    </div>
+
+
+</section>
