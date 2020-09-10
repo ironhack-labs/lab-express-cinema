@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-size: 10px;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+
+.home-container {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/cinema.jpg') 0% 0% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container h1 {
+    font-size: 15rem;
+    color: white;
+    margin-left: 1130px;
+    padding-top: 140px;
+}
+
+.home-container a {
+    color: #00B7FF;
+    background: white;
+    padding: 25px 50px;
+    font-size: 3rem;
+    border-radius: 80px;
+    margin-left: 1130px;
+    margin-top: 40px;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.home-container a:visited {
+    text-decoration: none;
+    color: #00B7FF;
+}
+
+.movies-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.movies-text h1 {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 3rem;
+}
+
+.movies-text p {
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.movie h1 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+.movie a {
+    font-size: 1.3rem;
+    color: #00B7FF;
+    text-decoration: none;
+}
+
+.movie a:visited {
+    text-decoration: none;
+    color: #00B7FF;
+}
+
+.movie-info-container {
+    display: flex;
+    width: 60%;
+}
+
+.movie-info-container img {
+    height: 300px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.movie-info-text {
+    margin-top: 10px;
+}
+
+.movie-info-text a {
+    font-size: 1.3rem;
+    color: #00B7FF;
+    text-decoration: none;
+}
+
+.movie-info-text h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+}
+
+.movie-info-text h2 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.movie-info-text ul {
+    margin: 20px 0;
+}
+
+.movie-info-text li {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.movie-info-text p strong {
+    font-size: 2.3rem;
+}
+
+.movie-info-text p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.showtimes {
+    margin-top: 20px;
+}
+
+.showtimes span {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
