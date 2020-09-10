@@ -1,0 +1,16 @@
+const express = require('express')
+const router = express.Router()
+const Movies = require('../models/Movie.model')
+
+
+// Endpoints
+router.get('/', (req, res) => res.render('index'))
+
+router.get('/movies', (req, res) => {
+
+    Movies.find()
+        .then(movies => res.render('movies', {movies}))
+        .catch(err => console.log("Err: ", err))
+})
+
+module.exports = router
