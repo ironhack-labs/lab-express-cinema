@@ -1,0 +1,26 @@
+
+
+
+
+<section class="container movies">
+   <h1 class="titleList"><a href="/">Ironhack Cinema</a></h1>
+    <div class="row justify-content-around">
+
+     
+
+
+        {{#each movies}}
+
+        <div class="col-md-6 col-lg-4 card text-center tarjeta2">
+            <img src="{{image}}" alt="Películas">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a class="button" href="/movies/{{id}}">See more</a>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</section> 
