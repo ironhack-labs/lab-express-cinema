@@ -1,0 +1,32 @@
+
+<article class="container">
+    <div class= "d-flex">
+        <img src="{{image}}" alt="">
+        <div class= "ml-4">
+            <h1>{{title}}</h1>
+        <h4>Director: {{director}}</h4>
+        <p>stars</p>
+        <ul>
+            {{#each stars}}
+
+            <li>{{this}}</li>
+
+            {{/each}}
+
+        </ul>
+        <br>
+         <p>{{description}}</p>
+        <br>
+        <p>
+            {{#each showtimes}}
+            {{this}}
+            {{/each}}
+        </p> 
+
+
+        </div>
+        
+
+    </div>
+    
+</article>
