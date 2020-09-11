@@ -1,11 +1,19 @@
+
 <h2> {{title}} </h2>
 <p>Click on the movie to check the showtimes!</p>
 
+<div class='container'>
+    <div class= 'row row-cols-1 row-cols-md-3'>
 
-{{#each movies}}
+        {{#each movies}}
+            <div class="col mb-4">
+                <img src='{{image}}' class='card-img-top' alt='{{title}}'>
+               <div class="card-body">
+                    <h4 class='card-title'>{{title}}</h4>
+                    <a href="/movies/details/{{id}}">See more</a>
+                </div>
+            </div>
+        {{/each}}
 
-    <img src='{{image}}' alt='Movie poster'>
-    <h5>{{title}}</h5>
-    <a href='/movies/details/{{_id}}'>See more</a>
-
-{{/each}}
+    </div>
+</div>

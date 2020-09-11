@@ -1,16 +1,20 @@
-require('dotenv').config()
-const mongoose = require('mongoose');
-const Movie = require('../models/Movie.model');
+// require('dotenv').config()
 
-mongoose.connect(`mongodb://localhost/${process.env.DB}`, { useNewUrlParser: true, useUnifiedTopology: true })
+const mongoose = require('mongoose')
+const Movie = require('../models/Movie.model')
 
-.then(self => {
-  console.log(`Connected to the database: "${self.connection.name}"`);
-  return self.connection.dropDatabase();
-})
+mongoose.connect('mongodb://localhost/express-cinema-dev', { useNewUrlParser: true, useUnifiedTopology: true })
 
-.then(() => {
-  return Movie.create ([
+// .then(self => {
+//   console.log(`Connected to the database: "${self.connection.name}"`);
+//   return self.connection.dropDatabase();
+// })
+
+// .then(() => {
+//   return Movie.create ([
+
+
+const movies = [
     {
       title: 'A Wrinkle in Time',
       director: 'Ava DuVernay',
@@ -91,11 +95,14 @@ mongoose.connect(`mongodb://localhost/${process.env.DB}`, { useNewUrlParser: tru
         "Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.",
       showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
-  ])
-})
+  ]
+//   )
+// })
 
-.then(allMoviesCreated => console.log('Se han creado', allMoviesCreated.length, 'movies in the BBDD'))
+// .then(allMoviesCreated => console.log('Se han creado', allMoviesCreated.length, 'movies in the BBDD'))
+// mongoose.connection.close()
+// .catch(err => console.log('ERROR: ', err))
 
-mongoose.connection.close()
-
-.catch(err => console.log('ERROR: ', err))
+Movie.create(movies)
+    .then(allMoviesCreated => console.log('Se han creado', allMoviesCreated.length, 'movies in the BBDD'))
+    .catch(err => console.log("Ups, an error happened: ", err))  

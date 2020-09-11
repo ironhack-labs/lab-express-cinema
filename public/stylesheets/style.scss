@@ -3,10 +3,27 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.home {
+  background-image: url("../images/cinema.jpg"); 
+  position: fixed; 
+  background-size: cover;
+  top: 0; 
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  color: white;
 }
 
-main .home {
-  background-image: url('./images/cinema.jpg')
+.home h1{
+  font-size: 6rem;
+  font-weight: 700;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  width: 400px;
+}
+
+.home a {
+  color: #00B7FF;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
