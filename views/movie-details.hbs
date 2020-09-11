@@ -1,0 +1,26 @@
+<main class="container movies-background" >
+    <div class="row movie-box">
+        {{#each movieDetails}}
+        <div class="col-4">
+            <img src="{{image}}" alt="{{title}}" class="img-movie">
+        </div>
+        <div class="col-8">
+            <h3>{{title}}</h3>
+            <h4>{{director}}</h4>
+                {{#each stars}}
+                    <ul>
+                        <li>{{[]}}</li>
+                    </ul>
+                {{/each}}
+        
+            <p>{{description}}</p>
+                {{#each showtimes}}
+                <strong>{{[]}} |</strong> 
+                {{/each}}
+        </div>
+        {{/each}}
+            <a href="/movies" class="button-back">Go back!</a>
+        
+        </div>
+        
+</main>

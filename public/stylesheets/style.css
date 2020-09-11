@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap');
+
+body {
+    padding: 50px;
+    background: url(../images/cinema.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1{
+    font-weight: 500;
+    color: white;
+    font-size: 6em;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 40px;
+}
+
+a {
+    color: #00B7FF;
+    font-size: 1.2em;
+}
+
+p{
+    text-align:justify;
+}
+
+.button-check{
+    background-color:white;
+    padding: 15px 40px;
+    border-radius:40px;  
+
+}
+
+.button-back{
+    background-color:rgb(159, 33, 33);
+    color:white;
+    padding: 10px 20px;
+    border-radius:10px;  
+    display:block;
+    margin:0 auto;
+    margin-bottom: 50px;
+
+}
+
+.movies-background{
+    background-color:hsla(0, 0%, 100%, 1);
+    padding:50px;
+    border-radius: 30px;
+
+}
+
+.movies-list{
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+.movie-box{
+    width:80%;
+    height: 70%;
+}
+
+.img-movie{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.movie-tile{
+    padding-top: 20px;
+}
