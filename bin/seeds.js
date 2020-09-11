@@ -1,18 +1,10 @@
-// require('dotenv').config()
-
 const mongoose = require('mongoose')
 const Movie = require('../models/Movie.model')
 
-mongoose.connect('mongodb://localhost/express-cinema-dev', { useNewUrlParser: true, useUnifiedTopology: true })
+const dbName = 'lab-ironhack-cinema'
+mongoose.connect(`mongodb://localhost/${dbName}`, { useNewUrlParser: true, useUnifiedTopology: true })
 
-// .then(self => {
-//   console.log(`Connected to the database: "${self.connection.name}"`);
-//   return self.connection.dropDatabase();
-// })
-
-// .then(() => {
-//   return Movie.create ([
-
+//Movie.collection.drop()
 
 const movies = [
     {
@@ -96,13 +88,8 @@ const movies = [
       showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
   ]
-//   )
-// })
-
-// .then(allMoviesCreated => console.log('Se han creado', allMoviesCreated.length, 'movies in the BBDD'))
-// mongoose.connection.close()
-// .catch(err => console.log('ERROR: ', err))
 
 Movie.create(movies)
     .then(allMoviesCreated => console.log('Se han creado', allMoviesCreated.length, 'movies in the BBDD'))
+    //mongoose.connection.close()
     .catch(err => console.log("Ups, an error happened: ", err))  
