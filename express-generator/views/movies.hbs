@@ -1,7 +1,20 @@
-<h1>Estos son las pelis de {{title}}!</h1>
-
-<ul>
-    {{#each movies}}
-    <p>{{title}}</p>
-    {{/each}}
-</ul>
+<main>
+    <section class="fondo-movies">
+        <div class="container">
+            <a href="/">Go back</a>
+            <div class="row-4">
+                <div class="col-12">
+                    <ul>
+                        {{#each movies}}
+                        <li></li> <img class="fotos-movies" src="{{image}}" alt="{{title}}"></li>
+                        <li><p style="color: aliceblue;">{{title}}</p></li>
+                        <li><a href="/movie/{{_id}}">See more</a></li>
+                        <br>
+                        <br>
+                        {{/each}}
+                    </ul>  
+                </div>
+            </div>
+        </div>    
+    </section>
+</main>
