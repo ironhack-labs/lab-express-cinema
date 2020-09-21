@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { Schema , model } = mongoose;
+const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
         title: String,
@@ -10,6 +10,6 @@ const movieSchema = new Schema({
         showtimes: [String]
 });
 
-const Movie = new model('Movie', movieSchema);
+const Movie = mongoose.model("Movie", movieSchema);
 
 module.exports = Movie;

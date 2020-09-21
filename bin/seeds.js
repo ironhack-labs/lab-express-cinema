@@ -2,7 +2,7 @@ require("dotenv").config();
 const mongoose = require('mongoose');
 const Movie = require("../models/Movie");
 
-mongoose.connect(process.env.MONGO_URL,  {
+mongoose.connect(process.env.MONGODB_URI,  {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true

@@ -1,0 +1,28 @@
+.backgroundImg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.text {
+  position: absolute;
+  color: #ffffff;
+  right: 200px;
+  top: 70px;
+  max-width: 600px;
+}
+
+.text  h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 8rem;
+}
+
+.text p {
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding: 5px;
+    color: lightblue;
+    border-radius: 10%;
+  }

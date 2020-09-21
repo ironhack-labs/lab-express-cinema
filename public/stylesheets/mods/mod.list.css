@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-direction: column;
+    text-align: center;
+}
+
+.item a {
+    color: lightblue;
+    text-decoration: underline;
+}
