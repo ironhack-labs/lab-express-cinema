@@ -1,8 +1,49 @@
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: 'Advent Pro', sans-serif;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* padding: 50px; */
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  background-image: url(/images/cinema.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  position: relative;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+  font-size: 20px;
+
 }
+
+#checkmovies {
+  background-color: whitesmoke;
+  width: 240px;
+  height: 60px;
+  position: absolute;
+  top: 380px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  box-shadow: 2px 2px 8px black;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+
+}
+
+#title {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
