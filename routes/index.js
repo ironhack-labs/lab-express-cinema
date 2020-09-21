@@ -31,4 +31,26 @@ router.get("/movies", (req, res, next) => {
      });
  });
 
+/* GET movie details page*/
+
+
+// router.get("/moviesdet/:id", (req, res) => {
+//     res.render("moviesdet", {
+//       css: ["stylemoviesdet"],
+//     });
+//   });
+
+
+  router.get("/moviesdet/:id", (req, res, next) => {
+  
+    const movieId = req.params.id;
+    Movie.findById(movieId)
+      .then((dbResult) => {
+        res.render("moviesdet",  { movies: dbResult, css: ["stylemoviesdet"],}); // Redirect to "/labels" after delete is successful
+      })
+      .catch((error) => {
+        next(error); // Sends us to the error handler middleware in app.js if an error occurs
+      });
+  });
+
 module.exports = router;

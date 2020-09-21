@@ -1,0 +1,27 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'Advent Pro', sans-serif;
+  }
+
+
+body {
+    background-color: whitesmoke;
+}
+
+#mainmoviesdet {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+#filmimage {
+    /* border: 1px solid green; */
+    margin-right: 20px;
+}
+
+
+
+h1 {
+    margin: 20px 0 80px 50px;
+}

@@ -12,7 +12,7 @@ body {
 }
 
 #moviescheck {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   margin: 50px 100px;
@@ -20,7 +20,7 @@ body {
 }
 
 #mainmovies {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
