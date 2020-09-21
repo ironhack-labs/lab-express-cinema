@@ -1,0 +1,30 @@
+body {
+    padding: 50px;
+}
+
+#movie-details {
+    display: flex;
+    margin-top: 40px;
+}
+
+.image {
+    margin-right: 20px;
+    width: 20vw;
+}
+
+.movie-data {
+    width: 40vw;
+}
+
+.stars {
+    font-weight: bold;
+}
+
+.show-times {
+    display: inline;
+	list-style: none;
+}
+
+.show-times-list {
+    padding: 0;
+}

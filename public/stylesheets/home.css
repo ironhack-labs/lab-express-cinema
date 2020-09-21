@@ -1,0 +1,29 @@
+body {
+  background: url("/images/cinema.jpg") top left/cover no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home {
+  width: 100vw;
+}
+
+#home-content {
+    margin-top:80px;
+    margin-right: 200px;
+    width: 20vw;
+
+}
+
+.check {
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+h1.title {
+  font-size: 80px;
+  color: white;
+  margin-bottom:40px;
+}

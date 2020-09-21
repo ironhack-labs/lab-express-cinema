@@ -1,0 +1,22 @@
+body {
+    padding: 50px;
+}
+
+#movie-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.item {
+    width: 26vw;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
