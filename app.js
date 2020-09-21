@@ -6,7 +6,6 @@ const express = require('express');
 const favicon = require('serve-favicon');
 const hbs = require('hbs');
 const mongoose = require('mongoose');
-const logger = require('morgan');
 const path = require('path');
 
 const app_name = require('./package.json').name;
@@ -20,7 +19,6 @@ const app = express();
 require('./configs/db.config');
 
 // Middleware Setup
-app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());

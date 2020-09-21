@@ -1,5 +1,5 @@
 require("dotenv").config();
-const Movie = require("../models/Movie");
+const Movie = require("../models/Movie.model");
 const mongoose = require("mongoose");
 
 const movies = [
