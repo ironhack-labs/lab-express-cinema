@@ -10,4 +10,12 @@ router.get("/movies", async (req, res) => {
     res.render("movies", { movie });
 });
 
+router.get("/movies-details/:id", (req, res, next) => {
+    MoviesModel.findById(req.params.id)
+      .then((dbRes) => {
+        res.render("movieDetails", { movie: dbRes });
+      })
+      .catch(next);
+  });
+
 module.exports = router;

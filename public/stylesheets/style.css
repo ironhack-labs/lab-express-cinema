@@ -49,8 +49,19 @@ body {
 #all-movies .table-movies {
   display: flex;
   flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
 }
 
 #all-movies .movie {
-  width: 33%;
+  margin: 10px;
+  width: 30%;
+}
+
+#detailed-movie {
+  display: flex;
+}
+
+.showtime {
+  display: flex;
 }
