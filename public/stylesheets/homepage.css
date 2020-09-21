@@ -1,0 +1,26 @@
+body {
+    background-image: url("/images/cinema.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#home-title {
+    font-size: 7rem;
+    color: white;
+}
+
+.align-right {
+    position: absolute;
+    width: 40%;
+    right: 4%;
+}
+
+.btn-check-movies {
+    background-color: #fff;
+    color: cornflowerblue;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
