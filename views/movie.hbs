@@ -1,0 +1,20 @@
+<div class="oneMovie">
+    <img id="pict" src="{{movie.image}}" alt="{{movie.name}}" style="max-width: 200px">
+    <div>
+        <p id="title">{{movie.title}}</p>
+        <p>director: {{movie.director}}</p>
+        <p>stars:</p>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <div id="movieshowtimes">
+            {{#each movie.showtimes}}
+            <p>{{this}}</p>
+            <hr>
+            {{/each}}
+        </div>
+    </div>
+</div>
