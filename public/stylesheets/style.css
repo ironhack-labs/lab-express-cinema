@@ -1,6 +1,17 @@
+/* MY FAVORITE PART : CSS !! */
+
+* {
+  box-sizing: border-box;
+}
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+#home {
+  width : 100vw;
+  height : 100vh;
   background-image: url("/images/cinema.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,13 +23,12 @@ body {
   width : 500px;
 }
 
-h1 {
+#title h1 {
   color : white;
   font-size : 7em;
-  margin-top: 0;
 }
-a {
-  /* color: #00B7FF; */
+
+#title a {
   color : #6a9491;
   border : black solid 1px;
   border-radius: 30px;
@@ -27,6 +37,28 @@ a {
   font-size : 1.3em;
   padding : 20px 40px;
 }
+
+.movie-list {
+  margin-top : 50px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+  row-gap: 50px;
+  align-items: center;
+}
+
+.movie {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.movie a {
+  color: #00B7FF;
+
+}
+
 
 
 
