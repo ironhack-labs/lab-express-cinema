@@ -54,6 +54,7 @@ body {
 }
 
 #all-movies .movie {
+  text-align: center;
   margin: 10px;
   width: 30%;
 }
@@ -64,4 +65,24 @@ body {
 
 .showtime {
   display: flex;
+}
+
+#detailed-movie .text-detailed{
+  padding: 15px;
+}
+
+.director {
+  padding: 10px 0px;
+}
+
+.description {
+  padding: 10px 0px;
+}
+
+#detailed-movie {
+  margin: 20px;
+}
+
+#detailed-movie .title{
+  padding-top: 10px;
 }

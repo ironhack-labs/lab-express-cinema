@@ -1,12 +1,12 @@
 <section id="detailed-movie">
 
     <div>
-        <a href="/movies">Go back</a> <br>
         <img src="{{movie.image}}" alt="">
-        </div>
+    </div>
     <div class="text-detailed">
-        <p class="title">{{movie.title}}</p>
-        <p class="director">Director: {{movie.director}}</p>
+        <a href="/movies">Go back</a> <br>
+        <h1 class="title">{{movie.title}}</h1>
+        <h3 class="director">Director: {{movie.director}}</h3>
         <p class="stars">Stars
         <ul>
             {{#each movie.stars}}
@@ -16,10 +16,10 @@
             {{/each}}
         </ul>
         </p>
-        <p>{{movie.description}}</p>
+        <p class="description">{{movie.description}}</p>
         <div class="showtime">
             {{#each movie.showtimes}}
-            <p>{{this}} |</p>
+            <p>{{this}} | </p>
             {{/each}}
         </div>
     </div>
