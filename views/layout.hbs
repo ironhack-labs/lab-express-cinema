@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{title}}</title>
   <link rel="stylesheet" href="/stylesheets/style.css" />
+  {{#each css}}
+    <link rel="stylesheet" href="/stylesheets/{{this}}.css">
+  {{/each}}
 </head>
 <body>
 

@@ -1,4 +1,8 @@
-@import url("./homepage.css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   padding: 50px;
@@ -17,10 +21,48 @@ a {
   flex-direction: column;
 }
 
+#cinema-title {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+  display: block;
+}
+
+#cinema-title:hover{
+  color: blue;
+}
+
 .movie-list {
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .movie-card {
- margin: 50px; 
+ margin: 50px;
+ text-align: center; 
+
+}
+
+#movie-title {
+  padding: 10px 0;
+}
+
+#movie-poster {
+  margin: 30px;
+  height: 350px;
+}
+
+.movie-details {
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.container {
+  border: 1px solid grey;
+  width: 90%;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.shadow {
+  box-shadow: 2px 2px 2px 2px grey;
 }

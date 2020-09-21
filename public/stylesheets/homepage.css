@@ -1,26 +1,49 @@
 body {
     background-image: url("/images/cinema.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 #home-title {
     font-size: 7rem;
     color: white;
+    margin-bottom: 50px;
 }
 
 .align-right {
     position: absolute;
     width: 40%;
     right: 4%;
+    padding: 50px;
 }
 
 .btn-check-movies {
     background-color: #fff;
-    color: cornflowerblue;
     border: 1px solid black;
     border-radius: 2rem;
     padding: 20px;
     text-decoration: none;
     font-size: 1.25rem;
+}
+
+@media (max-width:1200px) {
+    #home-title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #home-title {
+        font-size: 3rem;
+    }
+    .btn-check-movies {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .align-right {
+        right: 0;
+    }
 }

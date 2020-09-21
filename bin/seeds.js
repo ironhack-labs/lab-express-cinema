@@ -85,27 +85,11 @@ const movies = [
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
 require("dotenv").config();
+require("../configs/db.config.js");
 const Movie = require("../models/Movie.model.js");
-const mongoose = require('mongoose');
 
-mongoose
-  .connect("mongodb://localhost/dev-squad-248", {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then((self) =>
-    Movie.create(movies)
-    .then((dbResult) => {
-        console.log(dbResult)
-    })
-    .catch(err => console.error('Error: ', err))
-  )
-  .catch(err => console.error('Error: ', err));
-
-/*
-Movie.insertMany(movies)
+Movie.create(movies)
 .then(dbRes => console.log(dbRes))
 .catch(dbErr => console.log(dbErr));
 
-  */
+  
