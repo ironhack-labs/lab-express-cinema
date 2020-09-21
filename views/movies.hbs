@@ -1,0 +1,14 @@
+<h1>All the movies</h1>
+<section class="allMovies">
+
+
+{{#each movie}}
+<div class="eachmovies">
+<h2>{{this.title}}</h2>
+<br>
+<img src="{{this.image}}" alt="{{this.title}} poster"><br>
+<a href="/movie/{{this._id}}">See More</a>
+</div>
+{{/each}}
+
+</section>
