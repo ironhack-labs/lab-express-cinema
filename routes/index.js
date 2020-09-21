@@ -10,7 +10,7 @@ router.get('/movies', async (req, res, next) => {
 });
 
 router.get('/movie/:id', async (req, res, next) => {
-    res.render
-})  
+    res.render('movie', { movie:  await Movie.findById(req.params.id), css: ['/stylesheets/mods/mod.list.css'] });
+}) ; 
 
 module.exports = router;
