@@ -73,7 +73,7 @@ const movies = [{
 // ... your code here
 
 mongoose
-    .connect('mongodb://localhost/express-cinema-dev', {
+    .connect(process.env.URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
