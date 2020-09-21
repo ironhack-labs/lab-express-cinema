@@ -34,4 +34,13 @@ body a:hover {
 
 .movie-wrap {
   display:flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 91%;
+}
+.item{
+  width: 200px;
+  margin: 5%;
+
 }
