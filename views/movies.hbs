@@ -1,1 +1,20 @@
-<h1>LOLO</h1>
+<div id="title">
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+
+</div>
+
+
+<div id="mainmovies">
+
+{{#each movies}}
+<div id="moviescheck">
+    <img src="{{this.image}}" alt="">
+    {{title}}
+    <a href="">See more</a>
+   </div>
+{{/each}}
+
+</div>
+
+
