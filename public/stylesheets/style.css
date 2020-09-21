@@ -1,5 +1,11 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
+  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,22 +13,58 @@ a {
   color: #00B7FF;
 }
 
-body a {
-  background-color: #fff;
-  color: #00B7FF;
-  border-radius: 50px;
-
+#iron-cinema {
+    margin-left: 5%;
+    padding-top: 2%;
 }
+
+
+#iron-cinema p{
+ margin-top: 1%;
+}
+
 
 body a:hover {
   text-decoration: none; }
 
-.home{
+#home{
   background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
 }
   
+#home .title {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#home h1 {
+  color: white;
+  font-size: 5rem;
+  width: 50%;
+}
+
+
+#home a {
+  background-color: #fff;
+  color: #00B7FF;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  padding: 1em;
+  max-width: 11em;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
 
 .info-main-container{
   display: flex;
