@@ -1,0 +1,10 @@
+@import url("./mod.home.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}

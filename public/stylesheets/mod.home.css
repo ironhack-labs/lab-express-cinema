@@ -1,0 +1,39 @@
+#index {
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  right: 60px;
+  bottom: 150px;
+}
+
+#cinema-title {
+  color: white;
+  font-size: 60px;
+ 
+}
+.check-movie {
+  height: 50px;
+  width: 180px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-movie a {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(67, 179, 179);
+}
