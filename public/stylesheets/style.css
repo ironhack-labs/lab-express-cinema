@@ -23,3 +23,15 @@ body a:hover {
   background-size: cover;
 }
   
+
+.info-main-container{
+  display: flex;
+}
+
+.info-futher-container{ 
+  margin-left: 2%;
+}
+
+.movie-wrap {
+  display:flex;
+}
