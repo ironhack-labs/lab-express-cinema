@@ -1,0 +1,21 @@
+<h2>Check Informations</h2>
+<div>
+    <img src="{{movies.image}}" alt="image">
+    <h3>{{movies.title}}</h3>
+    <p>Director : {{movies.director}}</p>
+    <ul>
+        <h2>Stars</h2>
+        {{#each movies.stars}}
+        <li>
+            {{this}}
+        </li>
+        {{/each}}
+    </ul>
+    <p>{{movies.description}}</p>
+
+    <p>
+        {{#each movies.showtimes}}
+        {{this}} |
+        {{/each}}
+    </p>
+</div>

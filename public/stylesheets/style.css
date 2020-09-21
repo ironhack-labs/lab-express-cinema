@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
+#movies {
+  border: 2px solid black;
+}
+
 #title-button {
   display: flex;
   flex-direction: column;
