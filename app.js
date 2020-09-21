@@ -8,6 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const PORT = 8080;
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
@@ -37,5 +38,7 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.use(require(".routes/movies"));
 
 module.exports = app;
