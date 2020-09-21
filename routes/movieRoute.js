@@ -12,18 +12,14 @@ router.get ('/', function (req, res, next){
 
 });
 
-// router.post('/:id', function (req,res, next){
-//     const movieId=req.params.id;
-//     if (movieId){
-//         movieId.classList.remove("hidden");
-        
-//     }
-//     .then((idResult) =>{
-//         res.redirect("/movie");
-//     })
-//     .catch((error)=>{
-//         next(error);
-//     });
-// });
+router.get('/see-more/:id', function (req,res, next){
+   Movie.findById(req.params.id)
+    .then((idResult) =>{
+        res.render("seeMore", {idResult});
+    })
+    .catch((error)=>{
+        next(error);
+    });
+});
 
 module.exports= router;

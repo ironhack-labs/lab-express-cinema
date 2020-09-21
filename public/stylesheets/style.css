@@ -12,11 +12,74 @@ a {
   color: #00B7FF;
 }
 
+/*index.hbs*/
+
 #index{
   background-image: url(/images/cinema.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  
+ 
   
 }
+
+#index h1{
+  font-size: 130px;
+  margin-right: 70px;
+  
+
+}
+
+#index a{
+  margin-right: 70px;
+  font-size: 30px;
+  text-decoration: none;
+  background-color: #857c7c59;
+  padding: 10px 10px ;
+  border-top: 1px solid #333333;
+  border-radius: 5%;
+}
+
+/*movie.hbs*/
+
+.title{
+  margin: 20px 0 0 40px;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  
+}
+
+
+.column{
+  display: flex;
+  flex-direction:column;
+  margin: 50px;
+  align-items: center;
+ 
+
+}
+
+.column a, li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.column li {
+  font-weight: bold;
+}
+
+
