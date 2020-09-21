@@ -66,3 +66,29 @@ h1 {
 .rounded-btn:hover {
   transform: scale(0.95);
 }
+
+.list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 15px;
+  grid-row-gap: 25px;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.list.grid .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.list.grid h2 {
+  margin-bottom: 5px;
+}
+
+.header {
+ margin-left: 35px;
+}
