@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  box-sizing: content-box;
 }
 
 body {
@@ -8,29 +7,50 @@ body {
 }
 
 #home-page {
-  width: 100vw;
-  height: 100vh;
   background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 100vh;
 }
 
-#home-page h1{
+#home-page .title {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#home-page h1 {
   color: white;
-  font-size: 17vh;
-  width: 50%;
+  font-size: 10em;
 }
 
 #home-page a {
-  padding-top: 0.5%;
+  padding: 20px 40px;
+  border: solid 1px black;
   text-align: center;
   text-decoration: none;
-  width : 15%;
-  height: 3%;
   background-color: white;
-  color: #00B7FF;
-  border-radius: 25%;
-  font-size: 2vh;
+  color: #00b7ff;
+  border-radius: 30px;
+  font-size: 1.3em;
+  width : max-content;
+  margin-top: 5%;
+}
+
+#all-movies {
+  display: flex;
+  flex-direction: column;
+}
+
+#all-movies .table-movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#all-movies .movie {
+  width: 33%;
 }
