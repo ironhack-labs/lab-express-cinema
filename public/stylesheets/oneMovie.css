@@ -1,0 +1,12 @@
+.holder {
+	display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin-left: 50px;
+}
+
+.dabox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

@@ -1,0 +1,20 @@
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    
+.column {
+    flex-direction: column;
+    margin: 70px;
+    display: flex;
+    align-content: content;
+    text-align: center;
+
+}
+
+p {
+    font-size: large;
+    
+}

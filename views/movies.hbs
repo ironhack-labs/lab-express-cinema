@@ -1,0 +1,9 @@
+<div class="container">
+        {{#each theMovies}}
+    <div class="column container">
+        <img src="{{this.image}}" alt="moviepic">
+        {{this.title}}
+        <a href="/movie/{{this._id}}">See more</a>
+    </div>
+        {{/each}}
+</div>

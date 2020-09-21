@@ -1,0 +1,20 @@
+<div class="dabox">
+    <img src="{{theMovie.image}}" alt="movpic">
+
+    <div class="holder">
+        <a href="/movies">Go back</a>
+        {{theMovie.title}}
+        {{theMovie.director}}
+        <ul>
+            {{#each theMovie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{theMovie.description}}
+        <p>
+            {{#each theMovie.showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+    </div>
+</div>
