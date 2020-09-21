@@ -14,6 +14,10 @@ a {
   color: #00b7ff;
 }
 
+ul {
+  padding-inline-start: 20px;
+}
+
 h1 {
   font-size: 4em;
   margin: 15px 0px 15px 0px;
@@ -61,6 +65,11 @@ h1 {
   box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: transform 200ms ease;
+  text-decoration: none;
+}
+
+.rounded-btn.back {
+  width: 15%;
 }
 
 .rounded-btn:hover {
@@ -79,7 +88,7 @@ h1 {
 .list.grid .item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -90,5 +99,27 @@ h1 {
 }
 
 .header {
- margin-left: 35px;
+  margin-left: 35px;
+}
+
+.movie-container {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.movie-infos {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.movie-img {
+  width: 30%;
+  text-align: center;
+}
+
+.back-btn {
+  padding: 40px 0px 10px 100px;
 }

@@ -8,8 +8,8 @@
     {{#each movies}}
     <li class="item">
         <img src={{this.image}} alt="movie-img">
-        <h2>{{this.title}}</h2>
-        <a href="/">see more</a>
+        <h3>{{this.title}}</h3>
+        <a class="rounded-btn blue-background"href="/movies/{{this._id}}">see more</a>
     </li>
     {{/each }}
 </ul>

@@ -1,0 +1,36 @@
+<div class="back-btn">
+    <a href="/movies">
+        <button class="rounded-btn blue-background back">back</button>
+    </a>
+</div>
+
+
+<div class="movie-container">
+
+    <div class="movie-img">
+        <img src={{selectedMovie.image}} alt="movie-img">
+    </div>
+
+    <div class="movie-infos">
+
+        <h1>{{selectedMovie.title}}</h1>
+        <h2>{{selectedMovie.director}}</h2>
+
+        <ul>
+            {{#each selectedMovie.stars}}
+            <li>
+                {{this}}
+            </li>
+            {{/each}}
+        </ul>
+
+        <p>{{selectedMovie.description}}</p>
+
+        <p>
+            {{#each selectedMovie.showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+    </div>
+
+</div>
