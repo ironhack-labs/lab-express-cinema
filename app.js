@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+require("./configs/db.config");
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express = require('express');
@@ -15,6 +15,8 @@ const debug = require('debug')(
 );
 
 const app = express();
+
+const movieRouter = require("./routes/movies")
 
 // require database configuration
 require('./configs/db.config');
