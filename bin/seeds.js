@@ -1,3 +1,7 @@
+require("dotenv").config();
+const Movie = require("../models/Movie");
+const mongoose = require("mongoose");
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -82,5 +86,23 @@ const movies = [
 ];
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((self) => {
+    Movie.create(movies)
+      .then((dbResult) => {
+        console.log(dbResult);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
 
 // ... your code here
