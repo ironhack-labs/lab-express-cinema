@@ -1,0 +1,68 @@
+/* BLUE #76aecb */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 15px 0px 15px 0px;
+}
+
+.flex-container.column {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.index {
+  background-image: url("https://images.unsplash.com/photo-1493804714600-6edb1cd93080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title {
+  margin-left: 100px;
+}
+
+.title h1 {
+  color: #ffffff;
+}
+
+.blue-background {
+  background-color: #76aecb;
+  color: white;
+}
+
+.white-background {
+  background-color: white;
+  color: #76aecb;
+}
+
+.rounded-btn {
+  width: 50%;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 13px;
+  font-weight: 700;
+  box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.rounded-btn:hover {
+  transform: scale(0.95);
+}
