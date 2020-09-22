@@ -1,0 +1,156 @@
+.title.single {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+
+.movie-single .movie-image {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-single.card {
+    background-color: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+
+    margin: 0 30px;
+    display: flex;
+}
+
+
+.movie-single .card-content {
+    padding: 20px;
+}
+
+/*
+.movie-single {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.movie-single.card {
+    background-color: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+
+    /*box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    color: #333;
+}
+*/
+
+.movie-single .card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-single .title {
+    margin-bottom: 10px;
+    padding-left: 100px;
+    font-size: 18px;
+}
+
+.movie-single .director {
+    padding-left: 100px;
+    font-size: 14px;
+}
+
+.btn-back {
+    top: -3px;
+}
+
+.movie-single h4 {
+    margin-top: 80px;
+
+}
+
+.movie-single .list-star {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 5px;
+
+}
+
+
+
+.movie-single .list-star-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 0
+}
+
+.fa-star {
+    padding-right: 5px;
+    font-size: 10px;
+}
+
+.showtime {
+    padding: 0 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border-right: solid 1px;
+}
+
+.showtime:last-child {
+    border: 0;
+}
+
+@media (min-width: 576px) {
+    .movie-single {
+        margin: 0;
+    }
+
+    .movie-single .movie-image {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    .movie-single {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .movie-single.card {
+        background-color: #eee;
+        border-radius: 3px;
+        overflow: hidden;
+
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+        color: #333;
+    }
+
+    .movie-single .title {
+        margin-bottom: 10px;
+        padding-left: 0px;
+        font-size: 24px;
+    }
+    
+    .movie-single .director {
+        padding-left: 0px;
+        font-size: 18px;
+    }
+
+    .movie-single h4 {
+        margin-top: 10px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

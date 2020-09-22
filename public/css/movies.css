@@ -1,0 +1,59 @@
+body {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.list.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
+    grid-gap: 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.list.grid .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: lightgray;
+    max-width: 300px;
+
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.list.grid .item .cover-movie {
+    width: 100%;
+    height: auto;
+}
+
+.header-movies {
+    background-color: #101;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-movies .title-page {
+    font-size: 32px;
+}
+
+.header-movies .sub-title {
+    font-size: 18px;
+}
+
+.movies .title-movie {
+    color: white;
+    background-color: #101;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.movies .content-btn {
+    margin: 10px 0;
+}

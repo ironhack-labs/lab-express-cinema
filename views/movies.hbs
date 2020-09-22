@@ -1,0 +1,20 @@
+<header class="header-movies flex-h-center">
+    <div class="container">
+        <h1 class="title-page">{{title}}</h1>
+        <p class="sub-title">{{subtitle}}</p>
+    </div>
+</header>
+<div class="container movies">
+
+    <div class="list grid">
+        {{#each movies}}
+        <div class="list grid item">
+            <img class="cover-movie" src="{{this.image}}" />
+            <h2 class="title-movie">{{this.title}}</h2>
+            <div class="content-btn">
+                <a href="/movies/{{this._id}}" class="btn btn-more">See more</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

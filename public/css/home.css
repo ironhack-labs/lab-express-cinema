@@ -1,0 +1,36 @@
+.header-home {
+
+    background-image: url('../images/cinema.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    min-height: 668px;
+}
+
+.heading-content {
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding-top: 30px;
+    padding-right: 30px;
+
+}
+
+.home-title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: white;
+
+    padding: 30px 0;
+
+    width: 250px;
+}
+
+.bg-home {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,33 @@
+<h1 class="title single">
+    Your Movie
+</h1>
+
+<div class="container">
+    <div class="movie-single card ">
+        
+        <img class="movie-single movie-image" src="{{movie.image}}" alt="{{movie.title}}" />
+        <div class="movie-single card-content">
+            <a href="/movies" class="btn-back">> Go back</a>
+            <h2 class="title margin-b-10">{{movie.title}}</h2>
+            <h3 class="movie-single director margin-b-10">Director: {{movie.director}}</h3>
+            <h4>Stars</h4>
+            <ul class="movie-single list-star">
+                {{#each movie.stars}}
+                <li class="movie-single list-star-item">
+                    <i class="fas fa-star"></i>{{this}}
+                </li>
+                {{/each}}
+            </ul>
+
+            <p class="movie-single description p-v-10">
+                {{movie.description}}
+            </p>
+
+            <p class="single-movie showtimes">
+            {{#each movie.showtimes}}
+                <span class="showtime">{{this}}</span>
+            {{/each}}
+            </p>
+        </div>
+    </div>
+</div>
