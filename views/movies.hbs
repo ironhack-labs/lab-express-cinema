@@ -2,9 +2,12 @@
 <p>Click on the movie to check the showtimes!</p>
 
 <div>
-    {{#each Movies}}
-    <li>
-        <p>{{this.title}}</p>
-    </li>
-    {{/each}}
+    <ul>
+        {{#each Movies}}
+        <li>
+            <p>{{this.title}}</p>
+        </li>
+        {{/each}}
+    </ul>
+
 </div>
