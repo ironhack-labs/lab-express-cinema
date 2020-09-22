@@ -40,6 +40,9 @@ const index = require("./routes/index");
 app.use("/", index);
 
 const movies = require("./routes/movies");
-app.use("/", movies);
+app.use("/movies", movies);
+
+const moviesDetails = require("./routes/movies-details");
+app.use("/", moviesDetails);
 
 module.exports = app;
