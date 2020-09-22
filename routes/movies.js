@@ -6,8 +6,8 @@ router.get("/movies", async (req, res) => {
   //* if you keep  the arguments movies here, remove it in the app.js, and vice-versa
 
   const Movies = await Movie.find();
-  console.log(Movies);
-  res.render("movies.hbs", Movies);
+  console.log(req.body);
+  res.render("movies.hbs", {Movies});
 });
 
 module.exports = router;

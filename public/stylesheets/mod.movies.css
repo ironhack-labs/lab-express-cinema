@@ -1,0 +1,39 @@
+#header-movies {
+    margin: 2%;
+}
+
+#header-movies h1, p {
+    margin: 1%;
+}
+
+#movies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#movies-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movies-container ul li {
+  list-style: none;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#movies-container ul li div,
+p {
+  margin-bottom: 10px;
+}
+
+#movies-container ul li p {
+    margin-bottom: 20px;
+}
+
+#movies-container ul li div a {
+    color: rgb(48, 150, 150);
+}
