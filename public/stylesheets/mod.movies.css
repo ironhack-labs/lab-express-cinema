@@ -1,0 +1,15 @@
+div {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;;
+}
+
+section {
+	width: 100%;
+	text-align: center;
+}
+
+section img {
+	display: block;
+	margin: auto;
+}

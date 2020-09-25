@@ -1,9 +1,11 @@
 <h1>Cinema Ironhack</h1>
 <p class="subtitle">Click on the movie to check the showtimes!</p>
+<div>
 {{#each movies}}
-<section>
-	<img src="{{this.image}}" alt="movie poster of {{this.title}}">
-	<h2>{{this.title}}</h2>
-	<a href="/movies/{{this.title}}">See More >></a>
-</section>
+	<section>
+		<img src="{{this.image}}" alt="movie poster of {{this.title}}">
+		<h2>{{this.title}}</h2>
+		<a href="/movies/{{this.title}}">See More >></a>
+	</section>
 {{/each}}
+</div>
