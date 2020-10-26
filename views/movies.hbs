@@ -1,0 +1,16 @@
+<!-- movies.hbs -->
+<div class="container white-bg">
+    <div class="row p-5">
+        <div class="col-12">
+            <div>
+                <h3>Ironhack Cinema</h3>
+                <h5 style="">Click on the movie to check the showtimes!</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {{#each movies}}
+        {{> movieCard this}}
+        {{/each}}
+    </div>
+</div>

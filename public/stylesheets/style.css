@@ -1,0 +1,47 @@
+body {
+    background: url(../images/cinema.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1.title {
+    font-size: 7rem;
+    font-weight: 700;
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.btn-home {
+    background-color: white;
+    border: 0;
+    padding: 20px 50px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    transition: all .3s ease-in-out;
+}
+
+.btn-home:hover {
+    background-color: white;
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,.3); */
+    box-shadow:5px 5px 10px rgba(0,0,0,0);
+}
+
+.btn-home > a {
+    color: #679dad;
+    font-size: 1.7rem;
+}
+
+.btn-home > a:hover {
+    color: #679dad;
+    text-decoration: underline;
+}
+
+.h100{
+    min-height: 100vh;
+}

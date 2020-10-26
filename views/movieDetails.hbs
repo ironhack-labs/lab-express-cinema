@@ -1,0 +1,23 @@
+<div class="container white-bg h100">
+    <div class="row p-5">
+        <div class="col-12 col-md-3">
+            <img class="d-block mx-auto" src="{{movie.image}}" alt="">
+        </div>
+        <div class="col-12 col-md-9">
+            <a href="/movies">Go Back</a>
+            <h1>{{movie.title}}</h1>
+            <h3>Director: {{movie.director}}</h3>
+            <h5>Stars</h3>
+            <ul style="padding-left: 15px">
+                <li>{{movie.stars.[0]}}</li>
+                <li>{{movie.stars.[1]}}</li>
+                <li>{{movie.stars.[2]}}</li>
+            </ul>
+            <p>{{movie.description}}</p>
+            <p style="display: inline">| </p>
+            {{#each movie.showtimes}}
+            <p style="display:inline">{{this}} |</p>
+            {{/each}}
+        </div>
+    </div>
+</div>
