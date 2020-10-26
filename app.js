@@ -39,3 +39,6 @@ const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
+
+app.listen(3000, () => console.log('Connected to port 3000 - Library app'));

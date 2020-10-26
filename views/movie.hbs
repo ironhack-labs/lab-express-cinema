@@ -1,0 +1,24 @@
+<div>
+    <img src="{{movie.image}}" alt="equisde">
+</div>
+
+<div>
+    <a href="/movies">Go Back</a>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}} </h3>
+    <p>Stars:</p>
+    <ul>
+        <li>
+            {{movie.stars.[0]}}
+        </li>
+        <li>
+            {{movie.stars.[1]}}
+        </li>
+        <li>
+            {{movie.stars.[2]}}
+        </li>
+    </ul>
+    <p> {{movie.desription}}</p>
+
+    <p>{{movie.showtimes.[0]}} | {{movie.showtimes.[1]}} | {{movie.showtimes.[2]}} | {{movie.showtimes.[3]}}|</p>
+</div>
