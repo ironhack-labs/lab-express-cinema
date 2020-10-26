@@ -1,9 +1,11 @@
-<h2>Listing Movies</h2>
-<div>
+<h2>Ironhack Cinema</h2>
+<h3>Click on the movie to check the showtimes!</h3>
+<div class="div_movies_page">
    {{#each allMovies}}
-    <img src="{{this.image}}" alt="portada">
-    <br>
-    <h3>{{this.title}}</h3>
-    <a href="/movie/{{this._id}}">See more</a>
+   <div class="div_movies">
+      <img src="{{this.image}}" alt="portada" class="image">
+      <h4>{{this.title}}</h4>
+      <a href="/movie/{{this._id}}">See more</a>
+   </div>
    {{/each}}
 </div>
