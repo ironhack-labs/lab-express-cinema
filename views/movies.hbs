@@ -1,0 +1,12 @@
+{{!-- view of all movies --}}
+<main class='allMovies'>
+    {{#each movies}}
+    <div class='eachMovie'>
+          <img src="{{image}}" alt="peli"><br>
+        <h3>{{title}}</h3><br>
+        <a href='/movie/{{_id}}'>See more</a>
+    </div>
+  
+
+{{/each}}
+</main>
