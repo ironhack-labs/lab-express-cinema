@@ -16,6 +16,20 @@ const debug = require('debug')(
 
 const app = express();
 
+/* mongoose
+  .connect('mongodb://localhost/lab-express-cinema', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(x => {
+    console.log(
+      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+    );
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err);
+  });
+ */
 // require database configuration
 require('./configs/db.config');
 
@@ -39,3 +53,5 @@ const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
+app.listen(3000, () => console.log('Project listens on 3000!!'))
