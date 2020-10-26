@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "DEBUG=starter-code:* nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
@@ -14,6 +13,7 @@
     "hbs": "^4.1.1",
     "mongoose": "^5.9.13",
     "morgan": "^1.10.0",
+    "node": "^15.0.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
