@@ -19,6 +19,15 @@ const app = express();
 // require database configuration
 require('./configs/db.config');
 
+mongoose
+  .connect('mongodb://localhost/express-cinema-dev', {useNewUrlParser: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -36,6 +45,10 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
+const movie = require('./routes/movie');
 app.use('/', index);
+app.use('/movies', movie);
 
 module.exports = app;
+
+app.listen(3000, () => console.log('Movies project is on 3000'))
