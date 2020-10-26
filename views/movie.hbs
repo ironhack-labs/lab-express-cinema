@@ -1,0 +1,18 @@
+    {{!-- title:String,
+    director:String,
+    stars:[String],
+    image:String,
+    description:String,
+    showtimes:[String] --}}
+
+    <h1>{{movie.title}}</h1>
+    <img src='{{movie.image}}'>
+    <ul>
+        {{#each movie.stars}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>{{#each movie.showtimes}}
+    {{this}} |
+    {{/each}}</p>
