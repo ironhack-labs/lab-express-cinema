@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#index-page {
+  background-image: url('../images/cinema.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#index-page > div {
+  margin: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 700px;
+}
+
+#index-page h1 {
+  color: white;
+  font-size: 150px;
+  wrap: wrap;
+  font-weight: 700;
+}
+
+#index-page a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 30px;
+  padding: 25px 50px;
+  border-radius: 40px;
+  box-shadow: 0 5px 10px 0 black;
+}
+
+#movies-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 40px 80px;
+}
+
+#movies-page > h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#movies-page > p {
+  font-size: 20px;
+}
+
+#movies-page > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.movie-card {
+  width: 30%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.movie-card > h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.movie-card > a {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+#details-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 70px 50px;
+  width: 70%;
+}
+
+.movie-details {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.movie-details > h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.movie-details > h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.movie-details > h5 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.stars li {
+  font-size: 15px;
+  margin-top: 5px;
+  list-style-type: initial;
+  list-style-position: inside;
+}
+
+.movie-details > p {
+  font-size: 15px;
+  margin-top: 15px;
+  width: 700px;
+}
+
+.showtimes {
+  display: flex;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.showtimes > li {
+  margin-right: 5px;
+}
