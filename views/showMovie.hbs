@@ -8,11 +8,15 @@
             <p><strong>{{movies.title}}</strong></p>
             <p><strong>Director: </strong>{{movies.director}}</p>
             <p><strong>Stars: </strong>
-            <ul>
-                <li>{{#each movies}} {{this.stars}}{{/each}}</li>
-            </ul>
+            <ul>{{#each movies.stars}} 
+                <li>{{this}}</li>
+            {{/each}}</ul>
             </p>
             <p></strong> {{movies.description}}</p>
-            <p>{{movies.showtimes}}</p> 
+            <p>{{#each movies.showtimes}}
+                {{this}} |
+                {{/each}}
+            </p> 
+
         </div>
     </div>
