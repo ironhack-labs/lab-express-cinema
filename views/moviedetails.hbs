@@ -4,19 +4,19 @@
     <p>{{movie.title}}</p>
     <p>{{movie.director}}</p>
 
-    {{#stars}}
+    {{#each movie.stars}}
         <div>
             <ul>
-                <li>{{this.stars}}</li>
+                <li>{{this}}</li>
             </ul>
         </div>
-    {{/stars}}
+    {{/each}}
     <p>{{movie.description}}</p>
-    {{#showtimes}}
+    {{#each movie.showtimes}}
         <div>
             <ul>
-                <li>{{this.showtimes}}</li>
+                <li>{{this}}</li>
             </ul>
         </div>
-    {{/showtimes}}
+    {{/each}}
 </div>
