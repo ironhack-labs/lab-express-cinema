@@ -3,8 +3,10 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 
-const dbtitle = 'LAB-EXPRESS-CINEMA';
-mongoose.connect(`mongodb://localhost/${dbtitle}`, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb://localhost/express-cinema-dev`, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const movies = [
     {
