@@ -1,0 +1,14 @@
+HELLO
+
+
+{{#each movies }}
+
+<div>
+    <h4>{{this.title}}</h4>
+    <img src={{this.image}} />
+    <a href="/movies/{{this.id}}">View Movie</a>
+</div>
+
+{{/each}} 
+
+

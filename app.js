@@ -19,6 +19,14 @@ const app = express();
 // require database configuration
 require('./configs/db.config');
 
+// const DB_NAME = 'movies-project';
+ 
+// mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
+//   useCreateIndex: true,
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -36,6 +44,10 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
+const router = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
+
+
