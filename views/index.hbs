@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>my imdb</h1>
+<p>Welcome !</p>
+<div>
+    {{#each movies}}
+    <h1>{{this.title}}</h1>
+    <img src="{{this.image}}" alt="Artist picture">
+    <a href="/seemore/{{this.id}}">see more</a>
+
+
+    {{/each}}
+</div>
