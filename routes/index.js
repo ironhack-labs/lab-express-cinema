@@ -1,15 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const Movie = require('../models/Movie.model')
-// const data = require('../bin/seeds.js');
-// console.log(data);
+
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
-// Movie.insertMany(data);
+
 const movies = require("../bin/seeds.js")
+
 router.get("/movies", async (req, res, next) => {
 
-  // async function getMovies() {
     const movie = await Movie.find().catch(err => {
       console.log('Error in fetching data');
     });
@@ -19,11 +18,22 @@ router.get("/movies", async (req, res, next) => {
       console.log(movie)
       res.render("movies", { movie });
     }
-  // }
 
-  // getMovies()
 });
 
+router.get("/movies/:id", async (req, res, next) => {
+
+    const movie = await Movie.findById(req.params.id).catch(err => {
+      console.log('Error in fetching data');
+    });
+
+    if (movie) {
+      console.log("encottradi");
+      console.log(movie)
+      res.render("seeMore", { movie });
+    }
+
+});
 
 
 module.exports = router;
