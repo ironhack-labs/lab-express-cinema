@@ -16,6 +16,10 @@ const debug = require('debug')(
 
 const app = express();
 
+
+// Register the location for handlebars partials here:
+hbs.registerPartials(`${__dirname}/views/partials`)
+
 // require database configuration
 require('./configs/db.config');
 
@@ -38,9 +42,14 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
-app.get("/movies", (req, res) => {
-  res.sendFile(`${__dirname}/views/movies.hbs`)
-})
+app.get("/movies", (req, res) => res.render("movies"))
+
+//esta no sirve, preguntar qué hace .use y porqué no podemos usar libremente verbo gett ac-a
+// app.get("/movies", (req, res) => {
+//   res.sendFile(`${__dirname}/views/movies.hbs`)
+// })
+
+
 
 module.exports = app;
 
