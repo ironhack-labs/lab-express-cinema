@@ -85,4 +85,4 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-// ... your code here
+module.exports = movies;
