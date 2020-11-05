@@ -42,7 +42,6 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
-app.get("/movies", (req, res) => res.render("movies"))
 
 //esta no sirve, preguntar qué hace .use y porqué no podemos usar libremente verbo gett ac-a
 // app.get("/movies", (req, res) => {
