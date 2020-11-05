@@ -84,5 +84,8 @@ const movies = [
 ];
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+const Movie = require('../models/Movie.model')
+Movie.insertMany(movies);
+// console.log("db");
 
-module.exports = movies;
+// module.exports = movies;
