@@ -6,21 +6,21 @@ const Movie = require('../models/Movie.model')
 router.get('/', (req, res, next) => res.render('index'));
 
 
-router.get("/movies", (req, res, next) => {
+router.get("/movies", async (req, res, next) => {
 
-  async function getMovies() {
-    const response = await Movie.find().catch(err => {
+  // async function getMovies() {
+    const movie = await Movie.find().catch(err => {
       console.log('Error in fetching data');
     });
 
-    if (response) {
+    if (movie) {
       console.log("encottradi");
-      console.log(response)
-      res.render("movies", { response });
+      console.log(movie)
+      res.render("movies", { movie });
     }
-  }
+  // }
 
-  getMovies()
+  // getMovies()
 });
 
 
