@@ -38,6 +38,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+app.get("/movies", (req, res) => {
+  res.sendFile(`${__dirname}/views/movies.hbs`)
+})
+
 module.exports = app;
 
 app.listen(3000, () => {
