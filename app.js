@@ -39,3 +39,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
+app.listen(3000, () => {
+  console.log("listening on: http://localhost:3000")
+})
