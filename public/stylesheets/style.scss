@@ -1,8 +1,22 @@
 body {
+  background-image: '/public/images/cinema.jpg';
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+#container{
+  display: flex;
+  align-self: right;
+  align-items: left;
+}
+
+h1{
+  text-align: left;
+  color: white;
+}
+
 a {
+  background-color: white;
+  border-radius: 25%;
   color: #00B7FF;
 }

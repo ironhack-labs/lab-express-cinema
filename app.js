@@ -36,6 +36,18 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
-app.use('/', index);
+app.use('/', index)
+
+app.get('/movies', (req, res) => {
+  res.render('movies' {movies})
+})
+
+app.get('/movies/:id', (req, res) => {
+  res.render('movie', {movie: req.params.movie})
+})
+
+app.listen(3000, () => {
+  console.log('Listening on port 3000')
+})
 
 module.exports = app;
