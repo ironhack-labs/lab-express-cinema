@@ -1,0 +1,28 @@
+<div class="headline-container">
+    <h2>Movie Details</h2>
+    <p>Find all showtimes here!</p>
+    <a href="/movies">Go Back</a>
+</div>
+
+<div class="main-details-container">
+    <img src="{{this.image}}">
+
+    <div class="middle-details-container">
+
+        <h3>{{title}}</h3>
+        <h4>Director: {{director}}</h4>
+        <p>Stars:</p>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p>{{description}}</p>
+        <ul class="showtimes-list">
+        {{#each showtimes}}
+        <li class="showtimes-list-item">{{this}} | </li>
+        {{/each}}
+        </ul>
+    </div>
+</div>

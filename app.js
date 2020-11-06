@@ -16,6 +16,18 @@ const debug = require('debug')(
 
 const app = express();
 
+// added from seeds.js line 6 till 12
+const DB_NAME = 'movies-list';
+ 
+mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+
+
+
 // require database configuration
 require('./configs/db.config');
 
@@ -33,9 +45,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+// app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const movies = require('./routes/movies');
+app.use('/movies', movies);
 
 module.exports = app;
