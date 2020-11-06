@@ -15,6 +15,8 @@ const debug = require('debug')(
 );
 
 const app = express();
+const router= express.Router();
+const Movie = require('../lab-express-cinema/models/Movie.model')
 
 // require database configuration
 require('./configs/db.config');
@@ -37,5 +39,22 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.get("/", (req, res) => {
+  res.render("index")
+  
+})
+
+// app.get("/movies", (req, res) => {
+//   res.render("movies.hbs")
+// })
+router.get("/movies", (req,res,next) =>{
+  Movie.find(movies)
+  .then(allTheMoviesFromSB =>{
+    res.render("movies.hbs", {movies: allTheMoviesFromSB});
+  })
+  .catch(error =>console.log("Error while getting the movies from the DB;", error))
+});
+
 
 module.exports = app;
