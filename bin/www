@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+PORT=3000
 const http = require('http');
 
 let app = require('../app');

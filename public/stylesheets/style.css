@@ -1,0 +1,44 @@
+/*#00B7FF*/
+
+body {
+  padding: 0px;
+  margin:0;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+ 
+}
+
+
+/* Index */
+.home{
+
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 300px;
+  
+}
+
+#btn-check {
+  background-color: white;
+  color: #80A28D;
+  border-radius: 20px;
+  padding:10px;
+  border: none;
+}
+
+h1{
+  color: white;
+  font-size: 6em;
+}
+
+
+  
+ 
+
