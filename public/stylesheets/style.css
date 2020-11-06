@@ -1,0 +1,31 @@
+
+#imgMovies {
+  background-image: url("/images/cinema.jpg");
+  position: absolute;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#home-title {
+  font-family: sans-serif;
+  font-size: 7rem;
+  color: white;
+  text-align: right;
+  margin-right: 50px;
+  font-weight: 800;
+}
+
+#btn-check-movies {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: cornflowerblue;
+  border-radius: 2rem;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-left: 950px;
+  
+} 
