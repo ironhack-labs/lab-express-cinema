@@ -96,7 +96,7 @@ mongoose
   .catch(err => console.error('Error connecting to mongo', err));
 
 
-Movie
-.insertMany(movies)
-.then(r=>{console.log("Movies have been added")})
-.catch(error=>console.log("An error has occurred"))
+// Movie
+// .insertMany(movies)
+// .then(r=>{console.log("Movies have been added")})
+// .catch(error=>console.log("An error has occurred"))
