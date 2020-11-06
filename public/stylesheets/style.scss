@@ -3,6 +3,15 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1 + a {
+  color: #679dad !important;
+  background-color: whitesmoke!important;
+}
+
+.background-img {
+  background: none url('../images/cinema.jpg') center contain no-repeat !important;
+  // background-image: url('../images/cinema.jpg')!important;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: contain;
 }

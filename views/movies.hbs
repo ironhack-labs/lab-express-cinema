@@ -1,0 +1,21 @@
+<h3 class="display-4 my-3 mx-4"><strong>Ironhack Cinema</strong></h3>
+<p class="mx-5">Click on the movies to check the showtimes!</p>
+
+{{#if noData}}
+<a href="/movies">Please refresh the page in order to see the movies.</a>
+{{else}}
+<div class="d-flex justify-content-center">
+    <div class="card-deck d-flex justify-content-around align-items-baseline" style="width:50rem; height: auto;">
+        {{#each movies}}
+        <div>
+            <div class="card p-3 m-3 " style="border: 0;">
+                <a href='/movie/{{_id}}' class=" mx-auto"><img src={{image}} class="card-img-top mx-auto"
+                        style="width:fit-content; height: auto;" alt="movie-img"></a>
+                <p class="card-title my-2 text-center"><strong>{{title}}</strong></p>
+                <a href='/movie/{{_id}}' class="card-text text-center">See more</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/if}}

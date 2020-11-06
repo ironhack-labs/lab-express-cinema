@@ -1,0 +1,24 @@
+<div class="container my-5">
+    <div class="d-flex justify-content-center align-items-around">
+        <div class="">
+            <img src={{image}} alt=""></div>
+        <div class="mx-4">
+            <a href="/movies"><small>Go Back</small></a>
+            <h3><strong>{{title}}</strong></h3>
+            <h4><strong>{{director}}</strong></h4>
+            <strong>Stars</strong>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            <p>
+                {{#each showtimes}}
+                {{this}} |
+                {{/each}}
+            </p>
+        </div>
+    </div>
+
+</div>

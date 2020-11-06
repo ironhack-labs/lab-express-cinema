@@ -33,9 +33,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Movies';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const Movie = require('./models/Movie.model');
+app.get('/movies', async (req, res) => {
+  const movies = await Movie.find()
+  if (!movies) return res.render({ movies, noData: true });
+  return res.render('movies', { movies, noData: false });
+});
+
+app.get('/movie/:id', async (req, res) => {
+  const { id } = req.params;
+  const movie = await Movie.findById(id);
+  res.render('movie', movie);
+
+})
+
 
 module.exports = app;
