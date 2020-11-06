@@ -1,0 +1,26 @@
+header{
+    height:650px;
+    background-image: url("../images/cinema.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    position: relative;
+}
+
+header h1{
+    font-size: 90px;
+    color: white;
+    text-align: right;
+
+
+}
+
+.h1-cinema{
+    width: 80%;
+}
+
+.button-alignment{
+    margin-top: 5%;
+    margin-left: 80%;
+}

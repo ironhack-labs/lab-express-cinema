@@ -15,6 +15,7 @@ const debug = require('debug')(
 );
 
 const app = express();
+hbs.registerPartials(`${__dirname}/views/partials`)
 
 // require database configuration
 require('./configs/db.config');
