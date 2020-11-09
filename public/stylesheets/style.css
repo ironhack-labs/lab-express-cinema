@@ -1,0 +1,87 @@
+body {
+    font-family: 'Nunito',
+        sans-serif;
+    color: rgb(129, 13, 13);
+    height: 100%;
+    width: 100%;
+}
+
+.homepage {
+    min-width: 800px;
+    min-height: 600px;
+    background-color: red;
+    background-image: url("/images/cinema.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homepage h1 {
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px white;
+    color: rgb(129, 13, 13);
+}
+
+.check-movies-button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 1%;
+    margin: 1%;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.all-movies {
+    background-color: rgb(129, 13, 13);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.oneMovie {
+    padding: 2%;
+    margin: 1%;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-details {
+    background-color: rgb(129, 13, 13);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.info,
+.image-wrap {
+    padding: 1%;
+    margin: 1%;
+}
+
+.movie-details a {
+    color: white;
+    padding: 1%;
+}
