@@ -7,10 +7,9 @@ const Movie = require('../models/Movie.model')
 router.get('/movies', (req, res, next) => {
     Movie.find({})
         .then((allMoviesDB) => {
-            console.log(allMoviesDB),
-                res.render('movies', {
-                    allMoviesDB
-                })
+            res.render('movies', {
+                allMoviesDB
+            })
         })
         .catch((error) => `Error while fetching all movies: ${error}`)
 });
