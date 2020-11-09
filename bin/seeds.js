@@ -94,7 +94,6 @@ const movies = [
 
 Movie.create(movies)
       .then((moviesFromDB) => {
-        console.log(`Created ${moviesFromDB.length} movies`);
         mongoose.connection.close();
       })
       .catch((err) =>

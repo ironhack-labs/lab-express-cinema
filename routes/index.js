@@ -18,7 +18,6 @@ router.get('/movies/:id', (req, res) => {
     const { id } = req.params;
     Movie.findById(id)
     .then((movieFromDB) => { 
-        console.log(`Here we will show the movie: `, movieFromDB);
         res.render("movie-details", movieFromDB )
     })
     .catch((err) => console.log(`failed to load the /movie's page: ${err}`))

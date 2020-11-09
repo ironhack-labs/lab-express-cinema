@@ -1,12 +1,24 @@
 <div class="container-fluid movies">
     <div class="row">
-         
-            <div class="col-4">
-                <button> <a href="/">Go Back</a></button>
-                <h3 class="movies-title">{{this.title}}</h3>
-                <img src="{{this.image}}" alt="{{this.title}}">
-                
-            </div>     
-       
+        <div class="col-3">
+            <h3 class="movies-title">{{this.title}}</h3>
+            <img src="{{this.image}}" alt="{{this.title}}">
+        </div>
+        <div class="col-6">
+            <h5>Director: {{this.director}}</h5>
+            <p>Stars: </p>
+            <br>
+            <ul>
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}  
+            </ul>
+            <h6>{{this.description}}</h6>
+            {{#each this.showtimes}}
+            <span>{{this}} |</span>
+            {{/each}} 
+            <br>
+            <button> <a href="/movies">Go Back</a></button> 
+        </div>
     </div>
 </div>
