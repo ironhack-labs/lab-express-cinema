@@ -4,6 +4,7 @@ body {
     color: rgb(129, 13, 13);
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 .homepage {
@@ -57,8 +58,17 @@ body {
 .oneMovie {
     padding: 2%;
     margin: 1%;
-    width: 200px;
+    width: 300px;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oneMovie a {
+    color: white;
+    font-weight: 600;
 }
 
 .movie-details {
