@@ -64,3 +64,23 @@ button {
   padding: 1.5rem;
   text-align: center;
 }
+.movie-info {
+  display: flex;
+  justify-content: flex-start;
+  width: 90vw;
+  padding: 10rem;
+}
+.movie-info-left {
+  display: flex;
+}
+.movie-info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 600px;
+  padding-left: 3rem;
+}
+.movie-info ul {
+  padding-left: 2rem;
+}
