@@ -1,0 +1,14 @@
+<a>Go back</a>
+<h2>{{foundMovie.title}}</h2>
+<br>
+<h3>{{foundMovie.director}}</h3>
+
+    {{#each foundMovie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+<p>{{foundMovie.description}}</p>
+{{#each foundMovie.showtimes}}
+<li>{{this}}</li>
+<hr/>
+{{/each}}
+<hr>

@@ -1,0 +1,16 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#cinema{
+  background-image: url('/images/cinema.jpg');
+}
+
+.chk-button{
+  border-radius: 1em;
+}
