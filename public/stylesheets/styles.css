@@ -1,0 +1,81 @@
+
+.htmlLayout { 
+    background: url(/images/cinema.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .indexH1 {
+      color: white;
+      font-size: 80px;
+      margin-bottom: 10px;
+  }
+
+  .indexA{
+      text-decoration: none;
+      color: #8ab;
+      font-size: 15px;
+  }
+
+  .layoutDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-right: 100px;
+  }
+
+  .indexBtn{
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+      margin-right: 100px;
+      margin-top: 0px;
+      padding: 10px;
+      border-radius: 25px;
+      position: relative;
+      /* cant get button to not stretch left when I enlarge page */
+  }
+
+  .container {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin-left: 150px;
+  }
+
+  .moviesDiv {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-right: 0px;
+  }
+
+  .moviesA {
+      display: flex;
+      justify-content: center;
+      color: #8ab;
+      margin-bottom: 10px;
+      margin-top: 0px;
+  }
+
+  .moviesh4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .detailsDiv {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .textDiv {
+      margin-left: 20px;
+  }
+
+  .detailsA {
+    color: #8ab;
+  }
