@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+h1 {
+  color: white;
+  font-size: 6rem;
+  width: 300px;
+}
+
+body {
+  font-size: calc(1rem + 0.2vw);
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 668px;
+  width: 1000px;
+}
+
+a {
+  color: #00B7FF;
+}
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+}
+button {
+  background-color: white;
+  color: #00B7FF;
+  padding: 1.5rem 4rem;
+  border-radius: 25px;
+  border-style: none;
+}
