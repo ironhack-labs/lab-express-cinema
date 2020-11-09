@@ -8,8 +8,9 @@ html {
 }
 h1 {
   color: white;
-  font-size: 6rem;
+  font-size: 8rem;
   width: 300px;
+  padding-top: 6rem;
 }
 
 body {
@@ -25,16 +26,20 @@ a {
 .main-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
   background-image: url('/images/cinema.jpg');
   background-repeat: no-repeat;
   height: 100%;
 }
+.container-right {
+  width: 45%;
+}
 button {
   background-color: white;
   color: #00B7FF;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3.5rem;
   border-radius: 25px;
   border-style: none;
+  margin: 2rem 0rem;
 }
