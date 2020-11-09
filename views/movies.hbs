@@ -1,0 +1,17 @@
+<div class="container" style="padding: 70px 0;">
+    <a href="/">Go Back</a>
+    <div class="row g-5">
+        {{#each movies}}
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card " style="max-width: 250px; margin: auto">
+                <img src={{image}} class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <a class="btn btn-primary w-100" href="/movie/{{_id}}">See More</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
