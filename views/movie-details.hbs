@@ -1,9 +1,9 @@
-<img src="{{display.image}}" alt="{{display.title}}" >
+<img src="{{display.image}}" alt="{{display.title}}">
 <div>
     <h1>{{display.title}}</h1>
     <p>Director: {{display.director}}</p>
     <p>Description: {{display.description}}</p>
     {{#each display}}<p>{{this.stars}}</p>{{/each}}
     {{#each display}}<p>{{this.showtimes}}</p>{{/each}}
-    <a href="/movies">Go Back</a>   
+    <a href="/movies">Go Back</a>
 </div>
