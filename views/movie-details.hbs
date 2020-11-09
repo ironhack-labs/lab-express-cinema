@@ -1,14 +1,21 @@
-<a>Go back</a>
-<h2>{{foundMovie.title}}</h2>
-<br>
-<h3>{{foundMovie.director}}</h3>
 
+
+<div class="container">
+    <div>
+        <img class = "movie-image" src="{{foundMovie.image}}" alt="">
+    </div>
+<div class="movie-info">
+    <a href="">Go back</a>
+    <h2>{{foundMovie.title}}</h2>
+    <h3>Director : {{foundMovie.director}}</h3>
+    <h2>Stars</h2>
     {{#each foundMovie.stars}}
     <li>{{this}}</li>
     {{/each}}
-<p>{{foundMovie.description}}</p>
-{{#each foundMovie.showtimes}}
-<li>{{this}}</li>
-<hr/>
-{{/each}}
-<hr>
+        <p>{{foundMovie.description}}</p>
+        {{#each foundMovie.showtimes}}
+        {{this}} |
+    {{/each}}
+</div>
+</div>
+   
