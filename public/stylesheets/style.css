@@ -58,3 +58,40 @@ a {
   width: 300px;
   margin: 20px 0px;
 }
+
+.movie-page {
+  display:flex;
+  height: 500px;
+  padding-top: 200px;
+}
+
+.movie-poster {
+  width: 270px;
+  height: 400px;
+  padding-right: 100px;
+}
+
+.poster-description {
+  font-size: 1.2rem;
+}
+
+.poster-title {
+  padding: 20px 0px;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.poster-director {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.poster-times {
+  display: flex;
+  padding-top: 20px;
+}
+
+.times {
+  padding: 0px 15px;
+  border-right: solid 1px black;
+}

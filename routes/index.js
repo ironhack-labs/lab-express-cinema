@@ -20,7 +20,6 @@ router.get('/movies/:id', (req, res) => {
   Movie.findById(id)
     .then((movieDetails) => {
       res.render('movie', { movieDetails });
-      console.log(movieDetails);
     })
     .catch((error) => `Error while fetching the movie: ${error}`);
 })
