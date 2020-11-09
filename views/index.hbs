@@ -1,2 +1,22 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><h1>{{title}}</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><p>Welcome to {{title}}</p><span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+    <img src="images/cinema.jpg" alt="cinema-background" width="100%">
+    <div class="centered">
+        <h1 class="centered">CINEMA IRONHACK</h1>
+        <button class="Check-movies-btn btn btn-dark centered">
+                <a href="/movies">Check the movies!</a>
+        </button>
+    </div>
+</div>

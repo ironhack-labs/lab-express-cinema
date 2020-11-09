@@ -8,6 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const port = 5000;
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
@@ -39,3 +40,4 @@ const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+

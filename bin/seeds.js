@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
 const Movie = require("../models/Movie.models");
 
-const DB_NAME = "movies-project";
+const DB_NAME = "express-cinema-dev"; 
 
 mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
   useCreateIndex: true,
-  useNewUrlParser: true,
+  useNewUrlParser: true, 
   useUnifiedTopology: true,
 });
 
 const movies = [
-    {
+    { 
       title: 'A Wrinkle in Time',
       director: 'Ava DuVernay',
       stars: ['Storm Reid', 'Oprah Winfrey', 'Reese Witherspoon'],
@@ -92,10 +92,10 @@ const movies = [
     }
   ];
 
-  Movie.create(movies)
-    .then((moviesFromDB) => {
-        console.log(`reated ${moviesFromDB.length} movies`);
+Movie.create(movies)
+      .then((moviesFromDB) => {
+        console.log(`Created ${moviesFromDB.length} movies`);
         mongoose.connection.close();
-    })
-    .catch((err) =>
-    console.log(`Error from Movie.create in seeds.js file: ${err}`))
+      })
+      .catch((err) =>
+        console.log(`Error from Movie.create in seeds.js file: ${err}`))
