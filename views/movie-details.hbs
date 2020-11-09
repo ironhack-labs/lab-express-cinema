@@ -3,7 +3,9 @@
     <h1>{{display.title}}</h1>
     <p>Director: {{display.director}}</p>
     <p>Description: {{display.description}}</p>
+    <p>Stars:</p>
     {{#each display}}<p>{{this.stars}}</p>{{/each}}
+    <p>Times:</p>
     {{#each display}}<p>{{this.showtimes}}</p>{{/each}}
     <a href="/movies">Go Back</a>
 </div>
