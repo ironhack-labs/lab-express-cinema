@@ -1,0 +1,21 @@
+
+<div class="card mb-3" style="max-width: 840px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{movieDetails.image}}" class="card-img" alt="{{movieDetails.title}}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <a href="/movies">Go back</a>
+        <h3 class="card-title">{{movieDetails.title}}</h3>
+        <h4 class="card-text">{{movieDetails.director}}</h4>
+        <ul>
+          {{movieDetails.star}}
+        </ul>
+        </p>
+        <p class="card-text">{{movieDetails.description}}</p>
+        <p class="card-text font-weight-bold">{{movieDetails.showtimes}}</p>
+      </div>
+    </div>
+  </div>
+</div>
