@@ -14,3 +14,4 @@ const movieSchema = new Schema(
       },
       { timestamps: true, }
 );
+module.exports=mongoose.model('Movie', movieSchema);

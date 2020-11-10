@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const Movie = require("../models/Movie.model");
+const Movie = require("../models/Movie/Movie.model");
 
 const DB_NAME = "express-cinema-dev";
 
-mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
+mongoose.connect(`mongodb://localhost:27017/${DB_NAME}`, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
