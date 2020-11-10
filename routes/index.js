@@ -8,14 +8,15 @@ router.get('/', (req, res, next) => res.render('index'));
 
 //created routes
 router.get('/movies', (req, res, next) => {
-    Movie.findOne({})
+    Movie.find({})
     .then((allTheMoviesFromDB) => {
+        console.log(allTheMoviesFromDB);
         res.render('movies', { allTheMoviesFromDB });
     })
     .catch(error => console.log('Error while retrieving movie details: ', error));
 });
 
-router.get('movie/:id', (req, res, next) => {
+router.get('/movies/:id', (req, res, next) => {
     const { id } =req.params;
 
     Movie.findById(id)

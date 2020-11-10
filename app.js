@@ -9,21 +9,8 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
 
-mongoose
-.connect("mongodb://localhost/express-cinema-project", {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then((x) => {
-  console.log(
-    `Connected to Mongo! Database name: "${x.connections[0].name}"`
-  );
-})
-.catch((err) => {
-  console.error("Error connecting to mongo", err);
-});
-
+// require database configuration
+require('./configs/db.config');
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
@@ -31,9 +18,6 @@ const debug = require('debug')(
 );
 
 const app = express();
-
-// require database configuration
-require('./configs/db.config');
 
 // Middleware Setup
 app.use(logger('dev'));

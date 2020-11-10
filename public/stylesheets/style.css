@@ -1,8 +1,6 @@
 body {
   padding: 50px;
-  background-image: url(../images/cinema.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 .checkButton{
   background-color: white;
@@ -18,4 +16,11 @@ a {
   float: right;
   color: white;
   font: 3em "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.checkMoviesLink{
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
