@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.checkButton{
+  background-color: white;
+}
+a {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #00B7FF;
+  text-decoration: none;
+  float: right;
+}
+
+.firstpageH{
+  float: right;
+  color: white;
+  font: 3em "Lucida Grande", Helvetica, Arial, sans-serif;
+}

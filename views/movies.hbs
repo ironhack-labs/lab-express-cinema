@@ -1,0 +1,13 @@
+{{!-- //Ieration 3 | List the Movies --}}
+<h1>Ironhack Cinema</h1>
+<p> Click on the movie to check the showtimes!</p>
+
+{{#each allTheMoviesFromDB}}
+<div>
+  <img src="{{image}}" alt="picture of {{title}}"
+  <h3>{{title}}</h3>
+  <form action="/movies/{{_id}}" method="GET">
+  <a href="/movies/{{_id}}"> see more</a>
+  </form>
+</div>
+{{/each}}
