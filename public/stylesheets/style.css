@@ -1,13 +1,27 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url('/public/images/cinema.jpg');
+  background-image: url('../images/cinema.jpg');
+  background-image: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-a {
-  color: #00B7FF;
-}
-.checkMoviesLink{
-  background-image: url('/public/images/cinema.jpg');
-  background-image: no-repeat;
+
+button {
+  margin-right: 275px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: .25px solid black;
+  color: #90C4D5;
+  position: relative;
+  }
+
+.layoutDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
 }
