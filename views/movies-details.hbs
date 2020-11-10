@@ -1,0 +1,16 @@
+<h1>Movie Details</h1>
+<hr>
+
+  <div>
+    <img src={{movies.image}}>
+    <h3>Title: {{movies.title}}</h3>
+
+    <p>Cast</p>
+    {{#each movies.stars}}
+    <p>{{this}}</p> <!-- this pq estamos a ir buscar info de array -->
+    {{/each}}
+    <p>{{movies.showTimes}}</p>
+    <p>Director: {{movies.director}} </p>
+    <p>Description: {{movies.description}}</p>
+    <a href="/movies/">Go back</a>
+  </div>
