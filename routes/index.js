@@ -3,25 +3,23 @@ const router = express.Router();
 const Movie = require("../models/Movie/Movie.model");
 
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+router.get('/', (req, res, next) => {
+  console.log("xx");
+  res.render('index')});
 
 // Movies TODO: add route here
-router.get('/', (req, res, next) => res.render('index'));
-
 router.get("/movies", (req, res) => {
+  console.log("stuff and things")
   Movie.find({})
-    .then((allTheMoviesFromDB) => {
-      res.render("movies", { allTheMoviesFromDB })
-    })
-    .catch((error) => `Error while fetching all movies: ${error}`);
-});
+  .then((moviesFromDB) => res.render('movies', {moviesFromDB}))
+  .catch((error) => `Error while fetching movies: ${error}`)
+})
 
-router.get('/movies/:id', (req, res) => {
+router.get("/movies/:id", (req, res, next) => {
 
-  Movie.findById(id)
+  Movie.findById(req.params.id)
     .then((movieDetails) => {
-      res.render('movie', { movieDetails });
-      console.log(movieDetails);
+      res.render("movie-details", movieDetails);
     })
     .catch((error) => `Error while fetching the movie: ${error}`);
 })

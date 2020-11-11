@@ -1,4 +1,4 @@
-body {
+.htmlLayout {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url('../images/cinema.jpg');
@@ -22,6 +22,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   padding: 0px;
 }
