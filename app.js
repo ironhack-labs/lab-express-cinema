@@ -11,7 +11,7 @@ const path = require('path');
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
-  `${app_name}:${path.basename(__filename).split('.')[0]}`
+    `${app_name}:${path.basename(__filename).split('.')[0]}`
 );
 
 const app = express();
@@ -35,7 +35,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-const index = require('./routes/index');
-app.use('/', index);
+app.use("/", require("./routes/index"));
+app.use("/", require("./routes/movie.route"));
 
 module.exports = app;
