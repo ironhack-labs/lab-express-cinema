@@ -1,0 +1,10 @@
+<div class="smallcontainer">
+    <h1>Listado de películas</h1>
+
+    <ul>
+        {{#each allMovies}}
+        
+        <li><img src={{image}}/> {{this.title}} <a href="/movies/details/{{_id}}">View details</a></li>
+        {{/each}}
+    </ul>
+</div>
