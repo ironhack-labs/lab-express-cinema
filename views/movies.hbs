@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="movies-list-title"> Movie list</h1>
+    <div class="movies-list row">
+
+
+        {{#each response}}
+
+        {{>filmspartials}}
+
+        {{/each}}
+
+
+    </div>
+    <div class="goHome-btn">
+        <a href="/" class="btn btn-primary btn-md btn-dark">Go home</a>
+    </div>
+
+</div>
