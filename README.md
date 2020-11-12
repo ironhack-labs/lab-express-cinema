@@ -162,3 +162,4 @@ Finally, you have to create a view to display the details about each movie. You 
 
 That's it!
 Happy Coding! :heart:
+

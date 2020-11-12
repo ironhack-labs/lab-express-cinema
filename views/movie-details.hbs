@@ -1,0 +1,45 @@
+<div class="bkground2">
+
+    <div class="container">
+
+        <h1>Movie details</h1>
+
+        <div class="row">
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+
+                <img src="{{this.image}}">
+            
+            </div>
+
+            <div class="col-lg-8 col-md-12 col-sm-12">
+
+                <h2>{{this.title}}</h2>
+                <hr>
+
+                <h3><strong>Director: </strong>{{this.director}}</h3>
+
+                <h4>Stars:</h4>  
+
+                <ul>
+                
+                    {{#each this.stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+
+                </ul>
+
+                <p>{{this.description}}</p>
+                
+                <p>{{#each this.showtimes}} {{this}} |{{/each}} </p>
+
+                <a class="btn btn-warning btn2" href="/movies" role="button">Go back</a>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

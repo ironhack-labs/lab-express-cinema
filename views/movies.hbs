@@ -1,0 +1,29 @@
+<div class="bkground">
+
+    <div class="container">
+
+        <h1>IronHack Cinema</h1>
+
+        <p><strong>Click on the movie to check the showtimes!</strong></p>
+
+
+        <div class="row">
+
+        {{#each movieList}}
+
+            <div class="col-lg-4 col-md-6 col-sm-12 center">
+            <img src="{{this.image}}">
+
+            <h3>{{this.title}}</h3>
+
+            <a class="btn btn-warning" href="/movies/{{this.id}}" role="button">See more</a>
+
+            </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</div>
