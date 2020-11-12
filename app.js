@@ -33,9 +33,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinema Ironhack';
 
 const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
+const Movie = require('./models/Movie.model')
+
+/* All movies page */
+app.get('/movies', (req, res) => {
+  Movie
+    .find()
+    .then(allMovies => {
+      res.render('movies', { movies: allMovies })
+      console.log(allMovies)
+    })
+    .catch(err => console.log(err))
+})
+
+app.get('/movies/:movie_id', (req, res) => {
+
+  Movie
+    .findById(req.params.movie_id)
+    .then(theMovie => res.render('showtimes', theMovie))
+    .catch(err => console.log(err))
+})
+
+

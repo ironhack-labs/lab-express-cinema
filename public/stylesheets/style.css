@@ -1,0 +1,41 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a{
+    color: #00B7FF;
+}
+
+.check-btn {
+  color: #00B7FF;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px 2px rgb(29, 29, 105);
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-left: 750px
+}
+
+.check-btn:hover{
+    text-decoration: none;
+    color: #119cd3;
+}
+.welcome-page{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/cinema.jpg) no-repeat top/cover;
+    padding: 80px 10px;
+}
+
+.title{
+    color: white;
+    font-size: 7em;
+    font-weight: bold;
+    width: 200px;
+    margin: 0 0 30px 750px
+}
+.page{
+    padding: 3rem
+}
