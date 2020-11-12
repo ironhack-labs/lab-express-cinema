@@ -1,0 +1,15 @@
+<div class="container">
+
+    <h1>Estas son las películas disponibles</h1>
+<hr>
+    <div class="row">
+
+                {{#each allMovies}}
+                <div class="col-md-3">
+                <img class="movies-img" src="{{image}}">
+                <h3>{{title}}</h3>
+                <a href="/movies/details/{{_id}}">Ver detalles</a>
+                </div>
+                {{/each}}
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+
+    <h1>{{title}}</h1>
+    <hr>
+
+    <img src="{{image}}"><hr>
+    <p><strong>Título:</strong> {{title}}</p>
+    <p><strong>Stars:</strong> 
+        {{#each stars}}
+        <li>{{[]}}</li>
+        {{/each}}
+        <br>
+    <p><strong>Director/a:</strong> {{director}}</p>
+    <p><strong>Argumento:</strong> {{description}}</p>
+    <p><strong>Sesiones:</strong>
+        {{#each showtimes class="each"}}
+        {{[]}}
+        {{/each}}
+    <hr>
+
+    <a href="/movies" class="btn btn-dark">Volver a la cartelera</a>
+</div>
