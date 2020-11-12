@@ -1,0 +1,25 @@
+<h2>Movies</h2>
+<h2 class="movies-hero">Movies</h2>
+<h2 class="movies-hero2">Movies</h2>
+<div class="blue-bg">
+    <div class="container">
+        <div class="row">
+            {{#each allMovies}}
+            <div class="col-4 movie-box ">
+                <div class="card box-shadow" style="width: 15rem;">
+                    <img class="card-img-top" src="{{image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <a href="/movies/detail/{{_id}}" class="btn btn-primary rounded-pill beige">See more</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+
+
+        </div>
+
+    </div>
+
+    <a href="/" class="btn btn-dark rounded-pill beige movies-back-btn">Go back</a>
+</div>

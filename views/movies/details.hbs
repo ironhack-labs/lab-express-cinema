@@ -1,0 +1,31 @@
+<div class="beige details-bg">
+    <div class="container details-container">
+        <div class="row">
+
+            <div class="col-3 detail-border"><img class="detail-img" src={{image}} alt="Card image cap"></div>
+            <div class="col-6 detail-border">
+                <div class="card-body">
+                    <h3 class="card-title"><strong>{{title}}</strong></h3>
+                    <h4>Director: {{director}}</h4>
+                    <h5>Stars</h5>
+                    <ul>
+                        {{#each stars}}
+                        <li class="list"> {{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <p class=" card-text">{{description}}</p>
+                </div>
+                <p>
+                    {{#each showtimes}}
+                    {{this}} |
+                    {{/each}}
+                </p>
+
+                <div class="card-body">
+                    <a href="/movies" class="btn btn-dark rounded-pill blue">Go back</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
