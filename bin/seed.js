@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const Movie = require('../models/movie.models');
+const Movie = require('../models/movie.model');
 
-const bdName = 'labmad-movies'
-mongoose.connect(`mongodb://localhost/${bdName}`, { useNewUrlParser: true, useUnifiedTopology: true })
+const dbName = 'movie-cinesa';
+mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const movies = [
     {
@@ -87,6 +87,11 @@ const movies = [
     }
 ];
 
-Movie.create(movies)
-    .then(() => console.log('Se han creado'))
-    .catch(err => console.log('ERROR:', err))
+Movie
+    .create(movies)
+    .then(moviesCreated => {
+        console.log(`Created ${moviesCreated.length} movies`)
+        mongoose.connection.close();
+    })
+    .catch(err => console.log('Hubo un error,', err))
+

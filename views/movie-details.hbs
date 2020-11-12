@@ -1,0 +1,41 @@
+<article class="container movie-detail">
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <img class="product" src="{{image}}" alt="{{title}}">
+
+        </div>
+
+        <div class="col-md-9">
+
+            <a href="/movies">Go back</a>
+
+            <h1>{{title}}</h1>
+
+            <h2>Director: {{director}}</h2>
+
+            <h3>Stars</h3>
+
+            <ul>
+                {{#each stars}}
+
+                <li>{{this}}</li>
+
+                {{/each}}
+            </ul>
+
+            <p>{{description}}</p>
+
+            {{#each showtimes}}
+
+            <span>{{this}} |</span>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</article>
