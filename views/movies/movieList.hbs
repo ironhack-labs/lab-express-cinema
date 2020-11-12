@@ -1,0 +1,9 @@
+{{#each allMovies}}
+<img src="{{image}}" alt="">
+<p>{{title}}</p>
+<form action='/movie/detalle/{{_id}}' method="GET">
+    <input type="submit" value="See more">
+</form>
+
+{{!-- <a href="/movie/detalle/{{_id}}">See more</a> --}}
+{{/each}}
