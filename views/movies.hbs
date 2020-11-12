@@ -1,0 +1,26 @@
+<section class="container">
+
+    <div class="row">
+
+        <div class="col-sm">
+
+            <h3>Click on the movie to check the showtimes!</h3>
+
+            <ul>
+                {{#each allMovies}}
+                <li>
+                    <h4>{{this.title}}</h4>
+                </li>
+                <img src={{this.image}}>
+                <br>
+                <br>
+                <a href="/movies/details/{{_id}}"> See more details </a>
+                {{/each}}
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>

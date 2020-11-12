@@ -3,16 +3,14 @@ body {
   font-family: sans-serif;
   background-image: url(../images/cinema.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
-.title{
-  color:white;
+.title {
+  color: white;
   margin-left: 60%;
-  font-size: 80px;
-}
+  font-size: 80px; }
 
-.moviesbutton{
+.moviesbutton {
   margin-left: 65%;
   padding: 15px;
   box-shadow: 5px black;
@@ -20,5 +18,6 @@ body {
   margin-bottom: 20px;
   background-color: white;
   color: #2081c3;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

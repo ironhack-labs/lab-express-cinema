@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>{{title}}</h1>
+
+    <hr>
+    <p><strong>Stars:</strong> {{#each theMovie}}{{this.stars}}{{/each}}</p>
+
+    <p><strong>Show Times:</strong> {{#each theMovie}} {{this.showtimes}}{{/each}}</p>
+    <p><strong>Director:</strong> {{#each theMovie}}{{this.director}}{{/each}}</p>
+    <p><strong>Description:</strong> {{#each theMovie}} {{this.description}}</p>{{/each}}
+
+    <hr>
+</div>
