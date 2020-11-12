@@ -1,8 +1,99 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  font-family: sans-serif;
+  
+}
+.backg{
+  
+  background-image: url(../images/moon.png);
+  background-image: url(../images/BACKGROUNG.png);
+  
+  width: 100%;
+  background-position: top;
+  text-align: center;
+  background-image: cover;
+  height: 91vh;
+
 }
 
-a {
-  color: #00B7FF;
+.back2{
+  padding-top: 200px;
+}
+
+.main-title{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 4em;
+  color: rgb(73, 14, 14);
+
+}
+
+.backg a{
+  background-color: rgb(123, 24, 24);
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.backg a:hover{
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+
+}
+
+.singlemovie{
+
+  display:flex
+}
+.movie-l img{
+
+// padding-right: 30px;
+// object-fit: cover;
+margin-top: 20%;
+margin-left: 20%;
+
+}
+.movie-l {
+  width:100%;
+   margin-top:30px
+}
+.movie-r ul li{
+  text-decoration: none;
+  list-style: none;
+
+  
+
+}
+.movie-r ul{
+  padding-top:20px;
+  padding-bottom: 27px;
+}
+.movie-r a{
+  margin-bottom: 20px;
+  margin-top:30px
+}
+.titlemovies{
+margin-top: 15px;
+  font-size: 15px;
+}
+.col a{
+  margin-bottom: 20px;
+}
+.col img{
+  margin-top: 20px;
+}
+.row1{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+footer{
+  background-color: #343a40;
+   position: absolute;
+   bottom: 0;
+     width: 100%;
+     height: 50px;
+     color: white;
+   
 }

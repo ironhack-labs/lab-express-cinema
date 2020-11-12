@@ -1,0 +1,39 @@
+{{!-- 
+    <article>
+        <img src="{{image}}" alt="">
+        <h5>{{title}}</h5>
+    <h5>{{director}}</h5>
+{{#each {{stars}}}}
+<li>{{stars}}</li>
+{{/each}}
+<p>{{description}}</p>
+        <a href="/movies/" class="btn btn-dark">click to return</a>
+    </article> --}}
+<div class="singlemovie">
+  
+        <div class="movie-l">
+        <img src="{{image}}" alt="">
+       </div>
+        <div class= "movie-r">        <a href="/movies" class="btn btn-dark">Return to movies</a>
+ <h5><strong>Title: {{title}}</strong></h5>
+        <h5><strong>Director: </strong>{{director}}</h5>
+        <ul>
+        <h5><strong>Starring</strong></h5>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <h5><strong>Sinopsis</strong></h5>
+        <p>
+        
+        {{description}}
+        </p>
+        <h5><strong>Showtimes</strong></h5>
+        <p> | 
+        {{#each showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+</div>
+  
+</div>
