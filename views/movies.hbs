@@ -1,0 +1,22 @@
+<section class="container bckg">
+
+<h1>LIST OF MOVIES</h1>
+
+<p>Click on the movies to see the showtimes!</p>
+
+
+<article class="row">
+    
+    {{#each moviesList}}
+
+        <div class="col-4 movie-block">
+            <img src="{{this.image}}">
+            <h4>{{this.title}}</h4>
+            <a href="/movies/{{this.id}}" class="btn btn-info">See more</a>
+        </div>
+
+    {{/each}}
+    
+</article>
+
+</section>
