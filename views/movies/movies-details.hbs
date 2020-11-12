@@ -1,0 +1,23 @@
+<div class="container">
+    <img src="{{this.image}}">
+
+    <a href="/movies" class="btn btn-info">Go back</a>
+
+    <h1>{{this.title}}</h1>
+
+    <h3>Director: {{this.director}}</h3>
+
+    <div>
+        <h3>Stars:</h3>
+        <ul>
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <p>{{this.description}}</p>
+    <p>{{#each this.showtimes}}{{this}} | {{/each}}</p>
+
+    <a href="/libros" class="btn btn-dark">Volver a los libros</a>
+</div>
