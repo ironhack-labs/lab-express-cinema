@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font-family: sans-serif; }
+
+.imgMovie {
+  box-shadow: 10px 10px 6px -6px #999; }
+
+.imgDetails {
+  height: 100%; }
+
+.imgIndex {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px; }
+
+#title {
+  margin-bottom: 60px; }
+
+.checkBtn {
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+  background-color: grey;
+  box-shadow: 8px 8px 6px -6px #999; }
+
+/*# sourceMappingURL=style.css.map */

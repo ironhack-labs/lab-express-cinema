@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4">
+            <img class="imgMovie imgDetails" src="{{this.image}}">
+        </div>
+
+        <div class="col-lg-8">
+            <h3><strong>{{this.title}}</strong></h3>
+            <br>
+            <h4><strong>Director: {{this.director}}</strong></h4>
+            <br>
+            <h5><strong>Stars</strong></h5>
+            <ul>
+                {{#each this.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <br>
+            <p>{{description}}</p>
+            <br>
+            {{#each this.showtimes}}
+            {{this}} |
+            {{/each}}
+        </div>
+
+    </div>
+</div>
