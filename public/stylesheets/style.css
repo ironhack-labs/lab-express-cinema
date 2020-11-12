@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font-family: sans-serif;
+  background-image: url("../images/cinema.jpg"); }
+
+.home {
+  text-align: right;
+  color: white;
+  padding-right: 200px; }
+
+.home a {
+  text-decoration: none;
+  color: white; }
+
+.list {
+  background-color: white; }
+
+/*# sourceMappingURL=style.css.map */
