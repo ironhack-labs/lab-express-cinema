@@ -1,0 +1,9 @@
+<section class="container moviepage">
+    <h2>Ironhack Cinema</h2>
+    <h4>Click on the movie to check the showtimes!</h4>
+    <div class="row movie-list">
+        {{#each allMoviesCreated}}
+        {{>movieCard this}}
+        {{/each}}
+    </div>
+</section>
