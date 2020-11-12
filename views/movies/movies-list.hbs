@@ -1,0 +1,16 @@
+
+<div class="container movie-list">
+  <h2>{{title}}</h2>
+  <p>Click on the movie to check the showtimes!</p>
+  <hr>
+
+  <div class="row">
+    {{#each allMovies}}
+      <div class="col-lg-4">
+        <img src="{{image}}" alt="Movie image">
+        <h4>{{title}}</h4>
+        <a class="btn btn-dark btn-sm" href="/movies/details/{{_id}}">See more</a>
+      </div>
+    {{/each}}
+  </div>
+</div>

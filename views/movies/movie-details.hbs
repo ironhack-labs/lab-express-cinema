@@ -1,0 +1,28 @@
+
+<div class="container movie-details">
+  <div class="row d-flex">
+      <div class="col-lg-3">
+        <img src="{{image}}" alt="Movie image">
+        <a class="btn btn-dark btn-lg" href="/movies">Go back</a>
+      </div>
+
+      <div class="col-lg-9">
+        <h3>{{title}}</h3>
+        <h4>Directed by: {{director}}</h4>
+        <h6><strong>Stars</strong></h6>
+        <ul>
+          {{#each stars}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <p class="description">{{description}}</p>
+        <hr>
+        <p>
+          {{#each showtimes}}
+             {{this}} |
+          {{/each}}
+        </p>
+
+      </div>
+  </div>
+</div>
