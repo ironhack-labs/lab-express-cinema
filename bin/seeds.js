@@ -3,10 +3,7 @@
 const mongoose = require('mongoose')
 const Movie = require("../models/Movie.model")
 
-
 mongoose.connect('mongodb://localhost/express-cinema-dev')
-
-
 
 const movies = [
     {

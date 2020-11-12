@@ -17,7 +17,6 @@ router.get('/movies', (req, res, next) => {
 })
 
 router.get('/movie/:id', (req, res, next) => {
-    console.log(req.params)
     Movie.findById(req.params.id)
     .then(movie => {
         console.log(movie)
