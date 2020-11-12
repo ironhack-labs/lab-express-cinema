@@ -1,0 +1,15 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: blanchedalmond; }
+
+.homebg {
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+  padding: 43vh; }
+
+h1 {
+  font-size: 50px; }
+
+/*# sourceMappingURL=style.css.map */
