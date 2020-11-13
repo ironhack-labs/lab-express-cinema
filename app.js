@@ -51,7 +51,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/movies', (req, res, next) => {
-  Movie.find({}, {title: 1, imagen: 1})
+  Movie.find({}, {title: 1, image: 1, description: 1})
   .then((movie) => {
     console.log(movie)
     res.render('movies', {movie});
