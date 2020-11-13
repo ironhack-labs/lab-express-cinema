@@ -3,20 +3,14 @@ body {
   font-family: sans-serif;
   background-image: url(../images/cinema.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-
+  background-size: cover; }
 
 .container {
   margin-left: 600px;
   color: white;
-  font-size: 30px;
-  
-  
-}
+  font-size: 30px; }
 
 .movies-container {
-  background-color: white;
-   
-}
+  background-color: white; }
+
+/*# sourceMappingURL=style.css.map */
