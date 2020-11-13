@@ -1,0 +1,14 @@
+<img src="{{image}}" alt="{{title}}" class="img-details"/>
+<a href="/movies">Return</a>
+        <h2>{{title}}</h2>
+        <h4>Director: {{director}}</h4>
+        <h5>Stars</h5>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>{{#each showtimes}}
+              {{this}} {{#unless @last}} |{{/unless}}
+            {{/each}}</p>
