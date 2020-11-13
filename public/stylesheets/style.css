@@ -1,17 +1,27 @@
 body {
   padding: 50px;
   font-family: sans-serif;
+  background-color: white; }
+
+.hero {
   background-image: url(../images/cinema.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 600px; }
 
 .title {
   color: white;
   margin-left: 60%;
   font-size: 80px; }
 
+.hero h1 {
+  margin-top: 100px; }
+
 .moviesbutton {
   margin-left: 65%;
+  margin-right: 21%;
   padding: 15px;
   box-shadow: 5px black;
   border-radius: 20px;
@@ -19,5 +29,8 @@ body {
   background-color: white;
   color: #2081c3;
   text-decoration: none; }
+
+li {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */

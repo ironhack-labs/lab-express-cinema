@@ -1,25 +1,29 @@
 <section class="container">
 
+    <h3>Click on the movie to check the showtimes!</h3>
+
     <div class="row">
 
-        <div class="col-sm">
+        {{#each allMovies}}
 
-            <h3>Click on the movie to check the showtimes!</h3>
+        <div class="col-dm-3">
 
-            <ul>
-                {{#each allMovies}}
-                <li>
-                    <h4>{{this.title}}</h4>
-                </li>
-                <img src={{this.image}}>
-                <br>
-                <br>
-                <a href="/movies/details/{{_id}}"> See more details </a>
-                {{/each}}
+            <div class="card" style="width: 18rem;">
 
-            </ul>
+                <img src={{this.image}} class="card-img-top">
 
+                <div class="card-body">
+
+                    <h4 class="card-title">{{this.title}}</h4>
+
+                    <a href="/movies/details/{{_id}}" class="btn btn-primary"> See more details </a>
+
+                </div>
+            </div>
         </div>
+        {{/each}}
+
+        </ul>
 
     </div>
 
