@@ -1,0 +1,17 @@
+<div class="container align-items-center">
+    <h2>{{webTitle}}</h2>
+    <h3>Click on any movie and check the showtimes!</h3>
+    <div class="row text-center">
+        {{#each allTheMovies}}
+        <div class="col-3">
+            <article class="movieCard">
+                <img src="{{image}}" alt="film cover">
+                <h4>{{title}}</h4>
+                <a class="btn btn-dark btn-sm" href="/movies/{{id}}" role="button">See more</a>
+            </article>
+        </div>
+        {{/each}}
+    </div>
+
+
+</div>
