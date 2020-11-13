@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif; }
+
+.presentation {
+  color: white;
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+  padding: 300px 0 350px 500px;
+  text-align: left; }
+
+h1 {
+  font-weight: bold;
+  font-size: 96px;
+  letter-spacing: 4px; }
+
+.presentation a {
+  margin-left: 300px;
+  border-radius: 25px; }
+
+h2 {
+  font-weight: bold;
+  font-size: 40px; }
+
+h3 {
+  font-weight: bold;
+  font-size: 20px; }
+
+hr {
+  margin-bottom: 30px; }
+
+.movie-list {
+  list-style: none; }
+
+.movie-title {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center; }
+
+.movie-link {
+  align-items: center;
+  margin-left: 65px; }
+
+.movie-image {
+  margin-top: 10px; }
+
+aside img {
+  margin-top: 45px; }
+
+.go-back {
+  margin-top: 15px; }
+
+/*# sourceMappingURL=style.css.map */

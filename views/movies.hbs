@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>{{titlePresentation}}</h2>
+    <h3>Click on the movie to check the showtimes!</h3>
+    <hr>
+    <div class="row justify-content-around">
+        {{!-- <div class="col-md-3"> --}}
+        <ul class="movie-list">
+            {{#each allMovies}}
+            <li><img class="movie-image" src="{{this.image}}"></li>
+            <li class="movie-title">{{this.title}}</li>
+            <li><small><a class="movie-link" href="/movies/{{_id}}">See more</a></small></li>
+            {{/each}}
+        </ul>
+        {{!-- </div> --}}
+    </div>
+</div>
