@@ -10,12 +10,13 @@ router.get('/', (req, res) => {
         .catch((error) => console.log(`It's not getting the movies: ${error}`))
 })
 
-// detalle
+
 router.get('/detalle/:movie_id', (req, res) => {
-    Movie
-        .findById(req.params.movie_id)
-        .then(theMovie => res.render('details', theMovie))
-        .catch(err => console.log(err))
+   
+     Movie
+         .findById(req.params.movie_id)
+         .then(theMovie => res.render('details', theMovie))
+         .catch(err => console.log(err))
 })
 
 module.exports = router;
