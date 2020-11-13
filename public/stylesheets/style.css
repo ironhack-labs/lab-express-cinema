@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font-family: sans-serif; 
+  background-color: #1d3557;
+}
+
+
+.hero{
+  background-image: url('/images/cinema.jpg');
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+h1{
+  color: aliceblue;
+}
+.hero h1{
+  margin-top: 200px;
+}
+
+.movies{
+  margin: 20px;
+}
+
+.card{
+  background-color: #a8dadc;
+
+}
+li{
+  list-style: none;
+  
+}

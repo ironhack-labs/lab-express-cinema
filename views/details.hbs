@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-3" style="max-width: 870px;">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <img src="{{#each theMovie}}{{this.image}}{{/each}}" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>{{#each theMovie}}{{this.title}}{{/each}}</strong></h5>
+                            
+                            <p class="card-text"><strong>Director: </strong>{{#each theMovie}}{{this.director}}{{/each}}</p>
+                            
+                            <p class="card-text"><strong>Stars:</strong></p>
+                            {{#each theMovie}}{{#each this.stars}}<ul><li>{{this}}</li></ul>{{/each}}{{/each}}
+                            
+                            <p class="card-text"><strong>Description: </strong>{{#each theMovie}}{{this.description}}{{/each}}</p>
+                            
+                            <p class="card-text"><strong>Showtimes:</strong></p>
+                            {{#each theMovie}}{{#each this.showtimes}}<ul><li>{{this}}</li></ul>{{/each}}{{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
