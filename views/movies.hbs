@@ -1,0 +1,24 @@
+{{!-- This view should have all the movie titles and movie images displaying. In addition to this, as displayed on the image
+below, add the link See more that should point to the each movie details page. (You will be creating this page in the
+following iteration.) --}}
+
+<section class="container">
+    <a href="/">Go back to index</a>
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+    <hr>
+    <div class="row">
+    {{#each allMovies}}
+    <div class="col-md-4 d-flex justify-content-center">
+        <article>
+            <div>
+                <img src="{{this.image}}">
+            </div>
+            <div>
+                <p><strong>{{this.title}}</strong></p>
+                <a href="/detalle/{{this._id}}">See more</a>
+            </div>
+        </article>
+    </div>
+    {{/each}}
+</section>
