@@ -64,6 +64,17 @@ app.get('/movies', (req, res, next) => {
   
 })
 
+app.get('/movie/:id', (req, res, next)=>{
+  const movieID = req.params.id;
+  Movie.findById(movieID)
+  .then((result)=>{
+      res.render('singleMovie', result);
+  })
+  .catch((error)=>{
+      res.send(error);
+  });
+});
+
 app.listen(process.env.PORT, ()=>{
   console.log(chalk.green.inverse.bold(`Conectado al puerto ${process.env.PORT}`));
 });
