@@ -38,6 +38,9 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
+const Movie = require('./models/Movie.model');
+
+
 
 app.use('/', index);
 
@@ -47,7 +50,19 @@ app.get('/', (req, res, next) => {
   res.render('index');
 })
 
-
+app.get('/movies', (req, res, next) => {
+  Movie.find({}, {title: 1, imagen: 1})
+  .then((movie) => {
+    console.log(movie)
+    res.render('movies', {movie});
+    
+  })
+  .catch((err) => {
+    console.log(err)
+    res.send(err)
+  })
+  
+})
 
 app.listen(process.env.PORT, ()=>{
   console.log(chalk.green.inverse.bold(`Conectado al puerto ${process.env.PORT}`));
