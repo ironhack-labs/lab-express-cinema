@@ -1,0 +1,40 @@
+body {
+    padding: 50px;
+    font: 44px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url('/images/cinema.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    
+  }
+  a {
+    color: #00B7FF;
+  }
+.pageLayout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-start;
+  }
+.buttonStyle {
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+        right: 135px;
+      }
+.buttonRound {
+    border-radius: 32px;
+}
+.decoration {
+    text-decoration: none;
+}
