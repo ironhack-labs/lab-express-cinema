@@ -1,0 +1,80 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+
+ .thumb {
+   width: 90vw;
+   position: absolute;
+   top: 0;
+   left: 5vw;
+ }
+
+ img{
+   width: 100%;
+   z-index: 0;
+ }
+ 
+.text-home{
+  max-width: 20vw;
+  z-index: 1;
+  position: absolute;
+  left: 55vw;
+  top: 7vh;
+}
+
+h1{
+  font-size: 7vw;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+
+.text-home a {
+  font-size: 1.4vw;
+  color: #2A234C;
+  background-color: #fff;
+  padding: 1.3vw 2.2vw;
+  border-radius: 5vw;
+  border-bottom: .3vw solid rgba(60, 60, 60, .6);
+}
+
+.text-home a:hover{
+  text-decoration: none;
+}
+
+.movies-intro{
+  margin: 2vh 8vw;
+}
+
+.movies-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.movie-card{
+  width: 18vw;
+  margin: 2vh 6vw;
+  text-align: center;
+}
+
+.movie-cover{
+  width: 100%;
+}
+
+.movie-card p,
+.movie-card a{
+  width: 100%;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  font-size: 1.6vw;
+}
+
+.movie-card p{
+  font-weight: bold;
+  width: 130%;
+  position: relative;
+  left: -15%;
+}
