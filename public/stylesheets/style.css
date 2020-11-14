@@ -78,3 +78,13 @@ h1{
   position: relative;
   left: -15%;
 }
+
+.single-container{
+  display: flex;
+}
+
+.single-cover{
+  max-width: 200px;
+  width: 100%;
+  max-height: 100%;
+}

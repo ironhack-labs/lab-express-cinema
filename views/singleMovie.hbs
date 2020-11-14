@@ -1,1 +1,22 @@
-{{movie}}
+<div class="single-container movies-container">
+    <div class="row">
+        <div class="single-cover-cont col-4">
+            <img class="single-cover" src="{{image}}" alt="{{title}} cover">
+        </div>
+        <div class="col-8">
+            <a href="#">Go back</a>
+            <h2>{{title}}</h2>
+            <h4>Director: {{director}}</h4>
+            <h6>Stars:</h6>
+            <ul>
+                {{#each movie.stars}}
+                    <li>{{movie.stars}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            {{#each movie.showtimes}}
+                <p>{{movie.showtimes}} | </p>
+            {{/each}}
+        </div>
+    </div>
+</div>

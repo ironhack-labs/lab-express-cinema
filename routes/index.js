@@ -22,7 +22,7 @@ router.get('/movie/:id', (req, res, next)=>{
     const id = req.params.id;
     Movie.findById(id)
         .then((movie)=>{
-            res.render('singleMovie', {movie})
+            res.render('singleMovie', movie);
         })
         .catch((err)=>res.send(err));
 
