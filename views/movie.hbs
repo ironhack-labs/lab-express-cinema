@@ -1,0 +1,19 @@
+<img src="{{image}}" alt="{{title}}">
+<section class = "movie">
+
+<h2>{{title}}</h2>
+<h3>Director: </h3><p>{{director}}</p>
+<h3>Stars: </h3><p> {{description}}</p>
+
+<ul><h3>Description</h3>
+{{#each this.stars}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+
+<h3>Showtime </h3>
+{{#each this.showtimes}}
+<p>{{this}}</p>
+{{/each}}
+
+ </section>
