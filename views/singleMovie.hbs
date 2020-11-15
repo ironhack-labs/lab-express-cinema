@@ -1,22 +1,21 @@
-<div class="single-container movies-container">
-    <div class="row">
-        <div class="single-cover-cont col-4">
+<div class="single-container">
+        <div class="single-cover-cont">
             <img class="single-cover" src="{{image}}" alt="{{title}} cover">
         </div>
-        <div class="col-8">
-            <a href="#">Go back</a>
+        <div class="single-text">
+            <a href="/movies">Go back</a>
             <h2>{{title}}</h2>
             <h4>Director: {{director}}</h4>
             <h6>Stars:</h6>
             <ul>
-                {{#each movie.stars}}
+                {{!-- {{#each movie.stars}}
                     <li>{{movie.stars}}</li>
-                {{/each}}
+                {{/each}} --}}
+                {{!-- <p>No consigo hacer funcionar ninguno de los dos loops que están comentados</p> --}}
             </ul>
             <p>{{description}}</p>
-            {{#each movie.showtimes}}
+            {{!-- {{#each movie.showtimes}}
                 <p>{{movie.showtimes}} | </p>
-            {{/each}}
+            {{/each}} --}}
         </div>
-    </div>
 </div>
