@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.main-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 0% 20%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  margin-right: 20%;
+  height: 50vh;
+}
+
+.title {
+  height: 100%;
+  margin-top: 100px;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.title a {
+  background: white; 
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.movies-title {
+  margin: 20px 50px 0 50px;
+}
+
+.movies-title h2 {
+  margin-top: 10px;
+}
+
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 50px 50px 0;
+}
+
+.movie-card {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 200px;
+}
+
+.movie-card h2 {
+  font-size: 20px;
+}
+
+.main-details {
+  display: flex;
+  margin: 50px;
+}
+
+.movie-details {
+  margin-left: 50px;
+  width: 50vw;
+}
+
+.movie-details * {
+  margin-top: 10px;
+}
+
+.movie-details li {
+  margin-top: 0; 
+  margin-left: 15px;
+}
