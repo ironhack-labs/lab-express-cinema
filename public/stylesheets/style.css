@@ -1,0 +1,92 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px Arial;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.homePage {
+  overflow: hidden;
+}
+
+.homePage img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+}
+
+.homePage h1 {
+  color: white;
+  font-size: 8em;
+  margin: 0px;
+}
+
+.homePage button {
+  position: absolute;
+  width: 230px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.3em;
+  color: #3c92b1;
+  margin-top: 20px;
+}
+
+.banner {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 5%;
+}
+
+.moviePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.moviePage h1 {
+  font-size: 2.5em;
+  margin: 50px auto 20px 70px;
+}
+
+.moviePage h2 {
+  font-size: 1.5em;
+  margin: 0px auto 0px 70px;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 32%;
+  margin: 5px;
+}
+
+.movieCard img {
+  width: 230px;
+}
+
+.moviePageContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 70px;
+}
+
+.movieCardContent {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.movieCardContent h3 {
+  margin-top: 30px;
+}
+
+.movieCardContent a {
+  font-size: 1.2em;
+}

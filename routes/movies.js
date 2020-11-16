@@ -13,13 +13,15 @@ router.get("/", (req, res, next) => {
     .catch((error) => console.log(error));
 });
 
-// router.get("/:movieId", (req, res) => {
-//   const movieId = req.params;
-//   console.log(movieId);
+router.get("/movies/:id", (req, res) => {
+  const movieId = req.params.id;
 
-//   Movie.findById(movieId).then((thisMovie) => {
-//     console.log(thisMovie);
-//     res.render("this-movie", { thisMovie });
-//   });
-// });
+  Movie.findById(movieId)
+    .then((movie) => {
+      console.log(movie);
+      res.render("thisMovie", { movie });
+    })
+    .catch((error) => console.log(error));
+});
+
 module.exports = router;

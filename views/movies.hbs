@@ -1,10 +1,18 @@
-{{#each allMovies}}
-<h1>{{title}}</h1>
-<h2></h2>
-<a href="movies/{{id}}">More info About This Movie</a>
-{{/each}}
+<div class="moviePage">
+    <h1>Ironhack Cinema</h1>
+    <h2>Click on the movie to check the showtimes!</h2>
+    <div class="moviePageContent">
+        {{#each allMovies}}
+        <div class="movieCard">
+            <div class="movieCardContent">
+                <img src="{{image}} alt=" Cover of the movie">
+                <h3>{{title}}</h3>
+                <a href="movies/{{id}}">See more</a>
+            </div>
 
-<form action="/" method="POST">
-    <button type="submit">See more</button>
+        </div>
+        {{/each}}
 
-</form>
+    </div>
+
+</div>

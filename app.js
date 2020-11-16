@@ -41,6 +41,7 @@ const thisMovie = require("./routes/thisMovie");
 
 app.use("/", index);
 app.use("/movies", movies);
-app.use("/thisMovie", thisMovie);
+app.use(movies);
+// app.use("/thisMovie", thisMovie);
 
 module.exports = app;
