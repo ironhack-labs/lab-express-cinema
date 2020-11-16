@@ -85,4 +85,25 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 // ... your code here
-module.exports = movies;
+
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie.model");
+
+mongoose
+  .connect("mongodb://localhost/express-cinema-dev", {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((x) => {
+    console.log(
+      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+    );
+    return x.connection.dropDatabase();
+  })
+  .then(() => {
+    return Movie.insertMany(movies);
+  })
+  .catch((err) => console.error("Error connecting to mongo", err));
+
+//module.exports = movies;
