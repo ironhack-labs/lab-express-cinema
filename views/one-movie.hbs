@@ -13,7 +13,13 @@
         {{/each}}
             <p>{{description}}</p>
         {{#each showtimes}}
+            {{#if @last}}
+                {{ this }}
+            {{else}}
+
             <span> {{this}} |</span>
+            
+            {{/if}}
         {{/each}}
     </div>
 </div>
