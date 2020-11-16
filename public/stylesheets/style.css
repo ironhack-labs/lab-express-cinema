@@ -1,0 +1,75 @@
+/*Front page styling, index.hbs*/
+
+#background {
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vw;
+  border: 1px solid;
+}
+#box {
+  margin-left: 60%;
+  margin-top: 10%;
+  width: 30%;
+}
+#title {
+  color: white;
+  font-size: 110px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#roundedButton {
+  padding: 20px;
+  width: 20rem;
+  border-radius: 30px;
+  background-color: white;
+}
+#check {
+  color: grey;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+/*end*/
+
+/* All of the CSS for the movies.hbs page */
+.heading {
+  margin-left: 60px;
+  padding: 10px;
+}
+
+#movieCard {
+  padding: 10px;
+  margin-top: 20px;
+}
+/*end*/
+
+/* All of the CSS for the movie.hbs page  */
+#movieDisplay {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+#moviePoster {
+  margin-top: 20px;
+}
+#bio {
+  margin-left: 40px;
+}
+#info {
+  margin-top: 20px;
+  width: 50%;
+}
+#timesRow {
+  display: flex;
+  flex-direction: row;
+}
+#times {
+  border-right: 2px solid grey;
+  padding: 5px;
+}
+#linkUnderLine {
+  text-decoration-line: none;
+}
+/*end*/
