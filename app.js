@@ -39,3 +39,7 @@ const index = require('./routes/index');
 app.use('/', index);
 
 module.exports = app;
+
+app.listen(3000, () => {
+  console.log("SERVER LISTENING ON PORT 3000")
+});
