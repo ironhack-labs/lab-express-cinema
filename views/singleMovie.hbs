@@ -8,14 +8,17 @@
             <h4>Director: {{director}}</h4>
             <h6>Stars:</h6>
             <ul>
-                {{!-- {{#each movie.stars}}
-                    <li>{{movie.stars}}</li>
-                {{/each}} --}}
-                {{!-- <p>No consigo hacer funcionar ninguno de los dos loops que están comentados</p> --}}
+                {{#each stars}}
+                    <li>{{this}}</li>
+                {{/each}}
             </ul>
             <p>{{description}}</p>
-            {{!-- {{#each movie.showtimes}}
-                <p>{{movie.showtimes}} | </p>
-            {{/each}} --}}
+            {{#each showtimes}}
+                {{#if @last}}
+                    <a href="#">{{this}}</a>
+                {{else}}
+                    <a href="#">{{this}}</a> |
+                {{/if}}
+            {{/each}}
         </div>
 </div>
