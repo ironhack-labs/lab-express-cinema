@@ -37,13 +37,26 @@ body {
 .btn {
   background-color: #ffffff;
   font-size: 2rem;
-  margin: 200px;
-  padding: 5px;
+  padding: 20px;
   border: thin;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+img {
+  width: 150px;
 }
 .movies {
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.movieseach {
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  text-align: center;
+  font-size: 15px;
 }
