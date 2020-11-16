@@ -6,7 +6,11 @@ const router = express.Router();
 
 
 
-router.get("/", (req,res, next) => Movie.find().then((allthemovies) => { console.log(allthemovies),res.render("movies",{movie:allthemovies})}));
+router.get("/", (req,res, next) => 
+Movie.find().then((allthemovies) =>
+res.render("movies",{movie:allthemovies}))
+.catch(err => console.log('The error while searching artists occurred: ', err))
+);
 
 
 module.exports = router;
