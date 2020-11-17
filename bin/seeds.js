@@ -90,4 +90,5 @@ const movies = [
  require("../configs/db.config");
  Movie.insertMany(movies).then((moviesArr) => {
     console.log(moviesArr);
+     mongoose.connection.close();
  })
