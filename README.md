@@ -1,164 +1,308 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB | Express Cinema
+# Mongoose Movies
+
 
 ## Introduction
+Everyone likes celebrities, right? Well, even if you don't, now is your chance to create your own, better, fictional celebrities!
+Let's create an Express app with all the basic CRUD actions that will allow the user to create their own celebrities and edit them as they see fit.
 
-![image](https://user-images.githubusercontent.com/23629340/36983687-49a3d64e-2093-11e8-8b86-b11813f0cdba.png)
+The user should be able to:
 
-The goal of this exercise is to learn how to seed the database on your own and to be able to create a cinema web page, where we will display the list of movies. In addition to that, you will create a detail page, where more details will be shown for each movie individually.
+**1. See the list of celebrities**\
+**2. See the details of a celebrity**\
+**3. Add new celebrities**\
+**4. Update existing celebrities**\
+**5. Delete celebrities**
+
+But wait! That's not all!
+
+Once we have our celebrities, we need something for them to do!
+Let's make up some movie ideas for our celebrities to star in.  
+That means we'll need all the basic CRUD actions for movies as well.  
+
+The user should be able to:
+
+**6. See the list of movies.**\
+**7. See the details of a movie.**\
+**8. Add new movies.**\
+**9. Update existing movies.**\
+**10. Delete movies.**\
+
 
 ## Requirements
 
 - Fork this repo
 - Clone this repo
 
+
 ## Submission
 
-Upon completion, run the following commands:
+- Upon completion, run the following commands:
 
 ```
 $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
-
 - Create Pull Request so your TAs can check up your work.
+
 
 ## Instructions
 
 ### Iteration 0 | Initialize the project
 
-**This lab has the starer code based on the Express Generator.**
-After forking and cloning the project, you will have install all the dependencies:
+After forking and cloning the project, you will have to add a `starter_code/.env` file:
 
-```shell
+```
+PORT=3000
+```
+
+And you have to install all the dependencies:
+
+
+```sh
+$ cd starter_code
 $ npm install
 ```
 
-Now you are ready to start. 🚀
+Now you are ready to start 🚀
 
-### Iteration 1 | Seed the database
 
-First, we need to seed our database. Below you will find an array of objects with info for 8 movies. You should create two files:
+## Iteration #1: The `Celebrity` Model
 
-- Create a folder `models` and in it add the `Movie.model.js` file for the Movie model;
-- Create `seeds.js` file inside the `bin` folder and write the code necessary to seed the database.
+Once we have generated our Express app, our first step is to create the `Celebrity` model and seed some initial celebrities in our database.
 
-Below find the seeds you should add to the `bin/seeds.js`. Based on the objects provided in the seeds, create a `Movie` model in the `models/Movie.model.js` file.
+The `Celebrity` model should have:
+- `name` - String (like _Tom Cruise, Beyonce, Daffy Duck,_ etc.)
+- `occupation` - String (what the celebrity does, why they are famous.  For example _actor, singer, comedian_, or you can put _unknown_ if your celebrity is someone like Kim Kardashian)
+- `catchPhrase` - String (every celebrity needs a good catch phrase.  Well maybe not all of them have one in real life, but all of _our_ celebrities will have a catch phrase.  This can be pretty much anything)
 
-```javascript
-// To insert in "bin/seeds.js"
 
-const movies = [
-  {
-    title: 'A Wrinkle in Time',
-    director: 'Ava DuVernay',
-    stars: ['Storm Reid', 'Oprah Winfrey', 'Reese Witherspoon'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
-    showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
-  },
-  {
-    title: 'The Strangers: Prey at Night',
-    director: 'Johannes Roberts',
-    stars: ['Christina Hendricks', 'Bailee Madison', 'Martin Henderson'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1OTIwODgzMV5BMl5BanBnXkFtZTgwMzUyMDgzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      "A family's road trip takes a dangerous turn when they arrive at a secluded mobile home park to stay with some relatives and find it mysteriously deserted. Under the cover of darkness, three masked psychopaths pay them a visit to test the family's every limit as they struggle to survive.",
-    showtimes: ['13:50', '16:20', '19:20', '22:10']
-  },
-  {
-    title: 'The Hurricane Heist',
-    director: 'Rob Cohen',
-    stars: ['Toby Kebbell', 'Maggie Grace', 'Ryan Kwanten'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMzg3Y2MyNjgtMzk4ZS00OTU3LWEwZmMtN2Y0NTdlZjU0NGFiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      'Thieves attempt a massive heist against the U.S. Treasury as a Category 5 hurricane approaches one of its Mint facilities.',
-    showtimes: ['13:10', '15:40', '18:20', '20:50', '23:10']
-  },
-  {
-    title: 'Gringo',
-    director: 'Nash Edgerton',
-    stars: ['Joel Edgerton', 'Charlize Theron', 'David Oyelowo'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyMTk2MTQ3Ml5BMl5BanBnXkFtZTgwNDQ2ODE0NDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      'GRINGO, a dark comedy mixed with white-knuckle action and dramatic intrigue, explores the battle of survival for businessman Harold Soyinka (David Oyelowo) when he finds himself crossing the line from law-abiding citizen to wanted criminal.',
-    showtimes: ['13:40', '15:50', '19:00', '21:20', '23:50']
-  },
-  {
-    title: 'Thoroughbreds',
-    director: 'Cory Finley',
-    stars: ['Anya Taylor-Joy', 'Olivia Cooke', 'Anton Yelchin'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BNDcyNDA4NDAzN15BMl5BanBnXkFtZTgwODQxMDQ5NDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      'Two upper-class teenage girls in suburban Connecticut rekindle their unlikely friendship after years of growing apart. Together, they hatch a plan to solve both of their problems-no matter what the cost.',
-    showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
-  },
-  {
-    title: 'The Leisure Seeker',
-    director: 'Paolo Virzì',
-    stars: ['Helen Mirren', 'Donald Sutherland', 'Janel Moloney'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1NTg2MzcyNF5BMl5BanBnXkFtZTgwNjMwMDIzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      'A runaway couple goes on an unforgettable journey in the faithful old RV they call The Leisure Seeker, traveling from Boston to The Ernest Hemingway Home in Key West. They recapture their passion for life and their love for each other on a road trip that provides revelation and surprise right up to the very end.',
-    showtimes: ['13:40', '15:50', '19:00', '21:20', '23:50']
-  },
-  {
-    title: 'Black Panther',
-    director: 'Ryan Coogler',
-    stars: ['Chadwick Boseman', 'Michael B. Jordan', "Lupita Nyong'o"],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      "T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake.",
-    showtimes: ['13:50', '16:20', '19:20', '22:10']
-  },
-  {
-    title: 'Red Sparrow',
-    director: 'Francis Lawrence',
-    stars: ['Jennifer Lawrence', 'Joel Edgerton', 'Matthias Schoenaerts'],
-    image:
-      'https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MDkxOTc4NDdeQTJeQWpwZ15BbWU4MDAxNzgyNTQz._V1_UX182_CR0,0,182,268_AL_.jpg',
-    description:
-      "Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.",
-    showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
-  }
-];
+### Steps we will follow in this iteration:
 
-// Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+1. Create the `celebrity.js` model file in the `models/` folder.
+2. In the `celebrity.js` model file:
+    - Create the `Celebrity` model with the schema.
+    - Create the celebrity schema with `name`, `occupation` and `catchPhrase`.
+    - Export the `Celebrity` model.
+3. Create the `seeds.js` file in the `bin/` folder.
+4. In `seeds.js` file:
+    - Create an array of 3 objects, each with `name`, `occupation` and `catchPhrase` for our initial celebrities.
+    - Call the `Celebrity` model's `create` method with the array as argument.
+    - In the `create` method's callback, display feedback.
+5. Run the seed file with `node` to seed your database.
+6. Check the database with the `mongo` command to confirm that your data was saved.
 
-// ... your code here
-```
 
-### Iteration 2 | The Home Page
+## Iteration #2: Listing Our Celebrities
 
-Now when you have all movies in the database, you shall proceed to getting them and displaying them to the user.
-We need our home page. Simple and beautiful, you can use the `index.hbs` to create the following home page:
+Now that we've got some celebrities in the database, we can start working with them in our Express app. Let's **display a list of all the celebrities**.
 
-![image](https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png)
+Here's the route we will be using:
 
-The `button` should be a link redirecting to the `/movies` route. (_You will create this route in the following iteration._)
+|   Route   | HTTP Verb |   Description   |
+|-----------|-----------|-----------------|
+| `/celebrities` |    GET    | Show all celebrities |
 
-### Iteration 3 | List the Movies
+### Steps we will follow in this iteration:
 
-Proceed to creating the `/movies` route. We need to list all the movies we have in our database. You should create a `movies.hbs` file, and display a list of all the movies.
-To summarize, in this iteration your goal is to create `/movies` route that will render `movies.hbs` view. This view should have all the movie titles and movie images displaying. In addition to this, as displayed on the image below, add the link _See more_ that should point to the each movie details page. (_You will be creating this page in the following iteration._)
+1. Locate the `/celebrities` GET route in `routes/celebrities.js`.
+2. In the route callback:
+    - Call the `Celebrity` model's `find` method to retrieve all the celebrities.
+    - If there's an error, call the route's `next` function and return the error.
+    - If there isn't an error, render the `celebrities/index` view.
+    - Pass the array of celebrities into the view as a variable.
+3. Create the `celebrities/` folder inside `views/`.
+4. Create the `index.hbs` view file inside the `views/celebrities/` folder.
+5. In the `views/celebrities/index.hbs` view file:
+    - Add an `<h2>` tag for the page's heading.
+    - Use a `forEach` loop to display tags with each celebrity's `name`.
+6. In the `views/index.hbs` (homepage) file:
+    - Add a link that goes to the `/celebrities` route.
 
-![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
 
-### Iteration 4 | Display Movie Details
+## Iteration #3: The Celebrity Details Page
 
-Finally, you have to create a view to display the details about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button shown on the `/movies` view.
+We've got a list of celebrities that displays each of their `name`, but what if we want to see the other details? In our `views/celebrities/index.hbs` view with our list of celebrities, let's add links so that the user can click on any celebrity's name, and go to a page specifically for that celebrity.  On this page, we will show all the details of that celebrity.
 
-![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
+Here's the route we will be using:
 
-That's it!
+|     Route     | HTTP Verb |      Description      |
+|---------------|-----------|-----------------------|
+| `/celebrities/:id` |    GET    | Show a specific celebrity |
+
+
+### Steps we will follow in this iteration:
+
+1. Create the `/celebrities/:id` GET route in `routes/celebrities.js`.
+2. In the route callback:
+    - Call the `Celebrity` model's `findOne` or `findById` method to retrieve the details of a specific celebrity by its id.
+    - If there's an error, call the route's `next` function and return the error.
+    - If there isn't an error, render the `celebrities/show` view.
+    - Pass the variable with the celebrity's details into the view.
+3. Create the `show.hbs` view file inside the `views/celebrities/` folder.
+4. In the `views/celebrities/show.hbs` view file:
+    - Add an `<h2>` for the page's heading.
+    - Display tags with the celebrity's `name`, `occupation` and `catchPhrase`.
+6. In the `views/celebrities/index.hbs` view file:
+    - As part of the loop that displays each celebrity's name, add a link that goes to the `/celebrities/:id` route with the `:id` replaced by the actual celebrity's id.
+
+## Iteration #4: Adding New Celebrities
+
+Now that we have a list of celebrities, as well as a personalized details page for each celebrity, let's make it so the user can **add new celebrities to the database**
+
+|     Route     | HTTP Verb |          Description          |
+|---------------|-----------|-------------------------------|
+| `/celebrities/new` |    GET    | Show a form to create a celebrity |
+|   `/celebrities`   |   POST    | Send the data from the form to this route to create the celebrity and save to the database  |
+
+### Steps we will follow in this iteration:
+
+1. Locate the `/celebrities/new` GET route in `routes/celebrities.js`:
+2. In that route's callback:
+  - Render the `celebrities/new` view.
+3. Create the `new.hbs` view file inside the `views/celebrities` folder
+4. In the `views/celebrities/new.hbs` view file:
+   - Add an `<h2>` for the page's heading.
+   - Add a `<form>` tag that makes a POST request to `/celebrities`.
+   - Add `<input>` tags inside the form so the user can fill in values for each attribute of the celebrity.  Make an input for `name`, `occupation`, and `catchPhrase`
+   - Add a `<button>` tag in the form so the user can submit the form once they are done filling it out.
+5. Locate the `/celebrities` post route in `routes/celebrities.js`.
+6. In that route's callback:
+    - Create an object with keys for `name`, `occupation`, and `catchPhrase`.
+    - Values for those keys should come from the form (`req.body` is the object full of the values from the form)
+    - Create an instance of the `Celebrity` model with the object you made in the previous step
+    - Call the `save` method to save the new celebrity to the database
+    - If there is an error, render the `celebrities/new` view so the user can try again.
+    - If there is no error, redirect to the page with the list of celebrities
+7. In the `views/celebrities/index.hbs` view file:
+    - Add a link that goes to the page you just created with the form to create a new celebrity.
+
+## Iteration #5: Deleting Celebrities
+
+Now that we have a list of celebrities, a celebrity details page, and a page to create new celebrities, we only have 2 features left to implement: editing celebrities and deleting them.  Since deleting is simpler, let's start with that.
+
+|        Route         | HTTP Verb |       Description       |
+|----------------------|-----------|-------------------------|
+| `/celebrities/:id/delete` |   POST    | Delete a specific celebrity |
+
+### Steps we will follow in this iteration:
+
+1. In the `views/celebrities/index.hbs` file:
+    - As part of the loop, add a `<form>` tag that makes a POST request to `celebrities/:id/delete` where the `:id` is replaced by the actual `id` of each celebrity.
+    - Add a `<button>` tag inside the form so that it can be submitted.
+2. Create the `/celebrities/:id/delete` POST route in your `routes/celebrities.js` file
+3. In that route's callback:
+    - Use the `Celebrity` model's `findByIdAndRemove` method to delete the celebrity by its `id`.
+    - If there's an error, call the route's `next` function and return the error
+    - If there is no error, redirect to the list of celebrities page.  
+
+
+## Iteration #6 (Bonus): Editing Celebrities
+
+Final piece of our CRUD puzzle: **editing existing celebrities**.
+
+Here are the routes we will be using:
+
+|       Route        | HTTP Verb |          Description          |
+|--------------------|-----------|-------------------------------|
+| `/celebrities/:id/edit` |    GET    | Show a form to edit a celebrity |
+|   `/celebrities/:id`    |   POST    | Send the data from the form to this route to update and save the celebrity from the database         |
+
+
+### Steps we will follow in this iteration:
+
+1. Create the `/celebrities/:id/edit` GET route in `routes/celebrities.js`.
+2. In that route's callback:
+    - Call the `Celebrity` model’s `findOne` or `findById` method to retrieve a specific celebrity by its id.
+    - If there's an error, call the route's `next` function and return the error.
+    - If there isn't an error, render the `celebrities/edit` view.
+    - Pass the variable with the celebrity’s details into the view.
+3. Create the `edit.hbs` view file inside the `views/celebrities/` folder.
+4. In the `views/celebrities/edit.hbs` view file:
+    - Add an `<h2>` tag for the page's heading.
+    - Add a `<form>` tag that makes a POST request to `/celebrities/:id` with the `:id` replaced by the actual celebrity's id.
+    - Add `<input>` tags inside the form for each attirbute of the celebrity.
+      - Bonus: When you render the edit form, make sure each of the input fields is pre-filled with the current value of the attribute for that celebrity
+    - Add a `<button>` tag inside the form so that the user can submit the form once they are done editing.
+5. Locate the `/celebrities/:id` POST route in the `routes/celebrities.js` file.
+6. In that route's callback:
+    - Create an object with keys for each attribute of a celebrity (celebrity has 3 attributes. What were they again? Look back and review if you forgot.)
+    - Values for those keys should come from the form submission (`req.body`).
+    - Call the `Celebrity` model’s `update` method and use the celebrity's id to specify which celebrity we are updating. Also, use the object you just created with the updated attributes for the celebrity and pass this object into the `update` method as the second argument.
+    - If there is an error retrieving that celebrity, call the route's `next` function and return the error
+    - If there is no error, redirect back to the list of celebrities.
+
+## Celebrities - Done!
+
+At this point, we have implemented all the basic CRUD actions for the Celebrity model in our app.  Nice work!
+
+Now that we've done all this good work, it's time to add the Movie model.  After all, what's the point of having all these celebrities if we can't make up fake movies to cast them in?
+
+We are going to create a `Movie` model and implement some CRUD actions for this model as well.  Also, each Movie has a cast where we will have a relation to our Celebrities. 
+
+## Iteration #7: The `Movie` Model
+Let's jump right in.
+
+First of all, we'll need to create the `Movie` model.
+
+The `Movie` model should have:
+- `title` - String
+- `genre` - String
+- `plot` - String
+- `cast` - Array of Object Id's referencing the Celebrity model
+
+## Iteration #8: Adding a new movie
+
+So far we don't have any movies in our database so let's enable a user to **add new celebrities to the database**
+
+|     Route     | HTTP Verb |      Description              |
+|---------------|-----------|-------------------------------|
+| `/movies/new` |    GET    | Show a form to create a movie |
+| `/movies/`    |    POST   | Send data to create the movie |
+
+Go ahead and create the nececessary routes and views as you did for the celebrities.
+
+## Iteration #9: Adding actors to the movie cast
+
+One thinng is missing at creation of a new movie. We don't add any celebrities to the cast yet. We want a select in the form of the new movie view where we can choose from all of the celebrities that are in our database and add them to the movie.
+
+### Steps we will follow in this iteration:
+
+You'll need to:
+  - In the route that renders the view with the form to add a movie get all the celebrities from the database and pass them to the view
+  - In the view render a select that shows the list of the celebrities - watch out: it has to be possible to select multiple celebrities
+  - In the post route add the cast to the movie model at creating a new movie
+
+
+## Iteration #10: Listing all Movies
+
+Okay, the next step is to  **displaying a list of all movies in an index view**
+
+Here's the route we will be using:
+
+|     Route     | HTTP Verb |      Description      |
+|---------------|-----------|-----------------------|
+| `/movies/` |    GET    | Show all celebrities |
+
+### Steps we will follow in this iteration:
+
+Review how you did this for the `Celebrity` model.
+  - In the view we want to display the title, genre and plot for every movie
+  - We also want to show an unordered list with all the actors playing in the movie
+  - to have access in the view to the properties of the celebrities in the cast array you will have to populate them in the route 
+
+### Iteration #11 Editing a movie
+
+Final piece of our CRUD puzzle: **editing existing movies**.
+
+Review how you did this for the `Celebrity` model - it is done exactly the same way for now.
+
+## Iteration #12 (Bonus): Editing the cast of a movie as well
+
+This one is a little bit tricky. You have to pass all the celebrities to the edit view. And make sure that all the actors that are part of the cast are selected. You'll have to create a custom handlebars helper function for that. 
+
+# That's it!
+
 Happy Coding! :heart:

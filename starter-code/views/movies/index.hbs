@@ -1,0 +1,10 @@
+<h1>Movies</h1>
+{{#each movies}}
+    <h2>{{title}}</h2>
+    <p>Genre: {{genre}}</p>
+    <p>Plot: {{plot}}</p>
+    <p>Cast:{{cast.catchPhrase}}</p>
+    <p>Cath Phrase:{{celebrities.catchPhrase}}</p>
+{{/each}}
+
+<a href="/movies/new">Add new movie</a>
