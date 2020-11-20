@@ -1,6 +1,6 @@
-require('../configs/db.config');
-
+const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
+require('../configs/db.config');
 
 const movies = [{
         title: 'A Wrinkle in Time',

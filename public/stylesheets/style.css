@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+#homepage h1 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: white;
+}
+
+#homepage a {
+  position: absolute;
+  top: 55%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  padding: 15px 35px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  background: white;
+}
+
+#homepage a:hover {
+  background: black;
+}
+
+#homepage img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
