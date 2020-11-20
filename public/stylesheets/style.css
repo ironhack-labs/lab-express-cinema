@@ -1,11 +1,7 @@
-/* body {
+body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-a {
-  color: #00B7FF;
-} */
 
 body, html {
   display: flex;
@@ -13,13 +9,65 @@ body, html {
   justify-content: center;
   align-items: center;
   height: 100%;
-
 }
 
 .backgroundImg {
   background-image: url("/images/cinema.jpg");
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+  align-content: center;
+  padding-left: 30%;
+  padding-top: 5%;
+}
+
+.movie-details-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.movie-details-container>div {
+  padding: 25px;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+  margin: 3px;
+}
+
+.moviesButton {
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color: #00B7FF;
+	font-size:17px;
+  margin-top: 20px;
+	padding:18px 58px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.moviesButton:hover {
+	background-color:#f6f6f6;
+}
+.moviesButton:active {
+	position:relative;
+	top:1px;
 }
