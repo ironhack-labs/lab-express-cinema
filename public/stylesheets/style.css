@@ -25,3 +25,12 @@ a {
   border-radius: 10px;
   
 }
+
+.info {
+  background-color: white;
+  
+  flex-wrap: wrap;
+  width: 450px;
+  margin: 20px;
+  flex-direction: column;
+}

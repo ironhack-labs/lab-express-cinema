@@ -1,8 +1,7 @@
 <ul>
     {{#each movies}}
-
-        <li>{{this.title}}</li>
         <img src="{{this.image}}" alt="{{this.title}}">
-
+        <li>{{this.title}}</li>
+        <button id="buttonSeeMore"><a href="/movies/:id">See more</a></button>
     {{/each}}
 </ul>
