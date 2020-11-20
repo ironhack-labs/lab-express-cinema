@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="col col-3">
+            <img class="img-thumbnail" src="{{movie.image}}" alt="Movie Img">
+        </div>
+        <div class="col-9 mt-3">
+            <h4 class="font-weight-bold pb-2">{{movie.title}}</h4>
+            <h5>Director: {{movie.director}}</h5>
+            <p class="font-weight-bold">Stars:
+                <ul>
+                    {{#each movie.stars}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </p>
+            <p class="font-weight-bold">{{movie.description}}</p>
+            <p>{{#each movie.showtimes}}
+                     {{this}} |
+                {{/each}}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-6 offset-3 mt-2">
+            <a href="/movies" class="btn btn-primary">Go Back</a>
+        </div>
+    </div>
+</div>

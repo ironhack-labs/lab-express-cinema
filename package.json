@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "dev": "DEBUG=starter-code:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www"
   },
@@ -14,6 +14,7 @@
     "hbs": "^4.1.1",
     "mongoose": "^5.9.13",
     "morgan": "^1.10.0",
+    "node-sass-middleware": "^0.11.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
