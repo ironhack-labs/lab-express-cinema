@@ -1,0 +1,18 @@
+<div id="list-header">
+    <h1>Ironhack Cinema</h1>
+    <h3>Click on the movie to check the showtimes!</h3>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3">
+    {{#each movies}}
+    <div class="col mb-4">
+        <div class="card">
+            <img src="{{this.image}}" class="card-img-top" alt="{{this.title}}">
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <p class="card-text"><a href="/details/{{this.id}}">See more</a></p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

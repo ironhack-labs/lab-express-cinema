@@ -11,7 +11,6 @@ a {
   color: #00B7FF;
 }
 
-
 #homepage h1 {
   position: absolute;
   top: 30%;
@@ -47,4 +46,46 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#list-header h1,
+h3 {
+  margin-left: 40px;
+}
+
+#list-header h1 {
+  padding: 20px 0px 10px;
+  font-weight: 600;
+}
+
+#list-header h3 {
+  padding-bottom: 20px;
+}
+
+
+.row {
+  width: 100%;
+}
+
+.card {
+  width: 250px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-text a {
+  font-size: 14px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
