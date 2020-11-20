@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 require('../configs/db.config');
 
 const Movie = require('../models/Movie.model');
@@ -86,6 +88,8 @@ const movies = [
   ];
 
 Movie.create(movies)
-    .then(moviesFromDB => console.log(`Created ${moviesFromDB.length} movies`))
-    .catch(err => console.log(`An error occurred while creating books from the DB: ${err}`))
-    .finally(() => mongoose.connection.close());
+    .then(moviesFromDB => { 
+        console.log(`Created ${moviesFromDB.length} movies`);
+        mongoose.connection.close();
+    })
+    .catch(err => console.log(`An error occurred while creating books from the DB: ${err}`));

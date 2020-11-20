@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+h1 {
+  margin-right: 15vw;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+#homepage {
+  height: 100vh;
+  width: 100vw;
+  background: url('/images/cinema.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#cinema-checkmovies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#cinema-checkmovies a {
+  display: inline;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 40px;
+}
