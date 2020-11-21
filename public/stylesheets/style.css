@@ -38,3 +38,36 @@ h1 {
   background-color: whitesmoke;
   border-radius: 40px;
 }
+
+#movies-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 10px 12.5vw;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  margin: 20px auto;
+}
+
+#movie-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.movie-details {
+  margin: 5vw
+}
+
+#movie-details img {
+  margin-left: 5vw;
+}
+
+#movie-detail-text {
+  margin-right: 5vw;
+}
