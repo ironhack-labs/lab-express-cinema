@@ -1,16 +1,19 @@
 
-<ul>   
+<section class="container">
     {{#each info}}
+    
     <div class="info">
-        <div>
+        
             <img src="{{this.image}}" alt="{{this.title}}">
-        </div>
+        
         <h1>{{this.title}}</h1>
         <h2>{{this.director}}</h2>
         <h3>Stars</h3>
             <li>{{this.stars}}</li>
         <p>{{this.description}}</p>
         <p>{{this.showtimes}}</p>
-        </div>
+    </div>
+    
     {{/each}}   
-</ul>
+</section>
+

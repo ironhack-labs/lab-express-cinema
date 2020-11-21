@@ -1,7 +1,9 @@
-<ul>
+<section class="container">
     {{#each movies}}
+        <div class="movies">
         <img src="{{this.image}}" alt="{{this.title}}">
-        <li>{{this.title}}</li>
+        <h3>{{this.title}}</h3>
         <button id="buttonSeeMore"><a href="/movies/:id">See more</a></button>
+        </div>
     {{/each}}
-</ul>
+</section>
