@@ -14,18 +14,19 @@ router.get('/', (req, res, next) => {
 router.get("/movies", (req, res) => {
     Movie.find()
     .then(movies => {
-        console.log(movies)
+        //console.log(movies)
         res.render("movies", {movies})
     })
     .catch(err => console.log(err))
 });
 
 
-router.get("/movies/:id", (req, res) => {
-    Movie.find()
-    .then(info => {
-        console.log(info)
-        res.render("info", {info})
+router.get("/movies/:movieId", (req, res, next) => {
+    
+    Movie.findById(req.params.movieId)
+    .then((movieDetails) => {
+        //console.log(info)
+        res.render("info", {movieDetails})
     })
     .catch(err => console.log(err))
 });

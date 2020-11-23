@@ -1,19 +1,18 @@
 
 <section class="container">
-    {{#each info}}
-    
+
     <div class="info">
         
-            <img src="{{this.image}}" alt="{{this.title}}">
+        <img src="{{movieDetails.image}}" alt="{{movieDetails.title}}">
         
-        <h1>{{this.title}}</h1>
-        <h2>{{this.director}}</h2>
+        <h1>{{movieDetails.title}}</h1>
+        <h2>{{movieDetails.director}}</h2>
         <h3>Stars</h3>
-            <li>{{this.stars}}</li>
-        <p>{{this.description}}</p>
-        <p>{{this.showtimes}}</p>
+        <li>{{movieDetails.stars}}</li>
+        <p>{{movieDetails.description}}</p>
+        <p>{{movieDetails.showtimes}}</p>
+
     </div>
     
-    {{/each}}   
 </section>
 
