@@ -1,8 +1,16 @@
-<h1>List of movies</h1>
-<div>
-{{#each movies}}
-    <img src="{{image}}" alt="{{title}}">
-    <p>{{title}}</p>
-    <a href="/movies/{{_id}}">Movie detail</a>
-{{/each}}
+<div class="movies">
+    <div class="movies-title">
+        <h1>Ironhack Cinema</h1>
+        <p>Click on the movie to check the showtimes!</p>
+    </div>
+    <div class="movies-container">
+        {{#each movies}}
+        <div class="each-movie">
+            <a href="/movies/{{_id}}"><img src="{{image}}" alt="{{title}}"></a>
+            <p>{{title}}</p>
+            <a href="/movies/{{_id}}">Movie details</a>
+        </div>
+        {{/each}}
+    </div>
+    <a id="back-home" href="/">Back Home</a>
 </div>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+/*HOME*/
+.home {
+    background-image: url('../images/cinema.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.home-content {
+    height: 100vh;
+    width: 50vw;
+    align-self: flex-end;
+    padding-top: 100px;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.home-content a {
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #679DAD;
+    font-weight: bold;
+}
+
+/*MOVIES*/
+.movies {
+    display: flex;
+    flex-direction: column;
+    background-color: #334B71;
+}
+
+.movies-title {
+    color: aliceblue;
+    align-self: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.movies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.each-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.each-movie p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.each-movie a {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 20px 3px;
+    background-color: #528598;
+    color: white;
+}
+
+.movies #back-home {
+    align-self: center;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #679DAd;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*MOVIE DETAIL*/
+.movie-detail-container{
+    display: flex;
+    background-color: #334B71;
+}
+
+.movie-image {
+    border: 2px solid red;
+    margin: 10px;
+    width: 250px;
+}
+
+.movie-text {
+    border: 2px solid blue;
+}
+
+.movie-text a {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 20px 3px;
+    background-color: #528598;
+    color: white;
+}
+
+#description{
+    color: red;
+}
+
+#back-home-button {
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #679DAd;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
