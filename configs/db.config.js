@@ -1,12 +1,21 @@
 const mongoose = require('mongoose');
 
-mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(x =>
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-  )
-  .catch(err => console.error('Error connecting to mongo', err));
+const dbOptions = {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
+async function connectDb(){
+  try{
+    await mongoose.connect(
+      process.env.MONGODB_URL,
+      dbOptions
+    )
+    console.log(`Connected to Mongo!`)
+  } catch(e){
+    console.log("Error to connect to the database")
+  }
+};
+
+module.exports = connectDb;
