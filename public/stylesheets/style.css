@@ -1,11 +1,48 @@
 body {
-  padding: 2em;
-  max-width: 1200px;
-  margin: 0 auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+body #home {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/cinema.jpg");
+  background-position: left;
+  background-size: cover;
+}
+
+body #home div {
+  padding: 2em;
+  width: 60%;
+  position: absolute;
+  bottom: 20px;
+}
+
+body #home div h1 {
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+body #home div a {
+  background-color: #ffffff;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+body section {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 1200px;
+}
+
 body #movies {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -19,6 +56,12 @@ body #movies article {
 
 body #movies article img {
   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
+}
+
+body #movie {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 1200px;
 }
 
 body #movie .bck-mobile {
@@ -40,8 +83,49 @@ a {
 }
 
 @media (min-width: 1024px) {
+  body #home div {
+    padding: 2em;
+    width: 45%;
+    float: right;
+    position: unset;
+    bottom: unset;
+  }
+  body #home div h1 {
+    color: #ffffff;
+    font-size: 8em;
+    font-weight: 700;
+    margin: 0.25em 0;
+  }
+  body #home div a {
+    background-color: #ffffff;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 40px;
+    font-size: 1.5em;
+  }
   body #movies article {
     width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  body #movie {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #movie .bck-mobile {
+    display: none;
+  }
+  body #movie img {
+    width: 40%;
+  }
+  body #movie .info {
+    width: 55%;
+  }
+  body #movie .info a {
+    display: block;
   }
 }
 

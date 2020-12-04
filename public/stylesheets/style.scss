@@ -1,9 +1,41 @@
 body {
-  padding: 2em;
-  max-width: 1200px;
-  margin: 0 auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  #home {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/cinema.jpg");
+    background-position: left;
+    background-size: cover;
+    div {
+      padding: 2em;
+      width: 60%;
+      position: absolute;
+      bottom: 20px;
+      h1 {
+        color: #ffffff;
+        font-size: 4em;
+        font-weight: 700;
+      }
+      a {
+        background-color: #ffffff;
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        width: fit-content;
+        border-radius: 20px;
+      }
+    }
+  }
+  section {
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 1200px;
+  }
   #movies {
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
@@ -17,6 +49,9 @@ body {
     }
   }
   #movie {
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 1200px;
     .bck-mobile {
       margin: 11px;
       text-align: center;
@@ -39,9 +74,54 @@ a {
 
 @media (min-width: 1024px) {
   body {
+    #home {
+      div {
+        padding: 2em;
+        width: 45%;
+        float: right;
+        position: unset;
+        bottom: unset;
+        h1 {
+          color: #ffffff;
+          font-size: 8em;
+          font-weight: 700;
+          margin: 0.25em 0;
+        }
+        a {
+          background-color: #ffffff;
+          display: block;
+          padding: 1em;
+          text-decoration: none;
+          width: fit-content;
+          border-radius: 40px;
+          font-size: 1.5em;
+        }
+      }
+    }
     #movies {
       article {
         width: 30%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    #movie {
+      display: flex;
+      justify-content: space-between;
+      .bck-mobile {
+        display: none;
+      }
+      img {
+        width: 40%;
+      }
+      .info {
+        width: 55%;
+        a {
+          display: block;
+        }
       }
     }
   }
