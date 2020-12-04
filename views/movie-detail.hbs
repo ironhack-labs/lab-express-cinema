@@ -1,0 +1,18 @@
+{{> movieCard}}
+<div>
+    <p>Director: {{this.director}}</p>
+    {{#each this.stars}}
+    <ul>
+        <li>{{this}}</li>
+    </ul>
+
+    {{/each}}
+    <p>{{this.description}}</p>
+    {{#each this.showtimes}}
+    <ul>
+        <li>{{this}}</li>
+    </ul>
+
+    {{/each}}
+
+</div>

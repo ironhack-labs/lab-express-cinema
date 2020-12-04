@@ -24,7 +24,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-
+hbs.registerPartials(`${__dirname}/views/partials/`);
 // Express View engine setup
 
 app.set('views', path.join(__dirname, 'views'));
