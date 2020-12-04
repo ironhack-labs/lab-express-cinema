@@ -16,9 +16,31 @@ const debug = require('debug')(
 
 const app = express();
 
-// require database configuration
+//require database configuration
 require('./configs/db.config');
 
+const dbOptions = {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
+async function connectDb() {
+  try {
+      const connection = await mongoose.connect(
+      'mongodb://localhost/express-cinema-dev',
+      {
+        useCreateIndex: true,
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+      );
+      console.log("connected to mongo db");
+  } catch (err) {
+      console.error(err);
+  }
+}
+connectDb()
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
