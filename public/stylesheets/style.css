@@ -1,0 +1,19 @@
+.inicio img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .inicio a{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .incio{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
