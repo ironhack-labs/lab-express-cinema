@@ -1,0 +1,19 @@
+<section id="movie">
+    <a href="/movies" class="bck-mobile">Go back</a>
+    <img src="{{image}}" alt="{{title}}">
+    <div class="info">
+        <a href="/movies">Go back</a>
+        <h2>{{Title}}</h2>
+        <h3>Director: {{director}}</h3>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>{{#each showtimes}}
+            <span>{{this}} | </span>
+            {{/each}}
+        </p>
+    </div>
+</section>

@@ -17,7 +17,9 @@ const debug = require('debug')(
 const app = express();
 
 // require database configuration
-require('./configs/db.config');
+const connectDb = require('./configs/db.config');
+
+connectDb();
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -37,5 +39,8 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+app.listen(process.env.PORT, () => console.log("server running on port 4000"));
+
 
 module.exports = app;
