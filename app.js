@@ -8,6 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const connectDb = require("./configs/db.config")
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
@@ -16,8 +17,7 @@ const debug = require('debug')(
 
 const app = express();
 
-// require database configuration
-require('./configs/db.config');
+connectDb()
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -26,6 +26,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
+hbs.registerPartials(`${__dirname}/views/partials/`);
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -33,9 +35,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Express - Generated with Aldea';
 
 const index = require('./routes/index');
 app.use('/', index);
 
+
+
 module.exports = app;
+
+
+app.listen(process.env.PORT, console.log("Connectado al puerto 3000")) 

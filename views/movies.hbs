@@ -1,0 +1,15 @@
+<button>
+    <a href="/">Home</a>
+</button>
+<div>
+    {{#each allMovies}}
+
+    {{title}}<br>
+    <img src="{{image}}"><br>
+
+    <button>
+        <a href="/movieInfo/{{_id}}">see more</a>
+    </button>
+
+    {{/each}}
+</div>
