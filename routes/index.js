@@ -1,24 +1,33 @@
 const express = require('express');
 const router = express.Router();
-const Movie = require('../models/Movie.model.js');
+const Movie = require('../models/Movie.model');
 
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
-router.get('/movies', (req, res) => {
-    Movie.find()
-    .then(moviesFromDB => {
-        console.log('Movies retrieved from DB: ', moviesFromDB);
-        res.render('movies-list', { movies: moviesFromDB});
-    })
-    .catch(error => console.log('Error while getting the movies from the DB: ', error));
+router.get('/', (req, res, next) => {
+    res.render('index', {title: 'Cinema<br>Ironhack'});
 });
 
-router.get('/movie/:movieId', (req, res) => {
-    const {movieId} = req.params;
+/* GET movies list */
+router.get('/movies', async (req, res, next) => {
+  try {
+    const movies = await Movie.find();
+    res.render('movie-views/movies', {movies});
+  } catch (error) {
+    console.log('Error while retrieving movies list:>> ', error);
+    res.status(500).send(error);
+  }
+});
 
-    Movie.findById(movieId)
-    .then(theMovie => res.render('movies-details', {movie: theMovie}))
-    .catch(error => console.log('Error while retieving movie details: ', error));
+/* GET movie details */
+router.get('/movie/:id', async (req, res, next) => {
+    const movieId = req.params.id;
+    try {
+     const movie = await Movie.findById(movieId);
+     res.render('movie-views/movie-details', {movie});
+    } catch(error) {
+        console.log(`Error while retrieving movie id ${movieId}:>> `, error);
+        res.status(500).send(error);
+    }
 });
 
 module.exports = router;

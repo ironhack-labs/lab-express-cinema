@@ -1,13 +1,8 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 
-const DB_NAME = 'lab-express-cinema';
-
-mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true, 
-});
+//require database configuration
+require('../configs/db.config');
 
 const movies = [
     {
@@ -92,10 +87,14 @@ const movies = [
     }
   ];
 
-Movie.create(movies)
-.then(moviesFromDB => {
-    console.log(`Created ${moviesFromDB.length} movies`);
-
-    mongoose.connection.close();
-})
-.catch((err) => console.log(`An error occurred while creating movies from the DB: ${err}`));
+// Add here the script that will be run to actually seed the database
+const seedDatabase = async () => {
+ try {
+   const moviesCreated = await Movie.create(movies);
+   console.log(`Created ${moviesCreated.length} movies.`);
+   await mongoose.connection.close();
+ } catch (err) {
+  console.log(`An error occurred while getting movies from the database: ${err}`);
+ }
+};
+seedDatabase();

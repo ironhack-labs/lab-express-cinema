@@ -1,18 +1,20 @@
 const mongoose = require('mongoose');
 const {Schema, model} = mongoose;
 
-const movieSchema = new Schema(
-    {
+const movieSchema = new Schema({
         title: String,
         director: String,
-        stars: [],
+        stars: [String],
         image: String,
         description: String,
-        showtimes: []
+        showtimes: [String],
     },
     {
         timestamps: true
-    }
-);
+    });
 
-module.exports = model('Movie', movieSchema);
+const Movie = model('Movie', movieSchema);
+//each movie will be saved to collection 'movies'
+//Model: Movie (uppercase, singular)
+//Collection: movies (lowercase, plural)
+module.exports = Movie;
