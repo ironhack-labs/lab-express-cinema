@@ -3,11 +3,14 @@
 <p>Click on the movie to check the showtimes!</p>
 
 {{#each movies}}
+<div class="column">
+    <div class="card">
+        <img src="{{image}}">
+        <h3>{{title}}</h3>
 
-<img src="{{image}}">
-<h3 style="color: black;">{{title}}</h3>
 
-
-<a href="/movie-detail/" class="btn btn-primary ">See More</a>
+        <a href="/movie-detail/" class="btn btn-link ">See More</a>
+    </div>
+</div>
 
 {{/each}}
