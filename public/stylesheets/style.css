@@ -1,0 +1,81 @@
+html,body {
+    margin:0;
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/images/cinema.jpg");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 900px;
+    margin: auto;
+}
+.homepage h1, .homepage a {
+    margin-left: 60%;
+}
+.homepage h1{
+    color: white;
+    font-size: 80px;
+}
+.homepage button{
+    border-radius: 50px;
+    font-size: 15px;
+    height: 40px;
+    color: #00B7FF;
+    width: 200px;
+}
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    margin:5%;
+    justify-content: space-between;
+}
+.movies div{
+    
+    width: 30%;
+    margin: 10px;
+}
+h2{
+    margin-top: 2%;
+}
+h2,h3{
+    margin-left: 5%;
+
+}
+.movie-detail{
+    display: flex;
+    margin: 5%;
+}
+.movie-detail #movie-img{
+    width: 25%;
+}
+.movie-detail #movie-info{
+    width: 75%;
+}
+.movie-detail ul{
+    padding-left: 15px;
+}
+#lista-horario{
+    display: flex;
+    flex-direction: row;
+   list-style: none;
+}
+#lista-horario li{
+    
+    margin-left: 0;
+    margin-right: 5px;
+}
+#lista-horario li:after{
+    content:" |";
+}
+

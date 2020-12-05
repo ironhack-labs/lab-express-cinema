@@ -1,18 +1,22 @@
-{{> movieCard}}
-<div>
-    <p>Director: {{this.director}}</p>
-    {{#each this.stars}}
-    <ul>
-        <li>{{this}}</li>
-    </ul>
+<section class="movie-detail">
+    <div id="movie-img">{{> movieCard}}</div>
 
-    {{/each}}
-    <p>{{this.description}}</p>
-    {{#each this.showtimes}}
-    <ul>
-        <li>{{this}}</li>
-    </ul>
+    <div id="movie-info">
+        <p> <strong>Director: {{this.director}}</strong> </p>
+        <p><strong>Stars</strong></p>
+        {{#each this.stars}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
 
-    {{/each}}
+        {{/each}}
+        <p>{{this.description}}</p>
+        <ul id="lista-horario">
+            {{#each this.showtimes}}
+            <li>{{this}}</li>
 
-</div>
+            {{/each}}
+        </ul>
+
+    </div>
+</section>
