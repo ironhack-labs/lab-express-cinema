@@ -4,5 +4,80 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.homePage {
+  background-image: url("./../images/cinema.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  width: auto;
+  padding-top: 0px;
+  position: relative;
+  bottom: 80px;
+}
+
+.homeTitle {
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 850px;
+  text-align: center;
+  font-size: 7em;
+}
+
+.btnHome {
+  position: absolute;
+  top: 380px;
+  left: 950px;
+  height: 50px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+.btnHome a {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.movieList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  padding: 0px 80px 0px 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexMovies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.movieImg {
+  padding: 10px;
+}
+
+.movieTitle {
+  padding: 10px;
+}
+
+.seemore {
+  padding-bottom: 20px;
+}
+
+.flexDetails {
+  display: flex;
+}
+
+.movieDetails {
+  padding-left: 30px;
+  max-width: 450px;
 }

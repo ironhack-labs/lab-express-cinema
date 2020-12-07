@@ -1,16 +1,16 @@
 <a href="/">go back</a>
 
-<h1> MOVIES PAGES</h1>
+<h1> IronHack Cinema </h1>
+<p>Click on the movie to check the showtimes!</p>
 
 
 
-<ul>
+<ul class="flexMovies">
     {{#each movies}}
-    <li>
-        {{this.title}}
-        {{this.director}}
-        <img src="{{this.image}}" />
-        <a href="/movies/{{this._id}}">see more...</a>
+    <li class="movieList">
+        <div class="movieImg"><img src="{{this.image}}" /> </div>
+        <div class="movieTitle"> <b>{{this.title}}</b> </div>
+        <div class="seemore"> <a href="/movies/{{this._id}}">See more...</a> </div>
         {{/each}}
     </li>
 </ul>

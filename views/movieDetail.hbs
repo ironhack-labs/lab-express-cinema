@@ -1,22 +1,25 @@
-<a href="/movies">Go back</a>
+<div class="flexDetails">
 
+    <div class="detailImg">
+        <img src="{{image}}" />
+    </div>
+    <div class="movieDetails">
+        <a href="/movies">Go back</a>
 
-<h1> About the movie</h1>
+        <h1>{{title}}</h1>
+        <h2>Director: {{director}}</h2>
 
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
 
-<img src="{{image}}" />
-<h1>{{title}}</h1>
-<h2>Director: {{director}}</h2>
+        <p>{{description}}</p>
 
-<ul>
-    {{#each stars}}
-    <li>{{this}}</li>
-    {{/each}}
-</ul>
-
-<p>{{description}}</p>
-
-<p>{{#each showtimes}}
-    {{this}} |
-    {{/each}}
-</p>
+        <p>{{#each showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+    </div>
+</div>
