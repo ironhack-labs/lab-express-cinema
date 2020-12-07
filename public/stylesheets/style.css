@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+#cinema-ironhack {
+  color: white;
+  font-size: 72px;
+  padding: 50px 0px 20px 600px;
+}
+
+#welcome-page {
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#btn {
+  padding: 15px 20px;
+  border-radius: 30px;
+  color: gray;
+  border: 1px solid gray;
+  margin: 0px 0px 0px 600px;
+}
+
+#all-movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+.each-movie {
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.each-movie p {
+  font-weight: bold;
+}
+
+#movies-h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px;
+}
+#movies-h2 {
+  font-size: 18px;
+  margin: 20px;
+}
+
+#one-movie {
+  display: flex;
+}
+#one-movie div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+#one-movie img {
+  margin: 20px;
+}
+#one-movie h1 {
+  font-weight: bold;
+}
+li {
+  margin-left: 20px;
+}
