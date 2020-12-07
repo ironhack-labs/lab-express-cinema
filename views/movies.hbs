@@ -1,0 +1,10 @@
+<section class="movies-page">
+        <h1>{{title}}</h1>
+        <p>Click on the movie to check the showtimes</p>
+
+        {{#each moviesList}}
+        <img src="{{this.image}}" alt="">
+        <p>{{this.title}}</p>
+        <a href="/movies/movie/{{this._id}}">See more</a>
+        {{/each}}
+</section>
