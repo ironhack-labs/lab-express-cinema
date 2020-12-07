@@ -1,0 +1,16 @@
+<a href="/">go back</a>
+
+<h1> MOVIES PAGES</h1>
+
+
+
+<ul>
+    {{#each movies}}
+    <li>
+        {{this.title}}
+        {{this.director}}
+        <img src="{{this.image}}" />
+        <a href="/movies/{{this._id}}">see more...</a>
+        {{/each}}
+    </li>
+</ul>
