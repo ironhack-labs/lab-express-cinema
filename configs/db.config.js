@@ -1,12 +1,14 @@
-const mongoose = require('mongoose');
+// file that will allow you to connect to the dateBase
+
+const mongoose = require("mongoose");
 
 mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
+  .connect("mongodb://localhost/express-cinema-dev", {
     useCreateIndex: true,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
-  .then(x =>
+  .then((x) =>
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   )
-  .catch(err => console.error('Error connecting to mongo', err));
+  .catch((err) => console.error("Error connecting to mongo", err));
