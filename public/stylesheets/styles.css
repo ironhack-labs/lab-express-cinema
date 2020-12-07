@@ -1,0 +1,35 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+#background {
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vw;
+  border: 1px solid;
+}
+#box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 60px;
+}
+#roundedButton {
+  padding: 20px;
+  width: 20rem;
+  border-radius: 30px;
+  background-color: white;
+}
+#title {
+  font-size: 5rem;
+  color: white;
+  max-width: 320px;
+}
+#check {
+  font-size: 20px;
+}
