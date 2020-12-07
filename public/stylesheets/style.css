@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+#homepage h1 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: white;
+}
+#homepage a {
+  position: absolute;
+  top: 55%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  padding: 15px 35px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  background: white;
+}
+#homepage a:hover {
+  background: black;
+}
+#homepage img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#list-header h1,
+h3 {
+  margin-left: 40px;
+}
+#list-header h1 {
+  padding: 20px 0px 10px;
+  font-weight: 600;
+}
+#list-header h3 {
+  padding-bottom: 20px;
+}
+.row {
+  width: 100%;
+}
+.card {
+  width: 250px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card-text a {
+  font-size: 14px;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#details-container {
+  display: flex;
+  height: 400px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+#details-container img {
+  width: 250px;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+#details-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 500px;
+}
+
+#details-text h2 {
+  font-weight: 900;
+  font-size: 45px;
+  padding-top: 10px;
+}
+
+#details-text h4 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#details-text h5 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+#details-text p,
+li {
+  font-size: 15px;
+}
+
+#details-text p {
+  padding-top: 10px;
+}
+
+li {
+  list-style-position: inside;
+}
+
+#details-text a {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#timetable {
+  padding-top: 10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
