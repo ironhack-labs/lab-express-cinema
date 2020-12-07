@@ -32,3 +32,28 @@ a {
 #showtimes {
   display: inline;
 }
+
+#cover-home {
+  position: relative;
+}
+
+#cinema-block {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+#cinema-block a {
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#cinema-block h1 {
+  color: white;
+  font-size: 60px;
+  width: 50px;
+}
