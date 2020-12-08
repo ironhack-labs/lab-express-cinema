@@ -1,0 +1,15 @@
+to send details to movies first
+
+<h1>{{title}}</h1>
+<img scr=url("{{image}}") <hr>
+<p>Director: {{director}}</p>
+<ul>
+    <span> Stars: </span>
+    <li>{{#each stars}}</li>
+</ul>
+{{/each}}
+<p> {{description}}</p>
+<p> {{#each showtimes}} | </p>
+{{/each}}
+<hr>
+<a href="/movies">Back</a>
