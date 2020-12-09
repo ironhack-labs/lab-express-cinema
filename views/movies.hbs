@@ -1,0 +1,13 @@
+<h1>All movies</h1>
+<ul class="list">
+    {{#each mov}}
+    <li class="item card">
+        <div class="icons">
+            <img src="{{this.image}}"></img>
+            <h2 class="li">{{this.title}}</h2>
+            <button class="btn"><a href="/movies/movie/{{this._id}}">See More</a>
+            </button>
+        </div>
+    </li>
+    {{/each}}
+</ul>
