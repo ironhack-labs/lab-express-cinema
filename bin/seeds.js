@@ -1,16 +1,3 @@
-const mongoose = require("mongoose");
-const Movie = require("../models/Movie.model");
-
-const DB_NAME = "express-cinema-dev";
-
-mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-// To insert in "bin/seeds.js"
-
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -94,15 +81,22 @@ const movies = [
   },
 ];
 
-// Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie.model.js");
 
-// ... your code here
-
-Movie.create(movies)
-  .then((moviesFromDB) => {
-    console.log(`Created ${moviesFromDB.length} movies`);
-    mongoose.connection.close();
+mongoose
+  .connect("mongodb://localhost/express-cinema-dev", {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   })
-  .catch((err) =>
-    console.log(`An error occurred while getting movies from the DB: ${err}`)
-  );
+  .then((x) => {
+    console.log(
+      `Connected to Mongo! Database name: "${x.connections[0].name}"`
+    );
+    return x.connection.dropDatabase();
+  })
+  .then(() => {
+    return Movie.insertMany(movies);
+  })
+  .catch((err) => console.error("Error connecting to mongo", err));
