@@ -1,6 +1,3 @@
-h1 {
-  text-align: left; }
-
 body {
   display: flex;
   justify-content: center;
@@ -36,5 +33,32 @@ a {
 
 #topPage {
   margin-right: 600px; }
+
+#mainTitle {
+  height: 200px;
+  width: 200px;
+  margin-left: 600px;
+  margin-top: 150px; }
+
+button {
+  height: 50px;
+  width: 170px;
+  background-color: white;
+  color: #00ccff;
+  font-size: 15px;
+  border: none;
+  border-radius: 50%; }
+
+.indexPage {
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw; }
+
+.indexPage h1 {
+  font-size: 100px;
+  color: white;
+  margin-bottom: auto; }
 
 /*# sourceMappingURL=style.css.map */

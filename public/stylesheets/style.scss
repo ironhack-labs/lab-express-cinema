@@ -1,9 +1,4 @@
 
-h1{
- text-align: left;
- }
-
-
 @mixin centerContent{
   display: flex;
   justify-content: center;
@@ -16,7 +11,11 @@ body {
   @include centerContent();
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
 }
+
+
+
 
 a {
   color: #00B7FF;
@@ -54,3 +53,35 @@ justify-content: space-around;
 #topPage{
  margin-right: 600px; 
 }
+
+#mainTitle{
+  height: 200px;
+  width: 200px;
+  margin-left: 600px;
+  margin-top: 150px;
+}
+
+button{
+  height: 50px;
+  width: 170px;
+  background-color: white;
+  color: rgb(0, 204, 255);
+  font-size: 15px;
+  border: none;
+  border-radius: 50%;
+
+}
+
+.indexPage{
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.indexPage h1{
+  font-size: 100px;
+  color:white;
+  margin-bottom: auto;
+  }
