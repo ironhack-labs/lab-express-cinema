@@ -15,4 +15,17 @@ router.get('/movies', (req,res,next) => {
     })
 });
 
+router.get(`/movies/:movieId`, (req,res,next) => {
+    const movieId = req.params.id;
+
+    Movie.findById(movieId)
+        .then(theMovie => {
+            res.render(`movie-details`, {movie: theMovie})
+        })
+        .catch(err => {
+            console.log(`error getting the book due to ${err}`);
+        })
+});
+
+
 module.exports = router;
