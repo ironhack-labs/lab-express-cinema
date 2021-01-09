@@ -1,8 +1,8 @@
 const mongoose = require(`mongoose`);
+const Movie = require(`../models/Movie.model.js`)
 
 
-
-mongoose.connect(`mongodb://localhost/cinema`, {
+mongoose.connect(`mongodb://localhost/express-cinema-dev`, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -90,4 +90,14 @@ const movies = [
       showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
   ];
+
+  Movie.create(movies)
+    .then(moviesFromDB => {
+        console.log(`Created ${moviesFromDB.length} movies!`);
+
+        mongoose.connection.close();
+    })
+    .catch(err => {
+        console.log(`error adding movies due to ${err}`);
+    })
   
