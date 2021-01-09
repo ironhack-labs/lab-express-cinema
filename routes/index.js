@@ -11,16 +11,15 @@ router.get('/', (req, res, next) => {
 router.get('/movies', (req,res, next) => {
   Movie.find()
   .then(allMoviesFromDB => {
-    console.log('Retrieve:', allMoviesFromDB)
+    
     res.render('movies-list', {movies: allMoviesFromDB});
   })
   .catch(error => console.log('Error while getting the movies from the DB: ', error))
 });
 
 router.get('/movies/:movieId', (req, res)=>{
-  const {movieId} = req.params;
 
-  Movie.findOne(movieId)
+  Movie.findOne(req.params.id)
   .then(theMovie => res.render ('movie-details', {movie: theMovie}))
   .catch(error=> console.log('Error while retrieving movie details: ', error))
     

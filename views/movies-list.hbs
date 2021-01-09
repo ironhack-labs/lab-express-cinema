@@ -1,9 +1,22 @@
-<h1>Movies</h1>
 
-{{#each movies}}
-<div>
-  <h3>{{title}}</h3>
+<section id='topPage'>
+<h1>{{title}}</h1>
+<h2>Click on the move to check the showtimes!</h2>
+<p>  <a id='homePage' href="/">Back to Home Page</a></p>
+</section>
+
+<section id="allMovies">
+
+  {{#each movies}}
+<div id="movieList">
+  
   <img src="{{this.image}}" alt="{{this.title}} poster">
-  <a href="/movie-details">See more</a> --}}
+  <h3>{{title}}</h3>
+  <a href="/movies/{{_id}}">See more</a>
 </div>
 {{/each}}
+
+
+</section>
+
+

@@ -1,9 +1,16 @@
 
-<a href="/movies">Go back</a>
+
+<section id='movieDetails'>
 
 <div>
-  <h1>{{movie.title}}</h1>
-<h2>{{movie.director}}</h2>
+  <img src="{{movie.image}}" alt="{{movie.name}} poster"/>
+</div>
+
+<div>
+  <a href="/movies">Go back</a>
+
+<h3>{{movie.title}}</h1>
+<h4>{{movie.director}}</h2>
 <ul>
   <h3>Stars</h3>
   {{#each movie.stars}}
@@ -13,9 +20,13 @@
 
 <p>{{movie.description}}</p>
 
-<p>{{movie.showtime}}</p>
+<p>{{#each movie.showtimes}}
+  {{this}}|
+  {{/each}}
+</p>
 </div>
 
-<div>
-  <img src="{{movie.image}}" alt="{{movie.name}} poster"/>
-</div>
+
+</section>
+
+
