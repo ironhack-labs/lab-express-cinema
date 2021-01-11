@@ -48,3 +48,13 @@ a {
   width: 25%;
   margin: 20px;
 }
+
+.movieContainer{
+  display: flex;
+  width: 60vw;
+}
+
+.movieImg{
+  align-self: center;
+  margin-right: 50px;
+}
