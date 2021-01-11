@@ -35,3 +35,16 @@ a {
   float: right;
   margin-right: 100px;
 }
+
+
+.movies{
+  display: flex;
+  justify-content: space-around; 
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.eachMovie{
+  width: 25%;
+  margin: 20px;
+}
