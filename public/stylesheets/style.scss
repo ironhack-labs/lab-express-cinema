@@ -51,7 +51,10 @@ a {
 
 .movieContainer{
   display: flex;
-  justify-content: space-between;
-  width: 80vw;
-  height: auto;
+  width: 60vw;
+}
+
+.movieImg{
+  align-self: center;
+  margin-right: 50px;
 }

@@ -1,17 +1,11 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
+require("../configs/db.config.js")
+//req mongoose
+// req model 
+// req db connection from configs not what i did below
 
 
-mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(x =>
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-  )
-  .catch(err => console.error('Error connecting to mongo', err));
 
 
 
