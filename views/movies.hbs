@@ -1,0 +1,15 @@
+<h1>Movies</h1>
+
+{{#each moviesFromDB}}
+
+<div>
+    <h2>{{title}}</h2>
+    <img src="{{image}}">
+    <br>
+    <br>
+    <a href="movies/{{id}}">Details and Showtimes</a>
+
+</div>
+<br>
+<br>
+{{/each}}
