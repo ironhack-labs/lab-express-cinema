@@ -18,6 +18,7 @@ const app = express();
 
 // require database configuration
 require('./configs/db.config');
+require('./bin/seeds.js')
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -26,16 +27,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+// Hbs partials
+hbs.registerPartials(path.join(__dirname, '/views/partials'));
+
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+// app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+// const movies = require('./routes/movies');
+// app.use('/movies', movies);
 
 module.exports = app;

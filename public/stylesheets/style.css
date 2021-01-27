@@ -1,0 +1,37 @@
+body {
+  min-height: 100%;
+}
+
+.home-page {
+  background-image: url("../images/cinema.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  height: 50rem;
+  background-repeat: no-repeat;
+}
+
+.home-page-content {
+  display: flex;  
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+  height: 25rem;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+.developer:hover {
+  color: white;
+}
+
+.btn {
+  border-radius: 5rem;
+}
