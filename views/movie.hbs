@@ -1,0 +1,36 @@
+<div id="moviesBg" class="container-fluid bg-white">
+    <div class="container-fluid p-5">
+        <p><a href="../movies">Go back</a></p>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="{{image}}" alt="{{title}}" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text fw-bold">Director: {{director}}</p>
+                    <small>
+                        <p class="card-text">Stars:
+                            {{#each stars as |star|}}
+                            <li>{{star}}</li>
+                            {{/each}}
+                        </p>
+                        <p class="card-text fw-lighter">{{description}}</p>
+                        <p class="text-muted">
+                            {{#each showtimes as |showtime|}}
+                            {{#if @last}}
+                            {{showtime}}
+                            {{else}}
+                            {{showtime}} |
+                            {{/if}} 
+                            {{/each}}
+                        </p>
+
+                    </small>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
