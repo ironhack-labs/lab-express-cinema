@@ -1,6 +1,16 @@
-body {
+html, body {
   min-height: 100%;
 }
+
+body > .movie-detail-container {
+  padding-bottom: 24.5rem
+}
+/* footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
 
 .home-page {
   background-image: url("../images/cinema.jpg");

@@ -66,13 +66,12 @@ const movies = [{
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-const mongoose = require('mongoose');
+require('../configs/db.config');
 const Movie = require('../models/Movie.model')
 
-Movie
-    .insertMany(movies)
-    .then(() => {
-        console.log(`The movies have been added to the database!`);
+Movie.insertMany(movies)
+    .then((movie) => {
+        console.log(`The movie ${movie.title} has been added to the database!`);
     })
     .catch(error => console.log('An error happened while saving a new movie', error))
 
