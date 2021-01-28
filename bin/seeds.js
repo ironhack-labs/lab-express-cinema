@@ -64,8 +64,6 @@ const movies = [{
     }
 ];
 
-// Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-
 require('../configs/db.config');
 const Movie = require('../models/Movie.model')
 
@@ -74,28 +72,3 @@ Movie.insertMany(movies)
         console.log(`The movie ${movie.title} has been added to the database!`);
     })
     .catch(error => console.log('An error happened while saving a new movie', error))
-
-// CLASE
-// require("dotenv").config();
-// require("./config/db.config");
-// const faker = require('faker')
-// const Post = require("./models/Post.model");
-
-// Post.deleteMany()
-//     .then(() => {
-//         Post.create({
-//             title: faker.lorem.sentence(),
-//             description: faker.lorem.paragraphs(Math.floor(Math.random()*4)) + 1,
-//             author: faker.internet.userName(),
-//             image: faker.image.image(),
-//             tags: getRandom(
-//                 ["music", "politics", "cinema", "videogames"],
-//                 Math.floor(Math.random() *3) + 1
-//             ),
-//         })
-//         .then((p) => {
-//             console.log(`Created )
-//         })
-//     })
-
-// funciton getRandom(arr, n) {...} // Sacado de internet
