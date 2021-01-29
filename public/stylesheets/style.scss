@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.movies{
+  width: 100px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movies-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}

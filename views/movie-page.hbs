@@ -1,0 +1,15 @@
+<div class='container'>
+
+    <img src="{{this.image}}" alt="">
+    <h3>{{this.title}}</h3>
+    <h6>{{this.director}}</h6>
+    <ul>
+        {{#each stars}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>{{this.description}}</p>
+    {{this.showtimes}}
+
+
+</div>
