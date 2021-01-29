@@ -86,12 +86,14 @@ const movies = [
   // ... your code here
 require("dotenv").config();
 require("../configs/db.config");
+const mongoose = require('mongoose');
+ 
 
 const Movie = require("../models/Movie.model");
 
 Movie.deleteMany()
 .then( () =>  {
-  Movie.insertMany(movies)
+  Movie.create(movies)
   .then(movies => console.log(`Movies saved: `, movies.map(movie => movie.title)))
   .finally(() => {
     mongoose.connection
