@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col">
+   {{#with movie}}
+
+         
+        <img src="{{image}}" alt="movie {{title}} image" class="beer-image-style" />
+         <a href="/movies" class="stretched-link">go back</a>
+        <h3 class="card-title">{{title}}</h3>
+        <h4 class="card-title">Director: {{director}}</h4>
+        <h5>Starts</h5>
+                <ul>  
+        {{#each stars as |star|}}
+          <li>{{star}}</li>
+        {{/each}}
+         </ul>
+         <p>{{description}}</p>
+         {{#each showtimes as |time|}}
+           {{time}} |
+         {{/each}}
+
+
+   {{/with}}
+      
+    </div>
+    <div class="col-3"></div>
+
+</div>
