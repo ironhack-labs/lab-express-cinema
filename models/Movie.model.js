@@ -13,6 +13,7 @@ const movieSchema = new Schema({
     required:true
   },
   stars: [String],
+  image: String,
   description: String,
   showtimes: [String]
 

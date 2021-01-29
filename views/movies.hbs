@@ -1,0 +1,18 @@
+<h2>Movies</h2>
+<p>Check on the movie to check the showtimes!</p>
+{{#each movies as |movie|}}
+<div class="row">
+    <div class="col-3"></div>
+
+    <div class="col">
+        <img src="{{movie.image}}" alt="movie {{movie.title}} image" class="beer-image-style" />
+        <p class="card-title">{{movie.title}}</p>
+
+        <a href="#" class="stretched-link">See more</a>
+    </div>
+    <div class="col-3"></div>
+
+</div>
+
+
+{{/each}}
