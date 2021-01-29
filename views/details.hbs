@@ -1,0 +1,11 @@
+<h1> The Movie</h1>
+<p>
+{{#each movie}}
+<div>
+    <img width "25%" src="{{this.image}}">
+    <br>
+   <h2> {{this.title}}</h2>
+   <h3>{{this.description}}</h3>
+</div>
+
+{{/each}}

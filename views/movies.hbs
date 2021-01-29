@@ -1,0 +1,11 @@
+<h1> This Are All Movies</h1>
+<p>
+{{#each moviesList}}
+<div>
+    <img width "25%" src="{{this.image}}">
+    <br>
+   <h2> {{this.title}}</h2>
+   <h3><a href="/details"> See More</a>/h3>
+</div>
+
+{{/each}}
