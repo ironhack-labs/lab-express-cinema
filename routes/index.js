@@ -1,28 +1,13 @@
 const express = require('express');
 const { render, resource } = require('../app');
 const router = express.Router();
-const Movie = require("../models/Movie.model");
+const moviesController = require("../controllers/movies.controller");
+const miscController = require("../controllers/misc.controller");
 
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+router.get('/', miscController.index);
 
-router.get('/movies', (req,res,next) => {
-    Movie.find()
-    .then (movies => {
-        console.log(movies);
-        console.log(movies[0]._id)
-        res.render("movies",{movies})
-    })
-    .catch((e) => next(e))
-});
-router.get('/movies/:id',(req,res,next) =>{
-    Movie.findById(req.params.id)
-    .then((movie) => {
-        console.log(movie);
-        console.log(movie.id)
-        res.render("detailmovie",{movie})
-    } )
-
-});
+router.get('/movies', moviesController.list);
+router.get('/movies/:id',moviesController.detail);
 
 module.exports = router;
