@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* INDEX */
+
+.home {
+  font-family: 'Lato', sans-serif;
+  background-image: url('../images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: end;
+}
+
+.home h1 {
+  color: #fff;
+  font-size: 5em;
+  font-weight: 500;
+  width: 500px;
+}
+
+.home a{
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 10px;
+}
