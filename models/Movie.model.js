@@ -18,7 +18,7 @@ const movieSchema = new mongoose.Schema({
     image: {
         type: String,
         validate: {
-            validator = () => {
+            validator: (text) => {
                 return text.startsWith("http");
             },
             message: "URL must start with HTTP/HTTPS"

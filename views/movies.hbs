@@ -1,0 +1,27 @@
+<div class="container py-5">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item text-light"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active text-light">Movies</li>
+        </ol>
+    </nav>
+
+
+    <div class="row mt-4">
+        {{#each movies}}
+            <div class="col-md-6 mb-3">
+                <div class="row">
+                    <div class="col-4 col-lg-3">
+                        <img src="{{image}}" class="rounded" height="160px" alt="">
+                    </div>
+                    <div class="col text-left">
+                        <h4>{{title}}</h3>
+                        <p>{{director}}</p>
+                        <a href="/movie/{{_id}}" class="btn btn-sm btn-light">Ver pelicula</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

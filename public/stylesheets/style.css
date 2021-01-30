@@ -1,0 +1,10 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.418)), url('../images/netflix.jpg');
+  background-size: cover;
+  height: 100vh;
+}

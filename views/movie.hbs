@@ -1,0 +1,34 @@
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-2">
+            <img src="{{movie.image}}" class="rounded w-100" alt="">
+        </div>
+        <div class="col-sm-8">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-light"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item text-light"><a href="/movies">Movies</a></li>
+                    <li class="breadcrumb-item active text-light" aria-current="page">{{movie.title}}</li>
+                </ol>
+            </nav>
+
+            <h1>{{movie.title}}</h1>
+            <h5>Director: {{movie.director}}</h5>
+            <p class="mt-4">{{movie.description}}</p>
+            <p class="mt-4">
+                <h5>Starts:</h5>
+                <ul>
+                    {{#each movie.stars as |star|}}
+                        <li>{{star}}</li>
+                    {{/each}}
+                </ul>
+            </p>
+            <p class="mt-4">
+                <h5>Showtimes:</h5>
+                {{#each movie.showtimes as |time|}}
+                    {{time}}
+                {{/each}}
+            </p>
+        </div>
+    </div>
+</div>
