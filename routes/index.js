@@ -2,26 +2,16 @@ const express = require('express');
 const Movie = require('../models/Movie.model');
 const router = express.Router();
 
+const moviesController = require("../controllers/movies.controller");
+const miscController = require("../controllers/misc.controller");
+
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+router.get('/', miscController.home);
 
 /* GET movies page */
-router.get('/movies', (req, res, next) => {
-    Movie.find()
-        .then((movies) => {
-            //console.log(movies)
-            res.render('movies', {movies})
-        })
-        .catch(e => next(e))
-})
+router.get('/movies', moviesController.list)
 
 /* GET movies details page */
-router.get('/movies/:id', (req, res, next) => {
-    Movie.findById(req.params.id)
-        .then((movie) => {
-            res.render('movie',  movie )
-        })
-        .catch((e) => next(e))
-})
+router.get('/movies/:id', moviesController.details)
 
 module.exports = router;
