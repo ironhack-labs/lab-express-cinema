@@ -1,22 +1,25 @@
 const express = require('express');
 const router = express.Router();
 
-const movies = require('../models/Movie.model.js')
+const Movies = require('../models/Movie.model.js')
+
+console.log(Movies);
 
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
 
 router.get('/movies', (req, res, next) => {
-    movies.find()
+    Movies.find()
     .then(allMoviesfromDB => {
-    res.render('movies', {moviesList: allMoviesfromDB});
+        // console.log('retrivied movies:', allMoviesfromDB)
+    res.render('movies', {moviesList: allMoviesfromDB})
     })
     .catch(error => console.log(error));
 });
 
-router.get('/movies/:id', (req, res, next) => {
-    const { movieId } = req.params;
-    movies.findById(moviesId)
+router.get('/details/:id', (req, res, next) => {
+    const movieId = req.params.id;
+    Movies.findById(movieId)
     .then(theMovie => {
         res.render('details', { movie: theMovie })
     })

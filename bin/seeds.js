@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Cinema = require('../models/Movie.model');
+const Movie = require('../models/Movie.model');
 
 const DB_NAME = 'cinema-project';
 
@@ -92,7 +92,7 @@ const movies = [
     }
   ];
 
-  Cinema.create(movies)
+  Movie.create(movies)
   .then(moviesFromDB => {
       console.log(`Created ${moviesFromDB.length} movies`);
       mongoose.connection.close();
