@@ -10,6 +10,11 @@ a {
   color: #00B7FF;
 }
 
+h3 a {
+  text-decoration: none;
+  color: black
+}
+
 .index__title{
   font-size: 5em;
   font-weight: bold;
