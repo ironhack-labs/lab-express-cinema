@@ -1,4 +1,14 @@
 <div class="container">
-    <h1>movies view</h1>
+    <div class="row">
+        {{#each movies}}
+            <div class="card text-center m-1" style="width: 18rem;">
+                <img class="card-img-top mt-2" src="{{image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">{{title}}</h5>
+                    <a href="/movies/{{_id}}"" class="btn btn-secondary">See more</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
 </div>
 

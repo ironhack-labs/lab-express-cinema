@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config({ path: '.env' });
 
 mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
+  .connect(process.env.MONGODB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true

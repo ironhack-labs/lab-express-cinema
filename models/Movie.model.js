@@ -32,4 +32,4 @@ const movieSchema = new mongoose.Schema({
 
 const Movie = mongoose.model("Movie", movieSchema); // -> posts
 
-module.exports = Post; 
+module.exports = Movie; 
