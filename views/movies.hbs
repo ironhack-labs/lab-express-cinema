@@ -1,8 +1,10 @@
 <div class="container">
-    <h1>Movies</h1>
-    <div class='row'>
+    <h1>Movies Catalogue</h1>
+    
+    <div class='row indmoviecard'>
+        <a href="/">Go back</a>
         {{#each movies as |movie|}}
-            <div class="row">
+            <div class="col my-4 movies__card" >
                 <div class="card" style="width: 18rem;">
                     <img src={{movie.image}} class="card-img-top" alt="...">
                     <div class="card-body">

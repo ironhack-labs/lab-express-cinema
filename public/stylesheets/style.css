@@ -7,6 +7,10 @@ body {
   background-repeat: no-repeat; 
 }
 
+h1{
+  color: white;
+}
+
 a {
   color: #00B7FF;
 }
@@ -26,4 +30,16 @@ a {
   color: black;
   background-color: aliceblue;
   text-decoration: none;
+}
+
+.indmoviecard{
+  background-color: white;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.movies__card{
+  background-color: rgba(0,0,0,0.2);
+  padding: 30px;
+  
 }
