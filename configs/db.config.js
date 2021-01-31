@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
+  .connect(process.env.MONGODB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -11,4 +11,10 @@ mongoose
   )
   .catch(err => console.error('Error connecting to mongo', err));
 
-  
+  process.on("SIGINT", () => {
+    mongoose.connection
+      .close()
+      .then(() => console.log("Successfully disconnected from the DB"))
+      .catch((e) => console.error("Error disconnecting from the DB", e))
+      .finally(() => process.exit());
+  }); 
