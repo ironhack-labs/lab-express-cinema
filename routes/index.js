@@ -7,11 +7,11 @@ router.get('/', (req, res, next) => res.render('index'));
 /* GET movies */
 router.get('/movies',(req,res,next)=> {
     Movie.find()
-    .then((movie=>{
-        movie.forEach (mov => console.log(`movie added : ${mov.title}`))
+    .then((mov=>{
+        mov.forEach (movie => console.log(`movie added : ${movie.title}`))
         res.render('movies',{movies:mov})
     }))
-    .catch(error => console.log(error))
+    .catch(error => console.log( error))
 });
 
 
