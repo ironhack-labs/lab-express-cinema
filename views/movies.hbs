@@ -1,8 +1,11 @@
 <div class="container">
-    <h1>Movies Catalogue</h1>
-    
+    <div class='top__bar'>
+        <h1>Movies Catalogue</h1>
+        <button class='movie__btn'>
+                <a href="/" class="button a__movie__btn " role="button">Go back</a>
+        </button>
+    </div>
     <div class='row indmoviecard'>
-        <a href="/">Go back</a>
         {{#each movies as |movie|}}
             <div class="col my-4 movies__card" >
                 <div class="card" style="width: 18rem;">
@@ -15,5 +18,4 @@
             </div>
         {{/each}}
     </div>
- 
 </div>

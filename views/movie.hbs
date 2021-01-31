@@ -1,23 +1,28 @@
 <div class="container ">
-    <h1>Movie Information</h1>
+    <div class='top__bar'>
+        <h1>Movie Information</h1>
+        <button class='movie__btn'>
+            <a href="/movies" class="button a__movie__btn " role="button">Go back</a>
+        </button>
+    </div>
     <div class='row indmoviecard'>
-        <div class='col-3'>
-        <img src={{movies.image}} alt="Girl in a jacket" >
-       </div>
+        <div class='col-3 movie__img'>
+            <img src={{movies.image}} alt="Movie image" >
+        </div>
+
        <div class='col-9'>
-        <a href="/movies">Go back</a>
-        <h2>{{movies.title}}</h2>
-        <h4>{{movies.director}}</h4>
-        <h6>Stars</h6>
-        <ul>
-            {{#each movies.stars as |star|}}
-            <li>{{star}}</li>
+            <h2>{{movies.title}}</h2>
+            <h4>{{movies.director}}</h4>
+            <h6>Stars</h6>
+            <ul>
+                {{#each movies.stars as |star|}}
+                <li>{{star}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movies.description}}</p>
+            {{#each movies.showtimes as |showtime|}}
+            <span>{{showtime}} |</span>
             {{/each}}
-        </ul>
-        <p>{{movies.description}}</p>
-        {{#each movies.showtimes as |showtime|}}
-        <span>{{showtime}} |</span>
-        {{/each}}
        </div> 
     </div>
  

@@ -9,16 +9,40 @@ body {
 
 h1{
   color: white;
+  font-size: 4em;
 }
 
 a {
   color: #00B7FF;
 }
 
+.index__btn{
+  padding: 50px;
+  border-radius: 25px;
+  border: none;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  
+}
 
+.a__btn{
+  text-decoration: none;
+  font-size: 1.5em;
+  
+  
+}
+
+.index__leftcol{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
 .index__container > h1{
   font-size: 8em;
   color: aliceblue;
+  
 }
 
 .index__container > a{
@@ -31,11 +55,17 @@ a {
   background-color: aliceblue;
   text-decoration: none;
 }
-
+.top__bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .indmoviecard{
-  background-color: white;
+  background-color: rgba(255,255,255,0.95);
   padding: 5%;
   border-radius: 20px;
+
 }
 
 .movies__card{
@@ -43,3 +73,37 @@ a {
   padding: 30px;
   
 }
+
+.movie__btn{
+  padding: 15px;
+  margin: 20px;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a__movie__btn{
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1000px) { 
+  .index__leftcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .movie__img img{
+    display: none;
+  }
+
+  h1{
+    color: white;
+    font-size: 2em;
+  }
+ }
+
