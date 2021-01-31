@@ -5,6 +5,7 @@ body {
   background-image: url('/images/cinema.jpg');
   background-size: cover;
   background-repeat: no-repeat; 
+  height: 100vh;
 }
 
 a {
@@ -26,4 +27,21 @@ a {
   color: black;
   background-color: aliceblue;
   text-decoration: none;
+}
+
+.style__card {
+  background-color: rgba(180, 180, 180, 0.8) !important;
+}
+
+footer{
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }

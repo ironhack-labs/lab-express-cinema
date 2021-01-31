@@ -1,11 +1,12 @@
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
+        <h1><strong>Ironhack Cinema</strong></h1>
         {{#each movies}}
-            <div class="card text-center m-1" style="width: 18rem;">
+            <div class="card text-center m-1 style__card" style="width: 18rem;">
                 <img class="card-img-top mt-2" src="{{image}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title mb-2">{{title}}</h5>
-                    <a href="/movies/{{_id}}"" class="btn btn-secondary">See more</a>
+                    <h5 class="card-title mb-2"><strong>{{title}}</strong></h5>
+                    <a href="/movies/{{_id}}" class="btn btn-secondary">See more</a>
                 </div>
             </div>
         {{/each}}
