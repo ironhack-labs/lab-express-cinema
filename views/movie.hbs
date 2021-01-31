@@ -1,0 +1,27 @@
+<a class="movies" href="/movies">Movies</a>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{movie.image}}" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">Director:{{movie.director}}</p>
+        <p>
+        <h4><strong>Stars</strong></h4>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        </p>
+        <p class="description">{{movie.description}}</p>
+        {{#each movie.showtimes as |showtime|}}
+        <p class="card-text">{{showtime}}</p>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

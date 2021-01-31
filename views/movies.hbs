@@ -3,11 +3,11 @@
 <div class="container">
     <div class="row">
         {{#each movies}}
-        <div class="card text-center m-1">
+        <div class="col my-4 card text-center ">
             <img src="{{image}}" class="card-img-top mt-2" alt="card image">
             <div class="card-body">
                 <h5 class="card-title">{{title}}</h5>
-                
+                <a href="/movies/{{_id}}" class="btn btn-secondary">See more</a>
             </div>
         </div>
         {{/each}}

@@ -4,6 +4,8 @@ const router = express.Router();
 
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
+
+
 /* GET movies */
 router.get('/movies',(req,res,next)=> {
     Movie.find()
@@ -13,6 +15,14 @@ router.get('/movies',(req,res,next)=> {
     }))
     .catch(error => console.log( error))
 });
+
+router.get('/movies/:id',(req, res, next)=>{
+    Movie.findById(req.params.id)
+    .then(movie => {
+        res.render('movie',{movie})
+    })
+    .catch(error => console.log( error))
+})
 
 
 module.exports = router;
