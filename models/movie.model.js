@@ -1,6 +1,5 @@
-const mongoose = require ("mongoose");
-
-const movieSchema =new mongoose.Schema({
+const mongoose = require("mongoose");
+const movieSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
@@ -9,26 +8,25 @@ const movieSchema =new mongoose.Schema({
         type: String,
         required: true,
     },
-    stars:{
-        type:[String],
-        required: true,
+    stars: {
+        type: [String]
     },
-    image:{
+    image: {
         type: String,
-        validate:{
-            validator:(text)=> {
+        validate :{
+            validator: (text) => {
                 return text.startsWith("http");
             },
-            message: "URL must start with HTTP/HTTPS"
-        },
+            message: "image must be located in internet"
+        }
     },
-    description:{
+    description: {
         type: String,
         required: true,
     },
-    showtimes: [Strings],
-})
-
-const Movie = mongoose.model("Movie",movieSchema)
-
-module.exports = Movie
+    showtimes: {
+        type: [String]
+    }
+});
+const Movie = mongoose.model("Movie", movieSchema); 
+module.exports = Movie;

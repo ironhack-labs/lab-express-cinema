@@ -83,3 +83,7 @@ const movies = [
       showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
   ];
+
+  Movie.create(movies)
+  .then(movie => console.log(`New movie added: ${movie.title}`))
+  .catch(console.log('An error happened while saving a new movie'))
