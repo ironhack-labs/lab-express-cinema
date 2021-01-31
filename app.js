@@ -18,10 +18,6 @@ const app = express();
 
 // require database configuration
 require('./bin/seeds');
-<<<<<<< HEAD
-require('./configs/db.config');
-=======
->>>>>>> 370e97c0d323b40a5445e8b646d0a04cb6c09670
 
 // Middleware Setup
 app.use(logger('dev'));
