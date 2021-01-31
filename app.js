@@ -18,6 +18,7 @@ const app = express();
 
 // require database configuration
 require('./bin/seeds');
+require('./configs/db.config');
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -33,9 +34,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Express - IronCinema';
 
-const index = require('./routes/index');
-app.use('/', index);
-
+app.use('/', require('./routes/index'));
+app.use('/', require('./routes/movies'));
 module.exports = app;
