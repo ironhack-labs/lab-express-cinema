@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 
-  background-image: url('/images/cinema.jpg');
+  background-image: url('/images/cinema.jpg'); 
   background-size: cover;
   background-repeat: no-repeat; 
 }
