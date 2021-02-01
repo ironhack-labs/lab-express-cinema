@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<h4 style="color: #EF6866; margin-top: 20px">Click on the movie to check the sometimes</h4>
+
+<div class="container">
+    <div class="row">
+        {{#each movie}}
+        <div class="col-4">
+            {{>movieCard}}
+        </div>
+        {{/each}}
+    </div>
+</div>
