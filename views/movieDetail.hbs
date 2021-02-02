@@ -1,0 +1,28 @@
+<div class="card mb-3" style="max-width: 110wh;">      
+  <div class="row g-0">
+    <div class="col-md-2 d-flex justify-content-center align-items-center">
+        <img class="detail-image" src="{{image}}" alt="random beer image">  
+    </div>
+    <div class="col-md-10">
+      <div class="card-body">
+        <a href="/movies">Go back</a><br><br>
+        <h5 class="card-title">{{title}}</h5>
+        <h6>Director:{{director}}</h4>
+        <p><strong>Stars</strong></p>      
+        {{#each stars as |star|}}
+            <li>{{star}}</li>
+        {{/each}}       
+        <br>
+        <p class="card-text">{{description}}</p>
+        {{#each showtimes as |function|}}
+        {{#if @last}}
+        <span class="card-text">{{function}}</span>
+        {{else}}
+        <span class="card-text">{{function}} |</span>
+        {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>        
+</div>
+

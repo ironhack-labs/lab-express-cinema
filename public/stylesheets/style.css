@@ -48,6 +48,10 @@ a {
   color: #00B7FF;
 }
 
+nav {
+  margin: -50px -50px 20px;
+}
+
 #home{
     margin: -50px;      
     background-image: url('../images/cinema.jpg');
