@@ -1,0 +1,13 @@
+  <div class="col">
+    <div class="card h-100 border border-white" style="width: 12rem;">
+        {{#if image }}
+            <img src="{{image}}" class="card-img-top" alt="{{name}} picture">        
+        {{else}}
+            <img src="https://via.placeholder.com/600.png?text=Image+no+avalible" class="card-img-top" alt="Image no avalible">      
+        {{/if}} 
+      <div class="card-body d-flex justify-cotent-center align-items-center flex-column">
+        <h6 class="card-title text-center">{{title}}</h6>
+        <a href="/movies/{{_id}}">See more</a>
+      </div>
+    </div>
+  </div>

@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const routes = require('./configs/routes');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express = require('express');
@@ -35,7 +36,6 @@ hbs.registerPartials(__dirname + "/views/partials");
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-const index = require('./routes/index');
-app.use('/', index);
+app.use('/', routes);
 
 module.exports = app;

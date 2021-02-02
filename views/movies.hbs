@@ -1,0 +1,9 @@
+<h2>Ironhack Cinema</h2>
+<h6>Click on the movies to check the showtimes!</h6>
+<div id="movie-listing" class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {{#each movies}}
+            {{>card}}
+        {{/each}}
+    </div>
+</div>
