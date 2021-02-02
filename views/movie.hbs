@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <img src="{{movie.image}}" class="w-100" alt="{{movie.title}} cover">
+    </div>
+    <div class="col-8">
+      <span class="text-light"><a href="/movies">Go back</a></span>
+
+      <h1><strong>{{movie.title}}</strong></h1>
+
+      <h5>Director: {{movie.director}}</h5>
+
+      <h5>Starts:</h5>
+      <ul class="m-1">
+        {{#each movie.stars as |star|}}
+        <li>{{star}}</li>
+        {{/each}}
+      </ul>
+
+      <p class="mt-4 mb-4">{{movie.description}}</p>
+
+      {{#each movie.showtimes as |showtime|}}
+      {{showtime}} |
+      {{/each}}
+
+    </div>
+  </div>
+</div>
