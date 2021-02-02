@@ -1,10 +1,16 @@
-<h1>all the movies</h1>
+<div class="container cinema-line">
+    <h2><b>🍿 All the movies</b></h2>
+</div>
 
-{{#each m}}
-    <img src="{{image}}" alt="img"><br>
-    {{title}}<br>
-    {{director}}<br>
-    {{stars}}<br>
-    <a href="/movies/{{_id}}">Details</a>
-    <br>
-{{/each}}
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+        {{#each m}}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-5 cinema-movie">
+                <img src="{{image}}" width="200px" alt="img"><br>
+                <b>{{title}}</b><br>
+                <a class="btn btn-sm btn-light" href="/movies/{{_id}}">Details → </a>
+                <br>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,5 +1,38 @@
-<a href="/movies">BACK</a>
-{{m.title}}
-<img src="{{m.image}}" alt="img"><br>
-{{m.description}}
-{{m.showtimes}}
+<div class="container cinema-line">
+    <h2><b>{{m.title}}</b></h2>
+</div>
+
+<div class="container mt-4">
+    <div class="row justify-content-start">
+        <div class="col">
+            <img src="{{m.image}}" width="300px" alt="img"><br>
+        </div>
+        <div class="col-8">
+                <div class="d-flex flex-column">
+                    <div class="p-2">
+                        <h4 class"display-6">Synopsis</h4>
+                        <p>{{m.description}}</p>
+                    </div>
+                    <div class="p-2 mt-2">
+                        <h4 class"display-6">Cast</h4>
+                        {{#each m.stars as |s|}}
+                        <li>
+                            {{s}}
+                        </li>
+                        {{/each}}
+                    </div>
+                    <div class="p-2 mt-3">
+                        <h4 class"display-6">Showtimes</h4>
+                        {{#each m.showtimes as |t|}}
+                            {{t}} |
+                        {{/each}} V.O
+                    </div>
+                    <div class="p-2 mt-3">
+                        <h1><a class="btn btn-sm btn-light" href="/movies">← Back to all movies</a></h1>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
