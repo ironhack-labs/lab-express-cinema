@@ -1,0 +1,10 @@
+<h1>all the movies</h1>
+
+{{#each m}}
+    <img src="{{image}}" alt="img"><br>
+    {{title}}<br>
+    {{director}}<br>
+    {{stars}}<br>
+    <a href="/movies/{{_id}}">Details</a>
+    <br>
+{{/each}}

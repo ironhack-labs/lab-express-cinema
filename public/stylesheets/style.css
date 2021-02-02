@@ -1,19 +1,16 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-.background{
-  background: url('../images/cinema.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+.background {
+  background: url("../images/cinema.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 .yuju {
   position: absolute;
@@ -28,11 +25,12 @@ a {
   border: none;
   border-radius: 15px;
   box-shadow: 0px 0px 10px #61616199;
-  outline:none;
-  transition: background 1s;
-}
+  outline: none;
+  transition: background 1s; }
+
 .yuju:hover {
   transition-property: background;
   background: linear-gradient(rgba(214, 214, 214, 0.055), #94d2eb81);
-  box-shadow: 0px 0px 25px #46464699;
-}
+  box-shadow: 0px 0px 25px #46464699; }
+
+/*# sourceMappingURL=style.css.map */
