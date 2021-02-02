@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.header > h1 {
+    font-size: 150px;
+}
+.headerButton{
+  border: 2px solid rgb(121, 121, 121);
+  border-radius: 50px;
+  font-size: 35px;
+  padding: 10px 80px 10px 80px;
+}
+ a {
+   color: #00B7FF;
+ }
+ p {
+   font-size: 25px;
+}
+
+li {
+  font-size: 22px;
+}
+
+#__showtime {
+  font-size: 22px;
+}
