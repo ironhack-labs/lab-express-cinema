@@ -68,4 +68,5 @@ const movies = [{
         showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
 ];
+
 //hacer un module.export
