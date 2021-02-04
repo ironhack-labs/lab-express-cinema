@@ -1,15 +1,13 @@
 <div class="moviesDiv">
-
-    <h1>Ironhack Cinema</h1>
-    <h5>Click on the movie to check the showtimes!</h5>
     <div class="container">
+        <h2><b>Ironhack Cinema</b></h2>
+        <h5>Click on the movie to check the showtimes!</h5>
         <div class="row row-cols-3 ">
-            {{#each movies as |movies|}}
+            {{#each movies}}
             <div class="card">
-                <img class="card-img-top movieImage" src="{{movie.images.[0].url}}" class="card-img-top"
-                    alt="{{movie.name}}">
+                <img class="card-img-top movieImage" src="{{image}}" class="card-img-top" alt="{{title}}">
                 <div class="card-body">
-                    <h6 class="card-title">{{movie.name}}</h5>
+                    <h6 class="card-title">{{title}}</h5>
                         <a href="/" class="btn btn-primary">See more</a>
                 </div>
             </div>
