@@ -1,0 +1,35 @@
+            @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .link,
+        .card-title {
+            text-align: center;
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        .moviesDiv,
+        .card {
+            border: none;
+        }
+        
+        .movieDiv .movieImage {
+            object-fit: cover;
+        }
+        
+        .movietext {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-size: 44px;
+            margin-left: 55px;
+        }
+        
+        .movietext,
+    .h5 {
+            margin-left: 55px;

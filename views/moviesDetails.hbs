@@ -1,17 +1,28 @@
 <div class="moviesDetails">
     <div class="container">
-        <h2><b>Ironhack Cinema</b></h2>
-        <h5>Click on the movie to check the showtimes!</h5>
-        <div class="row row-cols-3 ">
-            {{#each movies}}
-            <div class="card">
-                <img class="card-img-top movieImage" src="{{image}}" class="card-img-top" alt="{{title}}">
-                <div class="card-body">
-                    <h6 class="card-title">{{title}}</h5>
-                        <a href="/" class="btn btn-primary">See more</a>
-                </div>
+        <div class='info' style="padding-top:35px; padding-bottom:25px;">
+            <h2 style="font-size: 44px;"><b>Ironhack Cinema</b></h2>
+    <h5>All you need to know is here!</h5>
+        </div>
+        <div class='row moviecard'>
+            <div class='col-3 movie__img'>
+                <img src={{movie.image}} alt={{movi.title}}>
             </div>
-            {{/each}}
+            <div class='col-9'>
+                <a href="/movies">Go back</a>
+                <h3>{{movie.title}}</h3>
+                <h5>{{movie.director}}</h5>
+                <h6><b>Stars</b></h6>
+                <ul>
+                    {{#each movie.stars as |star|}}
+                    <li>{{star}}</li>
+                    {{/each}}
+                </ul>
+                <p>{{movie.description}}</p>
+                {{#each movie.showtimes as |showtime|}}
+                <span>{{showtime}} |</span>
+                {{/each}}
+            </div>
         </div>
     </div>
 </div>

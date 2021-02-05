@@ -44,5 +44,5 @@ const index = require('./routes/index');
 app.use('/', index);
 
 // copiar este enlace para ver lo que hago 
-app.listen(3000, () => console.log('My Cinema project running on port 3000 🎧 🥁 🎸 🔊'));
+app.listen(3000, () => console.log('Hola port 3000'));
 module.exports = app;

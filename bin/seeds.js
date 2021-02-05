@@ -1,4 +1,4 @@
-//const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model");
 
 require("../configs/db.config")
@@ -68,5 +68,8 @@ const movies = [{
         showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40']
     }
 ];
-
-//hacer un module.export
+Movie
+    .deleteMany()
+    .then(() => console.log(`empty`))
+    .then(() => Movie.create(movies))
+    .catch((e) => console.log(e))
