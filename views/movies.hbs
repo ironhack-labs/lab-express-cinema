@@ -1,0 +1,21 @@
+<div style="margin-left: 20px;">
+<h2>Ironhack Cinema</h2>
+<h3>Click on the movie to check the showtimes!</h3>
+</div>
+
+<div class="container" style="margin-top: 40px;">
+    
+    <div class="row justify-content-around">
+        {{#each this.movie }}
+        <div class="col-md-3" style="margin-bottom: 20px;">
+            <div class="card">
+                <img class="card-img-top" src="{{this.image}}" alt="{{this.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <a href="/movies/{{this._id}}" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
