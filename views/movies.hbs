@@ -1,0 +1,11 @@
+<h1>Ironhack Cinema</h1>
+<h2>Movie Catalog</h2>
+
+<h3>Select your movie</h3>
+{{#each moviesAll}}
+
+<img src="{{image}}" alt="{{title}}" >
+<p>{{title}}</p>
+<a href="/movies/{{id}}">See more</a>
+
+{{/each}}

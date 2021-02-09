@@ -1,3 +1,4 @@
+#aqiu va lo que no queremos subir
 # Dependency directory
 node_modules
 
@@ -6,4 +7,4 @@ npm-debug.log
 
 # Environment Variables should NEVER be published
 # For learning purposes, we keep .env available for you
-# .env
+.env
