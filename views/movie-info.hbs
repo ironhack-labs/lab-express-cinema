@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-around">
+    <div class="col-md-3" style="margin-bottom: 20px;">
+    <img src="{{this.info.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{this.info.title}}</h5>
+    <h6>{{this.info.director}}</h6>
+    <p>{{this.info.description}}</p>
+    <ul>
+        <p>Stars</p>
+    {{#each this.info.stars}}
+        <li>
+            {{this}}
+        </li>
+    {{/each}}
+    </ul>
+  </div>
+</div>
+        
+    </div>
+</div> 

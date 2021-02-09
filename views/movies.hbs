@@ -1,0 +1,18 @@
+<h1>Ironhack CINEMA</h1>
+
+
+
+<div class="container">
+    <div class="row justify-content-around">
+       {{#each this.peliculas}}
+    <div class="col-md-3" style="margin-bottom: 20px;">
+    <img src="{{image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <a class="btn btn-primary" href="/movies/{{_id}}">Ver detalles</a>
+  </div>
+</div>
+{{/each}}
+        
+    </div>
+</div> 
