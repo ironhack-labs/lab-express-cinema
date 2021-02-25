@@ -1,0 +1,29 @@
+<h2>My movie</h2>
+
+<div class="desc-wrapper">
+<div class="mymovie-img">
+    <img src="{{movie.image}}" alt="image">
+</div>
+<div class="description">
+    <p><a href="http://localhost:4000/movies">Go back</a></p>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}}</h3>
+    <h4>Stars</h4>
+
+<ul>
+  {{#each movie.stars}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+
+    <p>{{movie.description}}</p>
+
+    {{#each movie.showtimes}}
+    {{this}} |
+    {{/each}}
+
+{{!-- {{movie}} --}}
+
+</div>
+</div>
