@@ -1,0 +1,14 @@
+<div id="title">
+    <h1>{{title}}</h1>
+    <p>Click on the movie to check the showtimes!</p>
+</div>
+
+<div id="container">
+    {{#each films.moviesDB}}
+    <div class="preview_film">
+        <img src={{this.image}} alt="film poster">
+        <p>{{this.title}}</p>
+        <a href="/movies/{{this._id}}">See More</a>
+    </div>
+    {{/each}}
+</div>

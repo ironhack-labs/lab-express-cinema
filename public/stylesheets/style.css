@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/diagmonds.png');
+}
+h1,
+h2,
+h3,
+h3,
+h4 {
+  font-family: Staatliches, sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 3rem;
+}
+li, p, a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  line-height: 1.2rem;
+}
+li:last-of-type {
+  margin-bottom: 15px;  
+}
+a {
+  padding: 3px 5px;
+  border-radius: 6px;
+  background: white;
+  color: #00B7FF;
+}
+#homepage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('http://www.slate.fr/sites/default/files/styles/1060x523/public/cinema-prix-billets.jpg');
+  background-size: cover;
+}
+#title_hp {
+  font-size: 5rem;
+}
+#title {
+  margin: 20px;
+}
+#container {
+  margin: 20px;
+  width: 90%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.preview_film {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+#film {
+  margin: 2%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.poster {
+  width: 100%;
+  grid-column: 1;
+}
+.details {
+  grid-column: 2 / span 2;
+}
