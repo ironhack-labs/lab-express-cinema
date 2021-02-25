@@ -1,0 +1,9 @@
+<div id="a-l-affiche">
+    {{#each movies}}
+    <div>
+        <img src="{{this.image}}" alt="image-movies">
+        <h1>{{this.title}}</h1>
+        <a href="/movies/{{this.id}}">see more</a>
+    </div>
+    {{/each}}
+</div>

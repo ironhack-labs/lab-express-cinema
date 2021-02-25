@@ -1,0 +1,19 @@
+<a href="/movies">back</a>
+<div id="movie-desc">
+    <div>    
+        <img src="{{movie.image}}" alt="{{movie.title}}-image">
+    </div>
+    <div id="section-desc">
+        <h1>{{movie.title}}</h1>
+        <h2>{{movie.director}}</h2>
+        <h3>Stars</h3>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <article>{{movie.description}}</article>
+        <p>{{showtimes}}</p>
+    </div>
+
+</div>
