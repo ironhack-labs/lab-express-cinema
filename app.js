@@ -1,4 +1,5 @@
 require('dotenv').config();
+require("./configs/db.config.js")
 
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -37,5 +38,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+
+
+const moviesPage = require('./routes/moviesRoute');
+app.use('/movies', moviesPage);
 
 module.exports = app;
