@@ -1,0 +1,12 @@
+.movie-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 600px;
+}
+
+.movie-container img {
+    height: 450px;
+}
+.movie-container aside {
+    margin-left: 20px;
+}
