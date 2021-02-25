@@ -1,0 +1,62 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#index img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+#index .container {
+  position: relative;
+  left: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-right: 5%;
+  }
+#index h1 {
+  color: white;
+  font-size: 6rem;
+}
+#index a {
+  background-color: white;
+  padding: 1% 2%;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#movies {
+  padding: 0 2%;
+}
+#movies-container {
+  margin: 3% 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10%;
+}
+#movies-container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#movie * {
+  margin-left: 5%;
+}
+#movie {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+}
+#movie article {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}

@@ -1,6 +1,9 @@
-<a href="/movies">Back to the list of movies</a>
-<br>
+<div id="movie">
+
 <img src="{{movie.image}}" alt="image of {{movie}}">
+<article>
+<a href="/movies">Back to the list of movies</a>
+
 <h1>{{movie.title}}</h1>
 
 <h2>Director: {{movie.director}}</h2>
@@ -15,4 +18,5 @@
 <p>{{movie.description}}</p>
 
 <p>{{#each movie.showtimes}} {{this}} | {{/each}}</p>
-
+</article>
+</div>
