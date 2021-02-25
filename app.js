@@ -14,6 +14,10 @@ const debug = require('debug')(
   `${app_name}:${path.basename(__filename).split('.')[0]}`
 );
 
+
+
+
+
 const app = express();
 
 // require database configuration
@@ -33,9 +37,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Movies IronHack Cinema';
 
 const index = require('./routes/index');
+const movieRouter = require("./routes/movie");//iteration 3 adding route for movies page
+const detailRouter = require("./routes/detail");//iteration 4 adding route for detail movies page
+
+
 app.use('/', index);
+app.use('/movies',movieRouter);
+app.use('/details',detailRouter);
 
 module.exports = app;
