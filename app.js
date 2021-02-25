@@ -32,10 +32,22 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+
+
+
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const getMoviespage = require('./routes/movies');
+
+app.get('/movies',(req,res) =>{
+  res.render("movies.hbs");
+});
+
+
+app.listen(process.env.PORT,()=>{console.log(`welcome @http://localhost:${process.env.PORT}`)})
 
 module.exports = app;
