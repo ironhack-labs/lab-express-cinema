@@ -1,0 +1,24 @@
+<div id="details-box">
+    
+    <img src="{{details.image}}" alt="movie poster">
+    
+    
+    <div class="details">
+        <a href="/movies">Go back</a>
+        <h3>{{details.title}}</h3>
+        <h4>Director: {{details.director}}</h4>
+        <h5>stars</h5>
+        <ul>
+            {{#each details.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{details.description}}</p>
+        <p>{{#each details.showtimes }}
+            {{this}} |
+
+             {{/each}}
+        </p>
+    </div>
+    
+</div>
