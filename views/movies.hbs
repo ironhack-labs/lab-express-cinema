@@ -1,0 +1,11 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtime!</p>
+<ul>
+{{#each list}}
+<li class="{{#if this.isRegistered}}is-registered{{/if}}">
+    <img>{{this.image}}
+    <h2>{{this.title}}</h2>
+    <a href="/movies/{{this.id}}">See more</a>
+</li>
+{{/each}}
+</ul>
