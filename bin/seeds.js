@@ -1,6 +1,6 @@
 require=("./../configs/db.config")
 
-const MovieModel = require("./../models/Movie.model");
+const MovieModel = require("../models/Movie.model");
 
 const movies = [
     {
