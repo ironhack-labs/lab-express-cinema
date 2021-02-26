@@ -95,5 +95,6 @@ const movies = [
         console.log(error);
     });
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-  
+  console.log(movies);
   // ... your code here
+
