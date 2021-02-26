@@ -5,11 +5,11 @@ const movieModel = new Schema({
     title: String,
     director: String,
     stars: Array,
-    image: Boolean, 
+    image: String, 
     description: String,
     showtimes: Array
   });
 
-  const movieModel = mongoose.model("Movie.model", movieModel);
+  const MovieModel = mongoose.model("Movie.model", movieModel);
 
-  
+  module.exports = MovieModel;

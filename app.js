@@ -38,10 +38,18 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+//const movies = require('./routes/movies')
 app.get("/movies", (req, res) => {
-  res.render("movies")
-})
-
+  moviesModel.find()
+    .then((moviesFromDb) => {
+      res.render("all-hackers", {
+        list: moviesFromDb,
+      });
+    })
+    .catch((dbError) => {
+      next(dbError);
+    });
+});
 module.exports = app;
 
 

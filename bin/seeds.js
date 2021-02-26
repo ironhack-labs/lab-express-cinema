@@ -86,4 +86,10 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  // ... your code here
+movieModel.insertMany(movies)
+.then(dbSucess => {
+  console.log(dbSucess);
+})
+.catch(dbError => {
+  console.log(dbError);
+})
