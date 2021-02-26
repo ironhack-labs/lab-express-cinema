@@ -7,6 +7,7 @@ body {
 #films {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 img {
@@ -19,6 +20,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 
 a {
@@ -29,6 +31,13 @@ button {
   background-color: white;
   border-radius: 25%;
   margin: 10px;
+  
+}
+
+.see-more {
+  width: 70px;
+  display: flex;
+  align-self: center;
 }
 
 h3 {
