@@ -1,6 +1,24 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: aquamarine;
+}
+
+#films {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 200px;
+}
+
+.oneMovie {
+  margin : 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 a {
@@ -10,4 +28,9 @@ a {
 button {
   background-color: white;
   border-radius: 25%;
+  margin: 10px;
+}
+
+h3 {
+  margin: 10px;
 }

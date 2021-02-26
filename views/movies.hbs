@@ -1,5 +1,10 @@
 <h1>Movies</h1>
-{{#each movies}}
-    {{this.image}}
-    {{this.title}}
-{{/each}}
+<section id="films">
+    {{#each movie}}
+    <div class="oneMovie">
+        <img src={{this.image}}></br>
+        <h3>{{this.title}}<h3>
+                <button>See more</button>
+    </div>
+    {{/each}}
+</section>

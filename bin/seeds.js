@@ -1,5 +1,7 @@
 require("../configs/db.config")
 
+const MovieModel = require("../models/movie.model")
+
 const movies = [
     {
       title: 'A Wrinkle in Time',
@@ -86,7 +88,6 @@ const movies = [
  
  // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  const MovieModel = require("../models/movie.model")
 
   MovieModel.insertMany(movies)
   .then((movieDoc) => {

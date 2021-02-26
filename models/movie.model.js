@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 const movieSchema = new Schema({
   title: String,
   director: String,
-  stars: Array,
+  stars: [String],
   image:String,
   description: String,
-  showtimes: Array,
+  showtimes: [String],
 });
 
-const MovieModel = mongoose.model("Movie", movieSchema);
+const MoviesModel = mongoose.model("Movie", movieSchema);
 
-module.exports = MovieModel;
+module.exports = MoviesModel;

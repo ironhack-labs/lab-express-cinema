@@ -1,9 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-const movies = require('../models/movie.model') 
+const MoviesModel = require('../models/movie.model') 
 
 
-router.get('/movies', (req, res) =>  res.render("movies"));
+router.get('/movies', function (req, res, next) {
+    console.log(req.params);
+    MoviesModel.find()
+    .then((dbRes) => {
+        console.log(dbRes);
+        res.render("movies.hbs", {movie: dbRes})
+    })
+    .catch((err) => console.log(err))
+});
 
 module.exports = router;
