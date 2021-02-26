@@ -42,6 +42,6 @@ const movies = require("./routes/movies");
 app.use("/movies", movies)
 
 const movie = require("./routes/movie");
-app.use("/movie:id", movie)
+app.use("/", movie)
 
 module.exports = app;

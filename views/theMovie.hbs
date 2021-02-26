@@ -1,1 +1,15 @@
-{{> moviePartials seeds}}
+<img src="{{theMovie.image}}" alt="Movie image">
+{{theMovie.title}}
+{{theMovie.director}}
+<p>Stars:</p>
+<ul>
+    {{#each theMovie.stars}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+{{theMovie.description}}
+<p>
+    {{#each theMovie.showtimes}}
+        {{this}} |
+    {{/each}}
+</p>
