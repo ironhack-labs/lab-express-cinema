@@ -54,4 +54,7 @@ app.use(express.json());
 response.render("movies")
 }); */
 
+var indexRouter = require("./routes/index")
+app.use("/", index.js)
+
 module.exports = app;
