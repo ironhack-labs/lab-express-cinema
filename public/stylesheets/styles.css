@@ -28,6 +28,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2em;
+  line-height: 0;
+  margin-bottom: 10px;
   
 }
 
@@ -42,4 +45,55 @@ img {
 
 .mymovie-img {
   margin-right: 30px;
+}
+
+.welcome-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+.welcome-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-end;
+  z-index: 8000;
+  font-weight: bold;
+  /* line-height: 0; */
+  
+  
+}
+
+.inner-wrapper {
+  margin-right: 50px;
+
+}
+
+.button {
+  width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #14546d;
+  
+}
+
+.button-wrapper {
+  background-color: red;
+  height: 60px;
+  
+}
+
+.welcome-title {
+  font-size: 10em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.abutton {
+  text-decoration: none;
 }
