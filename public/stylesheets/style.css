@@ -1,15 +1,23 @@
-body {
-    /* background-color: plum; */
-};
+/* body {
+    
+} */
+#welcome-page{
+    width: 100%;
+    height: 70vw;
+    background-color: antiquewhite;
+    background-image: url("https://github.com/ironhack-labs/lab-express-cinema/blob/master/public/images/cinema.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #page-title{
     padding-left: 30px;
-};
+}
 #movie-details-showtimes{
     width: 250px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-};
+}
 #movies-list {
     list-style: none;
     /* height: 700px;
@@ -17,10 +25,11 @@ body {
     display: flex;
     flex-direction: unset;
     justify-content: space-around; */
-};
+
+}
 #movies-list li{
     text-align: center;
     padding: 1%;
     width: 200px;
     display: inline-block;
-};
+}
