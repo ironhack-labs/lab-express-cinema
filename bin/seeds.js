@@ -100,15 +100,5 @@ const movies = [
       console.log(dbError);
   });
 
- /* movieModel.create(movies)
-  .then((movieDocumentDB)=>{
-      console.log(movieDocumentDB);
-      console.log("this is what i need");
-
-
-  })
-  .catch((error)=>{
-      console.log(error);
-  });*/
-  
+ 
   

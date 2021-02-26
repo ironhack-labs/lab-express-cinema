@@ -8,7 +8,7 @@ router.get("/",function(req,res,next){
     //console.log("this is req params", req.params);
     movieModel.find()
     .then((moviesDB)=> {
-        console.log(moviesDB);
+        //console.log(moviesDB);
         res.render("movies.hbs",{movies: moviesDB});
 
     })
@@ -17,17 +17,17 @@ router.get("/",function(req,res,next){
     });
 });
 
-/*
-router.get("/movie/:id",(req,res,next)=>{
-    movieModel.findById(req.param.id)
-    .then((movieDB)=>{
-        res.render("detailmovie.hbs",{movies:movieDB});
+
+router.get("/:id",(req,res,next)=>{
+    movieModel.findById(req.params.id)
+    .then((movie)=>{
+        res.render("detailmovie.hbs",{movie});
     })
     .catch((error)=>{
         console.log(error);
     });
   });
-*/
+
 
 module.exports = router;
 

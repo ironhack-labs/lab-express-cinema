@@ -1,8 +1,20 @@
-<a href="./movies">Go Back</a>
+<div id="single-movie">
+    <div>
+        <img src="{{movie.image}}" alt="the image of {{movie.title}}">
+    </div>
+    <div class="movieDetails">
+        <a href="/movies">Go Back</a>
+        <h1>{{movie.title}} </h1>
+        <h2>Director : {{movie.director}} </h2>
+        <h3>Stars</h3>
 
-<p >{{this.title}} </p>
-<p >{{this.director}} </p>
-<p >{{this.stars}} </p>
-<p >{{this.image}} </p>
-<p >{{this.description}} </p>
-<p >{{this.showtimes}} </p>
+        <li>{{movie.stars.[0]}} </li>
+        <li>{{movie.stars.[1]}} </li>
+        <li>{{movie.stars.[2]}}</li>
+
+        <p>{{movie.description}} </p>
+
+        <span> {{movie.showtimes.[0]}} | {{movie.showtimes.[1]}} | {{movie.showtimes.[2]}} | {{movie.showtimes.[3]}} |
+            {{movie.showtimes.[4]}} | </span>
+    </div>
+</div>

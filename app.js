@@ -41,11 +41,11 @@ app.locals.title = 'Movies IronHack Cinema';
 
 const index = require('./routes/index');
 const movieRouter = require("./routes/movie");//iteration 3 adding route for movies page
-const detailRouter = require("./routes/detail");//iteration 4 adding route for detail movies page
+//const detailRouter = require("./routes/detail");//iteration 4 adding route for detail movies page
 
 
 app.use('/', index);
 app.use('/movies',movieRouter);
-app.use('/details',detailRouter);
+//app.use('/movie/details',detailRouter);
 
 module.exports = app;
