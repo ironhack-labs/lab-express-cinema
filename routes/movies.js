@@ -7,6 +7,7 @@ router.get("/", function (req, res, next) {
     .then((dbRes) => {
       res.render("movies.hbs", {
         list: dbRes,
+        css : ['movies']
       });
     })
     .catch((dbError) => {
@@ -21,6 +22,7 @@ router.get("/:id", (req, res, next) => {
     .then((dbRes) => {
       res.render("movie.hbs", {
         movie: dbRes,
+        css : ['movie']
       });
     })
     .catch((dbError) => {
