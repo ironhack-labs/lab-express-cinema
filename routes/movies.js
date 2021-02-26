@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
 
 });
 
-router.get("/:id", (req, res, next) => {
+/* router.get("/:id", (req, res, next) => {
     MovieModel.findById(req.params.id)
       .then((movie) => {
         res.render("filmDetails.hbs", { movie });
@@ -27,4 +27,4 @@ router.get("/:id", (req, res, next) => {
       });
   });
 
-module.exports = router;
+module.exports = router; */

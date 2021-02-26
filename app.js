@@ -38,7 +38,20 @@ app.locals.title = 'Ironhack Cinema';
 const index = require('./routes/index');
 app.use('/', index);
 
+const movies = require ("./routes/movies.js");
+// const { response } = require('express');
+// app.use('/',routes/movies.js) : ne fonctionne pas
+// app.use('/',movies.js) : ne fonctionne pas
+// app.use('/', indexRouter) : ne fonctionne pas
+// app.use(express.index.js) : ne fonctionne pas
+app.use(express.json());
+
+
 //const movies = require("./routes/index")
 //app.use('/movies', movies)
+
+/* app.get("/routes/movies.js"(request, response)) => {
+response.render("movies")
+}); */
 
 module.exports = app;

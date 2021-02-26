@@ -1,6 +1,15 @@
 const mongoose = require('mongoose');
 
-mongoose
+/* mongoose
+  .connect("mongodb://localhost/my-database")
+  .then((x) => {
+    console.log("Connection to the database successful");
+  })
+  .catch((error) => {
+    console.log(error);
+  }); */
+
+ mongoose
   .connect('mongodb://localhost/express-cinema-dev', {
     useCreateIndex: true,
     useNewUrlParser: true,
