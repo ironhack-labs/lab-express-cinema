@@ -1,4 +1,4 @@
-require=("./../configs/db.config")
+require("./../configs/db.config")
 
 const MovieModel = require("../models/Movie.model");
 

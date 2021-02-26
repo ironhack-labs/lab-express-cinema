@@ -7,17 +7,14 @@ const MoviesSchema = new Schema({
         require: true
     },
     director: {
-        type: String,
-        require: true
+        type: String
     },
     stars: [String],
     image: {
-        type: String,
-        require: true
+        type: String
     },
     description: {
-        type: String,
-        require: true
+        type: String
     },
     showtimes: [String]
 });
