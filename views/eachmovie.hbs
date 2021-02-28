@@ -1,2 +1,17 @@
-<h1>One movie</h1>
-{{movies.title}}
+<h2>The movie</h2>
+<img src={{dbRes.image}} alt="film's affiche">
+<p class='title'>{{dbRes.title}}</p>
+<p class='directors'><b>Director-s </b>: {{dbRes.director}}</p>
+<span>
+    <p><b>Stars</b> :</p>
+{{#each dbRes.stars}}
+<ul>
+    <li class='stars'>{{this}}</li>
+</ul>
+{{/each}}
+</span>
+<p class="desc"><b>Description</b>: "<i>{{dbRes.description}}</i>"</p>
+<b>Showtimes : </b>
+{{#each dbRes.showtimes}}
+<p>| {{this}} |</p>
+{{/each}}

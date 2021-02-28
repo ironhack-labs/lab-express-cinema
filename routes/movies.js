@@ -11,17 +11,23 @@ router.get('/movies', function (req, res, next) {
         console.log(dbRes);
         res.render("movies.hbs", {movie: dbRes})
     })
-    .catch((err) => console.log(err))
+    .catch((err) => {
+        console.log(err);
+        next(err);
+    });
 });
 
 router.get('/movies/:id', function (req, res, next) {
     console.log(req.params.id);
-    MoviesModel.findById()
+    MoviesModel.findById(req.params.id)
     .then((dbRes) => {
-        console.log(dbRes);
-        res.render("eachmovie.hbs", {movie: dbRes})
+        console.log("Movie infos ok");
+        res.render("eachmovie.hbs", {dbRes});
     })
-    .catch((err) => console.log(err))
+    .catch((err) => {
+        console.log(err);
+        next(err);
+    });
 });
 
 module.exports = router;

@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+  
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: aquamarine;
 }
 
 #films {
@@ -25,13 +29,19 @@ img {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
 button {
   background-color: white;
-  border-radius: 25%;
+  border-radius: 5%;
   margin: 10px;
-  
+  cursor: pointer;
+  padding: 0.5em;
+  border: orange 2px solid;
+}
+button:hover{
+  background-color: rgba(251, 255, 0, 0.26);
 }
 
 .see-more {
@@ -42,4 +52,9 @@ button {
 
 h3 {
   margin: 10px;
+}
+
+
+.title {
+  font-size: 3.5em;
 }
