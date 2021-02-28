@@ -1,0 +1,12 @@
+{{#each movies}}
+
+    <p>{{this.name}}</p>
+    <p>{{this.director}}</p>
+    <p>{{this.stars}}</p>
+    <p>{{this._id}}</p>
+    <img class="icon" src="images/cinema.jpg" alt="cinema">
+    <a href="/one-movie/{{this._id}}">See more</a>
+    {{!-- <a href="/one-movie/{{this._id}}">See more</a> --}}
+
+    
+{{/each}}
