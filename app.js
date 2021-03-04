@@ -36,22 +36,27 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
-const MoviesModel = require('./models/Movie.model');
+
+const movies = require('./routes/movies');
+
+const details = require('./routes/details');
 
 
 app.use('/index', index);
+app.use('/', movies);
+app.use('/', details);
 
-app.get('/movies', function (req, res, next) {
+// app.get('/movies', function (req, res, next) {
   
-  MoviesModel.find()
-    .then((dbRes) => {
-      console.log(dbRes);
-      res.render("movies.hbs", {movie: dbRes});
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-});
+//   MoviesModel.find()
+//     .then((dbRes) => {
+//       console.log(dbRes);
+//       res.render("movies.hbs", {movie: dbRes});
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// });
 
 
 
