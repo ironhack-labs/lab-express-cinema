@@ -45,7 +45,7 @@ a {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -60,4 +60,19 @@ a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+#movie-detail {
+  margin: 10vh 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#movie-detail img {
+  margin: 40px;
+}
+
+#movie-detail .info {
+  width: 60vw;
 }
