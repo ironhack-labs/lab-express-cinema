@@ -38,7 +38,7 @@ button {
 }
 
 .movies {
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 50px;
 }
 
 .movies > h2 {
@@ -48,18 +48,19 @@ button {
 .movies > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 200px 0 50px;
+  margin: 0 200px 0 15px;
 }
 
 #each-movie {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 200px;
+  height: auto;
   margin-right: 100px;
-  padding: 0 30px;
-}
+} 
 
 .movies img {
   height: 300px;
