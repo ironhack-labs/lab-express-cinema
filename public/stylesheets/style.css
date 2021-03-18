@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.home-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 350px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+button {
+  font-size: 15px;
+  height: 50px;
+  width: 200px;
+  color: #3A5B7C;
+  border: none;
+  border-radius: 40px;
+}
+
+.home-container > h1 {
+  font-size: 110px;
+  color: #fff;
+  width: 300px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.movies-container h1 {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movies-container h2 {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.movies-container h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.movies-container > div > div > a {
+  text-decoration: none;
+  color: #00BFFF;
+  font-weight: bold;
+}
+
+
+.movies-container > div {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+  }
+
+
+.movie-details-container {
+  display: flex;
+  margin: 50px;
+  }
+
+.movie-details-container > div > p {
+  width: 600px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.movie-details-container > div {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.movie-details-container > div > h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-details-container > div > h2 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-details-container > div > a {
+  text-decoration: none;
+  color: #00BFFF;
+  font-weight: bold;
+
+}
+
+.movie-details-container > div > ul > li {
+  font-size: 12px;
+}
+
+.movie-details-container > div > ul > h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.movie-details-container > div > p > span {
+  font-size: 12px;
+}
+
