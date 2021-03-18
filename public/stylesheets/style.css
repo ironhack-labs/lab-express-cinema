@@ -42,13 +42,36 @@ button {
 }
 
 .movies > h2 {
-  margin: 15px 0 30px 0;
+  margin: 15px 0 50px 0;
 }
 
 .movies > div {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 200px 0 50px;
+}
+
+#each-movie {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  padding: 0 30px;
+}
+
+.movies img {
+  height: 300px;
+  width: 160px;
+} 
+
+.movies h4 {
+  margin: 15px 0;
+}
+
+.movies a {
+  margin-bottom: 50px;
 }
 
 .movieDetails {
