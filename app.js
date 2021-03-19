@@ -1,4 +1,6 @@
 require('dotenv').config();
+// require database configuration
+require('./configs/db.config');
 
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -16,8 +18,6 @@ const debug = require('debug')(
 
 const app = express();
 
-// require database configuration
-require('./configs/db.config');
 
 // Middleware Setup
 app.use(logger('dev'));
@@ -35,7 +35,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-const index = require('./routes/index');
+const index = require('./routes/movie.routes.js');
 app.use('/', index);
 
 module.exports = app;
