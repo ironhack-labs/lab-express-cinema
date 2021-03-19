@@ -12,4 +12,11 @@ router.get("/movies", (req, res) => {
   });
 });
 
+router.get("/movies/:movieId", (req, res) => {
+  Movie.findOne({ _id: req.params.movieId }).then((singleMovie) => {
+    console.log("Single Movie: ", singleMovie);
+    res.render("single-movie", { singleMovie: singleMovie });
+  });
+});
+
 module.exports = router;

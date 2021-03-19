@@ -1,0 +1,16 @@
+{{#with singleMovie}}
+<h1>{{this.title}}</h1>
+<h2>Director: {{this.director}}</h2>
+<h3>Starring:</h3>
+<ul>
+    {{#each this.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>{{this.description}}</p>
+<p>Showing at:</p>
+<p>{{#each this.showtimes}} {{this}} ||{{/each}}</p>
+
+<img src="{{this.image}}" alt="image not found">
+
+{{/with}}
