@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const Movies = require("../models/Movie");
+const bodyParser = require("body-parser");
 
+/* app.use(bodyParser.urlencoded({ extended: true }));
+ */
 /* GET home page */
+
 router.get("/", (req, res, next) => res.render("index"));
 
 router.get("/movies", async (req, res) => {
@@ -12,6 +16,23 @@ router.get("/movies", async (req, res) => {
   } catch (error) {
     console.log(error);
   }
+});
+
+router.get("/addmovies", (req, res) => {
+  res.render("addmovies");
+});
+
+router.post("/addmovies", (req, res) => {
+  const { movieName, movieImage } = req.body;
+  const newMovie = {
+    title: movieName,
+    image: movieImage,
+  };
+  Movies.create(newMovie)
+    .then(() => {
+      res.redirect("/movies");
+    })
+    .catch((error) => console.log("error"));
 });
 
 router.get("/movie/:movieId", async (req, res) => {
