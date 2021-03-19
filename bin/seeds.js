@@ -97,13 +97,13 @@ mongoose
       },
     ];
 
-    Event.insertMany(movies)
-      .then(() => {
-        console.log("Success!");
-      })
-      .catch((err) => {
-        console.log("There was an error connecting to Mongo: ", err);
-      });
+    // Movie.insertMany(movies)
+    //   .then(() => {
+    //     console.log("Success!");
+    //   })
+    //   .catch((err) => {
+    //     console.log("There was an error connecting to Mongo: ", err);
+    //   });
   });
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
