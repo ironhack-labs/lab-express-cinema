@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 #index-page {
   background-image: url('/images/cinema.jpg');
   background-size: cover;
@@ -71,8 +75,63 @@ a {
 
 #movie-detail img {
   margin: 40px;
+  height: 300px;
+  width: auto;
 }
 
 #movie-detail .info {
   width: 60vw;
+}
+
+#movie-form form {
+  margin: 10vh 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#movie-form input {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  width: 350px;
+  padding: 15px;
+  text-align: start;
+  margin: 5px;
+}
+
+.desc {
+  height: 200px;
+}
+
+#movie-form button {
+  background-color: #00b7ff;
+  border-radius: 12px;
+  border: lightgray;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 5vw;
+}
+
+nav a {
+  margin-right: 5vw;
+  text-decoration: none;
+}
+
+nav a button {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #00b7ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  border: lightgray;
 }

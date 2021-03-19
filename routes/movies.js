@@ -11,6 +11,34 @@ router.get('/', (req, res, next) => {
   });
 });
 
+// Insert new Movie
+
+router.get('/new', (req, res) => {
+  res.render('new-movie');
+});
+
+// Receiving new movie info from form
+router.post('/new', (req, res) => {
+  const { movieTitle, movieDirector, movieImage, movieDescription } = req.body;
+
+  const newMovie = {
+    title: movieTitle,
+    director: movieDirector,
+    image: movieImage,
+    description: movieDescription,
+  };
+
+  console.log(newMovie);
+
+  Movie.create(newMovie)
+    .then((movie) => {
+      res.redirect('/movies/' + movie._id);
+    })
+    .catch((error) => {
+      console.log('There has been an error upon movie creation');
+    });
+});
+
 /* GET movies detail page */
 router.get('/:movieId', (req, res, next) => {
   Movie.findById(req.params.movieId).then((movie) => {
