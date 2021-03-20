@@ -2,9 +2,10 @@ const express = require("express");
 const router = express.Router();
 const Movies = require("../models/Movie");
 const bodyParser = require("body-parser");
+const app = express();
 
-/* app.use(bodyParser.urlencoded({ extended: true }));
- */
+app.use(bodyParser.urlencoded({ extended: true }));
+
 /* GET home page */
 
 router.get("/", (req, res, next) => res.render("index"));
@@ -23,10 +24,12 @@ router.get("/addmovies", (req, res) => {
 });
 
 router.post("/addmovies", (req, res) => {
-  const { movieName, movieImage } = req.body;
+  console.log(req.body);
+  const { movieName, movieImage, movieDirector } = req.body;
   const newMovie = {
     title: movieName,
     image: movieImage,
+    director: movieDirector,
   };
   Movies.create(newMovie)
     .then(() => {

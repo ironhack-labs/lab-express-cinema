@@ -23,3 +23,9 @@
   color: #fff;
   margin-bottom: 40px;
 }
+
+.image {
+  width: 150px;
+  display: inline-block;
+  float: left;
+}
