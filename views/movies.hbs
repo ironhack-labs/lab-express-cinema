@@ -1,0 +1,27 @@
+<section class="movies">
+  <nav class="movies__nav">
+    <h1 class="movies__title">
+      Ironhack Cinema
+    </h1>
+    <a href="/newMovie" class="movies__link">
+      <button class="movies__button">Add new movie</button>
+    </a>
+  </nav>
+  <h2 class="movies__subtitle">
+    Click on the movie to check the show times!
+  </h2>
+
+  <section class="movies__content">
+    {{#if movies}}
+    {{#each movies}}
+    <div class="movies__item">
+      <img src={{this.image}} alt={{this.title}} class="movies__img">
+      <h4>{{this.title}}</h4>
+      <a href="/movie/{{this._id}}">See more</a>
+    </div>
+    {{/each}}
+    {{else}}
+    <h1>No movies has found</h1>
+    {{/if}}
+  </section>
+</section>
