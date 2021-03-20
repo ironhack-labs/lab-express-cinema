@@ -33,7 +33,7 @@ router.get('/movie/:movieId', async (req, res) => {
     }
 });
 
-
+////Envio de formulário
 router.post('/new', (req, res) => {
     const { movieTitle, movieDirector, movieStars, movieImg, movieDescription, movieTime } = req.body;
 
