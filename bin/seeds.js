@@ -89,7 +89,7 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("mongodb://localhost/express-cinema-dev", {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -107,3 +107,4 @@ mongoose.connect(process.env.MONGODB_URI, {
 }));
   
   // ... your code here
+
