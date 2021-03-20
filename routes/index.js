@@ -33,7 +33,7 @@ router.get('/movie/:movieId', async (req, res) => {
     }
 });
 
-////Envio de formulário
+////Envio de formulário para o mongodb
 router.post('/new', (req, res) => {
     const { movieTitle, movieDirector, movieStars, movieImg, movieDescription, movieTime } = req.body;
 
