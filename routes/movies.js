@@ -9,4 +9,27 @@ router.get('/', (req, res) =>{
     })
 })
 
+router.get('/form', (req, res) => {
+    res.render('new-movie');
+  });
+
+router.post('/form', (req, res) => {
+    // BODY ou CORPO DA REQUISICAO!!
+     const { title, director, imageUrl, description } = req.body;
+   
+     const newMovie = {
+        title: title,
+        director: director,
+        image: imageUrl,
+        description: description,
+     }
+   
+     Movies.create(newMovie)
+       .then(() => {
+         res.redirect('/movies');
+       })
+       .catch(error => console.log(error));
+   
+   });
+
 module.exports = router;
