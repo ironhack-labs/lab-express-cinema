@@ -17,6 +17,10 @@ router.get('/movies', async (req, res) => {
     }
 });
 
+router.get('/new', (req, res) => {
+    res.render('newMovie');
+});
+
 router.get('/movie/:movieId', async (req, res) => {
     try {
         const { movieId } = req.params;
@@ -28,5 +32,25 @@ router.get('/movie/:movieId', async (req, res) => {
         console.log(error);
     }
 });
+
+
+router.post('/new', (req, res) => {
+    const { movieTitle, movieDirector, movieStars, movieImg, movieDescription, movieTime } = req.body;
+
+    const newMovie = {
+        title: movieTitle,
+        director: movieDirector,
+        stars: movieStars,
+        image: movieImg,
+        description: movieDescription,
+        showtimes: movieTime,
+    };
+
+    Movies.create(newMovie)
+    .then(() => {
+        res.redirect('/movies');
+    }).catch(error => console.log(error));
+});
+
 
 module.exports = router;

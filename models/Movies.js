@@ -8,7 +8,7 @@ const moviesSchema = new Schema({
     stars: [{ type: String }],
     image: { type: String, require: true },
     description: { type: String },
-    showtimes: [{ type: String },]
+    showtimes: [{ type: String }],
 });
 
 const Movies = mongoose.model('movie', moviesSchema);
