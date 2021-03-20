@@ -16,7 +16,6 @@ class MovieController {
     try {
       const results = await MovieModels.findById(movieId);
 
-      console.log(results);
       res.send(results);
     } catch (error) {
       console.log({ errorGetInfoMovieById: error })
