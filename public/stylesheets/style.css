@@ -1,0 +1,7 @@
+fieldset {
+    border: none;
+}
+.add-movie-form input, 
+.add-movie-form label {
+  display: block;
+}

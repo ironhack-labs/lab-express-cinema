@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/stylesheets/style.scss">
+<main>
+    <form action="/movies/add" method="POST" class="add-movie-form">
+
+    <label for="title-field">Title</label>
+    <input type="text" name="title" id="title-field" required>
+
+    <label for="director-field">Director</label>
+    <input type="text" name="director" id="director-field" required>
+
+    <label for="image-field">Image address</label>
+    <input type="text" name="image" id="image-field" required>
+
+    <label for="star-field">Stars - choose the three main ones.</label>
+    <fieldset>
+        <input type="text" name="star" id="star-field" required>
+        <input type="text" name="star" required>
+        <input type="text" name="star"required>
+    </fieldset>
+
+    <label for="description-field">Descripton</label>    
+    <textarea name="description" cols="30" rows="10" id="description-field"></textarea>
+
+    <label for="showtime-field">Showtimes - fill at leat two.</label>
+    <fieldset>
+        <input type="text" name="showtimes" id="showtime-field" required>
+        <input type="text" name="showtimes" required>
+        <input type="text" name="showtimes">
+        <input type="text" name="showtimes">
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    
+    </form>
+</main>
