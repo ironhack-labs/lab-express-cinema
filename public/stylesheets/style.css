@@ -1,0 +1,30 @@
+html, body {
+    background-image: url('/images/cinema.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.welcome {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.title {
+    color: white;
+    font-size: 800%;
+}
+
+.movie-btn {
+    font-size: 150%;
+    border: none;
+    color: lightblue;
+    background-color: white;
+    padding: 5%;
+    border-radius: 50px;
+    margin-top: -10%;
+}
