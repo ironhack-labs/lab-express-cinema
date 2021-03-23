@@ -4,8 +4,12 @@
 
 {{#each movies}}
 
-<img src="{{img}}" alt="">
-<h3>{{title}}</h3>
-<a href="">See more</a>
+<div>
+
+    <img src="{{image}}" alt="Movie image">
+    <h3>{{title}}</h3>
+    <a href="/movies/{{id}}">See more</a>
+
+</div>
 
 {{/each}}

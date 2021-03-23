@@ -1,18 +1,26 @@
-<img src="{{movie.image}}" alt="">
+<div>
 
-<h1>{{movie.title}}</h1>
+    <img src="{{movie.image}}" alt="">
 
-<h3>Director: {{movie.director}}</h3>
+    <h1>{{movie.title}}</h1>
 
-<h4>Stars</h4>
-<ul>
-    <li>{{movie.stars.0}}</li>
-    <li>{{movie.stars.1}}</li>
-    <li>{{movie.stars.2}}</li>
-</ul>
+    <h3>Director: {{movie.director}}</h3>
 
-<p>{{movie.description}}</p>
+    <h4>Stars</h4>
+    <ul>
+        <li>{{movie.stars.[0]}}</li>
+        <li>{{movie.stars.[1]}}</li>
+        <li>{{movie.stars.[2]}}</li>
+    </ul>
 
-<p>{{movie.times.0}} | {{movie.times.1}} | {{movie.times.2}} | {{movie.times.3}}</p>
+    <p>{{movie.description}}</p>
 
-<a href="/">Home</a> <a href="/movies">Back</a>
+    <ul>
+        <li>{{movie.showtimes.[0]}}</li>
+        <li>{{movie.showtimes.[1]}}</li>
+        <li>{{movie.showtimes.[2]}}</li>
+    </ul>
+
+    <a href="/">Home</a> <a href="/movies">Back</a>
+
+</div>
