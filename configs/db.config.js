@@ -1,12 +1,17 @@
 const mongoose = require('mongoose');
+const chalk = require('chalk');
 
 mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
+  .connect(`mongodb://localhost/${process.env.DB_NAME}`, {
     useCreateIndex: true,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
   })
-  .then(x =>
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-  )
-  .catch(err => console.error('Error connecting to mongo', err));
+  .then((result) => {
+    console.log(chalk.green.inverse(`Connected to database: ${result.connections[0].name}.`))
+  })
+  .catch((err)=>{
+    console.log(chalk.red.inverse('Error connecting to mongo', err))
+  })
+  
