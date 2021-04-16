@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
+  .connect(`mongodb://localhost/${process.env.DB_NAME}`, {
     useCreateIndex: true,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(x =>
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
