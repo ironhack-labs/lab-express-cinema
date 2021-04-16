@@ -8,6 +8,7 @@ const hbs = require('hbs');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
+const chalk = require(`chalk`)
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(
@@ -15,6 +16,8 @@ const debug = require('debug')(
 );
 
 const app = express();
+
+
 
 // require database configuration
 require('./configs/db.config');
@@ -33,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Cinemapp Lab by Alex Escofet';
 
 const index = require('./routes/index');
 app.use('/', index);

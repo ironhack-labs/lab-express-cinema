@@ -1,0 +1,22 @@
+<div class="contenedorPeli">
+<div class="foto">
+ <img src="{{movie.image}}" alt="{{movie.title}} img">
+ <a href="/allMovies">Go back</a>
+ </div>
+ <div class="peli">
+ <p class="titulo">{{movie.title}}</p> 
+ <p class="director">Director: {{movie.director}}</p> 
+ <p>Stars:</p>
+ <ul>
+ {{#each movie.stars}}
+ <li>{{this}}</li>
+ {{/each}}
+</ul>
+<p>{{movie.description}}</p>
+ <div class="showtimes">
+ {{#each movie.showtimes}}
+ <span>{{this}} |</span>
+ {{/each}}
+ </div>
+ </div>
+</div>

@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
 const http = require('http');
+const chalk = require(`chalk`)
 
 let app = require('../app');
+
 
 // catch 404 and render a not-found.hbs template
 app.use((req, res, next) => {
@@ -42,5 +44,5 @@ server.on('error', error => {
 });
 
 server.listen(process.env.PORT, () => {
-  console.log(`Listening on http://localhost:${process.env.PORT}`);
+  console.log(chalk.green.inverse(`Listening on port ${process.env.PORT}🚀`));
 });
