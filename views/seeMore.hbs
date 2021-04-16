@@ -1,0 +1,30 @@
+<div class="oneMovie-info">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-3">
+                <img src="{{movie.image}}" alt="{{movie.title}}" class="movie-img">
+            </div>
+
+            <div class="col-9">
+                <p><a href="/movies" id="goBack-button">Go back</a></p>
+                <h3 id="oneMovie-title">{{movie.title}}</h3>
+                <p class="director"><b>Director: </b>{{movie.director}}</p>
+                <p class="stars">Stars</p>
+                <ul class="stars-ul">
+                    {{#each movie.stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="description">{{movie.description}}</p>
+                <div class="showtimes">
+                    {{#each movie.showtimes}}
+                    <span>{{this}} | </span>
+                    {{/each}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
