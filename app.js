@@ -43,6 +43,16 @@ app.locals.title = 'Cinema';
 
 // module.exports = app;
 
+// HBS REGISTER HELPERS
+hbs.registerHelper('lt', function(a, b) {
+  return (a < b)
+})
+
+hbs.registerHelper('-', function(a, b) {
+  return (a - b)
+})
+
+// ROUTES
 app.get('/', (req, res)=>{
   console.log(chalk.green.inverse('Homepage'))
   res.render('index')
@@ -61,7 +71,6 @@ app.get('/movies', (req, res)=>{
 app.get('/movie/:_id', (req, res)=>{
   Movie.findById(req.params._id)
   .then((result)=>{
-    console.log('asdf', result)
     res.render('movie-details', {data: result})
   })
   .catch((error)=>{

@@ -1,13 +1,28 @@
-<img src="{{data.image}}" alt="{{data.title}}-img">
-<a href="/movies">Go back</a>
-{{data.title}}
-{{data.director}}
-<ul>
-    {{#each data.stars}}
-    <li>{{this}} | </li>
-    {{/each}}
-</ul>
-{{data.description}}
-{{#each data.showTimes}}
-<span>{{this}} | </span>
-{{/each}}
+<div id="fade-bg">
+    <div id="movie-container">
+        <img id="img-movie" src="{{data.image}}" alt="{{data.title}}-img">
+        <div id="movie-details">
+            <p id="movie-title-details">{{data.title}}</p>
+            <p id="movie-director">{{data.director}}</p>
+            <p id="movie-stars">Stars</p>
+            <ul>
+                {{#each data.stars}}
+                <li class="stars">{{this}}</li>
+                {{/each}}
+            </ul>
+            <p id="description">{{data.description}}</p>
+            <div class="hours">
+                {{#each data.showTimes}}
+                <span>
+                    {{#if (lt @index (- ../data.showTimes.length 1))}}
+                    {{this}} |
+                    {{else}}
+                    {{this}}
+                    {{/if}}
+                </span>
+                {{/each}}
+            </div>
+            <a href="/movies">Go back</a>
+        </div>
+    </div>
+</div>

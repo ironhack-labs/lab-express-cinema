@@ -1,0 +1,214 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font: 14px "Georgia", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #00B7FF;
+  background: white;
+  background: radial-gradient(circle, #f7eac5 50%, #ad8814 100%);
+  padding: 15px 30px;
+  margin: 20px 120px 10px;
+}
+
+a:hover {
+  background: white;
+  background: radial-gradient(circle, #eed590 100%);
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-img #index-container {
+  width: 600px;
+  margin: 10% 0 0 60%;
+}
+
+.bg-img #index-container #index-title {
+  color: white;
+  font-size: 8rem;
+}
+
+.bg-img #index-container a {
+  background-color: whitesmoke;
+  padding: 20px 50px;
+}
+
+#fade-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+#fade-bg #movies-header {
+  color: white;
+  font-size: 6rem;
+  margin: 0;
+}
+
+#fade-bg #movies-subtext {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#fade-bg #movies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.movie-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin: 50px 80px;
+}
+
+.movie-card .movie-title {
+  color: darkslategrey;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.movie-card .seemore-btn {
+  background: white;
+  background: radial-gradient(circle, #f7eac5 50%, #ad8814 100%);
+  padding: 15px 30px;
+  margin: 20px 120px 10px;
+}
+
+.movie-card .seemore-btn:hover {
+  background: white;
+  background: radial-gradient(circle, #eed590 100%);
+}
+
+#movie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+}
+
+#movie-container #img-movie {
+  height: 600px;
+}
+
+#movie-container #movie-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  color: #182525;
+  background-color: dimgrey;
+  padding: 5px 50px;
+  width: 40%;
+}
+
+#movie-container a {
+  text-align: center;
+  margin: 0 30%;
+}
+
+#movie-container #movie-title-details {
+  font-size: 2.2rem;
+}
+
+#movie-container #movie-director {
+  font-size: 1.8rem;
+}
+
+#movie-container #movie-stars {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+#movie-container .stars {
+  font-size: 1.3rem;
+}
+
+#movie-container #description {
+  font-size: 1.2rem;
+}
+
+#movie-container .hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 20px;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */
