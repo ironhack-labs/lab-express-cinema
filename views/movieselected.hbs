@@ -1,0 +1,30 @@
+<section class="moviecontaner">
+    <div class="imagemovie">
+        {{#if movies.image}}
+            <figure>
+                <img src="{{movies.image}}" alt="{{movies.title}}">
+            </figure>
+            {{else}}
+            <figure>
+                <img src="https://loremflickr.com/640/360" alt="{{movies.title}}">
+            </figure>
+        {{/if}}
+    </div>
+    <div class="textmovie">
+        <a href="./movies.hbs">Go back</a>
+        <h1>{{movies.title}}</h1>
+        <h2>Director: {{movies.director}}</h2>
+        <ul>
+            {{#each movies.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movies.description}}</p>
+        {{#each movies.showtimes}}
+        <p class="times">{{this}}</p>
+        {{/each}}
+    </div>
+</section>
+
+    
+   

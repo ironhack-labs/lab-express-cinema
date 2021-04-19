@@ -1,0 +1,21 @@
+<section class="movielistheader">
+    <h1>Ironhack Cinema</h1>
+    <h3>Click on the movie to check the showtimes!</h3>
+    <section class="moviecontainer">
+    {{#each movies}}
+        <article class="moviearticles">
+            {{#if this.image}}
+            <figure>
+                <img src="{{this.image}}" alt="{{this.title}}">
+            </figure>
+            {{else}}
+            <figure>
+                <img src="https://loremflickr.com/640/360" alt="{{this.title}}">
+            </figure>
+            {{/if}}
+            <p>{{this.title}}</p>
+            <a href="/movies/{{this.id}}">See more</a>
+        </article>
+    {{/each}}
+    </section>
+</section>

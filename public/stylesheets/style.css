@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.homepage {
+  background-image: url(../images/cinema.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 3em;
+  height: 100vh;
+  margin: 0;
+}
+
+.homepage button {
+  color: #00B7FF;
+  text-align: center;
+  margin-left: 55em;
+  padding: 1em;
+  width: 20%;
+  height: 7%;
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+}
+
+.homepage h1 {
+  color: white;
+  text-align: left;
+  padding-left: 8em;
+  padding-top: 1em;
+}
+
+.movielistheader h1 {
+  margin: 30px;
+}
+
+.movielistheader h3 {
+  margin: 30px;
+}
+
+.moviecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  border: 1px black;
+  margin: 3%;
+}
+
+.moviearticles {
+  width: 28vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 40vh;
+}
+
+.moviearticles p {
+  margin-top: 10px;
+}
+
+.moviearticles a {
+  margin-top: 10px;
+}
+
+.moviecontaner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 40px 20% 0 40px;
+}
+
+.moviecontaner h1 {
+  margin: 15px 0;
+}
+
+.moviecontaner h2 {
+  margin: 0 0 10px 0;
+}
+
+.moviecontaner ul {
+  margin: 0 0 10px 0;
+}
+
+.moviecontaner p {
+  margin: 0 0 10px 0;
+}
+
+.imagemovie {
+  margin-right: 70px;
+  -webkit-box-shadow: 10px 5px 5px gray;
+          box-shadow: 10px 5px 5px gray;
+}
+
+.times {
+  display: inline;
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+/*# sourceMappingURL=style.css.map */

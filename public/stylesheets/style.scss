@@ -1,8 +1,100 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"Lucida Grande", Helvetica, Arial, sans-serif; ;
 }
 
-a {
-  color: #00B7FF;
+.homepage {
+  background-image: url(../images/cinema.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 3em;
+  height: 100vh;
+  margin: 0;
+}
+
+.homepage button{
+  color:  #00B7FF;
+  text-align: center;
+  margin-left: 55em;
+  padding: 1em;
+  width: 20%;
+  height: 7%;
+  border-radius: 50px;
+  border: none;
+  font-size: 14px;
+}
+
+.homepage h1{
+  color: white;
+  text-align: left;
+  padding-left: 8em;
+  padding-top: 1em;
+}
+
+
+
+.movielistheader h1{
+  margin: 30px;
+}
+
+.movielistheader h3{
+  margin: 30px;
+}
+
+.moviecontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px black;
+  margin: 3%;
+}
+
+.moviearticles {
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 40vh;
+}
+
+.moviearticles p {
+  margin-top: 10px;
+}
+
+.moviearticles a {
+  margin-top: 10px;
+}
+
+.moviecontaner{
+  display: flex;
+  justify-content: start;
+  margin:40px 20% 0 40px;
+}
+.moviecontaner h1{
+  margin: 15px 0;
+}
+.moviecontaner h2{
+  margin: 0 0 10px 0;
+}
+.moviecontaner ul{
+  margin: 0 0 10px 0;
+}
+.moviecontaner p{
+  margin: 0 0 10px 0;
+}
+
+.imagemovie{
+  margin-right: 70px;
+  box-shadow: 10px 5px 5px gray;
+}
+.times{
+  display: inline;
+  border-right: 1px solid black;
+  padding-right: 5px;
 }

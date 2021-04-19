@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
 
+
 const app_name = require('./package.json').name;
 const debug = require('debug')(
   `${app_name}:${path.basename(__filename).split('.')[0]}`
@@ -16,14 +17,16 @@ const debug = require('debug')(
 
 const app = express();
 
+
 // require database configuration
 require('./configs/db.config');
 
 // Middleware Setup
 app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 
 // Express View engine setup
 
@@ -37,5 +40,10 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
 app.use('/', index);
+
+const movieSelected = require('./views/movieselected');
+app.use('/', movieSelected);
+
+
 
 module.exports = app;
