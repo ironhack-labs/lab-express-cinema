@@ -1,0 +1,23 @@
+<section class="movie-cinema">
+  <div>
+    <img src="{{foundMovie.image}}" alt="{{foundMovie.title}}">
+  </div>
+  <div>
+    <a href="/movies">Go Back</a>
+    {{#if foundMovie}}
+    <h2>{{foundMovie.title}}</h2>
+    <h4>Director: {{foundMovie.director}}</h4>
+    <h4>Stars</h4>
+    <ul>
+      {{#each foundMovie.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <div class="showtimes">
+      {{#each foundMovie.showtimes}}
+      <span>{{this}}  | </span>
+      {{/each}}
+    </div>
+    {{/if}}
+  </div>
+</section>
