@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#index {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../images/cinema.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #title {
+  padding: 0;
+  width: 20%;
+  margin-left: 70%;
+}
+
+#index #title h1 {
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+#index #title a {
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 20px 40px;
+}
+
+#movies {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#movies #movie-list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#movies #movie-list .movie-card {
+  margin: 10px 1%;
+  width: 31%;
+  text-align: center;
+}
+
+#movie-details {
+  width: 60%;
+  margin: 40px auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#movie-details #img-container {
+  margin: 0 20px;
+}
+
+#movie-details #img-container img {
+  width: 200px;
+  height: auto;
+}
+
+#movie-details #movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#movie-details #movie-info #showtimes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+}
+
+#movie-details #movie-info #showtimes li {
+  margin: 0 5px;
+}
+
+#movie-details #movie-info #showtimes li:after {
+  margin-left: 10px;
+  content: '|';
+}
+/*# sourceMappingURL=style.css.map */
