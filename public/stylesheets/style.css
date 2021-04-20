@@ -21,6 +21,7 @@ flex-direction: column;
 align-items: center;
 }
 .main-btn{
+padding: 20px 0px 15px 10px;
 font-size: large;
 color: white;
 background-color: red;
@@ -28,8 +29,18 @@ width: 400px;
 height: 50px;
 font-weight: bolder;
 border-radius: 25px;
-}
+text-decoration: none;
+text-align: center;
+line-height:40px;
 
+}
+.showtimes{
+  display: flex;
+}
+.main-details{
+  display: flex;
+  justify-content: space-between;
+}
 .area {
   text-align: center;
   font-size: 6.5em;
