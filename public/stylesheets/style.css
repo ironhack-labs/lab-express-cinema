@@ -1,0 +1,69 @@
+body{
+    
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.crushpixel.com/big-static10/preview4/girl-eating-popcorn-cinema-movie-535647.jpg");
+}
+.main-h1{
+    font-size: 6em;
+    font-weight: bolder;
+    color: white;
+   
+}
+.main-div{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.main-btn{
+font-size: large;
+color: white;
+background-color: red;
+width: 400px;
+height: 50px;
+font-weight: bolder;
+border-radius: 25px;
+}
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+
+
+
+
