@@ -2,15 +2,17 @@
 
 <h2>Click on the movie to check the showtimes!</h2>
 
+<div class="list">
+    {{#each movies}}
+    <div class="list-item">
+        <a href="/movies/{{id}}"><img src="{{ image }}" alt="{{ title }}"></a>
 
-
-{{#each movies}}
-    <img src="{{ image }}" alt="{{ title }}"> 
-
-    <p> {{ title }} </p>
-    
-    
-    <a href="/movies/{{id}}">See more</a>
-    <br>
-    <hr>
-{{/each}}
+        <p> {{ title }} </p>
+        
+        
+        <a href="/movies/{{id}}">See more</a>
+        <br>
+        
+    </div>
+    {{/each}}
+</div>

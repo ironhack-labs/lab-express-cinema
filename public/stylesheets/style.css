@@ -34,10 +34,19 @@ text-align: center;
 line-height:40px;
 
 }
+.list{
+  display: flex;  
+  padding: 10px;
+}
+.list-item{
+padding: 20px;
+border: solid 1px gray;
+}
 .showtimes{
   display: flex;
 }
 .main-details{
+  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
