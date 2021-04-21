@@ -12,7 +12,11 @@ h1{
 a {
   color: #00B7FF;
 }
+p {
+  font-size: 2rem;
+}
 
+/* INDEX Styles */
 #index{
   background-image: url("/images/cinema.jpg");
   background-size: cover;
@@ -42,4 +46,45 @@ a {
   border-radius: 50px;
   text-decoration: none;
   width: fit-content;
+}
+
+/* LIST movies Styles */
+#list-header {
+  margin: 30px 20px;
+}
+#list-header h1 {
+  font-size: 4rem;
+}
+#movies-grid{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+#movie-box{
+  margin: 10px 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Movie Styles */
+#movie-show{
+  display: flex;
+  margin: 100px;
+}
+#movie-info{
+  margin-left: 50px;
+}
+#movie-info p, li, a {
+  font-size: 1.2rem
+}
+#movie-info h2{
+  font-size: 1.8rem;
+
+}
+#movie-info h3{
+  font-size: 1.5rem;
 }
