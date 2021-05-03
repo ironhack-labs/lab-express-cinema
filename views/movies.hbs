@@ -1,12 +1,19 @@
-{{#each movies}}
-<div>
-    <img src="{{image}}">
-</div>
-<div> 
-    {{title}}
-</div>
-<div>
-    <a href="movie/{{_id}}">See more</a>
-</div>
+<a href="/">Go back</a>
+<h1>{{title}}</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+<div class="container">
+    {{#each movies}}
+    <div class="movie_box">
+        <div>
+            <img src="{{image}}">
+        </div>
+        <div> 
+            {{title}}
+        </div>
+        <div>
+            <a href="movie/{{_id}}">See more</a>
+        </div>
+    </div>
 
 {{/each}}
+</div>
