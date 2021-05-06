@@ -1,0 +1,63 @@
+body {
+  box-sizing: border-box;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+ /* movies.hbs*/
+.movie-display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.each-movie{
+  margin: 20px;
+}
+
+.each-movie img{
+  width: 30%;
+}
+
+.each-movie p{
+  font-size: 30px;
+  font-family: "Lucida Grande";
+  font-weight: bolder;
+}
+
+.each-movie a{
+  margin-top: 20px;
+  font-size: x-large;
+}
+
+/* movies-detail.hbs */
+
+.details{
+  width: 90%;
+  text-align: center;
+
+}
+.details img{
+  width: 30%;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%-50%);
+}
+
+.details p{
+font-family: "Lucida Grande";
+font-size: 24px;
+}
+
+.description{
+  margin: 5rem;
+  text-align: center;
+}
+
+.back{
+  font-size: x-large;
+}
