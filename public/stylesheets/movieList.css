@@ -1,0 +1,45 @@
+.title-movieList {
+    text-align: center;
+}
+
+.click-and-check {
+    text-align: center;
+    font-size: 20px;
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 35px;
+    background-color: #D5DAD4;
+    text-align: center;
+}
+
+.movie-card > img {
+    box-shadow: 5px 3px 20px;
+}
+
+.movie-card > p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.movie-card > a {
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: black;
+}
+
+.movie-card > a:hover {
+    box-shadow: 5px 3px 20px;
+}
