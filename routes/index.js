@@ -21,7 +21,7 @@ router.get("/movies/:id", function (req, res, next) {
   MovieModel.findById(req.params.id)
     .then((dbResult) => {
       res.render("movie.hbs", {
-        title: "Express",
+        title: dbResult.title,
         movie: dbResult,
       });
     })
