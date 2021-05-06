@@ -1,7 +1,11 @@
+require("dotenv").config()
+// on utilise process.env. sans l'avoir declaré >>> connecté
+
 const mongoose = require('mongoose');
 
 mongoose
-  .connect('mongodb://localhost/express-cinema-dev', {
+// .connect('mongodb://localhost/express-cine-lab', {
+  .connect(process.env.MONGODB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true

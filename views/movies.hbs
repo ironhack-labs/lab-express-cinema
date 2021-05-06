@@ -1,0 +1,20 @@
+<h1>Welcome to {{title}}</h1>
+<h1>view all movies</h1>
+<main class="movies-container"> {{!-- to "flexboxed" align item, wrap --}}
+    {{#each movies}}
+    <div class="movie-div">
+        <div class="img">
+            {{this.image}}
+        </div>
+
+        <p>
+            <strong>{{this.title}}</strong>
+        </p>
+
+        <p>
+            <a href="/movies/{{this._id}}">see more...</a>
+        </p>
+
+    </div>   
+    {{/each}}
+</main>
