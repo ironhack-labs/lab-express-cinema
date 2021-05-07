@@ -88,6 +88,9 @@ const movies = [
   },
 ];
 
+// SEED IS WHERE THE CRUD HAPPENS
+
+
 //   send movies throught MovieModel to database   
 MovieModel.insertMany(movies)
   .then((dbres) => console.log("movies input"))

@@ -1,5 +1,5 @@
 require("dotenv").config()
-// on utilise process.env. sans l'avoir declaré >>> connecté
+// on utilise process.env. l.8 sans l'avoir declaré >>> connecté
 
 const mongoose = require('mongoose');
 
