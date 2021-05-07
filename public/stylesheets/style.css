@@ -1,0 +1,38 @@
+@import url("./mod.index.css");
+body {
+  padding: 0 0;
+  min-height: 100vh;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #00b7ff;
+}
+.wrapper {
+  background-color: brown;
+  height: 600px;
+  width: 1200px;
+  background-image: url(./../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: right;
+}
+.cinemaTitle {
+  font-size: 80px;
+  color: white;
+  text-align: right;
+  margin:auto;
+  padding: 60px 40px;
+}
+
+.checkButton {
+  margin: 10px;
+  margin-right:40px;
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(136, 189, 156);
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+}
