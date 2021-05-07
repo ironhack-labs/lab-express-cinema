@@ -7,14 +7,14 @@
         <p><a href="/movies/"></a>go back</p>
 
         {{#each movie}}
-        <h2>{{movie.title}}</h2>
-        <h3>Director: {{movie.director}}</h3>
+        <h2>{{this.title}}</h2>
+        <h3>Director: {{this.director}}</h3>
 
         <h4>Stars</h4>
         <ul>
             {{#each movie.stars}}
             <li>
-                {{movie.star}}
+                {{this}}
             </li>
             {{/each}}
         </ul>

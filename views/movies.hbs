@@ -4,7 +4,7 @@
     {{#each movies}}
     <div class="movie-div">
         <div class="img">
-            {{this.image}}
+            <img src="{{this.image}}" alt="{{this}} picture">
         </div>
 
         <p>
@@ -12,7 +12,8 @@
         </p>
 
         <p>
-            <a href="/movies/{{this._id}}">see more...</a>
+            <a href="/movies/{{this._id}}">see more...</a>  /   
+            <a href="/movies/delete/{{this._id}}">delete</a>
         </p>
 
     </div>   
