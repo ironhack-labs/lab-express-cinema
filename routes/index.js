@@ -16,8 +16,6 @@ router.get("/movies", function (req, res, next) {
 });
 
 router.get("/movies/:id", function (req, res, next) {
-  console.log(req.params.id); 
-
   MovieModel.findById(req.params.id)
     .then((dbResult) => {
       res.render("movie.hbs", {
@@ -28,5 +26,12 @@ router.get("/movies/:id", function (req, res, next) {
     .catch((dbErr) => next(dbErr));
 });
 
+router.get("/movies/delete/:id", function (req, res, next) {
+  MovieModel.findByIdAndDelete(req.params.id)
+    .then((dbResult) => {
+      res.redirect("/movies");
+    })
+    .catch((dbErr) => next(dbErr));
+});
 
 module.exports = router;

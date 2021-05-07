@@ -8,7 +8,8 @@
           <img class="card-img-top" src="{{this.image}}" alt="{{this.title}}"/>
           <div class="card-body">
             <h5 class="card-title">{{this.tile}}</h5>
-            <a href="/movies/{{this._id}}">See more</a>
+            <a class="btn btn-primary" href="/movies/{{this._id}}" role="button">See more</a>
+            <a class="btn btn-danger" href="/movies/delete/{{this._id}}" role="button">Delete this movie</a>
           </div>
         </div>
       </div>
