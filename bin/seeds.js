@@ -87,11 +87,11 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-MovieModel.insertMany(movies)
-  .then((dbSuccess) => {
-    console.log("SUCCESS !!!");
-    console.log(dbSuccess);
-  })
-  .catch((dbErr) => {
-    console.log(dbErr);
-  });
+(async function insertMovies() {
+  // delete the movie collection first,
+  await MovieModel.deleteMany();
+  // then insert all movie objects declared above
+  const result = await MovieModel.insertMany(movies);
+  // print the count of inserted movies in the backend console
+  console.log(result.length + " movies inserted in database");
+})();
