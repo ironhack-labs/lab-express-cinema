@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<style>
+      #index {
+        background-image: url("/images/cinema.jpg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      h1{
+        display: block;
+        margin: 0;
+      }
+      form{
+        display: block;
+      }
+</style>
+<section id="index">
+<div class="container d-flex flex-column align-items-end justify-content-start text-center h-100 " style="width: 800px;">
+        <div class="mt-5" style="width: 360px; margin-top: 120px!important;">
+            <h1 class="display-1 mb-3 text-center text-white font-weight-bold">{{title}}</h1>
+        </div>
+        <div style="width: 360px;">
+            <form action="/movies">
+                <button class="btn btn-light" type="submit">Check the movies!</button>
+            </form>
+        </div>
+</div>
+</section>

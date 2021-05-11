@@ -1,0 +1,20 @@
+{{!-- views/movies.hbs --}}
+ <style>
+      #index {
+        background-color: rgb(53, 105, 148);
+      }
+</style>
+<div id="index" class="" style="padding: 0 150px;">
+    <h1 class="text-white pt-5 font-weight-bold">Cinema Ironhack</h1>
+    <h2 class="text-white">Click on the movie to check the showtimes!</h2>
+    <div class="container d-flex justify-content-center flex-wrap">
+    {{#each movies}}
+    <div class="container d-flex flex-column align-items-center col-4 p-5">
+        <img src="{{image}}" alt="{{title}}">
+        <h5 class="text-center mt-3 text-white">{{title}}</h5>
+        <a class="text-center mt-2 btn btn-light" style="font-size: 12px;" role="button" href="/movies/{{id}}">See more</a>
+    </div>
+    {{/each}}
+    </div>
+
+</div>
