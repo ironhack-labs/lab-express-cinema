@@ -32,6 +32,12 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+app.use(require('node-sass-middleware-5')({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  sourceMap: true
+}));
+
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 

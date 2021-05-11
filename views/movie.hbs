@@ -1,0 +1,36 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
+<div class="container">
+
+    <h1>Pelicula</h1>
+    <div class="card mb-3 mt-5" style="width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{movie.image}}" alt="..." style="width: 100%;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{movie.title}}</h5>
+                    <br>
+                    <h5 class="card-title">Director:{{movie.director}}</h5>
+                    <br>
+                    {{#each movie.stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                    <br>
+                    <p class="card-text">{{movie.description}}.</p>
+                    {{#each movie.showtimes}}
+
+                    <p style="display: inline-block;">{{this}}|</p>
+
+                    {{/each}}
+                    <br>
+                    <br>
+                    <a href="/movies" class="btn btn-primary btn-lg text-center" style="width: 30%;">back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
