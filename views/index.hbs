@@ -1,2 +1,25 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<style>
+      #index {
+        background-image: url("/images/cinema.jpg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      h1{
+        display: block;
+        margin: 0;
+      }
+      form{
+        display: block;
+      }
+</style>
+<section id="index">
+    <div class="container d-flex flex-column align-items-end justify-content-start h-100 ">
+        <div class="mt-5" style="width: 360px; margin-top: 120px!important;">
+            <h1 class="display-3 mb-3 text-white font-weight-bold">Cinema Ironhack</h1>
+            <a class=" btn btn-danger rounded-pill btn-lg" href="/movies" type="submit">Check the movies!</a>
+        </div>
+    </div>
+</section>
+
