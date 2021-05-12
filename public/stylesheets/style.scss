@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.hero_image {
+  background-image: url("/images/cinema.jpg"); /* The image used */
+  background-color: #00B7FF; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

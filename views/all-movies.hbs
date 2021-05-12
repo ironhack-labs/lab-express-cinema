@@ -1,0 +1,15 @@
+<main class="page__wrapper">
+<h1>Movies</h1>
+<h4>Click on the movies to check show times!</h4>
+<div class="movies__wrapper">
+{{#each movies}}
+<div class="movie_card__wrapper">
+    <div class="img__wrapper">
+        <img src="{{image}}" alt="{{title}}">
+    </div>
+    <h6 class="movie_card__title">{{title}}</h6>
+    <a class="movie_card__link" href="/movies/{{id}}">See more</a>
+</div>
+{{/each}}
+</div>
+</main>
