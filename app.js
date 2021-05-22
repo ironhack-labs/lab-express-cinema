@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const express = require('express');
 const favicon = require('serve-favicon');
@@ -16,13 +15,12 @@ const debug = require('debug')(
 
 const app = express();
 
-// require database configuration
 require('./configs/db.config');
 
 // Middleware Setup
 app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json()); //Used to parse JSON bodies
+app.use(express.urlencoded()); //Parse URL-encoded bodies
 app.use(cookieParser());
 
 // Express View engine setup

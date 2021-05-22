@@ -1,0 +1,39 @@
+<h1 class="titles">Ironhack Cinema</h1>
+<h2 class="titles">Click on the movie to check showtimes!</h2>
+
+<div class="container-cards">
+  {{#each movieDB}}
+    <div class="card">
+      <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>    
+        <a href="/movie/{{this._id}}" class="btn btn-primary">See more</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
+
+{{!-- {
+  "stars": [
+      "Storm Reid",
+      "Oprah Winfrey",
+      "Reese Witherspoon"
+  ],
+  "showtimes": [
+      "13:00",
+      "15:30",
+      "18:00",
+      "20:10",
+      "22:40"
+  ],
+  "_id": "60a7ff0d727523655faa1d1a",
+  "title": "A Wrinkle in Time",
+  "director": "Ava DuVernay",
+  "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+  "description": "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
+  "createdAt": "2021-05-21T18:42:21.419Z",
+  "updatedAt": "2021-05-21T18:42:21.419Z",
+  "__v": 0
+} --}}

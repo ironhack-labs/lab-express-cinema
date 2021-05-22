@@ -1,0 +1,19 @@
+{{#movie}}
+<div class="main-container">
+    <div class="pic-container">
+        <img class="movie-image" src="{{this.image}}" alt="Card image cap">
+    </div>
+    <div class="movie-content">
+        <a href="/movies">Go back</a>
+        <h1>{{this.title}}</h1>
+        <h2>Director: {{this.director}}</h2>   
+        <h5>Stars:</h5>     
+        <ul>
+            {{#each this.stars}}
+            <il class="artist-list">{{this}}</il>
+            {{/each}}
+        </ul>
+        <p>{{this.description}}</p>
+    </div>
+</div>
+{{/movie}}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg-image {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+
+}
+
+.text-button {
+    position: absolute;
+
+    right: 400px;
+    top: 200px;
+}
+
+
+a {
+    font-size: 20px;
+    color: rgb(168, 155, 155);
+    text-decoration: none;
+}
+
+.button-div {
+
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.card{
+    width: 20rem;
+    margin: 0.8rem;
+    border: none;
+}
+
+.titles {
+    text-align: center;
+}
+
+.title-cinema {
+    font-size: 100px;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+
+.movie-content {
+    margin-left: 4rem;
+}
+
+.artist-list {
+    display: block;
+    list-style:armenian;
+}
+.movie-image{
+    width: 300px;
+    height: auto;
+}
