@@ -11,7 +11,6 @@ mongoose.connection.once('connected', () => {
 
       return Movie.insertMany(data)
     })
-    //.then((postsCreated) => console.log(`${postsCreated.length} posts have been created`))
     .catch(e => console.error(e))
     .finally(() => {
       mongoose.connection.close()
