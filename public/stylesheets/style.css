@@ -6,13 +6,38 @@ a {
   color: #00B7FF;
 }
 
+h1{
+  font-size: 100px;
+  font-weight: bolder;
+}
+
 .home-page{
   background-image:url('../images/cinema.jpg');
   height:100vh;
   width: 100vw;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
+
+.home-text{
+  color:white;
+  position: absolute;
+  top: 20%;
+  left:60%;
+}
+
+.home-button{
+  position: absolute;
+  top: 58%;
+  left:60%;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.home-button a{
+  text-decoration: none;
+  color: #00B7FF;
+}
+
+

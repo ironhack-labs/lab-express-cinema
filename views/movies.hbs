@@ -1,12 +1,24 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  {{#each movies}}
-    <div class="col">
-      <div class="card h-100">
+<div class="container">
+  <div class="text-black pl-5 pt-3">
+    <h3 class="pt-3 pb-2 font-weight-bold">Ironhack Cinema</h3>
+    <h5 class="mb-5 font-weight-normal">Click on the movie to check
+      the showtimes!</h5>
+  </div>
+  <div class="row">
+    {{#each movies}}
+      <div class="col-4 card mb-3 d-flex justify-content-between border-0">
+        <img src="{{image}}" alt="{{title}}" style="padding: 0 20%" />
         <div class="card-body">
-          <h5 class="card-title">{{this.title}}</h5>
-          <a class="btn btn-primary" href="/movies/{{this._id}}" role="button">See more info</a>
+          <h6
+            class="card-title text-center text-black font-weight-bold"
+          >{{title}}</h6>
+          <a
+            href="/movies/{{this._id}}"
+            role="button"
+            class="d-flex justify-content-center"
+          >See more</a>
         </div>
       </div>
-    </div>
-  {{/each}}
+    {{/each}}
+  </div>
 </div>

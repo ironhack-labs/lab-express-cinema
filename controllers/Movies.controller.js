@@ -1,7 +1,7 @@
 const Movie = require("../models/Movie.model");
 
 module.exports.home = (req, res, next) => {
-  res.render("index").catch((e) => console.error(e));
+  res.render("index");
 };
 
 module.exports.listMovies = (req, res, next) => {
