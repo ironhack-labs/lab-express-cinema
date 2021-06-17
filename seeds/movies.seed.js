@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
-
-
-// To insert in "seeds/movies.seed.js"
+const data = require('../movies.json');
 
 const movies = [
     {
@@ -89,5 +87,6 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  // ... your code here
+
+
   

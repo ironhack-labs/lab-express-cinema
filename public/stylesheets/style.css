@@ -6,3 +6,21 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  padding: 450px 450px;
+  position: relative;
+}
+
+.btn {
+  margin-left: 600px;
+  color:teal;
+}
+
+h2 {
+  color: white;
+  margin-left: 600px;
+  font-size: 70px;
+}
