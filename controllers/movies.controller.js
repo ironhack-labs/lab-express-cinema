@@ -3,7 +3,7 @@ const Movie = require('../models/Movie.model');
 module.exports.listMovies = (req, res, next) => {
   Movie.find()
     .then((movies) => {
-      res.render('index', { movies: movies });
+      res.render('movies', { movies: movies });
     })
     .catch(e => console.error(e))
 }
@@ -15,5 +15,9 @@ module.exports.getMovie = (req, res, next) => {
 }
 
 module.exports.index = (req, res, next) => {
-    res.render("index");
+    res.render('index');
   };
+
+// module.exports.movies = (req, res, next) => {
+//   res.render('movies');
+// };
