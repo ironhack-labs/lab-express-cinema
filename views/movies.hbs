@@ -1,0 +1,13 @@
+<h2>Ironhack Cimena</h2>
+<h3>Click on the movies to check the showtimes!</h3>
+<div class="card-group"></div>
+{{#each movies}}
+<div class="card" style="width: 18rem;">
+  <img src="{{this.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <a href="/movies/{{_id}}" class="btn btn-primary">See more</a>
+  </div>
+</div>
+{{/each}}
+</div>
