@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+#background {
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  color: white;;
+}
+
+#background h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+#background > div {
+  margin: 15vh 15vw 0 0;
+}
+
+#background button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: grey;
+  border-radius: 20px;
+}
