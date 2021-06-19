@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row g-0 my-5">
+    <div class="col-md-4 d-flex justify-content-center">
+      <img src="{{movie.image}}" alt="{{movie.title}}" style="height: 50vh;" />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body pt-0">
+        <a href="/movies" role="button">Go back</a>
+        <h5 class="card-title pt-3 font-weight-bold">{{movie.title}}</h5>
+        <h6 class="card-text pb-3 font-weight-bold">Director:
+          {{movie.director}}</h6>
+        <h6 class="card-text font-weight-bold">Stars:</h6>
+        {{#each movie.stars}}
+          <ul>
+            <li class="font-weight-bold py-0">{{this}}</li>
+          </ul>
+        {{/each}}
+        <p class="card-text pt-3">{{movie.description}}</p>
+        <div class="row pt-3 pl-3 font-weight-bold">
+          {{#each movie.showtimes}}
+            <p>{{this}} |</p>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

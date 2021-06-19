@@ -1,13 +1,16 @@
-<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="header">
+  <div>
+    <h3>Ironhack Cinema</h3>
+    <h5>Click on the movie to check the showtimes!</h5>
+  </div> 
+</div>
   {{#each movies}}
-    <div class="col">
-      <div class="card">
+  <div class="col-4 card mb-3 d-flex justify-content-between border-0">
         <img src="{{this.image}}" class="card-img-top" alt="movies" />
         <div class="card-body">
-          <h5 class="card-title">{{this.title}}</h5>
-          <a class="btn btn-primary" href="{{this._id}}" role="button">See more</a>
+          <h5 class="card-title text-center text-black">{{title}}</h5>
+          <a class="d-flex justify-content-center" href="/movies/{{this._id}}" role="button">See more</a>
         </div>
-      </div>
-    </div>
+  </div>
   {{/each}}
 </div>
