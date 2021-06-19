@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-header">
+    <h2>{{filmDetails.title}}</h2>
+  </div>
+  <div class="card-body d-flex flex-row">
+    <div>
+        <img class="me-5" src={{filmDetails.image}}>
+    </div>
+    <div>
+        <h4 class="card-title mt-2">Director: {{filmDetails.director}}</h4>
+    <h5 class="card-title">Stars:</h5>
+    <ul>
+        {{#each filmDetails.stars}}
+           <li>
+               {{this}}
+           </li>
+        {{/each}}
+    </ul>
+    <p class="card-text"><i>{{filmDetails.description}}</i></p>
+    <p class="card-text"><b>Show Times:</b>
+        <div class="d-flex flex-row">
+            {{#each filmDetails.showtimes}}
+               <p class="me-1">{{this}} |</p>
+            {{/each}}
+        </div>
+    </p>
+  </div>
+</div>
+</div>

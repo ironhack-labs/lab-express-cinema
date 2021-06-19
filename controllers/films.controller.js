@@ -9,5 +9,15 @@ module.exports.showFilms = (req, res, next) => {
             filmsArr: films
         })
     })
+}
 
+module.exports.showDetail = (req, res, next) => {
+    const id = req.params.id;
+    Film.findById(id)
+    .then((film) => {
+        console.log("My FILM: ", film)
+        res.render("detail", {
+            filmDetails: film
+        })
+    })
 }
