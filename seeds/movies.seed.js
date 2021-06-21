@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
+const movies = require('../movies.json');
 
 require('../db/index');
 
@@ -16,7 +17,7 @@ mongoose.connection.once('connected', () => {
         .then(() => {
             console.log('Database cleared');
 
-            return Movie.insertMany(data)
+            return Movie.insertMany(movies)
         })
         .catch(e => console.error(e))
         .finally(() => {

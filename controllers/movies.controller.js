@@ -9,6 +9,7 @@ module.exports.listMovies = (req, res, next) => {
 }
 
 module.exports.getMovie = (req, res, next) => {
+  console.log(req.params);
   Movie.findById(req.params.id)
     .then((movie) => res.render('movie', { movie: movie }))
     .catch(e => console.error(e))
@@ -17,7 +18,3 @@ module.exports.getMovie = (req, res, next) => {
 module.exports.index = (req, res, next) => {
     res.render('index');
   };
-
-// module.exports.movies = (req, res, next) => {
-//   res.render('movies');
-// };

@@ -1,19 +1,13 @@
 <div>
+  <h3>
+    Movies
+  </h3>
   {{#each movies as |movie|}}
     <div>
       <img src="{{movie.image}}" />
     </div>
     <div>
-      <a href="/movies">Go back</a>
       <h1>{{movie.title}}</h1>
-      <h2>Director: {{movie.director}}</h2>
-      <h5>Stars:</h5>
-      {{!-- <ul>
-        {{#each movie.stars}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul> --}}
-      <p>{{movie.description}}</p>
-    </div>
+      <a href="/movie/{{movie.id}}">See more</a>
   {{/each}}
 </div>

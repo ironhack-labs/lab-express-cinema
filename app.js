@@ -1,6 +1,4 @@
-// ℹ️ Gets access to environment variables/settings
-// https://www.npmjs.com/package/dotenv
-require('dotenv/config');
+
 
 // ℹ️ Connects to the database
 require('./db');
@@ -29,7 +27,10 @@ const index = require('./routes/index');
 app.use('/', index);
 
 const movies = require('./routes/index');
-app.use('/', movies);
+app.use('/movies', movies);
+
+const movie = require('./routes/index');
+app.use('/movie/:id', movie);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
