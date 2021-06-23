@@ -1,7 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+const moviesController = require('../controllers/Movies.controller');
+
+
+router.get('/', moviesController.home);
+
+router.get('/movies', moviesController.listMovies);
+
+router.get('/movies/:id', moviesController.getMovie);
+
 
 module.exports = router;
