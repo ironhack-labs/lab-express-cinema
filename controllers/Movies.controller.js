@@ -16,6 +16,8 @@ module.exports.listMovies = (req, res, next) => {
 
 module.exports.getMovie = (req, res, next) => {
     Movies.findById(req.params.id)
-        .then((movie) => res.render('detail', { movie }))
+        .then((movie) => {
+            console.log(movie)
+            res.render('detail', { movie })})
         .catch(e => console.error(e))
 }

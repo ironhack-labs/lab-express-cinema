@@ -27,8 +27,8 @@ const movieSchema = new mongoose.Schema(
         required: true,
       },
 
-      duration: {
-        type: [Number],
+      showtimes: {
+        type: [String],
         required: true,
       },
     },
