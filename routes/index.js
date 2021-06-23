@@ -8,6 +8,6 @@ router.get('/', movieController.index);
 
 router.get('/movies', movieController.listMovies);
 
-router.get('/movie/:id', moviecontroller.movieInfo);
+router.get('/movie/:id', movieController.movieInfo);
 
 module.exports = router;
