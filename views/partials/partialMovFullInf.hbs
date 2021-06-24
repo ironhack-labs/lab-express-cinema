@@ -1,0 +1,29 @@
+<div class='row align-items-center fullheight'>
+  <div class='col-md-3 single-img'>
+    <img src='{{image}}' alt='{{title}}' class='shadow-none p-1 mb-1 bg-light rounded' />
+  </div>
+
+  <div class='col-md-9 pl-5 pr-5 info'>
+
+    <a href='/movies'>Go back</a>
+
+    <h2>{{title}}</h2>
+    <h3>Director: {{director}}</h3>
+    <h4>Stars</h4>
+
+    <ul>
+      {{#each stars}}
+        <li>{{this}}</li>
+
+      {{/each}}
+    </ul>
+
+    <p>{{description}}</p>
+    <p class='show-time'>
+      {{#each showtimes}}
+        {{this}}
+        |
+      {{/each}}
+    </p>
+  </div>
+</div>
