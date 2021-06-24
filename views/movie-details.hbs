@@ -1,0 +1,18 @@
+<div class="details row">
+    <div class="details-image col col-3">
+        <img src="{{image}}" class="card-img-top" alt="...">
+    </div>
+    <div class="details-all col col-9">
+        <a href="/">Go Back</a>
+        <h5 class="card-title">{{title}}</h5>
+        <p>Stars</p>
+        <ul>
+            {{#each stars }}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>Hardcoded hours: 11:00 | 14:00 | 16:00 | 18:00 | </p>
+
+    </div>
+</div>
