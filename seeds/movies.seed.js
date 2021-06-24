@@ -3,7 +3,7 @@ require("dotenv/config")
 require('./../db/index')
 
 const { Mongoose } = require("mongoose");
-const Movie = require('./../models/Movie.model')
+const { Movie } = require('./../models/Movie.model')
 
 const movies = [
   {
@@ -95,4 +95,4 @@ Movie
   .then(() => Mongoose.connection.close())
   .catch(error => console.log('¡Ha habido un error!:', error))
   // ... your code here
-  
+
