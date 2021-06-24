@@ -1,24 +1,36 @@
-{{this}}
+<main id='details-body' class='container'>
+	<div class='row justify-content-start'>
 
-<img src={{this.image}} alt='movie poster' />
+		<div class='col-12 col-lg-4'>
+			<img src={{this.image}} alt='movie poster' />
+		</div>
 
-<a href='/movies'>Go back</a>
+		<div class='col'>
+			<a href='/movies'>Go back</a>
 
-<h2> {{this.title}} </h2>
+			<h2> {{this.title}} </h2>
 
-<h3> {{this.director}} </h3>
+			<h3> {{this.director}} </h3>
 
-<h3> Stars </h3>
-<ul>
-	{{#each this.stars}}
-		<li> {{this}} </li>
-	{{/each}}
-</ul>
+			<h3> Stars </h3>
 
-<p> {{this.description}} </p>
+			<ul>
+				{{#each this.stars}}
+					<li> {{this}} </li>
+				{{/each}}
+			</ul>
 
-<p>
-	{{#each this.showtimes}}
-		<span> {{this}} | </span>
-	{{/each}}
-</p>
+			<div>
+				<p> {{this.description}} </p>
+			</div>
+
+			<p class='showtimes'>
+				{{#each this.showtimes}}
+					<span> {{this}} </span>
+					|
+				{{/each}}
+			</p>
+		</div>
+
+	</div>
+</main>

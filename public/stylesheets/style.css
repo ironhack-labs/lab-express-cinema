@@ -1,8 +1,114 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+h1 {
+	font-size: 100px;
+	color: white;
+	line-height: 120%;
+	margin: 80px 0 30px;
 }
 
-a {
-  color: #00B7FF;
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 40px 0 10px;
+}
+
+h3 {
+	font-size: 20px;
+	margin: 20px 0 10px;
+}
+
+#index-body {
+	background: url('/images/cinema.jpg') no-repeat 0% 20%/100%;
+	height: 100%;
+	width: 100%;
+}
+
+#index-body a {
+	display: inline-block;
+	color: rgb(64, 175, 175);
+	padding: 12px 36px;
+	border-radius: 100px;
+	background-color: white;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+	box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px;
+}
+
+#movies-body a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#movies-body span {
+	color: rgba(141, 204, 204);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+#movies-body span:hover {
+	color: rgba(141, 204, 204, 0.5);
+	text-decoration: underline rgba(141, 204, 204, 0.5);
+}
+
+#movies-body p {
+	font-weight: 500;
+	color: rgb(93, 145, 153);
+	margin-bottom: 50px;
+}
+
+#movies-body .movie {
+	background-color: white;
+	margin: 20px 10px;
+	padding: 40px 20px 20px;
+	border-radius: 0;
+	border: white solid 2px;
+	transition: all 0.2s ease-in-out;
+}
+
+#movies-body .movie:hover {
+	background-color: rgba(141, 204, 204, 0.2);
+	border: rgb(93, 145, 153, 0.2) solid 2px;
+	border-radius: 15px;
+}
+
+#details-body {
+	margin-top: 50px;
+	color: rgb(52, 66, 68);
+}
+
+#details-body img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+#details-body p {
+	width: 600px;
+}
+
+#details-body .showtimes {
+	font-weight: 500;
+	padding: 10px 35px;
+	background-color: rgba(122, 206, 206, 0.2);
+	border-radius: 5px;
+	color: rgb(71, 155, 155);
+}
+
+#details-body span {
+	padding: 0 20px;
+}
+
+#details-body a {
+	color: rgb(64, 175, 175);
+	transition: all 0.2s ease-in-out;
+}
+
+#details-body a:hover {
+	color: rgb(64, 175, 175, 0.5);
+}
+
+/* GENERIC CLASSES */
+
+.text-align-center {
+	text-align: center;
 }
