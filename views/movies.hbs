@@ -1,0 +1,23 @@
+<main class='bg-dark'>
+
+  <a href='/'>
+    <h1 class='text-center text-white mb-0 pt-4'> <- Movies</h1>
+  </a>
+
+  <hr />
+
+  <div class='container'>
+    <div class='row'>
+
+      {{#each movies}}
+        <div class='col-md-4 d-flex flex-column align-items-center pb-5 mt-5 movies-list'>
+
+          <img src='{{image}}' alt='image' class='shadow-none p-1 mb-1 bg-light rounded' />
+          <h5 class='pt-2 text-white'>{{title}}</h5>
+
+          <a href='/movie/{{id}}'>See more</a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</main>
