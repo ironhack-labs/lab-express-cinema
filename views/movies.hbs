@@ -1,0 +1,13 @@
+<h1>Peliculas</h1>
+
+{{#each peliculas}}
+
+
+<p>{{title}}</p><a href="movieDetails/{{id}}">ver detalles del peliculónnnnnn</a>
+
+{{!-- nos llevamos el id de cada pelicula para luego poder desplegar los detalles de la misma y solo esa en la view de movieDetails --}}
+
+
+<img src="{{image}}" alt="foto peli">
+
+{{/each}}
