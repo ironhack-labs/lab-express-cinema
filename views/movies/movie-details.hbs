@@ -1,0 +1,20 @@
+<section id="single-movie">
+  <article>
+    <img src="{{singleMovie.image}}" alt="Movie preview" />
+  </article>
+  <article>
+    <a href="/movies">Go back</a>
+    <h1>{{singleMovie.title}}</h1>
+    <h3>Director: {{singleMovie.director}}</h3>
+    <h5>Stars</h5>
+    <ul>
+      {{#each singleMovie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{singleMovie.description}}</p>
+    {{#each singleMovie.showtimes}}
+      <span>{{this}}</span>
+    {{/each}}
+  </article>
+</section>
