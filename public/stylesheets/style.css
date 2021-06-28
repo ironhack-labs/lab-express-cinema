@@ -29,3 +29,15 @@ body {
   border-radius: 10px;
   text-decoration: none;
 }
+
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+}
