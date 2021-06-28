@@ -1,6 +1,6 @@
 body {
   /* padding: 50px; */
-  margin: -19px 0 0 0;
+  /* margin: -19px 0 0 0; */
   padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -30,9 +30,22 @@ body {
   text-decoration: none;
 }
 
+#title {
+  margin: 0 0 0 40px;
+}
+
 #movies {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 0 20px 30px;
+}
+
+#movies img {
+  height: 300px; 
+}
+
+#movie-title {
+  font-weight: bold;
 }
 
 #movie {
@@ -40,4 +53,14 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 15px 30px;
+}
+
+#movie-details {
+  display: flex;
+  width: 70vw;
+  margin: 30px 0 0 0;
+}
+
+#movie-info {
+  margin: 0 0 0 20px;
 }

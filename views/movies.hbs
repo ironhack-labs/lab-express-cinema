@@ -1,17 +1,14 @@
-<h2>Ironhack Cinema</h1>
-<p>Click on the movie to check the showtimes!</p>
+<div id="title">
+    <h2>Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+</div>
 
 <div id="movies">
-  {{#each moviesFromDB}}
-  <div id="movie">
-      <img src="{{image}}" alt="{{title}}">
-      <p>{{title}}</p>
-        <a href="/movies/{{_id}}">See more</a>
-    {{!-- <p>{{occupation}}</p>
-    <p>{{catchPhrase}}</p> --}}
-    {{!-- <form action="/movies/{{_id}}/delete" method="POST">
-      <button>Delete movie</button>
-    </form> --}}
-  </div>
-  {{/each}}
+    {{#each moviesFromDB}}
+        <div id="movie">
+            <img src="{{image}}" alt="{{title}}">
+            <p id="movie-title">{{title}}</p>
+            <a href="/movies/{{_id}}">See more</a>
+        </div>
+    {{/each}}
 </div>
