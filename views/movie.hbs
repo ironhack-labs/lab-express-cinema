@@ -1,0 +1,14 @@
+<h1>Here is the particular movie info</h1>
+
+{{#with movieFromDB}}
+	 <img src="{{image}}" alt="">
+		<p>{{title}}</p>
+
+    <p>Director: {{director}}</p>
+   <p>{{description}}</p>
+	 
+   
+{{/with}}
+
+ <p>Stars:</p>
+ {{movieFromDB.stars}}
