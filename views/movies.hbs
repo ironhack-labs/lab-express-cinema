@@ -1,7 +1,16 @@
 <h1>Here are all the movies we have</h1>
 {{#each movies}}
-	 <img src="{{image}}" alt="">
-		<p>{{title}}</p>
-    <a href="/movies/{{id}}">See More</a>
+
+<div class="card" style="width: 18rem;">
+  <img src="{{image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="/movies/{{id}}" class="btn btn-primary">Check out the movie</a>
+  </div>
+</div>
+	 
+
+    
 	  
 {{/each}}
