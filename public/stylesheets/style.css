@@ -1,8 +1,25 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url("/images/cinema.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-a {
-  color: #00B7FF;
+h2 {
+    font-size: 72px;
+    color: white;
+}
+
+#home-link {
+    color: #00B7FF;
+    border: white 2px solid;
+    border-radius: 30px;
+    font-size: 24px;
+    background: white;
+    padding: 10px;
+    text-decoration: unset;
+}
+
+#home-nav {
+    text-align: right;
 }
