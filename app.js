@@ -5,6 +5,20 @@ require('dotenv/config');
 // ℹ️ Connects to the database
 require('./db');
 
+const mongoose = require("mongoose");
+const MONGODB_URI = "mongodb://localhost:27017/lab-express-cinema";
+
+mongoose 
+	.connect(MONGODB_URI, {
+		useCreateIndex: true,
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+
+.then(() => {
+	console.log("connected to DB")
+})
+
 // Handles http requests (express is node js framework)
 // https://www.npmjs.com/package/express
 const express = require('express');
@@ -28,7 +42,15 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 const index = require('./routes/index');
 app.use('/', index);
 
+app.use(express.urlencoded({ extended: false}));
+const movie = require('./models/Movie.model');
+
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
+
+
+
+
 
 module.exports = app;
