@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em;
+  font: 16px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.image-wrapper {
+  margin-top: 2em;
+}
+
+.movie-wrapper {
+  display: flex;
+}
+
+.movie-wrapper div {
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.movie-director {
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+ul {
+  padding-top: 0.8em;
+  padding-bottom: 1em;
+}
+
+li {
+  margin-left: 1em;
+}
+
+.show-time {
+  padding-top: 1em;
+}

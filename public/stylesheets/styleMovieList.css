@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+h1 {
+  padding: 0.5em 0em 0.5em 1em;
+}
+
+p {
+  padding: 0em 0em 0.5em 2em;
+}
+
+.movies-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
+}
+
+.movie-in-list {
+  margin: 3em;
+}
+
+.movie-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}

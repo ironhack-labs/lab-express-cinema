@@ -3,7 +3,8 @@
 require('dotenv/config');
 
 // ℹ️ Connects to the database
-require('./db');
+require('./db/index');
+require('./seeds/movies.seed');
 
 // Handles http requests (express is node js framework)
 // https://www.npmjs.com/package/express
@@ -19,14 +20,21 @@ const app = express();
 require('./config')(app);
 
 // default value for title local
-const projectName = 'lab-express-cinema';
-const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
+// const projectName = 'lab-express-cinema';
+const projectName = 'cinema';
 
-app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+const capitalized = (string) =>
+  string[0].toUpperCase() + string.slice(1).toLowerCase();
+
+//app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+app.locals.title = `${capitalized(projectName)}`;
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
+const movieRouter = require('./routes/moviesRoute');
+
 app.use('/', index);
+app.use('/movies', movieRouter);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);

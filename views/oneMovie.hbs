@@ -1,0 +1,19 @@
+<div class='movie-wrapper'>
+  <div class='image-wrapper'>
+    <img src='{{movie.image}}' alt='' />
+  </div>
+  <div>
+    <a href='/movies'>Go back</a>
+    <p class='movie-title'>{{movie.title}}</p>
+    <p class='movie-director'>{{movie.director}}</p>
+    <p>Stars</p>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p>{{movie.description}}</p>
+    <p class='show-time'>{{movie.showtimes}}</p>
+  </div>
+</div>
