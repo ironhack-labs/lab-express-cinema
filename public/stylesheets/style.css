@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+#homepage {
+  background-image: url("../image/cinema.jpg"); 
+  background-size: 100vw;
+}
+
+#homepage h1 {
+  font-size: 100px;
+  color: white;
+}
+
+#check {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+}
