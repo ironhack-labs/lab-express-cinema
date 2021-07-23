@@ -21,5 +21,50 @@ h2 {
 }
 
 #home-nav {
-    text-align: right;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#home-nav div {
+    margin-right: 250px;
+}
+
+#movie-list-header {
+    color: black;
+    border: 5px solid white;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 10px;
+    padding: 25px;
+}
+
+#movie-list {
+    border: 5px solid white;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.movie {
+    margin: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.movie-detail {
+    display: flex;
+    align-items: flex-start;
+    border: 5px solid white;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 25px;
+}
+
+.movie-detail div,
+.movie-detail img {
+    margin: 10px;
 }
