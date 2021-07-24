@@ -1,0 +1,39 @@
+<h2 class="movies-list"> movies </h2>
+
+
+<div class="container-grid">
+
+
+	{{#each movies}}
+
+	<div class="movie">
+
+
+
+		<ul>
+			<li><img src="{{this.image}}"> </li>
+
+			<li>
+				<h2>{{this.title}} </h2>
+			</li>
+
+			<li><a href="/movies/{{this._id}}/seemore"> See more </li>
+			<!-- <li> Director: {{this.director}} </li>
+
+		<li> Starring: {{this.stars}} </li>
+		
+		<li> Synopsis: {{this.description}} </li>
+		<li> Showtimes: {{this.showtimes}} </li> -->
+
+		</ul>
+
+
+	</div>
+
+	{{/each}}
+
+</div>
+
+<div>
+	<p><a href="/"> Go back to Main </p></a>
+</div>

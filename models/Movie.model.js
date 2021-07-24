@@ -1,20 +1,26 @@
-
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
-const movieSchema = new Schema({
-	title: {
-		 type: String,
-		 required: true},
+const movieSchema = new Schema ({
+
+	title: String,
 	director: String,
-	stars: [ Array ],
+	stars: {
+		type: Array,
+		"default": [ ]
+	},
 	image: String,
 	description: String,
-	showtimes: [ Array ],
-
+	showtimes: {
+		type: Array,
+		"default": [ ]
+	},
 });
 
-const movie = mongoose.model("movie", movieSchema);
+const Movie = mongoose.model("movie", movieSchema);
 
-module.exports = movie;
+module.exports = Movie;
+
+
+
+

@@ -1,8 +1,147 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+ color: #fff;
+
 }
 
-a {
-  color: #00B7FF;
+
+
+ul {
+  list-style-type: none;
+ 
 }
+
+h1, p {
+  text-align: center;
+
+}
+
+.onemovie-container {
+
+  text-align: center;
+  max-width: 500px;
+
+
+}
+
+
+
+
+/*
+.index-container {
+  text-align: center;
+  color: white;
+}
+*/
+
+
+
+
+.button {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(211, 23, 218);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+/*ndex-container {
+    animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+*/
+
+
+.title {
+  font-size: 4.2rem;  
+   animation: flicker 1.5s infinite alternate;
+  color: #fff;
+
+}
+
+.welcome {
+   animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+.movies-list {
+  text-align: center;
+}
+
+.container-grid {
+  display: flex;
+    flex-wrap: wrap;
+justify-content: space-evenly;
+  text-align: center;
+grid-gap: 70px;
+
+
+}
+
+.movie-title {
+  padding-left: 40px;
+}
+
+.one-movie {
+  display: inline-block;
+line-height: 30px;
+  text-align: left;
+  width: 600px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.movies-list {
+    position: relative;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: calc(10px + 5vw);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.15em #1da9cc;
+    user-select: none;
+    white-space: nowrap;
+    filter: blur(0.007em);
+    animation: shake 2.5s linear forwards;
+}
+
+

@@ -1,22 +1,32 @@
 const express = require("express");
-const movie - require("../models/Movie.model");
-//const mongoose = require("mongoose");
-
 const router = express.Router();
+const Movie = require('../models/Movie.model');
 
-router.get("/movies", (req, res) => {
-	console.log(req.query);
+router.get('/movies', (req, res, next) => {
 
+	Movie.find()
+		.then((movieList) => {
+			res.render('movies.hbs', {
+				movies: movieList
+			});
+		})
 
-	movie.find(req.query)
-	.then((movieDocuments) => {
-		res.render("views/index.hbs", {
-			movies: movieDocuments,
-		});
-	})
-	.catch((error) => {
-		console.log(error);
-	});
+		.catch(e => console.log(e))
 });
+
+
+router.get('/movies/:id/seemore', (req, res, next) => {
+	Movie.findById(req.params.id)
+		.then((oneMovie) => {
+			res.render('oneMovie.hbs', {
+				movie: oneMovie
+			})
+		})
+
+		.catch(e => console.log(e))
+});
+
+
+
 
 module.exports = router;
