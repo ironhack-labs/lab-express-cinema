@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const Movie = require("../models/Movie.model");
+const Movie = require("../models/movies.model");
+const connectDB = require("../db/db");
 
 const movies = [
   {
@@ -85,26 +86,17 @@ const movies = [
 ];
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-
-mongoose
-  .connect(process.env.MONGOURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  })
+connectDB()
   .then(() => {
-    console.log("Seed is connected!");
-    return Movie.deleteMany();
-  })
-  .then(() => {
-    movies.map((movie) => {
-      Movie.create(movie)
-        .then(() => {
-          console.log("Movie created!");
-        })
-        .catch((err) => {
-          console.error("Error connecting to mongo: ", err);
-        });
+    Movie.deleteMany().then(() => {
+      Movie.create(movies).then((movies) => {
+        console.log(`Created ${movies.length} Movies.`);
+        mongoose.connection.close();
+      });
     });
+  })
+  .catch((err) => {
+    console.log("Error occured while inserting the books", err);
   });
+
+// run $node seeds/movies.seeds.js to get the seed into the database!
