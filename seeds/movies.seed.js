@@ -1,3 +1,6 @@
+const mongoose = require("mongoose");
+const Movie = require("../models/Movie.model");
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -83,4 +86,25 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-// ... your code here
+mongoose
+  .connect(process.env.MONGOURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  })
+  .then(() => {
+    console.log("Seed is connected!");
+    return Movie.deleteMany();
+  })
+  .then(() => {
+    movies.map((movie) => {
+      Movie.create(movie)
+        .then(() => {
+          console.log("Movie created!");
+        })
+        .catch((err) => {
+          console.error("Error connecting to mongo: ", err);
+        });
+    });
+  });
