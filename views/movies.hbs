@@ -1,15 +1,17 @@
 <div>
-  <navbar>
+  <navbar class="navbar">
     <ul>
       <li><a href="/">Back</a></li>
     </ul>
   </navbar>
+  <div class="moviescontainer">
   {{#each movies}}
-    <div>
+    <div class="movie">
       <img src={{image}} alt="movie image" />
       <h2>{{title}}</h2>
       <p>{{description}}</p></li>
       <a href="/movie/{{_id}}">See more</a>
     </div>
   {{/each}}
+  </div>
 </div>

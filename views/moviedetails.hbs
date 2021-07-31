@@ -1,11 +1,13 @@
 <div>
-  <navbar>
+  <navbar class="navbar">
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/movies">Back to Movies</a></li>
     </ul>
   </navbar>
-  <img src={{movie.image}} alt="movie image" />
-  <h2>{{movie.title}}</h2>
-  <p>{{movie.description}}</p>
+  <div class="moviewrapper">
+    <img src={{movie.image}} alt="movie image" />
+    <h2>{{movie.title}}</h2>
+    <p>{{movie.description}}</p>
+  </div>
 </div>

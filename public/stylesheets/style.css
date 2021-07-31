@@ -1,10 +1,99 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: no-repeat center url("../images/cinema.jpg");
+  background: no-repeat center url("../images/cinema.jpg");
   background-size: cover;
 }
 
 a {
   color: #00b7ff;
+}
+
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.wrapper h1 {
+  color: white;
+  font-size: 6rem;
+  text-align: left;
+}
+
+.wrapper a {
+  text-decoration: none;
+  padding: 3%;
+  font-size: 1.5rem;
+  color: #00b7ff;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.wrapper a:hover {
+  background-color: antiquewhite;
+  color: crimson;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar li {
+  padding: 1%;
+  font-size: 2rem;
+  border: 1px;
+  box-shadow: 0 0 1rem grey;
+  margin: 2%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: crimson;
+}
+
+.navbar a:hover {
+  color: grey;
+}
+
+.moviescontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 20%;
+  color: white;
+}
+
+.movie {
+  width: 20%;
+  padding: 2%;
+  font-size: 1rem;
+}
+
+.movie a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 1rem;
+}
+
+.movie a:hover {
+  color: #00b7ff;
+}
+
+.moviewrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  margin: 0 25%;
 }
