@@ -4,7 +4,7 @@
  const mongoose = require('mongoose');
  const Movie = require('../models/movie.models');
  
- const DB_NAME = 'movies-list';
+ const DB_NAME = 'lab-express-cinema';
  
  mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
    useCreateIndex: true,
