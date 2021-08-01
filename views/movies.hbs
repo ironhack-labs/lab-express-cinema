@@ -1,0 +1,23 @@
+<div>
+<navbar class="navbar">
+    <ul>
+      <li><a href="http://localhost:3000/index">Go Back</a></li>
+    </ul>
+  </navbar>
+<div class="moviescontainer">
+{{#each listOfMovies}}
+<div class="card" style="width: 12rem;">
+  <img src="{{image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+    <a href="http://localhost:3000/film/{{_id}}" class="btn btn-primary">See More</a>
+  </div>
+</div>
+  {{!-- <img src="{{image}}" alt="">
+  <h4>{{title}}</h4>
+  <a href="http://localhost:3000/film/{{_id}}">See More</a> --}}
+  <br><br><br>
+{{/each}}
+</div>
+</div>
