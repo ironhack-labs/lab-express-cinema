@@ -1,5 +1,3 @@
-// models/Book.model.js
- 
 const { Schema, model } = require('mongoose');
  
 const movieSchema = new Schema(
