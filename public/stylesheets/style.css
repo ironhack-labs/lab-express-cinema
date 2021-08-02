@@ -5,4 +5,9 @@ body {
 
 a {
   color: #00B7FF;
+  background-color: white;
+  border: 1px solid black;
+  padding: 2vh;
+  margin-top: 20px;
+  text-decoration: none;
 }
