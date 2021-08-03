@@ -1,0 +1,12 @@
+{{#each allMovies}}
+
+  {{!-- <img src="{{images.0.url}}" alt="" /> --}}
+  <br />
+  {{this.title}}
+  <br />
+  {{this.director}}
+  <br />
+  <a href="/movies/{{this._id}}">LINK TO DETAIL</a>
+  <br />
+
+{{/each}}
