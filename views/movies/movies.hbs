@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="navbar-brand" href="/">Ironhack Cinema</a>
+      </li>
+    </ul>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<div class="movies-text">
+<h4 class="showtimes">Check the showtimes!</h4>
+<div class="arrow-right"></div>
+</div>
+<div class="movies-container">
+  {{#each movies}}
+    <div class="card" style="width: 12rem;">
+      <img
+        src="{{this.image}}"
+        class="card-img-top"
+        alt="{{this.title}}'s movie cover"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <form action="/movies/{{this._id}}" method="GET" class="form-movies">
+          <button type="submit" class="btn-movies">See more</button>
+        </form>
+      </div>
+    </div>
+  {{/each}}
+</div>

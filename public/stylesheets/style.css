@@ -1,8 +1,176 @@
+/* Global */
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+li {
+  margin-right: 4vw;
+}
+
+nav {
+  background-color: #910240;
+  color: white;
+  height: 7vh;
+}
+
+button {
+  border: none;
+  border-radius: 2vw;
+  color: #2f3861;
+  transition: ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* Index */
+
+#index-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h1 {
+  color: white;
+  font-size: 8vw;
+  width: 40%;
+  font-weight: bold;
+  margin-top: 6vh;
+  margin-bottom: 4vh;
+}
+
+.form-index {
+  width: 40%;
+}
+
+.btn-index {
+  width: 18vw;
+  height: 6vh;
+  font-size: 1.4vw;
+}
+
+/* All movies */
+
+.movies-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 2vh auto;
+}
+
+.card {
+  margin: 20px;
+  border: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showtimes {
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  margin-top: 3vh;
+  margin-bottom: 0;
+  width: 20%;
+  background-color: #2f3861;
+  color: white;
+  height: 50px;
+  font-size: 1.5vw;
+}
+
+.movies-text {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #2f3861;
+  margin-top: 3vh;
+}
+
+.form-movies {
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-movies {
+  width: 8vw;
+  height: 5vh;
+  font-size: 1vw;
+}
+
+.card-title {
+  text-align: center;
+}
+
+/* Details */
+
+.movies {
+  opacity: 0.8;
+}
+
+#details-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10vh auto;
+}
+
+.cover-detail {
+  width: 25%;
+  height: auto;
+}
+
+#details-info {
+  width: 45%;
+}
+
+hr {
+  color: #2f3861;
+}
+
+.times {
+  display: inline;
+  margin: 0;
+}
+
+.ul-times {
+  padding: 0;
+}
+
+p {
+  margin-top: 30px;
 }

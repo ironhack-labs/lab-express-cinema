@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="navbar-brand" href="/">Ironhack Cinema</a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand movies" href="/movies">Back to All Movies</a>
+      </li>
+    </ul>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<div id="details-container">
+  <img
+    src="{{movies.image}}"
+    alt="{{movies.title}}'s moive cover"
+    class="cover-detail"
+  />
+  <div id="details-info">
+    <h3>{{movies.title}}</h3>
+    <h5>by {{movies.director}}</h5>
+    <hr />
+    <p>{{movies.description}}</p>
+    <p>Stars</p>
+    <ul>
+      {{#each movies.stars}}
+        <li class="stars">
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+    <p>Showtimes</p>
+    <ul class="ul-times">
+      {{#each movies.showtimes}}
+        {{#if @last}}
+          <li class="times">
+            {{this}}
+          </li>
+        {{else}}
+          <li class="times">
+            {{this}}
+            |
+          </li>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
