@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Movie = require('../models/Movie.model');
 
-router.get('/movies', (req, res, next) => {
+router.get('/', (req, res, next) => {
   Movie.find()
     .then((allMoviesFromDB) => {
       // console.log(JSON.stringify(allMoviesFromDB, null, '\t'))
@@ -13,7 +13,7 @@ router.get('/movies', (req, res, next) => {
     });
 });
 
-router.get('/movies/:movieId', (req, res, next) => {
+router.get('/:movieId', (req, res, next) => {
   console.log('Movie id', req.params.movieId);
   Movie.findById(req.params.movieId)
     .then((movieFromDB) => {
