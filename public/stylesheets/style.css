@@ -1,8 +1,154 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #00B7FF;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: -webkit-flex;
+  height: auto;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto 0 auto;
+}
+
+.card {
+  text-align: center;
+  margin: .1rem;
+  position: relative;
+  color: #fff;
+}
+
+.card h4 a {
+  background: #FF8162;
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 3px;
+  display: inline-block;
+  width: 75%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.card h4,
+.card h3 {
+  margin: 5px auto;
+  max-width: 200px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-footer {
+  background-color: grey;
+  margin-top: -0.55rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  font-size: 0.5rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  width: 60%;
+  margin: 30vh auto;
+  position: relative;
+}
+
+/* to make the text visible when opacity is applied */
+.form-container::before {
+  content: "";
+  border-radius: 3px;
+  background-color: grey;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  position: relative;
+}
+
+input[name='artistName'] {
+  height: 2.2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form button {
+  width: 40%;
+  background: #FF8162;
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+
+.track,
+.track-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #BEBEBE;
+  color: #fff;
+  margin: .1rem 1rem;
+  padding: .3rem;
+  border-radius: 3px;
+}
+
+.track {
+  padding-right: 7%;
+  padding-left: 7%;
+  height: 4rem;
+}
+
+.track-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #707070;
+  margin-bottom: -0.5rem;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+/* #page-title,
+#page-title-dir {
+  display: block;
+} */
