@@ -1,27 +1,37 @@
-<div class='movie-cover'>
-  <img src="{{image}}" alt='' />
-</div>
-<div class='movie-details'>
-  {{title}}
-  {{director}}
-  <h4>
-    Starts
-  </h4>
-  <ul>
-    {{#each stars}}
-      <li class='star-item'>
-        {{this}}
-      </li>
-    {{/each}}
-  </ul>
-  <p class='description'>
-    {{description}}
-  </p>
-  <div class='showtime-items'>
-    {{#each showtimes}}
-      <p>
-        {{this}} |
-      </p>
-    {{/each}}
+<div class='movie-details-container'>
+  <div class='movie-cover'>
+    <img src="{{image}}" alt='' />
+  </div>
+  <div class='movie-details'>
+      <a href="/movies">Go back</a>
+    <h2>
+      {{title}}
+    </h2>
+    <h4>
+      Director:
+      <span class="director-name">
+        {{director}}
+      </span>
+    </h4>
+    <h4>
+      Starts
+    </h4>
+    <ul>
+      {{#each stars}}
+        <li class='star-item'>
+          {{this}}
+        </li>
+      {{/each}}
+    </ul>
+    <p class='description'>
+      {{description}}
+    </p>
+    <div class='showtime-items'>
+      {{#each showtimes}}
+        <p>
+          {{this}} |
+        </p>
+      {{/each}}
+    </div>
   </div>
 </div>
