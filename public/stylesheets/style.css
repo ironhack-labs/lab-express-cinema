@@ -4,5 +4,13 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+.home {
+  background-image: url(/images/cinema.jpg);
+  width: 1000vw;
+  height: 1000vh;
+  background-repeat: no-repeat;
 }
