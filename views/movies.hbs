@@ -1,0 +1,18 @@
+<div class="title_container bg-danger text-white p-2 mb-5">
+    <a class="title_text" href="/"><h2>Ironhack Cinema</h2></a>
+    <p>Click on the movie to check the showtimes.</p>
+</div>
+
+    <div class="container text-center">
+        <div class="row">
+            {{#each movies}}
+            <div class="col-md-4 mb-5">
+                <img src="{{image}}" alt="Imagen de {{title}}">
+                <br>
+                <br>
+                <p>{{title}}</p>
+                <a class="btn btn-danger" href="/movies/{{_id}}">See more</a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
