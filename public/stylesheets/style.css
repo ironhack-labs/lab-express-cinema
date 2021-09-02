@@ -6,3 +6,59 @@ body {
 a {
   color: #00B7FF;
 }
+.container-home {
+  background-image: url("./../images/cinema.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+
+  text-align: right;
+}
+.container-home h1{
+  color: white;
+  font-size: 7rem;
+}
+
+.container-home a{
+  text-decoration: none;
+  border-radius: 35px;
+  padding: 20px 35px 20px 35px;
+  cursor: pointer;
+  color: #00B7FF;
+  background-color: white;
+}
+/* //movies */
+/* card */
+.only-card{
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.only-card img {
+  width: 42%;
+  height: 40%;
+  object-fit: cover;
+}
+.only-card p {
+  padding: 10px;
+}
+.showtimes-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  list-style: none;
+}
+.showtimes-list li {
+  margin-right: 2rem;
+  /* border: 1px solid green; */
+}
+.showtimes-list h3{
+  padding: 5px;
+  /* border: 1px solid green; */
+}
+.stars-list{
+  padding: 17px ;
+
+}
