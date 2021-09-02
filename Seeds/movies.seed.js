@@ -2,7 +2,7 @@ require("dotenv/config")
 
 require('../db')
 
-const Movie = require("../Models/Movie.mode")
+const Movie = require("../Models/Movie.model")
 
 const movies = [
     {
