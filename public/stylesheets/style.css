@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@500&display=swap');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Glory', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.popcorn {
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  color: white;
 }

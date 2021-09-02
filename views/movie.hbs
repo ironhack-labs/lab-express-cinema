@@ -1,0 +1,37 @@
+<div class='container'>
+
+  <h1>{{title}}</h1>
+  <img src={{image}} />
+  <hr />
+  <div class='row'>
+    <div class='col-md-6'>
+      Directed by
+      <br />
+      {{director}}
+    </div>
+    <div class='col-md-6'>
+      Plot
+      <br />
+      {{description}}
+    </div>
+    <div class='col-md-6'>
+      Starring...
+      <br />
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class='col-md-6'>
+      <br />
+      Showtimes:
+
+      {{showtimes}}
+    </div>
+  </div>
+
+  <hr />
+
+  <a href='/movies' class='btn btn-dark'>Back to the movies</a>
+</div>
