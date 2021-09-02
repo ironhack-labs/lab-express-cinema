@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Listado de peliculas</h1>
+    <hr>
+
+    {{#each movie}}
+    <img src={{image}} alt="poster">
+    <p>{{title}} <small> - [<a href="/movies/details/{{id}}">See more</a>]</small></p>
+    <hr style="opacity: .5;">
+    {{/each}}
+
+    <a href="/" class="btn btn-dark">Volver</a>
+</div>
