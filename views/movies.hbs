@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row mt-5 d-flex justify-content-center ">
+        <h2 class="font-weight-bold">Ironhack Cinema</h2>
+    </div>
+    <div class="row d-flex justify-content-center mb-5">
+        <p>Click on the movie to check the showtimes!</p>
+    </div>
+
+    <div class="row ">
+    {{#each movies}}
+        <div class="col-4 d-flex justify-content-center mt-2">
+            <div class="row-column">
+            <img src="{{image}}" alt="movie">
+            <p class="mt-2 d-flex justify-content-center"> {{title}}</p>
+            <a class="d-flex justify-content-center mb-5" href="/movie/{{id}}">See more</a>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+</div>
