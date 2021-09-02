@@ -1,0 +1,34 @@
+body {
+box-sizing: border-box;
+width: 100%;
+overflow: hidden
+}
+
+
+.index {
+    background-image: url('../images/cinema.jpg') ;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    margin-top: -40px;
+}
+
+.index h1, .index p {
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 40px;
+  }
+
+.movies > * {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.details {
+    height: 100vh;
+}

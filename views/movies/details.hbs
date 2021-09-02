@@ -1,0 +1,52 @@
+
+<div class="container details">
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-4 justify-content-end">
+            <img src={{image}} alt="{{image}} poster" width="300px">
+        </div>
+
+        <div class="col-8">
+            <h1>{{title}}</h1>
+            <h4>Director: {{director}}</h4>
+            <br>
+            <ul>
+                {{#each stars}}
+                    <li>
+                        <h5> {{this}} </h5>
+                    </li>
+                {{/each}}
+            </ul>
+            <br>
+            <p>
+                <code>{{description}}</code>
+            </p>
+            <br>
+            <p>
+                <span>
+                {{#each showtimes}}
+                    {{this}} |
+                {{/each}}
+                </span>
+            </p>
+
+            <br>
+            <a href="/" type="button" class="btn btn-dark btn-lg"> Go back </a>
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+        {{#each movies}}
+            <div class="col-3">
+            
+            <br>
+            {{title}}
+            <br>
+            <a href="/movie/{{_id}}" type="button" class="btn btn-dark">See More</a>
+            </div>
+        {{/each}}
+    </div>
+</div>
