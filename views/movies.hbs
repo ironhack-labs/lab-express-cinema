@@ -1,0 +1,22 @@
+<div class="container">
+
+    <h1>Check the details of the movies</h1>
+    <div class="row">
+        {{#each movies}}
+        <div class="col-4">
+            {{!-- {{img}} --}}
+            <img src="{{image}}" alt="pelicula">
+            <p>{{title}}</p>
+            <a href="/movie/{{id}}">See More</a>
+
+        </div>
+        {{/each}}
+    </div>
+    
+    <a class="btn btn-dark" href="/">Volver</a>
+
+</div>
+
+
+
+
