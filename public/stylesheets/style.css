@@ -1,8 +1,26 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #666;
 }
 
-a {
+/* a {
+} */
+
+.home {
+  background-image: url("./../images/cinema.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.home-title {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+}
+.home-btn {
   color: #00B7FF;
 }
+

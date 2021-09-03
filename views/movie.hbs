@@ -1,0 +1,35 @@
+<div class="row-column ">
+    <div class="d-flex justify-content-center m-2">
+    <a class="btn-lg btn-danger rounded-pill p-3 mt-5 mb-3 px-5" href="/movies      ">Go Back</a>
+    </div>
+    <div class="container bg-secondary p-5 rounded-pill d-flex">
+    <div class="row align-items-center">
+        <div class="col-sm-6 text-white">
+            <img class="rounded-pill  ml-5" src="{{image}}" alt="{{title}}">
+        </div>
+        <div class="col-sm-6 text-white mt-3">
+            <p class="h3">{{title}}</p>
+            <br><br>
+            {{director}}
+            <br>
+            <br>
+            Stars
+            <ul>
+                {{#each stars}}
+                <li>
+                    {{this}}
+                </li>
+                {{/each}}
+            </ul>
+            <br>
+            {{description}}
+            <br>
+            <br>
+            {{#each showtimes}}
+            {{this}}
+            {{/each}}
+        </div>
+    </div>
+
+    </div>
+</div>
