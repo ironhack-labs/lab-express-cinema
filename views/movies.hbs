@@ -1,0 +1,15 @@
+<div class="container">
+    <div class='row justify-content-center'>
+        
+        {{#each movies}}
+        <div class="col-4">
+           
+                <img src="{{image}}" alt="cartel de peli">
+                <h6>{{title}}</h6>  
+                <a href="/movies/movie-ditail/{{id}}">See More</a></p>
+            
+         </div>
+        {{/each}}
+       
+    </div>
+</div>

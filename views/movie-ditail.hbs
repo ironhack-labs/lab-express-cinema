@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+        <img class="col-6 img-fluid" src={{image}} alt="cartel peli"> 
+    </div>
+    <div class="col-7">
+        <a href="/movies"><small>Go Back</small></a>
+        <h3>{{title}}</h3>
+        <h4>stars</h4>
+        <ul>
+        {{#each stars}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+         <p>{{description}}</p>
+        {{#each showtimes}}
+            {{this}}|
+        {{/each}}
+    </div>
+  </div>
