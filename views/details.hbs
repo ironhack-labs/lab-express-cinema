@@ -1,0 +1,24 @@
+
+    
+  <div class="row align-items-center padd">
+      <hr>
+    <div class="col imageOne">
+        <img src="{{image}}" class="card-img-top dimension" alt="imagemovie">    </div>
+    <div class="col">
+      <a href="/movies">Go Back</a>
+      <h1 class="card-title">{{title}}</h1>
+            <h3 class="tag">{{director}}</h3>
+                <ul>
+                    <h5>Stars</h5>
+                {{#each stars}}
+                 <li>{{this}}</li>
+                 {{/each}}
+                 </ul>
+                <p>{{description}}</p>
+                {{#each showtimes}}
+                {{this}} |
+                {{/each}} 
+    </div>
+    <div class="col">
+    </div>
+  </div>
