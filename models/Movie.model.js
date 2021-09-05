@@ -16,5 +16,3 @@ const modelSchema = new Schema(
 );
 
 module.exports = model('Movie', modelSchema);
-
-module.exports = Movie;

@@ -85,6 +85,7 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 // ... your code here
+// node ./seeds/movies.seed.js to the terminal to run it
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 
