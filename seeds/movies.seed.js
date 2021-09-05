@@ -84,20 +84,19 @@ const movies = [
 ];
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-
 // ... your code here
 const mongoose = require('mongoose');
-const Book = require('../models/Book.model');
+const Movie = require('../models/Movie.model');
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/library-project';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/movies-project';
 
 mongoose.connect(MONGO_URI, {});
 
-Book.create(books)
-	.then((booksFromDB) => {
-		console.log(`Created ${booksFromDB.length} books`);
+Movie.create(movies)
+	.then((moviesFromDB) => {
+		console.log(`Created ${moviesFromDB.length} movies`);
 
 		// Once created, close the DB connection
 		mongoose.connection.close();
 	})
-	.catch((err) => console.log(`An error occurred while creating books from the DB: ${err}`));
+	.catch((err) => console.log(`An error occurred while creating movies from the DB: ${err}`));
