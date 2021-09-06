@@ -1,8 +1,51 @@
+@font-face {
+  font-family: luxisb;
+  src: url('/fonts/luxisb.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  min-height: 100vh;
 }
 
 a {
   color: #00B7FF;
+}
+
+#landing {
+  background: url('/images/cinema.jpg') no-repeat center top fixed;
+  background-size: cover;
+  height: 100vh;
+  font-family: luxisb;
+}
+
+#landing .call-to-action {
+  padding-top: 7rem;
+  width: 47.6rem;
+}
+
+#landing .call-to-action .title {
+  font-size: 9rem;
+  color: white;
+  font-weight: 550;
+  letter-spacing: .3rem;
+  line-height: 10.5rem;
+  margin-bottom: 2.8rem;
+}
+
+#landing .call-to-action .button {
+  display: block;
+  font-size: 1.7rem;
+  color: #679dad;
+  background-color: white;
+  border-radius: 3rem;
+  padding: 1.5rem 3.6rem;
+  text-decoration: none;
+  box-shadow: 1px 5px 5px #1313135e;
+  letter-spacing: .05rem;
 }
