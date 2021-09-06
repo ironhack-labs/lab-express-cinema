@@ -9,7 +9,6 @@ router.get('/movies', (req, res, next) => {
     Movie
        .find()
        .then(theMovies => {
-           console.log('Retrieved movies from DB:', theMovies);
 
            res.render('movies.hbs', { movie: theMovies }); 
          })
@@ -19,5 +18,16 @@ router.get('/movies', (req, res, next) => {
            next(error);
          });
      });
+router.get('/movie/:id',(req,res)=>{
+    const movieId = req.params.id;
+    Movie
+    .findById(movieId)
+    .then(theMovies =>{
+        res.render('movie-details',{theMovies:theMovies})
+    })
+    .catch(error =>{
+        console.log('Error while getting the id',error)
+    })
+})
 
 module.exports = router;
