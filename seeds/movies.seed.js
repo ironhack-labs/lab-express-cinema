@@ -86,18 +86,13 @@ const movies = [
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 // ... your code here
 // node ./seeds/movies.seed.js to the terminal to run it
-const mongoose = require('mongoose');
+require('dotenv/config');
+require('../db');
+
 const Movie = require('../models/Movie.model');
-
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/movies-project';
-
-mongoose.connect(MONGO_URI, {});
 
 Movie.create(movies)
 	.then((moviesFromDB) => {
 		console.log(`Created ${moviesFromDB.length} movies`);
-
-		// Once created, close the DB connection
-		mongoose.connection.close();
 	})
 	.catch((err) => console.log(`An error occurred while creating movies from the DB: ${err}`));
