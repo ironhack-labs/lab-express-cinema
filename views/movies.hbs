@@ -1,0 +1,13 @@
+{{! since we passed allTheBooksFromDB as `books`,
+we can iterate over it here with #each}}
+<div>
+  <h2>Ironhack Cinema</h2>
+  <h4>Click on the movie to check the showtimes!</h4>
+</div>
+{{#each movies}}
+  <div>
+    <img src="{{image}}"/>
+    <p>{{title}}</p>
+    <a href="/movies/{{_id}}">See more</a>
+  </div>
+{{/each}}
