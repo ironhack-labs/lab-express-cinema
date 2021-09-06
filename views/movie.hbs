@@ -1,0 +1,12 @@
+<img src="{{image}}"/>
+<h2 class = "movie-title">{{title}}</h2>
+<p class = "director">{{director}}</p>
+<p>Stars:</p>
+{{#each this.stars}}
+	<p>{{this}}</p>
+{{/each}}
+<p>Description: {{description}}</p>
+<p>Showtimes:</p>
+{{#each this.showtimes}}
+	<p>{{this}}</p>
+{{/each}}
