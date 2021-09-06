@@ -19,7 +19,8 @@ router.get('/movies/:movieId', (req, res) =>{
     const {movieId} = req.params;
 
     Movie.findById(movieId)
-        .then(theMovie => res.render ('../views/movie-details.hbs', {movies: theMovie}))
+        .then(theMovie => 
+            res.render ('../views/movie-details.hbs', {movies: theMovie}))
         .catch(error =>{
             console.log('Error while retrieving movie details: ', error);
         

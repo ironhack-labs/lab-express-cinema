@@ -1,6 +1,16 @@
+<div><a href="/movies">Go back</a></div>
+
+<div><img src="{{movies.image}}" alt=""></div>
 <h1>{{movies.title}}</h1>
 <p>Director: {{movies.director}}</p>
-<p>Stars: {{movies.stars}}</p>
+<p>Stars: 
+   <ul>
+       <li>{{movies.stars.[0]}}</li>
+       <li>{{movies.stars.[1]}}</li>
+       <li>{{movies.stars.[2]}}</li>
+
+   </ul>
+   
 <p> {{movies.description}}</p>
-<p>{{movies.showtimes}}</p>
-<hr>
+<p>{{movies.showtimes.[0]}} | {{movies.showtimes.[1]}} | {{movies.showtimes.[2]}} | {{movies.showtimes.[3]}} | {{movies.showtimes.[4]}}</p>
+
