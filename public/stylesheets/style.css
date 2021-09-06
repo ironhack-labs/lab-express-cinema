@@ -13,6 +13,34 @@ a {
 .main {
   background-image: url(../images/cinema.jpg);
   background-size:cover;
-  width: 1000px;
-  height: 1000px;
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+}
+
+
+.sub {
+
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;;
+
+}
+
+#title {
+  color: white;
+  font-size: 100px;;
+}
+
+#movies-button {
+  text-decoration: none;
+  padding: 20px 80px;
+  margin-top: 20px;
+  background-color: rgb(184, 184, 184);
+  border: 1px solid black;
+  border-radius: 80px;
+  color: rgb(84, 149, 245);
 }

@@ -26,7 +26,7 @@ router.get('/movies', (req, res, next) => {
 	  .then(movie => {
 		console.log('Retrieved movie from DB:', movie);
 		//Preguntar porque aqui no tengo que pasar un objeto
-		res.render('movie', movie ); 
+		res.render('movie', movie); 
 	})
 	.catch(error => {
 	  console.log('Error while getting the books from the DB: ', error);

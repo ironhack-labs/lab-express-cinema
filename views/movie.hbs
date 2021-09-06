@@ -1,12 +1,25 @@
-<img src="{{image}}"/>
-<h2 class = "movie-title">{{title}}</h2>
-<p class = "director">{{director}}</p>
-<p>Stars:</p>
-{{#each this.stars}}
-	<p>{{this}}</p>
-{{/each}}
-<p>Description: {{description}}</p>
-<p>Showtimes:</p>
-{{#each this.showtimes}}
-	<p>{{this}}</p>
-{{/each}}
+<div class="card mb-3 p-3 mb-2 bg-dark text-white" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{image}}" class="img-fluid rounded-start" alt="{{title}} image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">Director: {{director}}</p>
+        <p class="card-text"><small class="text-muted">Stars:
+			{{#each this.stars}}
+				<p>{{this}}</p>
+			{{/each}}
+		</small></p>
+		<p class="card-text">Description: {{description}}</p>
+		<p class="card-text">Showtimes: 
+			{{#each this.showtimes}}
+			<p>{{this}}</p>
+		{{/each}}
+			
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
