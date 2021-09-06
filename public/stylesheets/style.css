@@ -4,5 +4,82 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+  text-decoration: none;
+  
+}
+a:hover{
+  text-decoration: none;
+  color: white
+}
+
+body{
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+h1{
+  color: white;
+  font-size: 120px;
+  font-weight: 700;
+}
+
+h2{
+  font-family: sans-serif;
+  color: darkred;
+  font-size: 70px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+h3{
+  font-size: 50px;
+}
+hr{
+    border: 2px solid white;
+}
+button{
+  font-size: 1.2em;
+  border: none;
+  background-color: white;
+  border-radius: 40px;
+  padding: 20px 50px;
+}
+button:hover{
+  background-color: wheat;
+}
+
+.moviesbutton{
+padding-right: 18%;
+margin-top: 20px
+}
+
+img{
+  width: 300px;
+  margin: 15px 30px 15px 0;
+  
+}
+
+
+p{
+  color: white;
+}
+
+.card{
+  background-color: rgba(51, 51, 54, 0.568);
+  border: 2px solid red;
+}
+.detail-card{
+  background-color: rgba(139, 0, 0, 0.459);
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.go-back:hover{
+  font-weight: bolder;
+}
+
+img{
+  border: 15px dotted white;
 }

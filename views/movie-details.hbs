@@ -1,16 +1,24 @@
-<div><a href="/movies">Go back</a></div>
+<div>
+    <a class="go-back" href="/movies">Go back</a>
+</div>
+<div class="detail-card container-fluid mt-5">
+    <div class="row">
+        <div class="col-3">
+            <img class="detailed-img" src="{{movies.image}}" alt="">
+        </div>
+        <div class="col-9">
+            <h3 class="text-center">{{movies.title}}</h3> <hr>
+            <p class="text-right">Director: {{movies.director}}</p>
+            <p> <b>Stars:</b>  
+            <ul class="mb-4">
+                <li>{{movies.stars.[0]}} </li>
+                <li>{{movies.stars.[1]}}</li>
+                <li>{{movies.stars.[2]}}</li>
 
-<div><img src="{{movies.image}}" alt=""></div>
-<h1>{{movies.title}}</h1>
-<p>Director: {{movies.director}}</p>
-<p>Stars: 
-   <ul>
-       <li>{{movies.stars.[0]}}</li>
-       <li>{{movies.stars.[1]}}</li>
-       <li>{{movies.stars.[2]}}</li>
-
-   </ul>
-   
-<p> {{movies.description}}</p>
-<p>{{movies.showtimes.[0]}} | {{movies.showtimes.[1]}} | {{movies.showtimes.[2]}} | {{movies.showtimes.[3]}} | {{movies.showtimes.[4]}}</p>
-
+            </ul>
+            
+            <p class="text-justify mb-5"> {{movies.description}}</p>
+            <p class="text-right">{{movies.showtimes.[0]}} | {{movies.showtimes.[1]}} | {{movies.showtimes.[2]}} | {{movies.showtimes.[3]}} | {{movies.showtimes.[4]}}</p>
+        </div>
+    </div>  
+</div>
