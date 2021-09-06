@@ -67,3 +67,28 @@ a:hover{
   font-size: 1em;
   font-weight: 600;
 }
+
+/* MOVIE DETAIL */
+#detail {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.detail-img{
+  margin-right: 5%;
+}
+
+.detail-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  flex-direction: column;
+}
+
+.detail-content a{
+margin-bottom: 1%;
+}
+.detail-content li:first-child {
+  margin-top: 1%;
+}
