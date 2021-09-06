@@ -1,0 +1,15 @@
+ This view should have all the movie titles and movie images displaying. 
+ In addition to this, as displayed on the image below, add the link See more that should point to the each movie details page
+
+ <h1>MOVIES</h1>
+ 
+{{!-- since we passed allTheBooksFromDB as `books`,
+we can iterate over it here with #each--}}
+ 
+{{#each movies}}
+  <div>
+    <h3>{{title}}</h3>
+    <img src="{{image}}" alt="">
+    <a href="./movie/{{id}}">See more</a>
+  </div>
+{{/each}}
