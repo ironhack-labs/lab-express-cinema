@@ -22,4 +22,18 @@ router.get('/movies', (req, res, next) => {
     });
 });
 
+/* Display movie details */
+router.get('/movies/:movieId', (req, res, next) => {
+  Movie
+    .findById(req.params.movieId) 
+    .then(thisMovie => {
+      //res.send(thisMovie)
+      res.render('movies/movie-detail.hbs', thisMovie)
+    })
+    .catch(error => {
+      console.log('Error while getting the books from the DB: ', error);
+      next(error);
+    });
+});
+
 module.exports = router;
