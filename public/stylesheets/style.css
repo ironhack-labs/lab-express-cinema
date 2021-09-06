@@ -6,3 +6,29 @@ body {
 a {
   color: #00B7FF;
 }
+.back-img{
+  margin-left: 5.3vw;
+  background-image: url("./../images/cinema.jpg");
+  background-size: cover;
+  height: 800px;
+  width: 1500px;
+}
+#link{
+  
+  float: right;
+  color: white;
+  margin: 11vw;
+  font-size: 36px;
+
+}
+#link h1{
+  text-align: justify;
+}
+#link a{
+ background-color: white;
+  border:3px solid black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 20px;
+}
