@@ -89,7 +89,7 @@ const movies = [
   // ... your code here
   
 const mongoose = require('mongoose');
-const Movie = require('../models/Book.model');
+const Movie = require('../models/Movie.model');
 
   Movie
         .create(movies)
