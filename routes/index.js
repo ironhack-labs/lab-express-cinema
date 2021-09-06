@@ -5,7 +5,8 @@ const Movie = require('../models/Movie.model');
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
 
-router.use('/movies', (req, res) => {
+//ruta de /movies | dif. use & get?
+router.get('/movies', (req, res) => {
 	Movie.find()
 		//.count()
 		.then((movies) => {
@@ -18,6 +19,17 @@ router.use('/movies', (req, res) => {
 		.catch((err) => {
 			console.log(err);
 		});
+});
+
+//ruta de /movies en detalle con id
+router.get('/details/:movieId', (req, res) => {
+	const { movieId } = req.params;
+
+	Movie.findById(movieId)
+		.then((movie) => {
+			res.render('details', movie);
+		})
+		.catch((err) => console.log('ERROR', err));
 });
 
 module.exports = router;
