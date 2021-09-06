@@ -19,6 +19,7 @@ a {
 
 section {
   padding: 4rem 0;
+  min-height: 100vh;
 }
 
 #landing {
@@ -54,9 +55,8 @@ section {
   letter-spacing: .05rem;
 }
 
-
 #movies-list .title-wrapper {
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 #movies-list .title-wrapper h1 {
@@ -68,8 +68,9 @@ margin-bottom: 4rem;
   font-size: 1.2rem;
 }
 
-#movies-list .movie-card a {
+#movies-list .movie-card a:not(.description a) {
   width: 60%;
+  box-shadow: 1px 5px 5px #1313135e;
 }
 
 #movies-list .movie-card img {
@@ -81,7 +82,53 @@ margin-bottom: 4rem;
   font-weight: bold;
   font-size: 1.1rem;
 }
-#movies-list .movie-card a {
 
+#movies-list .movie-card a {
   font-size: 1rem;
+}
+
+#movie-detail .link-back {
+  font-size: 1.2rem;
+}
+
+#movie-detail .movie-detail-wrapper {}
+
+#movie-detail .movie-detail-wrapper h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#movie-detail .movie-detail-wrapper h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#movie-detail .movie-detail-wrapper img {
+  width: 80%;
+  height: auto;
+  box-shadow: 1px 5px 5px #1313135e;
+}
+
+#movie-detail .movie-detail-wrapper h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#movie-detail .movie-detail-wrapper ul {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem!important;
+}
+
+#movie-detail .movie-detail-wrapper .description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#movie-detail .movie-detail-wrapper .showtimes {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
