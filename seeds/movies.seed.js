@@ -1,4 +1,5 @@
-// To insert in "seeds/movies.seed.js"
+require('dotenv/config');
+require('../db');
 
 const movies = [
     {
@@ -86,4 +87,17 @@ const movies = [
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
   // ... your code here
+  
+const mongoose = require('mongoose');
+const Movie = require('../models/Book.model');
+
+  Movie
+        .create(movies)
+        .then((moviesFromDB) => {
+             console.log(`Created ${moviesFromDB.length} movies`);
+             mongoose.connection.close();
+        })
+        .catch((err) => console.log(`An error occurred while creating movies from the DB: ${err}`));
+
+
   
