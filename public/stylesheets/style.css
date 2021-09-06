@@ -17,6 +17,10 @@ a {
   color: #00B7FF;
 }
 
+section {
+  padding: 4rem 0;
+}
+
 #landing {
   background: url('/images/cinema.jpg') no-repeat center top fixed;
   background-size: cover;
@@ -48,4 +52,36 @@ a {
   text-decoration: none;
   box-shadow: 1px 5px 5px #1313135e;
   letter-spacing: .05rem;
+}
+
+
+#movies-list .title-wrapper {
+margin-bottom: 4rem;
+}
+
+#movies-list .title-wrapper h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#movies-list .title-wrapper h2 {
+  font-size: 1.2rem;
+}
+
+#movies-list .movie-card a {
+  width: 60%;
+}
+
+#movies-list .movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+#movies-list .movie-card h5 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#movies-list .movie-card a {
+
+  font-size: 1rem;
 }

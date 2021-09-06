@@ -1,0 +1,24 @@
+<section id="movies-list" class="container">
+
+  <div class="title-wrapper text-center">
+    <h1 class="mb-3">{{title}}</h1>
+    <h2>Click on the movie to check the showtimes!</h2>
+  </div>
+
+  <div class="row g-5">
+    {{#each movies}}
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center movie-card"
+      >
+        <a href="/movie-details" class="align-self-center d-block">
+          <img src="{{image}}" alt="{{title}}" />
+        </a>
+        <div class="text-center m-4">
+          <h5>{{title}}</h5>
+          <a href="/movie-details">See more</a>
+        </div>
+
+      </div>
+    {{/each}}
+  </div>
+</section>
