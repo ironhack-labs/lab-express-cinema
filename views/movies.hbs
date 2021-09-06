@@ -1,10 +1,11 @@
-<div>
-{{#each data}}
-<img src={{image}}>
-<h3>{{title}}</h3>
-<a href="movies/{{_id}}">See details!</a>
-
-{{/each}}
+<div class="movies-container">
+    {{#each data}}
+        <div class="movie-card">
+            <img src={{image}}>
+            <h3>{{title}}</h3>
+            <a href="movies/{{_id}}">See details</a>
+        </div>
+    {{/each}}
 
 
 </div>

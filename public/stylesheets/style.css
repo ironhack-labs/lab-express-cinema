@@ -13,7 +13,7 @@ a {
   color: #00B7FF;
 }
 
-
+/*HOME //////////////*/
 #home{
   display:flex;
   justify-content: flex-end;
@@ -41,6 +41,7 @@ width: 500px;
 
 #search-btn{
   font-size: 14px;
+  font-weight: bolder;
   display:block;
   background-color:rgb(247, 247, 240);
   padding: 15px 50px;
@@ -50,6 +51,75 @@ width: 500px;
   color: rgb(74, 160, 218);
  
 }
+
+
+
+
+/*/////////////////////////////////////////*/
+
+/*MOVIES///////////////////////////////////*/
+.movies-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background: rgb(156,156,156);
+  background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(10,10,10,1) 100%);
+  height: 100%;
+  width: 100%;
+}
+.movie-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 350px;
+  height: 500px;
+}
+.movie-card h3{
+  margin: 20px 0;
+}
+.movie-card a{
+  text-decoration: none;
+  color: azure;
+  background: rgba(255, 254, 254, 0.274);
+  padding: 5px 10px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px black;
+}
+
+/*MOVIE DETAILS//////////////////////////////////////*/
+#details-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 900px;
+  
+}
+#details-card img {
+  
+  width: 400px;
+  height: 400px;
+  
+}
+
+#text-details{
+  margin: 0 40px;
+  
+  padding: 100px;
+  color: aliceblue;
+}
+#text-details >*{
+  margin: 0 0 20px 0;
+  
+}
+#text-details li{
+  font-size: 12px;
+  margin: 5px 0 5px 20px;
+}
+
 #showtimes{
   display:flex;
 }

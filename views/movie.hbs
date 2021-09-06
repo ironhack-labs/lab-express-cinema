@@ -1,28 +1,30 @@
-<div>
+<section class="movies-container">
 
-<a href="/movies">Go back!</a>
+<div id="details-card">
 
-<br>
+    <br>
 
-<img src={{image}}>
+    <img src={{image}}>
+    <div id="text-details">
+        <a href="/movies">Go back!</a>
+        <h2>{{title}}</h2>
+        <h3>{{director}}</h3>
+        <h3>Stars</h3>
 
-<h3>{{title}}</h3>
-<h5>{{director}}</h5>
-<h6>Stars</h6>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
 
-<ul>
-    {{#each stars}}
-    <li>{{this}}</li>
-    {{/each}}
+        </ul>   
 
-</ul>
+        <p>{{description}}</p>
 
-<p>{{description}}</p>
-
-<div id="showtimes">
-{{#each showtimes}}
-    <p>{{this}} |<p>
-    {{/each}}
+        <div id="showtimes">
+            {{#each showtimes}}
+            <p>{{this}} |<p>
+            {{/each}}
+        </div>
+    </div>
 </div>
-
-</div>
+</section>
