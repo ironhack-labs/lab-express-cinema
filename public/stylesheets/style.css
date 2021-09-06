@@ -74,8 +74,13 @@ p{
   color: white;
   font-size: 20px;
   line-height: 30px;
+  border-radius: 14px;
 }
-
+.go-back{
+  background-color: rgba(139, 0, 0, 0.459);
+  padding: 10px;
+  border-radius: 10px;
+}
 .go-back:hover{
   font-weight: bolder;
 }
