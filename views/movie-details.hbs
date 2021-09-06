@@ -1,20 +1,23 @@
-<h1>MOVIE DETAIL</h1>
 
+<div class= "movie-detail">
+    <div class= "movie-detail-img">
+        <img src="{{movie.image}}" alt="">
+    </div>
 
-  <div>
-    <h2>{{movie.title}}</h3>
-    <h4>Director: {{movie.director}}</h4>
-    <img src="{{movie.image}}" alt="">
-    <h4>Stars</h4>
-    <ul>
-        {{#each movie.stars}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-    <p>{{movie.description}}</p>
-    <p>
-        {{#each movie.showtimes}}
-            {{this}} |
-        {{/each}}
-    </p>
-  </div>
+    <div class = "movie-detail-text">
+        <h3>{{movie.title}}</h3>
+        <h5>Director: {{movie.director}}</h5>
+        <h5>Stars</h5>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <p>
+            {{#each movie.showtimes}}
+                {{this}} |
+            {{/each}}
+        </p>
+    </div>
+</div>
