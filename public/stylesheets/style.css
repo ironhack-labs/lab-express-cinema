@@ -1,8 +1,40 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding:  0; 
+  margin: 0; 
+  font-family:  "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+ 
+
+.title{
+  color: #fff; 
+  font-size: 4.6rem;
+
+ }
+
+.bg-1 {
+  background-image: url('../images/cinema.jpg');  
+  height: 100vh; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 100%; 
+} 
+ 
+
+/*  
+I declare mt. Mt is margin class to  i declare it to control margin of our row
+*/  
+.mt{
+  margin-top: 130px;
+} 
+.mt-10{
+  margin-top: 10px;
+} 
+
+
+.mt-30{
+  margin-top: 30px;
 }

@@ -1,0 +1,25 @@
+ 
+<div>
+    <div class="row mt-30">
+        <div class="col-2"></div>
+        <div class="col-1 ">
+            <img src="{{image}}" alt="movie">
+        </div>
+        <div class="col-2 "></div>
+        <div class="col-5 mt-10">
+            <a href="/movies">Go back</a>
+            <h2 class="font-weight-bold">{{title}}</h2>
+            <h6 class="font-weight-bold">{{director}}</h6>
+            <p class="font-weight-bold">Stars</p>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            {{#each showtimes}}
+            <span>{{this}} |</span>
+            {{/each}}
+        </div>
+        <div class="col-2"></div>
+    </div>                                 
