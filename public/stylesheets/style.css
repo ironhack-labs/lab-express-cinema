@@ -137,6 +137,7 @@ a {
   border-radius: 5rem;
   width: 8rem;
   height: 3rem;
+  text-align: center;
 }
 .moviePicture {
   width: 25rem;
