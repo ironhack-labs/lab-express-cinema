@@ -45,24 +45,121 @@ a {
   font-weight: 500;
   width: 25rem;
   height: 4rem;
-  background-color: #c8104e;
+  background-color: #c32a2a;
   border: 3px solid white;
 }
 
 /* Movies list */
 
 #moviesList {
-  background-size: cover;
-  background-color: c8104e;
+  background-image: linear-gradient(
+    90deg,
+    #c32a2a 25%,
+    #f6f0cf 25%,
+    #f6f0cf 50%,
+    #c32a2a 50%,
+    #c32a2a 75%,
+    #f6f0cf 75%,
+    #f6f0cf 100%
+  );
+  background-size: 160px 160px;
 }
 
 #moviesList h2 {
   font-size: 4rem;
-  color: white;
   font-weight: bold;
 }
 
 #moviesList h5 {
   font-size: 2rem;
-  color: white;
+  font-weight: 800;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#moviesList a {
+  background-color: #c32a2a;
+  border: 4px solid black;
+  font-size: 1.5rem;
+  color: f6f0cf;
+  font-weight: 800;
+  border-radius: 5rem;
+}
+
+#moviesList img {
+  border-radius: 2rem;
+  margin-right: 3rem;
+  border: 5px solid black;
+  margin-top: 3rem;
+}
+
+/* Movie details */
+
+#moviesDetails {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    #c32a2a 25%,
+    #f6f0cf 25%,
+    #f6f0cf 50%,
+    #c32a2a 50%,
+    #c32a2a 75%,
+    #f6f0cf 75%,
+    #f6f0cf 100%
+  );
+  background-size: 160px 160px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#movieInfo {
+  display: flex;
+  width: 60%;
+  background-color: #f6f0cf;
+  border-radius: 2rem;
+  border: 5px solid black;
+}
+
+#moviesDetails a {
+  background-color: #c32a2a;
+  border: 4px solid black;
+  font-size: 1.5rem;
+  color: f6f0cf;
+  font-weight: 800;
+  border-radius: 5rem;
+  width: 8rem;
+  height: 3rem;
+}
+.moviePicture {
+  width: 25rem;
+  height: 35rem;
+  border-radius: 2rem;
+  margin-right: 2rem;
+}
+
+#movieDetailed h3 {
+  font-size: 4rem;
+}
+
+#movieDetailed h4 {
+  font-size: 3rem;
+}
+
+#movieDetailed li {
+  font-size: 2rem;
+}
+
+#movieDetailed p {
+  font-size: 2rem;
+}
+#movieDetailed {
+  height: 33%;
 }
