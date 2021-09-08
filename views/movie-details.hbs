@@ -1,1 +1,13 @@
-funciono
+<a href="/movies">Go back</a>
+
+    <img src="{{theMovies.image}}">
+    <h3>{{theMovies.title}}</h3>
+    <p>{{theMovies.director}}</p>
+    <p>Stars</p>
+    <ul>
+{{#each theMovies}}
+    {{this.stars}}
+    {{/each}}   
+    </ul>
+    <p>{{theMovies.description}}</p>
+    <p>{{theMovies.showtimes}}</p>

@@ -23,7 +23,7 @@ router.get('/movie/:id',(req,res)=>{
     Movie
     .findById(movieId)
     .then(theMovies =>{
-        res.render('movie-details',{theMovies:theMovies})
+        res.render('movie-details',{theMovies})
     })
     .catch(error =>{
         console.log('Error while getting the id',error)
