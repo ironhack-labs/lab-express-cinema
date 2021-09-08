@@ -88,11 +88,14 @@ const movies = [
 // ... your code here
 require("dotenv/config");
 require("../db");
+
+const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model.js");
 
 Movie.create(movies)
   .then((moviesFromDB) => {
     console.log(`Created ${moviesFromDB.length} movies`);
+    mongoose.connection.close();
   })
   .catch((err) =>
     console.log(`An error occurred while creating movies from the DB: ${err}`)
