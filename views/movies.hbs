@@ -1,0 +1,11 @@
+<div class="generalMovies">
+  {{#each movies}}
+    <div class="card cardGeneral">
+      <img src="{{image}}" class="card-img-top" alt="imageMovie." />
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <a href="/movies/{{_id}}" class="btn btn-primary">See more</a>
+      </div>
+    </div>
+  {{/each}}
+</div>

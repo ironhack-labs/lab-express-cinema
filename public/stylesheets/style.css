@@ -4,5 +4,64 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.IndexGeneral {
+  background-image: url(/images/cinema.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+/* movies 2 */
+
+.generalMoviesDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.titleId {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.directorId {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.starsId {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.starsNameId {
+  font-size: 0.85rem;
+}
+.showtimesId {
+  display: flex;
+}
+
+.imageId {
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+
+/* movies */
+
+.generalMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardGeneral {
+  width: 20rem !important;
+  margin: 2rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
