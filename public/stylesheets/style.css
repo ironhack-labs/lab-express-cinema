@@ -1,8 +1,45 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+
 
 a {
   color: #00B7FF;
 }
+
+.home{
+  background: url(../images/cinema.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.container-home{
+  margin-left: 800px;
+}
+
+.container-home h1{
+  padding-top: 100px;
+  margin: 0;
+  font-size: 7rem;
+  color: white;
+  margin-bottom: 30px;
+
+}
+
+#checkMovies button{
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  border-style: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
+  color: #00B7FF;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+
+}
+
+#checkMovies button:hover{
+  transform: scale(1.1)
+}
+

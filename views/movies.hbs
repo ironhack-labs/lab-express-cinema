@@ -1,0 +1,20 @@
+<div class="moviesTitle">
+<h1>Movies</h1>
+</div>
+
+<div class="moviesContainer">
+
+{{#each moviesInfo}}
+<div class="moviesCard">
+<div class="movieTitle">
+<h3>{{title}}</h3>
+</div>
+<div class="movieImage">
+<img src="{{image}}">
+<a href="/movie/{{id}}">See more</a>
+</div>
+</div>
+{{/each}} 
+
+
+</div> 
