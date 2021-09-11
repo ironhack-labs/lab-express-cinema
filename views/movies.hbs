@@ -1,0 +1,32 @@
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtimes!</p>
+
+{{!-- 
+
+Somehow receive movies
+
+movies array -> Each invididual movie -> movie
+Iterate for each single movie
+
+Movie 1
+- img -> movie.image
+- h3 -> movie.title
+- link -> See more | movie.description
+
+{{#each movies}} -> this is each movie
+
+ --}}
+
+{{#each movies}}
+    <img src="{{this.image}}"  alt="Movie thumbnail">
+    <h3>{{this.title}}</h3> 
+    {{!-- Noemi thinks Anna is wrong. Let's bet Andre--}}
+    {{!-- Maybe it's movies instead of movie --}}
+    <a href="movies/{{this._id}}">See more</a>
+    <br><br>
+{{/each}}
+
+{{!-- /movies --}}
+{{!-- movies/id --}}
+
+
