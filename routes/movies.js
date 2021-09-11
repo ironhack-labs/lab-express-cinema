@@ -22,7 +22,6 @@ router.get("/:id", (req, res, next) => {
     .catch((error) => {
       console.log("Error, no movies for you ", error);
 
-      // Call the error-middleware to display the error page to the user
       next(error);
     });
 });
