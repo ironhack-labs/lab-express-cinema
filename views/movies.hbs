@@ -1,0 +1,8 @@
+<h1>Welcome to Movies page</h1>
+<ul>
+{{#each listMovies}}
+<h2>{{this.title}}</h2>
+<img src="{{this.image}}" alt="">
+<a href="movies/{{this.id}}">See more</a>
+{{/each}}
+</ul>

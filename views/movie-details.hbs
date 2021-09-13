@@ -1,0 +1,19 @@
+<h1>{{uniqMovie.title}}</h1>
+
+<img src="{{uniqMovie.image}}" alt="">
+
+<h2>{{uniqMovie.director}}</h2>
+
+<h4>Stars:</h4>
+
+    <ul>
+    {{#each uniqMovie.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<p>{{uniqMovie.description}}</p>
+
+{{#each uniqMovie.showtimes}}
+<p>{{this}}</p>
+{{/each}}
