@@ -1,15 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const Movie = require("../models/movie.model.js");
+const Movie = require("../models/movie.model");
 
 /* GET movies list hbs */
-router.get("/movies", (req, res, next) => {
-	Movie.find({})
+router.get("/", (req, res, next) => {
+	Movie.find()
 		.then((allMovies) => {
-			res.render("movies", { theMovies: allMovies });
+			res.render("movies", { movies: allMovies });
 		})
-		.catch((error) => {
-			next(error);
+		.catch((err) => {
+			console.log(err);
 		});
 });
 // router.get("/:id", (req, re, next) => {
