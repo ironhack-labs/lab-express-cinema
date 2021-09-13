@@ -5,6 +5,7 @@ const Movie = require("../models/Movie.model.js");
 router.get("/", (req, res, next) => {
   Movie.find()
     .then((allMoviesFromDataBase) => {
+      console.log(allMoviesFromDataBase);
       res.render("movies", { movies: allMoviesFromDataBase });
     })
     .catch((error) => {
