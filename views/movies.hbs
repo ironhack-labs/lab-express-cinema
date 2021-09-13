@@ -1,8 +1,13 @@
-{{#each movies}}
-  <div>
-    <a href="movies/{{this._id}}">
-      <img src="{{this.image}}" alt="" />
-      <p>{{this.title}}</p>
-    </a>
-  </div>
-{{/each}}
+<h1>Ironhack Cinema</h1>
+<h3>Click on the movie to check the showtimes!</h3>
+<a href="/">Go back</a>
+<div >
+  {{#each theMovies}}
+  {{.}}
+
+    {{!-- <img src="{{this.image}}" alt="movieImage">
+    <h3>{{this.title}}</h3>
+    <a href="/movies/{{this.id}}">See more</a> --}}
+
+  {{/each}}
+</div>
