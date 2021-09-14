@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Movie = require("../models/movie.model");
 
+
 /* GET movies list hbs */
 router.get("/", (req, res, next) => {
 	Movie.find()
