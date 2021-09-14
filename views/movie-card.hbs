@@ -1,1 +1,12 @@
 <h1>hello movies card</h1>
+<div >
+  {{#each movie-card}}
+  <hr>
+    <div>
+      <img src="{{this.image}}" alt="movie Image">
+      <h3>{{this.title}}</h3>
+      {{!-- <a href="/movies/{{this.id}}">See more</a> --}}
+    </div>
+
+  {{/each}}
+</div>

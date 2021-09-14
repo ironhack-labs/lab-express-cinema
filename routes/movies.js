@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Movie = require("../models/movie.model");
+const Movie = require("../models/Movie.model");
 
 
 /* GET movies list hbs */
@@ -13,13 +13,13 @@ router.get("/", (req, res, next) => {
 			console.log(err);
 		});
 });
-// router.get("/:id", (req, re, next) => {
-//   modelMovie
-//     .findById(req.params.id)
-//     .then((idMovie) => {
-//       res.render("movie-card", { oneMovie: idMovie });
-//     })
-//     .catch();
-// });
+router.get("/:id", (req, res, next) => {
+  Movie
+    .findById(req.params.id)
+    .then((idMovie) => {
+      res.render("movie-card", { oneMovie: idMovie });
+    })
+    .catch();
+});
 
 module.exports = router;
