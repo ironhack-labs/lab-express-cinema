@@ -1,12 +1,25 @@
-<h1>hello movies card</h1>
-<div >
-  {{#each movie-card}}
-  <hr>
-    <div>
-      <img src="{{this.image}}" alt="movie Image">
-      <h3>{{this.title}}</h3>
-      {{!-- <a href="/movies/{{this.id}}">See more</a> --}}
-    </div>
+<h1>Movie card</h1>
+<a href="/movies">Go back</a>
+<hr />
 
-  {{/each}}
+	{{#each movieCard}}
+<div>
+
+		<img src="{{this.image}}" alt="movie image" />
 </div>
+
+			<h2>{{this.title}}</h2>
+			<h3>Director: {{this.director}}</h3>
+			<h3>Starring:</h3>
+			<ul>
+				{{#each this.stars}}
+					<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			<p>{{this.description}}</p>
+      <p>Showtimes: {{#each this.showtimes}} {{.}} ||{{/each}}</p>
+
+
+
+	{{/each}}
+

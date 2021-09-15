@@ -34,8 +34,8 @@ app.use("/", index);
 const movies = require("./routes/movies");
 app.use("/movies", movies);
 
-const movieId = require ("./routes/movies");
-app.use("/movies", movieId);
+// const movieId = require ("./routes/movies");
+// app.use("/movies", movieId);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
