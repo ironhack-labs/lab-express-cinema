@@ -1,0 +1,37 @@
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+
+<div>
+  {{#each movies}}
+    <hr />
+    <div>
+      <img src="{{this.image}}" alt="Movie thumbnail" />
+      <h3>{{this.title}}</h3>
+      <a href="/movies/details/{{this.id}}">See more</a>
+    </div>
+  {{/each}}
+</div>
+
+{{!-- Somehow receive movies
+
+movies array -> Each invididual movie -> movie
+Iterate for each single movie
+
+Movie 1
+- img -> movie.image
+- h3 -> movie.title
+- link -> See more | movie.description
+
+{{#each movies}} -> this is each movie  --}}
+
+{{! EXAMPLE }}
+{{! {
+    stars: [ 'Christina Hendricks', 'Bailee Madison', 'Martin Henderson' ],        
+    showtimes: [ '13:50', '16:20', '19:20', '22:10' ],
+    _id: 613c95c35668b9184c9d29d6,
+    title: 'The Strangers: Prey at Night',
+    director: 'Johannes Roberts',
+    image: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1OTIwODgzMV5BMl5BanBnXkFtZTgwMzUyMDgzNDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
+    description: "A family's road trip takes a dangerous turn when they arrive at a secluded mobile home park to stay with some relatives and find it mysteriously deserted. Under the cover of darkness, three masked psychopaths pay them a visit to test the family's every limit as they struggle to survive.",
+    __v: 0
+  }, }}
