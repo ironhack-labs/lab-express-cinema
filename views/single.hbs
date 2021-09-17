@@ -1,0 +1,29 @@
+<div class="single">
+    <img src="{{image}}" alt="Portada">
+    <div class="info">
+
+   
+      <a href="movies">Go back</a>
+    <h1>{{title}}</h1>
+    <h2>{{director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+
+        {{/each}}
+    
+    </ul>
+    <p>{{description}}</p>
+      <ul class="functions">
+        {{#each showtimes}}
+        <li> {{this}} |</li>
+
+        {{/each}}
+    
+    </ul>
+     </div>
+  
+</div>
+
+
