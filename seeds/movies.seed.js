@@ -98,4 +98,5 @@ const movies = [
 
 Movie.create(movies)
   .then(() => console.log("Se crearon las películas"))
+  .then(() => mongoose.connection.close())
   .catch((error) => console.log(`No se crearon las peliculas: ${error}`));
