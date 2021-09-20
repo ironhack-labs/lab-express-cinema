@@ -1,11 +1,11 @@
 //Funciona independiente al index.js
 // bin/seeds.js
 const mongoose  = require("mongoose")
-const Movie      = require("./../models/Movie")
+const Movie      = require("./../models/Movie.model")
 
 require('dotenv').config()
 
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect("mongodb://localhost:27017/lab-express-cinema", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -95,5 +95,5 @@ const movies = [
 
   Movie.create(movies)
   .then(()=> console.log("Creación de pelis exitosa"))
-  //.then(() => mongoose.connection.close())
+  .then(() => mongoose.connection.close())
   .catch((e)=> console.log(e))

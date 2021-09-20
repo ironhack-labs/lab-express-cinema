@@ -1,12 +1,15 @@
-    <div>{{#each movieList}}
-        <div>
+<div>
+    <h1>Ironhack Cinema</h1>
+    <p>Click on the movies to check the info!</p>
+</div>
+    <div class="model">
+        {{#each movieList}}
+        <div class="list">
+            <img src="{{image}}" class="image" alt="img-movie">
             <h2>{{title}}</h2>
-            <p>{{director}}</p>
-            <p>{{stars}}</p>
-            <p>{{description}}</p>
-            <p>{{showtimes}}</p>
+            <button id="info"><a href="/{{id}}">See more</a></button>
         </div>
 
-    {{/each}}
+        {{/each}}
 
-</div>
+    </div>

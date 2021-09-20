@@ -22,6 +22,17 @@ exports.index = (req, res) => {
   res.render("index")
 }
 
+exports.oneMovie = (req, res) => {
+  const {id} = req.params
+  Movie.findById(id)
+    .then((movie) => {
+      res.render("oneMovie", movie)
+    })
+    .catch((e) => {
+      console.log(e)
+    })
+}
+
 /*
 const index = async (req, res) => {
   res.render("./index");
