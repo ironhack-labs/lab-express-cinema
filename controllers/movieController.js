@@ -7,7 +7,7 @@ exports.listMovies = (req, res) => {
     Movie.find({})
         .then((dbMovie) => {
             // 2. ENVIARLOS AL CLIENTE            
-            res.redirect("/movies", {
+            res.render("movies", { //su 2do elemento es un objeto
                 movieList: dbMovie
             })
 
@@ -16,19 +16,10 @@ exports.listMovies = (req, res) => {
     
 }
 
-/*
-const listMovies = async (req, res) => {
-  let movies = await Movie.find({});
-
-  res.render("./movies", {
-    movies: movies,
-  });
-};
-*/
 
 exports.index = (req, res) => {
 
-  res.render("./index")
+  res.render("index")
 }
 
 /*

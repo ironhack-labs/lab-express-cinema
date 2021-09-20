@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true }))
 
 
 // 3. RUTEO
-app.use("/movies", require("./routes/movies"))
+app.use("/", require("./routes/movies"))
 
 
 // 4. SERVIDOR

@@ -95,4 +95,5 @@ const movies = [
 
   Movie.create(movies)
   .then(()=> console.log("Creación de pelis exitosa"))
+  //.then(() => mongoose.connection.close())
   .catch((e)=> console.log(e))
