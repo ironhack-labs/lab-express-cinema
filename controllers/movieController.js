@@ -24,18 +24,19 @@ exports.Home = (req, res) => {
   res.render("movies/Home")
 }
 
-exports.details = (req, res) => {
+exports.oneMovie = (req, res) => {
 
-      // 1. ENCONTRAR LOS DATOS EN LA BASE DE DATOS
-      Movie.find({})
-      .then((dbMovies) => {
-          // 2. ENVIARLOS AL CLIENTE            
+  const {movieid} = req.params
+  Movie.findById(movieid)
+    .then((movie) => {
+    
+      res.render("movies/single", movie)
       
-          res.render("movies/details", {
-            movieList: dbMovies
-          })
-      })
-      .catch(() => {})
+    })
+    .catch((e) => {
+      console.log(e)
+    })
 
+ 
 
 }

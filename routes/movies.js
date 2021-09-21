@@ -17,7 +17,7 @@ router.get("/", movieController.listMovies)
 router.get("/Home", movieController.Home)
 
 //GENERAR VISTA DE HOME
-router.get("/details", movieController.details)
+router.get("/:movieid", movieController.oneMovie)
 
 
 // 3. EXPORTACIÓN

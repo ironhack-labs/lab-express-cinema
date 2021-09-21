@@ -11,7 +11,8 @@ const movieSchema =  mongoose.Schema({
     stars: [String],
     image: String,
     description: String,
-    showtimes: [String],     
+    showtimes: [String],  
+    rating: Number,   
 })
 
 

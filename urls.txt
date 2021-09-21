@@ -1,0 +1,10 @@
+node bin/seeds.js
+
+localhost:3000/movies/Home
+
+
+localhost:3000/movies
+
+localhost:3000/details
+
+
