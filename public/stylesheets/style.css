@@ -4,16 +4,34 @@ body {
   
 }
 
-.linkcheck {
+
+
+.linkCheck {
+  color: #00B7FF;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: tomato;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding:20px;
+  max-width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.linkCreate {
   color: #00B7FF;
   font-size: 20px;
   text-decoration: none;
   background-color: tomato;
   border-radius: 20px;
   padding:20px;
+  max-width: 40%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
 h1 {
@@ -28,18 +46,30 @@ aside {
   padding-left: 15px;
   margin-left: 15px;
   float: right;
-  
 }
 
-/* .container-listmovies {
+ul {
+  list-style-type: none;
+}
+
+
+
+label, input, textarea {
+  display: block;
+  margin: 1rem 0;
+}
+
+.container-listmovies {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-.title-btn{
+.info-movie{
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}  
+

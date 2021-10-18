@@ -21,10 +21,28 @@ router.get("/movies", (req, res, next) =>{
     })
     .catch((err)=> {
         console.log("ups, an error has been detected displaying a list of all movies", err)
-        next (error);
+        next (err);
     })
 })
 
+router.get("/movies/create", (req,res,next) => {
+    res.render("movies/movies-create")
+})
+
+router.post("/movies/create", (req, res, next) => {
+    console.log(req.body)
+    const {title, director, description, stars} = req.body;
+    Movie.create({title, director, description, stars})
+    .then(() =>{
+        res.redirect("/movies")
+        
+    })
+
+    .catch((err)=>{
+        console.log("ups, an error has been detected displaying a new movie", err)
+        next (err);
+    })
+})
 
 router.get("/movies/:movieId",  (req, res, next)=>{
     Movie.findById(req.params.movieId)
@@ -34,6 +52,6 @@ router.get("/movies/:movieId",  (req, res, next)=>{
     })
     .catch((err) => {
         console.log("ups, an error has been detected displaying the details of a singel movie", err)
-        next (error);
+        next (err);
     })
 })
