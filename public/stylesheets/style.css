@@ -1,8 +1,42 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
 }
 
-a {
+#background {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-page-container {
+  margin: 2rem;
+    position: absolute;
+    top: 10%;
+    right: 10%
+}
+
+#main-page-title {
+  font-family: 'Courier New',
+  Courier,
+  monospace;
+  font-size: 6rem;
+  color: white;
+
+}
+
+#main-page-link {
+  font-family: 'Courier New',
+  Courier,
+  monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
   color: #00B7FF;
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
 }
