@@ -88,3 +88,10 @@ body {
 .movie a:hover {
   font-weight: 700;
 }
+
+
+
+
+.showtime {
+  display: inline-block;
+}
