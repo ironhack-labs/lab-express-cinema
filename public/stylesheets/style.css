@@ -1,5 +1,8 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font: 14px "Lucida Grande",
+  Helvetica,
+  Arial,
+  sans-serif;
   margin: 0;
 }
 
@@ -20,18 +23,13 @@ body {
 }
 
 #main-page-title {
-  font-family: 'Courier New',
-  Courier,
-  monospace;
+
   font-size: 6rem;
   color: white;
 
 }
 
 #main-page-link {
-  font-family: 'Courier New',
-  Courier,
-  monospace;
   font-weight: 700;
   font-size: 1.5rem;
   color: #00B7FF;
@@ -39,4 +37,54 @@ body {
   background-color: white;
   padding: 1rem 2rem;
   border-radius: 3rem;
+}
+
+#main-page-link:hover {
+  background-color: #00B7FF;
+  color: white;
+}
+
+#movies-list-header {
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+#movies-list-header-2 {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie {
+  margin: 2rem;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie img {
+  width: 15vw;
+}
+
+.movie h4 {
+  font-size: 1rem;
+}
+
+.movie a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.movie a:hover {
+  font-weight: 700;
 }
