@@ -1,8 +1,45 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 
-a {
+.linkcheck {
   color: #00B7FF;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: tomato;
+  border-radius: 20px;
+  padding:20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+h1 {
+  color: black;
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  
+}
+
+/* .container-listmovies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
