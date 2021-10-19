@@ -37,8 +37,32 @@ button {
   justify-content: center;
 }
 
-a {
+#first-link {
   all: unset;
   color: #659fb1;
   font-size: large;
+}
+
+.wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  max-width: 150px;
+}
+
+img {
+  box-shadow: 0px 3px 5px rgb(133, 133, 133);
+}
+
+.header {
+  margin: 25px;
+}
+
+a {
+  color: rgb(13, 202, 202);
 }

@@ -1,10 +1,16 @@
-<h1>This are all our available movies...</h1>
+<section class="header">
+    <h1>Ironhack Cinema</h1>
+    <p>Click on a movie to check the showtimes!</p>
+</section>
 
+<div class="wraper">
 {{#each data}}
 
-<img src="{{this.image}}"/>
-<h3>Title: {{this.title}}</h3>
-<a href="movies/{{this.id}}">see more</a>
-<br>
+<div class="container">
+    <img src="{{this.image}}"/>
+    <h3>Title: {{this.title}}</h3>
+    <a href="movies/{{this.id}}">see more</a>
+</div>
 
 {{/each}}
+</div>
