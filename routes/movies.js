@@ -17,6 +17,19 @@ router.get('/movies/:id', (req, res, next) => {
         console.log(data)
         res.render('movie-details', data)
     })
+    .catch(err => {console.log(`An error has occured loading the details of the movie: ${err}`)})
+});
+
+router.get('/new-movie', (req, res, next) => {
+    res.render('new-movie')
+})
+
+router.post('/new-movie', (req, res, next) => {
+    const {title, director, stars, image, description, showtimes} = req.body;
+    Movie.create({ title, director, stars, image, description, showtimes })
+        .then( () => {
+            res.redirect('/movies')
+        })
 })
 
 module.exports = router;
