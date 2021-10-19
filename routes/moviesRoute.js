@@ -55,3 +55,38 @@ router.get("/movies/:movieId",  (req, res, next)=>{
         next (err);
     })
 })
+
+router.get("/movies/:movieId/edit", (req, res, next)=>{
+    Movie.findById(req.params.movieId)
+    .then((movieFromDBtoEdit) => {
+        //console.log(movieFromDBtoEdit)
+        res.render("movies/movies-edit" , movieFromDBtoEdit)
+    })
+    .catch((err) => {
+        console.log("ups, an error has been detected getting the details of a singel movie", err)
+        next (err);
+    })
+    
+});
+
+
+router.post("/movies/:movieId/edit", (req, res, next) => {
+
+    const {title, director, description, stars} = req.body;
+
+    
+    
+    Movie.findByIdAndUpdate(req.params.movieId, req.body, {new : true})
+        .then( (movieFromDBtoEdit) => {
+            res.redirect("/movies/" + movieFromDBtoEdit._id);  
+        })
+
+        .catch((err) => {
+            console.log("ups, an error has been detected displaying the details of a singel movie", err);
+            next (err);
+
+        })
+
+
+    
+});
