@@ -158,6 +158,11 @@ body {
   background-color: teal;
 }
 
+.add-btn:hover {
+  color: teal;
+  background-color: white;
+}
+
 .form {
   font-size: 1.2rem;
 }

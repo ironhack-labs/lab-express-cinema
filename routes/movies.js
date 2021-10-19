@@ -62,5 +62,16 @@ router.post('/movies/:movieId/edit', (req, res) => {
         })
 })
 
+router.post('/movies/:movieId/delete', (req, res) => {
+    Movie.findByIdAndDelete(req.params.movieId)
+        .then(() => {
+            res.redirect('/movies')
+        })
+        .catch( (error) => {
+        console.log("Error deleting movie from DB", error);
+        next(error);
+    });
+})
+
 
 module.exports = router;
