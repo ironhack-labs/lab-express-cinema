@@ -1,0 +1,15 @@
+<a class="linkMovie" href="/movies">Go back</a>
+<img class="imgOne" src="{{this.image}}">
+<h1 class="middle">{{this.title}}</h1>
+<h3 class="middle">Director:{{this.director}}</h3>
+<h4 class="middle">Stars:
+  <ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</h4>
+<p class="parag">{{this.description}}</p>
+{{#each showtimes}}
+<span>{{this}}|</span>
+{{/each}}
