@@ -143,3 +143,43 @@ body {
   color: teal;
   background-color: white;
 }
+
+.add-btn {
+  display: block;
+  text-align: center;
+  width: 15vw;
+  margin: 2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  border: 1px solid teal;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: teal;
+}
+
+.form {
+  font-size: 1.2rem;
+}
+
+.form label {
+  display: block;
+  margin: 2rem;
+  width: 50vw;
+}
+
+.form button {
+  margin: 2rem;
+  font-size: 1.2rem;
+  padding: 0.3rem 1rem;
+  background-color: teal;
+  color: white;
+  border: 1px solid teal;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.form button:hover {
+  color: teal;
+  background-color: white;
+}

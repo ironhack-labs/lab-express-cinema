@@ -15,6 +15,19 @@ router.get('/movies', (req, res, next) => {
         });
 })
 
+router.get('/movies/add', (req, res) => {
+    res.render('movie-add')
+})
+
+router.post('/movies/add', (req, res) => {
+    const {title, director, description, image} = req.body;
+    Movie.create({title, director, description, image})
+        .then(()=> res.redirect('/movies'))
+        .catch((error) => {
+            console.log('Error adding new movie to DB');
+        })
+})
+
 router.get('/movies/:movieId', (req, res) => {
     Movie.findById(req.params.movieId)
         .then((movieDetails) => {
@@ -25,5 +38,7 @@ router.get('/movies/:movieId', (req, res) => {
             next(error);
         });
 })
+
+
 
 module.exports = router;
