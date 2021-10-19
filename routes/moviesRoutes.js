@@ -4,14 +4,14 @@ const Movie = require("../models/Movie.model");
 
 router.get('/movies', (req, res, next) => {
     Movie.find()
-        .then((listOfMovies) => {
+        .then((movieListFromDB) => {
             const data = {
-                moviesList: listOfMovies
+                moviesList: movieListFromDB
             };
             res.render('movies/movies', data)
         })
         .catch((error) => {
-            console.log('An error occured, could not load movies list', error);
+            console.log('Error getting  movies from DB', error);
             next(error);
         });
 })
