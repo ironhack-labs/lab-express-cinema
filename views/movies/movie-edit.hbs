@@ -1,0 +1,26 @@
+<section class="display">
+
+  <h1>Edit movie details:</h1>
+
+  <form class="form-idable" action="/movies/{{this._id}}/edit" method="post">
+    <label>
+      Title:
+      <input type="text" name="title" value="{{this.title}}" />
+    </label>
+
+    <label>
+      Director:
+      <input type="text" name="director" value="{{this.director}}" />
+    </label>
+
+    <label>
+      Description:
+      <textarea name="description" cols="30" rows="4">
+        {{this.description}}
+      </textarea>
+    </label>
+
+    <button type="submit">Save</button>
+  </form>
+
+</section>

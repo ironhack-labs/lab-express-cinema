@@ -66,7 +66,6 @@ h1 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .movie-summary {
@@ -76,7 +75,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .movie-details {
@@ -84,5 +82,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
 
+.form-idable {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form-idable label {
+  margin-bottom: 40px;
 }
