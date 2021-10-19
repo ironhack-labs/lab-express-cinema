@@ -1,0 +1,15 @@
+
+<h1>Movie List:</h1>
+
+{{#each moviesArr}}      {{!-- {{we are itterating through the array that we receive and we are displaying the content}} --}}
+<div class="movie-summary">
+    
+     <img src="{{this.image}}"/>
+    <p>
+     <h3>{{this.title}}</h3>
+    </p>
+
+    <a href="/movies/{{this._id}}">See more</a>
+</div>
+
+{{/each}}
