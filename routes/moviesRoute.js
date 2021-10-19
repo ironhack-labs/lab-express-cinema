@@ -58,4 +58,15 @@ router.post("/movies/:movieId/edit", (req, res, next) => {
     });
 });
 
+router.post("/movies/:movieId/delete", (req, res, next) => {
+  Movie.findByIdAndDelete(req.params.movieId)
+    .then(() => {
+      res.redirect("/movies");
+    })
+    .catch((error) => {
+      console.log("Error deleting movie from DB", error);
+      next(error);
+    });
+});
+
 module.exports = router;
