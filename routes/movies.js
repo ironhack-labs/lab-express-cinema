@@ -24,7 +24,7 @@ router.post('/movies/add', (req, res) => {
     Movie.create({title, director, description, image})
         .then(()=> res.redirect('/movies'))
         .catch((error) => {
-            console.log('Error adding new movie to DB');
+            console.log('Error adding new movie to DB', error);
         })
 })
 
@@ -39,6 +39,28 @@ router.get('/movies/:movieId', (req, res) => {
         });
 })
 
+router.get('/movies/:movieId/edit', (req, res) => {
+    Movie.findById(req.params.movieId)
+        .then((moviefromDB) => {
+            res.render('movie-edit', moviefromDB)
+        })
+        .catch((error) => {
+            console.log('Error loading edit form', error);
+            next(error);
+        })
+})
+
+router.post('/movies/:movieId/edit', (req, res) => {
+    const {title, director} = req.body;
+    Movie.findByIdAndUpdate(req.params.movieId, {title, director}, { new: true })
+        .then((movieFromDB) => {
+            res.redirect('/movies/' + movieFromDB._id)
+        })
+        .catch((error) => {
+            console.log("Error updating movie details", error);
+            next(error);
+        })
+})
 
 
 module.exports = router;
