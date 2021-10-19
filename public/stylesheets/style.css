@@ -45,13 +45,17 @@ body {
 }
 
 #movies-list-header {
-  margin: 2rem;
+  margin: 0;
+  padding: 2rem;
   font-size: 3rem;
+  background-color: teal;
+  color: white;
 }
 
 #movies-list-header-2 {
-  margin: 2rem;
-  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .movies {
@@ -71,27 +75,71 @@ body {
 
 .movie img {
   width: 15vw;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.79);
 }
 
 .movie h4 {
   font-size: 1rem;
+  text-shadow: 1px 1px 1px teal;
 }
 
 .movie a {
   text-decoration: none;
   font-size: 1rem;
-  color: black;
-  border: 1px solid black;
+  color: white;
+  border: 1px solid teal;
+  border-radius: 2rem;
   padding: 0.5rem 1rem;
+  background-color: teal;
 }
 
 .movie a:hover {
-  font-weight: 700;
+  color: teal;
+  background-color: white;
 }
 
+.details-header {
+   margin: 0;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   font-size: 2rem;
+   background-color: teal;
+   color: white;
+}
 
+.details-container {
+  display: flex;
+}
 
+.details-container div {
+  margin: 2rem;
+}
+
+.details-container div img {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.79);
+}
+
+.details-container div h2 {
+  color: teal;
+}
 
 .showtime {
   display: inline-block;
+  font-size: 1rem;
+}
+
+.back-btn {
+  margin: 2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  border: 1px solid teal;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: teal;
+}
+
+.back-btn:hover {
+  color: teal;
+  background-color: white;
 }
