@@ -1,0 +1,23 @@
+<section class="display">
+
+  <h1>Movie List:</h1>
+
+  <div class="movies-container">
+
+    {{#each moviesArr}}
+      <div class="movie-summary">
+        <img src="{{this.image}}" alt="movie-image">
+          
+        <p><strong>{{this.title}}</strong></p>
+
+        <a href="/movies/{{this._id}}">View more</a>
+
+        <form action="/movies/{{this._id}}/delete" method="POST">
+          <button>Delete</button>
+        </form>
+      </div>
+    {{/each}}
+
+  </div>
+
+</section>
