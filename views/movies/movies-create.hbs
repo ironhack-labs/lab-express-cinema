@@ -1,24 +1,34 @@
-<h1>Create a new film:</h1>
+<section class = "container-create">
+    <a class="linkBack" href="/movies">Back</a> 
+    <h1><strong>Create a film </strong> </h1>
+</section>
 
-<form action="/movies/create" method="post" >
-
-    <label> Title:
-        <input type="text" name="title" />
-    </label>
-    
-    <label> Director:
-        <input type="text" name="director" />
-    </label>
-    
-    <label> Description:
-        <textarea name="description" cols="30" rows="4"> </textarea>
-    </label>
-    
-    <label> Stars:
-        <textarea name="stars" cols="30" rows="4"> </textarea>
-    </label>
-    
-    <button type="submit"> Create </button>
+<hr>
 
 
-</form>
+
+<section class= "create-form">
+    <form action="/movies/create" method="post" >
+
+        <label> Title:
+            <input type="text" name="title" />
+        </label>
+        
+        <label> Director:
+            <input type="text" name="director" />
+        </label>
+        
+        <label> Description:
+            <textarea name="description" cols="30" rows="4"> </textarea>
+        </label>
+        
+        <label> Stars:
+            <textarea name="stars" cols="30" rows="4"> </textarea>
+        </label>
+        
+        <button type="submit" class="btn btn-outline-warning" ><strong>Create a new film!</strong></button>
+
+
+    </form>
+
+</section>

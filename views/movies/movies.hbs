@@ -1,27 +1,47 @@
-<a href="/">Back</a>
-
-<h1>Ironhack Cinema</h1>
-<p>Click on the movies to check the showtimes!</p>
 
 
-    <div class="container-listmovies">
-        {{#each moviesArr}}
 
-        <div class="info-movie">
-            <img src= "{{this.image}}">
-            <p><strong>{{this.title}} </strong></p>
+<section class = "container"> 
+        
+        <a class="btn-back" href="/">Back</a>
+        <h1><strong> Ironhack Cinema</strong></h1>
 
-            <a class="seeDetails" href="/movies/{{_id}}">See more</a>
-            <a href="/movies/{{this._id}}/edit">Edit film</a>
+</section>
 
+     <hr>
 
-            <form action="/movies/{{this._id}}/delete" method="post">
-                <button>Remove the film</button>
+<section id="position-movies">
 
-            </form>
-
+    {{#each moviesArr}}
+        
+        <div class="col-4">
+            <div class="imgs-movies">
+                <img src= "{{this.image}}">
+                <div class="buttons-movies">
+                    <p class="title-movie"><strong>{{this.title}} </strong></p>
+                    <a class="see-details" href="/movies/{{_id}}">See more</a>
+                    <a class="edit-details" href="/movies/{{this._id}}/edit">Edit film</a>
+                    <form action="/movies/{{this._id}}/delete" method="post">
+                        <button type="submit" class="btn btn-outline-warning"><strong>Remove the film</strong></button>
+                        
+                    </form>
+                </div>
+            </div>
 
         </div>
-        {{/each}}
-    </div>
+        
+    {{/each}}
+</section>
 
+
+
+
+
+
+    
+       
+        
+
+            
+                
+    
