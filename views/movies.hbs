@@ -1,0 +1,10 @@
+<h1>This are all our available movies...</h1>
+
+{{#each data}}
+
+<img src="{{this.image}}"/>
+<h3>Title: {{this.title}}</h3>
+<a href="movie-details">see more</a>
+<br>
+
+{{/each}}
