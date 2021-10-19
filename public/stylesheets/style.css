@@ -66,3 +66,24 @@ img {
 a {
   color: rgb(13, 202, 202);
 }
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+}
+
+#img-details {
+  max-width: 150px;
+  max-height: 200px;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
