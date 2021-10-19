@@ -1,19 +1,33 @@
-<img src="{{this.image}}">
+<div class="row-container">
+    <div id="img-div">
+        <img id="img-details" src="{{this.image}}">
+    </div>
 
-<h1>{{this.title}}</h1>
+    <div id="details">
+        <h1>{{this.title}}</h1>
 
-<h2>Director: {{this.director}}</h2>
+        <h2>Director: {{this.director}}</h2>
 
-<h3>Stars</h3>
+        <h3>Stars</h3>
 
-<ul>
-{{#each this.stars}}
-    <li>{{this}}</li>
-{{/each}}
-</ul>
+        <ul>
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
 
-<p>{{this.description}}</p>
+        <p>{{this.description}}</p>
 
-{{#each this.showtimes}}
-{{this}} |
-{{/each}}
+        {{#each this.showtimes}}
+        {{this}} |
+        {{/each}}
+    </div>
+
+    <button>
+        <a href="/movies/{{this.id}}/edit">Edit movie</a>
+    </button>
+
+    <form action="/movies/{{this.id}}/delete" method="POST">
+        <button type="submit">Delete movie</button>
+    </form>
+</div>
