@@ -1,0 +1,9 @@
+<h1>Our List of Movies</h1>
+
+{{#each moviesArr}}
+  <div class="book-summary">
+    <img>
+    <p> Title: {{this.title}}</p>
+    <a href="/movies/{{this._id}}"> See more </a>
+  </div>
+{{/each}}
