@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Movie = require("../models/book.model")
+const Movie = require("../models/movie.model")
 
 router.get("/movies", (req, res)=>{
   Movie
@@ -8,13 +8,17 @@ router.get("/movies", (req, res)=>{
       const data = {
         moviesArr: moviesFromDB
       }
-      console.log(">>>DATA>>>", data)
-      res.render("movies/movies", data)
+      res.render("movies/movies-list", data)
     })
     .catch((err)=>{
       console.log("Error getting details of the movies from the DB", err);
       next(err);
     })
+})
+
+router.get ('/movies/create', (req, res, next)=>{
+  console.log(">>>Creating movies>>>")
+  res.render("movies/movies-create");
 })
 
 router.get("/movies/:id", (req, res)=>{

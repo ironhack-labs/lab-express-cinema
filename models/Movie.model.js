@@ -6,7 +6,7 @@ const movieSchema = new Schema(
     director: String,
     stars: Number,
     description: String,
-    showtime: Number;
+    showtime: Number,
   },
   {
     timestamps: true

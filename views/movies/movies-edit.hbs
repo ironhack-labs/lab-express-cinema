@@ -1,0 +1,25 @@
+<h1>Edit Movie Entry:</h1>
+
+<form action="/movies/{{this.title}}/edit" method="post">
+  <label> Title:
+    <input type="text" name="title" value="{{this.title}}" />
+  </label>
+
+  <label> Director:
+    <input type="text" name="author" value="{{this.director}}" />
+  </label>
+
+  <label> Description:
+    <textarea name="description" cols="30" rows="4">{{this.description}} </textarea>
+  </label>
+
+  <label> Stars:
+    <input type="number" name="stars" min="1" max="10" value="{{this.value}}"/>
+  </label>
+
+  <label> Showtimes:
+    <input type="time" name="rating" min="1" max="10" value="{{this.showtime}}"/>
+  </label>
+
+  <button type="submit"> Create </button>
+</form>
