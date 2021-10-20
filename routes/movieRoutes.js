@@ -34,4 +34,28 @@ router.get('/movies/:movieId', (req, res) => {
 })
 
 
+router.get('/movies/create', (req, res, next) => {
+   // res.send('hellow')
+   res.render("/movie-create");
+});
+
+router.post("/movies/create", (req, res, next) => {
+
+   const {title, director, stars, description, showtimes} = req.body;
+   
+   Movie.create({title, director, stars, description, showtimes})
+        .then( () => {
+            res.redirect("/movies");
+        })
+        .catch( (error) => {
+            console.log("Error adding new book to DB", error);
+            // next(error); 
+        });
+
+})
+
+
+
+
+
 module.exports = router;
