@@ -30,3 +30,8 @@ h1{
   margin: 1rem auto;
   padding: 1rem;
 }
+
+label, input, textarea {
+  display: block;
+  margin: 1rem 0;
+}

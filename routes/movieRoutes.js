@@ -20,6 +20,20 @@ router.get('/movies', (req, res, next) => {
 });
 
 
+router.get("/movies/movie-create", (req, res, next)=>{
+    console.log("hello hello");
+    res.render("movies/movie-create");
+});
+
+router.post('/movies/movie-create', (req, res, next)=>{
+    console.log(req.body)
+    const {title, director, description, stars} = req.body;
+    Movie.create({title, director, description, stars})
+    .then(()=>{
+        res.redirect('/movies');
+    })
+});
+
 
 router.get("/movies/:movieId", (req, res, next) => {
     Movie.findById(req.params.movieId)
@@ -33,19 +47,8 @@ router.get("/movies/:movieId", (req, res, next) => {
 });
 
 
-router.get("/movies/movie-create", (req, res, next)=>{
-    res.send("hello");
-    res.render("movies/movie-create");
-});
 
-router.post('/movies/movie-create', (req, res, next)=>{
-    console.log(req.body)
-    const {title, director, description, stars} = req.body;
-    Movie.create({title, director, description, stars})
-    .then(()=>{
-        res.redirect('/movies');
-    })
-});
+
 
 
 
