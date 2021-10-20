@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const Movie = require("../models/movie.model")
+const Movie = require("../models/Movie.model")
 
-router.get("/movies", (req, res)=>{
+router.get("/movies", (req, res, next)=>{
   Movie
     .find()
     .then((moviesFromDB)=>{
@@ -17,8 +17,21 @@ router.get("/movies", (req, res)=>{
 })
 
 router.get ('/movies/create', (req, res, next)=>{
-  console.log(">>>Creating movies>>>")
   res.render("movies/movies-create");
+})
+
+router.post("/movies/create", (req, res, next)=>{
+  const {title, director, stars, description, showtime} = req.body;
+  Movie
+    .create({title, director, stars, description, showtime})
+    .then (()=>{
+      res.redirect("/movies");
+    })
+    .catch( (error) => {
+      console.log("Error adding new book to DB", error);
+      next(error);
+    });
+
 })
 
 router.get("/movies/:id", (req, res)=>{
