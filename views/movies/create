@@ -1,0 +1,10 @@
+create
+
+x create button 
+x create new route (Post  movies/movies-list/create)
+x create a new view with a form 
+display form in browser
+send to DB
+
+
+router.post()
