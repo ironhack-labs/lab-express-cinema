@@ -1,8 +1,112 @@
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+
+/* Set core body defaults */
 body {
-  padding: 50px;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+  list-style: none;
 }
+
+.home {
+  background-image: url(../images/cinema.jpg);
+  background-color: #09092b;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 50%;
+  padding-bottom: 20%;
+}
+
+.home h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.home a {
+  color: #57899f;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-size: 1.4rem;
+  margin-top: 6%;
+}
+
