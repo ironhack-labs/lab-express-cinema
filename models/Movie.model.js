@@ -11,6 +11,10 @@ const movieSchema = new Schema(
     image: String,
     description: String,
     showtimes: [String],
+  },
+  {
+    // this second object adds extra properties: `createdAt` and `updatedAt`
+    timestamps: true,
   }
 );
 

@@ -109,4 +109,46 @@ a {
   font-size: 1.4rem;
   margin-top: 6%;
 }
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-container > * {
+  flex: 0 0 30%;
+}
 
+.movies-list h1 {
+  padding: 40px;
+}
+
+.movies-list p {
+  padding-left: 40px;
+}
+
+.each-movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.details-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrapper {
+  width: 60%;
+}
+img {
+  margin: 0 auto;
+}
+.details-wrapper .main-info {
+  padding: 20px;
+}
+
+.details-wrapper ul {
+  padding: 25px;
+}
