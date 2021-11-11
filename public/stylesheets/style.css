@@ -7,4 +7,25 @@ body {
 
 a {
   color: #00b7ff;
+  font-size: medium;
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+h3 {
+  font-size: large;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 500px;
+  width: 100px;
 }
