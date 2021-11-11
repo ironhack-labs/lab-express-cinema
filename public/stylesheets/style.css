@@ -6,3 +6,53 @@ body {
 a {
   color: #00B7FF;
 }
+
+.container {
+  position: relative;
+}
+
+.title{
+  
+  position: absolute;
+  z-index: 3;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  left: 55%;
+  top: 15%;
+
+}
+
+.check-on-films {
+  font-weight: bolder;
+}
+
+/* .cinema{
+  z-index: auto;
+} */
+
+.first-btn {
+  position: absolute;
+  left: 55%;
+  top: 45%;
+  border-radius: 45%;
+  border:1px solid ;
+  padding: 15px 50px;
+  background-color: white;
+  text-align: center;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #00B7FF;
+  
+}
+
+.films {
+  padding: 20px;
+  text-align: center;
+
+}
+
+.go-back {
+ margin-left: 20px;
+}
+

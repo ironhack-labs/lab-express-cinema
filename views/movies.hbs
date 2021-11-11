@@ -1,13 +1,20 @@
-<h3>Movie List</h3>
-
-{{#each this}}
-
-<div class="" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{title}}</h5>
-    <img class="card-img-top" src={{image}}>
-    <a href="movie/{{id}}" class="btn btn-primary">See moore</a>
-  </div>
+<div class="check-on-films">
+    <h3>Ironhack Cinema</h3>
+    <p>Check on the movie to check the showtimes!</p>
 </div>
 
-{{/each}}
+<div class="container">
+    <div class="row">
+
+        {{#each this}}
+                    <div class="col-sm-6 col-md-4 films">
+                        
+                        <img src={{image}}>
+                        <h5 class="card-title">{{title}}</h5>
+                        <a href="movie/{{id}}">See moore</a>
+                    
+                    </div>
+        {{/each}}
+
+    </div>
+</div>
