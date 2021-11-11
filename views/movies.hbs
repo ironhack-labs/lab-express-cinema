@@ -1,0 +1,10 @@
+<h1>Lista de peliculas</h1>
+<p>Click on the movie to chek the showtimes</p>
+     {{#each data}}
+    <li>
+        <img src="{{image}}" alt="">
+        <h1>{{title}}</h1>
+        <a href="/movies/{{_id}}">See more</a>
+    </li>
+    {{/each}}
+</ul>
