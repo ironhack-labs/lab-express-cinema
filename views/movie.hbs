@@ -1,0 +1,21 @@
+<div style="display: flex; justify-content:space-between;width:50%">
+  <img style="margin-right: 50px; height:400px" src={{this.image}} alt="" />
+  <div>
+    <a href="/">Back home</a>
+    <h3>{{this.title}}</h3>
+    <p>Director: {{this.director}}</p>
+    <p style="font-size:larger">Stars:</p>
+    <ul>
+      {{#each this.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{description}}</p>
+    <div style="display: flex;">
+      {{#each this.showtimes}}
+        <p>{{this}} |</p>
+      {{/each}}
+    </div>
+    <p></p>
+  </div>
+</div>
