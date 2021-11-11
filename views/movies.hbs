@@ -1,0 +1,11 @@
+<h1>
+  Lista de Pelis
+</h1>
+
+
+  {{#each allTheMovies}}
+    <div><img src="{{image}}">
+         {{title}}
+    </div>
+    <a href="/movies/{{_id}}">See More</a>
+  {{/each}}
