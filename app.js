@@ -12,6 +12,7 @@ const express = require('express');
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
+const { models } = require('mongoose');
 
 const app = express();
 
@@ -23,7 +24,6 @@ const projectName = 'lab-express-cinema';
 const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
 
 app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
-
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
