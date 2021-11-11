@@ -1,12 +1,14 @@
-const express = require("express");
-const router = express.Router();
-
+const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model");
 
-/* GET home page */
-router.get("/", (req, res, next) => res.render("index"));
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/Movies-app";
+//La conexión
+mongoose.connect(MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-const allTheMovies = [
+const movies = [
   {
     title: "A Wrinkle in Time",
     director: "Ava DuVernay",
@@ -89,24 +91,11 @@ const allTheMovies = [
   },
 ];
 
-router.get("/movies", (req, res, next) => {
-  //Debería devolver todo al no especificar un query
-  //Guardamos todas las peliculas en un array "allTheMovies" y hacemos un render con un "#each" en "movies.hbs" pero este array por alguna razón está vacío
-  //
-  //   Movie.find()
-  //     .then((allTheMovies) => console.log(allTheMovies))
-  //     .then((allTheMovies) => res.render("movies", { allTheMovies }))
-  //     .catch((err) => console.log(err));
+Movie.create(movies)
+  .then((moviesFromDB) => {
+    console.log(`Created ${moviesFromDB.length} movies`);
 
-  res.render("movies", { allTheMovies }); //He metido el seed a la fuerza con el "const allTheMovies" de arriba, aunque esté creado en el servidor, no consigo el array de peliculas
-});
-
-router.get("/movie/:id", (req, res, next) => {
-  const { id } = req.params;
-
-  Movie.find(id)
-    .then((data) => res.render("movie", { data }))
-    .catch((err) => console.log(err));
-});
-
-module.exports = router;
+    // Once created, close the DB connection
+    mongoose.connection.close();
+  })
+  .catch((err) => console.log(`An error occurred while creating movies from the DB: ${err}`));
