@@ -3,21 +3,21 @@
     <div class="card" id="movie-card">
         <div class="row no-gutters">
             <div class="col-sm-5">
-                <img class="movie-cover" src={{this.image}} alt="movie cover" />
+                <img class="movie-cover" src={{image}} alt="movie cover" />
             </div>
             <div class="col-sm-7">
                 <div class="card-body">
-                    <h3 class="card-title"> {{this.title}} </h3>
-                    <h4> Director: {{this.director}} </h4>
+                    <h3 class="card-title"> {{title}} </h3>
+                    <h4> Director: {{director}} </h4>
                     <h5> Stars </h5>
                     <ul class="list-group list-group-flush">
-                        {{#each this.stars}}
+                        {{#each stars}}
                         <li class="list-group-item"> {{this}} </li>
                         {{/each}}
                     </ul>
-                    <p class="card-text"> {{this.description}} </p>
+                    <p class="card-text"> {{description}} </p>
                     <p class="card-text">
-                        {{#each this.showtimes}}
+                        {{#each showtimes}}
                         <span> {{this}} </span>
                         |
                         {{/each}}
