@@ -1,5 +1,7 @@
+/* General Styles */
+
 body {
-  padding: 50px;
+  padding: 30px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
   background-image: url(../images/cinema.jpg);
   background-size: cover;
@@ -15,17 +17,72 @@ h1,
 h2,
 p {
   color: white;
+  font-size: x-large;
 }
 
 h3 {
   font-size: large;
 }
 
+/* Main Styles */
+
+#cinema-ironhack {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+/* All Movies View Styles */
+
+.movies-header {
+  margin-bottom: 40px;
+}
+
 .card {
   margin-bottom: 20px;
 }
 
-img {
-  height: 500px;
-  width: 100px;
+#movie-title {
+  text-align: center;
+}
+
+#movie-title .card-title {
+  color: black;
+  font-size: medium;
+  text-align: center;
+}
+
+/* Detailed Movie View Styles */
+
+#movie-view {
+  position: absolute;
+  left: 100px;
+}
+
+#movie-card h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+#movie-card h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#movie-card h5 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+#movie-card {
+  width: 600px;
+  margin-top: 10px;
+}
+
+#movie-card p {
+  color: black;
+  font-size: small;
+}
+
+.movie-cover {
+  width: 100%;
 }

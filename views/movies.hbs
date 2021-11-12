@@ -1,5 +1,5 @@
 <main>
-    <div class='container'>
+    <div class="container movies-header">
         <h2>Ironhack Cinema</h2>
         <p>Click on the movie to check the showtimes!</p>
     </div>
@@ -7,12 +7,12 @@
     <div class="container">
         <div class="row">
             {{#each movies}}
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card">
-                    <a href='movies/movie/{{this.id}}'>
-                    <img class="card-img-top" src={{this.image}} alt='movie cover' />
+                    <a id="movie-title" href="movies/movie/{{id}}">
+                    <img class="card-img-top" src={{image}} alt="movie cover" />
                         <div class="card-body">
-                            <h3 class="card-title">{{this.title}}</h3>
+                            <h3 class="card-title">{{title}}</h3>
                             <span>See more</span>
                         </div>
                     </a>
