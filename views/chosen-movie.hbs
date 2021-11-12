@@ -2,31 +2,27 @@
     <div class="random-beer">
 
     
-        <h1>Holi</h1>
+
             <div class="photo-title">
-                <div class="random-beer-img" >
-                    <img src={{chosenMovie.image}} alt="">
-                </div>
 
-                <div class="random-img-info">
-                    <div>
-                        <h4>{{chosenMovie.title}}</h4>
-                        <em>{{chosenMovie.stars}}</em>
-                        <p>{{director}}</p>
-                    </div>
-
-                    <div class="random-txt">
-                        <div>
-                            <em>Food pairing:</em>
-                            <p>{{food_pairing}}</p>
-                        </div>
-                        <div>
-                            <em>Brewers tips:</em>
-                            <p>{{chosenMovie.showtimes}}</p>
-                        </div>
+                <div class="movie-info">
+                    <h1>{{chosenMovie.title}}</h1>
+                    
+                    <div class="movie-data">
+                        <h7>{{chosenMovie.stars}}</h7>
+                        <h9>Directed by:</h9>
+                        <h8>{{chosenMovie.director}}</h8>
                     </div> 
 
                 </div>
+
+                <div class="chosen-movie-img" >
+                    <img src={{chosenMovie.image}} alt="">
+                </div>
+                <div class="times-container">
+                    <h10>{{chosenMovie.showtimes}}</h10>
+                </div>
+
             </div>
 
 
