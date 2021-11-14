@@ -6,11 +6,11 @@
 
 {{#each this}}
 
-<img src='{{image}}' />
+<img src='{{this.image}}' />
 
-<a href="/display/{{title}}"> See more </a>
+<a href="/display/{{this._id}}"> See more </a>
 
-<p>{{title}} </p>
+<p>{{this._title}} </p>
 
 
 {{/each}}
