@@ -1,8 +1,55 @@
+.homepageImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mainHeader {
+  text-align: right;
+  color: white;
+  font-size: 60px;
+}
+
+.mainButton {
+  font-size: large;
+  text-align: right;
+  background-color: white;
+  border: none;
+  color: #00b7ff;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+}
+
+.movie {
+  padding-left: 30px;
+  padding-right: 30px;
 }
