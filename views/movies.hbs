@@ -1,0 +1,11 @@
+<section class="container">
+{{#each data}}
+<div class="movie">
+    <div><img src={{this.image}} alt={{this.title}}></div>
+    <div class="info">{{this.title}}</div>
+    <div class="info"><a href="/movies/{{this.id}}">See More!</a></div>
+</div>
+{{/each}}
+</section>
+
+
