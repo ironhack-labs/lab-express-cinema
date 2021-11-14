@@ -7,6 +7,9 @@ const mongoose = require("mongoose");
 
 const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
 
+const data = require('../data.json');
+
+
 mongoose
   .connect(MONGO_URI, {
     useNewUrlParser: true,
