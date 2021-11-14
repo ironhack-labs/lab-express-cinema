@@ -1,9 +1,96 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+
 }
 
 a {
   color: #00B7FF;
   text-decoration: none;
 }
+
+#hero-section {
+  
+  height: 100vh;
+  background: url("../images/cinema.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title > h1{
+  color: white;
+  font-weight: 700;
+  margin-left:10vw ;
+  font-size: 4em;
+}
+.btn-link{
+  border: 1px solid white;
+  border-radius: 100px;
+  box-shadow: 3px 3px 5px rgb(36, 36, 36);
+  padding: 15px;
+  background-color: white;
+  margin-left:10vw ;
+  font-size: 1.2em;
+
+}
+
+.movies-section{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 15vw;
+}
+
+.movie> img{
+  width: 250px;
+  height: 350px;
+}
+
+.movie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.movie> h2{
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.movie-link {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.movie-details{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.movie-image{
+  margin-right: 30px;
+
+}
+
+.movie-image >img{
+  width: 240px;
+  height: 350px;
+}
+
+.details > h1{
+  margin-top: 0;
+ 
+}
+.details{
+  width: 40vw;
+}
+
+
+
