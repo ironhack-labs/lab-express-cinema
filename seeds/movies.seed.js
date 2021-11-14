@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model");
 
 const MONGOATLAS =
-"mongodb+srv://amyloudav:Littledevil1@cluster0.khlek.mongodb.net/movies?authSource=admin&replicaSet=atlas-bmip3c-shard-0&w=majority&readPreference=primary&retryWrites=true&ssl=true";
+"mongodb+srv://amyloudav:Ironhack1@cluster0.khlek.mongodb.net/movies?authSource=admin&replicaSet=atlas-bmip3c-shard-0&w=majority&readPreference=primary&retryWrites=true&ssl=true";
 
 const fillMovieDatabase = async () => {
     mongoose
