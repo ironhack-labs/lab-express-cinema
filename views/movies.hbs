@@ -3,16 +3,16 @@
 <main> 
 <h3>Click on the movie to check the showtimes!</h3>
 
+<ul>
+{{#each moviesfound}}
 
-{{#each this}}
+<li> <img src='{{this.image}}' /> </li>
 
-<img src='{{this.image}}' />
+<li> <p>{{this.title}} </p> </li>
 
-<a href="/display/{{this._id}}"> See more </a>
-
-<p>{{this.title}} </p>
-
+<li> <a href="/display/{{this._id}}"> See more </a> </li>
 
 {{/each}}
 
 </main>  
+</ul>

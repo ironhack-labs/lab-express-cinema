@@ -17,7 +17,7 @@ router.get("/movies", (req,res) => {
             
             if (err) { return console.log(err) }
             
-            res.render('movies', result)
+            res.render('movies', {moviesfound: result})
         })
 })
 
