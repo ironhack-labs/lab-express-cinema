@@ -1,0 +1,20 @@
+<div class="movies-section">
+
+  {{#each movies}}
+    <div class="movie">
+      <img src="{{this.image}}" alt="Movie Banner" height="400px" />
+      <h2>{{this.title}}</h2>
+      <a class="movie-link" href="/movies/{{this.id}}">See More</a>
+    </div>
+  {{/each}}
+
+</div>
+
+{{!-- 
+<h3>{{this.director }}</h3>
+<h4>Stars:</h4>
+    {{#each this.stars }}
+    <ul>
+        <li>{{this}}</li>
+    </ul>
+    {{/each }} --}}
