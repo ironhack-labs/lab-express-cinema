@@ -1,7 +1,7 @@
 const express = require('express');
 //const router = express.Router();
 
-app = express();
+const app = express();
 
 // Handlebars, views, and partials
 const path = require('path');
