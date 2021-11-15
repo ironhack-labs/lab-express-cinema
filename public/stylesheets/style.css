@@ -9,6 +9,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin-left: 50px;
+}
+
 a {
   color: #00B7FF;
 }
@@ -50,6 +54,8 @@ a {
 .movies-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .movie {
