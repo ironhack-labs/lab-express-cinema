@@ -1,0 +1,10 @@
+<h2>List of movies</h2>
+
+<div class="movies-list">
+    
+    {{#each movies}}
+
+        {{> movieDetails movie=this}}
+
+    {{/each}}
+</div>

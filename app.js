@@ -9,14 +9,20 @@ require('./db');
 // https://www.npmjs.com/package/express
 const express = require('express');
 
-// Handles the handlebars
-// https://www.npmjs.com/package/hbs
-const hbs = require('hbs');
-
 const app = express();
+
+// Handlebars, views, and partials
+const path = require('path');
+const hbs = require('hbs');
+hbs.registerPartials(path.join(__dirname, "../views/partials"));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, '../views'));
+
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
+
+
 
 // default value for title local
 const projectName = 'lab-express-cinema';

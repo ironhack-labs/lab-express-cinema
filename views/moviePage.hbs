@@ -1,0 +1,36 @@
+
+<div class="single-movie-wrapper">
+
+    <a href="/movies" class="go-back">Go back</a>
+
+    <div class="single-movie">
+
+        <div class="image-wrapper">
+            <img class="image" src="{{ movie.image }}" alt="movieImg"/>
+        </div>    
+
+        <div class="description-wrapper">
+            <p class="title"> {{ movie.title }} </p>
+            <p class="director">{{ movie.director }} </p>
+
+            <p class="title">Stars</p>
+            <ul class="stars">
+                {{#each movie.stars }}
+                    <li>{{ this }}</li>
+                {{/each}}
+            </ul>
+
+            <p class="description">{{ movie.description }} </p>
+
+            <div class="showtimes">
+                {{#each movie.showtimes }}
+                    <span> {{ this }} |</span>
+                {{/each}}
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
