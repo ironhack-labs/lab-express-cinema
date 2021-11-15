@@ -4,7 +4,7 @@ const Movie = require('../models/Movie.model')
 
 const data = require('../data.json');
 
-MONGO_URI = "mongodb://localhost/lab-express-cinema";
+MONGO_URI = process.env.MONGO_URI || "mongodb://localhost/lab-express-cinema";
 
 const fillMovies = async ()=>{
 

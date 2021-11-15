@@ -8,7 +8,7 @@ const Movie = require("../models/Movie.model")
 router.get('/', (req, res, next) => res.render('index'));
 
 // GET movies page
-router.get('/movies', (req, res)=>{
+router.get('/movies', (req, res, next)=>{
 
     Movie.find()
     .then((movies)=>{
@@ -17,7 +17,7 @@ router.get('/movies', (req, res)=>{
     
 })
 
-router.get("/movies/:id", (req, res)=>{
+router.get("/movies/:id", (req, res, next)=>{
     const { id } = req.params;
     Movie.findById(id)
       .then((movie) => {
