@@ -1,32 +1,16 @@
 const express = require('express');
-//const router = express.Router();
-
-const app = express();
-
-// Handlebars, views, and partials
-const path = require('path');
-app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, '../views'));
-const hbs = require('hbs');
-hbs.registerPartials(path.join(__dirname, "../views/partials"));
-
-// Use public folder
-app.use(express.static(path.join(__dirname, '../public')));
-
+const router = express.Router();
 
 // Movie Model
 const Movie = require("../models/Movie.model");
 
 /* GET home page */
-app.get('/', (req, res, next) => {
+router.get('/', (req, res, next) => {
     res.render('index');
   });
 
-
 /* GET all movies */
-app.get('/movies', (req, res, next) => {
-
-    console.log("LISTING MOVIES....")
+router.get('/movies', (req, res, next) => {
 
     Movie.find()
     .then( (movies) => { 
@@ -36,9 +20,8 @@ app.get('/movies', (req, res, next) => {
     .catch( (error) => res.render("error", { error: error } ))
     })
 
-
 // Movie page
-app.route("/movie/:id")
+router.route("/movie/:id")
 .get((req, res) => {
   Movie
     .findById(req.params.id)
@@ -49,5 +32,4 @@ app.route("/movie/:id")
     .catch( (error) => res.render("error", { error: error } ))
 })
 
-
-module.exports = app;
+module.exports = router;
