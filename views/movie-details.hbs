@@ -1,14 +1,15 @@
-<h2>movies details</h2>
+<h2>Movie details</h2>
 
 
 
-<div class="movieContainer">
+<div id="movie-container">
+    
     <div id="image-box">
         <img src="{{image}}" alt="{{title}}">
     </div>
     <div class="details">
         <a href="/movies">Go Back</a>
-        <h2>{{title}}</h2>
+        <h3>{{title}}</h3>
         <h5>{{director}}</h5>
         <p>{{description}}</p>
         <h4>Stars:</h4>
@@ -17,8 +18,8 @@
                 <li>{{this}}</li>
             {{/each}}
         </ul>
-        <h4>Show Times:</h4>
-        <p>{{showtimes}}</p>
+    
+       <p> {{#each showtimes}} {{this}} | {{/each}}</p>
     </div>
  
 </div>

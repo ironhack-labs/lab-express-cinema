@@ -19,15 +19,6 @@ router.get("/movies" , async (req, res)=>{
 }
 })
 
-// router.get("/movie/:id", async (req, res) => {
-//     try{
-//         const movieId = await Movie.findById(req.params.id)
-//         res.render("movie-details.hbs", movieId)
-//         console.log(movieId)
-//     }catch(err) {
-//         console.log("error")
-//     }
-// });
 
 router.get("/movies/:id", async (req, res) => {
     try{
