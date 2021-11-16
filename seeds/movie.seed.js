@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 
 const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
   
-// Import of the model Recipe from './models/Recipe.model.js'
+// Import of the model Movies from './models/Movies.model.js'
 const Movie = require("../models/Movie.model"); 
 
 // To insert in "seeds/movies.seed.js"
