@@ -1,0 +1,32 @@
+<div>
+  <div class="row p-3">
+      <div class="col-3 text-right">
+    <img class="movie-img" src='{{this.image}}' alt='{{this.title}}'/>
+    </div>
+    <div class="col-9">
+      <h1>
+        {{this.title}}
+      </h1>
+      <h4>
+        Director: {{this.director}}
+      </h4>
+      <ul>
+        <b>Stars:</b>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p class='card-text'>
+        {{this.description}}
+      </p>
+      <p class='card-text'>
+        {{#each showtimes}}
+          <span>{{this}} | </span>
+        {{/each}}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
