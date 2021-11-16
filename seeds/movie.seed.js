@@ -113,7 +113,7 @@ const movies = [
               mongoose.connection.close()
           })
           .catch((err) => {
-          console.error("Error creating movies: ", err);
+              console.error("Error creating movies: ", err);
           });
   })
   

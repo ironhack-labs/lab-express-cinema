@@ -1,8 +1,18 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.image-background{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/cinema.jpg"); 
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
 }
