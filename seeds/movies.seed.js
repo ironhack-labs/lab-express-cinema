@@ -106,4 +106,4 @@ const insertMovies = async()=>{
     console.log('ERROR: ', err)
   }
 }
-insertMovies()
+//insertMovies()
