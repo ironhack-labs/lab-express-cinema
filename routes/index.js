@@ -12,5 +12,16 @@ router.get('/movies', async (req, res, next) => {
     // console.log(movies)
     res.render('movies', {movies})
 });
+// GET one movie
+router.get('/movie/:id', async (req, res) =>{
+    try{
+        const selectedMovie = await Movie.findById(req.params.id)
+        console.log(selectedMovie)
+        res.render('movie.hbs', selectedMovie)
+    } catch {
+        res.render('not-found.hbs', {errorMsg: "Movie not found"})
+    }
+    
+})
 
 module.exports = router;
