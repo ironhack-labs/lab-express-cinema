@@ -4,8 +4,15 @@ body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-a {
+h1{
+  font-size: 100px;
+  color:white;
+  margin-top: 100px;
+}
+h2{
+  font-size: 40px;
+}
+a{
   color: #00B7FF;
 }
 .background-home{
@@ -13,4 +20,50 @@ a {
   width: 100vw;
   height: 100vh;
   background-size: cover;
+}
+.container-home{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 100px;
+}
+.align-home{
+  display: flex;
+  flex-direction: column;
+}
+.container-home a{
+  color: rgb(98, 177, 201);
+  width: fit-content;
+  padding: 25px 70px;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 20px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+.container-box{
+  display: inline-block;
+  max-width: 450px;
+}
+.head-movies{
+  margin-left: 50px;
+}
+.container-movie{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-left: 50px;
+}
+.container-movie img{
+  width: 250px;
+}
+.container-info{
+  margin-left: 30px;
+}
+.align-showtimes{
+  display: flex;
 }
