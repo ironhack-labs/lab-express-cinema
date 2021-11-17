@@ -9,5 +9,6 @@ const moviesSchema = new Schema({
     image:{type:String},
     description:{type:String}, 
     showtimes:{type:Array},
-
 })  
+
+module.exports = mongoose.model("Movie", moviesSchema)

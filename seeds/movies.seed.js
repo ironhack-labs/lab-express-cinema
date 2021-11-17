@@ -1,6 +1,7 @@
 // To insert in "seeds/movies.seed.js"
 const mongoose = require('mongoose')
 
+const Movie = require("../models/Movie.model")
 
 const movies = [
     {
@@ -84,8 +85,20 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
+
+  const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/lab-express-cinema'
+
+  const connectToMongo = async () => {
+    try {
+      await mongoose.connect(MONGO_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      })
+    } catch (err) {
+      console.log('Error:', err)
+    }
+  }
   
-  // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-  
- 
+  connectToMongo()
+
   
