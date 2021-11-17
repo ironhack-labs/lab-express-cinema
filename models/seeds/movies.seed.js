@@ -1,6 +1,6 @@
 // To insert in "seeds/movies.seed.js"
 const mongoose = require("mongoose");
-const Movie = require(../models/Movie.model");
+const MONGO_URI = 'mongodb://localhost:27017/lab-express-cinema'
 
 
 const movies = [
@@ -88,5 +88,15 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  // ... your code here
-  
+  //Variables
+  const Movie = require("../models/Movie.model");
+  const data = require("../models/seeds/movies.seed");
+
+  const insertMovies = async()=>{
+    try{
+      const newMovie = await Movie.insertMany(data)
+      console.log(newMovie)
+    }catch(err){
+      console.log('ERROR: ', err)
+    }
+  }
