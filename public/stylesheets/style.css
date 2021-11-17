@@ -49,3 +49,14 @@ a {
 .title a:hover {
   color: rgb(102, 157, 172);
 }
+
+/* Movies */
+
+.card.text-center {
+  border-color: transparent !important;
+}
+
+.card-img-top {
+  -webkit-box-shadow: 0px 3px 15px -5px #000000 !important; 
+  box-shadow: 0px 3px 15px -5px #000000 !important;
+}
