@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+.mainHeader{
+background-image: url('/images/cinema.jpg');
+background-size: cover;
+width: 100vw;
+height: 100vh;
+
+
+}
