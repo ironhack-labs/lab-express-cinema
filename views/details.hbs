@@ -1,0 +1,30 @@
+<div class='ctn-details'>
+
+    <a href="/" alt="back to start">back</a>
+    <div='card-movie'>
+
+    {{#each movie}}
+    {{#if title}}
+
+        <div class="img-movie">
+            <img src="{{image}}" alt="Movie poster of the movie {{name}}" />
+        </div>
+        <h1>
+            {{title}}
+
+        </h1>
+        <h2>Director: {{director}}</h2>
+        <h3>Stars</h3>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        {{#each showtimes}}
+        {{this}} |
+        {{/each}}
+</div>
+{{/if}}
+{{/each}}
+</div>
