@@ -6,6 +6,11 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content: center;
 }
@@ -17,7 +22,7 @@ h1 {
 }
 
 .btnContainer {
-  min-width: 35%;
+  min-width: 35vw;
 }
 
 a {
@@ -26,9 +31,45 @@ a {
 }
 a div {
   background-color: white;
-  width: 50%;
+  width: 20vw;
   padding: 25px 25px;
   border-radius: 55px;
   text-align: center;
   font-size: 28px;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  margin: 5%;
+  padding: 10px;
+}
+.movieCard img {
+  min-width: 15vw;
+}
+
+.movieDetailCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  margin: 5%;
+  padding: 10px;
+}
+.movieDetails {
+  margin-left: 20px;
+}
+.movieDetailCard img {
+  min-width: 15vw;
 }
