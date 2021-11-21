@@ -1,0 +1,21 @@
+
+
+    <a href="/" alt="back to start">back</a>
+
+    {{#each movie}}
+    {{#if title}}
+        <img src="{{image}}" alt="Movie poster of the movie {{name}}" />
+        <h1>{{title}}</h1>
+        <h2>Director: {{director}}</h2>
+        <h3>Stars</h3>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        {{#each showtimes}}
+        {{this}} |
+        {{/each}}
+{{/if}}
+{{/each}}
