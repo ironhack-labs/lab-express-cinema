@@ -6,3 +6,28 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cinema {
+  color: white;
+  font-size: 70px;
+  display: flex;
+}
+
+.check {
+  background-color: aliceblue;
+  color:cadetblue;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  border-radius: 20px;
+  margin-right: 140px;
+  border: none;
+  text-decoration: none;
+}
