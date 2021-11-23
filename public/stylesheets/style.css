@@ -1,8 +1,43 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+    body {
+        padding: 50px;
+        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        background-color: black;
+    }
+    
+    h1 {
+        color: white;
+        font-family: cursive;
+    }
+    
+    h2 {
+        color: white;
+        font-size: larger;
+    }
+    
+    .portada {
+        background-image: url("./../images/cinema.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .indexButton {
+        color: darkgoldenrod;
+        font-family: cursive;
+    }
+    
+    .titulos {
+        font-family: cursive;
+        color: darkred;
+    }
+    
+    .descripcion {
+        color: blanchedalmond;
+        font-family: cursive;
+    }
+    
+    .estrellas {
+        color: cornsilk;
+        font-family: cursive;
+    }

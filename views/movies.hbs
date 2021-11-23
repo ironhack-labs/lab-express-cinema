@@ -1,0 +1,16 @@
+<h1>Movies</h1>
+
+<ul>
+{{#each data}}
+	
+	<li>
+		<h2 class ="titulos">{{this.title}}</h2>
+        <h2 class="descripcion">{{this.description}}</h2>
+        <h2 class ="estrellas">{{this.stars}}</h2>
+        <img src="{{this.image}}" alt="{{this.title}}">
+ 
+    </li>
+	
+
+{{/each}}
+</ul>
