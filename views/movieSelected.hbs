@@ -1,0 +1,38 @@
+<header>
+   <h1>Ironhack Cinema / Selected Movie</h1>
+   <a href="/allMovies">Go Back</a>
+ </header>
+ 
+ <main>
+    
+<div class="mainContainer">
+
+ 
+{{#with data}}
+<div class="movieContainer">
+   <div class="movieImage">
+   <img src="{{image}}" alt="">
+</div>
+<div class="movieContainerText">
+   <h1>{{title}}</h1>
+   <h3>{{director}}</h3>
+   <ul>
+      {{#each stars}}
+      <li>{{this}}</li>
+      
+      {{/each}} 
+   </ul>
+   <hr>
+
+   <p>{{description}}</p>
+
+   <ul class="showTime">{{#each showtimes}} <li>{{this}}</li> {{/each}}  </ul>
+</div>
+
+</div>
+
+  
+{{/with}}
+
+</div>
+</main>
