@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const Movie = require("./../models/Movie.model")
 
 //2. CONEXIÓN A DB
-mongoose.connect(`mongodb+srv://abril_ch:KMongo_acr8flk@cluster0.zmbxa.mongodb.net/ironMovies?retryWrites=true&w=majority`, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
