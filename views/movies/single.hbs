@@ -1,0 +1,18 @@
+<div class="container-fluid" id="movies">
+{{#with data}}
+    <div class="card" style="width: 30rem;">
+  <img src={{this.image}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title" style=text-align:center>{{this.title}}</h4>
+    <h5>Director:</h5> <h6>{{this.director}}</h6>
+    <h5>Stars:</h5>
+    <h6>{{this.stars}}</h6>
+    <h5>Description:</h5><article id="texto">{{this.description}}</article>
+    <h6>{{this.showtime}}</h6>
+  </div>
+</div>
+
+{{/with}}
+</div>
+
+

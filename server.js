@@ -1,3 +1,4 @@
+//este es el index.js en otros proyectos, separada solo la parte del servidor
 const app = require("./app");
 
 // ℹ️ Sets the PORT for our app to have access to it. If no env has been set, we hard code it to 3000
