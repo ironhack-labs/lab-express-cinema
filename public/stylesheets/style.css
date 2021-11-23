@@ -6,3 +6,21 @@ body {
 a {
   color: #00B7FF;
 }
+
+#backgroundHome{
+  background-image: url("./../images/cinema.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button{
+  border-radius: 40px;
+  padding: 15px 35px;
+  color: #8db6c3;
+}

@@ -1,0 +1,26 @@
+
+{{#with data}}
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{image}}" class="img-fluid rounded-start" alt="{{title}}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <a href="/../peli/">Go Back</a>
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{director}}</p>
+        {{#each stars}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+        {{/each}}
+        <p class="card-text">{{description}}</p>
+        <p class="card-text"><small class="text-muted">{{showtimes}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/with}}
