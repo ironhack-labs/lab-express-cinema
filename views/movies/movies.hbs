@@ -1,15 +1,23 @@
 <h1>Ironhack Cinema</h1>
 
-
+<p><a href="/">Go Home </a></p>
 <ul>
     {{#each data}}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="{{this.image}}" alt="{{this.title}} cover photo">
+                <h1>{{this.title}}</h1>
+                <a href="/movies/{{this._id}}">See more</a>
+            </div>
+            <div class="col">
 
-    <li>
-        <img src="{{this.image}}" alt="{{this.title}} cover photo">
-        <h1>{{this.title}}</h1>
-        <a href="/movies/{{this._id}}">See more</a>
-    </li>
+            </div>
+            <div class="col">
 
+            </div>
+        </div>
+    </div>
 
     {{/each}}
 </ul>
