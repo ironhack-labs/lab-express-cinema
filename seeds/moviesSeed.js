@@ -1,8 +1,8 @@
 const mongoose = require("mongoose")
 const Movie = require("./../models/Movie")
 
-//conexion a servidor externo
-mongoose.connect("mongodb+srv://Sinuhe:Adiemus-28@ironhack.b4qtr.mongodb.net/lab-express-cinema", {
+//hice la conexión a mi servidor remoto, pero reemplacé por la url anterior por vulneracion de seguridad
+mongoose.connect("mongodb://localhost/lab-express-cinema", {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 })

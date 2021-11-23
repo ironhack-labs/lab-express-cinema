@@ -5,7 +5,8 @@ const mongoose = require("mongoose");
 // ℹ️ Sets the MongoDB URI for our app to have access to it.
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
-const MONGO_ATLAS = process.env.MONGODB_ATLAS || "mongodb+srv://Sinuhe:Adiemus-28@ironhack.b4qtr.mongodb.net/lab-express-cinema";
+//hice la conexión a mi servidor remoto, pero reemplacé por la url anterior por vulneracion de seguridad
+const MONGO_ATLAS = process.env.MONGODB_ATLAS || "mongodb://localhost/lab-express-cinema";
 
 mongoose
   .connect(MONGO_ATLAS  , {
