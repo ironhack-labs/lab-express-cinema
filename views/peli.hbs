@@ -11,22 +11,20 @@
     {{/each}}
   </div>
   --}}
+<div id="backIronMovie">
+<h1 id="iron">My IronMovie</h1>
 
-
-<div class="wrap-container">
-    {{#each data}}
-            <div class="beers-container">
-        <div>
-            <a href=""><img src="{{image}}" alt="{{ title }}"></a>
-        </div>
-        <div class="text-container2">
-            <h5 class="card-title">{{title}}</h5>
-            <a href="/peli/{{_id}}"> See more</a>
-        </div>
-    </div>
-    {{/each}}
+{{#each data}}
+            <div class="divPeli">
+                  <div class="tarjeta" style="width: 18rem;">
+                        <img src="{{image}}" class="card-img-top" alt="...">
+                        <div class="card-body-web">
+                              <h5 class="card-title">{{this.title}} </h5>
+                              <p class="card-text"><a href="/movies/{{this._id}}">Ver detalles</a></p>
+                        </div>
+                  </div>
+{{/each}}
 </div>
-
 {{!-- 
 <div class="card mb-3" style="max-width: 540px;">
     
