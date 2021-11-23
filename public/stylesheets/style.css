@@ -1,8 +1,47 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+
+h1{
+
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+
+
+h2 {
+
+  color: rgb(44, 31, 15);
+  font-size: 40px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 3%;
+  text-align: center;
+}
+
+
+
+
+p{
+
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  margin-top: 26%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  
+}
+
+
+#home-button{
+
+  margin-right: 10%;
+
+}
+
