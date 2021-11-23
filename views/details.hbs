@@ -1,0 +1,17 @@
+{{!-- ./views/details.hbs --}}
+{{#with data}}
+      <p class="card-text"><a href="/movies/">Go back</a></p>
+	<img src="{{this.image}}">
+	<h>{{this.title}}</h1>
+	<h3>Director: {{this.director}}</h3>
+	<ul>
+		{{#each stars}}
+		<li>
+			<p>{{this}}</p>
+		</li>
+		{{/each}}
+	</ul>
+	<p style = "width:800px">{{this.description}}</p>
+	<p>{{this.showtimes}}</p>
+
+{{/with}}
