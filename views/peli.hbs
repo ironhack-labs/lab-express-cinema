@@ -1,13 +1,65 @@
-{{#each data}}
-<div class="row row-cols-1 row-cols-md-3 g-4">
+{{!-- <div id="movie-container" class="row row-cols-1 row-cols-md-3 g-4">
+    {{#each data}}
   <div class="col">
     <div class="card">
-      <img src="{{image}}" class="card-img-top" alt="...">
+      <img id="image-box" src="{{image}}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{title}}</h5>
         <a href="/peli/{{_id}}"> See more</a>
       </div>
     </div>
+    {{/each}}
   </div>
- 
-{{/each}}
+  --}}
+
+
+<div class="wrap-container">
+    {{#each data}}
+            <div class="beers-container">
+        <div>
+            <a href=""><img src="{{image}}" alt="{{ title }}"></a>
+        </div>
+        <div class="text-container2">
+            <h5 class="card-title">{{title}}</h5>
+            <a href="/peli/{{_id}}"> See more</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+{{!-- 
+<div class="card mb-3" style="max-width: 540px;">
+    
+  <div class="row g-0">
+    <div class="col-md-4">
+      {{#each data}}
+      <img src="{{image}}" class="img-fluid rounded-start" alt="{{title}}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <a href="/peli/{{_id}}"> See more</a>
+      </div>
+    {{/each}}
+    </div>
+  </div>
+  
+</div> --}}
+
+
+
+{{!-- 
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {{#each data}}
+    <div class="col">
+      <div class="card">
+        <img src="{{image}}" class="card-img-top" alt=" {{title}} " />
+        <div class="card-body">
+          <h5 class="card-title">{{title}}</h5>
+          <a style="color: #8db6c3;; font-weight: bolder;" href="/peli/{{_id}}">See more</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div> --}}

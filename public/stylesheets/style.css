@@ -1,10 +1,6 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
+  margin: 0;
 }
 
 #backgroundHome{
@@ -15,12 +11,41 @@ a {
   margin: 0px;
   color: white;
   font-weight: bolder;
-  display: flex;
-  justify-content: flex-end;
+  font-size: 500px;
+  text-align:end;
+  padding-right: 55px;
+  padding-top: 90px;
+
 }
 
 button{
   border-radius: 40px;
-  padding: 15px 35px;
+  padding: 10px 45px;
   color: #8db6c3;
+  font-size: 50px;
+}
+
+#check {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-decoration: none;
+}
+
+#title{
+  padding-top: 90px;
+}
+
+h1{
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+#container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 50%;
 }
