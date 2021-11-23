@@ -1,5 +1,5 @@
 {{!-- ./views/details.hbs --}}
-{{#with data}}
+{{!-- {{#with data}}
       <p class="card-text"><a href="/movies/">Go back</a></p>
 	<img src="{{this.image}}">
 	<h>{{this.title}}</h1>
@@ -13,5 +13,35 @@
 	</ul>
 	<p style = "width:800px">{{this.description}}</p>
 	<p>{{this.showtimes}}</p>
+
+{{/with}}
+ --}}
+
+
+
+
+{{#with data}}
+
+<div  class="card mb-3 container" style="max-width: 540px;">
+  <div class="row g-0 container">
+    <div class="col-md-4 container">
+      <img src="{{this.image}}" class="img-fluid rounded-start" alt="{{this.title}}">
+    </div>
+    <div class="col-md-8 container">
+      <div class="card-body container">
+        <a href="/movies/">Go Back</a>
+        <h1 class="card-title container">{{this.title}}</h1>
+        <p class="card-text container">{{this.director}}</p>
+        {{#each stars}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+        {{/each}}
+        <p class="card-text container">{{this.description}}</p>
+        <p class="card-text container"><small class="text-muted">{{this.showtimes}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{/with}}
