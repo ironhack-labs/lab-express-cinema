@@ -1,6 +1,6 @@
 body {
   padding: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font:  "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -22,9 +22,18 @@ a {
 #check-movies{
 
   position:absolute;
-  right: 150px;
-  bottom: 200px;
+  right: 330px;
+  bottom: 300px;
   border-radius: 40px ;
+  font-size: 30px;
 
+
+}
+
+h1{
+  color:white;
+  padding-left: 850px;
+  padding-top:150px;
+  font-size: 100px;
 
 }

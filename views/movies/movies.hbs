@@ -1,0 +1,21 @@
+<p>lista de movies</p>
+
+
+<ul>
+{{#each data}}
+	
+	
+<div class="card-group">
+  <div class="card">
+    <img src={{this.image}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{this.title}}</h5>
+       <a href="/movies/{{this._id}}" class="btn btn-primary">Ver detalles</a>
+    </div>
+  </div>
+  </div>
+  
+
+
+{{/each}}
+</ul>
