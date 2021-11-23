@@ -3,7 +3,7 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
-
+package-lock.json
 # Environment Variables should NEVER be published
 # For learning purposes, we keep .env available for you
-# .env
+.env
