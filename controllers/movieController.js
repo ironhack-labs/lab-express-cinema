@@ -38,9 +38,9 @@ const stars = req.body.stars
 const description = req.body.description
 const showtimes = req.body.showtimes
 
-const newBookCreated = await Book.create({title, director, stars, description, showtimes, image})
+const newMovieCreated = await Movie.create({title, director, stars, description, showtimes, image})
 
-    console.log(newBookCreated)
+    console.log(newMovieCreated)
 
 res.redirect("/movies")
     console.log("Pelicula recibida")
