@@ -38,3 +38,29 @@ h1 {
   height: 300px;
   object-fit: contain;
 }
+
+.show-times {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.show-times p {
+  padding: 0px 5px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+.img-details {
+  width: 100%;
+}
+.movies {
+  margin: 50px 20px;
+}
+
+.movies h2 {
+  margin: 50px 0px;
+}
+.card {
+  margin: 100px auto;
+}
