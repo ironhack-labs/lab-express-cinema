@@ -1,3 +1,21 @@
-<h1> Ironhack Cinema</h1>
+<a href="/movies">Go back</a>
 
-<h2>Click on the movie to check the showtimes!</h2>
+<div class="card" style="width: 18rem;">
+    <img src="{{this.image}}" class="card-img-top" alt="{{this.title}}'s image">
+    <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <h6 class="card-title">Director: {{this.director}}</h6>
+        <h6 class="card-title">Stars: </h6>
+        <ul>
+            {{#each this.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="card-text">{{this.description}}</p>
+        <p class="card-text">
+            {{#each this.showtimes}}
+            <span> {{this}} |</span>
+            {{/each}}
+        </p>
+    </div>
+</div>
