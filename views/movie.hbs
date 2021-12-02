@@ -1,0 +1,24 @@
+<div class="card" style="width: 60%;">
+        <div class="row g-0">
+            <div class="col-6">
+                <img src={{movieData.image}} class="card-img-top" alt="...">
+            </div>
+            <div class="col-6">
+                 <div class="card-body">
+                    <h5 class="card-title">{{movieData.title}}</h5>
+                    <div class="card-text">
+                        <p> Director: {{movieData.director}}</p>
+                        <p>Stars</p>
+                        <ol class="list-group list-group-numbered">
+                            {{#each movieData.stars}}
+                            <li class="list-group-item">{{this}}</li>
+                            {{/each}}
+                        </ol>
+                        <br>
+                        <p>{{movieData.description}}</p>
+                    </div>
+                    <a href="/movies" class="btn btn-primary">Go back</a>
+                </div>
+            </div>
+        </div>
+</div>
