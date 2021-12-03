@@ -4,16 +4,15 @@ const Movie = require('../models/Movie.model');
 
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
-console.log('home')
+// console.log('home')
 
 
 /* GET movies page */
-router.get('/movies', async (req, res)=>{
-    
+router.get('/movies', async (req, res) => {
     try{
-        const moviesDB = await Movie.find()
-        res.render("movies.hbs", {moviesDB})
-        console.log(moviesDB)
+        const movies = await Movie.find()
+        console.log(movies)
+        res.render('movies', {movies})
     }catch(err) {
         console.log("error")
     }
@@ -21,10 +20,10 @@ router.get('/movies', async (req, res)=>{
 
 
 /* GET movie page */
-router.route("/movie/:id", async (req, res) => {
+router.get('/movies/:id', async (req, res) => {
     try{
-        const movieId = await Movie.findById(req.params.id)
-        res.render("movie-details.hbs", movieId)
+        const movie = await Movie.findById(req.params.id)
+        res.render("movie-details.hbs", {movie})
     }catch(err) {
         console.log("error")
     }
