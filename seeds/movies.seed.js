@@ -11,7 +11,7 @@ const MONGO_URI =
 
 const fillMovies = async () => {
   try {
-    console.log('Connecting do DB...');
+    console.log('Connecting to DB...');
     await mongoose.connect(MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

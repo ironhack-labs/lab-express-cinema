@@ -7,7 +7,8 @@ const Movie = require('../models/Movie.model');
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
 const MONGO_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost/lab-express-cinema';
+  process.env.MONGODB_URI ||
+  'mongodb+srv://pilauria:CtbSHUys2yPQlyxW@cluster0.q3aua.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-12yrdj-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true';
 
 const data = require('../data.json');
 
