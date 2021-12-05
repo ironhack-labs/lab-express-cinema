@@ -4,11 +4,14 @@ const movieSchema = new Schema(
     {
         title: String,
         director: String,
-        Stars: [String],
+        stars: [String],
         image: String,
         description: String,
         showtimes: [String]
+    },
+    {
+        timestamps:true
     }
 )
 
-module.export = model('Movie',movieSchema)
+module.exports = model('Movie',movieSchema)

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const Movies = require('../models/Movie.model')
+const Movie = require('../models/Movie.model')
 
 const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
 
@@ -88,3 +88,13 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
+
+
+Movie.create(movies)
+.then(moviesFromDB=>{
+    console.log(`Created ${moviesFromDB.length} Movies in Database`)
+    mongoose.connection.close()
+})
+.catch(err=>{
+    console.log("Error al crear la base de datos Movies en Mongo",err)
+})
