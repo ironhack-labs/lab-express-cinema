@@ -1,6 +1,6 @@
 {{!-- Titles | images displaying| See more that points to each movie --}}
 
-<div>
+<div >
     {{#each movies}}
     <div class="uk-card uk-card-default">
         <div class="uk-card-media-top">
@@ -9,6 +9,7 @@
         <div class="uk-card-body">
             <h3 class="uk-card-title">{{title}}</h3>
             <p>{{description}}</p>
+            <a href="/movies/{{_id}}">See more</a>
         </div>
     </div>
     {{/each}}

@@ -1,0 +1,19 @@
+<div >
+    <div class="uk-card uk-card-default">
+        <div class="uk-card-media-top">
+            <img src="{{movieDetails.image}}" alt="">
+        </div>
+        <div class="uk-card-body">
+            <h2 class="uk-card-title">{{movieDetails.title}}</h2>
+            <h3>{{movieDetails.director}}</h3>
+            <h4>Stars</h4>
+            <ul>
+                {{#each movieDetails.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movieDetails.description}}</p>
+            <p>{{movieDetails.showtimes}}</p>
+        </div>
+    </div>
+</div>
