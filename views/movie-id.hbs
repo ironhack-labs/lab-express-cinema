@@ -1,0 +1,20 @@
+<div class="card" style="width: 18rem;">
+   
+  <div class="card-body">
+    <img src={{movie.image}} alt="movieIcon">
+    <h5 class="card-title">{{movie.title}}</h5>
+    <h4 class="card-title">Director:{{movie.director}}</h4>
+    <h3>Stars:</h3>
+    <ul>
+        {{#each movie.stars}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p class="card-text">{{movie.description}}</p>
+    {{#each movie.showtimes}}
+    <a>{{this}}</a>
+    {{/each}}
+    <a href="/movies/{{_id}}" class="card-link">See more</a>
+  </div>
+
+</div>

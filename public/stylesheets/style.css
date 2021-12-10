@@ -6,3 +6,9 @@ body {
 a {
   color: #00B7FF;
 }
+
+.backgorund-indexhbs{
+background-image: url("../images/cinema.jpg");
+height: 100vh;
+background-repeat: no-repeat;
+}
