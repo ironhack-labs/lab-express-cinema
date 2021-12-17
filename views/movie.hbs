@@ -1,0 +1,29 @@
+<div class="album py-5 bg-light">
+        <div class="container">
+           <a href="/movies" class="btn btn-primary" >Back</a>  
+            <div class="movie">
+                <div class="thumbs poster"> <img class="mx-auto card-img-top" style="height: 400px; width: 270px" src={{image}}></div>
+                <div class="info">
+                    <h2>{{title}}</h2>
+                      <br>
+                      <h4>Director: {{director}}<br></h4>
+                    <h6>Stars</h6>
+                            <ul>
+                            {{#each stars}}
+                            <li>
+                            {{this}}
+                            </li>
+                            {{/each}}
+
+                            </ul>
+                    {{description}}<br>
+                    <br>
+                    {{#each showtimes}}
+
+                    {{this}} | 
+
+                    {{/each}}
+                    </div>
+            </div>
+   </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="album py-5 bg-light">
+        <div class="container">
+                <div class="top">
+                    <h1>Ironhack Cinema</h1>
+                    <h2>Click on the movie to check the showtimes!</h2>                    
+                </div>              
+            <div class="row text-center">
+                {{#each results}}
+                <div class="col-md-4" style="padding: 20px">
+                    <div class="card" style="width: 23rem;">
+                        <h5>{{title}}</h5>
+                    <div class="thumbs"> <img class="mx-auto card-img-top" style="height: 200px; width: 150px" src={{image}}></div>
+                            <div class="card-body scard-body">                          
+                            <a href="movies/{{_id}}"" class="btn btn-primary" >See more</a>
+                            </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+</div>
