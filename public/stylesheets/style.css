@@ -3,6 +3,22 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+body, html {
+  height: 100%;
+}
+
 a {
   color: #00B7FF;
+}
+
+body {
+  background-image: url("../images/cinema.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body h1 {
+  color: white;
 }
