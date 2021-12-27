@@ -17,7 +17,7 @@ router.get("/:id", (req, res) => {
     Movie.findById(req.params.id)
       .then((results) => {
         console.log("These are the results", results);
-        res.render("movies", results);
+        res.render("moviedetail", results);
       })
       .catch((err) => {
         console.log("Something went wrong", err);
