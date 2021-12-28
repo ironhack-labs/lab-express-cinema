@@ -7,11 +7,24 @@ body, html {
   height: 100%;
 }
 
-a {
+.cinema-btn {
   color: #00B7FF;
 }
 
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaced {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 body {
+  display: flex;
   background-image: url("../images/cinema.jpg");
   height: 100%;
   background-position: center;
@@ -21,4 +34,22 @@ body {
 
 body h1 {
   color: white;
+}
+
+#main-banner {
+  float: right;
+  margin-top: 150px;
+}
+
+#main-btn {
+  margin-top: 30px;
+}
+
+p {
+  color: white;
+}
+
+#movies-banner {
+  margin-top: 40px;
+  margin-left: 400px;
 }
