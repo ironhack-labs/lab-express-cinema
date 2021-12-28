@@ -1,3 +1,24 @@
 <div>
-    <h1>{{movie.title}}</h1>
+    <h1>Cinema Ironhack</h1>
+    <a href="../movies">Go back</a>
+    <div class="card col-8-md spaced" style="width: 800px;">
+        <img class="card-img-top" src="{{movie.image}}" alt="Movie poster">
+        <div class="card-body">
+            <h2 class="card-title content-center">"{{movie.title}}"</h2><br/>
+            <h4 class="card-title content-center">directed by {{movie.director}}</h4>
+            <h6>Starring:</h6>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <h6>{{movie.description}}</h6>
+            <br/>
+            <span>
+                {{#each times}}
+                    {{this}} |
+                {{/each}}
+            </span>
+        </div>
+    </div>
 </div>

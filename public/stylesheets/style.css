@@ -53,3 +53,11 @@ p {
   margin-top: 40px;
   margin-left: 400px;
 }
+
+.card {
+  flex-direction: row;
+}
+
+.card img {
+  width: 300px;
+}
