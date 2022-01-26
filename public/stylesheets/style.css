@@ -36,6 +36,7 @@ a {
 }
 
 /********************* MOVIES ************************/
+
 #movies-title-container {
   margin-top: -50px;
   margin-bottom: 50px;
@@ -52,7 +53,17 @@ a {
   display: flex;
   flex-direction: column;
   font-weight: bold;
+  align-items: center;
 }
 #movie-container a {
-  align-self: center;
+  
+}
+
+/********************* MOVIES-DETAILS ************************/
+
+#movie-details-container {
+  display: flex;
+}
+#movie-details-container > div {
+  margin-right: 50px;
 }
