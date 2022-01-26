@@ -5,8 +5,10 @@ body {
 
 a {
   color: #00B7FF;
-  text-decoration: none;
+  
 }
+
+/********************* HOME ************************/
 
 #home-container {
   width: 100%;
@@ -16,18 +18,41 @@ a {
   background-size: cover;
   display: flex;
   justify-content: end;
-  
 }
-
+#home-info {
+  margin-top: 5%;
+  margin-right: 10%;
+}
 #home-info h1 {
-  font-size: 500%;
+  font-size: 4.5rem;
   color: #FFF;
-  margin-top: 150px;
-  margin-right: 150px;
 }
 
 #home-info a {
   background-color: #FFF;
   padding: 15px 30px;
   border-radius: 30px;
+  text-decoration: none;
+}
+
+/********************* MOVIES ************************/
+#movies-title-container {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+#movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#movie-container {
+  margin-right: 15%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+#movie-container a {
+  align-self: center;
 }

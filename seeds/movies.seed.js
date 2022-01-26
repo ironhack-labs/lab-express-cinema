@@ -104,4 +104,4 @@ Movie.insertMany(movies)
     })
     .catch(err => console.log(`An error occurred while creating movies from the DB: ${err}`));
 
-// After everything is done/inserted i have to run this file in the terminal.
+// After everything is done/inserted i have to run this file in the terminal so that it can save the data in the database.
