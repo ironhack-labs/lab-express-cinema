@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+/* MOVIE */
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 20%;
+  margin: 25px 25px;
+}
+
+.titles {
+  text-align: center;
+}

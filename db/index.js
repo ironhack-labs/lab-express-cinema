@@ -16,8 +16,6 @@ mongoose
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
-  /* .then(() => Movie.create(allmovies))
-  .then((movies) => console.log(movies)) */
   .catch((err) => {
     console.error("Error connecting to mongo: ", err);
   });
