@@ -3,17 +3,6 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  border: 0px none;
-  border-radius: 500px;
-  padding: 10px 20px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-}
-
 /* STYLING INDEX */
 
 #index-div {
@@ -34,6 +23,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0px none;
+  border-radius: 500px;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
   margin-top: -30px;
   width: 160px;
   height: 30px;
@@ -44,4 +41,48 @@ a {
 #title-and-logo h1 {
   color: white;
   font-size:  90px;
+}
+
+/* STYLING MOVIES */
+
+#movies-div {
+  margin: 70px 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.movie-img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.movie a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  height: 50px;
+  background-color: #679dad;
+  border: 0px none;
+  border-radius: 500px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.movie a:hover {
+  background-color: #7199a5;
+  color: rgb(231, 225, 225);
 }

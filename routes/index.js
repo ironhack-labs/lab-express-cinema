@@ -7,8 +7,10 @@ router.get('/', (req, res, next) => res.render('index'));
 
 router.get('/movies', (req, res, next) => {
 
-    console.log(Movie.find());
-    res.render('movies')
+    Movie.find()
+    .then(movies => {
+        res.render('movies', { movies: movies })
+    })
 })
 
 module.exports = router;

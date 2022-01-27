@@ -1,5 +1,5 @@
 require("dotenv").config();
-require("../config/index.js");
+require("../db/index.js");
 const Movie = require("../models/Movie.model.js");
 
 const movies = [
@@ -87,7 +87,7 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  Movie.deleteMany()
+ Movie.deleteMany()
     .then(() => Movie.create(movies))
     .finally(() => {
         process.exit();
