@@ -11,6 +11,15 @@ router.get('/movies', (req, res, next) => {
     .then(movies => {
         res.render('movies', { movies: movies })
     })
+});
+
+router.get('/movies/:id', (req, res, next) => {
+    console.log(req.params.id);
+    Movie.find({ '_id': req.params.id })
+    .then(movie => {
+        console.log(movie[0]);
+        res.render('movie-details', { movie: movie[0] });
+    })
 })
 
 module.exports = router;
