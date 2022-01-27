@@ -5,8 +5,9 @@
 }
 
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -21,6 +22,55 @@ ul {
   margin-top: 0;
 }
 
+
+/* HOME */
+.background-home {
+  background-image: url('../images/cinema.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.content-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  width: 80%;
+}
+
+.content-home h1 {
+  font-size: 90px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 0px;
+  text-align: right;
+}
+
+.content-home .btn-home {
+  padding: 20px;
+  background-color: #fff;
+  color: #74A5B5;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content-home .btn-home:hover {
+  background-color: #74A5B5;
+  color: #fff;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* MOVIES */
+
 .container {
   display: flex;
   flex-direction: row;
@@ -31,7 +81,23 @@ ul {
 }
 
 
-/* MOVIES */
+.background-list-movies {
+  background-image: url('../images/background-list-movies.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.list-movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .movie {
   display: flex;
   flex-direction: column;
@@ -44,14 +110,90 @@ ul {
   text-align: center;
 }
 
+.titles h1 {
+  margin-top: 0;
+  font-size: 60px;
+  color: #04455a;
+}
+
+.titles h2 {
+  color: #04455a;
+  margin-top: 0;
+}
+
+.container h3 {
+  color: #04455a;
+}
+
+.btn-single-movie {
+  color: #04455a;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.btn-single-movie:hover {
+  text-decoration: underline;
+}
+
+.btn-back-home {
+  padding: 10px 40px;
+  border: solid 2px #04455a;
+  color: #04455a;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+}
+
+.btn-back-home:hover {
+  background-color: #04455a;
+  color: #fff;
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
 /* SINGLE MOVIE */
+
+.background-single-movie {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/cinema-blur.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
 .single-movie {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 60%;
   margin: 0 auto;
-  flex-wrap: wrap;
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-back-movies {
+  padding: 10px 40px;
+  border: solid 2px #fff;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+}
+
+.btn-back-movies:hover {
+  background-color: #74A5B5;
+  color: #fff;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .detail-movie {
@@ -68,3 +210,4 @@ ul {
 .single-image-movie img{
   width: 90%;
 }
+

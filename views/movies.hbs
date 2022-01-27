@@ -1,13 +1,22 @@
-<div class="titles">
-    <h2>Ironhack Cinema</h2>
-    <h3>Click on the movie to check the showtimes!</h3>
+<div class="background-list-movies">
+    <div class="list-movies">
+        <div class="titles">
+            <h1>Ironhack Cinema</h1>
+            <h2>Click on the movie to check the showtimes!</h2>
+        </div>
+
+
+        <div class="container">
+            {{#each movies}}
+
+                {{> movie this}}
+            
+            {{/each}}   
+        </div>
+
+        <div>
+        <a href="/" class="btn-back-home">Go back</a>
+    </div>
+    </div>
 </div>
 
-
-<div class="container">
-    {{#each movies}}
-
-        {{> movie this}}
-    
-    {{/each}}   
-</div>

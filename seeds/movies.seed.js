@@ -90,4 +90,4 @@ const movies = [
 
   Movie.deleteMany()
   .then(() => Movie.insertMany(movies))
-  .then((movies) => movies.map((movie) => console.log(movie.title)))
+  .catch((e) => console.log(e))
