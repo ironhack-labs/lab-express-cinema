@@ -1,0 +1,28 @@
+<section class="py-3 py-md-5 bg-light">
+    <div class="container">
+        <h1>All Movies</h1>
+        <p class="lead">There are {{movies.length}} in this list.</p>
+    </div>
+</section>
+<section class="py-3 py-md-4">
+    <div class="container">
+        <div class="row">
+            {{#each movies}}
+                <div class="col-12 col-md-3">
+                    <div class="card py-3 mb-3 text-center">
+                        <div class="card-header bg-white border-0 ">
+                            <img src="{{image}}" class="w-100 rounded" style="max-width: 200px;"/>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="h5">{{title}}</h2>
+                            <p>Directed by {{director}}</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="/movie/{{_id}}" class="link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
