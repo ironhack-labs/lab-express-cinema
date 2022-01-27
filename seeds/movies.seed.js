@@ -87,8 +87,12 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  Movie.insertMany(movies)
-    .then((movies) => movies.map((movie) => console.log(movie.title)))
+  Movie.create(movies)
+    .then((movies) => {
+        movies.map(movie => {
+            console.log(movie);
+        })
+    })
     .finally(() => {
         process.exit();
     });
