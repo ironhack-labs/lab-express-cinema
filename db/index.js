@@ -7,11 +7,18 @@ const mongoose = require("mongoose");
 
 const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
 
+const Movie = require('../models/Movie.model');
+const allMovies = require('../seeds/movies.seed.js');
+
+
 mongoose
   .connect(MONGO_URI)
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
+  /* .then(() => Movie.create(allmovies))
+  .then((movies) => console.log(movies)) */
   .catch((err) => {
     console.error("Error connecting to mongo: ", err);
   });
+
