@@ -97,6 +97,6 @@ const movies = [
   Movie.insertMany(movies)
   .then(dbMovies => {
     console.log(`Created ${dbMovies.length} movies`);
-  mongoose.connection.close();
+ 
   })
   .catch(err => console.log(`ERROR`));
