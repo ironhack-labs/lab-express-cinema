@@ -11,6 +11,15 @@ router.get('/movies', (req, res, next) => {
     .then((movies) => {
         res.render('movies', { movies })
     })
+    /* .catch((e) => next(e)); */
+})
+
+router.get('/movies/:id', (req, res, next) => {
+    Movie.findById(req.params.id)
+    .then((movie) => {
+        res.render('movie', { ...movie.toJSON(), detail: true });
+    })
+    .catch((e) => next(express));
 })
 
 module.exports = router;
