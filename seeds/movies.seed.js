@@ -4,6 +4,7 @@ const Movie = require('../models/Movie.model');
 const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/lab-express-cinema';
 
 mongoose.connect(MONGO_URI, {
+
   useUnifiedTopology: true,
 });
 
@@ -95,6 +96,7 @@ const movies = [
   
   Movie.insertMany(movies)
   .then(dbMovies => {
+    console.log(`Created ${dbMovies.length} movies`);
   mongoose.connection.close();
   })
   .catch(err => console.log(`ERROR`));
