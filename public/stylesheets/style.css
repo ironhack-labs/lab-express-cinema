@@ -48,3 +48,15 @@ a {
 #intro-screen a:link, a:visited, a:active {
   text-decoration:none;
 }
+
+
+#back-button{
+  font-size: 0.7rem;
+  background-color: #393939;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 5rem;
+  color: white;
+  box-shadow: 0px 0px 15px rgb(220, 220, 220);
+
+}
