@@ -1,8 +1,77 @@
 body {
-  padding: 50px;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+/* homepage */
+.home{
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  
+}
+
+.cinemaIronhack{
+  height: 50vh;
+  width: 40vw;
+
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  color: white;
+  
+}
+
+.cinemaIronhack h1{
+  font-size: 6rem;
+  line-height: 0px;
+}
+
+.cinemaIronhack a{
+  width: 60%; 
+  border-radius: 100px;
+  padding: 20px;
+
+  color: rgb(33, 133, 167);
+  font-size: 20px;
+}
+
+
+/* movies page */
+.movies-page-top{
+  margin: 30px 100px;
+}
+
+.movies-page-top h1{
+  font-weight: 900;
+}
+
+
+.movies-page-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img_title_link{
+  width: 20%;
+  margin: 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movies-page-group img{
+  width: 100%;
 }

@@ -1,0 +1,23 @@
+{{!-- {{#unless detail}} 
+
+{{/unless}} --}}
+
+{{#if detail}}
+<h1>hola</h1>
+{{else}}
+<div class="movies-page-top">
+        <h1>Ironhack Cinema</h1>
+        <h2>Click on the movie to check the showtimes!</h2>
+    </div>
+
+<div class=" movies-page-group">
+    {{#each xxx}}
+    <div class="img_title_link">
+        <img src="{{image}}" alt="{{title}}">
+        <h5>{{title}}</h5>
+        <a href="/movies/{{id}}" class="">See more</a>
+    </div>
+    {{/each}}   
+</div>
+{{/if}}
+
