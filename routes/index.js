@@ -15,14 +15,13 @@ router.get('/moviesPepe', (req, res, next) => {
 })
 
 
-// router.get('/moviesPipo/:id', (req, res, next) => {
-//     MoviePaco.findById(req.params.id)
-//     // .then((yyy) => {
-//     //     res.render('moviesPage', { ...yyy.toJSON() ,detail = true })
-//     // })
-//     .catch((e) => next(e)); 
-// })
-
-
+router.get('/moviesPepe/:id', (req, res, next) => {
+    MoviePaco.findById(req.params.id)
+    .then((yyy) => {
+        console.log(yyy)
+        res.render('moviesPage',{yyy})
+    })
+    .catch((e) => next(e)); 
+})
 
 module.exports = router;

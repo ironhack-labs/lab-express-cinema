@@ -1,5 +1,3 @@
-
-{{#if yyy}}
 <div class="single-movie">
     {{#with yyy}}
     <div class="div-image">
@@ -24,21 +22,3 @@
     </div>
     {{/with}}
 </div>
-
-{{else}}
-<div class="movies-page-top">
-        <h1>Ironhack Cinema</h1>
-        <h2>Click on the movie to check the showtimes!</h2>
-    </div>
-
-<div class=" movies-page-group">
-    {{#each xxx}}
-    <div class="img_title_link">
-        <img src="{{image}}" alt="{{title}}">
-        <h5>{{title}}</h5>
-        <a href="/moviesPepe/{{id}}" class="">See more</a>
-    </div>
-    {{/each}}   
-</div>
-{{/if}}
-

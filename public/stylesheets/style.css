@@ -75,3 +75,28 @@ a {
 .movies-page-group img{
   width: 100%;
 }
+
+
+/* SINGLE MOVIE */
+
+.single-movie{
+  margin: 50px;
+  display: flex;
+
+}
+
+.div-image{
+  width: 30%;
+}
+
+.single-movie img{
+  height: 100%;
+}
+
+.div-info{
+  width: 55%;
+}
+
+.inline{
+  display: inline;
+}
