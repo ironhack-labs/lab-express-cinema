@@ -26,7 +26,7 @@ body {
   border: 0px none;
   border-radius: 500px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
@@ -46,7 +46,7 @@ body {
 /* STYLING MOVIES */
 
 #movies-div {
-  margin: 70px 350px;
+  margin: 70px 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -54,6 +54,7 @@ body {
 .movie-img {
   width: 200px;
   margin-bottom: 20px;
+  box-shadow: 3px 3px 3px #a09d9d;
 }
 
 .movie {
@@ -68,8 +69,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 20px;
-  height: 50px;
+  padding: 0px 10px;
+  height: 30px;
   background-color: #679dad;
   border: 0px none;
   border-radius: 500px;
@@ -79,10 +80,70 @@ body {
   text-align: center;
   text-decoration: none;
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .movie a:hover {
   background-color: #7199a5;
   color: rgb(231, 225, 225);
+}
+
+/* STYLING MOVIE DETAILS */
+
+#movie-details-div {
+  width: 50%;
+  position: absolute;
+  left: 24%;
+  top: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#movie-details-div .movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -20px;
+}
+
+#movie-details-div a {
+  width: 60px;
+  height: 20px;
+  padding: 0px 5.5px;
+}
+
+#movie-details-div h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#movie-details-div li {
+  font-size: 14px;
+  margin-top: 6px;
+  padding-left: 8px;
+}
+
+#movie-details-div ul {
+  margin-top: 0;
+  padding-left: 12px;
+}
+
+.showtimes-div {
+  font-size: 12px;
+}
+
+#movie-details-div .movie-img {
+  width: 540px;
+  margin-right: 40px;
+}
+
+#movie-details-div .movie-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#movie-details-div h2, h3 {
+  margin-top: 0;
 }
