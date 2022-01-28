@@ -32,6 +32,7 @@ a {
 #intro-screen h1 {
   color: white;
   font-size: 5rem;
+  margin-bottom: 3rem;
 }
 
 #intro-screen a{
