@@ -94,9 +94,19 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  Movie.insertMany(movies)
-  .then(dbMovies => {
-    console.log(`Created ${dbMovies.length} movies`);
- 
-  })
-  .catch(err => console.log(`ERROR`));
+  
+
+
+
+
+ // Movie.insertMany(movies)
+ //.then(dbMovies => {
+ //   console.log(`Created ${dbMovies.length} movies`);
+ // })
+ // .catch(err => console.log(`ERROR`));
+
+  Movie.deleteMany()
+  .then(() => Movie.create(movies))
+  .finally(() => {
+      
+  }); 

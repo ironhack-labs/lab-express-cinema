@@ -20,3 +20,23 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+
+.letters{
+  font-size: 90px;
+  padding-left: 55%;
+  color: white;
+}
+
+.btn{
+  padding-left: 65%;
+}
+
+.welcome {
+  width: 100%;
+}
+
+#go-back-button {
+padding-left: 33%;
+ 
+}

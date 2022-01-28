@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <a href="/movies" id="go-back-button"> < Go back</a>
+    <div class="d-flex justify-content-center aling-items-center">
+        {{#with movie}}
+        <img src="{{image}}" alt="cinema-card">
+        <div class="info mx-5 col-6">
+            <h5 class="card-title">{{title}}</h5>
+
+            <p class="card-info"><small>Directed by {{director}}</small></p>
+            <p class="card-info"><small><strong>Stars: </strong>{{stars}}</small></p>
+            <p class="card-info">{{description}}</p>
+            <p class="card-info"><small>|{{showtimes}}|</small></p>
+        </div>
+            {{/with}}
+    </div>
+</div> 
