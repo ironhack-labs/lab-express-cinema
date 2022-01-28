@@ -1,16 +1,21 @@
-<div>
+<div id="moviespage-header">
   <h1>Ironhack Cinema</h1>
   <p>Click on the movie to check the showtimes!</p>
 </div>
 
-<section>
+<hr />
+
+<section id="movies-section">
   {{#each allmovies}}
-    <div width="15%">
+    <div class="movie-poster">
 
-      <img src="{{image}}" alt="" />
+      <img src="{{image}}" alt="{{title}}-poster" class="image-poster" />
 
-      <h5>{{title}}</h5>
+      <h5 class="movie-title">{{title}}</h5>
       <a href="/movies/{{_id}}">See more</a>
+
     </div>
   {{/each}}
 </section>
+
+<hr />

@@ -1,8 +1,133 @@
 body {
   padding: 50px;
+  background-color: lightgrey;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+/* homepage */
+#homepage-section {
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#homepage-welcome {
+  font-size: 5rem;
+  padding-right: 4%;
+  color: antiquewhite;
+  text-shadow: 2px 2px 4px lightslategrey;
+}
+
+#checkmovies-btn {
+  border-radius: 2rem 2rem 2rem 2rem;
+  height: 4rem;
+  width: 17rem;
+  font-size: 28%;
+  border: none;
+}
+
+#checkmovies-btn a {
+  text-decoration: none;
+}
+
+/* Homepage responsive design */
+@media screen and (max-width: 680px) {
+  #homepage-welcome {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #homepage-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  #checkmovies-btn {
+    width: 8rem;
+    height: 2rem;
+  }
+}
+
+/* Movies page */
+#moviespage-header {
+  font-size: 1.5rem;
+}
+
+#movies-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.movie-poster {
+  width: 33%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.image-poster {
+  box-shadow: 4px 4px 3px rgb(65, 65, 65);
+}
+
+.movie-title {
+  font-size: 1rem;
+}
+
+/* Movies page responsive design  */
+@media screen and (max-width: 715px) {
+  #movies-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-bottom: 20px;
+  }
+
+  .movie-poster {
+    text-align: left;
+  }
+}
+
+/* Movie details */
+#details-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+#showtimes {
+  display: flex;
+  flex-direction: row;
+}
+
+#movie-info {
+  margin-left: 3%;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Movie details responsive design */
+@media screen and (max-width: 600px) {
+  #details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    margin-bottom: 20px;
+  }
+
+  .movie-poster {
+    text-align: left;
+  }
 }
