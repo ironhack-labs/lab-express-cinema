@@ -1,11 +1,1 @@
-<div id="movies-div">
-    {{#each movies as |movie|}}
-        <div class="movie">
-            
-            <img class="movie-img" src="{{movie.image}}" alt="">
-            
-            <p class="card-title">{{movie.title}}</p>
-            <a href="/movies/{{movie._id}}">See More</a>
-        </div>
-    {{/each}}
-</div>
+{{> moviePartial}}
