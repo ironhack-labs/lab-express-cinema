@@ -1,11 +1,14 @@
-body {
+/* HOME PAGE */
+
+#home-page {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("../images/cinema.jpg");
   background-size: cover;
+  height: 700px;
 }
 
-a {
+.index-link {
   color: #5681af;
   border-radius: 25px;
   padding: 15px 25px;
@@ -14,7 +17,8 @@ a {
   font-size: 16px;
   font-weight: bold;
   position: relative;
-  left: 800px
+  left: 800px;
+  top: 40px;
 }
 
 h1 {
@@ -24,3 +28,44 @@ h1 {
   color: white;
 }
 
+
+/* MOVIES LIST */
+
+
+.movies-header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.movies-header h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.movies-header p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MOVIE DETAILS */
+
+.movie-details h2 {
+  padding: 10px;
+  font-size: 16px;
+}

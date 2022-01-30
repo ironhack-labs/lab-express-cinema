@@ -12,6 +12,7 @@ const express = require('express');
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
+hbs.registerPartials(__dirname + "/views/partials");
 
 const app = express();
 
@@ -19,19 +20,20 @@ const app = express();
 require('./config')(app);
 
 // default value for title local
-const projectName = 'lab-express-cinema';
+/* const projectName = 'lab-express-cinema';
 const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
 
-app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`; */
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
 
-/* const movies = require('./routes/movies')
-app.use('./routes/movies.js', movies);
- */
+const movies = require('./routes/movies')
+app.use('/', movies);
 
+const movie = require('./routes/movie')
+app.use('/', movie);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);

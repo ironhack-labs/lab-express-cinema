@@ -88,7 +88,7 @@ const movies = [
     }
   ];
 
-  Movie.insertMany(movies)
+  Movie.deleteMany().then(() => Movie.insertMany(movies))
   .then((movies) => movies.map((movie) => console.log(movie.title)))
   .finally(() => {
     process.exit();
