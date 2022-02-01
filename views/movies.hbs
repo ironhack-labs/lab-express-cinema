@@ -1,0 +1,8 @@
+{{#each movies as |movie|}}
+        <br>
+        <img src="{{movie.image}}" alt="">
+        <h1>{{movie.title}}</h1>        
+        <a href="/movies/{{movie._id}}">Read more</a>
+        <br>
+  
+{{/each}}
