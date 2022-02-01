@@ -1,0 +1,13 @@
+<h2>MOVIES</h2>
+
+    {{#each movies as |movie|}}
+        <lu>
+            <img src="{{movie.image}}" alt="">
+        </lu>
+    {{/each}}
+    
+    <h3>{{movie.title}}</h3>
+
+        <form action="/movies/:id" method="POST">
+            <button input="SUBMIT">See more</button>
+        </form>
