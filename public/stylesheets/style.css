@@ -1,12 +1,8 @@
-.containerOne {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-   background-image:url(../images/cinema.jpg); 
-}
 
 a {
   color: #00B7FF;
 }
+
 
 .filmImageBox {
 
@@ -17,13 +13,15 @@ a {
 
 .home {
 
-  font: 25px "Helvetica", Helvetica;
-  color: aliceblue;
-  text-align:left;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/cinema.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .button {
-  display: inline-block;
   padding: 15px 25px;
   font-size: 15px;
   cursor: pointer;
@@ -34,14 +32,20 @@ a {
   background-color: #fff;
   border: none;
   border-radius: 30px;
-  justify-content: flex-start;
+  position: absolute;
+  top: 400px;
+  right: 450px;
+  
   
 }
 
 
 .tittleCinema{
-  font: 60px "Helvetica", Helvetica;
+  font: "Helvetica", Helvetica;
+  font-size: 100px;
   color: aliceblue;
-
-
+  position: absolute;
+  top: 120px;
+  left: 650px;
+  text-align: left;
 }

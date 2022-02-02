@@ -1,16 +1,29 @@
 <div class="container">
    <br>
-   <a href="/movies/" class="">Go back</a>
-   <div class="d-flex justify-content-between align-items-center mt-5">
+   
+   <div class="d-flex justify-content-between align-items-center mt-5" >
       <div class="pe-5">
-         <img src="{{ image }}" class="card-img-top" alt="...">
+         <img src="{{ image }}" class="card-img-top" alt="..." style="width: 15rem;">
       </div>
       <div>
-         <h5 class="card-title">{{title}} </h5>
+         <h5><a href="/movies/" class="">Go back</a></h5>
+         <h5 class="card-title">{{ title }} </h5>
          <p>{{director}}</p>
-         <p class="card-title">{{description}}</p>
-         <p class="card-title">{{stars}}
-         <p class="card-title">{{showtimes}}</p>
+         <p class="card-title">{{ description }}</p>
+         <ul>
+            {{#with stars }}
+                {{#each this as | star |}}
+                    <li>{{star}}</li>
+                {{/each}}
+            {{/with}}
+        </ul>
+         <p class="card-title">
+            {{#with showtimes }}
+                {{#each this as | showtime |}}
+                    <a>{{showtime}} |</a>
+                {{/each}}
+            {{/with}}
+      </p>
       </div>
    </div>
 </div>
