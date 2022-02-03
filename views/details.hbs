@@ -1,0 +1,27 @@
+<div class='container'>
+    <div class='row film'>
+        <div class='col-md-4'>
+            <img src="{{image}}" alt="{{title}}">
+        </div>
+        <div class='col-md-8 details'>
+            <h4>{{title}}</h4>
+            <p>Director:{{director}}</p>
+            <p>{{description}}</p>
+            <ul>Stars
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>
+                {{#each showtimes}}
+                {{this}} ||
+                {{/each}}
+
+            </p>
+            <br><br>
+            <a href="/">Volver</a>
+
+        </div>
+    </div>
+
+</div>
