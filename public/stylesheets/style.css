@@ -6,3 +6,21 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index-div {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  color: white;
+}
+
+.index-div h1 {
+  font-size: 6em;
+}
+
+.index-div a {
+  text-decoration: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
