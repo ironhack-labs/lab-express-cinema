@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+.container {
+  display: flex;
+  width: 250px;
+  height: auto;
+  margin: 100px 50px;
+  background-image: url('/images/cinema.jpg');
+  color: whitesmoke;
+}

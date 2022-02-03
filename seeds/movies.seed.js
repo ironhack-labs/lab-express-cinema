@@ -1,5 +1,3 @@
-// To insert in "seeds/movies.seed.js"
-
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -82,6 +80,16 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
   }
 ];
+
+const mongoose = require('mongoose');
+
+const Movie = require('../models/movie.model');
+
+const connectdb = require('../db/index');
+
+require('dotenv').config()
+
+connectdb()
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
