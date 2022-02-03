@@ -1,0 +1,17 @@
+<h1>TODAS LAS PELIS</h1>
+<div class="row"></div>
+{{#each movies}}
+
+
+    
+        <div class="card col-md-4" style="width: 18rem;">
+            <img class="card-img-top" src="{{image}}" alt="{{title}}">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a href="/movie/{{_id}}" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+ 
+
+{{/each}}
+</div>
