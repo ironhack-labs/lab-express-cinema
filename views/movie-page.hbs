@@ -1,0 +1,15 @@
+<main class='container'>
+  <a href='/movies'>Go back</a>
+  {{#each theMovie}}
+    <h2>
+      {{title}}
+    </h2>
+    <h3>
+      {{director}}
+    </h3>
+    {{stars}}
+    <img src='{{image}}' alt='poster' />
+    {{description}}
+    {{showtimes}}
+  {{/each}}
+</main>
