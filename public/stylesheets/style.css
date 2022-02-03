@@ -6,3 +6,15 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+
+.cinema-background {
+  background-image: url("../images/cinema.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
