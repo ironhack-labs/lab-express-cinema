@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row singlemoviepresentation">
+        <a class='btn btn-primary' href="/movies">Go back</a>
+        <div class="col-3 gy-5">
+            <img src="{{image}}" alt="">
+        </div>
+        <div class="col-8 gy-5">
+            <h5>{{title}}</h5>
+            <h4>Director: {{director}}</h4>
+            <ul>
+                <strong>
+                        Stars:
+                </strong> 
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p> 
+            <h6>Showtimes:</h6>
+            <p>
+            {{#each showtimes}}
+                {{this}} |
+            {{/each}}
+            </p>
+        </div>
+
+    </div>
+</div>
