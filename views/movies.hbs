@@ -1,0 +1,16 @@
+<h1>Movies List</h1>
+<hr>
+
+<div class="row">
+    {{#each data}}
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ image }}" />
+        </div>
+        <div class="card-body">
+            <h5>{{ title }}</h5>
+            <a href="">See more</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

@@ -93,4 +93,15 @@ connectdb()
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-// ... your code here
+const createMovies = async (data) => {
+  try {
+    const createdMovies = await Movie.create(data);
+    console.log(createdMovies);
+    return mongoose.connection.close()
+  } catch (error) {
+    console.log(error);
+    process.exit(1)
+  }
+}
+
+createMovies(movies);
