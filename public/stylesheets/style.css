@@ -1,8 +1,26 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
 
 a {
   color: #00B7FF;
+}
+
+.img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.stack{
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 15%;
+}
+.titulo{
+  font-size:90px;
+}
+.boton{
+  border-radius: 30px;
 }
