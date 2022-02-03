@@ -7,11 +7,22 @@ const mongoose = require("mongoose");
 
 const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
 
-mongoose
-  .connect(MONGO_URI)
-  .then((x) => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
-  })
-  .catch((err) => {
-    console.error("Error connecting to mongo: ", err);
-  });
+const connectDB = async () => {
+
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    })
+
+    return console.log("Base de datos conectada correctamente.")
+
+  } catch (error) {
+    console.log(error)
+    return process.exit(1)
+
+  }
+
+}
+
+module.exports = connectDB
