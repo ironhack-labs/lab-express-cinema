@@ -28,6 +28,19 @@ app.locals.apptitle = `${capitalized(projectName)}- Generated with Ironlauncher`
 const index = require('./routes/index');
 app.use('/', index);
 
+
+
+// const moviesRouter = require('./routes/movies.routes')
+// app.use('/movies', moviesPage)
+
+
+
+
+
+
+
+
+
 const Movie = require('./models/Movie.model')
 app.get('/movies', (req, res, next) => {
 

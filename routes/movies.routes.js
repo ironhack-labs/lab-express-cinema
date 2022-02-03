@@ -1,11 +1,23 @@
 const express = require('express');
 const router = express.Router();
 
-const movies = require('./../models/Movie.model')
+const Movie = require('./../models/Movie.model')
 
 ///movies list
 
-router.get('/movies', (req, res, next) => res.render('movies'))
-// router.get('/', (req, res, next) => res.render('index'));
 
-module.exports = router
+const moviesPage = router.get('/movies', (req, res, next) => {
+
+    Movie
+        .find()
+        //console.log(Movies)
+        .then(films => res.render('movies', { films }))
+})
+router.get('/movies/:id', (req, res) => {
+    Movie
+        .findById(req.params.id)
+        .then(film => res.render('details', film))
+
+}
+)
+module.exports = moviesPage
