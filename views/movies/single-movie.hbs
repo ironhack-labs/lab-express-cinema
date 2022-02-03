@@ -1,0 +1,25 @@
+<div class="container single">
+    <img class="p-0 m-0 bg-img" src="./../../images/listbg.jpg" alt="fondo">
+    <div class="row d-flex align-items-center justify-content-around">
+        <div class="col-3"><img class="single-img" src="{{image}}" alt="portada"></div>
+        <div class="col-7 text">
+            <a class="btn btn-small btn-light mb-5 single-btn" href="/peliculas/listado" role="button">Volver</a>
+
+            <h1>{{title}}</h1>
+            <h2>Director: {{director}}</h2>
+            <p>Stars</p>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            <ul class="time-ul">
+                {{#each showtimes}}
+                <li class="time-li">{{this}} |</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</div>

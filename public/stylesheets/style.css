@@ -4,5 +4,116 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+}
+
+.home{
+  color: white;
+}
+
+.home h1{
+  font-size: 7rem;
+  margin: 150px auto 50px auto;
+  font-family: 'Righteous', sans-serif;
+}
+
+.home p{
+  font-size: 20px;
+  margin: 50px auto 50px auto;
+}
+
+.home a{
+  margin-top: 70px;
+}
+
+.home a:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 1px 8px 27px 2px rgba(255, 255, 255, 0.3);
+
+}
+
+.list-img {
+  margin: 0px ;
+  padding: 10px;
+  width: 220px;
+  border-radius: 25px;
+}
+
+.pelicula {
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid white;
+  box-shadow: 1px 8px 27px 2px rgba(255, 255, 255, 0.3);
+
+}
+
+.pelicula p{
+  margin-top: 20px;
+  color: white;
+}
+
+.pelicula a {
+  margin-bottom: 30px ;
+}
+
+.list h1 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 4rem;
+  color: white;
+  font-family: 'Righteous', sans-serif;
+
+}
+
+
+.list-btn a{
+  margin: 100px auto 100px auto;
+}
+
+.list-btn a:hover{
+  color: white;
+  background-color: black;
+  box-shadow: 1px 8px 27px 2px rgba(255, 255, 255, 0.3);
+
+}
+
+.bg-img{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.time-ul{
+  display: flex;
+}
+
+.time-li{
+  list-style: none;
+  margin-right: 10px;
+}
+
+.single-btn {
+  margin-top: 10px;
+}
+
+.single-btn:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 1px 8px 27px 2px rgba(255, 255, 255, 0.3);
+
+}
+
+.single{
+  color: white;
+}
+
+.single-img{
+  width: 350px;
+  margin: 25% 10%;
+  box-shadow: 1px 8px 27px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }

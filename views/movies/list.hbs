@@ -1,0 +1,20 @@
+<div class="container list">
+    <img class="p-0 m-0 bg-img" src="./../../images/listbg.jpg" alt="fondo">
+    <div class="row d-flex flex-row justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
+            <h1>NUESTRAS PELÍCULAS</h1>
+        </div>
+        {{#each movies}}
+        <div class="col-2 m-4 d-flex flex-column align-items-center justify-content-center pelicula">
+            <img class="list-img" src="{{image}}" alt="portada de película">
+            <p>{{title}}</p>
+            <a href="/peliculas/{{id}}">Ver más</a>
+        </div>
+        {{/each}}
+
+        <div class="col-12 d-flex justify-content-center list-btn"><a class="btn btn-lg btn-light" href="/"
+                role="button">Volver</a>
+        </div>
+    </div>
+
+</div>
