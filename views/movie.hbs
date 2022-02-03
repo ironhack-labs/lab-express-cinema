@@ -1,0 +1,22 @@
+<div class="papaMovieDiv">
+    <div>
+        <img src="{{results.image}}" alt="movie-img">
+    </div>
+    <div class="detailsDiv">
+        <a href="/movies">Go back</a>
+        <h2>{{results.title}}</h2>
+        <h3>Director: {{results.director}}</h3>
+        <p>Stars</p>
+        <ul>
+            {{#each results.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{results.description}}</p>
+        <p>
+            {{#each results.showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+    </div>
+</div>
