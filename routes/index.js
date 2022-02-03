@@ -1,7 +1,23 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-/* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+const Movie = require("../models/Movie.model")
 
-module.exports = router;
+router.get('/', (req, res, next) => res.render('index'))
+
+router.get("/movies", (req, res) => {
+    Movie
+        .find()
+        .then(movies => res.render("movies", { movies }))
+        .catch(err => console.log(err))
+})
+
+router.get("/movie/:movieId", (req, res) => {
+    const { movieId } = req.params
+    Movie
+        .findById(movieId)
+        .then(movie => res.render("movieid", movie))
+        .catch(err => console.log(err))
+})
+
+module.exports = router
