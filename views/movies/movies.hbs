@@ -1,0 +1,24 @@
+<main>
+    <div class="container">
+        <h1>WELCOME TO OUR CINEMA</h1>
+        <p>Check this movies, most of them old by today standards</p>
+        <div class="row">
+            {{#each movies}}
+            <div class="col-md-4">
+                <div class="card" style="max-width: 18rem;">
+                    <img src={{image}} class="card-img-top" alt="{{title}} image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+
+                    </div>
+
+                    <div class="card-body">
+                        <a href="/details/{{_id}}" class="card-link">See details</a>
+
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</main>

@@ -6,3 +6,37 @@ body {
 a {
   color: #00B7FF;
 }
+
+.home{
+  background-image:url('/images/cinema.jpg');
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  color: white;
+  height: 80vh;
+  
+}
+.details{
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.schedule{
+  display: flex;
+}
+.time{
+  list-style: none;
+  margin-left: 5px;
+}
+.btn{
+  border-radius: 15px;
+  background-color: rgba(221, 153, 5, 0.849);
+  border-color: rgb(158, 110, 8);
+}

@@ -1,0 +1,36 @@
+<main class="details">
+
+    <div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src={{image}} class="img-fluid rounded-start" alt="{{title}} image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{director}}</p>
+                        <p class="card-text"><small class="text-muted">Stars</small></p>
+                        <ul>
+                            {{#each stars}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <p class="card-text">{{description}}</p>
+                        <ul class="schedule">
+                            {{#each showtimes}}
+                            <li class="time">{{this}} |</li>
+                            {{/each}}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="/movies">Back</a>
+
+    </div>
+
+</main>
