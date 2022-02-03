@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+.init{
+  background-image: url("../images/cinema.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.init h1{
+  color: white;
+  font-size: 80px;
+}
