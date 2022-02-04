@@ -1,6 +1,7 @@
 // IMPORTACION
 const { time } = require("console")
 const mongoose = require("mongoose")
+const { isArray } = require("util")
 
 //SCHEMA
 const movieSchema = mongoose.Schema({
@@ -13,6 +14,10 @@ const movieSchema = mongoose.Schema({
         type:String,
         required: true
     },
+    stars : {
+        type: [String],
+        required: true
+    },
     image: {
         type:String,
         required: true
@@ -22,7 +27,7 @@ const movieSchema = mongoose.Schema({
         required: true
     },
     showtimes: {
-        type:[String],
+        type: [String],
         required: true
     },
 
