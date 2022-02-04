@@ -1,0 +1,20 @@
+<h1>IronHack Cinema</h1>
+
+<p>Click on the movie to chek the showtime!</p>
+
+<ul>
+ {{#each movies}}
+
+    <img src="{{images}}"> 
+    {{title}} 
+    
+    <form>
+        <a href="/movies/{{id}}" alt="cartelera de estrenos"> See More </a>
+
+    </form>
+
+
+{{/each}}
+
+</ul>
+
