@@ -3,6 +3,25 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+/* a {
   color: #00B7FF;
+} */
+
+.botoncinema{
+
+  background-color: white ;
+  color: red;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px;
+  position: relative
+}
+
+.botoncinema::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 510px;
+  left: 510px;
 }
