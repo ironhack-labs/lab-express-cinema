@@ -1,8 +1,11 @@
-<h1>Funciona</h1>
+<h1>Películas</h1>
 <hr>
 <div>
 {{#each movies}}
+<h2>{{title}}</h2>
 <p>{{director}}</p>
+<img src="{{image}}" alt="{{title}}">
+<a href="../moviesID{{id}}">See more</a>
 {{/each}}
 </div>
 

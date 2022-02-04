@@ -10,6 +10,12 @@ router.get('/movies', (req, res)=> {
     .then(movies => res.render('movies', {movies}))
     .catch(err => console.log(err))
 })
+router.get('/movies/:id', (req, res) => {
 
+    Movies
+      .getMovie(req.params.id)
+      .then(movieFromApi => res.render('moviesID', { moviesId: movieFromApi }))
+      .catch(error => console.log(error));
+  })
 
 module.exports = router;
