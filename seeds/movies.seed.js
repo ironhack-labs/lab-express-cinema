@@ -1,4 +1,8 @@
 // To insert in "seeds/movies.seed.js"
+require("dotenv").config();
+require("../db");
+const Movie = require("../models/Movie.model");
+
 
 const movies = [
     {
@@ -84,5 +88,18 @@ const movies = [
   ];
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+
+
   
-  // ... your code here
+Movie
+  .create(movies)
+  .then(() => {
+    console.log(`${movies.length} movies created `)
+  })
+  .catch((err) => console.log("Connection failed", err))
+
+Movie.deleteMany()
+  .then(() => Movie.create(movies))
+  .finally(() => {
+    process.exit();
+  });

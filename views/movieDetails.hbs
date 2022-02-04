@@ -1,0 +1,27 @@
+
+<h2><a href="/movies">Back to hoarding</a></h2>
+
+<img src="{{image}}" alt="{{title}}">
+<br>
+
+{{title}}
+
+{{director}}
+
+{{#with stars}}
+        {{#each this as | star |}}
+            <ul>
+                <li>{{star}}</li>
+            </ul>
+        {{/each}}
+{{/with}}
+
+{{description}}
+<br>
+
+{{#with showtimes}}
+    {{#each this as | time |}}
+        {{time}} 
+    {{/each}}
+{{/with}}
+
