@@ -10,3 +10,9 @@ a {
 #home-background {
   background-image: url(../images/cinema.jpg);
 }
+
+.tile{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
