@@ -1,0 +1,11 @@
+<div class='container'>
+<h1>Lista de super pelis</h1>
+<ul>
+{{#each movies}}
+<img src="{{image}}" alt="fotillas">
+<li>{{title}}</li>
+<li>{{description}}</li>
+<a href="theMovie/{{_id}}">See More</a>
+{{/each}}
+</ul>
+</div>
