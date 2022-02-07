@@ -1,0 +1,19 @@
+<section class="movie-details">
+    <img src={{this.image}} alt="pic"/>
+
+    <div>
+        <a href="/movies">Back</a>
+        <h2>{{this.title}}</h2>
+        Director:
+        {{this.director}}<br />
+        Stars
+        <ul>
+            {{#each star}}
+            <li>{{star}}</li>
+            {{/each}}
+        </ul>
+        {{this.description}}
+        {{this.showtimes}}
+
+    </div>
+</section>

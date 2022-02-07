@@ -1,10 +1,15 @@
-<h1>Movies in our DB:</h1>
-
+<h1>Ironhack Cinema:</h1>
+<h3>Click see more to check the showtimes!</h3>
 {{#each movies}}
   <section class="movie-summary">
     <h2>{{this.title}}</h2>
-    <img src={{this.image}} alt="movie image" />
+    <img src={{this.image}} alt="movie image" /><br>
     <a href="/movies/{{this._id}}">See more</a>
+  <div>
+      <form action="/movies/{{_id}}/delete" method="POST">
+        <button>Delete</button>
+      </form>
+  </div>
 
   </section>
 {{/each}}
