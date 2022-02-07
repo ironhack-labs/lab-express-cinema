@@ -1,0 +1,25 @@
+<h2>Add a movie to the list</h2>
+
+<form action="/movies/create" method="post">
+  <label> Title:
+    <input type="text" name="title" />
+  </label>
+
+  <label> Director:
+    <input type="text" name="director" />
+  </label>
+
+  <label> Stars:
+    <input type="text" name="stars" />
+  </label>
+
+  <label> Description:
+    <textarea name="description" cols="30" rows="4"> </textarea>
+  </label>
+
+  <label> Timeschedule:
+    <input type="time" name="time"/>
+  </label>
+
+  <button type="submit"> Create </button>
+</form>
