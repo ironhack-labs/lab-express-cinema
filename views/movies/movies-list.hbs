@@ -1,15 +1,22 @@
-<h1>Ironhack Cinema:</h1>
-<h3>Click see more to check the showtimes!</h3>
-{{#each movies}}
-  <section class="movie-summary">
-    <h2>{{this.title}}</h2>
-    <img src={{this.image}} alt="movie image" /><br>
-    <a href="/movies/{{this._id}}">See more</a>
-  <div>
-      <form action="/movies/{{_id}}/delete" method="POST">
-        <button>Delete</button>
-      </form>
-  </div>
+<div class="head"><h1>Ironhack Cinema:</h1>
+  <h3>Click see more to check the showtimes!</h3></div>
 
-  </section>
-{{/each}}
+<section class="movie-summary">
+  {{#each movies}}
+    <div class="movie-details">
+      <img src={{this.image}} alt="movie image" />
+      <h2>{{this.title}}</h2>
+      <div class="actions">
+        <a class="button" href="/movies/{{this._id}}">See more</a>
+        <a class="button" href="/movies/{{this._id}}/edit">Edit</a>
+      </div>
+
+      <form action="/movies/{{_id}}/delete" method="POST">
+        <button class="button">Delete</button>
+      </form>
+
+    </div>
+  {{/each}}
+</section>
+
+<a href="/movies/create">Create</a>
