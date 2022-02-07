@@ -30,12 +30,8 @@ const index = require('./routes/index');
 app.use('/', index);
 
 const movies = require("./routes/movies");
-<<<<<<< HEAD
-// app.use("/movies", movies)
-=======
 app.use("/movies", movies);
 
->>>>>>> e1480fb7a48f02a015c67e9b363128759e9eecdc
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
