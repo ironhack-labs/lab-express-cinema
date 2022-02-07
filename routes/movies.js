@@ -9,7 +9,11 @@ router.get('/', (req, res, next) => {
     Movie.find()
     .then((moviesFromDB) => {
 
-        res.render('movies', {movies: moviesFromDB});
+        if (req.query.created) {
+            res.render('movies', {movies: moviesFromDB, createdSuccess: req.query.created});
+        } else {
+            res.render('movies', {movies: moviesFromDB});
+        };
     })
     .catch((err) => {
         console.log('Error getting movies from DB: ', err);
@@ -33,18 +37,19 @@ router.get('/:movieId', (req, res, next) => {
 })
 
 
-/*
 router.post('/create', (req, res) => {
     
-    const {title, director, stars, showtimes, image} = req.body;
+    let {title, director, stars, showtimes, image} = req.body;
+    stars = stars.split(",");
+
     Movie.create({title, director, stars, showtimes, image})
     .then(() => {
-        res.redirect("/movies");
+        res.redirect("/movies?created=true");
     })
     .catch((err) => {
         console.log('Something went wrong creating new Movie: ', err);
-    })
-})
-*/
+    });
+});
+
 
 module.exports = router;

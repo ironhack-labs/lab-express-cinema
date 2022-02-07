@@ -73,6 +73,10 @@ body {
   text-align: center;
 }
 
+.card > img {
+  width: 182px;
+}
+
 #movie-details {
   display: flex;
   justify-content: flex-start;
@@ -89,6 +93,7 @@ body {
 
 #movie-details > img {
   margin: 0px 20px -10px 20px;
+  width: 182px;
 }
 
 #movie-action-btns {
