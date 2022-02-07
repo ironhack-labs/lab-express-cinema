@@ -17,6 +17,10 @@ router.get('/', (req, res, next) => {
 
 });
 
+router.get('/create', (req, res) => {
+    res.render("movie-create");
+});
+
 router.get('/:movieId', (req, res, next) => {
 
     Movie.findById(req.params.movieId)
@@ -27,5 +31,20 @@ router.get('/:movieId', (req, res, next) => {
         console.log("Error getting movie details from DB: ", err);
     });
 })
+
+
+/*
+router.post('/create', (req, res) => {
+    
+    const {title, director, stars, showtimes, image} = req.body;
+    Movie.create({title, director, stars, showtimes, image})
+    .then(() => {
+        res.redirect("/movies");
+    })
+    .catch((err) => {
+        console.log('Something went wrong creating new Movie: ', err);
+    })
+})
+*/
 
 module.exports = router;

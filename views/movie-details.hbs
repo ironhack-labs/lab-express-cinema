@@ -1,16 +1,14 @@
 <div class="header">
-        <h2>
-            Movie details
-        </h2>
-        <a class="button" href="/movies">Go back</a>
-    </div>
+    <h2> Movie details </h2>
+    <a class="button" href="/movies/create">Go back</a>
+</div>
 
 <div id="movie-details">
     <img src="{{movie.image}}" alt="{{movie.title}}">
     <div class="text-container">
         <h3>{{movie.title}}</h3>
         <h4>Director: {{movie.director}}</h4>
-        <h5>Stars:</h5>
+        <h4>Stars:</h4>
         <ul>
             {{#each movie.stars }}
                 <li>{{this}}</li>
