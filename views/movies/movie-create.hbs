@@ -1,0 +1,36 @@
+<h2>Add new movie to database:</h2>
+
+<form action="/movies/create" method="post">
+  <label>
+    Title:
+    <input type="text" name="title" />
+  </label>
+
+  <label>
+    Director:
+    <input type="text" name="director" />
+  </label>
+
+  <label>
+    Stars:
+    <input type="text" name="stars" />
+  </label>
+
+  <label>
+    Description:
+    <textarea name="description" cols="30" rows="4">
+    </textarea>
+  </label>
+
+  <label>
+    Showtimes:
+    <input type="text" name="showtimes" />
+  </label>
+
+  <label>
+    Image url:
+    <input type="url" name="image" />
+  </label>
+
+  <button>Save new movie</button>
+</form>

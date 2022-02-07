@@ -1,3 +1,5 @@
+<a href="/movies">Go back</a>
+
 <section id="movie-details">
   <img src="{{this.image}}" alt="{{this.title}}" />
 
@@ -18,5 +20,15 @@
       <li>{{this}}</li>
     {{/each}}
   </ul>
+
+  <button>
+    <a href="/movies/{{this._id}}/edit">Edit</a>
+  </button>
+
+  <form action="/movies/{{this._id}}/delete" method="POST">
+    <button>
+      Delete movie
+    </button>
+  </form>
 
 </section>
