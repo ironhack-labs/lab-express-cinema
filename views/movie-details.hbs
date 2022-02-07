@@ -1,8 +1,7 @@
-<div class="row">
+<div class="column">
     <div class="left">
-        <img src="{{movie.image}}" alt="">
+        <img class="movies-img" src="{{movie.image}}" alt="">
     </div>
-
     <div class="right">
         <p><a href="/movies">Back</a></p>
         <h2>{{movie.title}}</h2>
@@ -14,10 +13,11 @@
             {{/each}}
         </ul>
         <p>{{movie.description}}</p>
-        <p>{{#each movie.showtimes}}
-            <li>{{this}}</li>
-            {{/each}}
+        <p><strong>
+                {{#each movie.showtimes}}
+                <span>{{this}} | </span>
+                {{/each}}
+            </strong>
         </p>
     </div>
-
 </div>

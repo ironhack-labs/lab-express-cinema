@@ -1,12 +1,17 @@
-<h1>Ironhack Cinema</h1>
+<div class="movies">
+    <h1>Ironhack Cinema</h1>
 
-<p>Click on the movies to see the showtimes!</p>
+    <p>Click on the movies to see the showtimes!</p>
 
-{{#each movies}}
-<section class="movie-list">
-    <img src="{{this.image}}" alt="">
-    <h2>{{this.title}}</h2>
-    <p><a href="movies/{{_id}}">See more</a>
-    </p>
-</section>
-{{/each}}
+</div>
+
+<div class="movies-grid">
+    {{#each movies}}
+    <div>
+        <img src="{{this.image}}" alt="">
+        <h2>{{this.title}}</h2>
+        <p><a href="movies/{{_id}}">See more</a>
+        </p>
+    </div>
+    {{/each}}
+</div>
