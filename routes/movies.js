@@ -77,7 +77,6 @@ router.get("/movies-list", (req, res, next) => {
     Movie
       .findByIdAndUpdate(movieId, newDetails)
       .then(() => {
-        console.log("i changed something!!!")
         res.redirect("/movies-list");
       })
       .catch((err) => console.log("Error updating book  ", err));
