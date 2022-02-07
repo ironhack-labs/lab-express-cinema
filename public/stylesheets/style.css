@@ -50,3 +50,13 @@ body {
   padding: 1rem;
   text-align: center;
 }
+
+#movie-details {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+#movie-details > img {
+  margin: 0px 20px;
+}
