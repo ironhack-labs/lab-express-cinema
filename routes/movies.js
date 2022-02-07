@@ -74,9 +74,9 @@ router.post("/:movieId/edit", (req, res, next) => {
 
 //====== Create route to delete movie
 router.post("/:movieId/delete", (req, res, next) => {
-  const movieId = req.params.bookId;
+  const movieId = req.params.movieId;
 
-  Book.findByIdAndDelete(movieId)
+  Movie.findByIdAndDelete(movieId)
     .then(() => {
       res.redirect("/movies");
     })
