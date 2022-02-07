@@ -12,4 +12,17 @@ router.get("/", (req, res, next) => {
     });
 });
 
+//== Create route to /movies/movie-details
+router.get("/:movieId", (req, res, next) => {
+  const movieId = req.params.movieId;
+
+  Movie.findById(movieId)
+    .then((movieDetails) => {
+      res.render("movies/movie-details", movieDetails);
+    })
+    .catch((err) => {
+      console.log("Error getting movies details", err);
+    });
+});
+
 module.exports = router;
