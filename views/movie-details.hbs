@@ -1,0 +1,16 @@
+
+<section class="book-details">
+  <img src="{{movieDet.image}}" alt="{{movieDet.title}}" />
+  <div>
+  <h2>{{movieDet.title}}</h2>
+  <p>Director: {{movieDet.director}} <br>
+  Stars: 
+  {{movieDet.stars}} <br>
+  {{movieDet.description}} <br>
+  ShowTimes: {{movieDet.showtimes}}
+  </p>
+      <form action="/movies/{{movieDet._id}}/delete" method="POST">
+      <button>Delete This Movie</button>
+    </form>
+</section>
+
