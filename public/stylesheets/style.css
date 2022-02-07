@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index {
+  background-image: url("/images/cinema.jpg");
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
