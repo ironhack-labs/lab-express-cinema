@@ -8,7 +8,6 @@ const movieSchema = new Schema(
     image: String,
     description: String,
     showtimes: Array,
-    
   },
   {
     timestamps: true

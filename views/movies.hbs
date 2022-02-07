@@ -1,0 +1,17 @@
+
+IS it working
+
+{{#each movies}}
+
+
+<section class="books-summary">
+<h2>{{this.title}}</h2>
+<p>
+    Author: {{this.author}} <br />
+    Rating: {{this.rating}} <br />
+   
+    <a href="/movies/{{this._id}}/edit">Edit</a> |
+</p>
+
+</section>
+{{/each}}
