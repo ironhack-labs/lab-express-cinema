@@ -86,7 +86,7 @@ const movies = [
 const mongoose = require('mongoose');
 const Cinema = require('../../models/Cinema.model');
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/library-project';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/lab-express-cinema';
 
 mongoose
   .connect(MONGO_URI)

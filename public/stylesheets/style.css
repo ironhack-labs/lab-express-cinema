@@ -34,3 +34,28 @@ button {
   color: rgba(128, 128, 128, 0.767);
   padding: 30px
 }
+
+
+h2 {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+h3 {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 60px;
+}
+
+.movie {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+
+}
+
+.movie > img {
+  height: 300px;
+}
+
