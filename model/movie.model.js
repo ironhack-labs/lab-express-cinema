@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
- 
+
 const movieSchema = new Schema(
   {
     title: String,
@@ -14,5 +14,5 @@ const movieSchema = new Schema(
     timestamps: true
   }
 );
- 
-module.exports = model('Movie', movieSchema);
+
+module.exports = model('Movies', movieSchema);

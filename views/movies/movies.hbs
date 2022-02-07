@@ -1,0 +1,14 @@
+{{#each movies}}
+<section class="movies-summary">
+        <h2>{{this.title}}</h2>
+        <p>
+            Director: {{this.author}} <br />
+            Stars: {{this.rating}}  <br />
+            <img src="" alt="">
+            <a href="/movies/{{this.id}}">More details</a>
+            <a href="/movies/{{this.id}}/edit">Edit</a>
+            
+        </p>
+    </section>
+{{/each}}
+<a href="/">Home</a>
