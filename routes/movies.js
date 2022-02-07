@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const Movie = require("../models/Movie.model");
 
-//== Create route to /movies
+//== Create route to movies list
 router.get("/", (req, res, next) => {
   Movie.find()
     .then((moviesFromDB) => {
@@ -12,12 +12,12 @@ router.get("/", (req, res, next) => {
     });
 });
 
-//===== Create GET-route /movies/create
+//===== Create GET-route to create movie
 router.get("/create", (req, res, next) => {
   res.render("movies/movie-create");
 });
 
-// ===== Create POST-route movies/create submit page
+// ===== Create POST-route to create movie
 router.post("/create", (req, res, next) => {
   const { title, director, stars, description, image, showtimes } = req.body;
   const newDetails = req.body;
@@ -31,7 +31,7 @@ router.post("/create", (req, res, next) => {
     });
 });
 
-//== Create route to /movies/movie-details
+//== Create route to movie-details
 router.get("/:movieId", (req, res, next) => {
   const movieId = req.params.movieId;
 
@@ -44,7 +44,7 @@ router.get("/:movieId", (req, res, next) => {
     });
 });
 
-// Create route to update movie details
+// Create GET-route to edit movie details
 router.get("/:movieId/edit", (req, res, next) => {
   const movieId = req.params.movieId;
 
@@ -57,9 +57,9 @@ router.get("/:movieId/edit", (req, res, next) => {
     });
 });
 
-// Create route for edit movie details
+// Create POST-route to edit movie details
 router.post("/:movieId/edit", (req, res, next) => {
-  const movieId = req.params.bookId;
+  const movieId = req.params.movieId;
   const { title, director, stars, description, image, showtimes } = req.body;
   const newDetails = req.body;
 
