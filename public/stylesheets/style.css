@@ -51,6 +51,12 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+}
+
+.moviesDetails {
+  display: flex;
+  flex-direction: column;
 }
 
 .movie {
@@ -58,11 +64,17 @@ h3 {
   color: white;
   font-size: 20px;
   width: 400px;
-
 }
 
 .movie > img {
   height: 300px;
   box-shadow: 10px 5px 5px black;
+}
+
+label {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 20px;
+  width:100px;
 }
 
