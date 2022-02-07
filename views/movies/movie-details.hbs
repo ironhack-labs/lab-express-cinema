@@ -1,0 +1,26 @@
+
+<section>
+    <img src="{{image}}" alt="{{title}} poster">
+    <h2>
+        {{title}} <br>
+    </h2>
+    <h3>
+        {{director}}
+    </h3>
+
+    <h4>
+        Stars:
+    </h4>
+        {{#each stars}}
+            <li>{{this}}</li>
+        {{/each}}       
+    <p>
+        <h3>Description:</h3> {{description}}
+    </p>
+</section>
+
+
+
+
+
+<a href="/movies-list">Back</a>

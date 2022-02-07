@@ -1,0 +1,34 @@
+<h1>Edit movies here...</h1>
+
+<form action="/movies-list/{{movie.id}}/edit" method="post">
+  <label> Title:
+    <input type="text" name="title" value="{{movie.title}}" />
+  </label>
+
+  <label> Director:
+    <input type="text" name="director" value="{{movie.director}}" />
+  </label>
+ 
+  <label> Stars:
+    <input type="text" name="stars" value="all the stars are here"/>
+  </label>
+  
+  <label> Image:
+    <input type="text" name="image" value="{{movie.image}}"/>
+  </label>
+
+  <label> Description:
+    <textarea name="description" cols="30" rows="4">{{movie.description}} </textarea>
+  </label>
+
+   <label> Showtimes:
+    <input type="time" name="showtimes" value="enter the new time"/>
+  </label>
+
+
+  <button type="submit"> Create </button>
+</form>
+
+<br>
+
+<a href="/">Back</a>

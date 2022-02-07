@@ -1,8 +1,18 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(196, 255, 255);
 }
 
 a {
   color: #00B7FF;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  margin: 20px;
 }
