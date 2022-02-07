@@ -1,0 +1,18 @@
+<div class="mx-5">
+    <h1 class="mt-5 ">Ironhack Cinema</h1>
+    <h3>Click on the movie to check the showtimes!</h3>
+</div>
+<div id="movies-list">
+
+    {{#each movies }}
+    <div class ="mx-5 mb-5">
+        <img src="{{this.image}}" alt="..." id="movie-image" />
+        <div class="card-info ">
+            <p class="mt-3">{{this.title}}</p>
+            <a href="/movies/{{this._id}}">See more</a>
+        </div>
+    </div>
+    {{/each}}
+
+ 
+</div>
