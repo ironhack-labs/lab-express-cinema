@@ -47,15 +47,22 @@ h3 {
   color: white;
   font-size: 60px;
 }
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .movie {
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
+  width: 400px;
 
 }
 
 .movie > img {
   height: 300px;
+  box-shadow: 10px 5px 5px black;
 }
 

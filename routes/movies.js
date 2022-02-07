@@ -4,8 +4,27 @@ const router = require("express").Router();
 const { rawListeners } = require("../app");
 const Movies = require("../models/cinema.model");
 
+
+// router.get("/:movieId", (req, res, next) => {
+//     Movies.findById(req.params.movieId)
+//       .then( movie => {
+//         res.render("movies/movie-details", movie);
+//       })
+//       .catch();
+//   });
+  
+
+router.get("/details/:id", (req, res, next) => {
+    console.log("showing: " + req.params.id)
+    Movies.findById(req.params.id)
+      .then( movie => {
+        res.render("movie-details", movie);
+      })
+      .catch();
+  });
+
 router.get("/show", (req, res, next) => {
-  console.log("page show");
+
   Movies.find()
     .then( movies => {
       res.render("movies-list", {movies});
@@ -39,13 +58,6 @@ router.post('/create', (req, res, next) => {
 })
 
 
-router.get("/:movieId", (req, res, next) => {
-  Movies.findById(req.params.movieId)
-    .then( movie => {
-      res.render("moviess/movie-details", movie);
-    })
-    .catch();
-});
 
 
 router.get("/:movieId/edit", (req, res, next) => {
