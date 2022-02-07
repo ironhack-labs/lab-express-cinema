@@ -9,8 +9,8 @@ router.get('/', (req, res, next) => {
     Movie.find()
     .then((moviesFromDB) => {
 
-        if (req.query.created) {
-            res.render('movies', {movies: moviesFromDB, createdSuccess: req.query.created});
+        if (req.query) {
+            res.render('movies', {movies: moviesFromDB, priorAction: req.query});
         } else {
             res.render('movies', {movies: moviesFromDB});
         };
@@ -48,6 +48,17 @@ router.post('/create', (req, res) => {
     })
     .catch((err) => {
         console.log('Something went wrong creating new Movie: ', err);
+    });
+});
+
+router.get('/:movieId/delete', (req, res) => {
+
+    Movie.findByIdAndDelete(req.params.movieId)
+    .then(() => {
+        res.redirect("/movies/?deleted=true");
+    })
+    .catch((err) => {
+        console.log("Error deleting movie from DB: ", err);
     });
 });
 

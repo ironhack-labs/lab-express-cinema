@@ -1,8 +1,11 @@
 <div id="movies-overview">
 
     <div>
-        {{#if createdSuccess}}
+        {{#if priorAction.created}}
             <h2>Movie successfully added!</h2>
+        {{/if}}
+        {{#if priorAction.deleted}}
+            <h2>Movie successfully deleted!</h2>
         {{/if}}
     </div>
 
