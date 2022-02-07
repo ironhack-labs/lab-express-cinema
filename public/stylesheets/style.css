@@ -1,8 +1,147 @@
+* {
+  /* background-color: pink; */
+  /* outline: 1px solid red; */
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* INDEX */
+
+#global-container {
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+}
+
+#title-and-button-container {
+  margin-right: 20%;
+  margin-top: 5%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#title-and-button-container h1 {
+  color: white;
+  font-size: 8em;
+  font-weight: 900;
+
+}
+
+#check-the-movies {
+
+  font-size: 2em;
+  color: lightseagreen;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 20px;
+  margin: 30px;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+/* MOVIES */
+
+#header-container-movies {
+ margin: 30px 60px;
+ font-size: 1.5em;
+ font-weight: 600;
+}
+
+#images-container-movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.subcontainer-movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.subcontainer-movies img {
+  width: 15vw;
+}
+
+.subcontainer-movies h4 {
+  margin: 20px auto;
+}
+
+
+/* MOVIE DETAILS */
+
+#global-container-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 50px;
+  background-color: aliceblue;
+
+}
+
+#img-details {
+  height: 70vh;
+}
+
+#text-container-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px 100px;
+}
+
+#text-container-details a {
+  margin: 20px 0px;
+  font-size: 1.3em;
+
+}
+
+
+#text-container-details h2 {
+  margin: 15px 0px;
+}
+
+#text-container-details h3 {
+  margin: 20px 0px;
+}
+
+
+#text-container-details h4 {
+  margin: 10px 0px;
+
+}
+
+
+#text-container-details ul {
+  margin: 10px 20px;
+  font-size: 1.1em;
+}
+
+#text-container-details p {
+  margin: 20px 0px;
+  width: 40%;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }

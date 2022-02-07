@@ -1,0 +1,20 @@
+<div id="global-container-details">
+    <img id="img-details" src={{movieDetails.image}} alt="movie image">
+    <div id="text-container-details">
+        <a href="/movies">Go back</a>   
+        <h2>{{movieDetails.title}}</h2>
+        <h3>Director: {{movieDetails.director}}</h3>
+        <h4>Stars</h4>
+        <ul>
+            {{#each movieDetails.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movieDetails.description}}</p>
+        <div id="show-times-container">
+            {{#each movieDetails.showTimes}}
+            <div>{{this}}</div>
+            {{/each}}
+        </div>
+    </div>
+</div>
