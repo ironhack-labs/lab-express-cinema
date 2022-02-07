@@ -4,6 +4,37 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.header {
+  height: 10vh;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-position: bottom left;
+  color: white;
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  color: #00B7FF;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin: 10px 10px 0px 0px;
+}
+
+.button-dark {
+  background-color: #010521;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 10px 10px 0px 0px;
+}
+
 #landing-page {
   height:100vh;
   background-image: url("../images/cinema.jpg");
@@ -21,29 +52,18 @@ body {
   flex-direction: column;
 }
 
-
 #landing-page h1 {
   color: white;
   font-size: 6rem;
 }
 
-#landing-page a {
-  text-decoration: none;
-  color: #00B7FF;
-  background-color: white;
-  border-radius: 15px;
-  padding: 15px;
-}
-
-#movies-overview {
-  margin: 10px 40px;
-}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 1rem;
+  margin-top: 20px;
 }
 
 .card {
@@ -57,6 +77,21 @@ body {
   margin-top: 20px;
 }
 
+#movie-details h1, h2, h3, h4, h5, h6 {
+  line-height: 0.2em;
+}
+
+#movie-details ul {
+  line-height: 1.5em;
+}
+
 #movie-details > img {
-  margin: 0px 20px;
+  margin: 0px 20px -10px 20px;
+}
+
+#movie-action-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
 }

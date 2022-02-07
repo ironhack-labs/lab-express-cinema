@@ -1,10 +1,16 @@
+<div class="header">
+        <h2>
+            Movie details
+        </h2>
+        <a class="button" href="/movies">Go back</a>
+    </div>
+
 <div id="movie-details">
     <img src="{{movie.image}}" alt="{{movie.title}}">
     <div class="text-container">
-        <a href="/movies">Go back</a>
-        <h2>{{movie.title}}</h2>
-        <h3>Director: {{movie.director}}</h3>
-        <h4>Stars:</h4>
+        <h3>{{movie.title}}</h3>
+        <h4>Director: {{movie.director}}</h4>
+        <h5>Stars:</h5>
         <ul>
             {{#each movie.stars }}
                 <li>{{this}}</li>
@@ -15,5 +21,13 @@
             <span>{{this}} | </span>
             {{/each}}
         </p>
+        <div id="movie-action-btns">
+            <div class="button-container">
+                <a class="button-dark" href="/movies/edit">Edit Movie</a>
+            </div>
+            <div class="button-container">
+                <a class="button-dark" href="/movies/edit">Remove Movie</a>
+            </div>
+        </div>
     </div>
 </div>
