@@ -13,9 +13,11 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/:movieId", (req, res, next) => {
-    Book.findById(req.params.bookId)
-      .then( book => {
-        res.render("books/book-id", book);
+    Movie.findById(req.params.movieId)
+      .then( movie => {
+        //   console.log(movie)
+        res.render("movie-id", movie);
+        // res.send("cheak")
       })
       .catch();
   });

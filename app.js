@@ -12,7 +12,7 @@ const express = require('express');
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
-//const moviesModel = require('./model/movies.model');
+// const moviesModel = require('./model/movies.model');
 
 const app = express();
 
