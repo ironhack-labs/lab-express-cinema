@@ -31,7 +31,7 @@ div > a {
   border-radius: 1em;
 }
 
-section {
+.movies {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -47,4 +47,20 @@ article {
 article > img {
   width: 50%;
   height: auto;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.movie-details > img {
+  width: 15%;
+  height: auto;
+  margin: 0;
+}
+
+.movie-details > article {
+  align-items: flex-start;
 }
