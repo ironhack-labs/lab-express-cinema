@@ -1,29 +1,33 @@
 <header class="header">
-    <h2>Add a new Movie to the DB</h2>
+    <h2>Add a new Movie to the Ironhack Database</h2>
     <a class="button" href="/movies">Go Back</a>
 </header>
 
-<form id="create-movie" method="post" 
-{{#if movie}}
-action="/movies/{{movie._id}}/edit"
-{{else}}
-action="/movies/create" 
-{{/if}}>
-    <label>
-        Title:
-        <input type="text" name="title" {{#if movie}} value="{{movie.title}}" {{/if}}>
-    </label>
-    <label>
-        Director:
-        <input type="text" name="director" {{#if movie}} value="{{movie.director}}" {{/if}}>
-    </label>
-    <label>
-        Image URL:
-        <input type="url" name="image" {{#if movie}} value="{{movie.image}}" {{/if}}>
-    </label>
-    <label >
-        Stars:
-        <input type="text" name="stars" {{#if movie}} value="{{movie.stars}}" {{/if}}>
-    </label>
-    <button class="button-dark" type="send">{{#if movie}} Edit {{else}} Create {{/if}}</button>
-</form>
+<div class="form-container">
+
+    <form id="movie-form" method="post" 
+    {{#if movie}}
+    action="/movies/{{movie._id}}/edit"
+    {{else}}
+    action="/movies/create" 
+    {{/if}}>
+        <label>
+            Title
+            <input type="text" name="title" {{#if movie}} value="{{movie.title}}" {{/if}}>
+        </label>
+        <label>
+            Director
+            <input type="text" name="director" {{#if movie}} value="{{movie.director}}" {{/if}}>
+        </label>
+        <label>
+            Image URL
+            <input type="url" name="image" {{#if movie}} value="{{movie.image}}" {{/if}}>
+        </label>
+        <label >
+            Stars
+            <input type="text" name="stars" {{#if movie}} value="{{movie.stars}}" {{/if}}>
+        </label>
+        <button class="button-dark" type="send">{{#if movie}} Edit {{else}} Create {{/if}}</button>
+    </form>
+
+</div>
