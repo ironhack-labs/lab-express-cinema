@@ -19,5 +19,8 @@
                 {{/each}}
             </strong>
         </p>
+        <p><a href="{{movie._id}}/edit">Edit</a></p>
+        <p><form action="/movies/{{movie._id}}/delete" method="POST">
+    <button>Delete</button></p>
     </div>
 </div>
