@@ -5,10 +5,8 @@ const router = express.Router();
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-
     Movie.find()
     .then((moviesFromDB) => {
-
         if (req.query) {
             res.render('movies', {movies: moviesFromDB, priorAction: req.query});
         } else {
@@ -26,7 +24,6 @@ router.get('/create', (req, res) => {
 });
 
 router.get('/:movieId', (req, res, next) => {
-
     Movie.findById(req.params.movieId)
     .then((oneMovie) => {
         res.render("movie-details", {movie: oneMovie});
@@ -37,8 +34,7 @@ router.get('/:movieId', (req, res, next) => {
 })
 
 
-router.post('/create', (req, res) => {
-    
+router.post('/create', (req, res) => {    
     let {title, director, stars, showtimes, image} = req.body;
     stars = stars.split(",");
 
@@ -52,7 +48,6 @@ router.post('/create', (req, res) => {
 });
 
 router.get('/:movieId/delete', (req, res) => {
-
     Movie.findByIdAndDelete(req.params.movieId)
     .then(() => {
         res.redirect("/movies/?deleted=true");
@@ -62,5 +57,26 @@ router.get('/:movieId/delete', (req, res) => {
     });
 });
 
+router.get('/:movieId/edit', (req, res) => {
+    Movie.findById(req.params.movieId)
+    .then((theMovie) => {
+        res.render("movie-create.hbs", {movie: theMovie});
+    })
+    .catch((err) => {
+        console.log("Error getting movie from DB: ", err);
+    });
+});
+
+router.post('/:movieId/edit', (req, res) => {
+    let {title, director, image, stars} = req.body;
+    stars = stars.split(",");
+    Movie.findByIdAndUpdate(req.params.movieId, {title, director, image, stars})
+    .then(() => {
+        res.redirect("/movies/?updated=true");
+    })
+    .catch((err) => {
+        console.log("Error updating movie in DB: ", err);
+    });
+});
 
 module.exports = router;

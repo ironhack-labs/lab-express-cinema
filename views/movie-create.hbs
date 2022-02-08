@@ -3,26 +3,27 @@
     <a class="button" href="/movies">Go Back</a>
 </header>
 
-<form id="create-movie" action="/movies/create" method="post">
+<form id="create-movie" method="post" 
+{{#if movie}}
+action="/movies/{{movie._id}}/edit"
+{{else}}
+action="/movies/create" 
+{{/if}}>
     <label>
         Title:
-        <input type="text" name="title">
+        <input type="text" name="title" {{#if movie}} value="{{movie.title}}" {{/if}}>
     </label>
     <label>
         Director:
-        <input type="text" name="director">
+        <input type="text" name="director" {{#if movie}} value="{{movie.director}}" {{/if}}>
     </label>
     <label>
         Image URL:
-        <input type="url" name="image">
+        <input type="url" name="image" {{#if movie}} value="{{movie.image}}" {{/if}}>
     </label>
     <label >
         Stars:
-        <input type="text" name="stars">
+        <input type="text" name="stars" {{#if movie}} value="{{movie.stars}}" {{/if}}>
     </label>
-    <label>
-        Show Times:
-        <input type="time" name="showtimes">
-    </label>
-    <button class="button-dark" type="send">Create</button>
+    <button class="button-dark" type="send">{{#if movie}} Edit {{else}} Create {{/if}}</button>
 </form>
