@@ -20,7 +20,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/create', (req, res) => {
-    res.render("movie-create");
+    res.render("movie-form");
 });
 
 router.get('/:movieId', (req, res, next) => {
@@ -60,7 +60,7 @@ router.get('/:movieId/delete', (req, res) => {
 router.get('/:movieId/edit', (req, res) => {
     Movie.findById(req.params.movieId)
     .then((theMovie) => {
-        res.render("movie-create.hbs", {movie: theMovie});
+        res.render("movie-form.hbs", {movie: theMovie});
     })
     .catch((err) => {
         console.log("Error getting movie from DB: ", err);
