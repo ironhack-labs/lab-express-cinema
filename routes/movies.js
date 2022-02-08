@@ -57,9 +57,12 @@ router.get("/:movieId/edit", (req, res, next) => {
 
 router.post("/:movieId/edit", (req, res, next) => {
   const { movieId } = req.params;
+  let starsArr = req.body.stars.split("");
+
   const movie = {
     title: req.body.title,
     director: req.body.director,
+    stars: starsArr,
     description: req.body.description,
     time: req.body.showtimes,
   };
