@@ -12,7 +12,7 @@ module.exports.listMovies = (req, res, next) => {
 
 
 module.exports.movieDetails = (req, res, next) => {
-    
+    console.log(req.params);
     Movie.findById(req.params.id)
         .then(movie => { res.render('movie/movie-details', {movie: movie})
 
