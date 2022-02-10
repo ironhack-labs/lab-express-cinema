@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-image: url("https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg");
+}
