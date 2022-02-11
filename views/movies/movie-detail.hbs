@@ -1,19 +1,24 @@
-<div id="movie-detail">
-    <div>
-        <img src="{{movie.image}}" alt="">
-    </div>
-    <div>
-        <a href="/movies">Go back</a>
-        <h1>{{movie.title}}</h1>
-        <h2>Director: {{movie.director}}</h2>
-        <h3>Stars:</h3>
-        <ul>
-            <li>{{movie.stars.[0]}}</li>
-            <li>{{movie.stars.[1]}}</li>
-            <li>{{movie.stars.[2]}}</li>
-        </ul>
-        <p><strong>Description:</strong>{{movie.description}}</p>
-        <p><strong>Showtimes:</strong> {{movie.showtimes.[0]}} || {{movie.showtimes.[1]}} || {{movie.showtimes.[2]}} || {{movie.showtimes.[3]}} || {{movie.showtimes.[4]}}</p>
+<div class="add-border">
+    <div id="overcontainter">
+        <div id="movie-detail">
+            <div id="movie-poster">
+                <img src="{{movie.image}}" alt="">
+            </div>
+            <div id="movie-description">
+                <a href="/movies">Go back</a>
+                <h1>{{movie.title}}</h1>
+                <h2>Director: {{movie.director}}</h2>
+                <h3>Stars:</h3>
+                <ul>
+                    <li>{{movie.stars.[0]}}</li>
+                    <li>{{movie.stars.[1]}}</li>
+                    <li>{{movie.stars.[2]}}</li>
+                </ul>
+                <p><strong>Description: </strong>{{movie.description}}</p>
+                <p><strong>Showtimes: </strong> {{movie.showtimes.[0]}} || {{movie.showtimes.[1]}} || {{movie.showtimes.[2]}} || {{movie.showtimes.[3]}} || {{movie.showtimes.[4]}}</p>
+            </div>
+        </div>
     </div>
 </div>
+
 
