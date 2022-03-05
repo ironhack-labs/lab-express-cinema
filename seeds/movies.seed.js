@@ -1,4 +1,6 @@
 // To insert in "seeds/movies.seed.js"
+import { Movie } from "../models/Movie.model.js";
+import {} from "../db/index.js";
 
 const movies = [
 	{
@@ -84,5 +86,17 @@ const movies = [
 ];
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+Movie.deleteMany()
+	.then(() => Movie.create(movies))
+	.then((data) => console.log(`Data seeded: ${data}`))
+	.catch(() => console.log("Something happened when trying to seed the db"))
+	.finally(() => {
+		process.exit();
+	});
 
-// ... your code here
+/* mongoose.connection.once("open", () => {
+	mongoose.connection.db.dropDatabase()
+		.then(() => {
+		mongoose.connection.close();
+	});
+}); */

@@ -14,8 +14,6 @@ import express from 'express';
 
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
-import hbs from 'hbs';
-
 const app = express();
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares

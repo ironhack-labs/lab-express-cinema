@@ -18,6 +18,9 @@ import favicon from "serve-favicon"
 import path from "path"
 // Middleware configuration
 
+import hbs from 'hbs';
+
+
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
@@ -37,6 +40,7 @@ export const config = (app) => {
   app.set("views", path.join(__dirname, "..", "views"));
   // Sets the view engine to handlebars
   app.set("view engine", "hbs");
+  hbs.registerPartials(path.join(__dirname, "..", "views/partials"));
   // Handles access to the public folder
   app.use(express.static(path.join(__dirname, "..", "public")));
 
