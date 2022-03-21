@@ -2,8 +2,6 @@
 
 # LAB | Express Cinema
 
-<br><br>
-
 ## Introduction
 
 ![image](https://user-images.githubusercontent.com/23629340/36983687-49a3d64e-2093-11e8-8b86-b11813f0cdba.png)
@@ -27,11 +25,7 @@ $ git push origin master
 
 - Create Pull Request so your TAs can check up your work.
 
-<br><br>
-
 ## Instructions
-
-<br>
 
 ### Iteration 0 | Initialize the project
 
@@ -50,8 +44,6 @@ $  npm run dev
 ```
 
 Now you are ready to start. 🚀
-
-<br>
 
 ### Iteration 1 | Seed the database
 
@@ -153,8 +145,6 @@ const movies = [
 // ... your code here
 ```
 
-<br>
-
 ### Iteration 2 | The Home Page
 
 Now when you have all movies in the database, you shall proceed to getting them to be displayed to the user.
@@ -163,9 +153,7 @@ We need our home page. Simple and beautiful, you can use the `index.hbs` to crea
 
 ![image](https://user-images.githubusercontent.com/23629340/36986664-acd6af14-209a-11e8-816d-b62417239c53.png)
 
-The `button` should be a link redirecting to the `/movies` route. (_You will create this route in the following iteration._)
-
-<br>
+The link should redirect to the `/movies` route. (_You will create this route in the following iteration._)
 
 ### Iteration 3 | List the Movies
 
@@ -174,15 +162,11 @@ To summarize, in this iteration your goal is to create `/movies` route that will
 
 ![image](https://user-images.githubusercontent.com/23629340/36986832-240fe492-209b-11e8-94de-a7334af41076.png)
 
-<br>
-
 ### Iteration 4 | Display Movie Details
 
 Finally, you have to create a view to display the details about each movie. You need a `movie/:id` route, where the user can check all the info about each movie, after clicking on the `See More` button shown on the `/movies` view.
 
 ![image](https://user-images.githubusercontent.com/23629340/36986933-6f8060b4-209b-11e8-8571-496914f9ae96.png)
-
-<br>
 
 ## Bonus: Styling
 
@@ -191,7 +175,5 @@ Our app should be pretty ugly right now if you (correctly) focused on the back-e
 In your layout require bootstrap, and add some very basic styles to make our movies app look "ready" for production.
 
 That's it!
-
-<br>
 
 **Happy coding!** :heart:
