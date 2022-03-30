@@ -1,8 +1,51 @@
 body {
-  padding: 50px;
+  margin: 0;
+  padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.uk-background-cover {
+  background-image: url("/images/cinema.jpg");
+  height: 100vh;
+  padding-left: 40vw;
+  text-align: center;
+}
+
+.uk-background-cover h1 {
+  margin-top: 10vh;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+}
+.uk-background-cover a {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.uk-background-cover a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+#gridE {
+  text-align: center;
+  width: 230px;
+}
+
+.uk-card img {
+  width: 30vw;
+  margin: 50px 50px 0;
+}
+.uk-card h3, .uk-card h4, .uk-card h5 {
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 30px;
 }
