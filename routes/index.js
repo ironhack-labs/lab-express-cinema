@@ -1,7 +1,39 @@
 const express = require('express');
+const { create } = require('hbs');
 const router = express.Router();
 
-/* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+const Movie = require('./../models/Movie.model')
 
-module.exports = router;
+router.get('/', (req, res, next) => {
+    res.render('index')
+
+});
+
+
+router.get('/movies', (req, res) => {
+ 
+ Movie
+    .find()
+    .then(movies=> {
+        res.render('movies',{movies})
+      })
+})
+
+
+router.get('/movies/:id', (req, res) => {
+ 
+   const { id } = req.params
+
+   Movie
+    .findById(id)
+    .then(movies =>{
+        res.render('id',movies)
+
+        // res.send(movies)
+        
+    })
+
+})
+
+
+module.exports = router

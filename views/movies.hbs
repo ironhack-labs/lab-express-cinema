@@ -1,0 +1,17 @@
+<h1>Listado de Peliculas</h1>
+
+<hr>
+
+<ul>
+    {{#each movies}}
+    <li>
+       
+        <img src="{{image}}" alt="">
+        <a href="/movies/{{id}}">{{title}}</a>
+    </li>
+    {{/each}}
+</ul>
+
+<hr>
+
+<a href="/">Volver al incio</a>
