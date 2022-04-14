@@ -6,3 +6,29 @@ body {
 a {
   color: #00B7FF;
 }
+.home-index {
+    background-image: url("/images/cinema.jpg");
+    background-size:cover;
+    width: 100%;
+}
+.home-index h1{
+  color: white;
+  font-size: 6em;
+}
+.index-format {
+  display: flex;
+  justify-content: end;
+  margin-top: 100px;
+}
+.btn {
+  border-radius: 30px 30px 30px 30px;
+}
+
+.movie-title {
+  margin-bottom: 20px;
+}
+.details-movies {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}

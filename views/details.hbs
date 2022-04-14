@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row details-movies">
+
+    <div class="col-2">
+        <img src="{{image}}" alt="">
+    </div>
+
+    <div class="col-6">
+
+    <a class="btn btn-primary" href="/movies" role="button">Go back</a>
+    <h1>{{title}}</h1>
+
+    <h2>Director: {{director}}</h2>
+
+    <ul> <strong>Stars</strong>
+        {{#each stars}}
+        <li>
+                {{this}}
+        </li>
+        {{/each}}
+    </ul>
+
+    <p><strong>Sinopsis:</strong> {{description}}</p>
+
+    <hr>
+
+    <p>
+        {{#each showtimes}}
+            {{this}} |
+        {{/each}}
+    </p>
+    </div>
+    </div>
+</div>
