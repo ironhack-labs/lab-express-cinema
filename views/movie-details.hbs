@@ -1,0 +1,52 @@
+<a href="/movies">Go backkkkkk</a>
+
+
+<div class="row">
+
+    <div class="col-3">
+        <picture><img src="{{image}}" alt=""></picture>
+
+
+    </div>
+    <div class="col-5">
+
+        <ul>
+            <li>
+                <strong> title:</strong> {{title}}
+            </li>
+            <li><strong>director:</strong> {{director}}</li>
+            <li><strong>stars:</strong>
+                <ul>
+                    {{#each stars}}
+
+                    <li>{{this}}</li>
+                    {{/each}}
+
+
+                </ul>
+
+
+            </li>
+            <li> <strong>description:</strong> {{description}}</li>
+            <li> <strong>showtimes:</strong>
+
+                {{#each showtimes}}
+
+                |{{this}}|
+                {{/each}}
+
+
+
+            </li>
+
+
+
+
+        </ul>
+
+
+
+
+
+    </div>
+</div>

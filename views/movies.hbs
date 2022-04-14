@@ -1,0 +1,19 @@
+<a href="/">Go backkkkkk</a>
+
+<div class="row">
+
+    {{#each movies}}
+
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src={{image}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">
+                    <a href="/details/{{_id}}">
+                        {{title}}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
