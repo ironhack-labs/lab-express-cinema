@@ -1,0 +1,11 @@
+<div class="container movie-list">
+    <div class="row">
+        {{#each movies}}
+        <div class="col-md-4 eachMovie">
+            <span class="spanTitle">{{this.title}}</span>
+            <img src="{{image}}" alt="">
+            <button type="button" class="btn btn-danger"><a class="linked" href="/movie/{{id}}">Check info</a></button>
+        </div>
+        {{/each}}
+    </div>
+</div>

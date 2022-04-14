@@ -1,0 +1,19 @@
+<div class="container finalmovie">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{{image}}" alt="">
+        </div>
+        <div class="col-md-5">
+            <h1>{{this.title}}</h1>
+            <h2>{{director}}</h2>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            <p>{{showtimes}}</p>
+        </div>
+    </div>
+</div>
+
