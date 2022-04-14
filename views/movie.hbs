@@ -1,0 +1,36 @@
+
+<div class="movie-screen">
+<img src="{{selectedMovie.image}}">
+<article>
+
+<a href="/movies">Go back</a>
+
+<h1>
+    {{selectedMovie.title}} by {{selectedMovie.director}}
+</h1>
+
+<hr>
+
+<p><strong>Starring:</strong></p>
+
+<ul>
+    {{#each selectedMovie.stars}}
+    <li>
+            {{this}}
+    </li>
+    {{/each}}
+</ul>
+
+<p>
+    {{selectedMovie.description}}
+</p>
+
+<p>
+    {{#each selectedMovie.showtimes}}
+    {{this}} |
+    {{/each}}
+</p>
+
+</article>
+
+</div>
