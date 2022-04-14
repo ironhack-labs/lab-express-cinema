@@ -1,0 +1,16 @@
+<h1>RoDEO DRIvE CINEmA</h1>
+<h2>click on the movie to check showtimes</h2>
+
+<br>
+<hr>
+<div class="container">
+    <div class="row">
+        {{#each movies}}
+            <div class="col-md-4">
+                <img src="{{image}}" alt="{{title}}">                    
+                <h4>{{title}}</h4>
+                <a href="/movie/{{id}}">sMOre</a>
+            </div>
+        {{/each}}
+    </div>
+</div>

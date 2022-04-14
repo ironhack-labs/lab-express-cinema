@@ -1,0 +1,16 @@
+
+<img src="{{image}}">
+<h1>{{title}}</h1>
+<h2>Director: {{director}}</h2>
+<p>Stars</p>
+    <ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+    </ul>
+<p>{{description}}</p>
+<ul class="time-ul">
+    {{#each showtimes}}
+    <li class="time-li">{{this}} |</li>
+    {{/each}}
+</ul>
