@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+
+
+        <h1>CARTELERA</h1>
+
+        <hr>
+
+        <h5>Clica en las pelis para ver los horarios</h5>
+
+        <hr>
+
+        {{#each movies}}
+        <div class="col-4">
+
+
+            <div class="card">
+                <img class="img_card" src="{{image}}" alt="CARATULA PELI">
+                <h4>{{title}}</h4>
+                <a href="/moviedetails/{{id}}"><button type="button" class="btn btn-light">VER MÁS</button></a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

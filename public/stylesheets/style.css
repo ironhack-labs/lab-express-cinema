@@ -6,3 +6,15 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.card {
+  padding: 15px 15px;
+  margin: 10px;
+  display: flex;
+}
+
+.img_card{
+  width: 40%;
+}
+
