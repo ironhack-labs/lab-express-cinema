@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h1>Movies</h1>
+
+    <hr>
+
+    <div class="row">
+
+        {{#each movies}}
+        <div class="col-md-4">
+
+            <article class="card">
+                <img src="{{image}}" class="card-img-top" alt="{{title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <a href="/details/{{_id}}">See more</a>
+
+            </article>
+
+        </div>
+        {{/each}}
+
+    </div>
+</div>
+
+{{!-- <div class="col-md-4">
+
+    <article class="card">
+        <img src="{{image_url}}" class="card-img-top" alt="{{name}} {{lastName}}">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <h6>{{tagline}}</h6>
+
+            <p class="card-text">{{description}}</p>
+    </article>
+
+</div> --}}
