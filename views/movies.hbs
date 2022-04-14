@@ -1,0 +1,18 @@
+<div class="top">
+    <h1> MOVIE TIME!</h1>
+    <h3> Click to see all the details </h3>
+</div>
+<div class="container">
+    <div class="row">
+        {{#each movies}}
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="{{image}}" alt="movie card">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
