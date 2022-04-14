@@ -1,8 +1,77 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  color: white;
+  text-align: right;
+  padding-right: 150px;
+  padding-top: 250px;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px #727272;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.mainBG {
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mainBG a {
+  color: white;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 10px;
+  background-color: rgb(5, 83, 119);
+  width: 150px;
+  display: block;
+}
+
+.card {
+  margin: 10px;
+  background-color: grey;
+}
+
+.card-body a {
+  margin: auto;
+  background-color: #ed564b;
+  border: 1px solid rgb(134, 134, 134);
+  width: 100px;
+  display: block;
+  align-content: center;
+}
+
+.one-movie {
+  margin-top: 5%;
 }

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        {{#each allMovies}}
+
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{{image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">{{title}}</h4>
+
+                    <a href="/movies/{{_id}}" class="btn btn-primary">See more</a>
+                </div>
+
+
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
