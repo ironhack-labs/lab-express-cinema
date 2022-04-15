@@ -1,8 +1,94 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+.heroText {
+  font-size: 5em;
+}
+
+.hero {
+  width: 100%;
+  margin: auto;
+  padding: 290px;
+  background-image: url(../images/cine.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.movieImage {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  margin-top: 30px;
+}
+
+.seeMore {
+  display: block;
+  margin-top: 20px;
+  background-color: lightgrey;
+  padding: 5px;
+  width: 90px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.movieTitle {
+  margin-bottom: 20px
+}
+
+.director {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.actors {
+  font-size: 1.5em;
+}
+
+.description {
+  font-size: 1.2em;
+}
+
+.imageMovie {
+  width: 50%
+}
+
+.buttonBack {
+  margin-top: 30px;
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: blue;
+  width: 150px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.times {
+  font-size: 2em;
 }

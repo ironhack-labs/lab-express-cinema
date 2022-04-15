@@ -1,0 +1,39 @@
+<div class="container">
+
+    <h1>Movies List</h1>
+
+    <hr>
+
+
+
+    <div class="row">
+
+        {{#each movies}}
+
+        <div class="col-md-4">
+
+
+
+            <article class="movieArt">
+
+                <img class="movieImage" src="{{image}}" alt="movie image">
+                <p class="title">{{title}}</p>
+                <a class="seeMore" href="/details/{{_id}}">See More</a>
+
+
+
+            </article>
+
+
+
+        </div>
+
+        {{/each}}
+
+    </div>
+
+
+
+    <a class="buttonBack" href="/">Volver al índice</a>
+
+</div>
