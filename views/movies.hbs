@@ -1,0 +1,33 @@
+<div class="container">
+
+    <h1> Movies </h1>
+
+    <div class="row">
+
+        {{#each movies}}
+
+            <div class="col-md-4">
+
+                {{!-- <a href="/libros/detalles/{{_id}}"> --}}
+                
+                <div>
+                    <img src="{{image}}" alt="{{title}}" />
+
+                </div>
+
+                {{title}}
+
+                <a href="/movies/{{_id}}">see more!</a> 
+
+
+
+                <hr />
+
+
+            </div>
+
+        {{/each}}
+
+    </div>
+
+</div>

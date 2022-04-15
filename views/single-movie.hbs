@@ -1,0 +1,30 @@
+{{#each singlemovie}}
+
+    <h1>{{title}}</h1>
+   
+    <h3>
+        {{director}}
+    </h3>
+
+    <ul>
+        {{#each stars}}
+
+            <li>
+                {{this}}
+
+            </li>
+
+        {{/each}}
+    </ul>
+
+    <div>
+        <img src="{{image}}" alt="{{title}}" />
+
+    </div>
+    
+    <p>
+        {{showtimes}}
+
+    </p>
+
+{{/each}}
