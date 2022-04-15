@@ -1,8 +1,48 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+  font-size: 15px;
+}
+
+.card {
+  border: 0;
+
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.box {
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+#title {
+
+  margin-top: 120px;
+  font-size: 8em;
+  margin-left: 90px;
+}
+
+.btn {
+  border-radius: 22px;
+}
+
+.button {
+  padding: 20px;
+  border-radius: 22px;
+  background-color: aliceblue;
+  margin-left: 90px;
+  text-decoration: none;
+
+
+
 }
