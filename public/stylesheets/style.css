@@ -6,3 +6,43 @@ body {
 a {
   color: #00B7FF;
 }
+
+.home {
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-elements {
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 35%; */
+  margin-left: 700px;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 7em;
+  color: white;
+}
+
+button {
+  background-color: white;
+  font-size: 1.4em;
+  border-radius: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(114, 156, 171);
+}
