@@ -1,8 +1,79 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+
+/* HOME -PAGE */
+.home-page {
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  color: white;
+  
+}
+
+.home-page h1 {
+  font-size: 7em;
+  font-weight: bold;
+}
+
+.home-page button {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 20px 40px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-page a {
+  text-decoration: none;
+  color: aqua;
+  font-size: 1.5em;
+}
+
+.move{
+  margin: 200px;
+}
+
+
+
+/* IRON CINEMA */
+.cinema-exp{
+  display: flex;
+  flex-direction: column;
+
+align-items: center;
+}
+
+.cinema-exp h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.cinema-exp h6{
+  padding: 20px;
+}
+
+
+
+
+/* SINGLE MOVIE */
+
+.movie-one{
+  display: flex;
+  padding-top: 60px;
+
+}
+
+.pic{
+  margin-right: 40px;
 }
