@@ -1,0 +1,12 @@
+<a href="/movies">Go Back</a>
+
+{{#with movie}}
+  <div>
+    <h3>{{title}}</h3>
+    <img src="{{image}}">
+    <p>By: {{director}}</p> {{!-- additional book property --}}
+    <p>stars: {{stars}}</p>
+    <p>description: {{description}}</p>
+    <p>showtimes: {{showtimes}}</p>
+  </div>
+{{/with}}

@@ -1,0 +1,7 @@
+{{#each movies}}
+  <div>
+    <h3>{{title}}</h3>
+    <p>By: {{director}}</p> {{!-- additional book property --}}
+    <a href="/movies/{{_id}}">See movie details</a> {{!-- link that points to the details page --}}
+  </div>
+{{/each}}
