@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header">
+    {{movie.title}}
+  </div>
+  <div class="card-body d-flex">
+    <img src="{{movie.image}}" id="movie-poster" alt="{{movie.title}}">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">Director: {{movie.director}}</h5>
+    <p class="card-text">Stars</p>
+        <ul>
+            {{#each movie.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    <p class="card-text">{{movie.description}}</p>
+    <p class="card-text">
+    {{#each movie.showtimes}}
+        {{this}} |
+    {{/each}}        
+    </p>        
+    <a href="/movies" class="btn btn-info ml-auto">Go back</a>
+    </div>
+  </div>
+</div>
+
+

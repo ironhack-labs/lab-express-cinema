@@ -1,0 +1,23 @@
+
+
+<div class="container">
+  <div class="col">
+    <h1>Cinema</h1>
+    <h3>Click on the movie to check the showtimes!</h3>
+  </div>
+    <div class="card-deck">
+    {{#each movies }}
+    <div class="col-lg-3 col-md-6 col-sm-9 mb-4" id="card-list">
+        <div class="card bg-dark text-white text-center">
+            <img class="card-img" src="{{image}}" alt="{{title}}">
+                <div class="card-img-overlay" >
+                    <div class="card-body d-flex flex-column" id="movie-card">
+                    <h5 class="card-title" id="card-under">{{title}}</h5>
+                    <a href="/movies/{{_id}}" class="btn btn-primary btn-dark stretched-link">See more</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    {{/each}}
+    </div>    
+</div>

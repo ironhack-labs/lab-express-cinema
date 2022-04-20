@@ -6,3 +6,113 @@ body {
 a {
   color: #00B7FF;
 }
+
+.jumbotron {
+  background-color: unset!important;
+  padding-top: 6rem;
+}
+
+#main-button{
+  background: white;
+  color: rgb(104,157,173);
+  border-radius: 2.3rem;
+  font-weight: 400;  
+  
+}
+
+.main {
+  color: white;
+  display: flex;
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 600px;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+
+.main h1 {
+  font: 5rem "Lucida Grande", Helvetica, Arial, sans-serif;  
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  padding-top: 5%;  
+}
+
+.movie-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+#movie-card {
+  margin-top: 7rem!important;
+}
+
+#movie-poster {
+  max-height: 268px;
+}
+
+.card-header {
+  background-color: 	#00b7ff6e!important;
+}
+
+#movie-card:hover {
+  background-color: 	#00b7ff6e;
+  /* border-radius: 30px; */
+  /* transform: skew(9deg,0deg); */
+  /* font-style: oblique; */
+  border-radius: 50px;  
+}
+
+/* .card-title:hover{
+  background-color: red;
+  transform: skew(9deg,0deg);
+  font-style: oblique;
+  border-radius: 50px;
+} */
+
+/* #card-list {
+  max-height: 268px;
+  max-width: 182px;
+} */
+
+.card-img-overlay {
+  /* background-color: rgba(108, 117, 125, 0.77); */
+  background-color: rgba(108, 117, 125, 0.55);
+}
+
+.card-img-overlay:hover {
+  /* background-color: rgba(108, 117, 125, 0.77); */
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  flex-flow: row wrap;
+}
+
+.movie-full {
+  display: flex;
+  flex-direction: row;
+  align-items: center;    
+}
+
+/* .movie-poster {
+
+} */
+
+.movie-details {
+  padding-left: 25px;
+}
