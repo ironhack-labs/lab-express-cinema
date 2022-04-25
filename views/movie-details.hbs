@@ -1,9 +1,11 @@
 <h1>Movie Details</h1>
 <hr>
-<a href="/movies">Movies List</a>
+<a href="/movies">Movies</a>
 <a href="/movies/{{_id}}/edit">Edit</a>
 <br>
-<img src="{{image}}" alt="{{title}}">
+<section class="container-details">
+    <div><img src="{{image}}" alt="{{title}}"></div>
+    <div id="info">
 <h2>{{title}}</h2>
 <p>{{director}}</p>
 <p>Stars</p>
@@ -14,3 +16,5 @@
 </ul>
 <p>{{description}}</p>
 <p>{{showtimes}}</p>
+</div>
+</section>

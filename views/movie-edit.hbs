@@ -1,5 +1,6 @@
 <h2>Edit the movie: {{title}}</h2>
-
+<hr>
+<a href="/movies">Back</a>
 <form action="/movies/{{_id}}/edit" method="POST">
   <label> Title:
     <input type="text" name="title" value="{{title}}" />
