@@ -1,35 +1,44 @@
-<h2>Edit movie infos for : {{movie.title}}</h2>
-<a href="/movies">Go back</a>
+<nav class="navbar">
+    <a href="/">
+        <h2>Ironhack Cinema - Home</h2>
+    </a>
+    <h2>Edit movie infos for : {{movie.title}}</h2>
+    <a href="/movies">
+        <<< Go back to movies list>>>
+    </a>
+</nav>
 
-<div id="edit-box">
-    <img src="{{movie.image}}" alt="">
-
-
-    <form action="/movies/{{movie.id}}/edit" method="POST">
-        <label class="small-box"> Title:
-            <input type="text" name="title" value="{{movie.title}}" required/>
-        </label>
-
-        <label class="small-box"> Director:
-            <input type="text" name="director" value="{{movie.director}}"/>
-        </label>
-
-        <button>Save changes</button>
-    </form>
-
-
-    <div>
-        <h4>Stars</h4>
-        <ul>
-            {{#each movie.stars}}
-                <li>{{this}}</li>
-            {{/each}}
-        </ul>
-        <p>{{movie.description}}</p>
-        <ul class="showtimes">
-            {{#each movie.showtimes}}
-                <li>{{this}}</li>
-            {{/each}}
-        </ul>
+<section id="details-box">
+    <div class="details-image">
+        <img src="{{movie.image}}" alt="">
     </div>
-</div>
+    <div class="details-container">
+        <div>
+            <form class="edit-box" action="/movies/{{movie.id}}/edit" method="POST">
+                <label > Title:
+                    <input class="small-box" type="text" name="title" value="{{movie.title}}" required />
+                </label>
+
+                <label> Director:
+                    <input class="small-box" type="text" name="director" value="{{movie.director}}" />
+                </label>
+
+                <button class="btn-save">Save changes</button>
+            </form>
+        </div>
+        <div>
+            <h4>Stars</h4>
+            <ul>
+                {{#each movie.stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movie.description}}</p>
+            <ul class="showtimes">
+                {{#each movie.showtimes}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</section>

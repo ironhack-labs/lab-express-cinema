@@ -1,11 +1,13 @@
-
+<nav class="navbar">
+    <a href="/"><h2>Ironhack Cinema - Home</h2></a>
+    <a href="/movies/{{movie.id}}/edit"><h3><<< Edit movie details here >>></h3></a>
+    <a href="/movies"><<< Go back to movies list >>></a>
+</nav>
 <section id="details-box">
-    <div>
+    <div class="details-image">
         <img src="{{movie.image}}" alt="">
     </div>
-    <div>
-        <a href="/movies">Go back</a>
-        <a href="/movies/{{movie.id}}/edit">Edit</a>
+    <div class="details-container">
         <br>
         <h2>{{movie.title}}</h2>
         <h3>{{movie.director}}</h3>

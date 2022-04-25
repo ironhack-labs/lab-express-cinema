@@ -1,8 +1,148 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: white 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
 }
 
 a {
   color: #00B7FF;
+}
+
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  color: aliceblue;
+  padding-left: 1rem;
+  border-radius: 10px;
+}
+
+.navbar a{
+  color: aliceblue;
+}
+
+.container{
+  height: 600px;
+  position: relative;
+}
+
+.btn-check-in{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  padding: 10px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  margin:10px;
+  width: 500px;
+  height: 100px;
+font-size: x-large;
+}
+
+.list-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  align-items: space-between;
+  margin-top:10rem;
+  justify-content: space-around;
+}
+
+.card{
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(46, 40, 40);
+  padding: 1rem;
+  border-radius: 16px;
+  -webkit-box-shadow: -2px -1px 15px 7px rgba(0,0,0,0.5);
+  -moz-box-shadow: -3px -2px 30px 14px rgba(0,0,0,0.425);
+  box-shadow: -4px -3px 45px 21px rgba(250, 223, 223, 0.74);
+
+}
+
+.card img{
+  height: 400px;
+  width: fit-content;
+  border-radius: 16px;
+}
+
+.card-title{
+  color: aliceblue;
+  font: x-large bolder, sans-serif;
+  margin: 20px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#details-box{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-top:10rem;
+  justify-content: space-around;
+}
+
+#details-box > *{
+  font: large bolder, sans-serif;
+}
+
+.details-container{
+  background: rgba(205, 207, 205, 0.7);
+  border-radius: 16px;
+  width: 60rem;
+  padding: 2rem;
+}
+
+.details-image img{
+  object-fit: contain;
+  width:300px;
+  border-radius: 16px;
+}
+
+.showtimes{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.showtimes li{
+  background-color: aliceblue;
+  padding: 1rem 3rem;
+  border-radius: 16px;
+}
+
+.edit-box{
+  display:flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.edit-box > *{
+  font: x-large bolder, sans-serif;
+}
+
+.btn-save{
+  border-radius: 10px;
+}
+
+.small-box{
+  border-radius: 10px;
+  font: x-large bolder, sans-serif;
+
 }

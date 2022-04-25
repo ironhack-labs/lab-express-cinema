@@ -1,11 +1,15 @@
-<h2>Ironhack Cinema</h2>
-<h3>Click on the movie to check showtimes!</h3>
+<nav class="navbar">
+    <a href="/"><h2>Ironhack Cinema</h2></a>
+    <h3>Click on the movie to check showtimes!</h3>
+</nav>
 
-{{#each movies}}
-    <div class="card">
-        <img src="{{image}}" alt="">
-        <h4>{{title}}</h4>
-        <a href="/movies/{{id}}">See more</a>
-        <a href="/movies/{{id}}/edit">Edit</a>
-    </div>
-{{/each}}
+
+<div class="list-container">
+    {{#each movies}}
+        <div class="card">
+            <a href="/movies/{{id}}"><img src="{{image}}" alt=""></a>
+            <a href="/movies/{{id}}"><h4 class="card-title">{{title}}</h4></a>
+            <a href="/movies/{{id}}/edit">Edit</a>
+        </div>
+    {{/each}}
+</div>
