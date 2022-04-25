@@ -15,6 +15,12 @@ const hbs = require('hbs');
 
 const app = express();
 
+
+
+  // Use this space to pass MongoDB CRUD code here             
+
+
+const port = 3000;
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
 
@@ -27,8 +33,11 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
+app.use(express.static('views/images')); 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
+
+
 
 module.exports = app;
