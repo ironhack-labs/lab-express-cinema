@@ -1,0 +1,16 @@
+<div class="movie-list-container">
+  <div>
+    <a href="/movies">Go back</a>
+    <h3>{{title}}</h3>
+    {{director}}
+    <ul>
+      {{#each stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <img src="{{image}}" alt="film poster" />
+    <h5>{{title}}</h5>
+    <br />
+    <a href="/movies/{{_id}}/edit">Edit information!</a>
+  </div>
+</div>
