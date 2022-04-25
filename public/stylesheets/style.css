@@ -146,3 +146,22 @@ a {
   font: x-large bolder, sans-serif;
 
 }
+
+.create-box{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+input{
+  display: flex;
+  justify-content: flex-end;
+  width: 50rem;
+}
+textarea{
+  display: flex;
+  justify-content: flex-end;
+  width: 50rem;
+}
