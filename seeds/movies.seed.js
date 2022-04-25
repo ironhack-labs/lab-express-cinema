@@ -84,7 +84,16 @@ const movies = [
     }
   ];
 
-  Movie.create(movies)
+
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
+
+mongoose
+.connect(MONGO_URI)
+.then((x)=> {
+    console.log(`"Connected to Mongo! Database name: "${x.connections[0].name}`);
+    return Movie.create(movies)
+})
+
 .then((moviesFromDb) =>
 {
     console.log(`created ${moviesFromDb.length}`)
