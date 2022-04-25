@@ -1,20 +1,12 @@
-<h2>Edit the book: {{title}}</h2>
+<h2>Update the movie: {{title}}</h2>
 
-<form action="/books/{{_id}}/edit" method="post">  {{!-- action: where we send the info --}}
+<form action="/movies/{{_id}}/edit" method="post">  {{!-- action: where we send the info --}}
   <label> Title:
     <input type="text" name="title" value="{{title}}" />
   </label>
 
-  <label> Author:
-    <input type="text" name="author" value="{{author}}" />
-  </label>
-
-  <label> Description:
-    <textarea name="description" cols="30" rows="4">{{description}}</textarea>
-  </label>
-
-  <label> Rate:
-    <input type="number" name="rating" min="1" max="10" value="{{rating}}" />
+  <label> Director:
+    <input type="text" name="director" value="{{director}}" />
   </label>
 
   <button>Save changes</button>
