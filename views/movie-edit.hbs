@@ -1,0 +1,34 @@
+
+<img src="{{movie.image}}" alt="" srcset="">
+<form action="/movies/{{movie.id}}/edit" method="POST">
+<div>
+<input type="text" name="title" value="{{movie.title}}">
+</div>
+    
+
+<div>
+<input type="text" name="director" value="{{movie.director}}" id="">
+</div>
+    
+  <div>
+  {{#each movie.stars}}
+  <input type="checkbox" name="stars"  id="">{{this}}</input>
+  </div>
+<br>
+
+  {{/each}}
+ <br>
+  <textarea name="description" cols="30" rows="4">{{movie.description}}</textarea>
+  {{#each movie.showtimes}}
+  <br>
+
+  <input type="checkbox" name="showtimes" value="">{{this}}</input>
+  {{/each}}
+  <br>
+  <br>
+  <button type="submit">Submit!</button>
+
+</form>
+
+
+

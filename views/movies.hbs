@@ -1,12 +1,23 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-md-6">
-      {{#each movies}}
-        <img src="{{this.image}}" alt="" srcset="" />
-        <h3>{{this.title}}</h3>
-        <a href="/movies/{{this.id}}">See more</a>
-      {{/each}}
+    <header class="header-title">
 
-    </div>
+      <h1>Ironborn Cinema</h1>
+      <h5>click on the movie to check the showtimes!</h5>
+
+    </header>
+
+  </div>
+  <div class="row">
+    {{#each movies}}
+      <div class="col-lg-4 col-md-6 movie-group">
+        <img src="{{this.image}}" alt="{{this.title}}" srcset="" />
+        <h5 class="movie-title">{{this.title}}</h5>
+        <a href="/movies/{{this.id}}">See more</a>
+      </div>
+    {{/each}}
   </div>
 </div>
+
+
+<a href="/movies/create" type="submit">create a new movie</a>
