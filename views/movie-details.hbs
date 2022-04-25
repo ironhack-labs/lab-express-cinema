@@ -1,0 +1,13 @@
+
+
+<h1>{{movieById.title}}</h1>
+<hr>
+<img src="{{movieById.image}}" alt="">
+<p>Director: {{movieById.director}}</p>
+<p>Stars: {{movieById.stars}}</p>
+<p>{{movieById.description}}</p>
+
+{{#each movieById.showtimes}}
+{{this}}
+
+{{/each}}
