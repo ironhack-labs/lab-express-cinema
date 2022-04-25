@@ -27,11 +27,11 @@ router.post('/movies/create', (req, res, next) => {
 
 
 
-  const { title, director, image, description } = req.body;
-  Movie.create({ title, director, image, description })
+  const { title, director, description } = req.body;
+  Movie.create({ title, director, description })
 
     .then((newMovieDet) => {
-      console.log(newMovieDet._id)
+      console.log(newMovieDet , req.body)
       res.redirect(`/movies/${newMovieDet._id}`)
     })
     .catch((e) => {
