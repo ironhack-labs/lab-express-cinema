@@ -1,6 +1,32 @@
 const Movie = require("../models/Movie.model");
 const router = require("express").Router();
 
+// GET route to display the form
+router.get('/movies/create', (req, res) => res.render('movies/movie-create.hbs'));
+
+
+// POST route to save a new movie into the DB
+router.post('/movies/create', (req, res, next) => {
+    const newMovie = {
+        title :req.body.title,
+        director: req.body.director,
+        stars: req.body.stars,
+        image: req.body.image,
+        description: req.body.description,
+        showtimes: req.body.showtimes
+    }
+
+    Movie.create(newMovie)
+        .then(newMovie=>{
+            console.log("new movie created into the DB as:", newMovie.title)
+            res.redirect("/Movies")
+        })
+        .catch(err=>{
+            ("Something went wrong creating the newMovie into the DB",err)
+            next(err);
+        })
+  });
+
 //Get details for one movies for update
 router.get("/movies/:movieId/edit", (req,res,next)=>{
     Movie.findById(req.params.movieId)
