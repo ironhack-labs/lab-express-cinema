@@ -1,0 +1,35 @@
+<h2>Edit movie infos for : {{movie.title}}</h2>
+<a href="/movies">Go back</a>
+
+<div id="edit-box">
+    <img src="{{movie.image}}" alt="">
+
+
+    <form action="/movies/{{movie.id}}/edit" method="POST">
+        <label class="small-box"> Title:
+            <input type="text" name="title" value="{{movie.title}}" required/>
+        </label>
+
+        <label class="small-box"> Director:
+            <input type="text" name="director" value="{{movie.director}}"/>
+        </label>
+
+        <button>Save changes</button>
+    </form>
+
+
+    <div>
+        <h4>Stars</h4>
+        <ul>
+            {{#each movie.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <ul class="showtimes">
+            {{#each movie.showtimes}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
