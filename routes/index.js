@@ -8,7 +8,7 @@ console.log ("home works")
 
 module.exports = router;
 
-//READ
+//List movies
 router.get("/movies", (req, res, next) => {
 
     Movie.find() //get all movies
@@ -21,3 +21,18 @@ router.get("/movies", (req, res, next) => {
       next(err);  
     });
 });
+
+//Display movie details
+router.get("/movies/:movieId", (req, res, next) => {
+    const id = req.params.movieId;
+
+    Movie.findById(id)  //query to the database returns an object
+        .then((movieDetails) => {
+            console.log(movieDetails)
+            res.render("movie-details", movieDetails);
+        })
+        .catch(err => {
+            console.log("error getting movie details from DB", err)
+            next(err);
+        });
+})
