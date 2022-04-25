@@ -1,7 +1,9 @@
+
+
 body {
   padding: 50px;
-  /* background-color: black;
-  color: white; */
+  background-color: black;
+  color: white;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -22,11 +24,16 @@ position: relative;
 }
 
 a {
-  
+  text-decoration: none;
   color: white;
-  border: 2px solid pink;
+  border: 2px solid rgb(255, 255, 255);
   border-radius:5px;
   padding: 8px 20px;
+}
+
+a:hover{
+  background-color: white;
+  color: black;
 }
 
 .header-title{
@@ -46,4 +53,101 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 20px 0;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 30px 0;
+  padding: 40px 10px;
+  border: 1px solid white;
+ 
+ 
+}
+
+footer h3{
+margin-right: 30px;
+}
+footer span{
+  font-size: 1.4em;
+}
+
+
+.create-form{
+  width: 70%;
+}
+
+.description{
+  color: black;
+  margin: 30px 0;
+}
+.create-page{
+  margin-bottom: 30px;
+}
+
+
+.upload-file{
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-btn{
+  font-size: 1.2em;
+  padding: 8px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.create-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+.movie-detail-container{
+  display: flex;
+}
+.left-side{
+  margin: 20px 40px;
+}
+.right-side{
+  margin: 20px 40px;
+  
+}
+
+.delete-btn{
+  margin: 0 15px;
+  font-size: 1.2em;
+  padding: 8px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.delete-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+.all-btns{
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+.container-edit-form{
+  display: flex;
+}
+.check-box-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.showtimes{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }

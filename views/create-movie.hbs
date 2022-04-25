@@ -1,14 +1,41 @@
-<form action="/movies/create" method="POST">
- <input type="file" name="image" id="">
-  <label for="">
-    <input type="text" name="title" id=""></input>
-  </label>
-  <label for="">
-    <input type="text" name="director" id="">
-  </label>
-   <label>
-  <textarea type="text" name="description" cols="30" rows="5"></textarea>
-  </label>
+<h2 class="create-page">here you can create a new movie!</h2>
 
-  <button type="submit">submit</button>
+<form class="create-form" action="/movies/create" method="POST">
+  <div class="row">
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Movie title"
+        aria-label="title"
+        required
+      />
+    </div>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name of the director"
+        aria-label="title"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form-floating description">
+    <textarea
+      class="form-control"
+      placeholder="Leave a description here"
+      id="floatingTextarea"
+    ></textarea>
+    <label for="floatingTextarea">description</label>
+  </div>
+  <div class="upload-file">
+    <div>
+      <label for="upload-image">Upload the image </label>
+      <input type="file" name="image" id="upload-image" />
+    </div>
+    <button class="create-btn" type="submit">Create</button>
+  </div>
+
 </form>

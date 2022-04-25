@@ -1,22 +1,33 @@
-<a href="/movies">go back dude!</a>
+<div class="movie-detail-container">
+  <div class="left-side">
+    <img src="{{movie.image}}" alt="" srcset="" />
+  </div>
 
-<img src="{{movie.image}}" alt="" srcset="" />
-<h3>{{movie.title}}</h3>
-<h4>Driector : {{movie.director}}</h4>
-<ul>
-  <h5>Stars</h5>
-  {{#each movie.stars}}
-    <li>{{this}}</li>
-  {{/each}}
-</ul>
-<br />
-<p>{{movie.description}}</p>
-<br />
-{{#each movie.showtimes}}
-  <span>{{this}} |</span>
-{{/each}}
-<br />
+  <div class="right-side">
+    <h3>{{movie.title}}</h3>
+    <br />
+    <h4>Driector : {{movie.director}}</h4>
+    <br />
+    <h5>Stars</h5>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <br />
+    <p>{{movie.description}}</p>
+    <br />
+    {{#each movie.showtimes}}
+      <span>{{this}} |</span>
+    {{/each}}
+  </div>
+</div>
+
+<div class="all-btns">
 <a href="/movies/{{movie.id}}/edit">Edit</a>
 <form action="/movies/{{movie.id}}/delete" method="POST">
-  <button type="submit">Delete</button>
+  <button class="delete-btn" type="submit">Delete</button>
 </form>
+
+<a href="/movies">go back dude!</a>
+</div>
