@@ -1,0 +1,16 @@
+<h1>Movies</h1>
+
+{{#each moviesArr}}
+<section>
+    <img src="{{image}}" </img>
+    <h1>{{title}}</h1>
+<hr>
+<p>directed by: {{director}}</p>
+
+
+<hr>
+<a href="details-movies/{{this.id}}">More details</a>
+</section>
+
+
+{{/each}}
