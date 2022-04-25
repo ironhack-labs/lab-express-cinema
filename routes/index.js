@@ -17,7 +17,20 @@ router.get('/movies', (req, res, next) => {
         }) 
 });
 
+// READ: display movie details
+router.get("/movies/:movieId", (req, res, next) => {
+    const id = req.params.movieId;
 
+    Movie.findById(id)
+        .then((movieDetails) => {
+            console.log(movieDetails);
+            res.render("movie-details", movieDetails);
+        })
+        .catch(err => {
+            console.log("error getting movie details from DB", err)
+            next(err);
+        });
+})
 
 
 
