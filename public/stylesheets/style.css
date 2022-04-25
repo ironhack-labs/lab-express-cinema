@@ -1,8 +1,109 @@
-body {
+body{
+  margin: 0 auto;
+  font: 14px "", Helvetica, Arial, sans-serif;
+  background-color: blueviolet;
+}
+
+
+main {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+nav{
+  background-color: aquamarine;
+  margin: 0;
+  padding: 2rem
+}
+
+nav ul{
+  display: flex;
+}
+
+.container{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.container button{
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 25px;
+  background-color: aquamarine;
+}
+
+nav li{
+  margin: 0 0 0 3%;
+  font-size: 2rem;
+  list-style: none;
 }
 
 a {
-  color: #00B7FF;
+  margin: 0;
+  text-decoration: none;
+  color: black;
 }
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+.movie-list-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card{
+  text-align: center;
+  font-size: 2rem;
+  width: 15%;
+  margin: 3% auto;
+  border: 1px solid red;
+  background-color: aquamarine;
+  padding-bottom: 30px;
+}
+
+.movie-card img{
+  width: 100%
+}
+
+.buttons{
+  display: flex;
+  font-size: 1rem;
+}
+
+.buttons a{
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: white;
+  margin: 2%;
+}
+
+.movie-container{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.movie-container img{
+  width: 80%;
+} 
+
+.movie-information{
+  margin-left: 5%;
+  color: white;
+}
+form{ 
+  display: flex;
+  align-items: center;
+}
+
+input, textarea{
+  margin-right: 1%;
+  padding: 1.5rem
+}
+
+button{
+  padding: 1.5rem;
+  border-radius: 10px; 
+}
+

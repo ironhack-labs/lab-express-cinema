@@ -1,0 +1,26 @@
+    <div class="buttons">
+        <a href="/movies">Go back</a>
+        <a href="/movies/{{movie.id}}/edit">Edit movie</a>
+    </div>
+<div class='movie-container'>
+    <img src="{{movie.image}}" alt="image from {{movie.title}}">
+    <div class="movie-information">
+
+        <h2>{{movie.title}}</h2>
+        <h3>Director: {{movie.director}}</h3>
+        <p>Stars</p>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <p>Showtimes</p>
+        <ul>
+            {{#each movie.showtimes}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+</div>

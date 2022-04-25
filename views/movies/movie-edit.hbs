@@ -1,0 +1,31 @@
+{{!-- views/books/book-create.hbs --}}
+
+<h2>Edit {{movie.title}}</h2>
+
+<form action="/movies/{{movie._id}}/edit" method="post">
+    <label> Title:
+        <input type="text" name="title" value="{{movie.title}}" />
+    </label>
+
+    <label> Image:
+        <input type="text" name="image" value="{{movie.image}}"/>
+    </label>
+
+    <label> Director:
+        <input type="text" name="director" value="{{movie.director}}"/>
+    </label>
+
+    <label> Stars:
+        <input type="text" name="stars" value="{{movie.stars}}" />
+    </label>
+
+    <label> Description:
+        <textarea name="description" cols="30" rows="10" >{{movie.description}}</textarea>
+    </label>
+
+    <label> Showtimes:
+        <input type="text" name="showtimes" value="{{movie.showtimes}}" />
+    </label>
+
+    <button type="submit"> Edit </button>
+</form>
