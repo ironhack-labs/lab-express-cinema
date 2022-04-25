@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+#section {
+  background-color: aquamarine;
+  width: 20px;
+}
