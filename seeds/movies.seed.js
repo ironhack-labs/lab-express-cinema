@@ -103,3 +103,14 @@ mongoose
     console.error("Error connecting to mongo: ", err);
   });
 
+  Movie.create(movies)
+  .then(moviesFromDB => {
+      console.log(`Created ${moviesFromDB.length} movies`);
+      mongoose.connection.close()
+  })
+  .catch( err => console.log("There was an error", err))
+
+
+  module.exports = movies
+
+

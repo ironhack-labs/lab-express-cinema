@@ -8,17 +8,46 @@ const Movie = require('../models/Movie.model.js');
 router.get('/', (req, res, next) => res.render('index'));
 
 
-router.get('/movies', (req, res, next) => {
-Movie.find()
-.then(moviesFromDB => {
-    console.log(`Reading the movies:`, moviesFromDB);
-    res.render('movies.hbs', { movies: moviesFromDB });
+router.get("/movies", (req, res, next) => {
+    Movie.find()
+        .then((moviesFromDB) => {
+            console.log(`Reading the movies:`, moviesFromDB);
+            res.render('movies', {
+                movies: moviesFromDB
+            })
+        })
+        .catch(err => console.log("there was an error", err))
+
 })
-.catch(error => {
-    console.log('Error getting the movies from DB: ', error);
-    next(error);
-});
-});
+
+// iteration 4 done by Pedro
 
 
-module.exports = router;
+//create functionality
+
+router.get("/movies/create", (req, res, next) => {
+    res.render("movie-create");
+})
+
+router.post("/movies/create", (req, res, next) => {
+    const newMovie = {
+        title: req.body.title,
+        director: req.body.director,
+        stars: req.body.stars,
+        image: req.body.image,
+        description: req.body.description,
+        showtimes: req.body.showtimes
+
+    }
+
+    Movie.create(newMovie)
+        .then(createMovie => {
+            res.redirect("/movies");
+        })
+        .catch(err => {
+            console.log("Error creating a new movie", err);
+            next(err);
+        })
+    })
+
+    module.exports = router
