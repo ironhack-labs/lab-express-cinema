@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/Cinema-express';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/cinema-express';
 
 mongoose
   .connect(MONGO_URI)
