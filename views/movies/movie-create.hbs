@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <a href="/">
+        <h2>Ironhack Cinema - Home</h2>
+    </a>
+    <h2>Create a new movie</h2>
+    <a href="/movies">
+        <<< Go back to movies list>>>
+    </a>
+</nav>
+
+<section id="details-box">
+    <div class="details-image">
+        <img src="{{movie.image}}" alt="">
+    </div>
+    <div class="details-container">
+        <div>
+            <form class="create-box" action="/movies/create" method="POST">
+                <label > Title:
+                    <input class="small-box" type="text" name="title" required />
+                </label>
+
+                <label> Director:
+                    <input class="small-box" type="text" name="director" />
+                </label>
+
+                <label> Stars:
+                    <input class="small-box" type="text" name="stars" />
+                </label>
+
+                <label> Image:
+                    <input class="small-box" type="text" name="image" />
+                </label>
+
+                <label> Description:
+                    <textarea class="small-box" name="description" cols="30" rows="4"> </textarea>
+                </label>
+
+                <label> Showtimes:
+                    <input class="small-box" type="text" name="showtimes" />
+                </label>
+
+                <button class="btn-save">Save changes</button>
+            </form>
+        </div>
+    </div>
+</section>
