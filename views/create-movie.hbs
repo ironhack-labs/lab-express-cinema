@@ -1,6 +1,6 @@
 <h2 class="create-page">here you can create a new movie!</h2>
 
-<form class="create-form" action="/movies/create" method="POST">
+<form class="create-form" action="/movies/create" method="POST" >
   <div class="row">
     <div class="col">
       <input
@@ -33,12 +33,24 @@
     ></textarea>
     <label for="floatingTextarea">description</label>
   </div>
+  <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name of Stars :Seprate their names with '/'"
+        name="stars"
+        aria-label="stars"
+        
+      />
+    </div>
+    <br>
   <div class="upload-file">
     <div>
-      <label for="upload-image">Upload the image </label>
-      <input type="file" name="image" id="upload-image" />
+      {{!-- <label for="upload-image">Upload the image </label>
+      <input type="file" name="image" id="upload-image" /> --}}
     </div>
     <button class="create-btn" type="submit">Create</button>
   </div>
+  
 
 </form>

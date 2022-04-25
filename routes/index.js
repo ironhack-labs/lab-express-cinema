@@ -2,6 +2,8 @@ const express = require('express');
 const Movie = require('../models/Movie.model');
 const router = express.Router();
 
+
+
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
 
@@ -25,10 +27,16 @@ router.get('/movies/create', (req, res, next) => {
 
 router.post('/movies/create', (req, res, next) => {
 
+  const stars =req.body.stars.split('/')
+  
+  const newMovie={
+    title:req.body.title,
+    director:req.body.director,
+    description: req.body.description,
+    stars:stars
+  }
 
-
-  const { title, director, description } = req.body;
-  Movie.create({ title, director, description })
+  Movie.create(newMovie)
 
     .then((newMovieDet) => {
       console.log(newMovieDet , req.body)
