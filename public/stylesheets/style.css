@@ -6,3 +6,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+#home{
+  background-image: url("../images/cinema.jpg");
+  height: 668px;
+  width: 1000px;
+  background-repeat: no-repeat
+}
+
+.box{
+  width: 200px;
+}

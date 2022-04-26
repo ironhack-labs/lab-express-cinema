@@ -1,0 +1,18 @@
+<div class="d-flex flex-row">
+  <div>
+    <img src={{this.image}} alt="" />
+  </div>
+  <div>
+      <a href="/movies">Go back</a>
+      <h3><strong>{{title}}</strong></h3>
+      <h4>{{director}}</h4>
+      <h5>Stars</h5>
+      <ul>
+          {{#each stars}}
+            <li>{{this}}</li>
+          {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      <p>{{showtimes}}</p>
+  </div>
+</div>
