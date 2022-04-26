@@ -1,0 +1,13 @@
+<h1>List of Movies in our Database:</h1>
+
+{{#each movies}}
+<div class="movie-summary">
+    <h3>{{this.title}}</h3>
+    <p>By: {{this.director}}</p>
+    <a href="/movie-details/{{this.id}}">See details</a> {{!-- link that points to the details page --}}
+    <a href="/movie-edit/{{this.id}}/edit">Edit</a>
+    <p>Actors: {{this.stars}}</p>
+    <p>showtimes:{{this.showtimes}}</p>
+    <a href="/movies/{{this.id}}">See more</a>
+</div>
+{{/each}}

@@ -9,6 +9,9 @@ a {
 
 .movie-button {
   font-weight: bold;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
 }
 
 .home-title {
