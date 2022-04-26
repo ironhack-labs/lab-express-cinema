@@ -103,11 +103,11 @@ const movies = [
   
   // ... your code here
   Movie.create(movies)
-  .then(moviesFromDB) => {
-      console.log(`Created ${moviesFromDB.length} movies`);
-      //once created then close the connection
-      mongoose.connection.close();
+  .then(moviesFromDB => {
+    console.log(`Created ${moviesFromDB.length} movies`);
 
+    // Once created, close the DB connection
+    mongoose.connection.close();
   })
   .catch(err => console.log(`An error occurred while creating books from the DB: ${err}`));
 

@@ -1,0 +1,8 @@
+<h1>List of Movies in our Database:</h1>
+
+{{#each movies}}
+<section class="movie-summary">
+    <h2>{{this.title}}</h2>
+    <a href="/movies/{{this.id}}">See more</a>
+</section>
+{{/each}}
