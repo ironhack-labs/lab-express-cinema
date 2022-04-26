@@ -13,6 +13,6 @@ const moviesSchema = new Schema(
     timestamps: true,
   }
 );
-const Movie = model("Movie", movieSchema);
+const Movie = model("Movie", moviesSchema);
 
 module.exports = Movie;
