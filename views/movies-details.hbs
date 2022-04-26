@@ -1,0 +1,9 @@
+<h1>{{pel.title}}</h1>
+<hr>
+<h2>Director: {{pel.director}}</h2>
+{{#each pel.stars}}
+<h4>{{this}}</h4>
+{{/each}} 
+<p>Description: {{pel.description}}</p>
+<p>{{pel.showtimes}}</p>
+<a href="/movies">Back</a>
