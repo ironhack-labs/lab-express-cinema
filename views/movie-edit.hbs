@@ -1,0 +1,20 @@
+<h2>Edit the Movie: {{title}}</h2>
+
+<form action="/movies/{{_id}}/edit" method="POST">
+  <label>
+    Title:
+    <input type="text" name="title" value="{{title}}" />
+  </label>
+
+  <label>
+    Director:
+    <input type="text" name="director" value="{{director}}" />
+  </label>
+
+  <label>
+    Description:
+    <textarea name="description" cols="30" rows="4">{{description}}</textarea>
+  </label>
+
+  <button>Save changes</button>
+</form>
