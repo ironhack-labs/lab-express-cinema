@@ -1,27 +1,29 @@
+
+
+<form action="/movie/create"  method="POST" id="movie-create-form">
 <h1>Create a Movie</h1>
 
-<form action="/movies/create"  method="POST">
     <label> Title:
-        <input type="text" name="title" required>
+        <input class="input" type="text" name="title" required>
     </label>
-    <br>
-    <label> Director
-        <input type="text" name="director" >
+    <br><br>
+    <label> Director:
+        <input class="input" type="text" name="director" >
     </label>
-    <br>
+    <br><br>
     {{!-- <label> Stars:
         <input type="text" name="title" required>
     </label> --}}
     <label> Image Link:
-        <input type="text" name="image" >
+        <input class="input" type="text" name="image" >
     </label>
-    <br>
+    <br><br>
     <label> Description:
         <textarea name="description" cols="30" rows="4"></textarea>
     </label>
     {{!-- <label> Showtimes:
         <input type="text" name="title" required>
     </label> --}}
-    <br>
-    <button type="submit">Create</button>
+    <br><br>
+    <button class="button" type="submit">Create</button>
 </form>
