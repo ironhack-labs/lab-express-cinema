@@ -99,7 +99,10 @@ form{
 
 input, textarea{
   margin-right: 1%;
-  padding: 1.5rem
+  padding: 1rem
+}
+label{
+  color: white
 }
 
 button{
