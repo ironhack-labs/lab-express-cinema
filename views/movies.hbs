@@ -1,0 +1,15 @@
+<div>
+    <h1 style="margin: 40px;">Iron hack Cinema</h1>
+    <h2  style="margin: 40px;">Click on the movie to check the showtimes!</h2>
+    <div class="Peliculas">
+    {{#each movies}} 
+        <div class="divPelis">
+            <div class="divImagen">
+                <img src={{image}}>
+            </div>
+            <p>{{title}}</p>
+            <a href="/movie/{{id}}">See more</a>
+        </div>
+    {{/each }}
+    </div>
+</div>

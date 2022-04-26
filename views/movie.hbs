@@ -1,0 +1,21 @@
+<div>
+    <div >
+        <div class="Movie">
+            <div class="divImageMovie">
+                <img style="width: 100%; margin-top:55px" src={{movie.image}}>
+            </div>
+            <div>
+                <a style="font-size: 20px;margin-left:10px;" href="/movies">Go back</a>
+                <p style="font-weight:bolder; font-size:25px; margin-top:10">{{movie.title}}</p>
+                <p style="font-size: 18px; font-weight:bolder">Director:{{movie.director}}</p> 
+                <p style="font-size: 16px; font-weight:bolder">Stars:</p> 
+                 {{#each movie.stars}}  
+                    <p>{{this}}</p>  
+                 {{/each}}  
+                <p style="width: 40%;">{{movie.description}}</p>    
+                <p>{{movie.showtimes}}</p>
+            </div>
+                
+        </div>
+    </div>
+</div>

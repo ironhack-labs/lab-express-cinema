@@ -1,8 +1,60 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 a {
   color: #00B7FF;
+}
+.fondo{
+  width: 100%;
+  height: 820px;
+  margin: 0;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.Peliculas{
+  width: 90%;
+  margin: 20px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.divPelis{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.divImagen{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.divImagen img{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.divPelis p{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.divPelis a{
+  text-align: center;
+  text-decoration: none;
+}
+.Movie{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 50px;
+}
+.divImageMovie{
+  margin-right:50px;
+  width: 15%;
+  margin
 }
