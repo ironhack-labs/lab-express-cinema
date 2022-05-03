@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+#main-page {
+  background-image: url(/images/cinema.jpg);
+}
+
+.movies-button{
+  border: 20px black;
+  border-radius: 10px;
+}
