@@ -1,0 +1,17 @@
+<div>
+<h2 class="top-left">Movies list</h2>
+<a href="/" class="btn btn-primary top-right">Go Back</a>
+</div>
+<br>
+<br>
+<div class="row">
+{{#each movies}}
+<div class="card col-3" style="width: 18rem;">
+  <img src="{{this.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <a href="/movies/{{this._id}}" class="btn btn-primary">Go to details page</a>
+  </div>
+</div>
+{{/each}}
+</div>
