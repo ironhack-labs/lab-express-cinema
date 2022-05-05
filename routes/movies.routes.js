@@ -2,7 +2,7 @@ const router = require('express').Router();
 const Movie = require('../models/Movie.model');
 
 
-router.get('/movies', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const movies = await Movie.find();
         res.render('movies', {movies});
@@ -12,12 +12,12 @@ router.get('/movies', async (req, res) => {
     }
 });
 
-router.get('/movies/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
         const {id} = req.params;
         const movie = await Movie.findById(id);
 
-        res.render('', {pokemon})
+        res.render('movies-details', movie)
     } catch (error){
         console.error(error)
     }

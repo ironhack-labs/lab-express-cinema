@@ -10,7 +10,7 @@ const movieSchema = new Schema ({
         required: true
     },
     stars: {
-        type: Array,
+        type: [String],
         required: true
     },
     image: {
@@ -22,7 +22,7 @@ const movieSchema = new Schema ({
         required: true
     },
     showtimes: {
-        type: Array,
+        type: [String],
         required: true
     }
 })

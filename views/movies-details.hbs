@@ -1,1 +1,17 @@
-<h1>Movies details</h1> 
+<h1>Movies details</h1>
+<div class="card col-3" style="width: 18rem;">
+  <a href='/movies'>Go back</a>
+  <img src="{{this.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title"><strong>{{this.title}}</strong></h5>
+    <h4>Director: {{this.director}} </h6>
+    <h5>Stars</h5>
+       <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+     <p>{{this.description}}</p>
+     <p>{{this.showtimes}}</p>    
+  </div>
+</div>
