@@ -21,7 +21,7 @@ a {
 }
 
 .home > h1 {
-  font-size: 100px;
+  font-size: 120px;
   font-weight: bolder;
   color: white;
   position: relative;
@@ -34,6 +34,8 @@ a {
   font-size: 20px;
   border-radius: 30px;
   padding: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
   position: relative;
   left: 60%;
   bottom: 20%;
@@ -41,4 +43,11 @@ a {
 
 .home > button > a {
   text-decoration: none;
+}
+
+.card {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
