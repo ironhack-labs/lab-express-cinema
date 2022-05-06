@@ -1,8 +1,71 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+  color: #fff;
+  width: 100%;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg");
+}
+
+/* Homepage */
+.home {
+  font-size: 3.5rem;
+  background-image: url("/images/cinema.jpg");
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.home > * {
+  position: relative;
+  left: 550px;
+}
+
+.header {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.btn {
+  background-color: #fff;
+  font-size: 1.15rem;
+  border-radius: 30px;
+  color: #00b7ff;
+  padding: 1em 1.8em;
+  text-decoration: none;
+}
+
+/* movies Page */
+
+.movie-overview {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display-movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 20%;
+  margin: 1.5em;
+  padding: 0 2em;
+  text-align: center;
+}
+
+.display-movies > * {
+  width: 295px;
+}
+
+/* movie Details page */
+.details {
+  display: flex;
+}
+
+.details-body {
+  margin: 0 3em;
 }

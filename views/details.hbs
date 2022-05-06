@@ -1,0 +1,17 @@
+{{#each movieDetails}}
+  <section class="details">
+    <img src="{{this.image}}" alt="" class="movie-image" />
+    <div class="details-body">
+      <h3 class="title">{{this.title}}</h3>
+      <h4 class="subtitle">{{this.director}}</h4>
+      {{#each stars}}
+        <ul class="stars">
+          <li class="actors">{{this}}</li>
+        </ul>
+      {{/each}}
+      <p class="description">{{this.description}}</p>
+      <p class="showtimes">{{this.showtimes}}</p>
+
+    </div>
+  </section>
+{{/each}}
