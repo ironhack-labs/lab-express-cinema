@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -41,13 +41,41 @@ a {
   bottom: 20%;
 }
 
+.row {
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
 .home > button > a {
   text-decoration: none;
 }
 
 .card {
-  margin: 50px;
+  margin: 80px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items:center;
+  border-color: white;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 0px;
+  width: 900px;
+}
+
+.showTimes {
+  list-style: none;
+  display: flex;
+  font-size: 17px;
 }
