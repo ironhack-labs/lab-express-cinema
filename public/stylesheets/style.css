@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 0.27em;
 }
 
 body {
   color: #fff;
   width: 100%;
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg");
 }
@@ -35,9 +36,14 @@ body {
   background-color: #fff;
   font-size: 1.15rem;
   border-radius: 30px;
-  color: #00b7ff;
+  color: linear-gradient(to right, #553c9a 45%, #ee4b2b);
   padding: 1em 1.8em;
   text-decoration: none;
+}
+
+.btn:hover {
+  background: #141414;
+  transition: 0.1s;
 }
 
 /* movies Page */
@@ -51,21 +57,52 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 20%;
-  margin: 1.5em;
-  padding: 0 2em;
+  flex-basis: 33.33%;
   text-align: center;
 }
 
 .display-movies > * {
   width: 295px;
+  padding-bottom: 1.1em;
+}
+
+.movie-header {
+  font-size: 1.5rem;
+  background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+  padding: 1em 2em;
+}
+
+.ironhack-cinema {
+  text-transform: uppercase;
+}
+
+.movie-image {
+  margin-top: 4.72em;
 }
 
 /* movie Details page */
 .details {
   display: flex;
+  align-items: center;
+  padding-left: 2.99em;
+}
+
+.movie-image-details {
+  width: 700px;
 }
 
 .details-body {
-  margin: 0 3em;
+  margin: 0em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.details-body > * {
+  padding-bottom: 0.72em;
+}
+
+.subtitle {
+  margin-bottom: 1.2em;
 }
