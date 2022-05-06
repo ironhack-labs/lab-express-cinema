@@ -11,3 +11,6 @@ router.get("/movies", async (req, res) => {
 		console.log(error);
 	}
 });
+
+//!don't forget to export router
+module.exports = router;
