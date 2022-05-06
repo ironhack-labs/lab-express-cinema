@@ -18,6 +18,10 @@ const app = express();
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
 
+app.set("views", __dirname + "/views");
+app.set("view engine", "hbs");
+app.use(express.static("public"));
+
 // default value for title local
 const projectName = 'lab-express-cinema';
 const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
