@@ -1,13 +1,19 @@
-<br>
-<img src="{{detailMovie.image}}" alt="{{detailMovie.name}}">
-<h2>{{detailMovie.title}}</h2>
-<h3>Director: </h3>{{detailMovie.director}}
+<h2>Ironhack Cinema</h2>
 
-<h3>Stars: </h3><ul>
-    {{#each detailMovie.stars}}
-    <li>{{this}}</li>
-    {{/each}}
-</ul>
-<h3>Description</h3>{{detailMovie.description}}
-<h3>ShowTimes</h3>{{detailMovie.showtimes}}
 
+<div class="details">
+    <div><img class="caraturla" src="{{detailMovie.image}}" alt="{{detailMovie.name}}"></div>
+    <div class="restDetails">
+			<a href="/movies">Go Back </a>
+			<h3>{{detailMovie.title}}</h3>
+			<h4>Director: {{detailMovie.director}} </h4>
+			<h5>Stars: </h5><ul>
+					{{#each detailMovie.stars}}
+					<li>{{this}}</li>
+					{{/each}}
+			</ul>
+			<h5>{{detailMovie.description}}</h5>
+			<p class="time">{{detailMovie.showtimes}}</p>
+    </div>
+    
+</div>
