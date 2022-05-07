@@ -87,6 +87,11 @@ a {
   margin: 2vh 8vh;
 }
 
+.see-more {
+  display: block;
+  margin-bottom: 5vh;
+}
+
 .details {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr; 
