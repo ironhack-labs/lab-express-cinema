@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+#home{
+  width: 500px;
+  background-image: url("public/images/cinema.jpg");
+}

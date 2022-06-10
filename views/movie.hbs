@@ -1,0 +1,18 @@
+<div class='container'>
+<h1>Movies</h1>
+<div class='row'>
+{{#each movies}}
+ <div class='col-md-4 mb-3'>
+<div class="card" style="width: 18rem;">
+  <img 
+  src='{{this.image}}' class="card-img-top" 
+  alt="..." style='max-height: 200px/>
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <a href="/movie/{{this.id}}" class="btn btn-primary">See more</a>
+  </div>
+</div>
+</div>
+{{/each}}
+</div>
+</div>
