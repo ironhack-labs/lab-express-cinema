@@ -1,20 +1,25 @@
-<section class="section">
+<section class="container">
+  <h1 class="title has-text-centered has-text-primary pb-4 has-text-left" >Ironhack Cinema</h1>
+  <h2 class="subtitle has-text-centered has-text-left" >Click on the movie to check the showtimes!</h2>
 
-  <h1 class="title has-text-centered pb-4 " >Ironhack Cinema</h1>
-  <h2 class="subtitle has-text-centered " >Click on the movie to check the showtimes!</h2>
-
-  <div class="columns is-centered">
-      {{#each movies}}
-        <div class="column" >
-          <img src=" {{image}} " alt="movie-poster">
-
-          <p class="is-size-5 has-text-weight-bold" >
-          {{title}}
-          </p>
-
-          <a href="/movies/{{_id}}">See more</a>
+  <div class="columns is-centered is-multiline ">
+    {{#each movies}}
+      <div class="column is-3 m-3">
+        <div class="card">
+          <div class="card-image has-text-centered">
+            <img src="{{image}}" alt="movie" class="pt-5">
+          </div>
+          <div class="card-content has-text-centered ">
+            <p class="is-size-6 has-text-weight-bold"> {{title}} </p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item has-background-primary">
+              <a href="/movies/{{_id}}" class="has-text-white">See more</a>
+            </p>
+          </footer>
         </div>
-      {{/each}}
+      </div>
+    {{/each}}
   </div>
 
 </section>

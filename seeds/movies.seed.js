@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
-
 const mongoDB = 'mongodb://localhost/lab-express-cinema';
 
 mongoose.connect(mongoDB)
@@ -91,7 +90,6 @@ const movies = [
 Movie.create(movies)
   .then(moviesFromDB => {
     console.log(`Created ${moviesFromDB.length} movies`)
-
     mongoose.connection.close()
   })
   .catch(err => console.log(`Error courred whiel creating movies --> ${err}`))
