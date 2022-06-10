@@ -10,9 +10,10 @@ const movieSchema = new Schema(
 director:{
     type:String
 },
-stars:{
-    type: Array
-},
+stars:[
+        { type:String}
+    ]
+,
 
 image: {
     type:String

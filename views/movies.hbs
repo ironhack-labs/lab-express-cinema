@@ -1,0 +1,21 @@
+
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-center">
+
+      {{#each movies}}
+        <div class="card text-center m-5" style="width: 18rem;">
+          
+          <img class="card-img-top" src={{image}} alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <a href="/pelis/{{id}}" class="btn btn-danger">View pelis</a>
+          </div>
+
+        </div>
+      {{/each}}
+
+    </div>
+  </div>
+</div>

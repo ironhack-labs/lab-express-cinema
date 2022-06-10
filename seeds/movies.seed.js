@@ -2,7 +2,9 @@ const mongoose = require("mongoose");
 
 const Movie = require("../models/Movie.model");
 const DB_NAME = "mongodb://localhost/lab-express-cinema";
-mongoose.connect(DB_NAME);
+mongoose.connect(DB_NAME)
+
+
 
 const movies = [
     {
@@ -88,6 +90,8 @@ const movies = [
   ];
 
 
+
+
   Movie.create(movies, (err) => {
     if (err) {
       throw err;
@@ -95,5 +99,4 @@ const movies = [
     console.log(`creamos ${movies.length} en movies model`)
     mongoose.connection.close()
   });
-  
   
