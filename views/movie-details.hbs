@@ -3,18 +3,24 @@
 
 <div>
   <a href="/movies">Go back</a>
-  <h1> {{movie.title}} </h1>
-  <h2> {{movie.director}} </h2>
-  <h3> Stars </h3>
 
+  <h1 class="is-size-3 has-text-weight-bold" >
+    {{movie.title}} 
+  </h1>
+  <h2 class="is-size-4 has-text-weight-bold" >
+    Director: {{movie.director}} 
+  </h2>
+  <h3 class="is-size-5 has-text-weight-bold" >
+    Stars 
+  </h3>
   <ul>
     {{#each movie.stars}}
       <li> {{this}} </li>  
     {{/each}}
   </ul>
-
-  <p> {{movie.description}} </p>
-
+  <p>
+    {{movie.description}} 
+  </p>
   <ul>
     {{#each movie.showtimes}}
       <li> {{this}} </li>

@@ -1,9 +1,20 @@
-<h1>Ironhack Cinema</h1>
+<section class="section">
 
-<h3>Click on the movie to check the showtimes!</h3>
+  <h1 class="title has-text-centered pb-4 " >Ironhack Cinema</h1>
+  <h2 class="subtitle has-text-centered " >Click on the movie to check the showtimes!</h2>
 
-{{#each movies}}
-  <img src=" {{image}} " alt="">
-  {{title}}
-  <a href="/movies/{{_id}}">See more</a>
-{{/each}}
+  <div class="columns is-centered">
+      {{#each movies}}
+        <div class="column" >
+          <img src=" {{image}} " alt="movie-poster">
+
+          <p class="is-size-5 has-text-weight-bold" >
+          {{title}}
+          </p>
+
+          <a href="/movies/{{_id}}">See more</a>
+        </div>
+      {{/each}}
+  </div>
+
+</section>
