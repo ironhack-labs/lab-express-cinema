@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row justify-content-start">
+
+    <div class="col-4">
+      <img class="card-img-top" src={{image}} alt="Card image cap" />
+    </div>
+
+    <div class="col-6">
+
+      <a href="/movies/movies" class="btn btn-danger">Go back</a>
+
+      <h2 class="card-title my-3">{{title}}</h2>
+
+      <h5 class="my-2">Director: {{director}}</h5>
+
+      <h5 class="my-2">Stars:</h5>
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+
+        {{/each}}
+      </ul>
+
+      <h5 class="my-2">{{description}}</h5>
+
+      <ul class="list-inline">
+           {{#each showtimes}}
+          <li class="my-3 list-inline-item"> {{this}} |</li>
+        {{/each}}
+      </ul>
+
+    </div>
+
+  </div>
+</div>

@@ -25,6 +25,21 @@ router.get("/movies", (req, res, next) => {
     });
 });
 
+router.get("/pelis/:id",(req,res,next)=>{
+
+
+    Movie.findById(req.params.id)
+    .then((data)=>
+    {console.log(data)
+        res.render("seeMore", data);
+    })
+    .catch((error) => {
+        console.log("error", error);
+        next(); //esto me enviará a la página de errores.
+      });
+
+})
+
 
 //siempre exportamos:
 
