@@ -14,7 +14,7 @@ Movie.find()
 })
 
 
-router.get("/list/:id",(req,res,next)=>{
+router.get("/list/:movieId",(req,res,next)=>{
 
     const {movieId}= req.params;
  
