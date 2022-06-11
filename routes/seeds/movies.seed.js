@@ -106,3 +106,12 @@ const movies = [
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
   // ... your code here
+  Movie.create(movies)
+  .then((moviesdB) => {
+    console.log(`drones have been created ${moviesdB.length}`);
+    mongoose.connection.close();
+  })
+  .catch((err) =>
+    console.log(`An error occurred while creating books from the DB: ${err}`)
+  );
+
