@@ -4,5 +4,67 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+body#index {
+  background: url(../images/cinema.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.homeTitle {
+  color: white;
+  font-size: 6em;
+  margin-top: 10vh;
+}
+
+.column2 {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.uk-card-body:hover {
+  background-color: ghostwhite;
+}
+
+.movieCompleteDetails {
+  display: flex;
+  padding: 20px 40px 40px;
+  max-width: 30%;
+  display: flex;
+}
+
+.movieLeft {
+    margin: 20px 30px 0 0;
+    width: 500px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.movieRight {
+      flex: 1 1 auto;
+}
+.showtimes {
+  list-style: none;
+}
+
+.showtimes li {
+  float: left;
+  padding: 5px;
+  font
+}
+
+.moviePoster{
+	width: 100%;
+	box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.6);
 }
