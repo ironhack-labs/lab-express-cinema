@@ -6,3 +6,52 @@ body {
 a {
   color: #00B7FF;
 }
+
+body#index {
+  background: url(../images/cinema.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container {
+ display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 6em;
+  margin-top: 3vh;
+  color: #fff;
+  font-weight: 500;
+ 
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+.contdetail {
+  display: flex;
+}
+
+.left {
+  margin: 20px 30px 0 0;
+  width: 500px;
+  object-fit: contain;
+  align-self: flex-center;
+}
+.right {
+  flex: 1 1 auto;
+}
+.showtimes {
+ list-style: none;
+}
+.showtimes li {
+float: left;
+padding: 5px;
+font
+}

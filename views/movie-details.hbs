@@ -1,0 +1,33 @@
+<div class="contdetail">
+    <div class="left">
+        <img src="{{movies.image}}" alt="" class="banner">
+    </div>
+    <div class="right">
+        <a href="http://localhost:3000/movies/list">Go back</a>
+        <h1>{{movies.title}}</h1>
+        <dl class="uk-description-list uk-description-list-divider">
+            <dt>Title:</dt>
+            <dd><p>{{movies.title}}</p></dd>
+            <dt>Director:</dt>
+            <dd><p>{{movies.director}}</p></dd>
+            <dt>Stars:</dt>
+            <dd>
+                <p>
+                    <ul>{{#each movies.stars}} <li>{{this}}</li>{{/each}}</ul>
+                </p>
+            </dd>
+            <dt>Description:</dt>
+            <dd><p>{{movies.description}}</p></dd>
+            <dt>Show times:</dt>
+            <dd>
+                <p>
+                    <ul class="showtimes">{{#each movies.showtimes}} <li>{{this}}</li>{{/each}}</ul>
+                </p>
+            </dd>
+        </dl>
+    </div>
+
+
+
+
+</div>

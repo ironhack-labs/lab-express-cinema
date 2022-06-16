@@ -99,4 +99,4 @@ const movies = [
     })
     .catch(err => {
         console.log(`An error occurred creating the movies: ${err.message}`)
-    }
+    })

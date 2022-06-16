@@ -1,0 +1,21 @@
+<head><title>Movie list</title></head>
+
+<div>
+<h1>Ironhack Cinema</h1>
+<p>Click on the movie to check the showtimes!</p>
+
+<div  class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center"
+    uk-grid>
+    {{#each movies}}
+    <div>
+        <div class="uk-animation-fade uk-animation-fastuk-card uk-card-default uk-card-body">
+            <a href="/movies/{{id}}"><img src="{{image}}" alt=""></a>
+            <h3 class="uk-card-title">{{title}}</h3>
+            <a href="/movies/{{id}}" class="uk-text-warning">See more</a>
+
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+</div>
