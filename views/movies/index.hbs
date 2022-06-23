@@ -1,0 +1,18 @@
+<h1 class="mb-2">Ironhack Cinema</h1>
+<h5 class="mb-5">Click on the movie to check the show times!</h5>
+
+<a href="/" >Go back</a></br></br></br></br>
+
+<div class="row">
+    {{#each movies}}
+    <div class="col-4">
+        <div class="card without-borders mb-5" style="width: 18rem;">
+            <img src="{{image}}" class="card-img-top" alt="{{title}}">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a href="/movies/details/{{id}}">See more</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
