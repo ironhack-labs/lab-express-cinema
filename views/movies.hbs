@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        {{#each data}}
+        <div class="col-md-4">
+            {{title}}
+            <br> <br>
+            <img src="{{image}}" alt="">
+            <br> <br>
+            <a href="movies/{{id}}">See more</a>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
