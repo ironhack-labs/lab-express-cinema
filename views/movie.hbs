@@ -1,0 +1,21 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{image}}" alt="image of {{title}}">
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p>Director: {{director}}</p>
+        <h6>stars</h6>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <h6>Times:</h6>
+        <p>
+            {{#each showtimes}}
+            {{this}} |
+            {{/each}}
+        </p>
+
+    </div>
+</div>
