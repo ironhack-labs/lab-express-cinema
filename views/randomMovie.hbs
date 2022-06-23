@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <a class="navbar-brand cinema-paradiso" href="/"><b>Cinema Paradiso</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row random-movie">
+        <div class="col md-3">
+            <img class="random-img" src="{{image}}" alt="Soy una imagen">
+        </div>
+        <div class="col md-6">
+            <a href="/movies">Go back</a>
+            <h1><b>{{title}}</b></h1>
+            <h2>{{director}}</h2>
+            <h3><b>Stars</b></h3>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                <li>{{this}}</li>
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p><i>{{description}}</i></p>
+            <p><a href="#">13:50</a> | <a href="#">16:20</a> | <a href="#">19:20</a> | <a href="#">22:10</a></p>
+        </div>
+    </div>
+</div>

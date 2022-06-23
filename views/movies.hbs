@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <a class="navbar-brand cinema-paradiso" href="/"><b>Cinema Paradiso</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="ironhack-title">Ironhack Cinema</h1>
+    <p>Click on the movie to check the showtimes!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        {{#each data}}
+
+
+        <div class="col-4">
+
+            <div class="card movie-card" style="width: 18rem;">
+                <a href="movies/{{id}}"><img class="artistImg" src="{{image}}" alt="soy una imagen"></a>
+                <div class="card-body">
+                    <h5 class="card-title"><b>{{title}}</b></h5>
+                    <a href="movies/{{id}}" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+
+        </div>
+
+        {{/each }}
+
+
+    </div>
+</div>

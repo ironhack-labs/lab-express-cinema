@@ -1,8 +1,52 @@
+.movie-card img {
+  width: 100%;
+  object-fit: contain;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  font-family: sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.home-page {
+  overflow: hidden;
+  position: absolute;
+  background: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.checkMovies {
+  margin-top: 300px;
+  /* margin-left: 100px */
+}
+
+.movieTitle {
+  font-size: 4em;
+  color: white;
+  font-weight: bold;
+}
+
+.random-movie {
+  margin: 50px 20px;
+}
+
+.cinema-paradiso {
+  margin-left: 20px;
+}
+
+.ironhack-title {
+  font-weight: bold;
+
+}
+
+.random-img {
+  width: 400px;
+  height: auto;
 }
