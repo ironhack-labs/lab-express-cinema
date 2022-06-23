@@ -1,0 +1,18 @@
+<div class="row">
+
+
+    {{#each moviesData}}
+
+    <div class="col-md-4">
+
+        <div class="card border-light movie-card">
+            <img src="{{image}}" class="card-img-top beer-img" alt="{{name}}">
+            <div class="card-body">
+                <p>{{title}}</p>
+                <a href="/movie-details/{{id}}">See More</a>
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+</div>
