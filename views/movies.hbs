@@ -1,0 +1,34 @@
+<div class="container">
+    <a href="/">Ir a Inicio</a>
+    <div class="row">
+        {{#each movies}}
+
+        <div class="col-sm-12 col-md-4 col-xl-4">
+
+            <div class="card" style="width: 18rem;">
+                <img src="{{image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">{{title}}</p>
+                    <p class="card-text">{{director}}</p>
+                    <a href="/details/{{id}}"> Detalles</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        {{/each}}
+
+
+
+    </div>
+
+</div>
+
+/*
+<h1>{{title}}</h1>
+<p>{{director}}</p>
+<p>{{starts}}</p>
+<img src="{{image}}">
+<p>{{description}}</p>
+<p>{{showtimes}}</p> */
