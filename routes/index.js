@@ -17,14 +17,14 @@ router.get('/movies', (req, res) => {
 })
 
 
-router.get('/movieDetails/:movieId', (req, res) => {
-    const { movieId } = req.params
-    console.log(movieId)
+router.get('/movieDetails/:id', (req, res) => {
+    const { id } = req.params
+    console.log(id)
     Movie
-        .findById(movieId)
-        .then(dataId => {
-            console.log(dataId)
-            res.render('movieDetails', { dataId })
+        .findById(id)
+        .then(data => {
+            console.log("este:-Z", data)
+            res.render('movieDetails', data)
         })
         .catch(err => console.log(err))
 })
