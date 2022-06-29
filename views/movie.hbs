@@ -1,0 +1,17 @@
+<div class="rContainer">
+    {{#with Movie}}
+    <img src="{{image}}" class="rBox">
+    <div class="rBox">
+    <h1>{{title}}</h1>
+    <h3>Director: {{director}}</h2>
+    <h4>Stars</h4>
+   <ul> 
+    <li>{{stars.[0]}}</li>
+    <li>{{stars.[1]}}</li>
+    <li>{{stars.[2]}}</li>
+   </ul>
+   <p>{{description}}</p>
+   <p>{{showtimes.[0]}} | {{showtimes.[1]}} | {{showtimes.[2]}} | {{showtimes.[3]}} | {{showtimes.[4]}}</p>
+   {{/with}}
+   </div>
+</div>

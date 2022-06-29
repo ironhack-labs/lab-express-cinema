@@ -1,0 +1,32 @@
+<h1>Cinema</h1>
+<div class="container">
+    <div class="row row-cols-auto">      
+        {{#each movieList}}
+            <div class="col">
+                    <div class="card" style="width:18em"></div>
+                        <img src="{{image}}" class="card-img-top" style="width:400px ;">
+                        <div class="card-body">
+                            <h3 class="card-title">{{title}}</h3>
+                            <a href="/movies/{{id}}" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+        {{/each}}
+    </div>
+</div>  
+
+
+
+
+{{!-- 
+<h1>Cinema</h1>
+
+<div class="mContainer">
+{{#each movieList}}
+    <div class="box">
+        <img src="{{image}}" class="img">
+        <h3>{{title}}</h3>
+        <a href="/movies/{{id}}">See More</a>
+    </div>
+{{/each}}
+</div> --}}
