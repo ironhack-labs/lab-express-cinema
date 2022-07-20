@@ -1,4 +1,4 @@
-const movies = [
+const MOVIES = [
     {
       title: "A Wrinkle in Time",
       director: "Ava DuVernay",
@@ -84,3 +84,37 @@ const movies = [
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
   // ... your code here
+
+const mongoose = require('mongoose')
+const Movie = require('../models/Movie.model')
+// const BOOKS = require('../data/Movie.json')
+
+// Conectarme a la base de datos
+
+require('../db/index')
+
+// Vaciarla
+
+mongoose.connection.once('open', () => {
+  mongoose.connection.db.dropDatabase()
+    .then(() => {
+      console.info('Db dropped')
+
+      return Movie.create(MOVIES)
+    })
+    .then(createdMovies => {
+      createdMovies.forEach(movie => console.log(`${movie.title} was created`))
+
+      // Cerrar la conexion
+      return mongoose.connection.close()
+    })
+    .then(() => {
+      console.log('Connection closed')
+
+      process.exit(1)
+    })
+    .catch(err => {
+      console.error(err)
+      process.exit(0)
+    })
+})
