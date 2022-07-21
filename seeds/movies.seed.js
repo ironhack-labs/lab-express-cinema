@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 const MOVIES = require('../data/movies.json');
-console.log('Hola seeds')
-require('../config/index');
+console.log('Hola seeds');
+require('../db/index');
 
 mongoose.connection.once('open', () => {
     mongoose.connection.db.dropDatabase()
