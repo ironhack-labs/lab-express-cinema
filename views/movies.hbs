@@ -1,0 +1,16 @@
+<div class="list-movies-title-container">
+    <h2>Click on the movie to check the showtimes!</h2>
+</div>
+
+<div class="main-container">
+    {{#each movies as |movie|}}
+        <div class="card-container">
+            <img src="{{movie.image}}" alt="Image of {{movie.title}}">
+            <div class="text-container" >
+                <h3>{{movie.title}}</h3>
+                <a href="/movies/{{movie._id}}">See more</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
