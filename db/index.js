@@ -15,3 +15,10 @@ mongoose
   .catch((err) => {
     console.error("Error connecting to mongo: ", err);
   });
+
+process.on("SIGINT",()=>{
+  mongoose.connection.close(()=>{
+    console.log("Mongoose disconnected on app termination");
+    process.exit(0)
+  })
+})

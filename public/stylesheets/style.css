@@ -6,3 +6,34 @@ body {
 a {
   color: #00B7FF;
 }
+
+#home{
+  position: fixed;
+  top: -50px;
+  left: -5px;
+  width: 201%;
+  height: 100%;
+}
+#home img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}
+
+.display-cards{
+  display: flex;
+  gap: 20px 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.center-search{
+  position: absolute;
+  text-align: center;
+}
