@@ -22,6 +22,9 @@ const movieSchema = new mongoose.Schema({
     type: [String],
     required: [true, 'Add a description for the book'],
     minLength: 16
+  },
+  showtimes: {
+    type: [String],
   }
 })
 

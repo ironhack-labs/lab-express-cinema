@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 
 
 /* home page */
-a {
+.check {
   color: #3d5e7f;
   text-decoration: none;
   background-color: white;
@@ -20,6 +20,14 @@ a {
   border-radius: 50px;
   font-weight: 600;
   font-size: 15px;
+}
+
+.else{
+  color: #3d5e7f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+
 }
 
 .popcorn {
@@ -73,4 +81,57 @@ a {
 #main{
  margin-left: 80px;
  padding-top: 20px;
+}
+
+/* movie detail page */
+
+.detail-img {
+  margin-top: 40px;
+  margin-left: 40px;
+  padding-top: 0px;
+}
+
+.movie-detail-info {
+  margin-top: -290px;
+  margin-left: 250px;
+}
+
+.movie-detail-info p {
+  width: 720px;
+}
+
+.movie-detail-info h3 {
+ margin-top: -5px;
+ color: grey;
+}
+
+.movie-detail-info h4{
+  margin-top: -5px;
+}
+
+.stars{
+  margin-top: -5px;
+  margin-left: -30px;
+}
+
+.detail-times{
+display: flex;
+flex-direction: row;
+margin-left: 30px;
+margin-top: -17px;
+}
+.detail-times li{
+  margin-left: 5px;
+}
+
+.other{
+  color: white;
+  text-decoration: none;
+  background-color: #3d5e7f;;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left:85px;
+  
 }
