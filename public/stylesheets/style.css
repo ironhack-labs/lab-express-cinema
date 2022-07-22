@@ -5,6 +5,13 @@ html {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+  /* no scrolling bar */
+}
+
+
+/* home page */
 a {
   color: #3d5e7f;
   text-decoration: none;
@@ -28,18 +35,42 @@ a {
 
 }
 
-.popcorn h1{
+.popcorn h1 {
   font-size: 80px;
   color: white;
   font-weight: 900;
 }
 
-.main{
-margin-left: 630px;
-margin-top: -210px;
+.main {
+  margin-left: 630px;
+  margin-top: -210px;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-  /* no scrolling bar */
+
+/* movies page */
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+.movie-info {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+#main{
+ margin-left: 80px;
+ padding-top: 20px;
 }
