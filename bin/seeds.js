@@ -4,7 +4,7 @@ const MOVIES = require('../seeds/movies.seed.json')
 
 // Conectarme a la base de datos
 
-require('../db')
+require('../config/db.config')
 
 // Vaciarla
 
