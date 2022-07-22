@@ -9,7 +9,7 @@ const movieSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    starts: {
+    stars: {
         type: [String],
     },
     image: {

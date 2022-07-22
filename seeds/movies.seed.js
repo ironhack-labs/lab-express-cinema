@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
 const MOVIES = require('../data/movies.json');
-console.log('Hola seeds');
+
 require('../db/index');
 
 mongoose.connection.once('open', () => {
@@ -14,7 +14,7 @@ mongoose.connection.once('open', () => {
             createdMovies.forEach(movie => console.log(`${movie.title} ha sido creado.`));
             return mongoose.connection.close();
         })
-        then(() => {
+        .then(() => {
             console.log('Conexión finalizada.');
             process.exit(1);
         })
