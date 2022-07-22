@@ -5,6 +5,7 @@ body {
 
 a {
   color: #00B7FF;
+  font-size: 1.3em;
 }
 
 #home{
@@ -34,6 +35,28 @@ a {
   flex-wrap: wrap;
 }
 .center-search{
+  left: 40%;
+  top:40%;
   position: absolute;
   text-align: center;
+}
+.center-search h1{
+  font-size: 5em;
+  color: antiquewhite;
+}
+.center-search a {
+  position: absolute;
+  left: 100px;
+  width: 200px;
+  height: 5px;
+  border-radius: 25% 25%;
+  border-bottom: 40px solid rgb(120, 120, 243);
+  border-left: 0px solid transparent;
+  color: antiquewhite;
+}
+.card-body{
+  background-color:lightgray;
+}
+.bg-card{
+  background-color:lightgray;
 }
