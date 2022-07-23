@@ -1,5 +1,14 @@
-{{#each movies as |movie|}}
-  <img src="{{movie.image}}" alt="">
-  <p>{{movie.title}}</p>
-  <a href="/movies/{{movie.id}}">View movie</a>
-{{/each}}
+<div  class="wrapper">
+  <h2>MOVIES</h2>
+  <div class="container">
+    {{#each movies as |movie|}}
+        <div class="movies-card">
+          <img src="{{movie.image}}" alt="" class="movies-image">
+          <h3 class="movies-title">{{movie.title}}</h3>
+          <a href="/movies/{{movie.id}}">
+            <button class="movies-button">View movie</button>
+          </a>
+        </div>
+    {{/each}}
+  </div>
+</div>
