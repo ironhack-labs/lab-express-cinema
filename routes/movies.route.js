@@ -15,4 +15,24 @@ router.get("/movies", (req, res, next) => {
     );
 });
 
+// GET movies detail page
+router.get("/movies/:movieId", (req, res) => {
+  Movie.findById(req.params.movieId)
+    .then((theMovie) => {
+      const { title, director, stars, image, description, showtimes } =
+        theMovie;
+
+      res.render("movies/movie-detail.hbs", {
+        title,
+        director,
+        stars,
+        image,
+        description,
+        showtimes,
+      });
+    })
+    .catch((err) =>
+      console.log("Error while accessing the movies detail page", err)
+    );
+});
 module.exports = router;
