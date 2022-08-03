@@ -1,4 +1,4 @@
-const mongoose = require("mongose");
+const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model");
 
 const MONGO_URI =
@@ -97,7 +97,7 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-Movie.create(movie)
+Movie.create(movies)
   .then((moviesFromDB) => {
     console.log(`Created ${moviesFromDB.length} movies`);
 
