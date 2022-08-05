@@ -16,6 +16,7 @@ a {
 body {
   margin: auto;
   height: 100vh;
+  max-width: 1000px;
   /* min-width: 1300px; */
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -41,29 +42,55 @@ section {
 h1{
   text-align: center;
 }
+
 #homepage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/*div {
-  width: 500px;
-}*/
-/* a {
-  color: #00B7FF;
-  background-color: #fff;
-  /* padding: 10px 20px;*/
-  /* width: 150px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* border-radius: 20%; */
-/* }  */
 
 h1 {
   font-size: 5rem;
   margin-bottom: 20px;
+}
+
+/***************MOVIE LIST******************/
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#movie-list {
+  width: 100%;
+  margin-top: 0px;
+}
+
+#movie-list > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-box {
+  width: 215px;
+  margin: 10px;
+  padding: 10px 0px;
+  border-radius: 6px;
+  background-color: rgba(255,255,255, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-box > div > p {
+  color:#000;
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /*******BUTTON*******/
@@ -72,7 +99,7 @@ h1 {
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
-  background: #00b7ff;
+  background: rgb(0, 183, 255);
   border-radius: 6px;
   padding: 5px;
   display: flex;
@@ -80,7 +107,7 @@ h1 {
   }
 
   .inner-border-btn {
-    border-radius: 6px;
+  border-radius: 6px;
   border: 1px dashed #fff;
   padding: 10px 20px 10px 20px;
   }
@@ -90,12 +117,23 @@ h1 {
   }
 
 
-
-
-
 /*************MEDIA*************/
 @media (max-width: 750px){
-  section {
-    background-color: #00B7FF;
+  #homepage {
+    background-color: rgba(0,183,255, 0.85);
+    border-radius: 6px;
+    padding: 15px;
+  }
+
+  .button {
+    background-color: rgba(255,255,255, 0.85);
+  }
+
+  .inner-border-btn {
+    border: 1px dashed rgb(0, 183, 255);
+  }
+
+  .inner-border-btn > a {
+    color:rgb(0, 183, 255);
   }
 }
