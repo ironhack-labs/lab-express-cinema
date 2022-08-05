@@ -1,29 +1,101 @@
+/**********RESET************/
+
+*, ::befor, ::after {
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/************GENERAL***************/
+
 body {
+  margin: auto;
+  height: 100vh;
+  /* min-width: 1300px; */
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
   display: flex;
   justify-content: flex-end;
 }
 
-div {
-  width: 500px;
+section {
+  width: 50%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-width: 400px; */
 }
 
-a {
-  display: block;
-  color: #00B7FF;
-  text-decoration: none;
-  background-color: #fff;
-  padding: 10px 20px;
-  width: fit-content;
-  border-radius: 12.5%;
+/***************HOMEPAGE******************/
+h1{
+  text-align: center;
 }
+#homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*div {
+  width: 500px;
+}*/
+/* a {
+  color: #00B7FF;
+  background-color: #fff;
+  /* padding: 10px 20px;*/
+  /* width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border-radius: 20%; */
+/* }  */
 
 h1 {
   font-size: 5rem;
   margin-bottom: 20px;
+}
+
+/*******BUTTON*******/
+
+  .button {
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: #00b7ff;
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  }
+
+  .inner-border-btn {
+    border-radius: 6px;
+  border: 1px dashed #fff;
+  padding: 10px 20px 10px 20px;
+  }
+
+  .inner-border-btn > a {
+    color: #ffffff;
+  }
+
+
+
+
+
+/*************MEDIA*************/
+@media (max-width: 750px){
+  section {
+    background-color: #00B7FF;
+  }
 }
