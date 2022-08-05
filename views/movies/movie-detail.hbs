@@ -1,16 +1,21 @@
-<div>
+<section id="movie-detail">
+        <h2>{{title}}</h2>
+
     <img src="{{image}}">
     <div>
-        <a href="/">go back</a>
-        <h3>{{title}}</h3>
-        <h2>Director: {{director}}</h2>
-        <p>Stars</p>
+        <h3>Director: {{director}}</h3>
+        <p>Stars:</p>
         <ul>
         {{#each stars}}
         <li>{{this}}</li>
         {{/each}}
         </ul>
-        <p>{{description}}</p>
+        <p id="movie-description">{{description}}</p>
         <p>{{showtimes}}</p>
+        <div id="goBack-btn" class="button">
+            <div class="inner-border-btn">
+            <a href="/">Go Back</a>
+        </div>
     </div>
-</div>
+    </div>
+</section>
