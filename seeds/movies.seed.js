@@ -94,3 +94,5 @@ Movie.create(movies)
   .catch((err) =>
     console.log(`An error occurred while creating movies from the DB: ${err}`)
   );
+
+module.exports = movies;
