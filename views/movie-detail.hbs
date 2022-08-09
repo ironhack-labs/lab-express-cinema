@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card bg-light" style="max-width: 850px;">
+    <div class="row">
+      <div class="col-md-3">
+        <img src={{image}} alt={{title}} />
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <a href="/movies">Go Back</a>
+          <h4 class="card-title"><b>{{title}}</b></h4>
+          <h5 class="card-text">Director: {{director}}</h5>
+          <h6 class="card-text">Stars</h6>
+          <ul>
+            {{#each stars as |star|}}
+              <li>{{star}}</li>
+            {{/each}}
+          </ul>
+          <p class="card-text">{{description}}</p>
+          <p class="card-text">{{showtimes}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
