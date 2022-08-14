@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model"); // model of the Movie schema
 
+// list of movies
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -90,7 +91,7 @@ const movies = [
 Movie.create(movies)
   .then((moviesFromDB) => {
     console.log(`Created ${moviesFromDB.length} movies`);
-    console.log(movies);
+    console.log(`hello from the create function`);
 
     mongoose.connection.close();
   })

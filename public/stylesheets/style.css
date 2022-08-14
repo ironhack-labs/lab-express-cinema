@@ -4,5 +4,23 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.movies-outer-container {
+  display: grid;
+  column-gap: 100px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  justify-content: center;
+}
+
+.movies-inner-container {
+  padding: 20px;
+}
+
+.movie-title,
+.movie-details-btn {
+  display: flex;
+  justify-content: center;
 }
