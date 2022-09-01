@@ -1,0 +1,24 @@
+<a href="/movies">Go Back</a>
+{{#each film}}
+<div class="card mb-3" style="max-width: 800px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{image}}" class="img-fluid rounded-start" alt="{{title}}">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">Director: {{director}}</p>
+                <p class="card-text">Stars</p>
+                <ul>
+                    {{#each stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="card-text">{{description}}</p>
+                <p class="card-text">{{showtimes}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

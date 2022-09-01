@@ -6,3 +6,40 @@ body {
 a {
   color: #00B7FF;
 }
+
+.bg {
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 500px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.sub-title {
+  font-size: 2rem;
+}
+
+.prueba {
+  color: white;
+}
