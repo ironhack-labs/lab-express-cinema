@@ -1,0 +1,32 @@
+<div class="container center mt-5 d-flex justify-content-center" style="max-width: 900px;">
+    <div class="row">
+
+        <div class="card mb-3">
+            <div class="row g-0 p-3">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="{{image}}" class="rounded" alt="{{name}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">{{title}}</h2>
+                        <p class="card-text"><strong>Director:</strong> {{director}}</p>
+                        <p class="card-text"><strong>Stars</strong></p>
+                        <ul>
+                            {{#each stars}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                        <p class="card-text">{{description}}</p>
+                        {{#each showtimes}}
+                        <span>{{this}} |</span>
+                        {{/each}}
+                        <div class="mt-4">
+                            <a class="link" href="/movies">Go back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
