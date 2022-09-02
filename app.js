@@ -28,6 +28,21 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 const index = require('./routes/index');
 app.use('/', index);
 
+app.get('../movies', (req, res) => {
+
+    console.log(movies)
+
+    const moviesInfo = data.movies.map((movie) => {
+
+        return {
+            title: movie.title,
+            image: movie.image
+        }
+    }).then
+    res.render('movies', { moviesInfo })
+
+})
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
 
