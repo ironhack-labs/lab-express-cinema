@@ -23,7 +23,7 @@ router.get('/movie/:idmovie', (req, res, next) => {
     MovieModel.findById(req.params.idmovie)
     .then((film) => {
       console.log(film);
-      res.render('movie', { film } ); // no entiendo porque lo tengo que pasar a objeto si ya es un objeto
+      res.render('movie',  film ); // no entiendo porque lo tengo que pasar a objeto si ya es un objeto
     })
     .catch((err) => {
       console.error(err)
