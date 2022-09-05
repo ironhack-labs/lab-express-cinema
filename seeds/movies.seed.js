@@ -22,7 +22,3 @@ mongoose.connection.once('open', () => {
             process.exit(0);
         });
     });
-    // .then((x) => {
-    //     console.log("Connected to Mongo! Database ", x.connections[0].name);
-    // })
-    // .catch(( 
