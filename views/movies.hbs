@@ -1,0 +1,8 @@
+    <h1>Cinema</h1>
+        {{#each movies}}
+        <div>
+            <img src="{{image}}" alt="Card image cap">
+            <h5>{{title}}</h5>
+            <a href="/movie/{{id}}" >See more</a> 
+        </div>           
+        {{/each}}
