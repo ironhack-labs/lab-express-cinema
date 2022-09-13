@@ -1,8 +1,52 @@
+:root {
+  --VminMax: calc(1vmin + 1vmax / 2);
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+#index-wrap {
+  background: url(../images/cinema.jpg) repeat top left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.body-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-wrap {
+  margin-right: calc(var(--VminMax) * 6);
+  margin-bottom: 100px;
+  align-self: center;
+}
+.header-wrap h1 {
+  font-size: calc(var(--VminMax) * 8);
+  color: #fff;
+  margin-bottom: calc(var(--VminMax) * 4);
+}
+.header-wrap a {
+  font-size: calc(var(--VminMax) * 1.3);
+  font-weight: 600;
+  color: rgb(29, 29, 29);
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: calc(var(--VminMax) * 1.4);
+  border-radius: 50px;
 }
