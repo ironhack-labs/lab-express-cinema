@@ -19,8 +19,14 @@ router.get('/movies', async (req, res, next) => {
 });
 /* GET details page */
 router.get('/details/:movieId', async (req, res, next) => {
-  console.log(req.params);
-  // res.render('details');
+  Movie.findById(req.params.movieId)
+    .then((data) => {
+      console.log(data.title);
+      res.render('details', { movieDetails: data });
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 });
 
 module.exports = router;
