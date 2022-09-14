@@ -1,0 +1,22 @@
+<div class="movieDetailContainer container">
+    <div class="card-body " style="width: 18rem;">
+        <img src={{movie.image}} alt="Image Poster">
+    </div>
+    <div class="movieDetail card-body" style="width: 50rem;">
+        <h5>{{movie.title}}</h5>
+        <p>Director: {{movie.director}}</p>
+        <p class="fw-bold">Stars</p>
+        <ul>
+        {{#each movie.stars}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <ul class="showtimes">
+            {{#each movie.showtimes}}
+                <li>{{this}} | </li>
+            {{/each}}
+        </ul>
+        <a href="/movies">Go Back</a>
+    </div>
+</div>
