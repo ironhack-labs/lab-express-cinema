@@ -7,21 +7,19 @@ router.get('/', (req, res, next) => res.render('index'));
 
 /* GET movies page */
 router.get('/movies', async (req, res, next) => {
-  Movie.find({})
+  Movie.find({}, 'title image')
     .then((data) => {
-      // console.log(typeof allMovies);
-      // res.send(data);
       res.render('movies', { Movies: data }); // Don´t have to send all data here...
     })
     .catch((err) => {
       console.error(err);
     });
 });
+
 /* GET details page */
 router.get('/details/:movieId', async (req, res, next) => {
   Movie.findById(req.params.movieId)
     .then((data) => {
-      console.log(data.title);
       res.render('details', { movieDetails: data });
     })
     .catch((err) => {

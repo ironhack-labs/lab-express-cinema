@@ -1,19 +1,13 @@
 :root {
   --VminMax: calc(1vmin + 1vmax / 2);
+  --purple: #663399;
 }
 
 body {
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
-}
-
-a {
-  color: #00b7ff;
-}
-
-h1 {
-  margin: 0;
+  background-color: rgb(222, 222, 222);
 }
 
 /* https://css-tricks.com/perfect-full-page-background-image/ */
@@ -49,6 +43,17 @@ h1 {
   text-decoration: none;
   padding: calc(var(--VminMax) * 1.4);
   border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header-wrap a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+}
+.header-wrap a:active {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
 }
 
 /* movies */
@@ -65,7 +70,6 @@ h1 {
 
 .movie-card {
   width: 25vw;
-  /* background-color: rebeccapurple; */
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 10px;
   padding: 20px 10px;
@@ -80,21 +84,43 @@ h1 {
   background-color: rgba(102, 51, 153, 0.2);
 }
 
-.see-more {
+.btn {
   color: rgb(255, 255, 255);
-  background-color: rebeccapurple;
+  background-color: var(--purple);
   text-decoration: none;
   padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 10px;
 }
-.see-more a:hover {
-  color: rebeccapurple;
+.btn:hover {
+  color: var(--purple);
   background-color: rgb(255, 255, 255);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 10px;
+  border: 1px solid var(--purple);
+}
+.btn:active {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 5px var(--purple);
 }
 
 .movie-card img {
   width: 20vw;
+}
+
+/* details */
+.details-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.details-wrap img {
+  width: 30vw;
+  margin: 0 40px 0 20px;
+}
+
+.details-content {
+  font-size: medium;
+  width: 40vw;
+  margin: 0 40px 0 20px;
+  align-self: flex-end;
 }
