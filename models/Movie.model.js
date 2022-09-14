@@ -10,8 +10,6 @@ const mongoose = require('mongoose');
 //   showtimes: ['13:00', '15:30', '18:00', '20:10', '22:40'],
 // },
 
-// const { Mongoose } = require('mongoose');
-
 const movieSchema = new mongoose.Schema({
   title: {
     type: String,

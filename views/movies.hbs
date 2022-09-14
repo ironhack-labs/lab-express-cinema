@@ -1,1 +1,15 @@
-<h1>Nothing here yet</h1>
+<div class='heading-wrap'>
+  <h1>Ironhack Cinema</h1>
+  <h2>Click on the movies to see the showtimes</h2>
+</div>
+<div id='movie-wrap'>
+  {{#each Movies}}
+    <div class='movie-card'>
+      <a href='/details/{{this.id}}'>
+        <img src='{{this.image}}' alt='Movie Picture of {{this.name}}' />
+      </a>
+      <h2>{{this.title}}</h2>
+      <a class='see-more' href='/details/{{this.id}}'>See more</a>
+    </div>
+  {{/each}}
+</div>
