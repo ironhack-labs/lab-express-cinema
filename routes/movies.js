@@ -9,7 +9,13 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   const movieDetail = await Movie.findById(req.params.id);
-  res.render("details", { movie: movieDetail });
+  const cast = movieDetail.stars.reduce((a, c) => {
+    a[c] = c;
+    return a;
+  }, {});
+  res.render("details", { movie: movieDetail, cast });
+  console.log(movieDetail);
+  console.log(cast);
 });
 
 module.exports = router;

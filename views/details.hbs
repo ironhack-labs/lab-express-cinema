@@ -12,7 +12,9 @@
 
   <ul>
 
-    {{this.stars}}
+    {{#with cast}}
+      <li>{{#each cast}}{{/each}}</li>
+    {{/with}}
   </ul>
 
   <p>{{this.description}}</p>
