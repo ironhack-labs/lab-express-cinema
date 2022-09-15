@@ -4,5 +4,10 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+li {
+  display: inline-block;
+  white-space: nowrap;
 }
