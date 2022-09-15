@@ -1,0 +1,18 @@
+<div class="row-detail">
+  {{#with movieId}}
+    <div class="column-picture">
+        <img src="{{this.image}}" alt="{{this.title}}" />
+    </div>
+    <div class="column-description">
+        <a href="/movies">Go back</a>
+        <h1>{{title}}</h1>
+        <h2>{{director}}</h2>
+        <h3>Stars</h3>
+        <ul>
+            <li>{{stars}}</li>
+        </ul>
+        <p>{{description}}</p>
+        <p>{{showtimes}}</p>
+    </div>
+  {{/with}}
+</div>
