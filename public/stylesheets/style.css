@@ -1,8 +1,140 @@
+html {
+  background-image: url('../images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 body {
-  padding: 50px;
+  margin: 0;
+  padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+
+
+.home-display {
+  padding: 30px;
+  margin-right: 100px;
+  position: relative;
+
+}
+
+#intro-para {
+  font-size: 16px;
+}
+
+#show-link {
+  position: absolute;
+  right: 40px;
+
+}
+
+#show-link h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: none;
+}
+
+#check-movies {
+
+  color: crimson;
+  text-decoration: none;
+  font-size: 16px;
+
 }
 
 a {
-  color: #00B7FF;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: crimson;
+  text-decoration: none;
+  transition: 0.9s;
+}
+
+a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#button {
+  text-align: center;
+  width: 180px;
+  padding: 15px 20px;
+  height: 40px;
+  background-color: rgb(243, 243, 243);
+  box-shadow: inset 2px 2px 7px #808080;
+  border-radius: 30px;
+  transition: 0.9s;
+}
+
+#button:hover {
+  background-color: crimson;
+  color: #fff;
+  box-shadow: inset 2px 2px 7px #69091c;
+}
+
+.movie-list {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto 0 auto;
+
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+ul li {
+  padding: 20px;
+}
+
+h2,
+p {
+  text-align: center;
+
+}
+
+h3 {
+  color: #fff;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.movie-content {
+  display: flex;
+  padding: 35px;
+  color: #fff;
+}
+
+.movie-title {
+  color: #7c1025;
+}
+
+.movie-director {
+  color: #000;
+}
+
+.movie-stars {
+  color: #000;
+}
+
+.movie-details {
+  padding: 10px;
+  position: relative;
+}
+
+.movie-description {
+  text-align: left;
+}
+
+.movie-showtimes {
+  position: absolute;
+
 }
