@@ -36,13 +36,13 @@ body {
   margin-top: none;
 }
 
-#check-movies {
+/* #check-movies {
 
   color: crimson;
   text-decoration: none;
   font-size: 16px;
 
-}
+} */
 
 a {
   padding: 10px 15px;
@@ -57,7 +57,10 @@ a:hover {
   color: #fff;
 }
 
-#button {
+#check-movies {
+  color: crimson;
+  text-decoration: none;
+  font-size: 16px;
   text-align: center;
   width: 180px;
   padding: 15px 20px;
@@ -66,9 +69,10 @@ a:hover {
   box-shadow: inset 2px 2px 7px #808080;
   border-radius: 30px;
   transition: 0.9s;
+
 }
 
-#button:hover {
+#check-movies:hover {
   background-color: crimson;
   color: #fff;
   box-shadow: inset 2px 2px 7px #69091c;
