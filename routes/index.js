@@ -7,24 +7,22 @@ router.get('/', (req, res, next) => res.render('index'));
 
 /* GET movies page */
 router.get('/movies', async (req, res, next) => {
-  Movie.find({}, 'title image')
-    .then((data) => {
-      res.render('movies', { Movies: data }); // Don´t have to send all data here...
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+  const movieData = await Movie.find({}, 'title image');
+  try {
+    res.render('movies', { Movies: movieData }); // Don´t have to send all data here...
+  } catch (err) {
+    console.error(err);
+  }
 });
 
 /* GET details page */
 router.get('/details/:movieId', async (req, res, next) => {
-  Movie.findById(req.params.movieId)
-    .then((data) => {
-      res.render('details', { movieDetails: data });
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+  const movieDetailsData = await Movie.findById(req.params.movieId);
+  try {
+    res.render('details', { movieDetails: movieDetailsData });
+  } catch (err) {
+    console.error(err);
+  }
 });
 
 module.exports = router;
