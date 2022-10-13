@@ -15,7 +15,7 @@ router.get('/', async(req, res, next) => {
 router.get('/models/:movieId', async (req, res, next) => {
     const { movieId } = req.params;
     try {
-        const movieFromDB = await Movie.findMyId(bookId);
+        const movieFromDB = await Movie.findById(movieId);
         res.status(200).json(movieFromDB)
     } catch (error) {
         console.log('Erro ao pesquisar filme.', error);
