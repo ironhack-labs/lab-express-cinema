@@ -8,13 +8,25 @@ router.get('/', (req, res, next) => res.render('index'));
 router.get('/movies', (req, res, next) => {
     Movie.find()
     .then((response)=>{
-        res.render('../views/movies/movies.hbs',{
+        res.render('./movies/movies.hbs',{
             Movies: response
         })
-        console.log(response);
     })
     .catch((err)=>{
         next(err);
+    })
+})
+
+router.get('/movies/:id', (req, res, next) => {
+    let {id} = req.params
+    Movie.findById(id)
+    .then((response) => {
+        res.render('./movies/each-movie.hbs', {
+            eachMovie: response
+        })
+    })
+    .catch((err) => {
+        next(err)
     })
 })
 
