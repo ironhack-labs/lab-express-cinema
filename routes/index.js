@@ -6,9 +6,6 @@ const Movies = require("../models/Movie.model")
 router.get('/', (req, res, next) => res.render('index'));
 
 
-
-
-
 //renderizar todas las películas
 router.get("/movies", (req, res, next) => {
     Movies.find()
@@ -22,9 +19,11 @@ router.get("/movies", (req, res, next) => {
     })
 
 })
+// no he conseguido que me funcionara por el findById, y lo he hecho con el findOne
 
 //renderizar los detalles
-/*router.get("/movies/:moviedetails", (req, res, next) => {
+/*
+router.get("/movies/:moviedetails", (req, res, next) => {
     const  movieId  = req.params;
     Movies.findById(movieId)
     .then((response) => {
@@ -32,33 +31,25 @@ router.get("/movies", (req, res, next) => {
         res.render("movies-details.hbs", {
             movieDetails: response
         })
-
     })
-
     .catch((err) => {
         next(err)
     })
 })
 */
-
 router.get("/movies/:moviedetails", (req, res, next) => {
-    const { movieId } = req.params;
-    Movies.findOne({movieId})
-    .then((response) => {
-        console.log(response);
+    const { moviedetails } = req.params;
+   // console.log(movieId)
+    Movies.findOne({"_id": moviedetails})
+    .then((response) => {  
+        //console.log(response);
         res.render("movies-details.hbs", {
             movieDetails: response
         })
-
     })
-
     .catch((err) => {
         next(err)
     })
 })
-
-
-
-
 
 module.exports = router;
