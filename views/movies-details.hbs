@@ -1,26 +1,26 @@
-<div id="container-movie" >
+<div id="container-movie">
     <div>
         <img src="{{image}}" alt="image-movie" />
     </div>
-    <div class="content-movie" >
-    <a href="/movies">Go back</a>
-    <p>{{title}}</p>
-    <p>{{director}}</p>
-    <div>
-        Stars
-        <ul>
-            {{#each stars}}
-            <li>{{this}}</li>
+    <div class="content-movie">
+        <a href="/movies">Go back</a>
+        <p>{{title}}</p>
+        <p>{{director}}</p>
+        <div>
+            Stars
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div>
+            <p>{{description}}</p>
+        </div>
+        <div>
+            {{#each showtimes}}
+            <span>{{this}} |</span>
             {{/each}}
-        </ul>
-    </div>
-    <div>
-        <p>{{description}}</p>
-    </div>
-    <div>
-        {{#each showtimes}}
-        <span>{{this}} |</span>
-        {{/each}}
-    </div>
+        </div>
     </div>
 </div>
