@@ -6,7 +6,6 @@ const Movie = require('../models/Movie.model')
 /* GET home page */
 router.get('/', async(req, res, next) =>{ 
 try{
-  await Movie.deleteMany()
   res.render('index')
 }catch(error){
   console.log(error.message)
@@ -14,12 +13,21 @@ try{
 })
 router.get('/movies',async(req,res,next)=> {
 try{
-  await Movie.insertMany(data)
-  console.log("deu certo")
-  res.render('movies',data)
+  //await Movie.insertMany(data)
+  const movies = await Movie.find()
+  res.render('movies',movies)
 }catch(error){
     console.log(error.message)
 }
 });
+router.get('/movies/:id',async(req,res,next)=>{
+  const {id} = req.params
+  try{
+   const film = await Movie.findOne({_id:id})
+   res.render('movies-details',film)
+  }catch(error){
+   console.log(error.message)
+  }
+})
 
 module.exports = router;
