@@ -12,7 +12,7 @@ const express = require('express');
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
-
+const mongoose = require('mongoose')
 const app = express();
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
@@ -27,6 +27,36 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
+const Movie = require('./models/Movie.model');
+app.get('/movies', (req,res)=>{
+    mongoose
+  .connect('mongodb://localhost/lab-express-cinema')
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+    
+    
+    
+     Movie.find({})
+    .then ((data)=> {
+        const moviesArray = data
+        console.log(moviesArray)
+        res.render('movies', {moviesArray})
+    })
+    
+})
+
+app.get('/movie/:id', (req,res)=>{
+    console.log(req.params.id)
+    Movie.find({_id:req.params.id})
+    .then ((data)=> {
+        const movieSearched = data;
+        console.log(movieSearched)
+        res.render('movie', {movieSearched})
+})
+    
+})
+
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
