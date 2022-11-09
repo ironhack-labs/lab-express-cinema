@@ -1,9 +1,85 @@
-<h2>Movie Info:</h2>
-
 {{#each movieSearched}}
 <div id="movie-details-container">
     <img class='big-pic' src={{this.image}}>
+    <div class="sub-container">
+        <a class="back-button" href="/movies">Go Back > </a>
+        <h2 class="margin-bottom">{{this.title}}</h2>
+        <h3>Director: {{this.director}}</h3>
+        <p class="margin-top bold"> Stars:</p>
+        <ul class="margin-top margin-bottom2 margin-left">
+            <li>{{this.stars.[0]}}</li>
+            <li>{{this.stars.[1]}}</li>
+            <li>{{this.stars.[2]}}</li>
+        </ul>
+        <p>{{this.description}}</p>
+        <table>
+            <thead>
+                <tr class="table-row">
+                    <td></td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                    <td>Sunday</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{this.showtimes.[0]}}</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>{{this.showtimes.[1]}}</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td class="highlighted">X</td>
+                </tr>
+                <tr>
+                    <td>{{this.showtimes.[2]}}</td>
+                    <td class="highlighted">X</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                </tr>
+                <tr>
+                    <td>{{this.showtimes.[3]}}</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                </tr>
+                <tr>
+                    <td>{{this.showtimes.[4]}}</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="highlighted">X</td>
+                    <td class="highlighted">X</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
 
+    </div>
 
 {{/each}}
-</div>
+</div>  

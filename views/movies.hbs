@@ -1,12 +1,12 @@
-<h2>Movies Route</h2>
-<p>Click on a movie to check the showtimes!</p>
+<h2 class="bold title margin-bottom2">Ironhack Cinema</h2>
+<p class="bold high-font margin-bottom2">Click on a movie to show additional information and showtimes schedules!</p>
 
 <div id="movies-container">
     {{#each moviesArray}}
     <div class="movie-card">
-        <img src="{{this.image}}">
-        <h2>{{this.title}}</h2>
-        <a class="buttonized"href="/movie/{{this._id}}">See More</a>
+        <img  class="margin-bottom3" src="{{this.image}}">
+        <h2 class="margin-bottom3">{{this.title}}</h2>
+        <a class="buttonized bold"href="/movie/{{this._id}}">See More</a>
     </div>
     {{/each}}
 
