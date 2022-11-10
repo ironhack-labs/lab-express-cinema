@@ -1,0 +1,25 @@
+<section class="movieSection">
+
+    <div class="container">
+        <h1> Movies</h1>
+    </div>
+
+    <div class="row">
+        {{#each movies}}
+        <div class="col-4" style="display: flex; justify-content:center">
+
+            <div class="card" style="width: 18rem; margin-bottom: 20px">
+                <img src="{{image}}" class="card-img-top" alt="imagen peli">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                </div>
+
+                <div class="card-body">
+                    <a href="/movies/{{_id}}" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+    </div>
+</section>
