@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row gap-2 justify-content-center">
+        <div class="card d-flex flex-row justify-content-around p-3" style="width:70%">
+
+            <img class="card-img-top d-block" style="width:40%" src="{{movieDB.image}}" alt="Card image cap">
+            <div class="ml-5">
+                <a href="/movies">Go back</a>
+                <p class="card-title "><strong>{{movieDB.title}}</strong></p>
+                <p class="card-text "><strong>Director </strong>{{movieDB.director}}</p>
+                <p class="card-title "><strong>Stars</strong></p>
+                <ul>
+                    {{#each movieDB.stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="card-text text-justify w-50">{{movieDB.description}}</p>
+                <p class="card-text">
+                    {{#each movieDB.showtimes}}
+                    <span>{{this}} |</span>
+                    {{/each}}
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
