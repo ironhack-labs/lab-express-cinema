@@ -1,0 +1,18 @@
+<div class="details">
+	<div>
+		<img src={{image}} alt="" />
+		<div class="details-card">
+			<a href="/">Go back</a>
+			<h2>{{name}}</h2>
+			<h4>{{director}}</h4>
+			<h5>Stars</h5>
+			<ul>
+				{{#each stars}}
+					<li>{{this}}</li>
+				{{/each}}
+			</ul>
+			<p>{{description}}</p>
+			<p>{{#each showtimes}} <span>{{this}}</span> | {{/each}}</p>
+		</div>
+	</div>
+</div>
