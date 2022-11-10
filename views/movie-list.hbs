@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <h1 class="py-1">MOVIES</h1>
+    <hr>
+    <div class="row gp-4 m-4 d-flex justify-content-center align-items-center">
+        {{#each movie}}
+        <div class="d-flex card col-md-4 mb-3 p-3 border border-dark rounded-3 m-1" style="width: 20rem;">
+            <img src={{image}} class="card-img-top movie-img" alt={{title}}>
+            <div class="p-3 bg-white mb-1">
+                <h2 class="card-title">{{title}}</h2>
+                <a href="/movie/{{_id}}" class="btn btn-lg btn-outline-dark p-3 buy-btn">See More</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
