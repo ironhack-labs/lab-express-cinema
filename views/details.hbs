@@ -1,0 +1,29 @@
+<div class="container d-flex justify-content-center align-self-center mt-5">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{movieDb.image}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{movieDb.title}}</h5>
+                    <h6 class="card-title">Director: {{movieDb.director}}</h6>
+                    <ul>
+                        <h6 class="card-title">Stars</h6>
+                        {{#each movieDb.stars}}
+
+                        <li>{{{this}}}</li>
+
+                        {{/each}}
+                    </ul>
+                    <p class="card-text">{{{movieDb.description}}}</p>
+
+
+                    {{#each movieDb.showtimes}}
+                    {{{this}}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
