@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-4 mb-3 ">
+      <div class="card card-body">
+        <img src={{image}} alt="">
+        <a href="/movies">Go back</a>
+        <h3>{{title}}</h3>
+        <h4>Director: {{director}}</h3>
+          <h5>Starts:</h5>
+          <ul>
+            {{#each stars}}
+            <li>
+              {{this}}
+            </li>
+            {{/each }}
+          </ul>
+          <p>{{description}}</p>
+          <p>
+            {{#each showtimes}}
+            {{this}} |
+            {{/each }}
+          </p>
+
+      </div>
+    </div>
+
+  </div>
+</div>
