@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <hr>
+    <div class="row">
+        <h1>Movies</h1>
+        <br>
+        {{#each movies}}
+        <div class="col-md-4 mb-3 ">
+            <div>
+                <img src={{image}} class="card-img-top mt-5">
+                <div>
+                    <h5 class="card-title mt-2">{{title}} </h5>
+                   <a href="/movies/{{_id}}">See more</a>
+                </div>
+            </div>
+        </div>
+
+
+        {{/each}}
+
+
+        <a href="/" class="btn btn-primary">Inicio</a>
+    </div>
