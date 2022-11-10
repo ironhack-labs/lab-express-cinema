@@ -1,0 +1,26 @@
+<h1>Nuestras Peliculas</h1>
+<h3>Click on the movie to check the showtime!</h3>
+
+
+
+<div class="container">
+    <div class='row'>
+
+        {{#each movies}}
+
+        <div class="col-md-4 mb-3" style="width: 18rem;">
+            <div class="card card-body">
+                <img src={{image}} class="card-img-top" alt="poster pelicula">
+
+                <h5 class="card-title text-center fw-bold mt-2">{{title}}</h5>
+
+                <a href="/movies/movie-details/{{_id}}" class="text-center">See more</a>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+
+</div>
