@@ -1,0 +1,33 @@
+<div class="container">
+
+    <h1>Movie Details</h1>
+
+    <hr>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{image}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <a class="btn btn-dark" href="/movies" role="button">Back</a>
+                    <hr>
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">Director: {{director}}</p>
+                    <p class="card-text">Stars:</p>
+                    <ul>
+                        {{#each stars}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <p class="card-text">{{description}}</p>
+                    {{#each showtimes}}
+                    <small class="text-muted">{{this}} |</small>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
