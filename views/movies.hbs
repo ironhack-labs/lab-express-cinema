@@ -1,0 +1,30 @@
+
+<h1>Películas</h1>
+<hr>
+<div class="container d-flex flex-wrap justify-content-center">
+   
+   
+
+    {{#each movies}}
+  
+       
+        
+       
+        <div class="card" style="width: 300px;">
+            <img src="{{image}}" class="card-img-top" alt="{{name}}">
+            <div class="card-body">
+                
+                <h5 class="card-title">{{title}} </h5>
+                
+                <a href="/movies/details/{{_id}}">see more</a>
+            </div>
+        </div>
+       
+
+    
+    {{/each}}
+
+    <hr>
+</div>
+    <a href="/" class="btn btn-dark">Volver a incio</a>
+

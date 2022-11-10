@@ -1,0 +1,28 @@
+
+<div class="container d-flex flex-wrap justify-content-center">
+<div class="card" style="width: 400px;">
+    <img src="{{image}}" class="card-img-top" alt="{{name}}">
+    <div class="card-body">
+
+        <h5 class="card-title">{{title}} </h5>
+
+        <ul >
+            {{#each stars}}
+
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p class="card-title">{{description}} </p>
+        <p>
+            
+            {{#each showtimes}}
+            {{this}} |
+            {{/each}}
+            
+             </p>
+
+        <a href="/movies">back</a>
+    </div>
+</div>
+</div>
+  
