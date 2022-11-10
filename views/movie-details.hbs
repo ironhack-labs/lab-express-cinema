@@ -1,10 +1,10 @@
 <div class="container mt-4">
-    <h1 class="py-1">MOVIES</h1>
+    <h1 class="py-1 text-white">MOVIES</h1>
     <hr>
     <div class="row gp-4 m-4 d-flex justify-content-center align-items-center">
         <div class="d-flex card col-md-4 mb-3 p-3 m-1" style="width: 20rem;">
             <img src={{image}} class="card-img-top movie-img" alt={{title}}>
-            <div class="p-3 bg-white mb-1">
+            <div class="p-3 bg-white rounder-3 border bg-transparent rounded-3 mb-1">
                 <h2 class="card-title">{{title}}</h2>
                 <h4 class="card-subtitle">Director:{{director}}</h4>
                 <ul>
@@ -16,7 +16,7 @@
                 <p>{{description}}</p>
                 <p>{{#each showtimes}}<span>{{this}}</span>{{/each}}</p>
             </div>
-            <a href="/movie" class="btn btn-dark">Inicio</a>
+            <a href="/movie" class="btn btn-outline-dark">Inicio</a>
         </div>
     </div>
 </div>
