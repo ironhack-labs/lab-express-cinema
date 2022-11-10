@@ -1,0 +1,54 @@
+
+<div class="container my-5 p-2 bg-light rounded">
+
+    <div class="row m-4">
+
+        <div class="col-3 my-4">
+
+                <img class="mt-4" src="{{movie.image}}" alt="{{movie.title}} poster">
+        </div>
+
+        <div class="col-8 my-2">
+
+                <h4>{{movie.title}}</h4>
+
+                <h5><span class="color-indicator-blue">Director:</span> {{movie.director}}</h5>
+
+                <h6 class="color-indicator-blue">Stars</h6>
+
+                <ul>
+
+                    {{#each movie.stars}}
+
+                        <li>{{this}}</li>
+                        
+                    {{/each}}
+                </ul>
+
+                <h6 class="color-indicator-blue">Description</h6>
+
+                <p>{{movie.description}}</p>
+
+                <h6 class="color-indicator-blue">Showtimes</h6>
+
+                <p>{{#each movie.showtimes}}
+                    {{this}} |
+                {{/each}}</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row m-4">
+
+        <div class="col-2 my-4 bg-light rounded">
+
+            <a href="/movies" class="btn btn-outline-danger btn-lg my-1 w-100">Go back</a>
+
+        </div>
+    </div>
+</div>
+    
+

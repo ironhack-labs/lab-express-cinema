@@ -1,0 +1,44 @@
+<div class="container mt-5">
+
+    <div class="movies-view-header">
+
+            <h2 class="light">{{title}}</h2>
+
+            <h4 class="light">Click the button to check the showtimes!</h4>
+    </div>
+
+
+
+    <div class="row">
+    {{#each movie}}
+
+        <div class="col-md-3 text-center">
+    
+            <div class="card m-4 p-4" style="width: 20rem; ">
+
+                <img src="{{image}}" alt="{{title}} poster">
+
+                <h6 class="m-3">{{title}}</h6>
+
+                <a href="/movies/{{id}}" class="btn btn-outline-danger btn-sm m-1">See more</a>
+
+            </div>
+
+        </div>
+
+    {{/each}}
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row m-4">
+
+        <div class="col-2 my-4 bg-light rounded">
+
+            <a href="/" class="btn btn-outline-danger btn-lg my-1 w-100">Go back</a>
+
+        </div>
+    </div>
+</div>
+    
