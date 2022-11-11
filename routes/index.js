@@ -7,6 +7,7 @@ router.get('/', (req, res, next) => res.render('index'));
 router.get("/movies", (req, res) => {
     Movie
         .find()
+        .select({ _id: 1, title: 1, image: 1 })
         .then(movieDB => {
             console.log(movieDB)
             res.render("movies", { movie: movieDB })
