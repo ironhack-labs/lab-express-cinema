@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
-console.log(typeof model);
 
 const movieSchema = new Schema({
   title: String,
