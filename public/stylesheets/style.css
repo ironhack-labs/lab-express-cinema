@@ -1,8 +1,91 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  color: #00B7FF;
+.index-container::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/cinema.jpg') no-repeat;
+  background-size: cover;
+}
+
+.right-colum h1 {
+  color: white;
+  font-size: 150px;
+  margin-bottom: 50px;
+}
+
+.right-colum a {
+  color: #7e9cb4;
+  background-color: white;
+  border-radius: 32px;
+  padding: 15px 30px 15px 30px;
+  font-size: 18px;
+}
+
+.right-colum a:hover,
+.right-colum a:active {
+  color: #7e9cb4;
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.col-4 {
+  margin-bottom: 20px;
+}
+
+.movies-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.movies-subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.artist-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.movies-title-container {
+  text-align: center;
+}
+
+.movies-title-container h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.movie-detail ul {
+  margin-left: 18px;
+}
+
+.movie-title {
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.movie-director {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-stars {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: bold;
 }
