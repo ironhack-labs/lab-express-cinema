@@ -1,0 +1,21 @@
+<div class="containe r">
+
+    <h1>IronHack Cinema </h1>
+    <p>Click on the movie to check the details!</p>
+    <hr>
+
+    {{#each movies}}
+
+    <p>{{title}}</p>
+    <img src="{{image}}" alt=" {{title}}">
+    <a href="/movieDetails/{{_id}}" class="btn btn-dark">See More</a>
+
+    {{/each}}
+
+</div>
+
+
+{{!-- This view should have all the movie titles and movie images displaying. In addition to this, as displayed on the
+image
+below, add the link See more that should point to the each movie details page. (You will be creating this page in the
+following iteration.) --}}
