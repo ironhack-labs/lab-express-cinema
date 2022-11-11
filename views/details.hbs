@@ -1,0 +1,34 @@
+<div class=class="container mt-5">
+    <a href="/movies" class="btn btn-light">Go Back</a>
+    <div class="row">
+        {{#each movies}}
+        <div class="container d-flex flex-wrap">
+            <div class="col-2">
+                <img src="{{image}}">
+            </div>
+            <div class="col-6 text-content">
+                <div class="fw-bold">
+                    <h4>{{title}}</h4>
+                </div>
+                <div>
+
+                    <div class="fw-bold">
+                        <p>{{director}}</p>
+                    </div>
+                    <div>
+                        {{stars}}
+                    </div>
+                    <div>
+                        <p>{{description}}</p>
+                    </div>
+                    <div>
+                        <p>{{showtimes}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</div>
