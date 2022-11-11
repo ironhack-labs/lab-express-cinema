@@ -12,3 +12,10 @@ body {
 body a {
   color: #00B7FF;
 }
+
+.btn-home {
+  margin-inline: auto;
+  width: max-content;
+  font-weight: bold;
+  font-size: 15px;
+}

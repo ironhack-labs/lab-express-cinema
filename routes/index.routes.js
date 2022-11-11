@@ -24,6 +24,7 @@ router.get('/movie/:id', (req, res) => {
         .then(moviesFromDb => {
             res.render('movie-details', moviesFromDb)
         })
+        .catch(err => console.log(err))
 })
 
 module.exports = router;
