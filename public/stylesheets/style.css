@@ -42,3 +42,17 @@ a {
   border-radius: 32px;
   text-decoration: none;
 }
+.movies {
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.movies p {
+  margin: 8px 0 8px 0;
+}
+
+.movie {
+  margin: 32px 8px 0px 8px;
+}
