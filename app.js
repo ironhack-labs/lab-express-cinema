@@ -23,7 +23,9 @@ app.locals.title = `Cinema Ironhack`;
 
 // 👇 Start handling routes here
 const index = require("./routes/index");
+const movie = require("./routes/movie");
 app.use("/", index);
+app.use("/movies", movie);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
