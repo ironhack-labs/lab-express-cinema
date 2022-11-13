@@ -1,11 +1,39 @@
-<h1>Ironhack Cinema</h1>
-<p>Click on movie to check the showtimes</p>
-<div class="movies">
-  {{#each movies}}
-    <div class="movie">
-      <img src="{{image}}" alt="" />
-      <p>{{title}}</p>
-      <a href="{{_id}}">See more</a>
-    </div>
-  {{/each}}
-</div>
+{{#if movies}}
+  <h1>Ironhack Cinema</h1>
+  <p>Click on movie to check the showtimes</p>
+  <div class="movies">
+    {{#each movies}}
+      <div class="movie">
+        <img src="{{image}}" alt="" />
+        <p>{{title}}</p>
+        <a href="movies/movie/{{_id}}">See more</a>
+      </div>
+    {{/each}}
+  </div>
+{{/if}}
+{{#if movie}}
+  <img
+    src="{{movie.image}}"
+    alt=""
+    style="display: block; float:left; margin-right:32px"
+  />
+  <h3>{{movie.title}}</h3>
+  <span
+    style="display: block; font-weight:700; font-size:14px"
+  >{{movie.director}}</span>
+  <span
+    style="display: block; font-weight:700; font-size:12px; margin-bottom: 16px; "
+  >
+    Stars</span>
+  <ul style="margin:0px 0px 16px 32px;">
+    {{#each movie.stars}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p style="margin-bottom: 16px;">{{movie.description}}</p>
+  <ul style="list-style-type:none;">
+    {{#each movie.showtimes}}
+      <li style="display: inline;">{{this}} |</li>
+    {{/each}}
+  </ul>
+{{/if}}
