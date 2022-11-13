@@ -1,0 +1,15 @@
+{{#if movies}}
+<div class="row px-5 py-5">
+    <h2 class="py-2">IronHack Cinema</h2>
+    <p>Click on the movie to check the showtimes!</p>
+    {{#each movies}}
+    <div class="card mx-2 my-3" style="width: 12rem;">
+        <img class="card-img-top" src="{{image}}" alt="Card image cap">
+        <div class="card-body">
+            <h3 class="card-text">{{title}}</h3>
+        </div>
+        <a class="pb-3" href="/movies/movie/{{id}}">See more</a>
+    </div>
+    {{/each}}
+</div>
+{{/if}}

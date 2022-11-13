@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row mx-2 my-5">
+        <div class="col">
+            <img src="{{image}}" alt="Card image cap">
+        </div>
+        <div class="col-9">
+            <h4 class="card-text">{{title}}</h4>
+            <h5>Director: {{director}}</h5>
+            <h6>Stars</h6>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+            <p>{{showtimes}}</p>
+        </div>
+    </div>
+</div>
