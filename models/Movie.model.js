@@ -10,8 +10,10 @@ const movieSchema = new Schema(
     description: String,
     showtimes: [String]
   },
+ 
 );
 
 const Movie = model("Movie", movieSchema);
 
 module.exports = Movie;
+ 
