@@ -1,0 +1,9 @@
+
+<div>
+  {{#each movies}}
+  <img src="{{image}}"/>
+    <h3> {{title}}</h3>
+    <p> {{director}} </p>
+    <a href="/movies/{{_id}}">See details</a>
+  {{/each}}
+</div>
