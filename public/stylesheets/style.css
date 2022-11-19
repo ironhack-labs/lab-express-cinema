@@ -1,8 +1,85 @@
-body {
+html,body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+#mainPage {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/cinema.jpg');
+  background-size: contain;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#mainPage div {
+  width: 500px;
+  padding-top: 200px;
+  padding-right: 50px;
+  }
+
+
+
+h1 {
+  width: 200px;
+  color: white;
+  font-size: 80px;
+}
+
+.button {
+  text-decoration: none;
+  background: white;
+  padding: 15px 60px;
+  text-align: center;
+  border-radius: 20px;
+  color: #4E9CAF;
+  margin-top: 20px;
+  line-height: 25px;
+  margin-top: 20px;
+
+}
+
+
+
+
+.details-books {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-details {
+  margin: 0px 50px;
+}
+
+.details-books>div>p {
+  width: 1000px;
+}
+
+.details-books>div>.line-bullet {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.card {
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 380px;
+  height: 610px;
+  margin: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }

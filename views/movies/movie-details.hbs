@@ -1,0 +1,23 @@
+<section class="details-books">
+    <div class="image-details">
+        <img src="{{image}}" alt="">
+    </div>
+    <div>
+        <a href="/movies"> back</a>
+        <h2>{{title}}</h2>
+        <h3>{{director}}</h3>
+        <h4>Stars</h4>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+
+        <ul class="line-bullet">
+            {{#each showtimes}}
+            <li>{{this}} |</li>
+            {{/each}}
+        </ul>
+    </div>
+</section>
