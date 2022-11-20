@@ -11,6 +11,11 @@ router.get('/movies',(req,res,next)=>{
     .catch(error => next(error))
 })
 
-
+router.get('/movie/:id/detail',(req,res,next)=>{
+    const {id} = req.params
+    Movies.findById(id)
+    .then((movieFromDb)=> res.render("movie-detail",{movie:movieFromDb}))
+    .catch(error => next(error))
+})
 
 module.exports = router;
