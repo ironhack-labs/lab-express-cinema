@@ -3,14 +3,25 @@
 <div>
     <h2>Title:{{title}}</h2>
     <h3>Director: {{director}}</h3>
-    {{#each movie.stars}}
+    
     <ul>
+        {{#each stars}}
         <li>
-            {{stars}}
+            {{this}}
         </li>
+        {{/each}}
     </ul>
-    {{/each}}
+    
     <p>Description:{{description}}</p>
+
+    <ul>Showtimes
+        {{#each showtimes}}
+        <li>
+            {{this}}
+        </li>
+        {{/each}}
+    </ul>
+  
 </div>
 
 {{/with}}

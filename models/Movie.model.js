@@ -17,6 +17,9 @@ const movieSchema = new Schema(
     description: {
       type: String,
     },
+    showtimes: {
+      type: [String],
+    },
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
