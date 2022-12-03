@@ -5,13 +5,10 @@ const router = express.Router();
 
 const Movie = require("../models/Movie.model")
 
-router.get("/",(req, res, next)=>{
-    res.render("index");
-})
 
 
 
-router.get("/movies", (req, res, next) => {
+router.get("/", (req, res, next) => {
     //Model.find()-->busca a todos los documentos dentro de esa collection
     Movie.find()
     .then(movies=>{
