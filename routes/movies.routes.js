@@ -4,11 +4,11 @@ const router = express.Router();
 const Movie = require('../models/Movie.model')
 
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
 
-router.get("/movies", (req,res,next)=>{
+router.get("/", (req,res,next)=>{
     Movie.find()
     .then(movies => {
+        console.log("peliculas", movies);
         res.render("movies",{ movies })
     })
     .catch(error=> console.log("Error!", error))
