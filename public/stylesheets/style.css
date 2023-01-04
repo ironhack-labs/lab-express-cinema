@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +11,88 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+.contenedor{
+  width: 95%;       
+  max-width: 1100px;
+  margin: 0 auto;   
+  overflow: hidden; 
+  padding: 60px 0;  
+}
+
+.header {
+  width: 100%;
+  background-image: url("../images/cinema.jpg"); 
+  background-position: center;   
+  background-size: cover;
+  position: relative;
+}
+
+.hero{
+  height: 700px;     
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.contenedor-textos{
+  padding-bottom: 200px;
+}
+
+.hero p{
+  font-size: 100px;
+  display: flex;
+  justify-content: left;
+}
+
+.contenedor-textos a{
+  width: 175px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  color: #00B7FF;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
+
+.container-movies {
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.container-title-movie {
+  padding: 50px; 
+  text-align: center;
+}
+
+
+.movies-h1 {
+  padding: 25px;
+}
+
+.parrafo-to-check {
+  padding-left: 25px;
+}
+
+.container-detail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-img {
+  padding: 20px;
+}
+
+.container-text-detail {
+  padding: 20px;
 }
