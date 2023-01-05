@@ -1,8 +1,20 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-left: -40px;
 }
 
 a {
   color: #00B7FF;
+}
+
+.background-image {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.index-title {
+  font-size: 24px; 
+  color:black"
 }
