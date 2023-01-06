@@ -2,11 +2,14 @@ const router = require("express").Router();
 
 const Movie = require('../models/Movie.model');
 
-router.get('/movies', async (req, res) => {
+router.get('/movies', async (req, res, next) => {
     try {
-        const movies = await Movie.find()
-        
+        const moviesDB = await Movie.find()
+        console.log(moviesDB);
+        res.render('movies', { moviesDB })
     } catch (error) {
-        console.log();
+        console.log(error);
     }
 })
+
+module.exports = router;
