@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/movie.model.js');
 
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/library-project';
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/lab-express-cinema';
 
 const movies = [
     {
