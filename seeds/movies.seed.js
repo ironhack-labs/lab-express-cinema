@@ -1,3 +1,7 @@
+const mongoose = require("mongoose");
+
+const Movie = require("../models/Movie.model");
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -80,3 +84,24 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"],
   },
 ];
+
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/lab-express-cinema";
+
+mongoose
+  .connect(MONGODB_URI)
+  .then((db) => {
+    console.log("Connected to db: ", db.connections[0].name);
+
+    return Movie.create(movies);
+  })
+  .then((result) => {
+    console.log(`Successfully added ${result.length} movies.`);
+    return mongoose.connection.close();
+  })
+  .then(() => {
+    console.log("Db connection closed!");
+  })
+  .catch((err) => {
+    console.log("Something went wrong while seeding db: ", err);
+  });
