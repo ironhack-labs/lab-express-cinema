@@ -11,6 +11,8 @@ a {
   color: #00B7FF;
 }
 
+/* home page */
+
 .home {
 background:no-repeat url('/images/cinema.jpg') top center/cover;
 height: 100vh;
@@ -21,6 +23,7 @@ padding-left: 50%;
   color: white;
   font-size: 6rem;
   padding-top:15%;
+  max-width: 300px;
 }
 
 .home button {
@@ -30,4 +33,34 @@ border-radius: 30px;
 color: rgb(128, 128, 128);
 font-size: 18px;
 margin-top: 30px;
+cursor: pointer;
 }
+
+/* movies page */
+
+.movies-title {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.movies-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 50px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.movies-section li {
+  flex: 1;
+}
+
+.movies-section li h3 {
+  margin: 20px 0;
+}
+
+
