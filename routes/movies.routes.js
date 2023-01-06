@@ -5,10 +5,19 @@ const Movie = require('../models/Movie.model');
 router.get('/movies', async (req, res, next) => {
     try {
         const moviesDB = await Movie.find()
-        console.log(moviesDB);
         res.render('movies', { moviesDB })
     } catch (error) {
         console.log(error);
+    }
+})
+
+router.get('/movies/:moviesId', async (req,res,next) => {
+    try {
+        const movie = await Movie.findById(req.params.moviesId)
+        console.log(movie);
+        res.render('movie-details', movie)
+    } catch (error) {
+        console.log(error)
     }
 })
 
