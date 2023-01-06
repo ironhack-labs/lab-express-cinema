@@ -46,14 +46,16 @@ body {
 }
 .orderContainer {
   display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+  flex-wrap: wrap;
+ 
+  
 }
 
 .moviesContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+  margin-top: 50px;
  }
 
  /* Movies-details */
@@ -65,10 +67,16 @@ body {
   margin-left: 50px;
  }
 
+ .imgDetailsContainer {
+  width: 100%;
+  height: auto;
+ }
+
  .contentContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
+  margin-left: -1100px;
+  
  }
 
  .description {
