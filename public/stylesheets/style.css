@@ -9,20 +9,20 @@ a {
 }
 
 .index-page {
-  background: url('/images/cinema.jpg') no-repeat center center;
+  background: url("/images/cinema.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
 }
 
-.cinema, .check-movies-button {
+.cinema,
+.check-movies-button {
   margin-right: 100px;
   color: white;
-
 }
 
 .cinema {
@@ -38,17 +38,18 @@ a {
 }
 
 .check-movies-button {
-background-color: powderblue;
-padding: 20px;
-margin-top: 0;
-text-decoration: none;
-border-radius: 40px;
-margin-bottom: 400px;
-font-size: 150%;
+  background-color: powderblue;
+  padding: 20px;
+  margin-top: 0;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 400px;
+  font-size: 150%;
 }
 
-.cinema-title, .cinema-description {
-margin-left: 5%;
+.cinema-title,
+.cinema-description {
+  margin-left: 5%;
 }
 
 .cinema-description {
@@ -63,9 +64,33 @@ margin-left: 5%;
 }
 
 .movie-card {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   margin-bottom: 5%;
   justify-content: center;
   align-items: center;
+}
+
+.movie-details-img {
+  height: 300px;
+}
+
+.movie-details-container {
+  display: flex;
+  margin: 2% 0 0 2%;
+  gap: 2%;
+}
+
+.movie-info {
+  width: 60%;
+}
+
+.showtimes {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.showtimes li {
+  padding-left: 1%;
 }
