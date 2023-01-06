@@ -1,22 +1,21 @@
-<div>
+<section class="details-section">
    <img src="{{image}}" alt="">
 <div>
-    <a href="/movies">Back</a>
+    <a href="/movies">Go back</a>
     <h2>{{title}}</h2>
     <h3>{{director}}</h3>
-    <p>Stars</p>
+    <p> <strong>Stars</strong></p>
     <ul>
         {{#each stars}}
         <li>{{this}}</li>
         {{/each}}
     </ul>
     <p>{{description}}</p>
-    <div>
+    <div class="showtimes">
         {{#each showtimes}}
         <div>{{this}}</div>
         {{/each}}
     </div>
 
 </div>
-
-</div>
+</section>

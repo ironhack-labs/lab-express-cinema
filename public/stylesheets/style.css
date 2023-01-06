@@ -63,4 +63,39 @@ cursor: pointer;
   margin: 20px 0;
 }
 
+/* details page */
+
+.details-section {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 50px;
+}
+
+.details-section > div > * {
+  margin-bottom: 15px;
+}
+.details-section li{
+  margin-left: 15px;
+}
+.details-section p{
+  max-width: 650px;
+}
+
+.details-section a {
+  display: block;
+}
+
+.showtimes{
+  display:flex;
+  gap: 10px; 
+}
+
+.showtimes div{
+  border-right: solid 1px black;
+  padding-right: 10px;
+}
+
+
+
 
