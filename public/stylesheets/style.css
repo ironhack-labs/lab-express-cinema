@@ -1,20 +1,76 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin-left: -40px;
-}
-
-a {
-  color: #00B7FF;
-}
+  margin: -50px;
+  }
 
 .background-image {
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
+  min-width: 100%; 
+ 
 }
 
 .index-title {
-  font-size: 24px; 
-  color:black"
+  font-size: 120px; 
+  color:white;
+  margin-top: -850px;
+  margin-bottom: 50px;
+  margin-left: 850px
+   
 }
+
+.index-button {
+  margin-left: 860px;
+  margin-top: -70px;
+  padding: 17px 23px;
+  font-size: 20px;
+  color: steelblue;
+  border-radius: 30px
+  
+
+}
+
+.index-button:hover {
+  background-color: steelblue; 
+  color: white;
+  cursor:pointer;
+}
+
+/* Movies-list */
+
+.movieListHeader {
+  margin-left: 100px;
+}
+.orderContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ /* Movies-details */
+
+ .Container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 50px;
+ }
+
+ .contentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+ }
+
+ .description {
+  max-width: 600px;
+ }

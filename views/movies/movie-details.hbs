@@ -1,19 +1,29 @@
-<img src="{{image}}" alt="">
-<a href="/movies">Go back</a>
+<div class="Container">
+    <img class="imgDetails" src="{{image}}" alt="">
 
-<h2>{{title}}</h2>
-<h3>{{director}}</h3>
-<br>
-<h4>Stars</h4>
+    <div class="contentContainer"> 
+        <a href="/movies">Go back</a>
 
-{{#if stars}}
-{{stars}}
-<br>
-{{/if}}
-<br>
-{{description}}
-<br>
-{{#if showtimes}}
-{{showtimes}}
-<br>
-{{/if}}
+
+        <h2>{{title}}</h2>
+        <h3>{{director}}</h3>
+        <br>
+        <h4>Stars</h4>
+        
+        {{#if stars}}
+        <ul>
+            <li>{{stars}}</li>
+        </ul>
+        <br>
+        {{/if}}
+        <br>
+        <p class="description">
+        {{description}}
+        </p>
+        <br>
+        {{#if showtimes}}
+        {{showtimes}}
+        <br>
+        {{/if}}
+    </div>
+</div>
