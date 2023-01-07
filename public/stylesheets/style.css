@@ -46,9 +46,10 @@ body {
 }
 .orderContainer {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
- 
-  
+
 }
 
 .moviesContainer {
@@ -56,7 +57,7 @@ body {
   flex-direction: column;
   align-items: center; 
   margin-top: 50px;
- }
+ } 
 
  /* Movies-details */
 
