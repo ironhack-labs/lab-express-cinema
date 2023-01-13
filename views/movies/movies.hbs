@@ -5,8 +5,11 @@
   </div>
   <div class='movies__list-nav'>
     <div class='movies__list--nav-home'><button><a href='/'>Go back</a></button></div>
-    <div class='movies__list--nav-new'><button><a href='/new'>Add New Movie</a></button></div>
+    <div class='movies__list--nav-new'><button class='btnAddNew'>Add New Movie</button></div>
   </div>
+  {{#if tooltip}}
+  {{> tooltips message='Movie added successfully to the database!!'}}
+  {{/if}}
   <div class='movies__list-container'>
     {{#each movies}}
       <div class='movies__list--container-item'>

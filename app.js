@@ -1,3 +1,4 @@
+const path = require('path');
 // ℹ️ Gets access to environment variables/settings
 // https://www.npmjs.com/package/dotenv
 require('dotenv/config');
@@ -12,7 +13,7 @@ const express = require('express');
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
-
+hbs.registerPartials(path.join(__dirname, '/views/partials'));
 const app = express();
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
@@ -20,7 +21,8 @@ require('./config')(app);
 
 // default value for title local
 const projectName = 'lab-express-cinema';
-const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
+const capitalized = (string) =>
+  string[0].toUpperCase() + string.slice(1).toLowerCase();
 
 app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 
