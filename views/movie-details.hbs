@@ -1,0 +1,35 @@
+<div class='movies__details'>
+  <div class='movies__details-header'>
+    <h2>{{movie.title}}</h2>
+  </div>
+  <div class='movies__details-nav'>
+    <div class='movies__details--nav-back'><button><a href='/movies'>Go back</a></button></div>
+    <div class='movies__details--nav-del'><button><a
+          href='/delete'
+        >Delete</a></button></div>
+  </div>
+  <div class='movies__details-container'>
+    <div class='movies__details--container-image'>
+      <img src='{{movie.image}}' alt='{{movie.title}} image' />
+    </div>
+    <div class='movies__details--container-info'>
+      <div class='movies__details--container--info-director'>Director:
+        {{movie.director}}
+      </div>
+      <div class="movies__details--container--info-stars"><span>Stars</span>
+        <ul>
+          {{#each movie.stars}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div>
+        {{movie.description}}
+      </div>
+      <div class='movies__details--container--info-showtimes'>
+        <span>Showtimes:</span>
+        <p>{{#each movie.showtimes}} {{this}} | {{/each}}</p>
+      </div>
+    </div>
+  </div>
+</div>
