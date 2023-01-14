@@ -8,8 +8,8 @@ router.get('/', (req, res, next) => res.render('index'));
 router.get('/movies', async (req, res, next) => {
   try {
     const movies = await Movie.find();
-    const tooltip = req.query.n ? true : false;
-
+    const tooltip = req.query.n ? 'new' : req.query.d ? 'del' : false;
+    console.log({ tooltip });
     res.render('movies/movies', { movies, tooltip: tooltip });
   } catch (err) {
     next(err);
@@ -32,6 +32,16 @@ router.post('/add-movie', async (req, res, next) => {
     data.showtimes = data.showtimes.split(',');
     const saved = await Movie.create(data);
     if (saved) res.redirect('/movies?n=t');
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get('/delete/:id', async (req, res, next) => {
+  try {
+    const del = await Movie.findByIdAndDelete(req.params.id);
+    console.log(del);
+    if (del) res.redirect('/movies?d=t');
   } catch (err) {
     next(err);
   }

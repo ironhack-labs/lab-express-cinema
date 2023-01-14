@@ -5,7 +5,8 @@
   <div class='movies__details-nav'>
     <div class='movies__details--nav-back'><button><a href='/movies'>Go back</a></button></div>
     <div class='movies__details--nav-del'><button><a
-          href='/delete'
+          href='/delete/{{movie._id}}'
+          class='btnDelete'
         >Delete</a></button></div>
   </div>
   <div class='movies__details-container'>
@@ -16,7 +17,7 @@
       <div class='movies__details--container--info-director'>Director:
         {{movie.director}}
       </div>
-      <div class="movies__details--container--info-stars"><span>Stars</span>
+      <div class='movies__details--container--info-stars'><span>Stars</span>
         <ul>
           {{#each movie.stars}}
             <li>{{this}}</li>

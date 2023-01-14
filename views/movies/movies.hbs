@@ -7,8 +7,11 @@
     <div class='movies__list--nav-home'><button><a href='/'>Go back</a></button></div>
     <div class='movies__list--nav-new'><button class='btnAddNew'>Add New Movie</button></div>
   </div>
-  {{#if tooltip}}
-  {{> tooltips message='Movie added successfully to the database!!'}}
+  {{#if (eq tooltip 'new')}}
+  {{> tooltips message='Movie was added successfully to the database!!'}}
+  {{/if}}
+  {{#if (eq tooltip 'del')}}
+  {{> tooltips message='Movie was deleted successfully from the database!!'}}
   {{/if}}
   <div class='movies__list-container'>
     {{#each movies}}

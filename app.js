@@ -14,6 +14,7 @@ const express = require('express');
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
 hbs.registerPartials(path.join(__dirname, '/views/partials'));
+hbs.registerHelper('eq', (a, b) => a == b);
 const app = express();
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
