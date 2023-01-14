@@ -7,8 +7,13 @@
     <div class='movies__details--nav-del'><button><a
           href='/delete/{{movie._id}}'
           class='btnDelete'
-        >Delete</a></button></div>
+        >Delete</a></button>
+       <button class='btnEdit'>Edit</button>
+    </div>
   </div>
+  {{#if tooltip}}
+  {{> tooltips message='Movie was updated successfully in the database!!'}}
+  {{/if}}
   <div class='movies__details-container'>
     <div class='movies__details--container-image'>
       <img src='{{movie.image}}' alt='{{movie.title}} image' />

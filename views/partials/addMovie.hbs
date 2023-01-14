@@ -1,27 +1,33 @@
 <div class='movies__addnew'>
-  <div class='movies__addnew-header'>Add Movie to Database</div>
+  <div class='movies__addnew-header'>
+    {{#if this}}
+    Edit Movie
+    {{else}}
+    Add Movie to Database
+    {{/if}}
+    </div>
   <div class='movies__addnew-close'>
     <button class='btnClose'>X</button>
   </div>
   <div class='movies__addnew-form'>
-    <form action='/add-movie' method='post'>
+    <form action='{{#if this}}/edit-movie/{{this._id}}{{else}}/add-movie{{/if}}' method='post'>
       <label for='title'>
         Title:
       </label>
-      <input type='text' name='title' id='title' required />
+      <input type='text' name='title' id='title' required value="{{this.title}}"/>
       <label for='director'>
         Director:
       </label>
-      <input type='text' name='director' id='director' required />
+      <input type='text' name='director' id='director' required value="{{this.director}}" />
       <label for='stars'>
         Stars:
         <span>(add names separated by commas)</span>
       </label>
-      <input type='text' name='stars' id='stars' required />
+      <input type='text' name='stars' id='stars' required value="{{#each this.stars}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}" />
       <label for='image_url'>
         Image URL:
       </label>
-      <input type='url' name='image' id='image' required />
+      <input type='url' name='image' id='image' required value="{{this.image}}"/>
       <label for='description'>
         Description:
       </label>
@@ -31,14 +37,14 @@
         cols='30'
         rows='7'
         required
-      ></textarea>
+      >{{this.description}}</textarea>
       <label for='showtimes'>
         Showtimes:
         <span>(add times separated by commas)</span>
       </label>
-      <input type='text' name='showtimes' id='showtimes' required />
-      <button type='submit'>Add Movie</button>
-      <button class='btnCancel'>Cancel</button>
+      <input type='text' name='showtimes' id='showtimes' required value="{{#each this.showtimes}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}"/>
+      <button type='submit'>{{#if this}}Save Changes{{else}}Add Movie{{/if}}</button>
+      <button type='button' class='btnCancel'>Cancel</button>
 
     </form>
   </div>

@@ -7,11 +7,17 @@ document.addEventListener(
     const btnClose = document.querySelector('.btnClose');
     const btnCancel = document.querySelector('.btnCancel');
     const btnDelete = document.querySelector('.btnDelete');
+    const btnEdit = document.querySelector('.btnEdit')
 
     if (btnAddNew)
       btnAddNew.addEventListener('click', () => {
         addNewModal.classList.toggle('hidden');
       });
+
+      if (btnEdit)
+        btnEdit.addEventListener('click', () => {
+          addNewModal.classList.toggle('hidden');
+        });
 
     if (btnClose)
       btnClose.addEventListener('click', () => {
