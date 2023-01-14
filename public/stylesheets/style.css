@@ -155,7 +155,7 @@ a {
   font-size: 18px;
 }
 
-.modal__addnew-movie {
+.modal__movie-form {
   display: block;
   position: absolute;
   width: 500px;
@@ -168,41 +168,41 @@ a {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.59);
 }
 
-.movies__addnew {
+.movie__form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   align-items: center;
 }
 
-.movies__addnew-header {
+.movie__form-header {
   position: relative;
   height: 50px;
   font-weight: bold;
   font-size: 20px;
 }
 
-.movies__addnew-close {
+.movie__form-close {
   position: absolute;
   right: -10px;
   top: -10px;
 }
-.movies__addnew-form form {
+.movie__form-form form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.movies__addnew-form form > * {
+.movie__form-form form > * {
   display: block;
 }
 
-.movies__addnew-form input {
+.movie__form-form input {
   height: 35px;
   width: 350px;
 }
 
-.movies__addnew-form button[type='submit'] {
+.movie__form-form button[type='submit'] {
   margin-top: 20px;
 }
 .hidden {

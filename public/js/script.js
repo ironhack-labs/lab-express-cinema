@@ -2,7 +2,7 @@ document.addEventListener(
   'DOMContentLoaded',
   () => {
     console.log('lab-express-cinema JS imported successfully!');
-    const addNewModal = document.querySelector('.modal__addnew-movie');
+    const addNewModal = document.querySelector('.modal__movie-form');
     const btnAddNew = document.querySelector('.btnAddNew');
     const btnClose = document.querySelector('.btnClose');
     const btnCancel = document.querySelector('.btnCancel');
