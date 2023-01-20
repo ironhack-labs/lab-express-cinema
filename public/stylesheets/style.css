@@ -1,8 +1,86 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body, html {
+  margin: 0;
+  padding: 0px;
+  font: 14px "Lucida Grande", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.index-page {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(/images/cinema.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.check-index {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+
+.check-index h1 {
+  color: white;
+  font-size: 100px;
+  margin: 0 0 40px;
+}
+
+.check-index a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px 40px;
+  font-size: 15px;
+  color: black;
+}
+
+.check-index a:hover {
+  background-color: rgb(146, 35, 27);
+  color: white;
+}
+
+.movies-page {
+  background-color: rgb(19, 19, 19);
+  padding: 30px 0;
+}
+
+.text-movies-page {
+  color: white;
+  text-align: center;
+  margin-bottom:80px;
+  font-size: xx-large;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.movies-options {
+  width: 35%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  font-size: x-large;
+} 
+
+.movies-options a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: black;
+}
+
+.movies-options a:hover {
+  background-color: rgb(146, 35, 27);
+  color: white;
 }
