@@ -9,6 +9,7 @@ require('./db');
 // https://www.npmjs.com/package/express
 const express = require('express');
 
+
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
@@ -32,3 +33,5 @@ app.use('/', index);
 require('./error-handling')(app);
 
 module.exports = app;
+const path = require("path")
+app.use(express.static(path.join(__dirname, "public")));
