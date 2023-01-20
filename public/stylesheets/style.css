@@ -3,6 +3,40 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+
+.welcome-title {
+  position: absolute;
+  right: 50px;
+  width: 348px;
+  background-image: url('/images/cinema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.welcome-title h1{
+  color: white;
+  font-size: 80px;
+}
+
+.welcome-title a{
+  font-size: 20px;
+  background-color: white;
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+
+.container {
+background-color: red;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.cart {
+ 
+  width: 300px;
+  /* display: flex;
+  flex-direction: column; */
+}  
