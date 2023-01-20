@@ -1,0 +1,28 @@
+<div class="details-page">
+
+    <h1>More information</h1>
+    <h3>TITLE: {{movieFromDB.title}}</h3>
+
+    <div class="detail-container-img">       
+        <img src="{{movieFromDB.image}}" alt="image of {{movieFromDB.title}}">
+    </div>
+            
+
+    <div class="details-container-text">
+        <h3>{{movieFromDB.title}}</h3>
+        <h4>{{movieFromDB.director}}</h4>
+        <p>Stars</p>
+        <ul>
+            {{#each movieFromDB.stars as |star|}}
+                <li>{{star}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movieFromDB.description}}</p>
+        <ul class="details-container-time">
+            {{#each movieFromDB.showtimes as |time|}}
+                <li>{{time}} |</li>
+            {{/each}}
+        </ul>
+        <a href="/movies">Go back</a>
+    </div>
+</div>
