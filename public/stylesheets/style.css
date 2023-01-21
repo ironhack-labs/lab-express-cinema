@@ -1,8 +1,9 @@
 body {
-  padding: 50px;
+  padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   min-width: 100vw;
   min-height: 100vh;
+  margin: 0;
 }
 
 a {
@@ -17,7 +18,8 @@ a {
     min-width: 100vw;
     min-height: 100vh;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
+
   
 }
 
