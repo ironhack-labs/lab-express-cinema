@@ -1,8 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00FF;
+}
+
+p{
+  background-color: #00FF;
+  color: #FFF5EE;
+  font-size: 2.5vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#home-page-image{
+  height: 40vw;
+  width: 100vw;
+}
+
+#home-page-title{
+  color: #FFF5EE;;
+}
+
+#movies-button{
+  background-color: #FFF5EE;
+  border-radius: 10%;
+  bottom: 20vw;
+  left: 70vw;
+  position: relative;
+
+}
+
+.movies-list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.movies{
+  display: flex;
+  flex-direction: wrap;
+}
+
+.movie{
+  display: flex;
+  flex-direction: column;
 }
