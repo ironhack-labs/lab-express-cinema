@@ -17,7 +17,7 @@ router.get("/movie/:id", (req, res, next) => {
   const movieId = req.params.id;
   Movie.findById(movieId)
     .then((movie) => {
-      res.render("movie.Details", { movieDB: movie });
+      res.render("movie-details", {  movie });
     })
     .catch((error) => console.log("Error getting movies from the DB: ", error));
 });

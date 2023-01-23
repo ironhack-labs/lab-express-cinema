@@ -85,15 +85,13 @@ const movies = [
   },
 ];
 
-function insertSeeds() {
-  Movie.deleteMany().then(() => {
-    Movie.insertMany(movies)
-      .then(() => {
-        console.log("Movies displayed");
-      })
-      .catch((error) => {
-        console.log("Error", error);
-      });
-  });
-}
-module.exports = insertSeeds;
+Movie.deleteMany().then(() => {
+  Movie.insertMany(movies)
+    .then(() => {
+      console.log("Movies displayed");
+      mongoose.connection.close()
+    })
+    .catch((error) => {
+      console.log("Error", error);
+    });
+});
