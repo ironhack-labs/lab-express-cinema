@@ -25,6 +25,7 @@ a {
 
 .check-index h1 {
   color: white;
+  text-shadow: -2px -1px 14px rgb(178, 171, 171);
   font-size: 100px;
   margin: 0 0 40px;
 }
@@ -40,12 +41,15 @@ a {
 
 .check-index a:hover {
   background-color: rgb(146, 35, 27);
+  box-shadow: 0px 0px 14px rgba(184,0,0,1);
   color: white;
 }
 
 .movies-page {
-  background-color: rgb(19, 19, 19);
-  padding: 30px 0;
+  background: rgb(17,17,17);
+  background: radial-gradient(circle, rgba(17,17,17,1) 61%, rgba(156,44,7,1) 100%);
+  padding-top: 30px;
+  padding-bottom: 100px;
 }
 
 .text-movies-page {
@@ -53,6 +57,7 @@ a {
   text-align: center;
   margin-bottom:80px;
   font-size: xx-large;
+  text-shadow: -2px -1px 14px rgba(184,0,0,1);
 }
 
 .movies-container {
@@ -69,18 +74,61 @@ a {
   flex-direction: column;
   align-items: center;  
   font-size: x-large;
+  padding-top: 30px;
 } 
 
-.movies-options a {
+#back-btn-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
   text-decoration: none;
   background-color: white;
+  box-shadow: 3px 1px 27px 8px rgba(145,26,26,0.79);
+  -webkit-box-shadow: 3px 1px 27px 8px rgba(145,26,26,0.79);
+  -moz-box-shadow: 3px 1px 27px 8px rgba(145,26,26,0.79);
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 15px;
   color: black;
-}
+} 
 
-.movies-options a:hover {
+.buttons:hover {
   background-color: rgb(146, 35, 27);
   color: white;
 }
+
+.details-page {
+    background: rgb(17,17,17);
+    background: radial-gradient(circle, rgba(17,17,17,1) 61%, rgba(156,44,7,1) 100%);
+    padding: 30px 0;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.details-container {
+  font-size: x-large;
+  text-shadow: -2px -1px 14px rgba(184,0,0,1);
+}
+
+
+.details-container-text {
+  padding-top: 80px;
+  font-size: large;
+  width: 40%;
+}
+
+.details-container-text ul {
+  list-style: none;
+  text-shadow: -2px -1px 14px rgba(184,0,0,1);
+}
+
+.details-container-time {
+  display: flex;
+}
+

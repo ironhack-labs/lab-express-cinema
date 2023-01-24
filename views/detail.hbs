@@ -1,17 +1,14 @@
 <div class="details-page">
-
-    <h1>More information</h1>
-    <h3>TITLE: {{movieFromDB.title}}</h3>
-
-    <div class="detail-container-img">       
-        <img src="{{movieFromDB.image}}" alt="image of {{movieFromDB.title}}">
-    </div>
-            
-
-    <div class="details-container-text">
+    <div class="details-container">
         <h3>{{movieFromDB.title}}</h3>
         <h4>{{movieFromDB.director}}</h4>
-        <p>Stars</p>
+        <div class="detail-container-img">       
+            <img src="{{movieFromDB.image}}" alt="image of {{movieFromDB.title}}" width="250px">
+        </div>
+    </div>
+
+    <div class="details-container-text">
+        <h3>Stars</h3>
         <ul>
             {{#each movieFromDB.stars as |star|}}
                 <li>{{star}}</li>
@@ -23,6 +20,6 @@
                 <li>{{time}} |</li>
             {{/each}}
         </ul>
-        <a href="/movies">Go back</a>
+        <a href="/movies" class="buttons">Go back</a>
     </div>
 </div>
