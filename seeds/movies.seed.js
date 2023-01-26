@@ -94,4 +94,6 @@ const movies = [
     console.log("Movies displayed")
     mongoose.connection.close()
 })
-.catch(error => {console.log("Error",error)})
+.catch((error) => {
+  console.log("Error", error);
+});
