@@ -1,0 +1,20 @@
+<div class="movies-page">
+    <div class="text-movies-page">
+        <h1>Ironhack Cinema</h1>
+        <h4>Click on the movies to check the showtimes!</h4>
+    </div>
+
+
+    <div class="movies-container">
+        {{#each moviesFromDB}}
+            <div class="movies-options">
+                <img src="{{image}}" alt="image of {{title}}">
+                <p>{{title}}</p>
+                <a href="/movie/{{id}}" class="buttons">See more</a>
+            </div>
+        {{/each}}
+    </div>
+    <div id="back-btn-container">
+        <a href="/" class="buttons" id="back-index">Go back</a>
+    </div>
+</div>  
