@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Movie = require('../models/Movie.model');
+const miscController = require('../controllers/misc.controller')
+const moviesController = require('../controllers/movies.controller')
 
 /* GET home page */
 router.get('/', miscController.index);
