@@ -1,5 +1,5 @@
-require('../db/index');
-const Movie = require('../models/Movie.model');
+require("../config/db.config");
+const Movie = require("../models/Movie.model");
 
 const movies = [
     {
