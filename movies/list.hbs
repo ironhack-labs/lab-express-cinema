@@ -1,0 +1,13 @@
+<a href="/">Go back to Home Page</a>
+<h1>Ironhack Cinema</h1>
+<h2>Click on the movie to check the showtimes!</h2>
+
+<div class="movie-list">
+    {{#each movie}}
+    <div class="movie">
+        <img src="{{image}}" alt="Movie image">
+        <p><strong>{{title}}</strong></p>
+        <a href="/movies/{{id}}">See more</a>
+    </div>
+    {{/each}}
+</div>

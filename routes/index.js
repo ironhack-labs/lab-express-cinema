@@ -3,6 +3,10 @@ const router = express.Router();
 const Movie = require('../models/Movie.model');
 
 /* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+router.get('/', miscController.index);
+
+/* GET movie page */
+router.get('/movies', moviesController.list);
+router.get('/movies/:movieId', moviesController.detail);
 
 module.exports = router;
