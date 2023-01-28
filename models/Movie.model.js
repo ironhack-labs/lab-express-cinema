@@ -1,34 +1,31 @@
-
 //create the `Movie` model in the `models/Movie.model.js` file.
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const movieSchema = new mongoose.Schema( {
+const movieSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  director: {
+    type: String,
+    required: true,
+  },
+  stars: {
+    type: [String],
+  },
+  image: {
+    type: String,
+  },
+  description: {
+    type: String,
+  },
+  showtimes: {
+    type: [String],
+  },
+});
 
-    title: { 
-      type: String, 
-      required: true, 
-      unique: true 
-    },
-    director: { 
-      type: String, 
-      required: true
-    },
-    stars: {
-      type: [String]
-},
-    image: {
-      type: String
-    },
-    description: {
-      type: String
-    },
-    showtimes: {
-      type:[String]
-    }
-    }
-)
-
-const Movie = mongoose.model('Movie', movieSchema);
+const Movie = mongoose.model("Movie", movieSchema);
 
 module.exports = Movie;

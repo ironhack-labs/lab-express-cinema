@@ -18,7 +18,8 @@ router.get('/movie/:id', (req, res, next) =>{
     .then(movie => {
         res.render("movieDetails", {movie})
 })
-.catch(error => console.log("Error!", error))
+.catch(error => 
+    console.log("Error", error))
 })
 
 module.exports = router;
