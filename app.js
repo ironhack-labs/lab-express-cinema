@@ -80,7 +80,7 @@ app.use((err, req, res, next) => {
 const projectName = 'lab-express-cinema';
 const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
 
-app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+app.locals.title = `Cinema Ironhack`;
 
 
 // ℹ️ Sets the PORT for our app to have access to it. If no env has been set, we hard code it to 3000

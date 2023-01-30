@@ -5,27 +5,27 @@ const Schema = mongoose.Schema;
 const movieSchema = new Schema({
   title: {
     type: 'String',
-    require: true
+    required: true
   },
   director: {
     type: 'String',
-    require: true
+    required: true
   },
   stars: {
-    type: 'Array',
-    require: true
+    type: ['String'],
+    required: true
   },
   image: {
-    type: 'string',
-    require: true
+    type: 'String',
+    required: true
   },
   description: {
     type: 'String',
-    require: true
+    required: true
   },
   showtimes: {
-    type: 'Array',
-    require: true
+    type: ['String'],
+    required: true
   },
 });
 
