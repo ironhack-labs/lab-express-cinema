@@ -1,8 +1,8 @@
-const Tweet = require('../models/movie.model');
+const Movie = require('../models/movie.model');
 
 module.exports.list = (req, res, next) => {
     Movie.find()
-    .then((tweets) => {
+    .then((movies) => {
         console.log(movies);
     res.render ('movies/list', { movies })
 })
