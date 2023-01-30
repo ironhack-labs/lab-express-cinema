@@ -1,6 +1,6 @@
 const Movie = require('../models/movie.model')
 
-module.exports.list = (req, res,next) => {
+module.exports.list = (req, res, next) => {
   Movie.find()
     .then((movies) => {
       res.render('movies/list.hbs', { movies })
@@ -8,3 +8,13 @@ module.exports.list = (req, res,next) => {
     })
     .catch((error) => next(error))
 };
+
+
+module.exports.detail = (req,res,next) => {
+  Movie.findById(req.params.id)
+    .then((movies) => {
+      console.log(movies)
+      res.render('commons/detail.hbs', { movie: movies })
+    })
+    .catch((error) => next(error))
+}
