@@ -1,23 +1,29 @@
-<h1>{{movie.title}}</h1>
-<div>
-  <h2>Director: {{ movie.director}}</h2>
 
-  <h4>Stars</h4>
-  <ul>
-    {{#each stars as | star |}}
-    <li>
-      {{ star }}
-    </li>
-    {{/each}}
-  </ul>
-  <p>{{ movie.description}}</p>
-
-  <ul>
-  {{#each shows as |show|}}
-    {{show}} | 
-  {{/each}}
-</ul>
-  <img src="{{movie.image}}" alt="movie">
-
-  <a href="/movies">Go Back</a>
+<div class="card mb-3" style="max-width: 900px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ movie.image }}" class="img-fluid img-center" alt="image">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h1 style="font-weight: bold;">{{ movie.title }}</h1>
+        <h3 style="font-weight: bold;">Director: {{ movie.director }}</h3>
+         <h5 style="font-weight: bold;">Stars</h5>
+            <ul>
+              {{#each stars as | star |}}
+              <li>
+                {{ star }}
+              </li>
+              {{/each}}
+            </ul>
+        <p class="card-text">{{ movie.description }}</p>
+        <ul>
+          {{#each shows as |show|}}
+            {{show}} | 
+          {{/each}}
+        </ul>
+        <a href="/movies">Go Back</a>
+      </div>
+    </div>
+  </div>
 </div>
