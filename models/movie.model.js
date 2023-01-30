@@ -13,12 +13,12 @@ const movieSchema = new Schema({
     type: 'array',
  },
  image: {
-    type: 'image',
+    type: 'string',
 },
 showtimes: {
     type: 'array',
 },
 });   
 
-const Movies = mongoose.model('Movie', movieSchema);
+const Movie = mongoose.model('Movie', movieSchema);
 module.exports = Movie;
