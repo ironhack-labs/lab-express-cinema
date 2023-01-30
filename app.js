@@ -3,6 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const logger = require('morgan');
 
+require('./configs/db.config');
+
 const app = express();
 
 app.set('view engine', 'hbs');
