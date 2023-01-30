@@ -1,9 +1,248 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(26, 26, 26);
+/* Globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #930341;
+  border-radius: 20px;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bgimage {
+  background-image: url('../images/cinema.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #930341;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-inline-end: 2rem;
+  height: 100vh;
+}
+
+.home .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.home a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #930341;
+  border-radius: 10px;
+  transition: .2s ease-in;
+}
+
+.home a:hover {
+  transform: scale(1.1);
+}
+
+/* Movies */
+.cards-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 0 5rem 0;
+}
+
+.cards-container h1 {
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cards-container p {
+  color: aliceblue;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff41;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  color: aliceblue;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #930341;
+  border-radius: 10px;
+  transition: .2s ease-in;
+  margin-bottom: 1.5rem;
+}
+
+.card a:hover {
+  transform: scale(1.1);
+}
+
+/* Movie */
+.movie-container {
+  height: 100vh;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 0 5rem 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+  align-items: center;
+}
+
+.movie-container img {
+  width: 18rem;
+}
+
+.movie-container .info {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: aliceblue;
+}
+
+.movie-container .info a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #930341;
+  border-radius: 10px;
+  transition: .2s ease-in;
+}
+
+.movie-container .info a:hover {
+  transform: scale(1.1);
+}
+
+.movie-container .info h1 {
+  font-size: 3.5rem;
+}
+
+.movie-container .info h2 {
+  font-size: 1.7rem;
+}
+
+.movie-container .info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-container .info .stars ul {
+  font-size: 1.2rem;
+  padding-left: 2.5rem;
+}
+
+.movie-container .info .stars ul li {
+  margin-bottom: 0.5rem;
+}
+
+.movie-container .info p {
+  font-size: 1.1rem;
+}
+
+/* Page not found and Server Error  */
+.error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error h1 {
+  color: aliceblue;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.error h2 {
+  color: aliceblue;
+  font-size: 2.5rem;
 }

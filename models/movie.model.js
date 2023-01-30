@@ -9,7 +9,7 @@ const movieSchema = new Schema({
     type: "String",
   },
   stars: {
-    type: "Object",
+    type: "Array",
   },
   image: {
     type: "String",
@@ -18,7 +18,7 @@ const movieSchema = new Schema({
     type: "String",
   },
   showtimes: {
-    type: "Object",
+    type: "Array",
   },
 });
 
