@@ -61,14 +61,24 @@ a {
   justify-content: center;
 }
 
-.card-img-top {
-  max-width: 80%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
-}
 
 .card {
   border: none;
 }
 
+.img-center {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 2px 2px 8px 0px darkgray;
+}
+
+.list {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+h1.list {
+  font-weight: bold;
+}
