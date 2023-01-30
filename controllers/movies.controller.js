@@ -10,11 +10,11 @@ module.exports.list = (req, res, next) => {
 };
 
 
-module.exports.detail = (req,res,next) => {
+module.exports.detail = (req, res, next) => {
   Movie.findById(req.params.id)
     .then((movies) => {
       console.log(movies)
-      res.render('commons/detail.hbs', { movie: movies })
+      res.render('commons/detail.hbs', { movie: movies, stars: movies.stars, shows: movies.showtimes })
     })
     .catch((error) => next(error))
 }
