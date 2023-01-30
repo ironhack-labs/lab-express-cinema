@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -11,9 +11,8 @@ a {
   position: relative;
   width: 100%;
   height: 300px;
-  overflow: hidden;
-  top: 100px;
-  left: 50px;
+  top: 250px;
+  right: 10px;
 }
 
 .image {
@@ -29,20 +28,22 @@ a {
 
 .container h1 {
   position: absolute;
-  font-size: 70px;
+  font-size: 150px;
   font-weight: bold;
   width: 200px;
-  top: -15px;
-  right: 150px;
+  bottom: 100px;
+  right: 250px;
   z-index: 1;
   color: white;
 }
 
 .container .btn {
   position: absolute;
-  bottom: 100px;
-  right: 50px;
+  bottom: 20px;
+  right: -230px;
   z-index: 1;
+  padding: 20px 40px;
+  font-size: 30px;
 }
 
 .btn-custom.rounded-lg {
@@ -67,7 +68,7 @@ a {
 }
 
 .img-center {
-  width: 230px;
+  width: 300px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -82,6 +83,7 @@ a {
 h1.list {
   font-weight: bold;
   margin-bottom: 30px;
+  margin-top: 7px;
 }
 
 h4.list {
