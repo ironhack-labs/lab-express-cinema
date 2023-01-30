@@ -1,0 +1,30 @@
+<div action="detail" method="GET">  
+   
+   
+    <h1 class="display-4">
+        Details of the Movies
+    </h1>
+    <hr />  
+
+    <div>
+
+        {{#each movies}}
+
+            <div>
+                {{title}}
+                {{director}}
+                {{starts}}
+                {{image}}
+                {{description}}
+                {{showtimes}}
+            </div>    
+
+
+        {{/each}}
+
+    </div>
+
+    <a href="/">Go back to homepage</a>
+
+
+</div>

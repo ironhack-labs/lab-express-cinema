@@ -46,16 +46,18 @@ app.use(express.static("public"));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-hbs.registerPartials(path.join(__dirname, 'views/partials'));
+
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
 
-/*const moviesSee = require('./views/movies');
-app.use('/', moviesSee);
 
-*/
+const movieRoutes = require('./routes/movies');
+app.use('/', movieRoutes)
+
+
+
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);

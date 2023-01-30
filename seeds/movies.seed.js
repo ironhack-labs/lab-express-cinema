@@ -106,7 +106,7 @@ const movies = [
     })
     .then(createdMovies => {
         createdMovies.forEach(movie =>{
-            console.log(`${movie.title} has been created`)//itero en cada uno de ellos para verlos
+            console.log(`${movie} has been created`)//itero en cada uno de ellos para verlos
         })
         console.log(`${movies.length} movies has been created`)// para contar el numero de drones creados
     })
