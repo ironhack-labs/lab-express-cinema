@@ -1,13 +1,15 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 
 .welcome-title {
   position: absolute;
-  right: 50px;
-  width: 348px;
+  width: 100%;
+  height: 100%;
   background-image: url('/images/cinema.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,16 +29,24 @@ body {
 
 
 .container {
-background-color: red;
+
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-around;
+
+
 
 }
 
 .cart {
  
-  width: 300px;
-  /* display: flex;
-  flex-direction: column; */
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 50px 10px 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }  
