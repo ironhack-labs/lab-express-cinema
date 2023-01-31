@@ -4,6 +4,6 @@
   {{#each movies as |movie|}}
     <img src="{{movie.image}}" alt="movies_image" />
     <li>{{movie.title}}</li>
-    <a href="/movies/id">See more</a>
+    <a href="/{{movie.id}}">See more</a>
   {{/each}}
 </ul>
