@@ -8,3 +8,11 @@ module.exports.list = (req, res, next) => {
     })
     .catch((error) => next(error))
 }
+
+module.exports.detail = (req, res, next) => {
+  Movie.findById(req.params.id)
+    .then(movies => {
+      res.render('movies/detail', { movie: movies });
+    })
+    .catch((error)=> next(error))
+}

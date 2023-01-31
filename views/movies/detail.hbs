@@ -1,0 +1,10 @@
+{{movie.title}}
+{{movie.director}}
+{{#each movie.stars as |star|}}
+  <li>{{star}}</li>
+{{/each}}
+{{movie.description}}
+{{#each movie.showtimes as |showtime|}}
+  <li>{{showtime}}</li>
+{{/each}}
+<a href="/movies">Go back</a>
