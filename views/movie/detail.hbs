@@ -1,0 +1,19 @@
+<div class="detail card m-2 ms-4 me-4" style="width: 18rem;">
+  <img src="{{movie.image}}" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <a href="/movies">Go back</a>
+        <br><br>
+    <h3 class="card-title">{{movie.title}}</h3>
+    <h4 class="card-title">{{movie.director}}</h4>
+    <h5>Stars</h5>
+    <ul>
+      {{#each movie.stars as |star|}}
+        <li>{{star}}</li>
+      {{/each}}
+    </ul>
+    <p class="card-text">{{movie.description}}</p>
+    {{#each movie.showTimes as |showTime|}}
+      <span>{{showTime}}</span> |
+    {{/each}}
+  </div>
+</div>
