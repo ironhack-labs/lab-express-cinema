@@ -1,11 +1,53 @@
 body {
   width: 100%;
-  margin: 10px;
+  margin: 0px;
   height: 80px;
 }
 
 
-
-.card {
-  display:inline;
+.title-cinema {
+  transform: translate(-50%, -50%);
 }
+
+.img-cine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-check {
+  position: relative;
+  display: flex;
+  margin-left: 850px;
+  margin-top: 300px;
+-webkit-border-radius: 28;
+-moz-border-radius: 28;
+border-radius: 28px;
+text-shadow: 2px 1px 1px #9daef5;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: none;
+  border-color:  rgb(42, 124, 147);
+}
+
+
+.button-check-movies {
+
+  margin: 0px;
+  width: 200px;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(46, 128, 151);
+  size: 10px;
+}
+/*
+
+
+
+
+  
+
+*/
