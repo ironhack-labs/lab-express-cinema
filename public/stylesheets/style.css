@@ -3,6 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   width: 100vw;
   height: 100vh;
+  margin: 0px
 }
 
 
@@ -16,25 +17,49 @@ body {
 }
 
 .welcome-title h1{
+  width: 200px;
   color: white;
   font-size: 80px;
+  top: 20%;
+  right: 15%;
 }
 
-.welcome-title a{
-  font-size: 20px;
+.buttom {
+  width: 300px;
   background-color: white;
-  color: #00B7FF;
+  height: 62px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.titles {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 400px;
+  height: 350px;
+}
+
+.welcome-title a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 20px;
+  color: #599ca5;
+  width: 180px;
+  font-weight: bold;
   text-decoration: none;
+
+  transform: translate(-50%, -50%);
 }
 
 
 .container {
 
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-
-
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
 
 }
 
@@ -50,3 +75,27 @@ justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 10px;
 }  
+
+.detail-content {
+  display: flex;
+  margin-top: 20px;
+  width: 1000px;
+}
+.detail-content img{
+  margin-right: 50px;
+}
+
+.detail h2 {
+  font-weight: bold;
+  color: black;
+}
+.detail h3 {
+  
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.detail p, li{
+font-size: 18px;
+}

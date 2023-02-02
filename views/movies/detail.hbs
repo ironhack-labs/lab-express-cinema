@@ -1,1 +1,22 @@
-<h1>Detalle</h1>
+ {{> nav}}
+
+<div class = "detail-content">
+
+    <img src="{{movie.image}}" alt="{{movie.title}}">
+
+    <div class="detail">
+        <h2>{{movie.title}}</h2>
+        <h3>{{movie.director}}</h3>
+        <h3>Stars</h3>
+        <ul>
+            {{#each movie.stars as |star|}}
+                <li>
+                    {{star}}
+                </li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        <p>{{movie.showtimes}}</p>
+    </div>
+
+</div>

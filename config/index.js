@@ -16,6 +16,10 @@ const favicon = require("serve-favicon");
 // ℹ️ global package used to `normalize` paths amongst different operating systems
 // https://www.npmjs.com/package/path
 const path = require("path");
+const hbs = require('hbs');
+
+
+
 
 // Middleware configuration
 module.exports = (app) => {
@@ -29,6 +33,7 @@ module.exports = (app) => {
 
   // Normalizes the path to the views folder
   app.set("views", path.join(__dirname, "..", "views"));
+  hbs.registerPartials(path.join(__dirname, '../views/partials'));
   // Sets the view engine to handlebars
   app.set("view engine", "hbs");
   // Handles access to the public folder

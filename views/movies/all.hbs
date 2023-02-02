@@ -1,3 +1,4 @@
+ {{> nav}}
 <h1>Ironhack Cinema</h1>
 <h2>Click on the movie to check the showtimes!</h2>
 
@@ -6,7 +7,7 @@
     <div class='cart'>
         <img src="{{image}}" alt="{{title}}">
         <p> {{ title }} </p>
-        <a href="./detail">See More</a>
+        <a href="/movies/{{id}}/detail">See More</a>
     </div>
     {{/each}}
 
