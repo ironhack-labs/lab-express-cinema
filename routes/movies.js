@@ -6,7 +6,7 @@ const moviesController = require('../controllers/movies.controller');
 
 router.get('/movies', moviesController.list);
 
-router.get('/detail', moviesController.detail);
+router.get('/movies/:id', moviesController.detail);
 
 
 

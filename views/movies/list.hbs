@@ -1,31 +1,47 @@
-<div  method="GET" action="/movies">
+<div class="container-fluid bg-dark text-light p-5 pb-0 mb-5">
+  <div class="container bg-dark p-5">
     <h1 class="display-4">
       Welcome to my movies
     </h1>
     <hr />
-
-
-
-
-    <div>
-      {{#each movies}}
-        
-          <div style="background-image:url({{image}})">
-            
-            
-              <h2>{{title}}</h2>
-          
-          </div>
-              <form action="/movies/{{movie.id}}/detail" method="POST"> 
-                        <button><a href="/detail">See more</a></button>
-        
-                    </form>
-
-        
-      {{/each}}
   
+  <form class="list-filter-form" method="GET" action="/movies">
+     
 
-    
+  </form>
 
+</div>
+
+
+<div class="container">
+  <div class="row justify-content-around">
+         {{#each movies}}
+            <div class="card-group">
+              <div class="card">
+                <h3 class="card-title">{{title}}</h3>
+                <img class="card-img-top" src="{{image}}" alt="Card image cap">
+                <div class="card-body"></div>
+              </div>
+      </div>
+
+      <div class="custom-card-content-actions">
+          <a class="btn btn-primary" href="/movie/{{id}}/detail">
+                <i class="fa fa-eye"></i>
+              </a>
+
+              <form action="/movie/{{id}}/detail" method="POST">
+                <button type="submit" class="btn btn-danger button-detail">
+                  <a href="/movies/{{id}}">See more</a>
+                </button>
+              </form>
+
+      </div>
+</div>
+
+  
+    {{/each}}
   </div>
 </div>
+
+
+ 
