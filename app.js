@@ -8,8 +8,6 @@ const app = express();
 
 require("./config/db.config");
 
-//morgan
-
 app.use(logger("dev"));
 
 //Configure hbs as view engine
