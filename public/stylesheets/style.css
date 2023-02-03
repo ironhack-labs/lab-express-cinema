@@ -6,3 +6,72 @@ body {
 a {
   color: #00B7FF;
 }
+
+.background {
+  height: 100%;
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;                 
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 0 0 1000px;
+}
+
+.background h1 {
+  color: white;
+  font-size: 100px;
+}
+
+.background a {
+  color: #00B7FF;
+}
+
+.movie-img {
+  width: 200px;
+  height: 300px;
+}
+
+.body-movies {
+  padding: 0 200px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 50px;
+  align-items: center;
+}
+
+.movie-title {
+  color: black;
+}
+
+.bottom-image {
+  width: 300px;
+  text-align: center;
+  color: white;
+  padding: 5px 0;
+}
+
+.bottom-image p {
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.movie-detail-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 50px 600px 0 100px;
+}
+
+.image-detail-page {
+  margin-right: 40px;
+}
