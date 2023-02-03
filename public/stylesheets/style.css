@@ -3,6 +3,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-home {
+  margin-top: 10px;
+  width: 220px;
 }
