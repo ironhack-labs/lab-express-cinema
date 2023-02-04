@@ -1,0 +1,15 @@
+<h1>Movies</h1>
+<hr>
+
+<div class="card" style="width:18rem;">
+    <ul class="'list-group list-group-flush">
+{{#each movies as |movie|}}
+    <div class="border mb-3 p-2">
+        <ul>
+          <li class="list-group-item"></li>
+        <p>{{movie.title}}</p>
+        <img width="200" src="{{movie.image}}"/>
+</li>
+{{/each}}
+</ul>
+</div>
