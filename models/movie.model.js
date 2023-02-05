@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
-  tilte: {
+  title: {
     type: "String",
     require: true,
   },
@@ -14,7 +14,7 @@ const movieSchema = new Schema({
     type: ["String"],
     require: true,
   },
-  imager: {
+  image: {
     type: "String",
   },
   description: {

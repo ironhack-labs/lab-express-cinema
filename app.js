@@ -1,12 +1,12 @@
 require("dotenv/config");
 
+require("./config/db.config");
+
 //express
 const express = require("express");
 const logger = require("morgan");
 
 const app = express();
-
-require("./config/db.config");
 
 app.use(logger("dev"));
 
