@@ -1,10 +1,10 @@
 <h1>Movies List</h1>
-<div>
+<div class="list-container">
  {{#each movies as |movie|}}
-  <div>
-    <img src="{{ movie.image }}">
-    <li>{{ movie.title }}</li>
-    <a href="/movies/{{movie.id}}">See more</a>
+  <div class="card list-card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ movie.image }}">
+    <li class="card-title" >{{ movie.title }}</li>
+    <a class="btn btn-danger" href="/movies/{{movie.id}}">See more</a>
   </div>
  {{/each}}
 </div>

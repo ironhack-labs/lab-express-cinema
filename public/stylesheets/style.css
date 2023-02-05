@@ -13,3 +13,39 @@ body {
   margin-top: 10px;
   width: 220px;
 }
+
+.list-container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+.list-card {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  padding-top: 15px;
+  font: bolder;
+}
+
+.detail-container {
+  display: flex;
+}
+
+.showtimes {
+  display: flex;
+  border-right: 2px;
+}
+
+.card {
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+
