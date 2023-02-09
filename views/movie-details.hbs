@@ -1,21 +1,31 @@
-<div class="col-md-4">
-    <div class="card mb-4 player-card">
-        <img src="{{image}}" class="card-img-top object-fit-scale" alt="{{name}}">
-        <div class="card-body">
-            <h5 class="card-title"> <span>{{title}}</span></h5>
-            <p class="card-text"> <span>Director: </span> {{director}}</p>
-            <h5 class="card-title"><span> Stars:</span>
-                <ul>
-                    {{#each stars}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                </ul>
-            </h5>
-            <p class="card-text"> <span>Description: </span> {{description}}</p>
-            <p class="card-text"><span>Showtimes:</span>{{#each showtimes}}
-            <p>{{this}}</p> {{/each}}</p>
+<div class="container">
 
-            </h5>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{image}}" class="card-img-top object-fit-scale img" alt="{{name}}">
+
+            </div>
         </div>
+        <div class=" col-md-6">
+            <div class="card-body">
+                <h5 class="card-title"> <span>{{title}}</span></h5>
+                <p class="card-text"> <span>Director: </span> {{director}}</p>
+                <h5 class="card-title"><span> Stars:</span>
+                    <ul>
+                        {{#each stars}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </h5>
+                <p class="card-text"> <span>Description: </span> {{description}}</p>
+                <div class="showtimes">
+                    <p class="card-text"><span>Showtimes:</span>{{#each showtimes}}
+                    <p>{{this}}</p> {{/each}}</p>
+                </div>
+                </h5>
+            </div>
+        </div>
+
     </div>
 </div>

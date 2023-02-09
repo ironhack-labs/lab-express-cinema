@@ -19,3 +19,12 @@ span {
 h1 {
   font-weight: bold;
 }
+
+.img {
+  height: 300px;
+}
+
+.showtimes {
+  display: flex;
+  justify-content: space-evenly;
+}
