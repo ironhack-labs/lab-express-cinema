@@ -1,8 +1,28 @@
 body {
-  padding: 50px;
+  color: white;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon {
+  width: 40px;
+}
+
+.container {
+  padding: 2em;
+  color: white;
 }
 
 a {
   color: #00B7FF;
+}
+
+.movie-img {
+  width: 100%;
+}
+
+.card {
+  color: black;
 }

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="d-flex col-md-4 justify-content-center">
+                    <img src="{{image}}" class="img-fluid rounded-start" alt="{{title}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="card-title">{{title}}</h4>
+                        <p class="card-text"><small class="text-muted">{{director}}</small></p>
+                        <hr>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text"><small class="text-muted"></small>
+                            {{#each showtimes}}
+                            {{this}} |
+                            {{/each}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
