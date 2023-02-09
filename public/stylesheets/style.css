@@ -6,3 +6,42 @@ body {
 a {
   color: #00B7FF;
 }
+
+.home-image {
+  min-height: 100%;
+  min-width: 1024;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.homeAnchor {
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.homeAnchor:hover {
+  background-color: #ce0606;
+}
+
+.homeAnchor:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.homeText {
+  text-align: right;
+}
+
+h1 {
+color: azure;
+}
