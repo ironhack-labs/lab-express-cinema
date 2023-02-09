@@ -1,0 +1,10 @@
+body {
+    background-image: url(../images/cinema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 7em;
+}
