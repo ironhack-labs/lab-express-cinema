@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>{{tittle}}</h2>
+    <figure class="movie-img">
+
+        <img src="{{image}}" class="card-img-top " alt="{{tittle}}">
+    </figure>
+    <p class="card-text"><strong>Description:</strong> {{description}}</p>
+    <p class="card-text"><strong>Stars:</strong> {{stars}}</p>
+    <p class="card-text"><strong>Showtimes:</strong>
+        {{#each showtimes}} <strong>{{this}} </strong> {{/each }}</p>
+    <a href="/movies">Go back</a>
+</div>
