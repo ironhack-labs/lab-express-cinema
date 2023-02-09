@@ -1,0 +1,23 @@
+<div class="col-md-4">
+    <div class="card mb-4 artist-card">
+        <img src="{{image}}" class="card-img-top" alt="{{name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <p>{{director}}</p>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>{{description}}</p>
+
+
+            {{#each showtimes}}
+            {{this}} |
+            {{/each}}
+
+        </div>
+
+
+    </div>
+</div>
