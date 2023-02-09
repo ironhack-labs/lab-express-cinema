@@ -1,0 +1,17 @@
+<h1>Cinema Ironhack</h1>
+
+<hr>
+
+<h2>{{title}}</h2>
+
+<hr>
+
+<img src="{{image}}" alt="movie image">
+<p>Director: {{director}}</p>
+<p>Reparto: {{#each stars}} {{this}} | {{/each}}</p>
+<p>Sinopsis: {{description}}</p>
+<p>Pases: {{#each showtimes}} {{this}} | {{/each}}</p>
+
+<hr>
+
+<a href="/movies">Volver a las películas</a>

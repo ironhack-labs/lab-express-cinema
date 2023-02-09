@@ -1,0 +1,21 @@
+<h1>Cinema Ironahck</h1>
+
+<hr>
+
+<h2>Click on the movie to check the showtimes!</h2>
+
+<hr>
+
+{{#each movies}}
+
+<a href="/movies/{{_id}}"><img src="{{image}}" alt="{{title}} Cover"></a>
+
+
+<p>{{title}} - <a href="/movies/{{_id}}">See more</a></p>
+
+<hr>
+
+{{/each}}
+
+
+<a href="/">Volver a inicio</a>
