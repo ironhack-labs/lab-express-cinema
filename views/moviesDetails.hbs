@@ -1,0 +1,32 @@
+<h1>{{titleApp}}</h1>
+
+<hr>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{image}}" class="movie-img-top" alt="{{title}}">
+        </div>
+        <div class="col-md-8">
+            <a href="/movies">Go Back</a>
+            <hr>
+            <h3 class="movie-title"><b>{{title}}</b></h3>
+            <hr>
+            <h5 class='director'><b>Director: {{director}}</b></h5>
+            <hr>
+            <h6><b>Stars</b></h6>
+            <ul>
+                <li>{{stars.[0]}}</li>
+                <li>{{stars.[1]}}</li>
+                <li>{{stars.[2]}}</li>
+            </ul>
+            <hr>
+            <p>{{description}}</p>
+            <hr>
+            <p><span>{{showtimes.[0]}} | </span><span>{{showtimes.[1]}} | </span><span>{{showtimes.[2]}} |
+                </span><span>{{showtimes.[3]}}</span>
+            </p>
+        </div>
+    </div>
+</div>

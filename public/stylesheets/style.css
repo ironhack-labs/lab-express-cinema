@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+.movie-img-top {
+  width: 300px;
+}

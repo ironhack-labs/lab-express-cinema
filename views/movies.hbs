@@ -1,0 +1,29 @@
+<h1>{{titleApp}}</h1>
+
+<hr>
+
+<p>Click on the movie to check the showtimes!</p>
+
+<hr>
+
+<div class="container">
+
+    <div class="row">
+
+        {{#each movies}}
+
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4 movie-card">
+                <img src="{{image}}" class="movie-img-top" alt="{{title}}">
+                <div class="card-body">
+                    <h5 class="beer-title"><b>{{title}}</b></h5>
+                    <a href="/movies/{{_id}}">See More</a>
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+</div>
