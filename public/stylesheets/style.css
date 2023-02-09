@@ -1,8 +1,21 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Julius Sans One;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+.button-see-more {
+  color: white;
+}
+
+span {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
 }
