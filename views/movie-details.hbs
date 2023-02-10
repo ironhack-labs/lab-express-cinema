@@ -1,0 +1,50 @@
+<div class="container details">
+    <div class="row">
+        {{#each movie}}
+        <div class="card mb-3" style="max-width: 150vh;">
+            <div class="row g-0">
+                <div class="col-md-2">
+                    <img src="{{image}}" class="img-fluid rounded-start h-100 p-1" alt="...">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h3 class="card-title">{{title}}</h3>
+                        <h5 class="card-title">{{director}}</h5>
+                        <h6>Stars</h6>
+                        <ul>
+                            <li>{{stars.[0]}}</li>
+                            <li>{{stars.[1]}}</li>
+                            <li>{{stars.[2]}}</li>
+                        </ul>
+                        <p class="card-text">{{description}}</p>
+
+                        <ul class="list-unstyled">
+                            <div class="row justify-content-center">
+                                <li class="col-2 mt-2 border-end border-3 border-dark"><a
+                                        href="/movies/{{id}}/reserve">{{showtimes.[0]}}</a>
+                                </li>
+                                <li class="col-2 mt-2 border-end border-3 border-dark"><a
+                                        href="/movies/{{id}}/reserve">{{showtimes.[1]}}</a>
+                                </li>
+                                <li class="col-2 mt-2 border-end border-3 border-dark"><a
+                                        href="/movies/{{id}}/reserve">{{showtimes.[1]}}</a>
+                                </li>
+                                <li class="col-2 mt-2 border-end border-3 border-dark"><a
+                                        href="/movies/{{id}}/reserve">{{showtimes.[2]}}</a>
+                                </li>
+                                <li class="col-2 mt-2 border-end border-3 border-dark"><a
+                                        href="/movies/{{id}}/reserve">{{showtimes.[3]}}</a>
+                                </li>
+                                <li class="col-2 mt-2 border-end border-3 border-dark"><a
+                                        href="/movies/{{id}}/reserve">{{showtimes.[4]}}</a>
+                                </li>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

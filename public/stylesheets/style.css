@@ -3,6 +3,25 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.home {
+  height: 650px;
+}
+
+.details p {
+  font-size: 1.5em;
+}
+
+.details h3,
+h5,
+h6 {
+  font-size: 3em;
+}
+
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+ul a {
+  color: black;
 }
