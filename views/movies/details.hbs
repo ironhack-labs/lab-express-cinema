@@ -1,0 +1,21 @@
+<div class="container movies">
+    <div class="row movies">
+        {{#each movie}}
+        <div class="col-md-4">
+            <div class="card mb-4 player-card">
+                <img src="{{image}}" class="card-img-top object-fit-scale" alt="{{name}}">
+                <div class="card-body">
+                    <p>Title {{title}}</p>
+                    <p>Director {{director}}</p>
+                    <p>Actores: <li>{{stars}}</li>
+                    <p>Autor/a: {{description}}</p>
+                    <p>Autor/a: {{showTimes}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+<a href="/views/movies.hbs">Volver al listado</a>
