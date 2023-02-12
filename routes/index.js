@@ -7,7 +7,7 @@ router.get("/", (req, res, next) => res.render("index.hbs"));
 
 router.get("/movies", (req, res, next) => {
   MovieModel.find()
-    .select("title")
+    .select("title image")
     .then((response) => {
       res.render("movies.hbs", {
         allMovies: response,
