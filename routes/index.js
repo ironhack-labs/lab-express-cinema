@@ -14,7 +14,21 @@ router.get("/movies", (req, res, next) => {
       });
     })
     .catch((error) => {
-      console.log(error);
+      next(error);
+    });
+});
+
+router.get("/movie/:movieId", (req, res, next) => {
+  const { movieId } = req.params;
+
+  MovieModel.findById(movieId)
+    .then((response) => {
+      res.render("movie/details.hbs", {
+        oneMovie: response,
+      });
+    })
+    .catch((error) => {
+      next(error);
     });
 });
 
