@@ -1,0 +1,83 @@
+{{!-- Home --}}
+{{#if home}}
+  <div class="home bgimage">
+    <div class="info">
+      <h1>Cinema IronHack</h1>
+      <a href="/movies">Checks the movies</a>
+    </div>
+  </div>
+{{/if}}
+
+{{!-- Movies list --}}
+{{#if movies}}
+  <div class="bgimage">
+    <div class="shadow">
+      <div class="cards-container">
+        <h1>Cinema billboard</h1>
+        <p>Click on the movie to check the showtime!</p>
+        <div class="cards">
+          {{#each data as |movie|}}
+            <div class="card">
+              <img src="{{movie.image}}" alt="{{movie.title}}" />
+              <h2>{{movie.title}}</h2>
+              <a href="/movie/{{movie._id}}">See more</a>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+{{/if}}
+
+{{!-- Movie --}}
+{{#if movie}}
+  <div class="bgimage">
+    <div class="shadow">
+      <div class="movie-container">
+        <div>
+          <img src="{{data.image}}" alt="{{data.title}}" />
+        </div>
+        <div class="info">
+          <a href="/movies">Go back</a>
+          <h1>{{data.title}}</h1>
+          <h2>Director: {{data.director}}</h2>
+          <div class="stars">
+            <h3>Stars</h3>
+            <ul>
+              {{#each data.stars as |star|}}
+                <li>{{star}}</li>
+              {{/each}}
+            </ul>
+          </div>
+          <p>{{data.description}}</p>
+          <p>
+            {{#each data.showtimes as |showtime|}}
+              {{showtime}}
+              |
+            {{/each}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/if}}
+
+{{!-- Server error --}}
+{{#if error}}
+  <div class="bgimage">
+    <div class="shadow error">
+      <h1>Error on Server!</h1>
+      <h2>There was an error on the server! Check the console!</h2>
+    </div>
+  </div>
+{{/if}}
+
+{{!-- Page not found --}}
+{{#if notFound}}
+  <div class="bgimage">
+    <div class="shadow error">
+      <h1>404 Error</h1>
+      <h2>This route does not exist on the app! Check if everything is ok!</h2>
+    </div>
+  </div>
+{{/if}}

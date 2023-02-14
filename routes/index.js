@@ -1,7 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+const controllers = require("../controllers/router.controllers");
+
+router.get("/", controllers.home);
+
+router.get("/movies", controllers.list);
+
+router.get("/movie/:id", controllers.single);
 
 module.exports = router;
