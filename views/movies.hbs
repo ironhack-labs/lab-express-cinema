@@ -1,12 +1,14 @@
 <main id='movies'>
-	<h1>Movies here</h1>
+	<h1>Ironhack Cinema</h1>
+
+	<p>Click on the Movie to check the showtimes!</p>
 
 	<div id='all-movies-wrapper'>
 		{{#each movies}}
 			<div id='movie-tile'>
 				<img src='{{this.image}}' alt='' />
 				<h2>{{this.title}}</h2>
-				<a href='/movie-detail'>See more</a>
+				<a href='/movies/{{this._id}}'>See more</a>
 
 			</div>
 		{{/each}}

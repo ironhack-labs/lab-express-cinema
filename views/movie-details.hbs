@@ -1,0 +1,37 @@
+<main id='details'>
+	<div id='detail-wrapper'>
+
+		<div id='movie-poster'>
+			<img src='{{movie.image}}' alt='' />
+		</div>
+
+		<div id='movie-info'>
+
+			<a href='/movies'> Go back</a>
+
+			<h2>{{movie.title}}</h2>
+
+			<h3>Director: {{movie.director}}</h3>
+
+			<h4>Stars:
+				{{#each movie.stars}}
+					<ul>
+						<li>{{this}}</li>
+
+					</ul>
+				{{/each}}
+			</h4>
+
+			<p>{{movie.description}}</p>
+
+			<p>Showing times:
+				{{#each movie.showtimes}}
+					{{this}}
+					|
+				{{/each}}
+			</p>
+
+		</div>
+
+	</div>
+</main>

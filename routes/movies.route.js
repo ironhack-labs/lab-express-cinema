@@ -11,12 +11,12 @@ router.get('/movies', (req, res, next) => {
 	});
 });
 
-router.get('/movies/:id', (req, res, next) => {
+router.get('/movies/:movieId', (req, res, next) => {
 	const { movieId } = req.params;
 
-	Movie.findById().then((selectedMovie) => {
+	Movie.findById(movieId).then((selectedMovie) => {
 		console.log('This is the movie you are looking for', selectedMovie);
-		res.render('movie-detail', { movie: selectedMovie });
+		res.render('movie-details', { movie: selectedMovie });
 	});
 });
 
