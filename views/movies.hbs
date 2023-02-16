@@ -1,0 +1,16 @@
+<main id='movies'>
+	<h1>Movies here</h1>
+
+	<div id='all-movies-wrapper'>
+		{{#each movies}}
+			<div id='movie-tile'>
+				<img src='{{this.image}}' alt='' />
+				<h2>{{this.title}}</h2>
+				<a href=''>See more</a>
+
+			</div>
+		{{/each}}
+	</div>
+</main>
+
+{{! Path: lab-express-cinema/routes/movies.js }}

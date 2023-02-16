@@ -3,6 +3,9 @@ body {
 	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 a {
@@ -15,4 +18,25 @@ main#index {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
+	width: 100vw;
+}
+
+main#movies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#all-movies-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 600px;
+	gap: 50px;
+}
+
+#movie-tile {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
 }
