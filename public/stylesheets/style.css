@@ -2,9 +2,6 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
-  background-image: url("/images/cinema.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -16,12 +13,19 @@ a {
 }
 
 .home-page {
-  margin-left: 25%;
-  margin-top: 10%;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 25%;
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
 .home-page h1 {
   font-size: 80px;
   font-weight: bold;
@@ -43,11 +47,11 @@ a {
   width: 250px;
   height: 400px;
   margin: 20px;
-  color: white;
+  color: black;
 }
 .movie p {
   font-weight: bold;
-  color: white;
+  color: black;
 }
 .button {
   background-color: #000000;
@@ -64,6 +68,22 @@ a {
 .movies-title {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: black;
   margin-left: 4%;
+}
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: auto auto;
+  color: black;
+}
+.movie-img {
+  margin-left: 30px;
+}
+.movie-description {
+  width: 60%;
+  margin: 30px;
+  color: black;
 }
