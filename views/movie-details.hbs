@@ -1,0 +1,17 @@
+{{!-- views/books/book-details.hbs --}}
+<a href="/movies">Back</a>
+
+<h3>{{title}}</h3>
+<h4>Director: {{director}}</h4>
+
+<h5>Stars</h5>
+<ul>
+{{#each stars}}
+<li>
+    {{this}}
+</li>
+{{/each}}
+</ul>
+<p>
+    {{description}}
+</p>
