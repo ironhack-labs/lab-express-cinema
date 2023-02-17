@@ -20,4 +20,19 @@ router.get('/movie', (req, res, next) => {
 
 });
 
+router.get('/movie/:movieId',(req,res,next) => {
+  const { movieId } = req.params;
+  Movie.findById(movieId)
+  .then(theMovie => {
+    console.log(theMovie);
+    res.render('movie-info', theMovie)})
+  .catch(error => {
+    console.log('Error while retrieving book details: ', error);
+
+    // Call the error-middleware to display the error page to the user
+    next(error);
+  });
+
+})
+
 module.exports = router;

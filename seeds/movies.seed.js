@@ -86,3 +86,30 @@ const movies = [
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
   // ... your code here
+  const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
+const Movie = require('../models/Movie.model');
+
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/lab-express-cinema';
+
+mongoose
+  .connect(MONGO_URI)
+  .then(x => {
+    console.log(`Connected to Mongo database: "${x.connections[0].name}"`);
+
+    // Create new documents in the books collection
+    return Movie.create(movies);
+  })
+  .then(MoviesFromDb => {
+    console.log(`Created ${MoviesFromDb.length} books`);
+
+    // Once the documents are created, close the DB connection
+    return mongoose.connection.close();
+  })
+  .then(() => {
+    // Once the DB connection is closed, print a message
+    console.log('DB connection closed!');
+  })
+  .catch(err => {
+    console.log(`An error occurred while creating books from the DB: ${err}`);
+  });
