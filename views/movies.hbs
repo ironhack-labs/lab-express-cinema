@@ -1,15 +1,17 @@
 <link rel="stylesheet" href="/stylesheets/style.css" />
 <div>
-    <div>
+    <div class="movies-title">
         <h1>Ironhack Cinema </h1>
         <p>Click on the movie to check the showtimes!</p>
     </div>
+    <div class="movies-container">
     {{#each allMovies}}
-        <div>
+        <div class="movie">
             <img src="{{this.image}}" alt="movie image">
             <p>{{this.title}}</p>
-            <a href="/movies/{{_id}}">See more</a>
+            <a class="button" href="/movies/{{_id}}">See more</a>
         </div>
     {{/each}}
+    </div>
 
 </div>

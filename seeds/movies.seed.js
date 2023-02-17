@@ -90,7 +90,7 @@ const movies = [
 
   mongoose
   .connect(MONGO_URI)
-  .then(x => {
+  .then((x) => {
     console.log(`Connected to Mongo database: "${x.connections[0].name}"`);
  
     // Create new documents in the movies collection
