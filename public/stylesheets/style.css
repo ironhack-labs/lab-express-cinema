@@ -1,8 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+main {
+  background-image: url('/images/cinema.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50%;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: #689dad;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #689dad;
+}
+
+.wrapper-index {
+  padding-top: 50px;
+}
+
+.wrapper-movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 60px;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.btn-see-more {
+  color: white;
+  font-size: 1rem;
+  background-color: #689dad;
+  padding: 10px 30px;
+}
+
+.btn-see-more:hover {
+  color: #689dad;
+  background-color: #689dad8e;
+}
+
+.wrapper-btn {
+  padding-top: 30px;
+}
+
+.title {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+img {
+  box-shadow: 0px 5px 5px rgb(164, 164, 164);
+}
+
+.nav-title {
+  background-color: rgb(171, 42, 42);
+  padding: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: rgb(171, 42, 42);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.wrapper-movie-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 200px;
+}
+
+.movie-details {
+  padding-left: 40px;
+}
+
+.title-movie-details {
+  font-size: 2rem;
+}
+
+.director {
+  padding-top: 15px;
+}
+
+.padding {
+  padding-bottom: 15px;
 }
