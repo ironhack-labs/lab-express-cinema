@@ -9,7 +9,11 @@
   <div class='movie-details'>
     <div class='title-movie-details'>{{title}}</div>
     <div class='padding director'>Director: {{director}}</div>
-    <div class='padding'>Stars: {{stars}}</div>
+    <div class='padding'>Stars:
+      {{#each stars}}
+        <ul><li>{{this}}</li></ul>
+      {{/each}}
+    </div>
     <div class='padding'>{{description}}</div>
     <div class='padding'>{{showtimes}}</div>
     <div class='wrapper-btn'><a class='btn-see-more' href='/movies'>Go back</a></div>
