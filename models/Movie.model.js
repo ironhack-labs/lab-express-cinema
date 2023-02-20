@@ -34,4 +34,8 @@ const movieSchema = new Schema(
 
 const Movie = model("Movie", movieSchema);
 
+<<<<<<< HEAD
 module.exports = Movie;
+=======
+module.exports = Movie;
+>>>>>>> bc2ec5d1ff71498237900829b708aaa2a1abe94c

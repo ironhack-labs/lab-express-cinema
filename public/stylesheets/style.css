@@ -2,13 +2,18 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 
 }
+<<<<<<< HEAD
 
 #index {
+=======
+#index{
+>>>>>>> bc2ec5d1ff71498237900829b708aaa2a1abe94c
   padding: 50px;
   background-image: url('/images/cinema.jpg');
   background-repeat: no-repeat;
   width: 100wh;
   height: 100vh;
+<<<<<<< HEAD
   background-color: #cccccc;
   /* Used if the image is unavailable */
   background-position: center;
@@ -17,16 +22,27 @@ body {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
+=======
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+>>>>>>> bc2ec5d1ff71498237900829b708aaa2a1abe94c
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> bc2ec5d1ff71498237900829b708aaa2a1abe94c
 }
 
 a {
   color: #00B7FF;
 }
+<<<<<<< HEAD
 
 #cinema-title {
   font-size: 5rem;
@@ -55,3 +71,29 @@ a {
 
   flex: right;
 }
+=======
+#cinema-title{
+font-size: 5rem;
+margin-top : 10vh;
+margin-right: 5vw;
+font-weight: bold; 
+
+}
+#cinema-title2{
+  font-size: 5rem;
+  margin-right: 5vw;
+  font-weight: bold; 
+  }
+#cinema-btn{
+background-color: white;
+border-radius: 90px;
+text-align: center;
+padding: 20px;
+color: #00B7FF;
+
+}
+.sec{
+
+  flex: right;
+}
+>>>>>>> bc2ec5d1ff71498237900829b708aaa2a1abe94c
