@@ -1,0 +1,12 @@
+#movie {
+    display: flex;
+    align-items: center;
+}
+
+#textDiv {
+    margin: 1vw 5vw 0 3vw;
+}
+
+img {
+    margin-left: 1vw;
+}

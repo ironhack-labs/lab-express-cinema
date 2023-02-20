@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 //directly create Movie model
-const movie = mongoose.model("Movie", {
+const Movie = mongoose.model("Movie", {
     title: String,
     director: String,
     stars: [String],
@@ -10,4 +10,4 @@ const movie = mongoose.model("Movie", {
     showtimes: [String]
 });
 
-module.exports = movie;
+module.exports = Movie;

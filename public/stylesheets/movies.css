@@ -1,0 +1,10 @@
+#movieDiv {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.movie {
+    text-align: center;
+    margin: 1vh;
+}
