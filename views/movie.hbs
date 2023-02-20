@@ -1,0 +1,20 @@
+
+<div class="card" style="border:none">
+  <div class="card-body" >
+ <h2> Ironhack Cinema</h2>
+    <p> <b> Click on the movie to check the showtimes! </b></p>  </div>
+</div>
+   
+    <div class="card-group">
+  <div class="row row-cols-1 row-cols-md-2 g-3" >
+
+{{#each movie}}
+<div class="card" style="width: 15rem; padding : 2rem; margin: 3rem; background-color:white; border:none"> 
+  <img src="{{image}}" class="card-img-top" alt="...">
+ <div class="card-body">
+  <center>    <p class="card-text"> <strong>{{title}} </strong></p>
+   <a href="movie/{{_id}}"> See More </a></center>
+  </div>
+</div>
+{{/each}}
+</div>

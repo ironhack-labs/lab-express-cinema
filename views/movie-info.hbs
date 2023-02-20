@@ -1,0 +1,33 @@
+<div class='card mb-3' style='max-width: 80%; border-style:none; border-width:0px;' >
+  <div class='row g-0'>
+    <div class='col-md-4'>
+      <img
+        src='{{image}}'
+        class='img-fluid rounded-start'
+        style='max-width: 100% ; height: auto; float:right ; margin-top:10vh;'
+      />
+    </div>
+    <div class='col-md-8'>
+      <div class='card-body'  style="border-style:none; border-width:0px;">
+        <a href="/movie"> Go back</a>
+        <h3 class='card-title'>{{title}}</h3>
+        <p class='card-text'> <b>Director: {{director}}  </b></p>
+        <p class='card-text'> <h6> Stars:</h6></p>
+         <ul>
+        {{#each stars}}
+      <li>   {{this}}</li>
+        {{/each}}
+         </ul>
+
+        <p class='card-text'>{{description}}</p>
+       
+        <p class='card-text'>
+
+ {{#each showtimes}}
+<span> {{this}} </span>
+ {{/each}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
