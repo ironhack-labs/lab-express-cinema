@@ -1,0 +1,16 @@
+<div class='movie'>
+	<a href='/movies'>Back</a>
+	<h2>{{title}}</h2>
+	<h3>Director: {{director}}</h3>
+	<ul>
+		{{#each stars}}
+			<li>{{this}}</li>
+		{{/each}}
+	</ul>
+
+	<p>{{description}}</p>
+
+	{{#each showTimes}}
+		<span> {{this}} |</span>
+	{{/each}}
+</div>
