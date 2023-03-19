@@ -1,8 +1,44 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	margin: 0;
+	overflow: hidden;
+	cursor: default;
 }
 
 a {
-  color: #00B7FF;
+	color: #00b7ff;
+}
+
+.homepage {
+	background: url('../images/cinema.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 10%;
+	width: 100vw;
+	height: 100vh;
+	color: white;
+}
+
+.homepage div {
+	position: relative;
+	top: 15%;
+	left: 65%;
+	width: 20vw;
+}
+
+.homepage div h1 {
+	font-size: 8rem;
+}
+
+.homepage div button {
+	font-size: 2rem;
+	background: ghostwhite;
+	color: #0080b3;
+	cursor: pointer;
+	padding: 2vh 2vw;
+	border-radius: 3rem;
+}
+.homepage div button:hover {
+	background: rgb(231, 231, 238);
+	color: #018cc4;
 }
