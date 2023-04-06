@@ -4,5 +4,15 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.start-page {
+  background-image: url("../public/images/cinema.jpg");
+  height: 100%;
+  background-size: cover;
+}
+
+.check-btn {
+  width: 150px;
 }
