@@ -1,0 +1,19 @@
+<div id="movies-top-section">
+    <h1>Ironhack Cinema</h1><br>
+    <p>Click on the movie to check the showtimes!</p>
+</div>
+
+
+<div id="movies-preview-content">
+    {{#each movies}}
+    <div id="single-movie-container">
+        <img src="{{image}}" alt={{name}} id="overview-movie-image"/>
+        <br>
+        <h3>{{title}}</h3>
+        <br>
+        <a href="/movie/{{_id}}">SEE MORE</a>
+    </div>
+    
+    {{/each}}
+</div>
+
