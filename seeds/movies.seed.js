@@ -1,5 +1,7 @@
 // To insert in "seeds/movies.seed.js"
 
+const MovieModel = require("../models/Movie.model");
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -85,4 +87,12 @@ const movies = [
 
 // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 
-// ... your code here
+require ("../db")
+async function seedData () {
+    const response = await MovieModel.create (
+        movies
+    )
+    console.log(response);
+}
+
+seedData();
