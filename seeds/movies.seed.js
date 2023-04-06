@@ -1,3 +1,7 @@
+const movieModel = require("../models/Movie.model");
+
+require("../db");
+
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -80,3 +84,51 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"],
   },
 ];
+
+//async function without const
+async function saveMovies() {
+  try {
+    const responseFromDB = await movieModel.create(movies);
+    console.log("Got all the info in the DB!", responseFromDB);
+  } catch (err) {
+    console.log("there was an error", err);
+  }
+}
+saveMovies();
+
+// //async with const
+// const saveMovieArr = async () => {
+//   try {
+//     const responseFromDB = await movieModel.create(movies);
+//     console.log("Got all the info in the DB!", responseFromDB);
+//   } catch (err) {
+//     console.log("there was an error", err);
+//   }
+// };
+// saveMovieArr();
+
+// //.then function without const
+// function saveMovies2() {
+//   movieModel
+//     .create(movies)
+//     .then((responseFromDB) => {
+//       console.log("Got all the info in the DB!", responseFromDB);
+//     })
+//     .catch((err) => {
+//       console.log("there was an error", err);
+//     });
+// }
+// saveMovies2();
+
+// //.then with const
+// const saveMoviesArr = () => {
+//   movieModel
+//     .create(movies)
+//     .then((responseFromDB) => {
+//       console.log("Got all the info in the DB!", responseFromDB);
+//     })
+//     .catch((err) => {
+//       console.log("there was an error", err);
+//     });
+// };
+// saveMoviesArr();
