@@ -1,8 +1,43 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+}
+
+.background {
+  background: url(../images/cinema.jpg) no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titlebox {
+  max-width: 500px;
+  padding: 2rem 4rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 6rem;
 }
 
 a {
   color: #00B7FF;
+}
+
+button {
+  color: #00B7FF;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  min-height: 60px;
+  border-radius: 30px;
+  padding: 0 2rem;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
