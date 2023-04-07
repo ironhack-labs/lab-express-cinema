@@ -66,3 +66,14 @@ a {
   grid-gap: 50px;
   text-align: center;
 }
+
+.parent-id {
+  display: flex;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.text-id {
+  padding-left: 30px;
+  margin-top: -23px;
+}
