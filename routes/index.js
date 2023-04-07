@@ -10,7 +10,7 @@ router.get('/movies', async (req, res, next) => {
     res.render('movies', { movies: moviesFromDB});
 });
 
-router.get('/movies/:id', async (req, res, next) => {
+router.get('/movie/:id', async (req, res, next) => {
     const { id } = req.params;
     const oneMovie = await MovieModel.findById(id);
     // console.log("our one wizard", oneMovie);
