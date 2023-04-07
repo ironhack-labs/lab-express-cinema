@@ -1,59 +1,150 @@
-body {
-font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-margin: 0;
-cursor: default;
-}
+html, body {
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+	cursor: default;
+  }
 
-.movies {
+  .page-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+  }
+  .content-wrap {
+	flex: 1;
+  }
+  
+  body {
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	margin: 0;
+	cursor: default;
+  }
+  
+  .movies {
 	display: flex;
 	flex-flow: wrap;
-}
-
-.movie {
+  }
+  
+  .movie {
 	display: flex;
 	flex-direction: column;
 	width: 25vw;
 	margin: 3vh auto;
 	align-items: center;
-  justify-content: space-between;
-}
-
-.movie img {
+	justify-content: space-between;
+  }
+  
+  .movie img {
 	width: 18vw;
-}
-
-.movie a {
+  }
+  
+  .movie a {
 	font-size: 1.5rem;
 	margin-top: 1vh;
-}
-
-
-
-.back {
+  }
+  
+  .back {
 	font-size: 3rem;
 	text-align: center; 
-}
-
-.p {
+  }
+  
+  .p {
 	display: flex;
 	border-bottom: 1px solid ;
-}
-
-
-.description {
+  }
+  
+  .description {
 	text-align: justify;
 	font-size: 1.1rem;
-}
-
-h3 {
+  }
+  
+  h3 {
 	font-size: 2rem;
 	margin: 0.5vh auto;
-}
-
-h4 {
+  }
+  
+  h4 {
 	font-size: 1.5rem;
 	margin: 0.5vh auto;
-}
-
-
-
+  }
+  
+  .div-img {
+	background-image: url('https://e3.365dm.com/21/11/2048x1152/skynews-film-cinema_5600215.jpg?20211130085551');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 80vh;
+	position: relative;
+  }
+  
+  .cinema-ironhack {
+	position: absolute;
+	top: 50%;
+	right: 30%;
+	transform: translateY(-50%);
+	color: white;
+	text-align: right;
+	z-index: 1;
+  }
+  
+  .cinema-ironhack h1 {
+	font-size: 4rem;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .cinema-ironhack button {
+	background-color: white;
+	color: black;
+	border: none;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	border-radius: 20px;
+	font-size: 16px;
+	padding: 10px 25px 10px 25px;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: black;
+	text-decoration: none;
+  }
+  
+  a {
+	color: black;
+	text-decoration: none;
+  }
+  
+  .navbar {
+	background-color: #333;
+	color: white;
+	padding: 1em;
+  }
+	
+  .navlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .navitem {
+	margin-left: 1em;
+  }
+  
+  .navitem:first-child {
+	margin-left: 0;
+  }
+  
+  .navitem a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5em;
+  }
+  
+  .navitem a:hover {
+	background-color: #555;
+  }
+  
