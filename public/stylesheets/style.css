@@ -45,8 +45,13 @@ a {
 
 .movies-page {
   background-color: #a2d9e9;
+  padding: 20px;
   margin: 0;
+}
+.movies-git {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  padding: 50px;
+  text-align: center;
 }
