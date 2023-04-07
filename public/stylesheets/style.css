@@ -4,5 +4,57 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+#seeMoreButton {
+  border-radius: 30px;
+  padding: 1rem;
+  border-color: white;
+}
+
+#seeMoreButton a {
+  text-decoration: none;
+}
+
+#mainTitle {
+  color: white;
+  font-size: 50px;
+}
+
+#main-page {
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.eachMovie {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px;
+}
+
+.movie-title {
+  padding-bottom: 12px;
+}
+
+#parent-movie {
+  display: flex;
+}
+
+#movie-details {
+  padding-left: 30px;
 }

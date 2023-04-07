@@ -14,4 +14,15 @@ router.get("/movies", async (req, res) => {
   }
 });
 
+router.get("/movies/:id", async (req, res) => {
+  try {
+    const movieData = req.params.id;
+    const movieDetail = await MovieModel.findById(movieData);
+
+    res.render("movie-details", { movieDetail });
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 module.exports = router;
