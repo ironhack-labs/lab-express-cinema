@@ -1,5 +1,15 @@
+<div class="container-fluid text-center">
+        <h1 class="fs-1 fw-bold">Ironhack Cinema</h1>
+    <h4>Click on the movie to check the showtimes!</h4>
+    <div class="container gap-4 d-flex flex-wrap justify-content-center">
 {{#each moviesFromDB}}
-<h1>{{title}}</h1>
-<img src="{{image}}" alt="">
-<a href="/movie/{{_id}}">See more</a>
+<div class="card text-center" style="width:250px;max-width:250px;">
+    <img class="card-img-top"  src="{{image}} " alt="">
+    <div class="card-body">
+    <h1 class="card-title fs-5">{{title}}</h1>
+    <a class="card-link" href="/movie/{{_id}}">See more</a>
+    </div>
+</div>
 {{/each}}
+</div>
+</div>

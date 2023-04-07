@@ -1,10 +1,17 @@
-{{#each oneMovie}}
-<img src="{{image}}" alt="">
-<h1>{{title}}</h1>
-<h2>{{director}}</h2>
-    {{#each stars}}
+<div class="container-fluid">
+<div class="container p-4">
+    <a href="/movies">Go back</a>
+    <div class="card f-flex flex-row">
+<img class="w-25 h-25" src="{{oneMovie.image}}" alt="">
+<di class="card-body">
+<h1 class="fs-4 fw-bold">{{oneMovie.title}}</h1>
+<h2 class="fs-5">{{oneMovie.director}}</h2>
+    {{#each oneMovie.stars}}
     <li>{{this}}</li>
     {{/each}}
-<p>{{description}}</p>
-<p>{{showtimes}}</p>
-{{/each}}
+<p>{{oneMovie.description}}</p>
+<p>{{oneMovie.showtimes}}</p>
+</div>
+</div>
+</div>
+</div>
