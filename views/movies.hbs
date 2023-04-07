@@ -1,6 +1,23 @@
+ <div class="background"></div>
+ <h1 class="title">
+    Ironhack Cinema
+</h1>
+
+<div id="list">
+   
+
+
 {{#each moviesFromDb}}
-<h1>{{this.title}}</h1>
-<p>Welcome to {{this.title}}</p>
-<a href="/movies/{{this.id}}">movieDetail</a>
+<div class="movieDiv">
+    
+<img src="{{image}}" alt="{{title}}">
+<h3>{{this.title}}</h3>
+
+<a href="/movies/{{this.id}}">See more!</a>
+
+
+</div>
 
 {{/each}}
+
+</div>

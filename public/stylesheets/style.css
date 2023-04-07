@@ -33,3 +33,30 @@ a {
   width: 100vw;
   height: 100vh;
 }
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+#list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  
+
+  
+}
+
+ .movieDiv{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  
+} 
+
