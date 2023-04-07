@@ -1,4 +1,4 @@
-<div class="eachmovie-class">
+<div class="movie">
 
 
 
@@ -11,15 +11,30 @@
         <li>{{this}}</li>
     {{/each}}
 </ul>
-<p>{{id.description}}</p>
+<p class="description" >{{id.description}}</p>
 
-
+<h4>Showtimes:</h4>
+<div>
     {{#each id.showtimes}}
         {{this}} |
     {{/each}}
 
+</div>
+
+	<a href='/movies'>Back</a>
+    
+</div>
 
 
 {{!-- <p>{{id.showtimes}}</p> --}}
 
-</div>
+
+	
+	
+	
+
+		{{#each showTimes}}
+			<p>{{this}} </p>
+		{{/each}}
+
+	

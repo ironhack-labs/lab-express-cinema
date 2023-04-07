@@ -1,14 +1,21 @@
 <h1>Ironhack Cinema</h1>
 <p>Click on the movie</p>
+<div class='movies-wrapper'>
 
+	<div class='movies'>
 {{#each movies}}
-    <div class="eachMovie">
+    <div class="movie">
     <img src="{{this.image}}">
-    <p class="movie-title"><strong>{{this.title}}</strong></p>
+    <p> <strong>{{this.title}}</strong></p>
     <a href="/movies/{{id}}">See more</a>
 
 
     </div>
 {{/each}}
 
+</div>
 
+</div>
+<div class='back'>
+	<a href='/'>Back</a>
+</div>
