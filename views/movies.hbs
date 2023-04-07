@@ -1,0 +1,10 @@
+<main class="subpage">
+    <h1>Our movies for you tonight:</h1>
+    {{#each moviesFromSeed}}
+    <section class="card">
+        <img src="{{image}}" alt="">
+        <h2>{{title}}</h2>
+        <a class="btn" href="/movies/{{_id}}">see details</a>
+    </section>
+    {{/each}}
+</main>
