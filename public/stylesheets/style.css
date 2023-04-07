@@ -47,11 +47,22 @@ a {
   background-color: #a2d9e9;
   padding: 20px;
   margin: 0;
+  height: 100vh;
+}
+
+.movies-title {
+  color: rgb(117, 8, 0);
+  font-size: 30pt;
+  padding: 0;
+  margin: 0;
+}
+
+.movies-text {
+  padding-bottom: 50px;
 }
 .movies-git {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  padding: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
   text-align: center;
 }
