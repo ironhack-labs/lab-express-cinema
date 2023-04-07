@@ -1,0 +1,25 @@
+<div class="eachmovie-class">
+
+
+
+<img src="{{id.image}}">
+<h1>{{id.title}}</h1>
+<h2>Director: {{id.director}}</h2>
+<h3>Stars</h3>
+<ul>
+    {{#each id.stars}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+<p>{{id.description}}</p>
+
+
+    {{#each id.showtimes}}
+        {{this}} |
+    {{/each}}
+
+
+
+{{!-- <p>{{id.showtimes}}</p> --}}
+
+</div>
