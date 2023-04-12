@@ -1,8 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.homepage {
+  background: url("/images/cinema.jpg") no-repeat center center / cover;
+  height: 100vh;
+  padding: 15px;
+}
+
+.homepage h1 {
+  width: 10%;
+  font-size: 7rem;
+  color: white;
+  text-align: right;
+}
+
+.homepage button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 25px;
+
 }
