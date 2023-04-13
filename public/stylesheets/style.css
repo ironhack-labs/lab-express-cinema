@@ -6,3 +6,28 @@ body {
 a {
   color: #00B7FF;
 }
+
+#index-body {
+  background-image: url('/images/cinema.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#title-container {
+  text-align: right;
+}
+
+#index-title {
+  color: white;
+  font-size: 70px;
+}
+
+button {
+  background-color: white;
+  color: #00B7FF;
+  font-size: 20px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
