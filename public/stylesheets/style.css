@@ -5,28 +5,40 @@
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
 }
 
 a {
-  color: #00B7FF;
+  color: #25a39e;
+  text-decoration: none;
 }
 
-.homepage {
-  background: url("/images/cinema.jpg") no-repeat center center / cover;
+.imagefond {
+  background-image: url("/images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100%;
   height: 100vh;
-  padding: 15px;
 }
 
-.homepage h1 {
-  width: 10%;
-  font-size: 7rem;
+.homepagetext {
+  margin-top: 100px;
+}
+
+.homepagetext h1 {
+  font-size: 5rem;
   color: white;
-  text-align: right;
+  margin-left: 800px;
+  text-align: left;
 }
 
-.homepage button {
-  font-size: 1rem;
-  padding: 10px;
+.homepagetext button {
+  font-size: 15px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 25px;
-
+  margin-left: 800px;
+  margin-top: 30px;
+  border: none;
 }
