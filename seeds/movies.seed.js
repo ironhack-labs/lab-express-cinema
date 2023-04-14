@@ -87,7 +87,7 @@ const movies = [
 // ℹ️ Connects to the database
 require("../db");
 
-Movie.create(movies)
+const movie = Movie.create(movies)
   .then((moviesFromDB) => {
     console.log(`Created ${moviesFromDB.length} movies`);
     return mongoose.connection.close();
