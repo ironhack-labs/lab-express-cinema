@@ -6,6 +6,10 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+.container {
+  margin-inline: 10rem;
+  margin-block: 4rem;
+}
 
 a {
   color: #25a39e;
@@ -15,8 +19,7 @@ a {
 .imagefond {
   background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
-  background-position: cover;
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -40,4 +43,28 @@ a {
   margin-left: 800px;
   margin-top: 30px;
   border: none;
+}
+
+.movies-list > * {
+  margin-bottom: 1.5rem;
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.movie__img {
+  display: block;
+}
+
+.movie__link {
+  text-decoration: underline;
 }

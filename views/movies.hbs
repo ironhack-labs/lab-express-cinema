@@ -1,8 +1,22 @@
+<<<<<<< HEAD
 <h1>Ironhack Cinema</h1>
 <p>Click on the movie to check the showtimes !</p>
 {{#each movie}}
   <div>
     <h3>{{title}}</h3>
     <a href="/movies/{{_id}}">See details</a>
+=======
+<section class="movies-list container">
+  <h1 class="movies-list__title">Ironhack Cinema</h1>
+  <p class="movies-list__subtitle">Click on the movie to check the showtimes !</p>
+  <div class="movies">
+    {{#each movies}}
+      <div class="movie">
+        <img class="movie__img" src="{{image_url}}" alt="{{title}}" />
+        <h3 class="movie__title">{{title}}</h3>
+        <a class="movie__link" href="/movies/{{id}}">See details</a>
+      </div>
+    {{/each}}
+>>>>>>> 818608fac924fed5f41eb77a9ab11e27508c3512
   </div>
-{{/each}}
+</section>
