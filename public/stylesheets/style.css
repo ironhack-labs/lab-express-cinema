@@ -31,3 +31,12 @@ button {
   border-radius: 20px;
   cursor: pointer;
 }
+
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#movie-container {
+  margin: 20px 50px;
+}
