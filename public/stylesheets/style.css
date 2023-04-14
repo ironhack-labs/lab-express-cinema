@@ -14,4 +14,22 @@ a {
   background-size: cover;
 }
 
+#title {
+  float: right;
+  margin: 10% 10% 0 0;
+  width: 30%;
+}
 
+h1 {
+  font-size: 6em;
+  color: white;
+}
+
+button {
+  color: cornflowerblue;
+  font-size: 1em;
+  padding: 16px 32px;
+  border-radius: 2em;
+  border: 0;
+  margin-top: 6%;
+}
