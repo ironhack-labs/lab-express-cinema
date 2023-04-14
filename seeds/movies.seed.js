@@ -1,6 +1,3 @@
-const mongoose = require ("mongoose");
-require("dotenv").config();
-const Movie = require("../models/Movie.model")
 // To insert in "seeds/movies.seed.js"
 
 const movies = [
@@ -88,15 +85,22 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
 //   require("dotenv").config();
+const mongoose = require("mongoose");
 
-  mongoose
-    .connect(process.env.MONGO_URI)
-    .then(async()=>{
-        await Movie.deleteMany();
-        await Movie.insertMany(movies);
-})
-.then(()=>{
-    mongoose.disconnect();
-    console.log("Disconnected from DB!")
-})
+const Movie = require("../models/Movie.model");
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1/lab-express-cinema";
+
+mongoose
+  .connect(MONGO_URI)
+  .then(x =>{
+    console.log(`Connect to Mongo database: "${x.connections[0].name}"`);
+    return Movie.create(movies);
+  })
+  .then(moviesFromDB =>{
+    console.log(`Created ${moviesFromDB.length}movies`);
+    return mongoose.connection.close();
+  })
+  .then(()=>{
+    console.log("DB connection closed!")
+  })
   // ... your code here
