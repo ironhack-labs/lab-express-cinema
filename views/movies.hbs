@@ -1,0 +1,13 @@
+
+
+<h1>Movies page</h1>
+
+<div>
+    {{#if movies}}
+        <div class="row">
+            {{#each movies}}
+                {{>movieCard this}}
+            {{/each}}
+        </div>
+    {{/if}}
+</div>

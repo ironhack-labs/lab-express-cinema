@@ -4,6 +4,9 @@ require('dotenv/config');
 
 // ℹ️ Connects to the database
 require('./db');
+//get the path package
+const path = require('path')
+
 
 // Handles http requests (express is node js framework)
 // https://www.npmjs.com/package/express
@@ -14,6 +17,8 @@ const express = require('express');
 const hbs = require('hbs');
 
 const app = express();
+// We register our partials
+hbs.registerPartials(path.join(__dirname, 'views/partials'))
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
@@ -26,7 +31,9 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
+const moviesRoutes = require('./routes/movies.routes')
 app.use('/', index);
+app.use('/movies', moviesRoutes)
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
