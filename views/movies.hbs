@@ -1,0 +1,16 @@
+<h1>MOVIES</h1>
+
+{{!-- since we passed allTheMoviesFromDB as `movies`,
+we can iterate over it here with #each--}}
+<div class="flex-direction-list">
+{{#each movies}}
+    <div clas="list-img-title">
+        <img src="{{image}}" alt="imagen vacia">
+        <div class="center">
+            <h3>{{title}}</h3>
+           <p> <a href="/movies/{{_id}}">See more</a></p> {{!-- link that points to the details page --}}
+        </div>    
+
+    </div>
+{{/each}}
+</div>
