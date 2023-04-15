@@ -1,3 +1,5 @@
+require("../db");
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -85,11 +87,10 @@ const { get } = require("mongoose");
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
 const movieModel = require("../models/Movie.model");
-require("../db");
 
 const getData = async () => {
     try {
-        const moviesData = movieModel.create(movies);
+        const moviesData = await movieModel.create(movies);
     }
 
     catch (err) {

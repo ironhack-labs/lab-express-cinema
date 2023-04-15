@@ -15,7 +15,6 @@ router.get('/movies', async (req, res)=>{
 router.get('/movie/:id', async (req, res) =>{
     const {id} = req.params;
     const oneMovie = await movieModel.findById(id);
-    console.log(oneMovie)
     // console.log("movie Id", oneMovie )
     res.render("movie-description", { oneMovie });
 })
