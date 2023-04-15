@@ -1,11 +1,7 @@
 const express = require("express");
 const router = express.Router();
-<<<<<<< HEAD
-const movie = require('movies')
-=======
 const Movies = require("../models/Movie.model");
 
->>>>>>> 818608fac924fed5f41eb77a9ab11e27508c3512
 /* GET home page */
 router.get("/", (req, res, next) => res.render("index"));
 
@@ -22,6 +18,20 @@ router.get("/movies", (req, res, next) => {
     })
     .catch((error) => {
       console.log("Error while getting the movies from the DB", error);
+      next(error);
+    });
+});
+
+/* get movie detail */
+
+router.get('/movies/:movieId', (req, res, next) => {
+  const { movieId } = req.params;
+
+  Movies.findById(movieId)
+    .then(theMovie => res.render("movie", { movie: theMovie }))
+
+    .catch(error => {
+      console.log('Error while retrieving book details: ', error);
       next(error);
     });
 });
