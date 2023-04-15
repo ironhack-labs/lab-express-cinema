@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model");
 
 const MONGO_URI =
-  process.env.MONDODB_URI || "mongodb://localhost/lab-express-cinema";
+  process.env.MONDODB_URI || "mongodb://127.0.0.1:27017/lab-express-cinema";
 
 // To insert in "seeds/movies.seed.js"
 
