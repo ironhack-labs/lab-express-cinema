@@ -93,11 +93,12 @@ const MONGO_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1/lab-express-ci
 mongoose
   .connect(MONGO_URI)
 
-  .then(async() =>{
+  .then(async(x) =>{
 
     console.log(`Connect to Mongo database: "${x.connections[0].name}"`);
     await Movie.deleteMany();
-    // await Movie.create(movies);
+   return Movie.create(movies);
+    
   })
   .then(moviesFromDB =>{
     console.log(`Created ${moviesFromDB.length}movies`);
