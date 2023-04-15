@@ -3,12 +3,9 @@ const mongoose = require("mongoose");
 const Movie = require("../models/Movie.model");
 
 
-const MONGO_URI = 'mongodb://0.0.0.0/MovieDB';
 
-mongoose
-  .connect(MONGO_URI)
-  .then(() =>console.log('connect to the DB ;)'))  
-  .catch((err)=>console.log(err))
+
+
     
 const movies = [
     {
@@ -93,15 +90,16 @@ const movies = [
       }
     ];
     
-    Movie.insertMany(movies)
-    .then()
-    .catch((err)=>console.log(err))
-
-
-
-
-
-    // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
     
-    // ... your code here
-    
+
+
+  require("../db");
+
+  Movie.insertMany(movies)
+  .then((moviesFromDB) => {
+    console.log(`Success! Added ${moviesFromDB.length} movies to the database.`);
+    mongoose.connection.close(); 
+  })
+  .catch((error) => {
+    console.error("Error while adding movies to the database: ", error);
+  });
