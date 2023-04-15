@@ -1,7 +1,19 @@
+<section>
+
 <h1> Movies list </h1>
 
 {{#each movies}}
-  <p>{{title}}</p>
+
+<div class="movies-grid">
+
+  
   <img src="{{image}}" alt="Movie Image">
+  <div>
+  <p>{{title}}</p>
   <a href="/movie/{{_id}}">See more</a>
+  </div>
+
+  </div>
 {{/each}}
+
+</section>

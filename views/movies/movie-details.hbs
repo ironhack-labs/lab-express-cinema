@@ -1,17 +1,20 @@
 {{#with movie}}
 
-  <section>
+  <section class="movie-details">
 
-    <div class="right-colum">
+    <div class="left-colum">
       <img src="{{image}}" alt="Movie Poster" />
     </div>
-    <div class="left-column">
-      <p>{{title}}</p>
-      <p>{{director}}</p>
-      <p>{{stars}}</p>
+    <div class="right-column">
+      <h2>{{title}}</h2>
+      <p><strong>Director:</strong> {{director}}</p>
+      <p><strong>Stars:</strong> {{stars}}</p>
       <p>{{description}}</p>
       <p>{{showtime}}</p>
+      <a href="/movies">Go back</a>
     </div>
+
+    
 
   </section>
 {{/with}}

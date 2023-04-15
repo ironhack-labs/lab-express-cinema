@@ -42,5 +42,49 @@ font-size: 5rem;
 
 } 
 
+section {
+  text-align: center;
+
+}
+
+
+.movies-grid {
+  display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    width: 200px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border: solid 2px white;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+ 
+  
+}
+
+.movie-details {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-top: 50px;
+
+}
+
+
+.movie-details img {
+  width: 100%;
+}
+
+.right-column {
+  margin-left: 20px;
+}
+
 
 
