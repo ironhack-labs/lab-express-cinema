@@ -1,5 +1,4 @@
 body {
-  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -29,4 +28,52 @@ img{
 
 .center{
   text-align: center;
+}
+
+/* PDP */
+.flex-direction-pdp{
+    display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+.pdp-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+ 
+
+}
+.desc{
+  width: 50%;
+}
+
+/* HOME */
+#index{
+  background-image: url(../images/cinema.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vmax;
+
+  
+}
+
+
+#index h1{
+  font-size: 150px;
+  color: white;
+  display: flex;
+  justify-content: left;
+}
+
+.style-button{
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.style-button a{
+  text-decoration: none;
 }

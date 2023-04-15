@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require("express");
 const router = express.Router();
 
 const Movie = require("../models/Movie.model.js"); // <== add this line before your routes
@@ -21,11 +21,10 @@ router.get("/", (req, res, next) => {
     });
 });
 
-router.get('/:movieId', (req, res) => {
-	Movie.findById(req.params.movieId)
-		.then((movie) => res.render('movies/movie', movie))
-		.catch((err) => console.log(err));
+router.get("/:movieId", (req, res) => {
+  Movie.findById(req.params.movieId)
+    .then((movie) => res.render("movie", movie))
+    .catch((err) => console.log(err));
 });
-
 
 module.exports = router;
