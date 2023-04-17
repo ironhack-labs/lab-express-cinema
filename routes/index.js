@@ -15,5 +15,15 @@ router.get('/movies', (req, res) => {
     });
 });
 
+router.get('/movies/:id', (req, res) => {
+  const movieId = req.params.id;
+  Movie.findById(movieId)
+    .then(movie => {
+      res.render('movie-details', { movie });
+    })
+    .catch(error => {
+      console.error("Error fetching movie details:", error);
+    });
+});
 
 module.exports = router;

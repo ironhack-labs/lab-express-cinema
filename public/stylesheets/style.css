@@ -51,3 +51,16 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+.movie-details-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.movie-info {
+  margin-left: 20px;
+}
+.movie-title{
+  color:black;
+  font-size: 200%;
+  margin-top: 10px;
+}
