@@ -58,3 +58,54 @@ a {
   justify-content: center;
   padding: 20px;
 }
+
+.movie-detail {
+  display: flex;
+  padding: 10px;
+}
+
+.movie-detail img {
+  -webkit-box-shadow: 12px 13px 14px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 13px 14px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 13px 14px -9px rgba(0, 0, 0, 0.75);
+}
+
+.movie-detail-text {
+  padding-left: 20px;
+  width: 50%;
+}
+
+.movie-detail-text h1 {
+  font-size: 40px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.movie-detail-text h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.movie-detail-text h3 {
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.movie-stars {
+  list-style-type: circle;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.movie-detail-text p {
+  padding-bottom: 10px;
+}
+
+.movie-time {
+  display: flex;
+}
+.movie-time li {
+  padding-left: 2px;
+}
