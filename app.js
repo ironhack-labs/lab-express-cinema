@@ -1,4 +1,3 @@
-// ℹ️ Gets access to environment variables/settings
 // https://www.npmjs.com/package/dotenv
 require('dotenv/config');
 
@@ -30,5 +29,15 @@ app.use('/', index);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+const moviesRoutes = require('./routes/index');
+app.use('/movies', moviesRoutes);
+const movies = require('./routes/index');
+app.use('/', movies);
 
 module.exports = app;
