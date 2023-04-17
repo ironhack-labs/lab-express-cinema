@@ -8,9 +8,31 @@ a {
 }
 
 .index {
+  /* Imagen */
   background-image: url("../images/cinema.jpg");
   background-size: cover;
   height: 100%;
-  overflow: hidden;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.index h1,
+a {
+  margin-left: 40%;
+}
+
+.index h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.index a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: #00b7ff;
+  border-radius: 20px;
+  padding: 10px 30px;
 }
