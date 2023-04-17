@@ -19,7 +19,7 @@ a {
 }
 
 .index h1,
-a {
+.index a {
   margin-left: 40%;
 }
 
@@ -35,4 +35,26 @@ a {
   background-color: #00b7ff;
   border-radius: 20px;
   padding: 10px 30px;
+}
+
+.movies-intro h1 {
+  font-size: 50px;
+  padding: 20px 0 0 20px;
+}
+.movies-intro p {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
