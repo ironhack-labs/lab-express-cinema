@@ -16,13 +16,10 @@ router.get("/movies", async (req, res, next) => {
 //--------
 
 // Movie detalles (falta comprobar)
-router.get("/movieDetails/:movies_id", (req, res) => {
-  const { movies_id } = req.params;
-
-  Movie.findById(movies_id)
-    .then((moviesFromDB) => {
-      res.render("movieDetails", moviesFromDB);
-    })
-    .catch((err) => console.log(err));
+router.get("/movieDetails/:id", async (req, res, next) => {
+  const { id } = req.params;
+  const movies = await Movie.findById(id);
+  res.render("movieDetails", { movies });
 });
+
 module.exports = router; //exporto el router
