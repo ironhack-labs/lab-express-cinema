@@ -16,10 +16,11 @@ router.get("/movies", async (req, res, next) => {
 //--------
 
 // Movie detalles (falta comprobar)
-router.get("/movieDetails/:id", async (req, res, next) => {
+router.get("/movieDetails/:id", async (req, res, next) => { // el movieDetails es como lo llamo en handerbs en index.hsb en al enlace
   const { id } = req.params;
   const movies = await Movie.findById(id);
-  res.render("movieDetails", { movies });
+  console.log(movies);
+  res.render("movieDetails", { movies }); // el {movies} nombre, debe ser el mismo en handerbs movieDetails que aqui
 });
 
 module.exports = router; //exporto el router

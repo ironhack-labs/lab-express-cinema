@@ -7,7 +7,8 @@
 
     <p>{{title}}</p>
     <img src="{{image}}" alt=" {{title}}" />
-    <a href="/movieDetails/{{_id}}">See More</a>
 
+    {{! // este es el nombre(movieDetails) de la ruta a la que lleva y asi se debe llamar en la router.get }}
+    <a href="/movieDetails/{{_id}}">See More</a>
   {{/each}}
 </div>
