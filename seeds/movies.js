@@ -3,15 +3,6 @@ const Movie = require("../models/Movie.model");
 
 const MONGO_URI = "mongodb://localhost/movies-1022";
 
-// To insert in "seeds/movies.seed.js"
-
-mongoose
-  .connect(MONGO_URI)
-  .then((x) =>
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-  )
-  .catch((err) => console.error("Error connecting to mongo: ", err));
-
 const movies = [
   {
     title: "A Wrinkle in Time",
@@ -94,12 +85,4 @@ const movies = [
     showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"],
   },
 ];
-
-Movie.create(movies)
-  .then((moviesFromDB) => {
-    console.log(`Created ${moviesFromDB.length} movies`);
-    mongoose.connection.close();
-  })
-  .catch((err) =>
-    console.log(`An error occurred while creating books from the DB: ${err}`)
-  );
+module.exports = movies;
