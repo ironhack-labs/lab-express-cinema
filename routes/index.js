@@ -6,21 +6,23 @@ const hbs = require("hbs");
 //ruta home
 router.get("/", (req, res, next) => res.render("index"));
 
-//ruta movies
-router.get("/movies", async (req, res, next) => {
-  const movies = await Movie.find();
-  console.log(movies);
-  res.render("movies", { movies });
+router.get("/movies", (req, res) => {
+  Movie.find()
+    .then((movies) => {
+      // console.log(movies);
+      res.render("movies", { movies });
+    })
+    .catch((err) => console.log(err));
 });
 
-//--------
-
-// Movie detalles (falta comprobar)
-router.get("/movieDetails/:id", async (req, res, next) => { // el movieDetails es como lo llamo en handerbs en index.hsb en al enlace
+router.get("/movies/:id", (req, res) => {
   const { id } = req.params;
-  const movies = await Movie.findById(id);
-  console.log(movies);
-  res.render("movieDetails", { movies }); // el {movies} nombre, debe ser el mismo en handerbs movieDetails que aqui
+  Movie.findById(id)
+    .then((movie) => {
+      console.log(movie);
+      res.render("movieDetails", { movie });
+    })
+    .catch((err) => console.log(err));
 });
 
-module.exports = router; //exporto el router
+module.exports = router;

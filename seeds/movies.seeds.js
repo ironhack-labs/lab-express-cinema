@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); //aqui frequiero los datos para subirlos  mongo db
 require("dotenv").config();
 const movies = require("./movies");
 const Movie = require("../models/Movie.model");
