@@ -1,0 +1,15 @@
+<h1>{{singleMovieFromDatabase.title}}</h1>
+
+<img src="{{singleMovieFromDatabase.image}}" alt="">
+
+<h2> director: {{singleMovieFromDatabase.director}} </h2>
+<h2>Stars:</h2>
+<li>
+    {{#each singleMovieFromDatabase.stars}}
+    <ul>{{this}}</ul>
+    {{/each}}
+</li>
+<h2>description: {{description}}</h2>
+{{#each singleMovieFromDatabase.showtimes}}
+    {{this}}|
+{{/each}}
