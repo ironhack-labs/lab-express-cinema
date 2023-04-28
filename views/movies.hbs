@@ -1,0 +1,19 @@
+{{#each moviesFromDatabase}}
+    <img src="{{image}}" alt="">
+    <h1>{{title}}</h1>
+    <a href="/movie/{{_id}}">Views details</a>
+{{/each}}
+
+{{!-- {
+_id: new ObjectId("644bb8d57345e480657eda44"),
+title: 'Thoroughbreds',
+director: 'Cory Finley',
+start: [],
+image:
+'https://images-na.ssl-images-amazon.com/images/M/MV5BNDcyNDA4NDAzN15BMl5BanBnXkFtZTgwODQxMDQ5NDM@._V1_UX182_CR0,0,182,268_AL_.jpg',
+description: 'Two upper-class teenage girls in suburban Connecticut rekindle their unlikely friendship after years of
+growing apart. Together, they hatch a plan to solve both of their problems-no matter what the cost.
+',
+showtimes: [ '13:00', '15:30', '18:00', '20:10', '22:40' ],
+__v: 0
+} --}}
