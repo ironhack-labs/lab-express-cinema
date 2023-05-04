@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Movies</h1>
+    <hr>
+    <div class="row">
+
+        {{#each movies}}
+        <div class="mb-4 col-6 col-md-3">
+            <img class="mb-2" src="{{image}}" alt="">
+            <p> <strong> {{title}} </strong></p>
+            <a class="btn btn-dark" href="/movies/{{_id}}">See More</a>
+        </div>
+        {{/each}}
+
+    </div>
+    <hr>
+    <a href="/" class="btn btn-dark">Ir a Home</a>
+</div>

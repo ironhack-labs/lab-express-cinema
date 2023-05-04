@@ -1,0 +1,31 @@
+.<div class="container">
+    <h1>Movies Details</h1>
+    <hr>
+    <div class="row ">
+
+        <div class="mb-4 col-6 col-md-4">
+            <img class="mb-2" src="{{image}}" alt="">
+        </div>
+
+        <div class="mb-4 col-6 col-md-8">
+            <p> <strong> {{title}} </strong></p>
+            <p> <strong> {{director}} </strong></p>
+            <p> {{description}} </p>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <ul>
+                {{#each showtimes}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+    <hr>
+    <a href="/" class="btn btn-dark">Ir a Home</a>
+    <a href="/movies" class="btn btn-dark">Ir a Movies</a>
+</div>
