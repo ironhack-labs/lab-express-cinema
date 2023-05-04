@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-4">
+            <img class="artist-image" src="{{image}}" alt="{{title}}">
+        </div>
+        <div class="col-8 card">
+            <p class="text-center">
+                <strong> TITLE: {{title}}</strong>
+            </p>
+            <p class="text-center">
+                <strong>DIRECTOR: {{director}}</strong>
+            </p>
+            <ul class="text-center"><strong> STARS:
+                    {{#each stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </strong>
+            </ul>
+
+            <p class="text-center">
+                <strong>DESCRIPTION:{{description}}</strong>
+            </p>
+
+            <ul class="text-center"><strong> SHOWTIMES:
+
+                    {{#each showtimes}}
+                    <li>{{this}}</li>
+                    {{/each}}
+
+            </ul>
+
+        </div>
+
+    </div>
+    <a href="/movies" class="btn text-center btn-dark ">Go Back</a>
+
+</div>
