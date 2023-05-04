@@ -1,0 +1,17 @@
+<div>
+    <h1>MOVIES</h1>
+    <Button class="p-3">
+        <a href="/">Go back</a>
+    </Button>
+
+</div>
+<hr>
+<div class="row">
+    {{#each movies}}
+    <div class="col-md-3 m-3">
+        <img src="{{image}}" alt="movie image" class="m-1">
+        <p class="m-1">{{title}}</p>
+        <a type="button" href="/movie-detail/{{_id}}" class="m-1">See more</a>
+    </div>
+    {{/each}}
+</div>

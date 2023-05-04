@@ -1,0 +1,27 @@
+<div>
+    <h1>Detalles de {{title}}</h1>
+    <hr>
+    <div class="d-flex flex-col">
+        <div>
+            <img src="{{image}}" alt="">
+        </div>
+        <div>
+            <a href="/movies">Go back</a>
+            <h2>Director: {{director}}</h2>
+            <h2>Star</h2>
+
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+
+            <p>{{description}}</p>
+
+            <h2>Showtime</h2>
+            {{#each showtimes}}
+            {{this}}
+            {{/each}}
+        </div>
+    </div>
+</div>
