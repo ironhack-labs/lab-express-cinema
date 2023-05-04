@@ -1,0 +1,44 @@
+<div class="container">
+
+    <h1>
+        MOVIE DETAILS
+    </h1>
+
+    <hr>
+    {{!-- <DETAILs> --}}
+        <div class="row">
+            <div class="col-4">
+
+                <img src="{{image}}" class="card-img-top" alt="{{title}}">
+            </div>
+            <div class="col-8">
+
+                <h5 class="card-title"><strong>NAME: </strong> {{title}}</h5>
+
+                <p><strong>DIRECTOR: </strong>{{director}}</p>
+
+
+                <p><strong>STARS: </strong></p>
+                <ul>
+                    {{#each stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+
+                <p><strong>DESC: </strong>{{description}}</p>
+
+                <p><strong>SHOWTIMES: </strong> {{#each showtimes}} {{this}} | {{/each}}</p>
+
+
+            </div>
+            <p class="text-center"><a href="/movies" class="btn btn-dark">Go back</a></p>
+
+        </div>
+        {{!--
+    </DETAILs> --}}
+
+    <hr>
+
+    <a href="/" class="btn btn-dark mt-3 mb-5">Home</a>
+
+</div>
