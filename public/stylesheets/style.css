@@ -6,3 +6,36 @@ body {
 a {
   color: #00B7FF;
 }
+
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+.button-container a {
+  position: absolute;
+  bottom: 4em;
+  right: 4em;
+  background-color: #f1e9ea;
+  border-radius: 1.5em;
+  color: grey;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}
+
+card-group {
+  text-align: justify;
+  padding: 10%;
+}
+
+.card-title {
+
+  text-align: center;
+  font-size: x-large;
+  font-weight: 200;
+
+}
+
+.card-text {
+  font-size: 1em;
+}
