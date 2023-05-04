@@ -1,8 +1,52 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*   background-image: url(/images/cinema.jpeg); */
+  background-size: cover;
+
+  /* background-image: url(https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7991158.jpg&fm=jpg);
+  background-image: cover; */
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(255, 251, 0);
+  border: black;
+  display: flex;
+  padding: 50px;
+  text-shadow: 2px 2px 4px #000000;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-right: 40px;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+
+
+/* INDEX  */
+
+#index-home {
+  height: 100vh;
+  background-image: url(/images/cinema.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#button-index {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-right: 40px;
+  padding: 50px;
 }
