@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.home {
+  text-align: center;
+}
+
+.welcomeImg {
+  width: 60%;
+  margin-bottom: 20px;
+}
