@@ -1,0 +1,21 @@
+<div class="container mb-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6 beer-image">
+            <img src={{image}} alt="{{title}}" class="rounded mx-auto d-block" style="width: 60%;">
+        </div>
+        <div class="col-md-6">
+            <h2>{{title}}</h2>
+            <h4>Director: {{director}}</h4>
+
+            <p>Stars:{{#each stars}}
+                {{this}}
+                {{/each}}</p>
+
+            <p>{{#each showtimes}}{{this}} -
+                {{/each}}</p>
+
+            <p>{{description}}</p>
+
+        </div>
+    </div>
+</div>

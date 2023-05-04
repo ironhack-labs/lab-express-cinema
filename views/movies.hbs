@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Peliculas</h1>
+    <div class="row mb-5">
+
+        {{#each movies}}
+        <div class="col-md-3 mb-5  ">
+            <div class="card " style="width: 17rem; height:100%;">
+                <img src={{image}} class="card-img-top" style="height:50%;" alt="...">
+                <div class="card-body" style="height: 10%;">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text" style="height: 10%;">{{description}}</p>
+                </div>
+                <a href="/moviesSpects/{{_id}}" class="btn btn-light">Ver Mas</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
