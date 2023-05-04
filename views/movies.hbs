@@ -1,0 +1,14 @@
+<div class="container ">
+    <div class="row align-items-start  ">
+        {{#each movie}}
+        <div class="col-md-4 ">
+            <h1 class="card-title">{{title}}</h1>
+            <img class="imag mx-auto d-block rounded float-start" src="{{image}}" alt="">
+            <a class="btn btn-dark" href="/movie/{{id}}">Ver mas</a>
+
+        </div>
+        {{/each}}
+
+
+    </div>
+</div>
