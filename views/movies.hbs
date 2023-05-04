@@ -1,0 +1,14 @@
+<h1> Movies list </h1>
+
+<ul>
+    {{#each moviesFromDatabase }}
+    <p>{{title}}</p>
+    <img src="{{image.[0].url}}" alt="">
+    <li>
+        {{director}}
+        <a href="../movies.seed/{{id}}" class="btn btn-dark">See More</a>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="/" class="btn btn-dark">INICIO</a>
