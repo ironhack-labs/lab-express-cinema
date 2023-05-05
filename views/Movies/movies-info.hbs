@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <img class="img-thumbnail" src="{{image}}" alt="Card image cap">
+        </div>
+        <div class="col-sm">
+            <div class="card-body">
+                <h5 class="card-title"> {{title}}</h5>
+                <p class="card-text">{{director}}.</p>
+
+                <p class="card-text">Stars:</p>
+                <ul>
+                    {{#each stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p class="card-text">{{description}}.</p>
+                {{#each showtimes}}
+                {{this}} |
+                {{/each}}
+                <a href="/movies" class="btn btn-primary">Listado</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
