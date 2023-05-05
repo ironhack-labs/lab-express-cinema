@@ -1,0 +1,26 @@
+<div class="container">
+
+    <h1>Movies</h1>
+
+    <hr>
+    <div class="row">
+
+        {{#each moviesFromDB}}
+        <div class="col-4">
+            <div class="card" style="width: 25rem;">
+                <img src="{{image}}" class="card-img-top" alt="{{title}}">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>NAME: </strong> {{title}}</h5>
+                    <p class="text-center"> <a href="/movie/{{_id}}" class="btn btn-dark">See more</a></p>
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+
+    <hr>
+
+
+</div>
