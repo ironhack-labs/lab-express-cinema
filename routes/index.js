@@ -18,12 +18,13 @@ router.get('/movies', (req, res) => {
 })
 
 
-router.get('/movie/:id', (req, res) => {
+router.get('/movies-page/:id', (req, res) => {
 
-    const { _id } = req.params
+    const { id } = req.params
+
 
     Movie
-        .findById(_id)
+        .findById(id)
         .then(movie => res.render('movies-details', movie))
         .catch(err => console.log(err))
 })
