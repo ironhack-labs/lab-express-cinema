@@ -1,0 +1,20 @@
+<h1>Listado de películas</h1>
+<hr class="mb-3">
+
+{{#each movies}}
+<div class="col-4">
+    <div class="card p-5" style="width: 25rem;">
+        <div class="card-body">
+            <img src="{{image}}" alt="">
+            <p>{{title}}</p>
+        </div>
+        <button class="btn btn-dark">
+            <a href="/movies/movie-by-id/{{_id}}">See more</a>
+
+        </button>
+    </div>
+</div>
+{{/each}}
+
+<hr>
+<a href="/" class="btn btn-dark">Volver a inicio</a>
