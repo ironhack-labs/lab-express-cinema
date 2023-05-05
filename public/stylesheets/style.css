@@ -3,8 +3,26 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.first {
+  height: 700px;
+}
+
 a {
   color: #00B7FF;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
+.more {
+  text-align: center;
+
 }
 
 .button-container {
@@ -13,29 +31,44 @@ a {
 }
 
 .button-container a {
+  margin-bottom: 200px;
+  margin-right: 30px;
   position: absolute;
   bottom: 4em;
   right: 4em;
-  background-color: #f1e9ea;
+  background-color: whitesmoke;
   border-radius: 1.5em;
-  color: grey;
-  text-transform: uppercase;
+  color: rgb(74, 143, 203);
   padding: 1em 1.5em;
 }
 
-card-group {
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.centrado {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  margin-bottom: 500px;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  text-decoration: none;
+  font: 70px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.card-group {
   text-align: justify;
-  padding: 10%;
+  padding: 25%;
 }
 
 .card-title {
 
   text-align: center;
-  font-size: x-large;
-  font-weight: 200;
+  font-size: small;
+  font-weight: 600;
 
-}
-
-.card-text {
-  font-size: 1em;
 }
