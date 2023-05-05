@@ -1,11 +1,6 @@
 body {
-
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*   background-image: url(/images/cinema.jpeg); */
   background-size: cover;
-
-  /* background-image: url(https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7991158.jpg&fm=jpg);
-  background-image: cover; */
 }
 
 a {

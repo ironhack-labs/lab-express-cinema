@@ -102,6 +102,3 @@ mongoose
     .catch(err => {
         console.log(`An error occurred while creating movies from the DB: ${err}`)
     })
-// Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
-
-// ... your code here

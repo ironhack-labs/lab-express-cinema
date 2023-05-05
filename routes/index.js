@@ -11,7 +11,7 @@ router.get("/movies", (req, res, next) => {
 
     Movie
         .find()
-        .sort({ title: 1 })           // Ordenamos por título ASC
+        .sort({ title: 1 })
         .then(moviesList =>
             res.render('movies', { movies: moviesList }))
         .catch(err => console.log(err))
@@ -26,18 +26,5 @@ router.get("/movie-details/:id", (req, res, next) => {
         .catch(err => console.log(err))
 })
 
-
-
-
 module.exports = router;
 
-/* 
-
-app.get('/beers', (req, res) => {
-    punkAPI
-        .getBeers()
-        .then(beersFromApi =>
-            res.render('beers', { beers: beersFromApi }))
-        .catch(error => console.log(error));
-});
- */
