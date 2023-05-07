@@ -1,0 +1,19 @@
+<h1>What's On:</h1>
+<hr class="mb-3">
+
+<div class="container">
+    <div class="row">
+
+        {{#each movies}}
+        <div class="col-md-4 text-center list-images">
+            <img src="{{image}}" alt="{{title}}">
+            <p class="movie-name">{{title}}</p>
+            <p><a href="movie-details/{{_id}}">See more</a></p>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
+
+<hr>
+<a href="/" class="btn btn-dark">Back</a>
