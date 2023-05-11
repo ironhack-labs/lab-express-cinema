@@ -1,0 +1,21 @@
+<div class="all-movies">
+    <div class="container">
+        <h1>All the movies</h1>
+        <hr class="mb-3">
+        <div class="row">
+            {{#each movies}}
+            <div class="col-md-4">
+                <img src="{{image}}">
+                <p>{{title}}</p>
+                <a href="/details/{{_id}}" class="boton">See more</a>
+
+            </div>
+            {{/each}}
+        </div>
+        <hr>
+        <div class="boton2">
+
+            <a href="/" class="btn btn-dark">Go back to the home page!</a>
+        </div>
+    </div>
+</div>

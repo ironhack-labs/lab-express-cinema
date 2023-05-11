@@ -1,8 +1,66 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.img-index {
+  background-image: url('../images/index.png');
+  background-size: cover;
+  height: 700px;
+
+}
+
+.boton a {
+  position: absolute;
+  top: 350px;
+  left: 607px;
+  padding: 16px;
+  width: 20%;
+  display: block;
+  margin: auto;
+
+}
+
+.all-movies {
+  margin-top: 30px;
+}
+
+.boton2 {
+  margin-top: 50px;
+}
+
+.boton2 a {
+  display: block;
+  width: 20%;
+  margin: auto;
+}
+
+.all-movies a {
+  text-decoration: none;
+  color: #DC3545;
+  padding: 5px;
+  border: 2px solid #DC3545;
+  border-radius: 3px;
+  text-align: center;
+
+}
+
+.all-movies img {
+  margin-top: 30px;
+}
+
+.details-titulo {
+  margin-top: 30px;
+}
+
+.details {
+  display: flex;
+  font-size: 20px;
+}
+
+.details img {
+  margin-right: 30px;
 }
