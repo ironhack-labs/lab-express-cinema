@@ -56,3 +56,15 @@ a:link, a:active {
 .button a:hover, .button a:visited {
   color: #00B7FF;
 }
+
+
+
+
+
+.movies-body {
+  background-image: none;
+}
+
+.movies-heading {
+  color: #000000;
+}
