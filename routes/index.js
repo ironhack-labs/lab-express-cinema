@@ -17,6 +17,32 @@ router.get('/movies', (req, res) => {
   })
 });
 
+// Create a new movie
+router.get('/movies/new', (req, res) => {
+  res.render('new-movie');
+})
+
+router.post('/movies/create', (req, res) => {
+  Movie.create({
+title: req.body.theTitle,
+director: req.body.theDirector,
+stars: req.body.theStars,
+image: req.body.theImage,
+description: req.body.theDescription,
+showtimes: req.body.theShowtime
+  })
+  .then((response) => {
+    res.redirect('/movies');
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+})
+
+
+
+
+// Each movie
 router.get('/movies/:theID', (req, res) => {
   Movie.findById(req.params.theID)
   .then((theMovie) => {
@@ -27,5 +53,29 @@ router.get('/movies/:theID', (req, res) => {
     res.render('error')
   })
 })
+
+// Update the movie
+router.get('/movies/:id/edit', (req, res) => {
+  Movie.findById(req.params.id)
+  .then((theMovie) => {
+    res.render('movie-edit', {theMovie: theMovie})
+  })
+});
+
+router.post('/movies/:theID/update', (req, res) => {
+  Movie.findByIdAndUpdate(req.params.theID, {
+title: req.body.theTitle,
+director: req.body.theDirector,
+stars: req.body.theStars,
+image: req.body.theImage,
+description: req.body.theDescription,
+showtimes: req.body.theShowtime
+  })
+  .then(() => {
+    res.redirect('/movies/'+req.params.theID)
+  })
+})
+
+
 
 module.exports = router;
