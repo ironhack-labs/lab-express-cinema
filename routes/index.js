@@ -74,7 +74,16 @@ showtimes: req.body.theShowtime
   .then(() => {
     res.redirect('/movies/'+req.params.theID)
   })
+});
+
+// Delete
+router.post('/movies/delete/:theID', (req, res) => {
+  Movie.findByIdAndRemove(req.params.theID)
+  .then(() => {
+    res.redirect('/movies')
+  })
 })
+
 
 
 
