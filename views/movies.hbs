@@ -1,0 +1,23 @@
+
+<main class="movies-body">
+  
+<div class="movies-heading">
+<h1 class="movies-h1">Ironhack Cinema</h1>
+<p>Click on the movies to check the showtimes!</p>
+</div>
+
+<div class="movies-bigContainer">
+  {{#each movies}}
+
+  <div class="movies-smallContainer">
+  <img src="{{this.image}}" alt="" style="width: 300px">
+  <h4>{{this.title}}</h4>
+  <a href="/movies/{{this._id}}">See more</a>
+
+</div>
+  {{/each}}
+
+
+
+</div>
+</main>

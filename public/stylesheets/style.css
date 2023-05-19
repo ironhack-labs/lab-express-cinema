@@ -1,8 +1,163 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a {
+html {
+  font-size: 100%;
+}
+
+.home-main {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+}
+
+.home-container {
+  width: 40rem;
+  
+}
+
+h1 {
+  font-size: 7rem;
+  color: #fff;
+
+}
+
+
+.button {
+  font-size: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 175px;
+  border: none;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.button a:link, .button a:active {
+  text-decoration: none;
   color: #00B7FF;
+}
+
+.button a:hover, .button a:visited {
+  color: #00B7FF;
+}
+
+
+
+
+
+.movies-body {
+  background-image: #fff;
+}
+
+.movies-heading {
+  margin-top: 1rem;
+  margin-left: 3.8rem;
+}
+
+.movies-h1 {
+  color: #000000;
+  font-size: 2.8rem;
+}
+
+.movies-heading p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.movies-bigContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  margin-top: 3rem;
+}
+
+.movies-smallContainer {
+  padding: 0.5rem;
+  margin-bottom: 2.6rem;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.movies-smallContainer img {
+  box-shadow: 5px 5px 15px 5px rgb(0, 0, 0, 0.15);
+}
+
+.movies-smallContainer h4 {
+  margin: 1.5rem 0 1.8rem 0;
+  font-size: 1.4rem;
+}
+
+.movies-smallContainer a:link, .movies-smallContainer a:active {
+  color: #00B7FF;
+  font-size: 1.2rem;
+  
+}
+
+.movies-smallContainer a:hover, .movies-smallContainer a:visited {
+  color: #00B7FF;
+}
+
+
+.movieDetails-container {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr;
+  margin-top: 0.3rem;
+
+}
+
+.movieDetails-container img {
+  margin-top: 1rem;
+  box-shadow: 5px 5px 15px 5px rgb(0, 0, 0, 0.15);
+}
+
+.movieDetails-box {
+  margin-left: -2rem;
+}
+
+.movieDetails-box a:link, .movieDetails-box a:active {
+  font-size: 1.2rem;
+  color: #00B7FF;
+}
+
+.movieDetails-box a:hover, .movieDetails-box a:visited {
+  color: #00B7FF;
+}
+
+.movieDetails-box h2 {
+  margin: 1rem 0 1.4rem 0
+}
+
+.movieDetails-box h3, .movieDetails-box h4 {
+  margin-bottom: 1.4rem ;
+}
+
+.movieDetails-box ul {
+  margin-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.movieDetails-box p {
+  margin-bottom: 1rem;
+}
+
+.showTime span {
+  border-right: #000000 solid 1px;
+  padding: 0 0.3rem 0 0 ;
+}
+
+.update-delete-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
