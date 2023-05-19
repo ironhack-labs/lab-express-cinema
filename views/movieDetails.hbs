@@ -21,10 +21,15 @@
   <span>{{this}}</span>
   {{/each}}
    </p>
-  </div>
-</div>
 
-<br><br><br>
+<div class="update-delete-container">
+<a href="/movies/{{theMovie._id}}/edit">Update information</a>
 <form action="/movies/delete/{{theMovie._id}}" method="POST">
 <button>Delete This Movie</button>
 </form>
+  </div>
+
+  </div>
+
+  
+</div>
