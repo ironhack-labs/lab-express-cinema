@@ -8,7 +8,15 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
   <body>
-    <h1>Cinema Ironhack</h1>
-    <a href="/movies" class="button">Check the movies!</a>
+    <h1>All Movies</h1>
+    <ul class="movies-list">
+      {{#each movies}}
+      <li>
+        <img src="{{this.image}}" alt="{{this.title}}" class="movie-image">
+        <h2>{{this.title}}</h2>
+        <a href="/movies/{{this._id}}" class="see-more">See more</a>
+      </li>
+      {{/each}}
+    </ul>
   </body>
 </html>
