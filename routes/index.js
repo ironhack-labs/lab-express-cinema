@@ -14,8 +14,20 @@ router.get('/movies', (req, res, next) => {
       })
       .catch((err) => {
         console.log('Error retrieving movies: ', err);
-        res.render('error'); // Render an error page if there is an error
+        res.render('error');
       });
+  });
+
+  router.get('/movies/:id', (req, res, next) => {
+    const movieId = req.params.id;
+  
+    Movie.findById(movieId, (err, movie) => {
+      if (err) {
+        return next(err);
+      }
+  
+      res.render('movie', { movie });
+    });
   });
 
 module.exports = router;
