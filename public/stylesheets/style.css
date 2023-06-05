@@ -59,3 +59,11 @@ a {
   /* color: white; */
   padding-bottom:  10px;
 }
+
+#movie-details {
+  display: flex;
+}
+
+#movie-details div {
+  margin: 20px;
+}
