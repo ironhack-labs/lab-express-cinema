@@ -1,8 +1,36 @@
 body {
+  /* padding: 0px;
+  margin: 0px; */
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+/* #home {
+  position: relative;
+  background-image: url("");
+  background-repeat: no-repeat;
+  height: 100vh;
+} */
+
+#home h1 {
+  color: white;
+  font-size: 60px;
+}
+
+#home-content a {
+  /* color: white; */
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#home-content{
+  position: absolute;
+  left:500px;
+  top:100px;
 }
