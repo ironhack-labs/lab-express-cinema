@@ -1,3 +1,7 @@
+:root {
+  --grid-margin: 30px;
+}
+
 body {
   /* padding: 0px;
   margin: 0px; */
@@ -7,6 +11,7 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
 /* #home {
@@ -26,11 +31,31 @@ a {
   background-color: white;
   border-radius: 20px;
   padding: 10px;
-  text-decoration: none;
 }
 
 #home-content{
   position: absolute;
   left:500px;
   top:100px;
+}
+
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  margin: var(--grid-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: calc((100% - 6 * var(--grid-margin))/3);
+  font-weight: bold;
+  /* color: white; */
+  padding-bottom:  10px;
 }
