@@ -39,3 +39,36 @@ body {
   opacity: 1;
   border-radius: 0;
 }
+.div-list{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.div-movie-list {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 3em 0em;
+}
+
+.div-movie-list img{
+  width: 42%;
+}
+
+.div-movie-list button{
+  padding: 0.5em 1em;
+  background-color: white;
+  transition: 1.2s;
+}
+
+.div-movie-list button:hover{
+  padding: 0.5em 1em;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.img-movie{
+  margin: 2em 1em;
+}
