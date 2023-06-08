@@ -1,4 +1,7 @@
-// To insert in "seeds/movies.seed.js"
+
+const mongoose = require('mongoose');
+const Movie = require('../models/Movie.model.js');
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -84,4 +87,21 @@ const movies = [
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
   
-  // ... your code here
+  mongoose.connect('mongodb://localhost/Express-movies', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => {
+  console.log('Connected to the database');
+  return Movie.deleteMany();
+})
+.then(() => {
+  return Movie.insertMany(movies);
+})
+.then(() => {
+  console.log('Database seeded successfully');
+  mongoose.connection.close();
+})
+.catch((error) => {
+  console.error('Error seeding the database', error);
+});
