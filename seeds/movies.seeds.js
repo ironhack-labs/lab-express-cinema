@@ -1,4 +1,4 @@
-require('../db')
+require('../db') // calls mongoose created in db/index.js to connect with DB
 
 const mongoose = require('mongoose')
 const Movie = require('../models/Movie.model.js')
