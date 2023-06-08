@@ -46,3 +46,36 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.all-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.movies-headlines {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.movies-headlines h3 {
+  font-weight: 500;
+}
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 5%;
+}
+.movie-container img {
+  width: 80%;
+}
+.movie-container p {
+  font-size: 12px;
+  font-weight: bold;
+}
