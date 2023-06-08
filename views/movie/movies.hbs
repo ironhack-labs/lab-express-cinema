@@ -1,0 +1,12 @@
+<seciton id="movies">
+  <h2>Ironhack Cinema</h2>
+  <h3>Click on the movie to check the showtimes!</h3>
+
+  {{#each movies}}
+  <div class="movie-container">
+    <img src="{{image}}"alt="movie-poster">
+    <h3>{{title}}</h3>
+    <a href="movies/movie/{{id}}">See more</a>
+  </div>
+  {{/each}}
+</seciton>
