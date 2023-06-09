@@ -79,3 +79,20 @@ a {
   font-size: 12px;
   font-weight: bold;
 }
+
+#movie-details {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  height: 25vw;
+  align-items: center;
+  margin-top: 10px;
+}
+#movie-details img {
+  height: 90%;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+.movie-content {
+  margin-left: 30px;
+  width: 60%;
+}
