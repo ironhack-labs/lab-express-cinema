@@ -1,0 +1,27 @@
+<section id="movie-details">
+  {{#with movie}}
+  <img src="{{image}}" alt="movie-poster">
+
+  <div class="movie-content">
+    <a href="/movies">Go back</a>
+    <h3>{{title}}</h3>
+
+    <h3>Director: {{director}}</h3>
+
+    <h4>Stars</h4>
+    <ul>
+      {{#each this.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <p>{{description}}</p>
+
+    <p>
+    {{#each this.showtimes}}
+    {{this}} |
+    {{/each}}
+    </p>
+  </div>
+  {{/with}}
+</section>
