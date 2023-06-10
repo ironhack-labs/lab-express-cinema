@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: auto;
+  width: 100%;
   margin: 0;
   color: white;
   font-family: Arial, sans-serif;
@@ -22,7 +22,12 @@
 }
 
 body, html{
+  font-family: Arial, sans-serif;
   margin: 0;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -49,4 +54,36 @@ body, html{
 
 .btn:hover {
   background-color: #c03c3c;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.movie-card {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.movie-card a{
+  text-decoration: none;
 }
