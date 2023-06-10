@@ -1,8 +1,123 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.home-page {
+  background: linear-gradient(
+      to right,
+      #252525,
+      transparent 20px,
+      transparent calc(100% - 20px),
+      #252525
+    ),
+    url("/images/cinema.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-a {
-  color: #00B7FF;
+body, html{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  transform: translate(300px, -80px);
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: #f04d4d;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #c03c3c;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.movie-card {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.movie-card a{
+  text-decoration: none;
+}
+
+.movie-details {
+  display: flex;
+  min-width: 800px;
+  max-width: 1000px;
+  margin-top: 100px;
+  background-color: #e2e2e2;
+  padding: 30px;
+  border-radius: 20px;
+}
+.movie-details-info{
+  width: 55%;
+}
+
+.movie-details-info ul:last-child{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.movie-details-info ul:last-child li{
+  background-color: #cfcfcf;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.movie-details figure{
+  flex-grow: 1;
+}
+
+.movie-details img{
+  height: 100%;
+  width: auto;
 }
