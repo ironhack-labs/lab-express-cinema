@@ -87,3 +87,37 @@ body, html{
 .movie-card a{
   text-decoration: none;
 }
+
+.movie-details {
+  display: flex;
+  min-width: 800px;
+  max-width: 1000px;
+  margin-top: 100px;
+  background-color: #e2e2e2;
+  padding: 30px;
+  border-radius: 20px;
+}
+.movie-details-info{
+  width: 55%;
+}
+
+.movie-details-info ul:last-child{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.movie-details-info ul:last-child li{
+  background-color: #cfcfcf;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.movie-details figure{
+  flex-grow: 1;
+}
+
+.movie-details img{
+  height: 100%;
+  width: auto;
+}
