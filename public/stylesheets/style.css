@@ -1,8 +1,52 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.home-page {
+  background: linear-gradient(
+      to right,
+      #252525,
+      transparent 20px,
+      transparent calc(100% - 20px),
+      #252525
+    ),
+    url("/images/cinema.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-a {
-  color: #00B7FF;
+body, html{
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  transform: translate(300px, -80px);
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: #f04d4d;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #c03c3c;
 }
