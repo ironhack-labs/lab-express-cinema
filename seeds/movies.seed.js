@@ -1,4 +1,5 @@
 // To insert in "seeds/movies.seed.js"
+require('../db')
 
 const movies = [
     {
