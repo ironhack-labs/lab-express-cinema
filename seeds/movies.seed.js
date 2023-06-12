@@ -1,6 +1,9 @@
 // To insert in "seeds/movies.seed.js"
 require('../db')
 
+const mongoose = require('mongoose');
+const Movie = require('../models/movie.model');
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -88,9 +91,16 @@ const movies = [
   
   // ... your code here
 
-Movie.insertMany(movies)
-.then((moviesCreated) => {
-    console.log(`Created movies: ${moviesCreated.length}`)
-    mongoose.disconnect()
+const seed = async () => {
+  try { 
+    await Movie.insertMany(movies);
+  }
+  catch(err) {
+    console.error(err || "Error insertando datos")
+  }
+}
+
+seed()
+.then(() => {
+  mongoose.connection.close();
 })
-.catch((err) => console.log("Error while adding seed of movies: ", err))
