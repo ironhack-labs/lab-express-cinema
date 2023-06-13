@@ -38,3 +38,15 @@ a {
   cursor: pointer;
 }
 
+.movie-list ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.movie-list img {
+  padding: 40px;
+}
+
+
