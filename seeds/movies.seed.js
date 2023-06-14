@@ -96,7 +96,7 @@ const movies = [
   Movie.create(movies)
   .then((moviesFromDB) => {
     console.log(`Created ${moviesFromDB.length} movies`);
-    //mongoose.connection.close();
+    mongoose.connection.close();
   })
   .catch((err) =>
     console.log(`An error occurred while getting movies from the DB: ${err}`)
