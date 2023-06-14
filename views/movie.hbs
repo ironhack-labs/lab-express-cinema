@@ -1,0 +1,37 @@
+{{!-- <div class="media">
+  <img class="align-self-center mr-3" src="{{image}}" alt="...">
+  <div class="media-body">
+    <h4 class="mt-0"><strong>{{title}}</strong></h4>
+    <p><strong>Director: {{director}}</strong></p>
+    <p></p>
+    <p><strong>Stars:</strong></p> 
+    <p>{{stars}}</p>
+    <p><strong>Description:</strong></p>
+    <p>{{description}}</p>
+    <p><strong>Showtimes:</strong></p>
+    <p>{{showtimes}}</p>
+  </div>
+</div> --}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-random" src="{{image}}" alt="Image random">
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h2 class="card-title">{{title}}</h2>
+                <h3 class="card-text">{{director}}</h3>
+                <h4>Stars</h4>
+                <ul>
+                    {{#each stars}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <p>{{description}}</p>
+                {{#each showtimes}}
+                {{this}} |
+                {{/each}}
+            </div>
+        </div>
+    </div>
