@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+#background {
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  margin-top: 10%;
+  display: flex;
+  justify-content: flex-end;
+  
+
+}
+
+#main > div > h1 {
+  width: 10%;
+  font-size: 600%;
+  color: white;
+}
