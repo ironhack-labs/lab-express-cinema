@@ -28,6 +28,33 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 const index = require('./routes/index');
 app.use('/', index);
 
+
+const Movie = require("./models/Movie.model");
+
+app.get("/movies", (req, res, next) => {
+    Movie.find()
+      .then((movies) => {
+        res.render('movies', { movies });
+      })
+      .catch((error) => {
+        console.error(error);;
+      });
+  });
+  
+ app.get("/movies/:id", (req, res, next) => {
+
+    const id = req.params.id;
+
+    Movie.findById(id)
+     .then((x) => {
+        const movieDetails = x;
+            res.render("details", {movieDetails});
+ })
+    .catch((err)=>{
+        console.log('Error:', err)
+ })
+ })
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
 
