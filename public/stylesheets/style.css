@@ -6,3 +6,61 @@ body {
 a {
   color: #00B7FF;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content:space-evenly;
+  height: 100vh;
+}
+
+#title {
+  font: bold;
+  font-size: 60px;
+  font-style: normal;
+  color: white;
+  padding-left: 50%;
+}
+
+#button {
+  margin-left: 50%;
+  margin-bottom: 35%;
+  padding: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-decoration: none;
+  font-weight: normal;
+  border-radius: 30px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.image-container > div img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.details-info-container ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.details-info-container ul li {
+  margin: 0;
+  padding: 0;
+}

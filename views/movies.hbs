@@ -1,0 +1,13 @@
+ <a href="/">Go back</a><br>
+<h3>Click on the movies to check the showtimes!</h3>
+<br>
+<br>
+   <div class="image-container">
+    {{#each movies}}
+    <div>
+        <img class="resize-img" src="{{image}}">
+        <p>{{title}}</p>
+        <a href="/movies/{{id}}">See More</a>
+    </div>
+    {{/each}}
+</div>
