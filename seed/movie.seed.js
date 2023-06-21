@@ -90,7 +90,7 @@ const movies = [
 
   Movie.insertMany(movies)
  .then(movieCreated => {
-    console.log(movieCreated.length, 'ovies inserted into the database');
+    console.log(movieCreated.length, 'Movies inserted into the database');
     mongoose.connection.close();
   })
  .catch(error => console.log('Error inserting movies:', error));
