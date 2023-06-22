@@ -1,7 +1,7 @@
 require('../db')
 
 const mongoose = require('mongoose')
-const Movie = require('../models/movie.model')
+const Movie = require('../models/Movie.model')
 
 // To insert in "seeds/movies.seed.js"
 
