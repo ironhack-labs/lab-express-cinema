@@ -8,7 +8,7 @@ a {
   color: #00B7FF;
 }
 
-.home-page-container {
+#home-page-container {
   background-image: url("../images/cinema.jpg");
   background-size: cover;
   background-position: center;
@@ -16,19 +16,18 @@ a {
   height: 100%;
 }
 
-.home-page-content {
+#home-page-content {
   display: flex;
   flex-direction: column;
-  width: 400px;
   margin-left: 700px;
 }
 
-.home-page-text {
+#home-page-text {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
 }
 
-.check-button {
+#check-button {
   padding: 20px 30px;
   margin: 0;
   color: #47798d;
@@ -36,7 +35,7 @@ a {
   border-radius: 30px;
 }
 
-.check-button:hover {
+#check-button:hover {
   cursor: pointer;
   color: #5e98af
 }
