@@ -3,7 +3,7 @@
 require('dotenv/config');
 
 // ℹ️ Connects to the database
-require('./db');
+require('./db/index');
 
 // Handles http requests (express is node js framework)
 // https://www.npmjs.com/package/express
@@ -13,16 +13,27 @@ const express = require('express');
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
 
+const logger = require('morgan');
+
 const app = express();
 
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
-require('./config')(app);
+require('./config/index')(app);
 
 // default value for title local
-const projectName = 'lab-express-cinema';
-const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
+//const projectName = 'Movies';
+//const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
 
-app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+//app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
+
+
+app.use(logger('dev'));
+app.use(express.urlencoded({ extended: false }));
+app.set("view engine", "hbs");
+app.set("views", __dirname + "/views");
+hbs.registerPartials(__dirname + "/views/partials");
+
+app.use(express.static(__dirname + "/public"));
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
@@ -32,3 +43,5 @@ app.use('/', index);
 require('./error-handling')(app);
 
 module.exports = app;
+
+
