@@ -6,3 +6,82 @@ body {
 a {
   color: #00B7FF;
 }
+
+.background{
+  background-image: url(../images/cinema.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttons {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  margin-right: 67px;
+}
+
+a{
+  text-decoration: none;
+  color: #679DAD;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.cinema {
+  margin-bottom: 329px;
+  text-align: right;
+  margin-right: 180px;
+}
+
+h1{
+  font-size: 80px;
+  color: white;
+  text-align: initial;
+}
+
+.movie-list{
+  display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+    text-align: center;
+}
+.movie-list a{
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.movie-list a:hover{
+  font-size: 25px;
+  color: red;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.information1{
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.go-back{
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.go-back:hover{
+  font-size: 18px;
+  color: red;
+}
+
+
+
