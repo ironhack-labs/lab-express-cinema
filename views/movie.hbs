@@ -1,0 +1,24 @@
+{{#with theMovie}}
+  <img src="{{image}}" alt="" />
+  <p>{{title}}</p>
+  <p>{{director}}</p>
+  <ul>
+    {{#each stars}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <p>{{description}}</p>
+
+  <p>
+    {{#each showtimes}}
+      {{#if @last}}
+        {{this}}
+      {{else}}
+        {{this}}
+        |
+      {{/if}}
+    {{/each}}
+  </p>
+
+{{/with}}
