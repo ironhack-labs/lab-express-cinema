@@ -19,12 +19,15 @@ a {
 #home-page-content {
   display: flex;
   flex-direction: column;
-  margin-left: 700px;
+  margin-left: 800px;
+  width: 400px;
 }
 
-#home-page-text {
+#home-page-text h1 {
+  margin-top: 100px;
   color: white;
-  font-size: 50px;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 #check-button {
@@ -39,3 +42,64 @@ a {
   cursor: pointer;
   color: #5e98af
 }
+
+.movies-container {
+  margin: 30px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-align: center;
+}
+
+.small-card {
+  border: none;
+  width: 60%;
+  height: auto;
+  margin-left: 65px;
+  margin-top: 10px;
+}
+
+.movie-detail {
+  margin: 30px;
+}
+
+.movie-detail-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.movie-detail-img-container {
+  width: 200px;
+  height: auto;
+}
+
+.movie-detail-text-container {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.movie-detail-text-container h5 {
+  font-weight: bold;
+}
+
+#go-back {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
