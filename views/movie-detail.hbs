@@ -1,17 +1,21 @@
 <div class="movie-detail">
     <a id="go-back" href="/movies">Go back</a>
-        {{#each movie}}
-        <div class="movie-detail-container">
+    
+        <div class="mt-5 movie-detail-container">
             <div class="movie-detail-img-container">
-            <img src="{{this.image}}" alt="{{this.title}}">
+            <img src="{{movie.image}}" alt="{{movie.title}}">
             </div>
             <div class="movie-detail-text-container">
-                <h5>{{this.title}}</h5>
-                <h6>{{this.director}}</h6>
-                <p>{{this.stars}}</p>
-                <p>{{this.description}}</p>
-                <p>{{this.showtimes}}</p>
+                <h5>{{movie.title}}</h5>
+                <h6>{{movie.director}}</h6>
+                <ul>
+                    <li>{{movie.stars.[0]}}</li>
+                    <li>{{movie.stars.[1]}}</li>
+                    <li>{{movie.stars.[2]}}</li>
+                </ul>
+                <p>{{movie.description}}</p>
+                <p>{{movie.showtimes.[0]}} | {{movie.showtimes.[1]}} | {{movie.showtimes.[2]}} | {{movie.showtimes.[3]}} | {{movie.showtimes.[4]}}</p>
             </div>
         </div>
-        {{/each}}
+    
 </div>        
