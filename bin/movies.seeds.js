@@ -4,7 +4,7 @@ require("../db/index")
 
 const movies = require("../movies.json")
 
-const Movie = require("../models/Movie.models")
+const Movie = require("../models/Movie.model")
 
 mongoose.connection.once("open", () => {
     mongoose.connection.dropDatabase()
