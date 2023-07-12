@@ -47,3 +47,15 @@ a {
   height: 50px;
   font-size: 20px;
 }
+
+#image {
+  margin-left: 30px;
+}
+
+#movieInfo {
+  margin-left: 50px;
+}
+
+#description {
+  width: 600px;
+}

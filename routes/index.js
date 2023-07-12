@@ -17,7 +17,7 @@ router.get("/movie/:movieId", (req, res) => {
   Movie.findById(req.params.movieId)
     .then((theMovie) => {
       console.log(theMovie);
-      res.render("movies-pages/movie", { theMovie });
+      res.render("movie", { theMovie });
     })
     .catch((err) => res.status(500).send(err));
 });
