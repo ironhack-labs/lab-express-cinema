@@ -1,6 +1,19 @@
-<h1> {{title}} </h1>
-{{director}}
-{{stars}}
-<img src="{{image}}" alt="">
-{{description}}
-{{showtimes}}
+<div class="movie-info">
+  <img src="{{image}}" alt="film-img" />
+
+<div class="film-info-container">
+
+  <h1> {{title}} </h1>
+  <h4>Director:{{director}}</h4>
+  <h3>Stars:</h3>
+  <ul class="stars-list">
+  <li> {{stars}}. </li>
+  </ul>
+  <p> {{description}} </p>
+  <p>{{showtimes}}</p>
+
+<a href="/">Go back</a>
+</div>
+
+
+</div>

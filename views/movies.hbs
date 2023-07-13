@@ -2,11 +2,12 @@
 <h2>Ironhack Cinema</h2>
 <h3>Click on the movie to check the showtimes!</h3>
 
+<div class="movies-box">
 <ul>{{#each allMovies}}
     <li><img src="{{image}}" alt="film-img"> 
-    {{title}}
+   <h4>{{title}}</h4> 
     <a href="./movies/{{id}}">See more</a></li>
 {{/each}}</ul> 
-
+</div>
 
 

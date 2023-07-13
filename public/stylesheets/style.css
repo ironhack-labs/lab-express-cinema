@@ -3,6 +3,71 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+.homepage{
+  background-image: url(/images/cinema.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  float: right;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage h1{
+  color:white;
+  font-size: 120px;
+  margin-right: 120px;
+}
+
+.homepage button {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px 26px;
+  margin-right: 120px;
+}
+
+button a {
   color: #00B7FF;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+  float: left;
+  text-align: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info{
+  display: flex;
+}
+
+.movie-info img{
+  margin: 20px;
+}
+
+.film-info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.stars-list{
+  margin-right: -50px;
+  margin-bottom: -50px;
+  float: left;
+}
+
+p{
+  margin-bottom: 20px;
 }
