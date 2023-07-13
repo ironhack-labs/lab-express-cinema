@@ -1,8 +1,29 @@
-body {
-  padding: 50px;
+html, body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+.home-container {
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 700px;
+  color: white;
+  font-size: 40px;
+}
+
+.home-title {
+  font-size: 150px;
 }
