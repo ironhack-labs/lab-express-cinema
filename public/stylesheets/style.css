@@ -28,7 +28,7 @@ main {
 .main-container > h1 {
   color: white;
   font-size: 100px;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .main-container > a {
@@ -40,5 +40,66 @@ main {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+/* Movies page */
+
+.movies-header {
+  padding: 15px 0 0 35px;
+  margin-bottom: 50px;
+}
+
+.movies-header > h1 {
+  margin-bottom: 20px;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.movies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.movies-container img {
+  width: 250;
+  height: auto;
+}
+
+.movies-container a {
+  margin-bottom: 25px;
+}
+
+/* movie-detail page */
+
+.movie-info {
+  display: flex;
+  margin-top: 25px;
+  gap: 50px;
+}
+
+.movie-info img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  align-self: start;
+}
+
+.movie-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.movie-info-container ul {
+  padding: 15px;
+}
+
+.movie-info-container p {
+  width: 650px;
 }
