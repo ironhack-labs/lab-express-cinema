@@ -98,8 +98,10 @@ a {
 
 .movie-info-container ul {
   padding: 15px;
+  font-size: 16px;
 }
 
 .movie-info-container p {
   width: 650px;
+  font-size: 16px;
 }
