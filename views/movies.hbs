@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Express Cinema - Movies</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>All Movies</h1>
+        {{#each movies}}
+            <div class="movie-card">
+                <h2>{{title}}</h2>
+                <img src="{{image}}" alt="{{title}}">
+                <a href="/movies/{{_id}}">See more</a>
+            </div>
+        {{/each}}
+
+        {{!-- <ul class="movie-list">
+        {{#each movies}}
+        <li class="movie-item">
+            <img src="{{this.image}}" alt="{{this.title}}">
+            <h2>{{this.title}}</h2>
+            <a href="/movies/{{this._id}}">See more</a>
+        </li>
+        {{/each}}
+        </ul> --}}
+    </div>
+</body>
+
+</html>

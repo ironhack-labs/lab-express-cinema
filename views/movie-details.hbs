@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Express Cinema - Movie Details</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{movie.title}}</h1>
+        <div class="movie-details">
+        <img src="{{movie.image}}" alt="{{movie.title}}">
+        <p><strong>Director:</strong> {{movie.director}}</p>
+        <p><strong>Stars:</strong> {{movie.stars.join(', ')}}</p>
+        <p><strong>Description:</strong> {{movie.description}}</p>
+        <p><strong>Showtimes:</strong> {{movie.showtimes.join(', ')}}</p>
+        <a href="/movies">Back to All Movies</a>
+        </div>
+    </div>
+</body>
+</html>
