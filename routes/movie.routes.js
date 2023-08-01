@@ -1,39 +1,30 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
 
-const Movie = require('../models/Movie.model.js'); // without this line "Movie" in Movie.find is undefined
+const Movie = require('../models/Movie.model');
 
-//Get movies page
- router.get('/movies', (req, res, next) => {
+//GET route to retrieve and display all the movies
+router.get('/movies', (req, res, next) => {
     Movie.find()
-        .then(allTheMoviesFromDB => {
-            console.log('anything')
-            console.log('allTheMoviesFromDB: ', allTheMoviesFromDB)
-            console.log(allTheMoviesFromDB[0]);
-            res.render('movies.hbs', { movies: allTheMoviesFromDB }); // Pass 'allTheMoviesFromDB to the view as a variable movies to be used in hbs
+        .then(allMoviesFromDB => {
+            res.render('movies.hbs', {allMoviesFromDB})
         })
-        .catch(error => {
-            console.log('Error while getting the movies from DB: ', error);
-            //Call the error-middleware to display the error page to the user
-            next(error);
+        .catch(err => {
+            console.log('Error retrieving data from DB: ', err)
+            next(err)
         })
-}) 
+})
 
-router.get('/:movieId', (req, res, next) => {
-
-  //movieId => create
-  const { movieId } = req.params;
-
-  console.log('The ID from the URL is: ', movieId);
-
-  Movie.findById(movieId).then(movie => {
-    console.log('movie: ', movie)
-      res.render('movie-details.hbs', movie);
-  }).catch(error => {
-      console.log('Error while retrieving book details: ', error);
-      // Call the error-middleware to display the error page to the user
-      next(error);
-  });
+//GET route to retrieve and display movie details for each movie with req.params
+router.get('/movies/:movieId', (req, res, next) => {
+    const { movieId } = req.params;
+    Movie.findById(movieId)
+        .then(movieDetails => {
+            res.render('movie-details.hbs', movieDetails)
+        })
+        .catch(err => {
+            console.log(`Error retrieving movie details: ${err}`)
+            next(err)
+        })
 })
 
 module.exports = router;
