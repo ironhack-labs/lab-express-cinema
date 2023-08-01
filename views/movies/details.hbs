@@ -1,0 +1,30 @@
+<div class="row row-cols-1 row-cols-md-4 g-2">
+  <img
+    src="{{movie.image}}"
+    class="object-fit-contain"
+    style="height: 300px;"
+    alt="{{movie.title}}"
+  />
+  <div class="card-body text-start text-middle">
+    <a type="button" href="/movies" class="text-decoration-underline mb-3">
+      Go back
+    </a>
+    <p class="card-title fw-bold fs-5 mb-3">{{movie.title}}</p>
+    <p class="card-title fw-bold fs-6 mb-3">Director: {{movie.director}}</p>
+    <div>
+      <p class="fw-semibold mb-2">Stars</p>
+      <ul>
+        {{#each movie.stars as |star|}}
+          <li class="col">{{star}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <p class="mb-3">{{movie.description}}</p>
+      <div class="d-flex flex-row mb-3">
+        {{#each movie.showtimes as |showtime|}}
+          <p class="px-1">{{showtime}}</p>|
+        {{/each}}
+      </div>
+
+  </div>
+</div>
