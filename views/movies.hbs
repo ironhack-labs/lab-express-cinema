@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {{#each movies}}
+            <h4 class="text-center"><strong></strong></h4>
+            <hr>
+            <div class="profile-card-2"><img src="{{image}}" class="img img-responsive">
+                <div class="profile-name">{{title}}</div>
+                <div class="profile-username"><a href='/details/{{_id}}' class='btn btn-success'>Go to Details</a></div>
+
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
