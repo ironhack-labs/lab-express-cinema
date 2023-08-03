@@ -1,0 +1,25 @@
+<div class='container movies-page'>
+
+  <div>
+    <h1>Ironhack Cinema</h1>
+    <h2>Click on the movie to check the showtimes!</h2>
+    <hr />
+  </div>
+
+  <div class='row d-flex justify-content-around'>
+
+    {{#each movies}}
+      <div class='col-3'>
+        <div class='card text-center mb-4'>
+          <img src='{{image}}' class='card-img-top img-fluid mx-auto' alt='{{title}}' />
+          <div class='card-body'>
+            <h3 class='card-title'>{{title}}</h3>
+            <a href='/movie/{{_id}}' class='btn btn-warning shadow'>See more</a>
+          </div>
+        </div>
+      </div>
+
+    {{/each}}
+
+  </div>
+</div>

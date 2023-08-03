@@ -1,0 +1,28 @@
+<div class='container'>
+  <div class='row d-flex justify-content-around'>
+
+    <div class='movie-image col-3'>
+      <img src='{{image}}' alt='{{title}}' />
+    </div>
+
+    <div class='col-9 movie-details'>
+      <h1>{{title}}</h1>
+      <h2>Director: {{director}}</h2>
+      <h3>Stars:</h3>
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{description}}</p>
+      {{#each showtimes}}
+        <span>{{this}} |</span>
+      {{/each}}
+      <br />
+      <a href='/movies' class='btn btn-warning mt-5'>Go back</a>
+
+    </div>
+
+  </div>
+
+</div>
