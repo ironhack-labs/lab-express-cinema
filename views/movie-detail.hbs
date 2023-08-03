@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row movie p-2">
+        <div class="col-2 d-flex align-items-center">
+            <img src="{{image}}" alt="">
+        </div>
+
+        <div class="col-10">
+
+            <a href="/movies" class="btn btn-secondary mb-3">Go back</a>
+
+            <h4 class="fw-bold">{{title}}</h4>
+
+            <h5 class="fw-bold">Director</h5>
+            <h6>{{director}}</h6>
+
+            <h5 class="fw-bold">Stars</h5>
+
+            <ul>
+                {{#each stars}}
+                <li>
+                    <h6>{{this}}</h6>
+                </li>
+
+                {{/each}}
+            </ul>
+
+            <h5>{{description}}</h5>
+
+            {{#each showtimes}}
+            | {{this}} |
+            {{/each}}
+
+        </div>
+    </div>
+</div>

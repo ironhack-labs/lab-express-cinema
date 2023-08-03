@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <a href="/" class="btn btn-secondary mb-3">Go back</a>
+        </div>
+        {{#each allMovies}}
+        <div class="col-3 mt-3 d-flex text-center">
+            <div class="card" style="width: 13rem;">
+                <img src="{{image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <a href="/movie/{{_id}}" class="btn btn-dark">See more</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
