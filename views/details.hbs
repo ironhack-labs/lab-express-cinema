@@ -1,0 +1,20 @@
+<div class="containter">
+
+    <img src="{{image}}" alt="">
+
+    <h4>{{title}}</h1>
+
+        <p>Director: {{director}}</p>
+
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p>{{description}}</p>
+
+        {{#each showtimes}}
+        <p>{{this}}</p>
+        {{/each}}
+</div>
