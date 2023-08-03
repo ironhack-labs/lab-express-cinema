@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row justify-content-center">
+        {{#each movies}}
+        <div class="col-3 mt-3 ms-4 me-4 mb-2 text-center">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="/movies/{{id}}" class="btn btn-warning">See more</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
