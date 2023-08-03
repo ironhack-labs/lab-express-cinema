@@ -3,7 +3,7 @@ body {
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
   color: rgb(255, 255, 255);
   background-attachment: fixed;
-  background-color: #212529;
+  background-color: #000000;
   background-image: url('./../images/cinema-background.jpeg');
   background-position: center;
   background-size: cover;
