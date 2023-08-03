@@ -1,0 +1,31 @@
+
+<div class="container">
+
+    <div class="row align-items-start mt-5 mb-5">
+        {{#each movies}}
+        <div class="col mb-5">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{image}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">{{title}}</p>
+                    <p class="card-text"><a href="details/{{_id}}">See More</a></p>
+                </div>
+            </div>
+
+        </div>
+        {{/each}}
+            
+
+            
+
+
+            
+
+    </div>
+
+</div>
+
+
+
+
