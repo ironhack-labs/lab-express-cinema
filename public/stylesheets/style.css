@@ -1,8 +1,31 @@
 body {
+  background: url('/images/Libros-y-fantasia-1.jpg')no-repeat center center fixed;
+  background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.texB {
+  text-align: center;
+}
+
+
+.cardMovie {
+  background-color: linear-gradient(#601266, #e569ee);
+}
+
+.idCont {
+
+  height: 700px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+
 }

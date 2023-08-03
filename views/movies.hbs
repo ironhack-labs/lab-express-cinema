@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>IRONHACK MOVIES</h1>
+    <hr>
+
+    <div class="row">
+        {{#each eachmovies}}
+        <div class=" texB col-4 mt-5">
+            <div class="cardMovie">
+                <img src="{{image}}" alt="">
+
+                <p>{{title}}</p>
+                <button> <a href="movieID/{{_id}}">see more</a></button>
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
