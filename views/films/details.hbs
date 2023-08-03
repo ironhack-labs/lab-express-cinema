@@ -1,0 +1,19 @@
+<div class="container">
+    <img src="{{image}}" alt="">
+    <br>
+    <h2>Detalles de {{title}}</h2>
+    <hr>
+    <h3>Dirigida por {{director}}</h3>
+    <hr>
+    <h3><strong>Sinopsis: </strong>{{description}}</h3>
+    <hr>
+    <h3>Protagonizada por: </h3>
+    <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+
+    <a href="/cartelera" class="btn btn-primary">Go back</a>
+    <a href="/" class="btn btn-primary">Home</a>
+</div>
