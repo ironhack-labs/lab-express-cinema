@@ -1,0 +1,25 @@
+<div class="idCont row">
+    <div class="col-4">
+        <img src="{{image}}" alt="">
+    </div>
+    <div class="col-4">
+        <a href="/movies">Go back</a>
+        <h2>{{title}}</h2>
+        <p>Director:{{director}}</p>
+
+        <ul>
+            {{#each stars}}
+
+            <li>{{this}}</li>
+
+            {{/each}}
+        </ul>
+
+        <article class="mb-2">{{description}}</article>
+        <div class="containHour">
+            {{#each showtimes}}
+            <p>{{this}}|</p>
+            {{/each}}
+        </div>
+    </div>
+</div>
