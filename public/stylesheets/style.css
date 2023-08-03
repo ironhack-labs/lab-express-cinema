@@ -1,8 +1,32 @@
 body {
-  padding: 50px;
+  margin-top: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.img_details{
+  width: 60%;
+}
+
+.cinema{
+  /* margin-top: 200px; */
+  height: 800px;
+  
+}
+.palomitas{
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+
+
+.cinema h1{
+  color: #FFF;
+
+  font-size: 5rem;
+  margin-top: 60px;
 }
