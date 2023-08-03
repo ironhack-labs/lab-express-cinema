@@ -1,0 +1,25 @@
+<h1>Iron Hack Cinema</h1>
+
+<h2>Click on the movie to check the show times!</h2>
+{{!-- movieList es la propiedad del objeto donde estan los arrays --}}
+
+<div class="row">
+
+    {{#each movieList}}
+
+    <div class="col-md-3">
+
+        <div class="card" style="width: 18rem;">
+            <img src="{{image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a class="btn btn-primary" href="/details/{{_id}}">See More</a>
+            </div>
+        </div>
+
+    </div>
+
+    {{/each}}
+
+    <a class="btn btn-primary" href="/">Home</a>
+</div>
