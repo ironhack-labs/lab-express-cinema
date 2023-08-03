@@ -1,0 +1,20 @@
+{{!-- single movie file --}}
+
+<img src="{{image}}" alt="{{title}}">
+
+<a href="/movies/{{id}}">Go back</a>
+
+<h1>{{title}}</h1>
+
+<h2>Director: {{director}}</h2>
+
+<h4>Stars</h4>
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<p>{{description}}</p>
+
+<p>{{showtime}}</p>
