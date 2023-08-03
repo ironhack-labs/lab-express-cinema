@@ -1,8 +1,57 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  background-attachment: fixed;
+  background-color: #212529;
+  background-image: url('./../images/cinema-background.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font-size: 5rem;
+}
+
+.btn {
+  border-radius: 5rem;
+}
+
+.index h1 {
+  margin-top: 5rem;
+}
+
+.index a {
+  margin-top: 1rem;
+}
+
+.card {
+  height: 500px;
+  width: 250px;
+  color: rgb(255, 255, 255);
+  background-color: #000000ee;
+  padding: 5px;
+}
+
+.card img {
+  object-fit: contain;
+  width: 98%;
+}
+
+.movies-page h2 {
+  font-size: 1.2rem;
+}
+
+.movies-page h3 {
+  font-size: 1.4rem;
+}
+
+.movies-page a {
+  position: absolute;
+  left: calc(50% - 49px);
+  bottom: 5%;
+}
+
+.movie-image img {
+  width: 18rem;
 }
