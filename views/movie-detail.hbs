@@ -1,0 +1,21 @@
+{{title}}
+
+<img src="{{image}}" alt="pelis">
+<p>Director</p>
+{{director}}
+
+
+
+<ul>
+    {{#each stars}}
+    <li>
+        {{this}}
+    </li>
+    {{/each}}
+    <p>description</p>
+    {{description}}
+    <p>showtimes</p>
+    {{#each showtimes}}
+    {{this}}
+    {{/each}}
+</ul>
