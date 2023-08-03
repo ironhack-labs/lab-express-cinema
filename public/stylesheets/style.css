@@ -3,6 +3,44 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+
 a {
   color: #00B7FF;
+}
+
+.cinemaPadding{
+  padding-top: 120px;
+  padding-right: 200px;
+}
+
+
+.indexPage{
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.indexTitle{
+  color: aliceblue;
+  font-size: 7rem;
+  line-height: 100px;
+  margin-bottom: 40px;
+}
+
+.indexButton{
+  background-color: aliceblue;
+  padding: 15px 30px;
+  border-radius: 35px;
+  text-decoration: none;
+  color: #00B7FF;
+ 
+
+}
+
+#no-border{
+  border: none;
 }
