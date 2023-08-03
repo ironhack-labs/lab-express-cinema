@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="row d-flex justify-content-center">
+		<div class="col-2">
+			<img src="{{image}}" alt="{{title}}" />
+		</div>
+		<div class="col-8">
+			<h4>{{title}}</h5>
+				<h5>{{director}}</h5>
+				<h6>Stars</h6>
+				<ul>
+					{{#each stars}}
+					<li>{{this}}</li>
+					{{/each}}
+				</ul>
+				<p>{{description}}</p>
+				<p>
+					{{#each showtimes}}
+					{{this}} |
+					{{/each}}
+				</p>
+				<hr>
+				<a href="/movies" class="btn btn-md btn-warning px-3">Go back</a>
+		</div>
+	</div>
+
+</div>
