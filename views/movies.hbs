@@ -1,0 +1,19 @@
+<div class="container col m-1">
+    <div class="row">
+    <div class="col text-center">
+        <h2>Movies</h2>
+        <div class="d-flex justify-content-center row text-center">
+            {{#each allMoviesFromDB}}
+            <div class="card m-1 " style="width: 18rem;">
+                <img src="{{this.image}}" class="card-img-top" alt="{{this.name}} movie poster">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <a href="/movies/{{this._id}}" class="btn btn-dark">See more</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    </div>
+</div>
+

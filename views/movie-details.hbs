@@ -1,0 +1,28 @@
+{{!-- views/books/book-details.hbs --}}
+{{movieDetails}}
+
+<div class="card">
+    <img src="{{image}}" class="card-img-top" alt="{{title}} poster">
+    <div class="card-body">
+        <a href="/movies">Go back</a>
+        <h2 class="card-title">{{title}}</h2>
+        <h5>Director: {{director}}</h5>
+        <br>
+        <h5>Stars</h5>
+        <ul>
+            {{#each stars}}
+            <li>
+                {{this}}
+            </li>
+            {{/each}}
+        </ul>
+        <p class="card-text">{{description}}</p>
+        <ul class="showtime">
+            {{#each showtimes}}
+            <li>
+                {{this}} |
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
