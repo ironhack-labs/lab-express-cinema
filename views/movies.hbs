@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Movies Cinema Ironhack</title>
+</head>
+<body>
+      <h1>Listado de películas</h1>
+
+  <div class="movie-list">
+    {{!-- Iterar a través de la lista de películas y mostrar cada película --}}
+    {{#each movies}}
+    <div class="movie-card">
+      <img class="movie-image" src="{{this.image}}" alt="{{this.title}}">
+      <h2 class="movie-title">{{this.title}}</h2>
+      <a class="view-more-link" href="/detalles/{{this.id}}">Ver más</a>
+    </div>
+    {{/each}}
+  </div>
+</body>
+</html>
