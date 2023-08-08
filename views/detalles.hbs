@@ -1,0 +1,42 @@
+<style>
+    body {
+        background-image: url("../stylesheets/images/cinema1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 15%;
+    }
+
+    h3 {
+        font-size: 8em;
+        color: yellow
+    }
+
+    a {
+
+        font-size: 2em;
+    }
+
+    h5 {
+
+        font-size: 2em;
+    }
+</style>
+
+<div class="cotainer detalles"></div>
+<h3>Movie's Details </h3>
+<a href="/">Go back</a>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{image}}" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Title: {{title}}</h5>
+                <p class="card-text">Sinopsis: {{description}}</p>
+                <p class="card-text"><small class="text-body-secondary">Director: {{director}}</small></p>
+            </div>
+        </div>
+    </div>
+</div>
