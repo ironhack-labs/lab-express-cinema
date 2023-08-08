@@ -1,8 +1,32 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("./images/Cinema-background-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+
+  text-align: center;
+  margin-top: 20%;
+  color: gold;
+  font-size: 8em;
+}
+
+button {
+
+  margin-left: 40%;
+  font-size: 2em;
+  border-radius: 15px;
+  padding: 1%;
 }
 
 a {
   color: #00B7FF;
+}
+
+img {
+
+  width: 100%;
 }

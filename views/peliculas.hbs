@@ -1,0 +1,27 @@
+<style>
+    body {
+        background-image: none;
+
+    }
+</style>
+
+<div class="p-3 mb-2 bg-light text-dark">
+    <h2>Movie Films</h2>
+</div>
+<div class="row">
+
+    {{#each movies}}
+
+    <div class="col-md-3">
+        <div class="card">
+            <img src="{{image}}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Title: {{titlee}}</h5>
+                <p class="card-text">Sinopsis: {{description}}</p>
+                <p class="card-text">Director {{Director}}</p>
+                <a href="/detalles/{{_id}}" class="btn btn-primary">Show Details</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
