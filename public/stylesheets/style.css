@@ -3,6 +3,68 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.main-img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateX(-50%);
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.movie-list {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.movie {
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box; 
+  text-align: center; 
+}
+
+.movie img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.movie-details {
+  display: flex;
+  align-items: center;
+}
+
+.movie-poster {
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.movie-info {
+  flex: 1;
 }
