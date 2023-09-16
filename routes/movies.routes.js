@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const Movie = require('../models/Movie.model');
 
-//GET route to retrieve and display all the movies
+//Get route to display all the movies
 router.get('/movies', (req, res, next) => 
 {
     Movie.find()
@@ -16,7 +16,7 @@ router.get('/movies', (req, res, next) =>
         })
 })
 
-//GET route to retrieve and display movie details for each movie with req.params
+//Get route to display movie details
 router.get('/movies/:movieId', (req, res, next) => 
 {
     const { movieId } = req.params;
