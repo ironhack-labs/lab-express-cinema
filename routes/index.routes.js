@@ -5,15 +5,18 @@ const Movie = require('../models/Movie.model');
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-Movie.find()
-.then((response) => {
-    res.render("index", {movies: response});
-});
+    res.render("index");
 });
 
-
+// all movies
+router.get("/movies/allMovies", (req, res) => {
+  res.render("movies/allMovies")  
+})
 
 // create movie
+router.get("/movies/create", (req, res) => {
+    res.render("movies/create")  
+  })
 
 // all movies
 
