@@ -1,0 +1,28 @@
+{{#with theMovie}}
+  <div class="d-flex mt-5">
+    <div id="image">
+      <img  src="{{image}}" alt="" width="300"/>
+    </div>
+
+    <div id="movieInfo">
+      <h2>{{title}}</h2>
+      <h3>{{director}}</h3>
+      <ul>
+        {{#each stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p id="description">{{description}}</p>
+      <p>
+        {{#each showtimes}}
+          {{#if @last}}
+            {{this}}
+          {{else}}
+            {{this}}
+            |
+          {{/if}}
+        {{/each}}
+      </p>
+    </div>
+  </div>
+{{/with}}
