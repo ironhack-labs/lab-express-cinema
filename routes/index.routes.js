@@ -9,8 +9,15 @@ router.get('/', (req, res, next) => {
 });
 
 // all movies
-router.get("/movies/allMovies", (req, res) => {
-  res.render("movies/allMovies")  
+router.get("/movies/allMovies", (req, res, next) => {
+  Movie.find()
+  .then((allMoviesFromDB) => {
+    console.log('Movies from the DB', allMoviesFromDB);
+    res.render('movies/allMovies', { movies: allMoviesFromDB});
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 })
 
 // create movie

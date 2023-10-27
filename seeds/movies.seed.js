@@ -1,3 +1,7 @@
+const mongoose = require('mongoose');
+const Movie = require('./models/movie.model');
+
+const connectionString = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/lab-express-cinema";
 // To insert in "seeds/movies.seed.js"
 
 const movies = [
@@ -87,7 +91,6 @@ const movies = [
   
   // ... your code here
 
-  const connectionString = "mongodb://127.0.0.1:27017/lab-express-cinema";
 
   mongoose 
     .connect(connectionString)
