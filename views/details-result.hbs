@@ -1,0 +1,15 @@
+<div class="details container">
+    <img src="{{image}}" alt="{{title}}">
+    <div class="text">
+        <h1>{{title}}</h1>
+        <h2>{{director}}</h2>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>{{showtimes}}</p>
+        <a class="btn btn-primary" href="/" role="button">Go Back</a>
+    </div>
+</div>
