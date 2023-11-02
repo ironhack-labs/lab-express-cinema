@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.details {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.details .text {
+  margin-left: 1rem;
+}
+
+.mycard {
+  display: flex;
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,24 @@
+{{!-- <div class="container">
+    {{#each movies}}
+    <img src="{{image}}" alt="{{title}}">
+    <h1>{{title}}</h1>
+    <a href="/details/{{_id}}">See link</a>
+
+    {{/each}}
+</div> --}}
+
+<div class="container justify-content-space-between">
+
+    <div class="mycard">
+        {{#each movies}}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{image}}" alt="{{title}}">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a href="/details/{{_id}}">See link</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
