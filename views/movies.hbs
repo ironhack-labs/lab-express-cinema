@@ -1,0 +1,16 @@
+<div class="row">
+    {{#each movies}}
+        <div class="m-3 col-sm-2">
+            <div class="card bg-dark text-white mt-2" style="width: 16rem;">
+                <img src="{{ image }}" class="card-image card-img-top" alt="Artist Image">
+                <div class="card-body">
+                    <p>{{ title }}</p>
+
+                    <a href="/movie/{{ _id }}">
+                        <button class="btn btn-light">See more</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
