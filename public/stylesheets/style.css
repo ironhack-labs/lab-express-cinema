@@ -1,8 +1,44 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  align-items: center;
+}
+
+.card {
+  margin: auto
 }
 
 a {
-  color: #00B7FF;
+  color: #0d0e0f;
+}
+
+.mainPage {
+  padding-top: 100px;
+  background-image: url('../images/cinema.jpg');
+  padding-bottom: 800px;
+  padding-left: 300px;
+  padding-right: 300px;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-items: center;
+  background-size: 100%;
+
+}
+
+
+.mainPage h1 {
+  text-align: left;
+
+  color: white;
+  font-size: 5em;
+  font-weight: bolder;
+}
+
+.mainPage a {
+  font-size: 3em;
+  border-color: #0d0e0f;
+  opacity: 50%;
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 13px;
 }
