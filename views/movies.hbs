@@ -1,0 +1,17 @@
+<div class="container">
+
+    <h1 class="ironMovies">IRON HACK MOVIES</h1>
+    <h2 class="cartelera">Click on the movies to check the showtimes!</h2>
+    <div class="row">
+        {{#each movies}}
+        <div class="col-md-4">
+
+            <img class="photoCartelera" src="{{image}}" alt="{{title}}">
+            <p class="titleCartelera">{{title}}</p>
+            <p class="linkCartelera"><a href="/movie/{{_id}}">See more</a></p>
+
+        </div>
+        {{/each}}
+    </div>
+
+</div>

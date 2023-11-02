@@ -1,8 +1,54 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.homeTitle {
+    padding-left: 50%;
+    padding-top: 20%;
 }
 
-a {
-  color: #00B7FF;
+.appTitle {
+    font-size: 64px;
+    color: white;
+}
+
+.btn {
+    width: 250px;
+    background: red;
+    border-radius: 360px;
+    background-color: white;
+    color: rgb(21, 93, 121)
+}
+
+.ironMovies {
+    padding-top: 10px;
+}
+
+.cartelera {
+    padding-bottom: 25px;
+}
+
+.photoCartelera {
+    box-shadow: 2px 2px;
+    display: block;
+    margin: auto;
+
+}
+
+.titleCartelera {
+    padding-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.linkCartelera {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.movieInfo {
+    padding: auto 0;
+}
+
+.photoInfo {
+    padding-top: 35px;
+    display: block;
+    margin: auto;
 }
