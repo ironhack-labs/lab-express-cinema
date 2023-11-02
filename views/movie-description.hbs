@@ -1,0 +1,27 @@
+<div class="containe">
+    <div class="row">
+        <a href="/movies">Go Back!!</a>
+        {{#each movie}}
+        <div class="col-md-4">
+            <img src="{{image}}" alt="{{title}}">
+        </div>
+        <div class="col-md-8">
+
+            <p>
+            <h1>{{title}}</h1>
+            </p>
+            <p>
+            <h2>{{director}}</p>
+            </h2>
+            <p>
+            <ul>
+                {{#each stars}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            </p>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
