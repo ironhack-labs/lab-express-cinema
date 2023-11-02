@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row rowMoviesInfo">
+        <div class="col-4">
+            <img src="{{image}}" alt="foto" class="imgOneMovie">
+        </div>
+        <div class="col-8">
+            <h4>{{title}}</h4>
+            <p>Director: {{director}}</p>
+            {{#each stars }}
+            <li>{{this}}</li>
+            {{/each}}
+            <p class="description">{{description}}</p>
+            {{#each showtimes}}
+            <li>{{this}}</li>
+            {{/each}}
+        </div>
+    </div>
+    <a href="/" class="btn btn-primary buttonBack"> Back to home page</a>
+</div>
