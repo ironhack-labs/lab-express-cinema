@@ -1,14 +1,24 @@
-<h1>Ironhack cinema</h1>
+<h1>Ironhack Cinema</h1>
 <p>click on the movie</p>
-<hr>
-{{#each movies}}
 
 
-<img src={{image}} alt="">
-<p>{{title}}</p>
+<div class="row">
 
-<p>
-    <a href='/movies/detalles/{{_id}}'>see more</a>
-</p>
+    {{#each movies}}
+
+    <div class="col-md-3">
+
+        <div class="card mt- movie-card">
+            <img src="{{image}}" class="card-img-top" alt=""">
+            <div class=" card-body">
+            <h4 class="card-title">{{title}}</h4>
+            <a href='/movies/detalles/{{_id}}'>see more</a>
+        </div>
+    </div>
+
+
+</div>
 
 {{/each}}
+
+</div>
