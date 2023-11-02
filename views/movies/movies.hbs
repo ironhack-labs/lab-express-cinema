@@ -1,0 +1,14 @@
+<h1>Ironhack cinema</h1>
+<p>click on the movie</p>
+<hr>
+{{#each movies}}
+
+
+<img src={{image}} alt="">
+<p>{{title}}</p>
+
+<p>
+    <a href='/movies/detalles/{{_id}}'>see more</a>
+</p>
+
+{{/each}}
