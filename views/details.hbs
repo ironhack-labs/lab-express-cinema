@@ -1,0 +1,59 @@
+{{!-- <div class="container">
+    <h1> Details of the movies!!</h1>
+    <a href="/"> Go back</a>
+    <hr>
+
+    <div class="row">
+        {{#each movies}}
+
+        <div class="col">
+
+            <img src="{{image}}">
+
+            <h1> {{title}}</h1>
+
+            <p> {{director}}</p>
+
+            <p> {{stars}}</p>
+
+            <p> {{description}}</p>
+
+            <p> {{showtimes}}</p>
+
+
+
+        </div>
+        {{/each}}
+
+
+    </div>
+
+</div> --}}
+<div class="container">
+    <h1> Details of the movies!!</h1>
+    <a href="/"> Go back</a>
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+
+            <div class="col-md-4">
+                <img src="{{image}}" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text">{{director}}</p>
+                    {{#each stars}}
+                    <p>{{this}}</p>
+                    {{/each}}
+                    <p class="card-text">{{description}}</p>
+                    <p class="card-text">{{showtimes}}</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
