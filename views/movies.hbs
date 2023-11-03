@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+
+
+        <div class="card mt-5 mo">
+            {{#each movie }}
+            <img src={{image}} class="card-img-top" alt="{{title}} {{info}}">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a href="/movies/{{_id}}" class="btn btn-info buttonsAlbums"> Link to tracks </a>
+
+                {{/each }}
+
+            </div>
+
+        </div>
+    </div>
