@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-sm-6">
+        <img src="{{image}}" alt="">
+    </div>
+    <div class="col-sm-6">
+        <a href="/movies">Go back</a>
+        <h1>{{title}}</h1>
+        <h3>{{director}}</h3>
+        <h5>Stars</h5>
+        <ul>
+        {{#each stars}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+
+        <p>{{description}}</p>
+
+        <div class="row">
+            {{#each showtimes}}
+                <div class="col-sm-1">
+                    <p>{{this}}|</p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    
+</div>
