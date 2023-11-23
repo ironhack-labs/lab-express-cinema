@@ -1,7 +1,18 @@
-<h3>Click on the movie to check the showtimes!</h3>
-{{#each movies}}
-<img src="{{image}}">
-<p>{{title}}</p>
- <a href="details"> See more</a>
-{{/each}}
+<body>
+  <div class="container">
+    <div class="titles">
+      <h1>📽️ Ironhack Cinema 🍿</h1>
+      <h3>Click on the movie to check the showtimes!</h3>
+    </div>
 
+    <div class="movies-container">
+      {{#each movies}}
+      <div class="movie">
+        <img src="{{image}}">
+        <p>{{title}}</p>
+        <a href="details/{{_id}}" class="button">See more</a> 
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</body>

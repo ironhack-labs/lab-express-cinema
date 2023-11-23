@@ -1,3 +1,8 @@
+const mongoose = require('mongoose')
+
+const Movie = require('../models/Movie.model')
+
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Lab-express-cinema'
 
 const movies = [
     {
@@ -82,14 +87,6 @@ const movies = [
     }
   ];
 
-const Movie = require('../models/Movie.model')
-
-const mongoose = require('mongoose')
-
-
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/lab-express-cinema'
-
-
 
   mongoose
   .connect(MONGO_URI)
@@ -100,7 +97,7 @@ const MONGO_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/lab-expr
     return Movie.create(movies);
   })
   .then(moviesFromDB => {
-    console.log(`Created ${moviesFromDB.length} movies`);
+    console.log(`Created ${moviesFromDB.length} books`);
 
     
     return mongoose.connection.close();

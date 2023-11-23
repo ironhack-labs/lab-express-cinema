@@ -1,16 +1,14 @@
 body {
-  padding: 5%;
+  margin: 0;
   font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url('../images/cinema.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100%;
-  margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
+  min-height: 100vh;
 }
 
 a {
@@ -18,7 +16,13 @@ a {
 }
 
 .container {
-  text-align: center; 
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .button a {
@@ -41,6 +45,98 @@ h2 {
   color: #ffffff;
 }
 
+
+h3  {
+  font-size: 80px;
+  color: #ffffff;
+}
+
 p {
   color: #ffffff;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 50%; 
+  box-sizing: border-box; 
+  padding: 10px;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #dddddd;
+  text-decoration: none;
+  color: rgb(29, 159, 182);
+  font-size: 20px; 
+  border: none; 
+  transition: background-color 0.3s ease;
+  overflow: hidden; 
+}
+
+.button:hover {
+  background-color: #cccccc;
+ 
+}
+
+
+
+.titles {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.titles h1 {
+  font-size: 40px; 
+}
+
+.titles h3 {
+  font-size: 20px; 
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.movie {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  max-width: 200px; 
+}
+
+.movie img {
+  max-width: 100%;
+  height: auto;
+}
+
+#go-back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #dddddd;
+  text-decoration: none;
+  color: rgb(29, 159, 182);
+  font-size: 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#go-back-button:hover {
+  background-color: #cccccc;
 }

@@ -1,28 +1,44 @@
 const express = require('express');
-const Movie = require('../models/Movie.model');
 const router = express.Router();
+const Movie = require('../models/Movie.model');
 
 /* GET home page */
 router.get('/', (req, res, next) => res.render('index'));
 
-/* router.get('/movies', (req, res, next) => {
-    console.log("entro")
+router.get('/movies', (req, res, next) => {
+
     Movie
-    .find()
-    .then(movies => {
-        res.render('movies', { movies })
+        .find()
         
-    })
-    .catch(err => console.log('error in movies', err))
-}) */
+        .then(movies => {
+            res.render('movies', { movies })
+            console.log(movies)
 
 
-router.get('/movies',async (req, res, next) => {
-    try { console.log("hola")
-        const movies = await Movie.find()
-        console.log(movies)
-    } catch(err) {console.log(err)}
+
+        })
+        .catch(err => console.log('error in movies', err))
 })
+
+
+router.get('/details/:id', (req, res, next) => {
+    const id = req.params.id; 
+
+    Movie
+        .findById(id)
+        .then(movie => {
+            if (!movie) {
+                return res.status(404).send('Movie not found');
+            }
+            res.render('details', { movie }); 
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+        });
+});
+
+
 
 
 module.exports = router;
