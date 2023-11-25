@@ -1,0 +1,9 @@
+<h2>Movies</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
+  {{#each movies as |movie|}}
+    <div class="col">
+      {{> card movie = movie}}
+    </div>
+  {{/each}}
+</div>
