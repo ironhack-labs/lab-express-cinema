@@ -1,0 +1,28 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="d-flex">
+    <div>
+      <img
+        class="img-fluid"
+        src="{{movie.image}}"
+        alt=""
+        style="width: 50vw;"
+      />
+    </div>
+    <div class="mx-5">
+      <a class="btn btn-primary" href="/movies">Go back</a>
+      <h3>{{movie.title}}</h3>
+      <h4><strong>Director: </strong>{{movie.director}}</h4>
+      <h5>Stars</h5>
+      <ul>
+        {{#each movie.stars as |star|}}
+          <li>{{star}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Description: </strong> {{movie.description}}</p>
+      <div>
+        {{#each movie.showtimes as |showtime|}}
+          <p class="d-inline"> {{showtime}} |</p>
+        {{/each}}
+      </div>
+    </div></div>
+</div>
