@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB_NAME = "movies-bd";
+const DB_NAME = "lab-express-cinema";
 const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017";
 
 mongoose

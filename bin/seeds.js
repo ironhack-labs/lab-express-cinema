@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Movie = require('../models/Movie.model');
-const MONGODB_URI = 'mongodb://127.0.0.1:27017/movies-bd';
+const MONGODB_URI = 'mongodb://127.0.0.1:27017/lab-express-cinema';
 const moviesData = require('../constants/moviesData');
 
 // Conectarnos a la base de datos
