@@ -1,0 +1,22 @@
+<div class="container my-3 row row-cols-1 row-cols-md-2 g-4">
+    <div class="d-flex justify-content-center">
+      <img class="img-fluid" src="{{movie.image}}" alt="{{movie.title}}" />
+    </div>
+    <div class="col">
+      <div class="">
+        <div>
+          <h3>{{movie.title}}</h3>
+          <p>Director: {{movie.director}}</p>
+          <p><b>Stars:</b>
+          {{#each movie.stars}}
+            <p>- {{this}}</p>
+          {{/each}}
+          </p>
+          <p>{{movie.description}}</p>
+          <p>Screening times:<br>{{movie.showtimes}}</p>
+        </div>
+      </div>
+  <a href="/movies" class="btn btn-info">Go back</a>
+    </div>
+  </div>
+</div>
