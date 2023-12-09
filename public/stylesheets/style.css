@@ -4,5 +4,59 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+#main-body {
+  background-image: url(../images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-header-button {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 15%; */
+  align-items: flex-start;
+  margin-left: 50%;
+}
+#main-header-button h1 {
+  color: white;
+  font-size: 4rem;
+  width: 20%;
+}
+#main-header-button button {
+  width: 50%;
+  height: 80px;
+  border-radius: 90px;
+}
+button a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+#mov-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#mov-self {
+  margin: 3% 8%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#details-body {
+  display: flex;
+}
+#mov-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+ul {
+  margin: 0;
+  text-align: left;
+  padding: 0 0 0 20px;
+
+  /* margin-block-start: 0; */
+  /* padding: 25 px; */
 }
