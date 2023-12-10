@@ -1,0 +1,31 @@
+<section id="movie-details">
+    <header>
+        <a href="/movies">{{actionButtonLabel}}</a>
+    </header>
+    <main>
+        <div>
+            <img src="{{movie.image}}" alt="poster of {{movie.title}}" >
+        </div>
+        <div>
+            <h1>{{movie.title}}</h1>
+            <h3>Director: {{movie.director}}</h3>
+            <em>Stars</em>
+            <ul>
+                {{#each movie.stars}}
+                    <li>
+                        {{this}}
+                    </li>
+                {{/each}}
+            </ul>
+            <p>
+                {{movie.description}}
+            </p>
+            <p>
+                {{#each movie.showtimes}}
+                    <span>{{this}} |</span>
+                {{/each}}
+            </p>
+        </div>
+
+    </main>
+</section>

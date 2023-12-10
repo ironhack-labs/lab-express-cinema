@@ -22,7 +22,7 @@ router.get('/movie/:id', (req, res, next) => {
     const id = req.params.id;
     moviesModel.findById(id)
     .then((movie) => {
-        res.render('movies', { actionButtonLabel: "< Go back", movie })
+        res.render('movie-details', { actionButtonLabel: "< Go back", movie })
     })
     .catch((err) => {
         console.error(err);
