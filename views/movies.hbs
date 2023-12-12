@@ -1,0 +1,14 @@
+<section id="movie-list">
+    <h1>{{pageTitle}}</h1>
+    <p>{{pageSubtitle}}</p>
+
+    <article class="movie-list-container">
+        {{#each movies}}
+            <article>
+                <img src="{{image}}">
+                <h4>{{title}}</h4>
+                <a href="/movie/{{id}}">{{@root.actionButtonLabel}}</a>
+            </article>
+        {{/each}}
+    </article>
+</section>
