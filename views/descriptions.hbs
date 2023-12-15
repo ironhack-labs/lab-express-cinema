@@ -1,0 +1,29 @@
+
+<div class="descriptions">
+        <a href="/movies" type="submit" class="btn btn-primary">Go back</a>
+        <div class="info">
+            <div class="photo">
+                <img src="{{image}}" class="image" alt="{{title}}">
+            </div>
+            <div class="text">
+                <h2>{{title}}</h2>
+                <p>Director: {{director}}</p>
+                <p>Stars
+                    <ul>
+                        {{#each stars}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </p>
+                <p>Description: {{description}}</p>
+                <p>Showtimes
+                    <ul>
+                        {{#each showtimes}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
