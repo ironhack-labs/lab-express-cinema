@@ -94,6 +94,10 @@ const movies = [
     .connect(MONGO_URI)
     .then(x => {
         console.log(`Connected to Mongo Database: "${x.connections[0].name}"`);
+        return Movie.deleteMany();
+    })
+    .then(() => {
+        console.log('Movies deleted');
         return Movie.create(movies);
     })
     .then(moviesFromDB => {
