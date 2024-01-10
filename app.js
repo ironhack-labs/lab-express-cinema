@@ -15,6 +15,11 @@ const hbs = require('hbs');
 
 const app = express();
 
+// 1. require the body-parser
+const bodyParser = require('body-parser');
+// 2. let know your app you will be using it
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
 

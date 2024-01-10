@@ -1,8 +1,113 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+#home-page{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./../images/cinema.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#home-elements{
+  padding: 60px;
+  width: 500px;
+  margin-bottom: 175px;
+}
+
+#home-elements h1{
+  color: white;
+  font-size: 100px;
+
+}
+
+#home-elements a{
+  color: rgb(24, 113, 142);
+  background-color: white;
+  border: white 1px solid;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+#title{
+  font-size: 25px;
+  padding: 5px 50px;
+}
+
+#intro-par{
+  font-size: 20px;
+  padding: 0px 50px;
+}
+
+#movie-details{
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+#movie-details img{
+  width: 400px;
+}
+
+#movie-info{
+  margin: 100px;
+}
+
+#stars{
+  padding: 0px 12px;
+}
+
+#showtimes{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+#movies{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.movie-card{
+  margin: 40px 80px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#add-btn{
+  background-color: rgb(24, 113, 142);
+  color: white;
+  border: white 1px solid;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 25px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+#btn{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
 }
