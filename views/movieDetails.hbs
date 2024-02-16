@@ -1,0 +1,30 @@
+
+<main class="d-flex justify-content-center align-items-center vh-100">
+  <section class="me-5">
+    <img src="{{movie.image}}" class="shadow" alt="{{movie.title}} Image">
+  </section>
+
+  <section class="movieContent">
+    <div class="card-body">
+      <a href="/movies" class="">Go back</a>
+      <h2 class="fw-bold">{{movie.title}}</h2>
+      <h4 class="fw-bolder">Director: {{movie.director}}</h4>
+      <h5 class="fw-bolder">Stars</h5>
+      <ul>
+        {{#each movie.stars}}
+          <li class="fw-medium">{{this}}</li>
+        {{/each}}
+      </ul>
+      <p class="fw-medium">{{movie.description}}</p>
+      <div class="d-flex">
+        {{#each movie.showtimes}}
+          {{#if @first}}
+            <p class="fw-medium">{{this}}&nbsp;|</p>
+          {{else}}
+            <p class="fw-medium">&nbsp;{{this}}&nbsp;| </p>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+</main>

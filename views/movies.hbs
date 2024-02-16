@@ -1,0 +1,19 @@
+
+<section class="d-flex flex-column justify-content-start ms-5 mb-5 mt-4">
+  <h2 class="fw-bold ms-5 mb-3">Ironhack Cinema</h2>
+  <h5 class="ms-5">Click on the movie to check the showtimes!</h5>
+</section>
+
+<section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+  {{#each movies}}
+    <div class="col mb-5">
+      <div class="moviesCard text-center">
+        <img src="{{image}}" class="shadow" alt="{{title}}">
+        <div class="d-flex flex-column align-items-center">
+          <h5 class="card-title fw-bold my-3">{{title}}</h5>
+          <a href="/movies/{{_id}}" class="card-link">See more</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</section>
