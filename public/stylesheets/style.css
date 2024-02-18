@@ -6,3 +6,10 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index {
+  background-image: url('../images/cinema.jpg');
+  background-size: cover;
+  position: relative;
+  padding: 450px 450px
+}
