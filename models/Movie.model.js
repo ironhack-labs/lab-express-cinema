@@ -19,10 +19,7 @@ const movieSchema = new Schema(
     image: {
       type: String,
       minlength: [20, ""],
-      validate: {
-        validator: "isURL",
-        message: "the URL of image is not valid",
-      },
+      
     },
     description: {
       type: String,
