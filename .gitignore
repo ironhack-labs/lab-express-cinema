@@ -3,6 +3,12 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # Environment Variables should NEVER be published
 # For learning purposes, we keep .env available for you
