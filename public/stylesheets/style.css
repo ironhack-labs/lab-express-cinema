@@ -1,6 +1,14 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ 
+  font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+.container-movies {
+  height: 100vh;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 a {

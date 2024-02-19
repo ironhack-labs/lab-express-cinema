@@ -1,12 +1,16 @@
-
-<h1>hello</h1>
-
-{{#each movies as |movie|}}
-<div>
-    
-    <h5>{{movie}}</h5>
-   
-    
+<h1>List of movies</h1>
+<div class=" row ">
+  {{#each movies as |movie|}}
+    <div class="col-3 d-flex justify-content-between align-items-center">
+      <div class="card" style="width: 18rem; margin-top: 30px;">
+        <img src="{{movie.image}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{movie.title}}</h5>
+          <div style="z-index: 5">
+            <a href="/{{movie.id}}" class="btn btn-primary">See more</a>
+          </div>  
+        </div>
+      </div>
+    </div>
+  {{/each}}
 </div>
-
-{{/each}}
