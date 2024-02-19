@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card flex-row">
+        <img class="card-img-left example-card-img-responsive" src="{{movie.image}}" />
+        <div class="card-body">
+            <button type="button" class="btn btn-link" onclick="window.location.href='/movies'">Go back</button>
+
+            <h2 class="card-title h5 h4-sm">{{movie.title}}</h2>
+            <h3 style="font-size: 14px;">Director: {{movie.director}}</h3>
+            <ul>
+                {{#each movie.stars as |star|}}
+                    <li>{{star}}</li>
+                {{/each}}
+            </ul>
+            <p>{{movie.description}}</p>
+            <ul>
+                {{#each movie.showtimes as |showtime|}}
+                     <span class="showtime rounded-pill p-2 bg-success text-light">{{showtime}}</span>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
