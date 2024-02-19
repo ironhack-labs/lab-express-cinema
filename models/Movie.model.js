@@ -13,24 +13,23 @@ const movieSchema = new Schema(
       minlength: [5, "Director needs at least 5 chars"],
     },
     stars: {
-      type: [],
+      type: [String],
       required: [false],
     },
     image: {
       type: String,
       minlength: [20, ""],
-      
     },
     description: {
       type: String,
       minlength: [30, "The description could be more than 30 chars "],
     },
     showtimes: {
-      type: [],
+      type:[String]
     },
   },
   { timestamps: true }
 );
 
-const Movie = mongoose.model("Movie",movieSchema);
-module.exports = Movie
+const Movie = mongoose.model("Movie", movieSchema);
+module.exports = Movie;

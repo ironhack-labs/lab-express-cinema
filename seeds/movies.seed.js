@@ -1,4 +1,5 @@
 
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -83,5 +84,13 @@ const movies = [
   ];
   
   // Add here the script that will be run to actually seed the database (feel free to refer to the previous lesson)
+  require('dotenv').config();
+  require('../db/index')
+  const Movie = require('../models/Movie.model')
   
+  
+
+  Movie.create(movies)
+    .then((movies) => console.log (`${movies.length} movies created`))
+    .catch((error) => console.error(error))
   // ... your code here
