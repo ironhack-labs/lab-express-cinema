@@ -1,0 +1,25 @@
+{{> navbar}}
+
+<h1 class="container" style="margin-top:30px">All our movies</h1>
+<div class="container" style="margin-top:30px">
+    <div class="row gy-4" style="justify-content: space-around">
+        {{#each movies}}
+        <div class="col-5 d-flex">
+            <div class="card mb-3" style="max-height: 260px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="{{image}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text description">{{description}}</p>
+                    <a href="/misc/{{id}}" class="btn btn-primary">Details</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
