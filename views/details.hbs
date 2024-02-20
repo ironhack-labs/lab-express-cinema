@@ -1,0 +1,18 @@
+<div class="container d-flex py-4">
+  <div>
+    <img src="{{movie.image}}" alt="...">
+  </div>
+  <div class="mx-4">
+    <a href="/movies">Go back</a>
+    <h2>{{movie.title}}</h2>
+    <h4>Director: {{movie.director}}</h4>
+    <h5>Stars</h5>
+    <ul>
+        {{#each movie.stars as |star|}}
+        <li>{{star}}</li>
+        {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p><small class="text-body-secondary">Show times: {{movie.showtimes}}</small></p>
+  </div>
+</div>
