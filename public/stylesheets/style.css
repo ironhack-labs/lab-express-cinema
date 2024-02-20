@@ -1,8 +1,12 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(255, 255, 255)!important;
 }
 
-a {
-  color: #00B7FF;
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+ 
 }
