@@ -6,4 +6,8 @@ npm-debug.log
 
 # Environment Variables should NEVER be published
 # For learning purposes, we keep .env available for you
-# .env
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
