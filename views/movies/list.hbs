@@ -1,0 +1,11 @@
+<div class="container d-flex flex-row m-3">
+    {{#each movies as |movie|}}
+    <div class="card m-2" style="width: 18rem;">
+        <img src="{{movie.image}}" class="card-img-top" alt="{{movie.title}} image">
+        <div class="card-body">
+            <h5 class="card-title">{{movie.title}}</h5>
+            <a href="/movies/{{movie.id}}" class="btn btn-primary">See more</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
