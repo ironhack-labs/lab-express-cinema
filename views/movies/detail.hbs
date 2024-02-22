@@ -1,0 +1,24 @@
+<a href="/movies" class="stretched-link">Go back</a>
+
+<div class="container"> 
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{{movie.image}}" alt="{{movie.title}}" class="img-fluid" />
+        </div>
+        <div class="col-md-8" >
+            <h1><strong>{{movie.title}}</strong></h1>
+            <h2><strong> Director:{{movie.director}}</strong></h2>
+            <p><strong> Stars:</strong></p>
+                <ul>
+                    {{#each movie.stars as |star|}}
+                    <li>{{star}}</li>
+                    {{/each}}
+                </ul>
+            <p> {{movie.description}}</p>
+            <p>{{movie.showtimes}}</p> 
+        </div>
+    </div>
+</div>
+
+
+
