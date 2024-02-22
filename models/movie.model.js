@@ -12,7 +12,7 @@ const movieSchema = new Schema (
             type: String
         },
         stars: {
-            type: String
+            type: [String]
         },
         image: {
             type: String

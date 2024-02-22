@@ -3,7 +3,11 @@ const mongoose = require('mongoose');
 
 module.exports.list = (req, res, next) => {
     Movie.find()
-        .then((movies) => res.render('movies/list', {movies}))
+        .then((movies) => {
+            console.log(movies)
+            res.render('movies/list', {movies})
+        
+        })
         .catch((error) => console.error(error));
 }
 

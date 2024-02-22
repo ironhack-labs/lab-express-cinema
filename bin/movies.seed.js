@@ -1,5 +1,5 @@
 require('dotenv/config');
-require('../config/db.config');
+require('../configs/db.config');
 
 const Movie = require('../models/movie.model');
 
