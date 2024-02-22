@@ -4,12 +4,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="row">
-                {{#each Movies}}
+                {{#each movies as |movie|}}
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="{{image}}" alt="imagen"></td>
+                        <img src="{{movie.image}}" alt="{{movie.title}}"></td>
                         <div class="card-body">
-                            <h5 class="card-title">{{title}}</h5>
+                            <h5 class="card-title">{{movie.title}}</h5>
                         </div>
                     </div>
                     <a href="/movie/{{_id}}">View details</a>

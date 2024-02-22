@@ -1,3 +1,7 @@
+require('../db/index')
+
+const Movie = require('../models/Movie.model')
+
 const movies = [
     {
       title: "A Wrinkle in Time",
@@ -81,5 +85,8 @@ const movies = [
     }
 ];
 
-const mongoose = require('mongoose');
+Movie.create(movies) 
+    .then((movies) => console.log(`${movies.length} movies created`))
+    .catch((error) => console.error(error));
+
 
