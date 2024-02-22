@@ -1,22 +1,19 @@
-<h1>Ironhack Cinema</h1>
-<p>Click on the movie to check the showtimes!</p>
-
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
-    <ul class="list-group">
+    <h1><strong>Ironhack Cinema</strong></h1>
+    <p>Click on the movie to check the showtimes!</p>
+
+    <div class="row">
         {{#each movies as |movie|}} 
-        <div class="col">
-        <div class="card">
-            <img src="{{movie.image}}" class="card-img-top img-fluid" alt="{{movie.title}}" />
-            <div class="card-body">
-            <h5 class="card-title">{{movie.title}}</h5>
-            <a href="/movies/{{movie.id}}" class="stretched-link">See more</a>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{movie.image}}" class="card-img-top img-fluid" alt="{{movie.title}}" />
+                    <div class="card-body">
+                        <h5 class="card-title">{{movie.title}}</h5>
+                        <a href="/movies/{{movie.id}}" class="stretched-link">See more</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
         {{/each}}
-    </ul>
     </div>
 </div>
-
 
