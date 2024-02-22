@@ -1,0 +1,19 @@
+<div class="container d-flex flex-column align-items-center mt-4">
+    <img src="{{movie.image}}" alt="image">
+    <h1>{{movie.title}}</h1>
+    <h2>Director: {{movie.director}}</h2>
+    <h2>Stars:</h2>
+    <ul>
+        {{#each movie.stars as |star|}}
+        <li>{{star}}</li>
+        {{/each}}
+    </ul>
+    <h2>Description:</h2>
+    <p>{{movie.description}}</p>
+    <h2>Showtimes:</h2>
+    <div class="d-flex justify-content-center">
+        {{#each movie.showtimes as |showtime|}}
+        <h3 class="m-3">| {{showtime}} | </h3>
+        {{/each}}
+    </div>
+</div>
