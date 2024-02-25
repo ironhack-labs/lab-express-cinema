@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div>
+            <a href="/movies" role="button">Go back</a>
+        </div>
+
+        <div>
+            <div class="card-body">
+                <img src="{{movie.image}}">
+                <h1 class="card-title">{{movie.title}}</h1>
+                <h3 class="card-text">Director: {{movie.director}}</h3>
+                <h3 class="card-text">Stars</h3>
+                {{#each movie.stars as |stars|}}
+                <ul>
+                    <li>{{stars}}</li>
+                </ul>
+                {{/each}}
+                <p class="card-text">{{movie.description}}</p>
+
+                <div>
+                    {{#each movie.showtimes as |showtimes|}}
+                        <p>{{showtimes}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
