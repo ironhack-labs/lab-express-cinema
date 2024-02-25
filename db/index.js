@@ -16,4 +16,5 @@ mongoose.connect(MONGODB_URI)
     console.log(`Created ${moviesFromDB.length} movies`)
     return mongoose.connection.close()
   })
-  .catch((error) => {console.error(`An error ocurred trying to connect to the database`, error)});
+  .catch((error) => {console.error(`An error ocurred trying to connect to the database`, error);
+});
