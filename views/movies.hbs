@@ -1,0 +1,14 @@
+<div class="d-flex flex-wrap">
+
+  {{#each movies as |movie|}}
+  <div class="card m-4" style="width: 18rem;">
+    <img class="card-img-top" src="{{movie.image}}" alt="{{movie.title}}">
+    <div class="card-body">
+      <h5 class="card-title">{{movie.title}}</h5>
+
+      <a href="/movies/{{movie.id}}" class="btn btn-primary">View</a>
+    </div>
+
+  </div>
+  {{/each}}
+</div>
