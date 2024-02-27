@@ -1,0 +1,18 @@
+<a href="/movies" class="btn btn-primary">go back</a>
+
+<div class="card m-4 d-flex flex-row w-50">
+  <img src="{{movie.image}}" alt="{{movie.title}}" class="img-fluid" style="max-width: 200px; flex-shrink: 0;">
+  <div class="card-body">
+    <h5 class="card-title">{{movie.title}}</h5>
+    <h3>Director: {{movie.director}}</h3>
+    <p><strong>Stars:</strong></p>
+    <ul>
+      {{#each movie.stars as |star|}}
+          <li>{{star}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>{{movie.showtimes}}</p>
+  </div>
+</div>
+
