@@ -1,17 +1,15 @@
 <div class="container">
     <div class="row">
-        <h1>Ironhack Cinema</h1>
-        <br>
-        <h2>Click on the movie to check the showtimes</h5>
-
         {{#each movies}}
-        
-        <div class="card">
-            <div class="col-4">
-            <img src="{{image}}" alt="img">
-            <h3>{{title}}</h3>
-            <a href="/moviedetails/{{id}}"><button type="button" class="btn btn-light">SEE MORE</button></a>
-            </div>
+        <div class="col-md-4">
+            <div class = "card mb-4">
+                <img src = "{{image}}" class = "card-img-top" alt = "{{title}}">
+                <div class="card-body">
+                    <h5 class ="card-title">{{title}}</h5>
+                    <a href ="/moviedetails/{{_id}}" class ="btn btn-primary">See More</a>
+
+                </div>
+             </div>
         </div>
         {{/each}}
     </div>

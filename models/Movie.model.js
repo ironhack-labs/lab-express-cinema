@@ -2,16 +2,28 @@ const { Schema, model} = require('mongoose')
 
 const movieSchema = new Schema(
     {
-    title: String,
-    director: String,
-    stars: [String],
-    image: String,
-    description: String,
-    showtimes: [String]
+    title: {
+        type:String
+    },
+    director: {
+        type: String
+    },
+    stars:{
+        type: [String]
+    },
+    image: {
+        type:String
+    },
+    description: {
+        type:String
+    },
+    showtimes: {
+        type: [String]
+    },
 
 },
 
-    {timestaps:true}
+    {timestaps: true}
 )
 
-module.export = model('Movie', movieSchema)
+module.exports = model('Movie', movieSchema)

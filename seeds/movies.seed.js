@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-
 const Movie = require('./../models/Movie.model')
+require('../db/index')
 
 const movies = [
     {
@@ -105,3 +105,12 @@ mongoose
     .catch(err =>{
         console.log(`An error occured while creating movies from the DB: ${err}`)
     })
+    .finally(() => {
+        mongoose.connection.close()
+            .then(() => {
+                console.log('DB connection closed!');
+            })
+            .catch(err => {
+                console.error(`An error occurred while closing the database connection: ${err}`);
+            });
+    });
