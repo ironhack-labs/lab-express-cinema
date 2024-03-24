@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h1 class="">Details of {{movie.title}}</h1>
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{movie.image}}" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{movie.title}}</h5>
+          <p class="card-text"><small class="text-muted">directed by
+              {{movie.director}}</small></p>
+          <p class="card-text">{{movie.description}}</p>
+          <p class="card-text"><small class="text-muted">Line up:
+              {{movie.stars}}</small></p>
+
+          <select
+            class="form-select"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected>Choose your showtime</option>
+            {{#each movie.showtimes}}
+            <option value="1">{{this  }}</option>
+            {{/each}}
+          </select>
+          <a href="/movies" class="btn btn-primary mt-2">Go movies list</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
