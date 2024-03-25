@@ -3,6 +3,45 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#written-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#title {
+  color: white;
+  font-size: -webkit-xxx-large;
+  width: min-content;
+}
+
+#button-movies {
+  background-color: white;
+  color: #00b7ff;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-right: 5%;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.image-movie-details {
+  padding-right: 45px;
+}
+
+.text-movie-details {
+  width: 70%;
+}
+
+.showtimes-movie-details {
+  padding: 0px;
+}
+
+.stars-movie-details {
+  padding: 0px 15px;
 }

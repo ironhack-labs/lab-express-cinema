@@ -1,0 +1,36 @@
+<style>
+    body {
+        display: flex;
+    }
+</style> 
+<div>
+    <img class="image-movie-details" src="{{image}}" alt="{{title}}">
+</div>
+<div class="text-movie-details">
+    <a href="/movies">Go back</a>
+    <h1>{{title}}</h1>
+    <h2>{{director}}</h2>
+    <h3>Stars</h3>
+    <ul class="stars-movie-details">
+        {{#each stars}}
+        <li>{{ this }}</li>
+        {{/each}}
+    </ul>
+    <p>{{description}}</p>
+     <ul class="showtimes-movie-details">
+        {{#each showtimes}}
+        <span>{{ this }} |</span>
+        {{/each}}
+    </ul>
+  
+
+    
+
+{{!-- <hr>
+<p>Written by: {{movie.author}}</p>
+<p>Summary: {{movie.description}}</p>
+<p>Rating: {{movie.rating}}/10</p>
+<hr> --}}
+
+</div>
+
