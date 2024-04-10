@@ -6,3 +6,65 @@ body {
 a {
   color: #00B7FF;
 }
+
+#main {
+  box-sizing: border-box;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  height: 800px;
+}
+
+#secondary {
+  text-align: right;
+  color: white;
+  padding: 150px;
+}
+
+button#movies {
+  width: 200px;
+  border-radius: 100px;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  font-size: 16px;
+}
+
+#secondary > h1 {
+  font-size: 80px;
+  text-wrap: wrap;
+}
+
+.movie-card > img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card {
+  padding:15px;
+}
+.movie-card > p,a {
+  text-wrap: wrap;
+  width: 200px;
+  text-align: center;
+}
+
+#movie-list {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 15px;
+}
+
+#movie-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+#movie-details > img {
+  width: 400px;
+}
+
+#showtimes > p {
+  display: inline;
+}
