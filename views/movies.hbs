@@ -1,0 +1,13 @@
+<div class="grid grid-cols-3 gap-3">
+    {{#each movies}}
+        <div class="flex flex-col items-center justify-center ">
+            {{#if this.image.length}}
+            {{!-- Foto del artista con this.image.0.url --}}
+            <img class="m-3" src="{{this.image}}" alt="" width="300">
+            {{/if}}
+            <p>{{this.title}}</p>
+            <a class="text-blue-400 m-2" href="/movies/{{this._id}}">See more</a>
+        </div>
+    {{/each}}
+    </div>
+</div>
