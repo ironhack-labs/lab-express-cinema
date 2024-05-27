@@ -1,0 +1,16 @@
+<div class="flex">
+  <img src="{{movie.image}}" alt="{{movie.title}}" />
+  <div>
+    <a class="underline text-cyan-600" href="/movies">Go Back</a>
+    <h2 class="text-2xl font-bold">{{movie.title}}</h2>
+    <p><strong>Director:</strong> {{movie.director}}</p>
+    <p><strong>Stars:</strong></p>
+    <ul class="list-disc ml-5">
+      {{#each movie.stars}}
+        <li >{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Description:</strong> {{movie.description}}</p>
+    <p><strong>Showtimes:</strong> {{movie.showtimes}}</p>
+  </div>
+</div>

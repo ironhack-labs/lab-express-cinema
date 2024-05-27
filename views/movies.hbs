@@ -1,0 +1,9 @@
+<ul class="flex justify-around flex-wrap">
+  {{#each movies}}
+    <div class="appearance-auto  w-1/3 flex justify-center items-center flex-col">
+      <img src="{{image}}" alt="Movie-image" />
+      <li class="font-bold">{{title}}</li><br>
+      <a class="underline text-cyan-600" href="/movies/{{_id}}">See more</a>
+    </div>
+  {{/each}}
+</ul>
