@@ -1,0 +1,23 @@
+<div class="contanier">
+    <div class="row movie-card">
+        <div class="col-md-4">
+            <img src="{{movie.image}}" alt="Movie Image" class="movie-image"/>
+         </div>
+    </div class="cold-md-8">
+        <h2>{{movie.tilte}}</h2>
+        <p class="movie-description">{{movie.description}}</p>
+        <div class="movie-star">
+            <strong>Stars:</strong>
+            {{#each movie.stars}}
+                <span class="badge badge-primary movie-star">{{this}}</span>
+            {{/each}}
+        </div>
+        <div class="movie-showtime">
+            <strong>Showtime:</strong>
+            <ul class="list-unstyled">
+                {{#each movie.showtimes}}
+                    <li>{{this}}</li>
+                {{/each}}    
+            </ul>
+        </div>
+    </div>
