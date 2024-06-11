@@ -1,0 +1,23 @@
+<div id="movie-page-container" class="overlay">
+  <div id="movie-container">
+    <div id="movie-container-img">
+      <img src="{{movie.image}}" alt="{{movie.title}}" />
+    </div>
+    <div id="movie-container-description">
+      <a href="/movies">Go back</a>
+      <h2>{{movie.title}}</h2>
+      <h3>Director {{movie.director}}</h3>
+      <h4>Stars</h4>
+      <ul>
+        {{#each movie.stars}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{movie.description}}</p>
+      <br />
+      {{#if movie.showtimes}}
+        <p> {{#each movie.showtimes}} {{this}} | {{/each}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>

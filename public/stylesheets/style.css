@@ -1,8 +1,163 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 80px;
+  color: #ffffff;
 }
 
 a {
-  color: #00B7FF;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #00008B;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #00008B;
+  color: #ffffff;
+}
+
+#home-page-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  float: right;
+  width: 40%;
+}
+
+#movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+#movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+#movie-card h4 {
+  color: #000000;
+  font-weight: bold;
+}
+
+#movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+#movie-card a {
+  margin-top: 20px;
+}
+
+#movie-card a:hover {
+  background-color: #00008B;
+  color: #ffffff;
+}
+
+#movie-card a:visited {
+  color: #00008B;
+}
+
+.overlay{
+  opacity: 1;
+  background-color:#ccc;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:1000;
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: none;
+}
+
+#movies-container {
+  margin-left: 50px;
+}
+
+#movies-page-container h2 {
+  color: #000000;
+}
+
+#movie-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+#movie-container-img {
+  width: 40%;
+  margin-top: 30px;
+}
+
+#movie-container-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+#movie-container-description img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+#movie-container-description a {
+  margin-top: 20px;
+}
+
+#movie-container-description a:hover {
+  background-color: #00008B;
+  color: #ffffff;
+}
+
+#movie-container-description a:visited {
+  color: #00008B;
+}
+
+#movie-container-description h2 {
+  color: #000000;
+  font-weight: bold;
+}
+
+#movie-container-description h3 {
+  color: #000000;
+  font-weight: bold;
+}
+
+#movie-container-description h4 {
+  color: #000000;
+  font-weight: bold;
+}
+
+#movie-container-description p {
+  color: #000000;
 }
