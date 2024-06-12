@@ -1,0 +1,16 @@
+<div style="display: flex; background-color: rgb(206, 206, 206)">
+    <img src="{{ movie.image }}" width="300px">
+    <div class="movie-details">
+        <a href="/movies">Go back</a>
+        <h1>{{ movie.title }}</h1>
+        <h2>Director: {{ movie.director }}</h2>
+        <p style="font-weight: bold;">Stars</p>
+        <ul>
+            {{#each movie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p style="width: 40%;">{{ movie.description }}</p>
+        <p>{{#each movie.showtimes}}{{this}} | {{/each}}</p>
+    </div>
+</div>
