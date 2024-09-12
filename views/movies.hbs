@@ -1,0 +1,19 @@
+<div class="movies-container" style="text-align: center;">
+    <h1>Movies</h1>
+    <h2>Click on the movie to check the showtimes!</h2>
+
+    <div class="row">
+        {{#each movies as |movie|}}
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border: 1px solid transparent;">
+                    <img src="{{movie.image}}" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: rgba(255, 255, 255, 0.8); padding: 15px;">
+                        <h3 class="card-title" style="margin-bottom: 10px;">{{movie.title}}</h3>
+                        <h5 class="card-director" style="margin-bottom: 10px;">{{movie.director}}</h5>
+                        <a href="/movies/{{movie.id}}" class="btn btn-success">See more</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
