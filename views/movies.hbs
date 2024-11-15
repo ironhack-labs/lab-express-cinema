@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Movies</h1>
+    <form class="d-block mb-4" method="GET" action="/movies">
+    <label for="search" class="form-label">Search by title</label>
+    <input type="text" class="form-control mb-2" id="search" name="q">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+    {{#each movies}}
+      <div class="col">
+        <div class="card h-100">
+          <img src="{{this.image}}" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <a href="/movie/{{this.id}}">View movie</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+    </div>
+</div>

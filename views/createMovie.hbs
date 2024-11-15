@@ -1,0 +1,27 @@
+<div class="container my-5">
+  <h1>Create a movie</h1>
+
+  <form action="/movie/create" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" id="title" required>
+    </div>
+    <div class="mb-3">
+      <label for="director" class="form-label">Director</label>
+      <input type="text" name="director" class="form-control" id="author" required>
+    </div>
+    <div class="mb-3">
+      <label for="stars" class="form-label">Stars</label>
+      <textarea name="stars" class="form-control" id="description"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea name="description" class="form-control" id="description"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Image</label>
+      <input type="text" name="image" class="form-control" id="image">
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>
+</div>
