@@ -1,0 +1,11 @@
+<h1 style="text-align: center; font-size: 3rem; margin-bottom: 30px;">Movies</h1>
+<ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 0;">
+  {{#each movies}}
+    <li style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; max-width: 200px; text-align: center;">
+      <img src="{{this.image}}" alt="{{this.title}}" style="width: 100%; height: auto;" />
+      <h2 style="font-size: 1.5rem; margin: 10px 0;">{{this.title}}</h2>
+      <a href="/movies/{{this._id}}" style="display: inline-block; margin: 10px 0; text-decoration: none; color: white; background-color: #007bff; padding: 5px 15px; border-radius: 5px;">See more</a>
+    </li>
+  {{/each}}
+</ul>
+
