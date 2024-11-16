@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>{{movie.title}}</h1>
+
+  <div class="row">
+    <div class="col-6">
+      <img src="{{movie.image}}" alt="{{movie.title}}" class="img-fluid">
+    </div>
+    <div class="col-6">
+      <p><strong>Author:</strong> {{movie.author}}</p>
+      <p><strong>Stars:</strong> {{movie.stars}}</p>
+      <p><strong>Description:</strong> {{movie.description}}</p>
+      <form action="/movies/{{movie.id}}/delete" method="POST">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>
