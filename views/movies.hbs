@@ -1,0 +1,13 @@
+<div id="movies-page-container" class="overlay">
+  <h2>Cinema Ironhack</h1>
+  <p>Click on the movie to check the showtimes!</p>
+  <div id="movies-container">
+    {{#each movies}}
+      <div class="movie-card">
+        <img src="{{this.image}}" alt="{{this.title}}" />
+        <h4>{{this.title}}</h4>
+        <a href="/movie/{{this._id}}">See more</a>
+      </div>
+    {{/each}}
+  </div>
+</div>
