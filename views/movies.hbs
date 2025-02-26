@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies List</title>
+  <style>
+    .movie-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .movie-card {
+      width: 200px;
+      text-align: center;
+      border: 1px solid #ccc; /* Debug border */
+      padding: 10px;
+    }
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .movie-card h3 {
+      margin: 10px 0;
+    }
+    .movie-card a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    .movie-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movies List</h1>
+  <div class="movie-list">
+    {{#each movies}}
+      <div class="movie-card">
+        <img src="{{this.image}}" alt="{{this.title}}">
+        <h3>{{this.title}}</h3>
+        <a href="/movies/{{this._id}}">See more</a>
+      </div>
+    {{else}}
+      <p>No movies found.</p>
+    {{/each}}
+  </div>
+</body>
+</html>

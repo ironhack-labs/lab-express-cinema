@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{movie.title}} - Movie Details</title>
+  <style>
+    .movie-details {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .movie-details img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .movie-details h1 {
+      margin: 20px 0;
+    }
+    .movie-details p {
+      margin: 10px 0;
+    }
+    .movie-details ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .movie-details ul li {
+      margin: 5px 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="movie-details">
+    <img src="{{movie.image}}" alt="{{movie.title}}">
+    <h1>{{movie.title}}</h1>
+    <p><strong>Director:</strong> {{movie.director}}</p>
+    <p><strong>Stars:</strong></p>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p><strong>Description:</strong> {{movie.description}}</p>
+    <p><strong>Showtimes:</strong></p>
+    <ul>
+      {{#each movie.showtimes}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <a href="/movies" class="back-link">Back to Movies List</a>
+  </div>
+</body>
+</html>
