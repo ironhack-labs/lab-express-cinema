@@ -1,2 +1,15 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="container">
+  <h1 class="title">Cinema<br /> Ironhack</h1>
+  <button class="movies-button"><a href="/movies">Check the movies!</a></button>
+</div>
+
+<style>
+  body { background-image: url('/images/cinema.jpg'); background-size: cover;
+  background-position: center; background-repeat: no-repeat; height: 100vh;
+  margin: 0; padding: 0; } .container { display: flex; flex-direction: column;
+  align-items: flex-end; margin-right: 50px; } .title { color: white;
+  text-align: right; font-size: 8em; white-space: pre-line; } .movies-button {
+  background-color: white; border: none; border-radius: 25px; padding: 10px
+  20px; font-size: 1em; } .movies-button a { color: blue; text-decoration: none;
+  }
+</style>
