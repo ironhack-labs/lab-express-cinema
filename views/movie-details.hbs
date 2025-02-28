@@ -1,0 +1,38 @@
+<ul class="mov-dtls">
+  <li class="mov-img">
+    <img
+      src="{{movie.image}}"
+      alt="{{movie.title}}"
+      style="width:200px;height:auto;"
+    />
+  </li>
+  <li class="mov-info">
+    <a href="/movies">Go back</a>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}}</h3>
+    <h4>Stars:</h4>
+    <ul>
+      {{#each movie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>{{formatShowtimes movie.showtimes}}</p>
+  </li>
+</ul>
+
+<style>
+  .mov-dtls {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .mov-img {
+    margin-right: 20px;
+  }
+
+  .mov-info {
+   max-width: 600px;
+  }
+</style>
