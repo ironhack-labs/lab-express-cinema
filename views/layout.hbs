@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{title}}</title>
+  <title>{{#if title}}{{title}}{{else}}Cinema Ironhack{{/if}}</title>
   <link rel="stylesheet" href="/stylesheets/style.css" />
+  <!-- Additional stylesheets will be included in specific views -->
 </head>
 <body>
-
+  <!-- Main content -->
   {{{body}}}
 
+  <!-- Scripts -->
   <script src="/js/script.js"></script>
 </body>
 </html>
