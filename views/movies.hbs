@@ -1,0 +1,12 @@
+  <h1>Movie List</h1>
+  {{#if movies.length}}
+    {{#each movies}}
+      <div>
+        <h2>{{this.title}}</h2>
+        <img src="{{this.image}}" alt="{{this.title}}" width="200">
+        <a href="/movies/{{this._id}}">See More</a>
+      </div>
+    {{/each}}
+  {{else}}
+    <p>No movies found.</p>
+  {{/if}}
