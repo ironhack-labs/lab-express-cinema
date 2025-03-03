@@ -15,6 +15,15 @@ const hbs = require('hbs');
 
 const app = express();
 
+const mongoose = require("mongoose");
+mongoose.set("strictQuery", false); // Add this line
+
+
+app.set("views", __dirname + "/views");
+app.set("view engine", "hbs");
+
+app.use(express.static("public"));
+
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
 
