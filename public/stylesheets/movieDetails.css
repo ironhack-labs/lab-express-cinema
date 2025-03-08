@@ -1,0 +1,117 @@
+
+
+.movie-details-container {
+    padding-bottom: 60px;
+  }
+  
+  .movie-header {
+    background-color: #032541;
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .movie-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .movie-info .director {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .movie-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #032541;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+  }
+  
+  .stars,
+  .description,
+  .showtimes {
+    margin-bottom: 30px;
+  }
+  
+  .stars ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .stars li {
+    padding: 8px 0;
+    color: #555;
+  }
+  
+  .description p {
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .showtime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .showtime-badge {
+    background-color: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #333;
+    display: inline-block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .movie-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .movie-poster {
+      max-width: 300px;
+      margin: 0 auto 30px;
+    }
+  
+    .movie-info h1 {
+      font-size: 2rem;
+    }
+  
+    .stars ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  

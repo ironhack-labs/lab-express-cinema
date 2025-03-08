@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="/stylesheets/movies.css">
+
+<div class="movies-container">
+  <header class="movies-header">
+    <div class="container">
+      <h1>Our Movie Collection</h1>
+      <p>Check out our latest movies and showtimes</p>
+    </div>
+  </header>
+
+  <section class="movies-grid container">
+    {{#each movies}}
+      <div class="movie-card">
+        <div class="movie-poster">
+          <img src="{{this.image}}" alt="{{this.title}}">
+        </div>
+        <div class="movie-info">
+          <h2>{{this.title}}</h2>
+          <p class="director">Directed by {{this.director}}</p>
+          <a href="/movies/{{this._id}}" class="btn">See more</a>
+        </div>
+      </div>
+    {{else}}
+      <div class="no-movies">
+        <p>No movies available at the moment. Please check back later.</p>
+      </div>
+    {{/each}}
+  </section>
+</div> 

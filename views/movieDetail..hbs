@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/stylesheets/movieDetails.css">
+
+<div class="movie-details-container">
+  <div class="movie-header">
+    <div class="container">
+      <a href="/movies" class="back-button">← Back to Movies</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="movie-content">
+      <div class="movie-poster">
+        <img src="{{movie.image}}" alt="{{movie.title}} poster">
+      </div>
+      
+      <div class="movie-info">
+        <h1>{{movie.title}}</h1>
+        <p class="director">Directed by <strong>{{movie.director}}</strong></p>
+        
+        <div class="stars">
+          <h3>Starring</h3>
+          <ul>
+            {{#each movie.stars}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+        
+        <div class="description">
+          <h3>Synopsis</h3>
+          <p>{{movie.description}}</p>
+        </div>
+        
+        <div class="showtimes">
+          <h3>Showtimes</h3>
+          <div class="showtime-list">
+            {{#each movie.showtimes}}
+              <span class="showtime-badge">{{this}}</span>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
