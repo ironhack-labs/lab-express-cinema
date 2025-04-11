@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{movie.title}} - Movie Details</title>
+</head>
+<body>
+  <h1>{{movie.title}}</h1>
+  <img src="{{movie.image}}" alt="{{movie.title}}" width="300">
+  <p><strong>Director:</strong> {{movie.director}}</p>
+  <p><strong>Stars:</strong> {{#each movie.stars}}{{this}} {{/each}}</p>
+  <p><strong>Description:</strong> {{movie.description}}</p>
+  <p><strong>Showtimes:</strong> {{#each movie.showtimes}}{{this}} {{/each}}</p>
+  <a href="/movies">Back to Movies List</a>
+</body>
+</html>

@@ -1,34 +1,67 @@
-// ℹ️ Gets access to environment variables/settings
-// https://www.npmjs.com/package/dotenv
-require('dotenv/config');
+const express = require("express");
+const hbs = require("hbs");
+const mongoose = require("mongoose");
+const Movie = require("./models/movie.models.js");
 
-// ℹ️ Connects to the database
-require('./db');
-
-// Handles http requests (express is node js framework)
-// https://www.npmjs.com/package/express
-const express = require('express');
-
-// Handles the handlebars
-// https://www.npmjs.com/package/hbs
-const hbs = require('hbs');
+require("dotenv/config");
 
 const app = express();
+app.set("views", __dirname + "/views");
+app.set("view engine", "hbs");
 
-// ℹ️ This function is getting exported from the config folder. It runs most middlewares
-require('./config')(app);
+// Connect to MongoDB
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/lab-express-cinema";
 
-// default value for title local
-const projectName = 'lab-express-cinema';
-const capitalized = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
+mongoose
+  .connect(MONGO_URI)
+  .then((x) => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
+  })
+  .catch((err) => {
+    console.error("Error connecting to mongo: ", err);
+  });
 
-app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 
-// 👇 Start handling routes here
-const index = require('./routes/index');
-app.use('/', index);
+// Home route
+app.get("/", (req, res) => {
+  res.render("index"); // Home page
+});
 
-// ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
-require('./error-handling')(app);
+app.get('/movies', (req, res) => {
+    res.render( 'movies'); 
+})
+
+// Movies list route
+
+router.get('/movies', (req, res, next) => {
+  Movie.find()
+    .then(movies => {
+      res.render('movies', { movies }); 
+    })
+    .catch(err => {
+      console.log('Error fetching movies:', err);
+      next(err);
+    });
+});
+
+module.exports = router;
+
+// Movie details route
+router.get('/movie/:id', (req, res, next) => {
+  const { id } = req.params;
+  Movie.findById(id)
+    .then(movie => {
+      res.render('movie-details', { movie });
+    })
+    .catch(err => {
+      console.log('Error fetching movie details:', err);
+      next(err);
+    });
+});
+
+// Error handling
+app.use((req, res) => {
+  res.status(404).send("Page Not Found");
+});
 
 module.exports = app;
