@@ -6,3 +6,37 @@ body {
 a {
   color: #00B7FF;
 }
+
+.details {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  
+}
+
+.horarios {
+  list-style: none;
+  padding: 0;
+}
+
+.horarios li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("/images/cinema.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  color: white;
+  z-index: 2; /* asegura que está por encima */
+  margin-left: 50px;
+}
+

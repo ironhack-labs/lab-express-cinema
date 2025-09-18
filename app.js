@@ -15,6 +15,9 @@ const hbs = require('hbs');
 
 const app = express();
 
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'public')))
+
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
 
@@ -30,5 +33,7 @@ app.use('/', index);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
+
+
 
 module.exports = app;
